@@ -14,22 +14,8 @@ properties:
 
 ## Use the right tool for the Job
 
-asd
+Tools have different strengths. Leverage a "best of breed" approach to combine the best tools and add their strengths.
 
 ## Keep complexity in Check
 
-Using too many tools lead to silos, leading to high integration cost
-
-
-
-The following annotations (and any combination thereof) are supported:
-
-<!-- included database 8cc507ba-7ba1-4de5-8bf7-68d5b41e7040 -->
-| Supported     | Notes                     | Annotation    |
-| ------------- | ------------------------- | ------------- |
-| ✅ Yes         |                           | bold          |
-| ✅ Yes         |                           | underline     |
-| ✅ Yes         |                           | strikethrough |
-| ✅ Yes         |                           | code          |
-| ✅ Yes         |                           | italic        |
-| ❌ not planned | not available in markdown | color         |
+Using too many tools in isolation can lead to silos, leading to high integration cost.
