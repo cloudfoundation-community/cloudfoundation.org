@@ -1,0 +1,10 @@
+@import './palette.scss';
+
+// override transition classes from default theme to make them snappier
+.fade-slide-y-enter-active {
+  transition-duration: 0.1s;
+}
+
+.fade-slide-y-leave-active {
+  transition-duration: 0.1s;
+}

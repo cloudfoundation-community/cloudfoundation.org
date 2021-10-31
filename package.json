@@ -1,0 +1,26 @@
+{
+  "name": "cloudfoundation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:meshcloud/cloudfoundation.git",
+  "author": "Johannes Rudolph <jrudolph@meshcloud.io>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "sync": "ts-node sync.ts",
+    "serve": "http-server docs/.vuepress/dist"
+  },
+  "devDependencies": {
+    "@meshcloud/notion-markdown-cms": "^0.1.0",
+    "@types/rimraf": "^3.0.2",
+    "@vuepress/plugin-search": "^2.0.0-beta.27",
+    "dotenv": "^10.0.0",
+    "http-server": "^14.0.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.3",
+    "vuepress-vite": "^2.0.0-beta.26"
+  },
+  "dependencies": {}
+}

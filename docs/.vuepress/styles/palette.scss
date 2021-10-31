@@ -1,0 +1,9 @@
+// responsive breakpoints, these are actually the theme defaults but we include them here
+// so we can reference them in our custom styles
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
+:root {
+  --content-width: 860px;
+}
