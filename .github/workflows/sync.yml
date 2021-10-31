@@ -1,5 +1,11 @@
 name: "Sync"
 on:
+  workflow_dispatch:
+    inputs: 
+      description:
+        description: 'description'
+        required: false
+        default: 'manually triggered sync'
   schedule:
     # run every hour at minute 42
     # * is a special character in YAML so you have to quote this string
