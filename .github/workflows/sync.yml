@@ -30,7 +30,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "docs: apply changes from CMS"
-          committer: GitHub Actions <noreply@github.com>
+          committer: meshi the automator <devops@meshcloud.io>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: next
