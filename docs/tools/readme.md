@@ -11,12 +11,6 @@ properties:
 ---
 
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
-## CFMM Tools - Onboarding
-
-| Name                                        | Category   |
-| ------------------------------------------- | ---------- |
-| [CloudGate](/tools/onboarding/cloudgate.md) | Onboarding |
-
 ## CFMM Tools - cli
 
 | Name                                   | Category |
