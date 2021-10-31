@@ -155,9 +155,13 @@ async function main() {
     rendered.file = readme;
   }
 
+  // we sort the rendered pages by id, this way we have a more consistent index.ts
+  // file that has less churn and thus plays along better with git versioning
+  const sorted = rendered.sort((x, y) => x.meta.id.localeCompare(y.meta.id));
+
   await fs.writeFile(
     "docs/.vuepress/index.ts",
-    `export const index = ${JSON.stringify(rendered, null, 2)};`
+    `export const index = ${JSON.stringify(sorted, null, 2)};`
   );
 }
 
