@@ -9,7 +9,8 @@ properties:
   cluster: 🔐 IAM
   enables: []
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - b4678790-ab53-4219-83e7-fbde18383d05
   scope: ☁️ Platform
   summary: >-
     Identities are consistently governed across throughout the entire lifecycle
