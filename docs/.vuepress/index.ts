@@ -20,6 +20,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19",
+      "url": "https://www.notion.so/Multi-Cloud-Authorization-with-meshStack-01a9cbca3dd44378b1f51ae64b76cc19"
+    },
+    "properties": {
+      "block": [
+        "0dd09c75-2acd-4e87-9721-6b5f563da035"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack allows operators to define a multi-cloud role model that teams can consume in self-service. meshStack replicates assigned roles and groups to cloud platform directories and cloud tenants.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.project.html#access-control-on-a-meshproject",
+      "name": "Multi-Cloud Authorization with meshStack"
+    }
+  },
+  {
     "file": "docs/explore/blocks/billing-to-different-legal-entities.md",
     "meta": {
       "id": "0217c4da-6542-41d6-84c7-12af887e7d15",
@@ -131,7 +148,9 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19"
+      ],
       "name": "Authorization Concept"
     }
   },
@@ -553,7 +572,9 @@ export const index = [
       "cluster": "🔐 IAM",
       "enables": [],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "b4678790-ab53-4219-83e7-fbde18383d05"
+      ],
       "scope": "☁️ Platform",
       "summary": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
       "tool-implementations": [],
@@ -1009,11 +1030,13 @@ export const index = [
     },
     "properties": {
       "cluster": "🔐 IAM",
-      "enables": [],
+      "enables": [
+        "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
+      ],
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Integration with Enterprise IAM landscape incl. federated authentication.",
+      "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication.",
       "tool-implementations": [],
       "name": "Federated Identity and Authentication"
     }
@@ -1191,6 +1214,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "d24b4c3a-1f97-4426-8999-f82a97bf1e75",
+      "url": "https://www.notion.so/Tenant-provisioning-with-meshStack-d24b4c3a1f9744268999f82a97bf1e75"
+    },
+    "properties": {
+      "block": [
+        "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack automatically provisions and reconciles cloud tenants based on desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
+      "name": "Tenant provisioning with meshStack"
+    }
+  },
+  {
     "file": "docs/explore/blocks/chargeback-at-full-cost-allocation.md",
     "meta": {
       "id": "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
@@ -1290,7 +1330,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure Subscriptions etc.).",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
+      ],
       "name": "Tenant Provisioning"
     }
   },
