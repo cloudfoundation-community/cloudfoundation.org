@@ -35,7 +35,7 @@ export function makeSidebarEntries(dir: string) {
   // try to find original, "unslugged" category name, otherwise use the slugified category name
   const category = pathToCategory(dir);
   const indexItem = index.find(
-    (x) => path.dirname(x.file) === dir && x.meta.category
+    (x) => x.file && path.dirname(x.file) === dir && x.meta.category
   );
   if (!indexItem) {
     console.warn(
