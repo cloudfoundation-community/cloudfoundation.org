@@ -229,7 +229,9 @@ export const index = [
     },
     "properties": {
       "cluster": "🛠 Managed Services",
-      "enables": [],
+      "enables": [
+        "18256d4f-e096-4281-809a-f77c5dd20ef0"
+      ],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -285,7 +287,9 @@ export const index = [
       "cluster": "🔐 IAM",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "137ac22d-b96c-4d49-aa83-da5779e3d59c"
+      ],
       "scope": "☁️ Platform",
       "summary": "Managed provisioning and inventory of Service Accounts including their permission sets. Enables central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.",
       "tool-implementations": [],
@@ -479,6 +483,23 @@ export const index = [
       "summary": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
       "tool-implementations": [],
       "name": "Identity and Access Management"
+    }
+  },
+  {
+    "meta": {
+      "id": "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
+      "url": "https://www.notion.so/Managed-DevOps-toolchains-with-meshStack-3c377c143fbf4766a47ae30bd070ed7f"
+    },
+    "properties": {
+      "block": [
+        "71143f29-2fe9-452b-8398-fc40f270a2b6"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack allows cloud foundation teams to provide additional services via a marketplace. DevOps teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
+      "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
+      "name": "Managed DevOps toolchains with meshStack"
     }
   },
   {
@@ -790,7 +811,9 @@ export const index = [
       "depends-on": [],
       "scope": "🛬 Landing Zone",
       "summary": "Teams can use a CI/CD platform that is integrated with the cloud tenants used by the team. Service account and automation user credentials are automatically maintained and rotated.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "3c377c14-3fbf-4766-a47a-e30bd070ed7f"
+      ],
       "name": "Managed CI/CD Platform"
     }
   },
