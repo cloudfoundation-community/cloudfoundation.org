@@ -6,7 +6,8 @@ category: Blocks
 layout: CFMMBlock
 properties:
   cluster: 🛠 Managed Services
-  enables: []
+  enables:
+    - 18256d4f-e096-4281-809a-f77c5dd20ef0
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
@@ -18,4 +19,6 @@ properties:
   tool-implementations: []
   name: Managed Key Vault
 ---
+
+Often used to enable [Service Account Management](/explore/blocks/service-account-management.md) and [Managed CI/CD Platform](/explore/blocks/managed-cicd-platform.md) .
 

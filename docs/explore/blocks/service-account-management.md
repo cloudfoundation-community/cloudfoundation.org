@@ -9,7 +9,8 @@ properties:
   cluster: 🔐 IAM
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 137ac22d-b96c-4d49-aa83-da5779e3d59c
   scope: ☁️ Platform
   summary: >-
     Managed provisioning and inventory of Service Accounts including their
