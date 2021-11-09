@@ -165,4 +165,9 @@ async function main() {
   );
 }
 
-main();
+// cannot use top-level async await, so we explicitly have to listen for and catch errors
+main()
+  .catch(e => {
+    console.error(e);
+    process.exit(1);
+  });
