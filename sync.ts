@@ -9,10 +9,10 @@ import { RenderedDatabasePage } from '@meshcloud/notion-markdown-cms/dist/Render
 dotenv();
 
 const config: SyncConfig = {
-  cmsDatabaseId: "6043a6d456114741aa0d1b11ec19112a",
+  cmsDatabaseId: "6043a6d4-5611-4741-aa0d-1b11ec19112a",
   outDir: "docs",
   databases: {
-    
+
     "6e7a1291-6f21-4979-b582-452b0158e2b2": {
       outDir: "docs/explore",
       sorts: [
@@ -54,10 +54,10 @@ const config: SyncConfig = {
       },
       views: [
         {
-          title: "By Scope",
+          title: "By Cluster",
           properties: {
-            groupBy: "Scope",
-            include: ["Name", "Cluster", "Journey Stage", "Summary"],
+            groupBy: "Cluster",
+            include: ["Name", "Scope", "Journey Stage", "Summary"],
           },
         },
         {
@@ -67,6 +67,7 @@ const config: SyncConfig = {
             include: ["Name", "Scope", "Cluster", "Summary"],
           },
         },
+
       ],
     },
     "81090f8e-707a-4076-8ccf-6d58783e25cc": {
