@@ -41,6 +41,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   plugins: [
     [
       '@vuepress/plugin-search',
-    ]
+    ],
+    'vuepress-plugin-mermaidjs'
+
   ]
 });

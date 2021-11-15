@@ -22,5 +22,8 @@
     "typescript": "^4.4.3",
     "vuepress-vite": "^2.0.0-beta.26"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuepress-plugin-mermaidjs": "ssh://git@github.com:laoergege/vuepress-plugin-mermaidjs.git#next",
+    "//": "this is super beta see, https://github.com/eFrane/vuepress-plugin-mermaidjs/pull/78"
+  }
 }
