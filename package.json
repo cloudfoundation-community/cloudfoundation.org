@@ -12,7 +12,7 @@
     "serve": "http-server docs/.vuepress/dist"
   },
   "devDependencies": {
-    "@meshcloud/notion-markdown-cms": "^0.2.0",
+    "@meshcloud/notion-markdown-cms": "^0.3.0",
     "@types/rimraf": "^3.0.2",
     "@vuepress/plugin-search": "^2.0.0-beta.27",
     "dotenv": "^10.0.0",
@@ -23,7 +23,7 @@
     "vuepress-vite": "^2.0.0-beta.26"
   },
   "dependencies": {
-    "vuepress-plugin-mermaidjs": "ssh://git@github.com:laoergege/vuepress-plugin-mermaidjs.git#next",
-    "//": "this is super beta see, https://github.com/eFrane/vuepress-plugin-mermaidjs/pull/78"
+    "//": "this is super beta see, https://github.com/eFrane/vuepress-plugin-mermaidjs/pull/78",
+    "vuepress-plugin-mermaidjs": "ssh://git@github.com:laoergege/vuepress-plugin-mermaidjs.git#next"
   }
 }
