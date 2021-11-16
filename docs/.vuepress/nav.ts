@@ -23,19 +23,21 @@ export function getChildDirectories(path: string) {
 export function getChildFiles(path: string) {
   return fs
     .readdirSync(path, { withFileTypes: true })
-    .filter((x) => x.isFile() && !x.name.startsWith(".") && x.name.endsWith(".md"))
+    .filter((x) =>
+      x.isFile() && !x.name.startsWith(".") && x.name.endsWith(".md")
+    )
     .map((x) => x.name);
 }
 
 export function makeSidebarEntries(dir: string) {
   const children = getChildDirectories(dir).map(
-    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0] // ugly hack because we wrap into an array at the end...
+    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0], // ugly hack because we wrap into an array at the end...
   );
 
   // try to find original, "unslugged" category name, otherwise use the slugified category name
   const category = pathToCategory(dir);
   const indexItem = index.find(
-    (x) => x.file && path.dirname(x.file) === dir && x.meta.category
+    (x) => x.file && path.dirname(x.file) === dir && x.meta.category,
   );
   if (!indexItem) {
     console.warn(
@@ -43,7 +45,7 @@ export function makeSidebarEntries(dir: string) {
         category +
         " in dir: " +
         dir +
-        ". Using category slug name instead"
+        ". Using category slug name instead",
     );
   }
   const categoryName = indexItem?.meta.category || category;
@@ -60,13 +62,14 @@ export function makeSidebarEntries(dir: string) {
 
 function sortedSidebar(dir: string) {
   return getChildFiles(dir)
+    .map((x) => dir + "/" + x) // to full path, including the "docs/" prefix
     .sort((x, y) => {
       const ix = index.find((i) => i.file === x);
       const iy = index.find((i) => i.file === y);
 
       return ix?.meta.order - iy?.meta.order;
     })
-    .map((x) => stripDocs(dir + "/" + x));
+    .map((x) => stripDocs(x)) // strip the "docs" prefix
 }
 
 function stripDocs(path: string) {
@@ -74,7 +77,7 @@ function stripDocs(path: string) {
 }
 
 function pathToCategory(dir: string): string {
-    const result = path.basename(dir); // by convention, the category name is reflected in the directory hierarchy
+  const result = path.basename(dir); // by convention, the category name is reflected in the directory hierarchy
 
   return result;
 }
