@@ -7,6 +7,7 @@ order: 0
 properties:
   order: 0
   category: Plan
+  redaction-state: Sketch
   name: Overview
 ---
 
@@ -17,8 +18,6 @@ If you use AWS, Azure or GCP - or all of them - this poster is a great introduct
 It enables you to take a detailed snapshot of your cloud transformation. Get together with your team and determine your capabilities in over 50 building blocks and eight clusters that cover your entire cloud setup.
 
 Work with this poster to plan the next steps in your cloud journey and become a true master of the clouds.
-
-
 
 ## **Your benefits**
 

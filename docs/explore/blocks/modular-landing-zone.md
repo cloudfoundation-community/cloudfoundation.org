@@ -5,7 +5,7 @@ title: Modular Landing Zone
 category: Blocks
 layout: CFMMBlock
 properties:
-  cluster: 🛬 Landing Zone
+  cluster: 🗂 Tenant Management
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on: []

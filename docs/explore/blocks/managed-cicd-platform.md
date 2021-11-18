@@ -35,7 +35,7 @@ Popular choices of CI/CD platforms used to accelerate cloud-native development:
 
 ### Source Code Repository
 
-At the minimum, the managed service needs to provide teams with a dedicated "environment" that the team can work with on the service. In many cases, this the key element of such an environment is a source code repository. The managed service should also provide a way to manage permissions for this repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management](/explore/blocks/identity-and-access-management.md) and [Authorization Concept](/explore/blocks/authorization-concept.md) .
+At the minimum, the managed service needs to provide teams with a dedicated "environment" that the team can work with on the service. In many cases, this the key element of such an environment is a source code repository. The managed service should also provide a way to manage permissions for this repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](/explore/blocks/identity-and-access-management-concept.md) and [Authorization Concept](/explore/blocks/authorization-concept.md) .
 
 ### CI/CD Platform
 
@@ -47,7 +47,7 @@ Continuous delivery implies that the CI/CD platform also has the ability to exec
 
 - rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](/explore/blocks/authorization-concept.md) 
 
-- a **semi-automated** process **** leverage credentials provided by an <!-- could not resolve mentioned page 7cb15316-3c2c-4189-83f1-e60cf3a9eb3c --> manually transferred into the CI/CD platform
+- a **semi-automated** process **** leverage credentials provided by [Service Account Management](/explore/blocks/service-account-management.md) manually transferred into the CI/CD platform
 
 - a **fully automated** process sets up service accounts, transfers their credentials to the CI/CD platform and also periodically rotates the credentials
 

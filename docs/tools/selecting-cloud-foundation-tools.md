@@ -9,6 +9,7 @@ properties:
   order: 10
   documentation: Guide
   category: Tools
+  redaction-state: Sketch
   name: Selecting Cloud Foundation Tools
 ---
 

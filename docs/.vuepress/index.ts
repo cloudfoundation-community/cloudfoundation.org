@@ -9,7 +9,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "📜 Logging",
+      "cluster": "🔖 Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
@@ -112,6 +112,7 @@ export const index = [
     "properties": {
       "order": 0,
       "category": "Plan",
+      "redaction-state": "Sketch",
       "name": "Overview"
     }
   },
@@ -127,6 +128,7 @@ export const index = [
     "properties": {
       "order": 0,
       "category": "Partners",
+      "redaction-state": "Sketch",
       "name": "Overview"
     }
   },
@@ -250,7 +252,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "🛬 Landing Zone",
+      "cluster": "🗂 Tenant Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
@@ -417,7 +419,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "📜 Logging",
+      "cluster": "🔖 Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
@@ -440,6 +442,7 @@ export const index = [
       "order": 10,
       "documentation": "Guide",
       "category": "Tools",
+      "redaction-state": "Sketch",
       "name": "Selecting Cloud Foundation Tools"
     }
   },
@@ -464,11 +467,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/explore/blocks/identity-and-access-management.md",
+    "file": "docs/explore/blocks/identity-and-access-management-concept.md",
     "meta": {
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
-      "url": "https://www.notion.so/Identity-and-Access-Management-37862f9f3d8a4e258e90e487dc455b0c",
-      "title": "Identity and Access Management",
+      "url": "https://www.notion.so/Identity-and-Access-Management-Concept-37862f9f3d8a4e258e90e487dc455b0c",
+      "title": "Identity and Access Management Concept",
       "category": "Blocks",
       "layout": "CFMMBlock"
     },
@@ -482,7 +485,7 @@ export const index = [
       "scope": "🏢 Core",
       "summary": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
       "tool-implementations": [],
-      "name": "Identity and Access Management"
+      "name": "Identity and Access Management Concept"
     }
   },
   {
@@ -555,8 +558,9 @@ export const index = [
     },
     "properties": {
       "order": 20,
-      "documentation": "Reference",
+      "documentation": "Explanation",
       "category": "Plan",
+      "redaction-state": "Sketch",
       "name": "Cloud Journey"
     }
   },
@@ -603,10 +607,27 @@ export const index = [
     }
   },
   {
-    "file": "docs/explore/readme.md",
+    "file": "docs/explore/the-building-blocks.md",
     "meta": {
       "id": "479f18c8-ac4b-477d-b5b4-4df2f04fc4f3",
-      "url": "https://www.notion.so/Explore-479f18c8ac4b477db5b44df2f04fc4f3",
+      "url": "https://www.notion.so/The-Building-Blocks-479f18c8ac4b477db5b44df2f04fc4f3",
+      "title": "The Building Blocks",
+      "category": "Explore",
+      "order": 20
+    },
+    "properties": {
+      "order": 20,
+      "documentation": "Reference",
+      "category": "Explore",
+      "redaction-state": "Draft",
+      "name": "The Building Blocks"
+    }
+  },
+  {
+    "file": "docs/explore/readme.md",
+    "meta": {
+      "id": "4f1a5a1d-8abe-42e1-ba96-0f5a6b68e38f",
+      "url": "https://www.notion.so/Explore-4f1a5a1d8abe42e1ba960f5a6b68e38f",
       "title": "Explore",
       "category": "Explore",
       "order": 0
@@ -615,6 +636,7 @@ export const index = [
       "order": 0,
       "documentation": "Reference",
       "category": "Explore",
+      "redaction-state": "Sketch",
       "name": "Explore"
     }
   },
@@ -648,7 +670,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "🛬 Landing Zone",
+      "cluster": "🗂 Tenant Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
@@ -705,6 +727,7 @@ export const index = [
     "properties": {
       "order": 0,
       "category": "Tools",
+      "redaction-state": "Sketch",
       "name": "Overview"
     }
   },
@@ -914,6 +937,7 @@ export const index = [
       "order": 11,
       "documentation": "Reference",
       "category": "Tools",
+      "redaction-state": "Sketch",
       "name": "Tool Support"
     }
   },
@@ -950,7 +974,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "🛬 Landing Zone",
+      "cluster": "🗂 Tenant Management",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -980,6 +1004,23 @@ export const index = [
       "summary": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks.",
       "tool-implementations": [],
       "name": "Cloud to Cloud interconnects"
+    }
+  },
+  {
+    "file": "docs/plan/approaches-to-building-a-cloud-foundation.md",
+    "meta": {
+      "id": "a544bc7c-979f-427a-8335-2011cdcb6247",
+      "url": "https://www.notion.so/Approaches-to-building-a-Cloud-Foundation-a544bc7c979f427a83352011cdcb6247",
+      "title": "Approaches to building a Cloud Foundation",
+      "category": "Plan",
+      "order": 40
+    },
+    "properties": {
+      "order": 40,
+      "documentation": "Explanation",
+      "category": "Plan",
+      "redaction-state": "Draft",
+      "name": "Approaches to building a Cloud Foundation"
     }
   },
   {
@@ -1032,7 +1073,7 @@ export const index = [
       "layout": "CFMMBlock"
     },
     "properties": {
-      "cluster": "📜 Logging",
+      "cluster": "🔖 Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -1402,18 +1443,19 @@ export const index = [
     }
   },
   {
-    "file": "docs/plan/what-is-a-building-block.md",
+    "file": "docs/explore/what-is-a-building-block.md",
     "meta": {
       "id": "e6848e89-8f3c-4e14-824f-b0122c3fc3cc",
       "url": "https://www.notion.so/What-is-a-Building-Block-e6848e898f3c4e14824fb0122c3fc3cc",
       "title": "What is a Building Block",
-      "category": "Plan",
+      "category": "Explore",
       "order": 10
     },
     "properties": {
       "order": 10,
       "documentation": "Reference",
-      "category": "Plan",
+      "category": "Explore",
+      "redaction-state": "Draft",
       "name": "What is a Building Block"
     }
   },
@@ -1481,6 +1523,23 @@ export const index = [
       "summary": "Budgets are approved by controllers / people with budget responsibility",
       "tool-implementations": [],
       "name": "Budget Approval Process"
+    }
+  },
+  {
+    "file": "docs/plan/why-cloud-foundation.md",
+    "meta": {
+      "id": "fe4fd51c-8f57-46f1-afa1-2fc3402063b8",
+      "url": "https://www.notion.so/Why-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8",
+      "title": "Why Cloud Foundation",
+      "category": "Plan",
+      "order": 30
+    },
+    "properties": {
+      "order": 30,
+      "documentation": "Explanation",
+      "category": "Plan",
+      "redaction-state": "Draft",
+      "name": "Why Cloud Foundation"
     }
   }
 ];

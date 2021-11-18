@@ -1,8 +1,8 @@
 ---
 id: 37862f9f-3d8a-4e25-8e90-e487dc455b0c
 url: >-
-  https://www.notion.so/Identity-and-Access-Management-37862f9f3d8a4e258e90e487dc455b0c
-title: Identity and Access Management
+  https://www.notion.so/Identity-and-Access-Management-Concept-37862f9f3d8a4e258e90e487dc455b0c
+title: Identity and Access Management Concept
 category: Blocks
 layout: CFMMBlock
 properties:
@@ -16,6 +16,6 @@ properties:
     Multi-Cloud IAM architecture concept based on federated identities and
     authentication.
   tool-implementations: []
-  name: Identity and Access Management
+  name: Identity and Access Management Concept
 ---
 
