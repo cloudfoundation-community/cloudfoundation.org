@@ -2831,9 +2831,9 @@ vue@^3.2.20:
     "@vue/server-renderer" "3.2.20"
     "@vue/shared" "3.2.20"
 
-"vuepress-plugin-mermaidjs@ssh://git@github.com:laoergege/vuepress-plugin-mermaidjs.git#next":
+"vuepress-plugin-mermaidjs@https://github.com/laoergege/vuepress-plugin-mermaidjs.git#next":
   version "1.8.1"
-  resolved "ssh://git@github.com:laoergege/vuepress-plugin-mermaidjs.git#ef3b7fadf07c16289bd971eb8b20a388eab61469"
+  resolved "https://github.com/laoergege/vuepress-plugin-mermaidjs.git#ef3b7fadf07c16289bd971eb8b20a388eab61469"
   dependencies:
     "@vuepress/client" "^2.0.0-beta.26"
     "@vuepress/utils" "^2.0.0-beta.25"
