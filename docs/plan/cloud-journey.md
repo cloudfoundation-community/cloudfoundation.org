@@ -6,9 +6,11 @@ category: Plan
 order: 20
 properties:
   order: 20
-  documentation: Reference
+  documentation: Explanation
   category: Plan
+  redaction-state: Sketch
   name: Cloud Journey
 ---
 
 Describe the Enterprise Cloud Journey and its challenges.
+

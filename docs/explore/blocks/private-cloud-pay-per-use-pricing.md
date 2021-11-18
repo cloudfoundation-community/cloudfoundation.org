@@ -35,3 +35,35 @@ Common methods to arrive at pricing models
 
 
 Requires a profit-center mindset
+
+
+
+#### How to arrive at a pricing model for an OpenShift cluster running on a public cloud provider
+
+1. Collect usage data for the cluster for a month. A good starting point is to collect consumed CPU, RAM per namespace.
+
+    <!-- included database 2416694f-cb53-41e8-99f2-a9f8fb5b9b04 -->
+    | Namespace                | Usage Amount | Usage Type   |
+    | ------------------------ | ------------ | ------------ |
+    | customer-b               | 33000        | RAM in GiB-h |
+    | customer-a               | 28000        | RAM in GiB-h |
+    | openshift-kube-apiserver | 1800         | RAM in GiB-h |
+    | openshift-logging        | 50000        | RAM in GiB-h |
+    | customer-b               | 19000        | CPU in CPU-h |
+    | openshift-logging        | 6500         | CPU in CPU-h |
+    | openshift-kube-apiserver | 1500         | CPU in CPU-h |
+    | customer-a               | 37000        | CPU in CPU-h |
+
+1. Filter out shared namespaces that should not end up in cost allocations to specific customers. Calculate the sum for each Usage Type.
+
+    <!-- included database f6d47d09-c8fa-42d2-86c0-e6f54d23c3b5 -->
+    | Name         | Usage Amount |
+    | ------------ | ------------ |
+    | CPU in CPU-h | 56000        |
+    | RAM in GiB-h | 61000        |
+
+1. Collect total costs of operating the cluster on the public cloud.
+
+    **Example operating cost** : 100000 US-$
+
+1. 

@@ -7,6 +7,7 @@ order: 0
 properties:
   order: 0
   category: Partners
+  redaction-state: Sketch
   name: Overview
 ---
 

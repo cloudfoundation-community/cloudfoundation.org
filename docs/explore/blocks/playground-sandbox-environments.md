@@ -6,7 +6,7 @@ title: Playground / Sandbox Environments
 category: Blocks
 layout: CFMMBlock
 properties:
-  cluster: 🛬 Landing Zone
+  cluster: 🗂 Tenant Management
   enables: []
   journey-stage: ⭐️⭐️
   depends-on: []

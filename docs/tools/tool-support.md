@@ -8,6 +8,7 @@ properties:
   order: 11
   documentation: Reference
   category: Tools
+  redaction-state: Sketch
   name: Tool Support
 ---
 

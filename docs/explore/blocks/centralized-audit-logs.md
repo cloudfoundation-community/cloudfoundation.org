@@ -5,7 +5,7 @@ title: Centralized audit logs
 category: Blocks
 layout: CFMMBlock
 properties:
-  cluster: 📜 Logging
+  cluster: 🔖 Compliance
   enables: []
   journey-stage: ⭐️⭐️
   depends-on: []
