@@ -5,7 +5,6 @@ const { mermaidjsPlugin, graphs } = require("./markdownItPlugin")
  * @type {import("vuepress").PluginFunction}
  */
 const vuePressPluginMermaid = (options, ctx) => {
-  console.log("building mm plugin");
   return {
     name: 'MermaidJSPlugin',
     define: {

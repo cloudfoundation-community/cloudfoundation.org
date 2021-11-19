@@ -27,7 +27,6 @@ function mermaidjsPlugin(md, options = {}) {
 
   // Takes the context of the parsed section and turns in into a Mermaid component
   function mermaidRender (tokens, idx, options, env, self) {
-    console.log(env)
     const token = tokens[idx]
     const key = `mermaid_${hash(idx)}`
     const { content } = token
@@ -37,9 +36,8 @@ function mermaidjsPlugin(md, options = {}) {
     }
 
     // mermaid does not work in node, hence we need to wrap it with ClientOnly, see https://v2.vuepress.vuejs.org/reference/components.html#clientonly
-    // return `<ClientOnly><Mermaid id="${key}"></Mermaid></ClientOnly>` 
+    return `<ClientOnly><Mermaid id="${key}"></Mermaid></ClientOnly>` 
 
-    return `<Mermaid id="${key}"></Mermaid>`
   }
 
   // Finds mermaid sections in the Markdown and creates context
