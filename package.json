@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "sync": "ts-node sync.ts",
     "serve": "http-server docs/.vuepress/dist"
   },
