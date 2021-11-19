@@ -9,9 +9,9 @@ pkgs.mkShell {
   buildInputs = [    
 
     # node / typescript (meshPanel, utilities eetc.)
-    pkgs.nodejs-14_x
+    pkgs.nodejs-16_x
     (pkgs.yarn.override {
-        nodejs = pkgs.nodejs-14_x;
+        nodejs = pkgs.nodejs-16_x;
     })
 
     # dhall (meshStack config model)
