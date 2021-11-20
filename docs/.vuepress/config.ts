@@ -2,15 +2,14 @@ import { defineUserConfig } from 'vuepress-vite';
 
 import { path } from '@vuepress/utils';
 
-import { getChildDirectories, makeSidebarEntries } from './nav';
+import { makeSidebarEntries } from './nav';
+import vuePressPluginMermaid from './theme/plugins/mermaid/index';
 
 import type { DefaultThemeOptions } from "vuepress-vite";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
 const sidebar: SidebarConfig = {};
 const navbar: NavbarConfig = [];
 
-// generate sidebar and nav by convention
-// const dirs = getChildDirectories("docs"); 
 // use hardcoded order of sections
 const dirs = ["plan", "explore", "tools", "partners"]
 
@@ -24,6 +23,7 @@ dirs.forEach((dir) => {
 
 
 console.log(JSON.stringify(sidebar, null, 2));
+console.log(vuePressPluginMermaid);
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
@@ -39,10 +39,9 @@ export default defineUserConfig<DefaultThemeOptions>({
     editLinkPattern: ":path"
   },
   plugins: [
+    vuePressPluginMermaid,
     [
       '@vuepress/plugin-search',
     ],
-    'vuepress-plugin-mermaidjs'
-
   ]
 });
