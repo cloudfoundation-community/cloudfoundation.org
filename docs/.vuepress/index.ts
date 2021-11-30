@@ -855,7 +855,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Virtual machines are integrated into a central SOC solution like [Tenable.io](http://tenable.io) or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
+      "summary": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like [Tenable.io](http://tenable.io) or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
       "tool-implementations": [],
       "name": "SOC Integration"
     }
