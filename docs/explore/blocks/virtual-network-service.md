@@ -16,10 +16,47 @@ properties:
   depends-on: []
   scope: 🛬 Landing Zone
   summary: >-
-    The Landing Zone provides pre-configured virtual networks. This building
-    block is a pre-requisite for higher-level services built on virtual
-    networks.
+    A virtual network service provides a pre-configured virtual network. It is a
+    pre-requisite for higher-level services built on virtual networks.
   tool-implementations: []
   name: Virtual Network Service
 ---
+
+## What is a virtual network?
+
+A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet.
+
+Most cloud resources need a virtual network, which makes a virtual network service important for cloud foundations.
+
+## What is a virtual network service?
+
+A virtual network service provides virtual networks to DevOps teams. The virtual network service has two inputs:
+
+- a cloud tenant for the virtual network
+
+- an IP address range, often in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+
+The virtual network service registers the IP address range in the organization's IP address management tool (IPAM) and creates the virtual network in the cloud tenant.
+
+## Best practices around virtual network services
+
+Given the security implications, networking services must be provided centrally. The virtual network service forms the basis for the networking offering.
+
+Virtual networks are most useful in combination with
+
+- Firewall rules
+
+- External IP addresses
+
+- DNS entries
+
+Most applications need to connect to resources outside the virtual network than their own. The following services need a virtual network as input:
+
+- [On-Premise Network Connection](/explore/blocks/on-premise-network-connection.md) 
+
+- [Tenant to Tenant Transit Networks](/explore/blocks/tenant-to-tenant-transit-networks.md) 
+
+- [Cloud to Cloud interconnects](/explore/blocks/cloud-to-cloud-interconnects.md) 
+
+- [Managed Internet Egress](/explore/blocks/managed-internet-egress.md) 
 

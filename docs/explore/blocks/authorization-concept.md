@@ -9,7 +9,8 @@ properties:
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
   scope: 🏢 Core
   summary: >-
     Define a multi-cloud authorization concept that platforms can implement

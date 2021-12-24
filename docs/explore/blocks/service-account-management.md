@@ -21,5 +21,19 @@ properties:
   name: Service Account Management
 ---
 
+## What is Service Account Management?
+
+Service Accounts are identities that are tied to an application instead of a human.
+
+Service Accounts are used when automating tasks in the cloud.
+
+## Why Service Account Management?
+
+Controlling access permissions is a central measure to minimize security risks in the cloud. Service Account Management means staying in control of access permissions. This is similar to the care with which access for human users is controlled.
+
 This building block is especially relevant for cloud platforms where creation of service accounts requires global administrative privileges and teams cannot create service accounts in self-service inside an isolated cloud tenant alone  (examples: Azure Service Principals require AAD permissions).
+
+
+
+The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](/explore/blocks/identity-and-access-management-concept.md) .
 

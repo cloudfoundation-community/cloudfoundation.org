@@ -9,7 +9,8 @@ properties:
   cluster: 💵 Chargeback
   enables: []
   journey-stage: ⭐️
-  depends-on: []
+  depends-on:
+    - cd162600-e742-4a80-b022-989da423ca43
   scope: ☁️ Platform
   summary: >-
     Resource consumption on private cloud platforms such as OpenStack, Cloud
