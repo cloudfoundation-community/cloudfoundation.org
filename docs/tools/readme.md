@@ -24,3 +24,9 @@ properties:
 | ---------------------------------------------------- | ------------------- |
 | [meshStack](/tools/governance-platform/meshstack.md) | Governance Platform |
 
+## CFMM Tools - Downloads
+
+| Name                                                   | Category  |
+| ------------------------------------------------------ | --------- |
+| [Stakeholder Map](/tools/downloads/stakeholder-map.md) | Downloads |
+

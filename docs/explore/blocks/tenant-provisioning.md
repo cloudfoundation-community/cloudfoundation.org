@@ -31,7 +31,7 @@ Provisioning tenants is an obligatory capability for providing cloud foundation 
 
 Semi-automated provisioning often leads to [Monolithic Landing Zone](/explore/blocks/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher level capabilities in later journey stages..
 
-Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/explore/blocks/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zone](/explore/blocks/modular-landing-zone.md) .
+Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/explore/blocks/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/explore/blocks/modular-landing-zones.md) .
 
 ## Best Practices for Tenant Provisioning
 

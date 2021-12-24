@@ -20,3 +20,26 @@ properties:
   name: Central Management of Tenant tags and metadata
 ---
 
+
+
+Storing relevant metadata is essential when it comes to establishing a comprehensive cloud governance in your organization. Tags allow you to capture the metadata on your cloud applications and environments in a structured manner and will benefit not only the cloud compliance and cloud security setup of your cloud environments and also helps tremendously in other cloud pillars such as tenant management and billing.
+
+
+
+Common examples of centrally managed metadata are:
+
+- Environment: dev, test, qa, prod
+
+- Data Classification: public/internal/confidential
+
+- Responsible Persons
+
+- Cost Center
+
+## Challenges
+
+- Tagging needs to be enforced across mutliple clouds
+
+- Tagging drift over time needs to be eliminated by re-applying centrally set tags on tenants continuously
+
+- Needs to be compatible with Self-Service tenant creation by DevOps teams

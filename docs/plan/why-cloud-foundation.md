@@ -32,11 +32,11 @@ No matter how an organization decides to implement its cloud governance, it alwa
 
 - **🔐 IAM:** Provide Identity and Access management capabilities for all available cloud platforms and services.
 
-- **💵 Chargeback:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
+- **💵 Cost Management:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
 
-- **🔖 Compliance:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.
+- **🔖 Security & Compliance:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.
 
-- **🛠 Managed Services:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity).
+- **🛠 Service Ecosystem:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity).
 
 While representing independent functions, organizations need to integrate these functional pillars to implement an effective and wholistic cloud governance.
 

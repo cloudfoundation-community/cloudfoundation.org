@@ -17,3 +17,15 @@ properties:
   name: Centralized audit logs
 ---
 
+## What are centralized audit logs?
+
+Audit Logs ensure are records of what actions were performed by whom. If Audit Logs are collected for all cloud tenants and stored in a single place, we speak of centralized audit logs.
+
+## Why centralized audit logs?
+
+Centralized audit logs make analysis of logs easier for auditors. Standardizing and providing centralized audit log as part of Landing Zones frees DevOps teams to find out how to comply with auditor requirements.
+
+## Challenges
+
+Cloud Foundation teams need to provide Landing Zones that integrate centralized audit logs.
+

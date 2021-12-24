@@ -69,7 +69,9 @@ export const index = [
       "cluster": "💵 Chargeback",
       "enables": [],
       "journey-stage": "⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "cd162600-e742-4a80-b022-989da423ca43"
+      ],
       "scope": "☁️ Platform",
       "summary": "Resource consumption on private cloud platforms such as OpenStack, Cloud Foundry or OpenShift (when used as a multi-tenant platform) is billed according to a pay-per-use pricing model.",
       "tool-implementations": [
@@ -147,7 +149,9 @@ export const index = [
         "1afea746-da65-4164-9029-5e0bfa9432b1"
       ],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
+      ],
       "scope": "🏢 Core",
       "summary": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
       "tool-implementations": [
@@ -404,7 +408,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "The Landing Zone provides pre-configured virtual networks. This building block is a pre-requisite for higher-level services built on virtual networks.",
+      "summary": "A virtual network service provides a pre-configured virtual network. It is a pre-requisite for higher-level services built on virtual networks.",
       "tool-implementations": [],
       "name": "Virtual Network Service"
     }
@@ -478,7 +482,10 @@ export const index = [
     "properties": {
       "cluster": "🔐 IAM",
       "enables": [
-        "1afea746-da65-4164-9029-5e0bfa9432b1"
+        "1afea746-da65-4164-9029-5e0bfa9432b1",
+        "0dd09c75-2acd-4e87-9721-6b5f563da035",
+        "b4678790-ab53-4219-83e7-fbde18383d05",
+        "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
       ],
       "journey-stage": "⭐️",
       "depends-on": [],
@@ -598,7 +605,8 @@ export const index = [
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [
-        "b4678790-ab53-4219-83e7-fbde18383d05"
+        "b4678790-ab53-4219-83e7-fbde18383d05",
+        "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
       ],
       "scope": "☁️ Platform",
       "summary": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
@@ -697,8 +705,10 @@ export const index = [
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
-      "summary": "A documented shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
-      "tool-implementations": [],
+      "summary": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
+      "tool-implementations": [
+        "c596a5f1-dc63-46b6-8d1f-25dcf12ff484"
+      ],
       "name": "Shared Responsibility Model"
     }
   },
@@ -965,11 +975,24 @@ export const index = [
     }
   },
   {
-    "file": "docs/explore/blocks/modular-landing-zone.md",
+    "file": "docs/tools/downloads/stakeholder-map.md",
+    "meta": {
+      "id": "84cf2301-844f-4e77-8f86-ed3d9244d623",
+      "url": "https://www.notion.so/Stakeholder-Map-84cf2301844f4e778f86ed3d9244d623",
+      "title": "Stakeholder Map",
+      "category": "Downloads"
+    },
+    "properties": {
+      "category": "Downloads",
+      "name": "Stakeholder Map"
+    }
+  },
+  {
+    "file": "docs/explore/blocks/modular-landing-zones.md",
     "meta": {
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
-      "url": "https://www.notion.so/Modular-Landing-Zone-913a8ad17ad44ade9e88801a7afa4b40",
-      "title": "Modular Landing Zone",
+      "url": "https://www.notion.so/Modular-Landing-Zones-913a8ad17ad44ade9e88801a7afa4b40",
+      "title": "Modular Landing Zones",
       "category": "Blocks",
       "layout": "CFMMBlock"
     },
@@ -979,9 +1002,9 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Landing Zones allow modular extension with services or product like managed virtual networks. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. A module concept ensures services can be combined like lego blocks.",
+      "summary": "Landing Zones allow modular extension with services or products. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like lego blocks.",
       "tool-implementations": [],
-      "name": "Modular Landing Zone"
+      "name": "Modular Landing Zones"
     }
   },
   {
@@ -1098,7 +1121,9 @@ export const index = [
         "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
       ],
       "journey-stage": "⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
+      ],
       "scope": "☁️ Platform",
       "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication.",
       "tool-implementations": [],
@@ -1160,6 +1185,23 @@ export const index = [
   },
   {
     "meta": {
+      "id": "c596a5f1-dc63-46b6-8d1f-25dcf12ff484",
+      "url": "https://www.notion.so/meshcloud-Cloud-Foundation-Stakeholder-Map-c596a5f1dc6346b68d1f25dcf12ff484"
+    },
+    "properties": {
+      "block": [
+        "57c521ba-73a4-4187-a507-bbd5eaa80212"
+      ],
+      "tool": [
+        "84cf2301-844f-4e77-8f86-ed3d9244d623"
+      ],
+      "summary": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.\n\nAn example Stakeholder map can be found under [https://www.meshcloud.io/cloud-foundation-stakeholder-map](https://www.meshcloud.io/cloud-foundation-stakeholder-map)",
+      "link": "https://www.meshcloud.io/wp-content/uploads/2021/12/cloud-stakeholder-map.pdf",
+      "name": "meshcloud Cloud Foundation Stakeholder Map"
+    }
+  },
+  {
+    "meta": {
       "id": "c7b3902e-6708-4b0e-9e43-776f863baa3e",
       "url": "https://www.notion.so/Private-Cloud-Metering-with-meshStack-c7b3902e67084b0e9e43776f863baa3e"
     },
@@ -1208,7 +1250,9 @@ export const index = [
     },
     "properties": {
       "cluster": "💵 Chargeback",
-      "enables": [],
+      "enables": [
+        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6"
+      ],
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
