@@ -15,93 +15,60 @@ properties:
   summary: >-
     Implement automated policies to steer cloud consumers to appropriate cloud
     platforms and landing zones based on metadata about the cloud consumer.
-  tool-implementations: []
+  tool-implementations:
+    - acf452d3-8425-41e2-ba8b-ee212a6fb189
   name: Control access to cloud platforms and Landing Zones
 ---
 
+## How to manage cloud platform access
 
+Serving DevOps team standardized cloud resources in self-service depending on pre-defined parameters helps to increase control while decreasing manual effort for managing provisioning, maintaining and governance various deployment scenarios.
 
-What do we describe here?
+The Cloud Foundation teams want to cover more use cases for the usage of cloud resources without neglecting compliance or security. Depending on the use cases certain restrictions may be necessary. Usually the restriction of cloud usage and the self-service provisioning contradict each other or forces a decision to gain more control at the cost of slower provisioning process.
 
-- governance compliance consumption of Landing Zones - cloud templates
+Based on governance, compliance and risk multiple templates for cloud provisioning can be defined. The most primary use case differentiation is the definition of an security baseline for various staging environment (e.g. dev, test, qa, prod). The more complex a differentiation between the landing zones are e.g. between departments, risk estimations, type of access etc. the better is an automated mechanism to check the compliance and permission to consume specific cloud templates.
 
-- defining several security baselines for different use cases
+This will help the Cloud Foundation team to have full control for the cloud while still being able to fast and easy provision the DevOps teams cloud resources.
 
-- gaining back control while still severing all needs of the DevOps teams
-
-
-
-What kind of pain does the the reader has?
-
-- restrict the usage of certain Landing Zones depending use case, stage approvals etc.
-
-- fast provisioning independent of the restriction level
+With restriction of the landing zone consumption for certain scenarios (use cases) based on metadata will allow the the fast provisioning while still having the necessary control.
 
 
 
-What kind of Information regarding this topic is relevant for the user?
+Achieving the automated steering of cloud provisioning based on the metadata it is important to clarify the following questions:
 
-- best practice and whats observable in the industry
+- What are the requirements for the use cases? Define and create Landing Zones according to these requirements for the general defined use cases.
 
+- Depending on which information can I make the decision which landing zone should be applicable for the cloud consumer?
 
+- How could an implementation of the metadata mapping to the landing zones look like? Try to write down a concept for the “Zone Model”
 
-This should be the goal the reader want to achieve?
+    - Avoid to over-engineer the concept or the technical implementation. Cloud access controls depending on metadata and landing zones can be broken down to very simple problem statements instead of solving a complex structure at once.
 
-- showing the possibility of managing various control access to landing zones
+> 📖 A short use case scenario to make things a bit more clear:
 
+Cloud Foundation team ABC want to regulate the usage of clouds and landing zones depending based on the teams:
+> risk estimate: high, middle, low
+> usage of on-premise integration: yes, no
 
-
-What are the pitfalls we currently know of?
-
-- over engineering of the implementation concept
-
-- all landing zones share the same base line with the highest security restrictions instead of an appropriate level
-
-
-
-How can we help a reader to reach the automated access to cloud platforms depending on their Landing Zone / Zone Model other restriction?
-
-- Using meta information
-
-- guide how to approach and realize the zone concept
-
-
-
-Can I give the user any best practice or example?
-
-- simple control access like consumption Landing Zones of specific environments, departments - or any other meta data
-
-- complex control access depending on the use case, criticality of information, cloud model etc.
+Therefore landing zones for the use cases are defined with these metadata in where the project needs the appropriate metadata risk estimate and on-premise integration to match.
 
 
 
 Call to action:
 
-- collie for inventory of current Cloud Accounts with some information
-
 - white paper for meta information management
 
 - white paper about landing zones
 
+## Azure
 
-
-<!-- unsupported block type: column_list -->
-
-<!-- unsupported block type: column -->
+In Azure metadata can be tagged on resources and subscriptions.
 
 ## AWS
 
-In AWS meta information can be tagged on either the Organisational (account) or on an resource level.
-
-<!-- unsupported block type: column -->
-
-## Azure
-
-In Azure meta information can be tagged on resources and subscriptions.
-
-<!-- unsupported block type: column -->
+In AWS metadata can be tagged on either the Organisational (account) or on an resource level.
 
 ## GCP
 
-In GCP meta information can be tagged as labels on resources and projects.
+In GCP metadata can be tagged as labels on resources and projects.
 

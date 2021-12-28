@@ -22,50 +22,63 @@ properties:
   name: Identity and Access Management Concept
 ---
 
+## Why do you need an Identity and Access Management Concept?
+
 Identity and Access Management is at the core of managing trust in the cloud. Authentication and Authorization based on identities replace mechanisms from the private data center era such as trust-based on host IP.
 
-An Identity and Access Management concept is a document that describes your Identity and Access Management architecture for future reference.
+An Identity and Access Management Concept is a document that describes your Identity and Access Management architecture for future reference.
 
-Here are core questions you will have to keep in mind while working on an Identity and Access Management concept:
+An important distinction is IAM for humans vs. IAM for workload. Making this distinction in the Identity and Access Management Concept allows to discuss one topic at the time.
 
-- What is your source of identities?
+## What an Identity and Access Management Concept has to cover
 
-- How do identities flow from the source to other systems? [Federated Identity and Authentication](/explore/blocks/federated-identity-and-authentication.md) 
+#### Core questions
 
-- How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your IAM landscape? [Identity Lifecycle Management](/explore/blocks/identity-lifecycle-management.md)
+[ ] What is your source of identities?
 
-- What documentation around access rights needs to happen. Documentation of access rights is a common requirement for companies in the finance or healthcare industries.
+[ ] How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/explore/blocks/federated-identity-and-authentication.md) )
 
-- What level of separation will you have between different applications?
+[ ] What level of separation will you have between different applications?
 
-- What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow?
+[ ] How do you keep a central overview over access permissions when there are multiple clouds involved?
 
-- How do you keep a central overview over access permissions when there are multiple clouds involved?
+#### Specific questions on IAM for humans
 
-- How does a cloud-native, self-service approach fit together with the control requirements your organization has?
+An Identity and Access Management Concept needs to answer the following questions:
 
-- Are there distinctions between identities (normal users versus admin users versus technical users)? If yes, these distinctions must be laid out in the Identity and Access Management concept.
+[ ] How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/explore/blocks/identity-lifecycle-management.md) )
 
+[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has?
 
+[ ] Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/explore/blocks/privileged-access-management.md) )
 
-Azure
+#### Specific questions on IAM for workload
 
-After setting up your AAD, an important question is on how to map demand for cloud resources to the Azure resource hierarchy.
+An Identity and Access Management Concept needs to answer the following questions:
+
+[ ] What documentation around access rights needs to happen? Documentation of access rights is a common requirement for companies in the finance or healthcare industries.
+
+[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has? (See [Service Account Management](/explore/blocks/service-account-management.md) )
+
+[ ] What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow (e.g. zero trust)?
+
+## How to set up resource hierarchy for access management
+
+The public cloud providers have resource hierarchies that allow inheriting permissions. Carefully crafting permission inheritance is a proven way of staying in control of access rights.
+
+The design of your resource hierarchies must be taken into account for the Identity and Access Management Concept.
+
+#### Azure
+
+For Azure the recommendation is to map applications that want to use the cloud to subscriptions. See
 
 [https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/](https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/)
 
-
-
-GCP
+#### GCP
 
 For GCP the recommendation is to map applications that want to use the cloud to projects. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
 
+#### AWS
 
+For AWS the recommendation is to map applications that want to use the cloud to accounts. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
 
-AWS
-
-AWS accounts = applications that want to use the cloud. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
-
-
-
-[ ] Headlines

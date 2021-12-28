@@ -1,8 +1,8 @@
 ---
 id: 3c7081e5-c451-40b6-806d-a8d21b130612
 url: >-
-  https://www.notion.so/Ceritfied-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612
-title: Ceritfied ISMS Compliance
+  https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612
+title: Certified ISMS Compliance
 category: Blocks
 layout: CFMMBlock
 properties:
@@ -17,6 +17,6 @@ properties:
     certified according to an information security management system like ISO
     27001 or C5.
   tool-implementations: []
-  name: Ceritfied ISMS Compliance
+  name: Certified ISMS Compliance
 ---
 
