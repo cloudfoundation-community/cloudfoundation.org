@@ -11,29 +11,28 @@ properties:
   depends-on: []
   scope: ☁️ Platform
   summary: >-
-    Landing Zones allow modular extension with services or products. These
-    services have their own lifecycle and can be reconfigured during the
-    lifespan of a tenant. The modular design allows combining services like lego
-    blocks.
+    Landing Zones are extendable with with services. These services have their
+    own lifecycle and can be reconfigured during the lifespan of a tenant. The
+    modular design allows combining services like LEGO® blocks.
   tool-implementations: []
   name: Modular Landing Zones
 ---
 
-## What is a modular landing zone?
+## Why Modular Landing Zones?
 
-Landing Zones describes how a cloud tenant should be prepared before DevOps teams can access it.
+<!-- unsupported block type: synced_block -->
 
-Modular Landing Zones are made up of required and optional components.
+A Landing Zone describes how a cloud tenant should be prepared before DevOps teams can access it.
 
-## Why modular landing zones?
+Modular Landing Zones have a baseline and are extendable with optional modules.
 
-Common examples for required components are
+The baseline determines
 
-- Policies that need to be applied on tenant and resource level
+- Where a tenant lives in the cloud provider’s resource hierarchy
 
-- Access management
+- Which roles team leads can assign their developers
 
-Common examples for optional components are
+Common examples for optional modules are
 
 - [Managed Key Vault](/explore/blocks/managed-key-vault.md) 
 
@@ -41,7 +40,25 @@ Common examples for optional components are
 
 - [On-Premise Network Connection](/explore/blocks/on-premise-network-connection.md)
 
-Already a small number of components can lead to a large number of combinations of those components.
+Already a small number of optional modules can lead to a large number of combinations of those modules.
 
 Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps team while keeping redundancy low and complexity manageable.
+
+## Proven patterns for building Modular Landing Zones
+
+### Split up existing Monolithic Landing Zones
+
+When splitting up existing Landing Zones, a general guideline is: Policies and security settings go into the Landing Zone baseline. Infrastructure that requires workload (e.g. [Managed Key Vault](/explore/blocks/managed-key-vault.md) , [Virtual Network Service](/explore/blocks/virtual-network-service.md) ) goes into modules.
+
+### Use  a Cloud Foundation Platform
+
+Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](/explore/blocks/control-access-to-cloud-platforms-and-landing-zones.md) ). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](/explore/blocks/self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying base line of Landing Zones to tenants. This makes Cloud Foundation Platform the best choice for managing the base line of Landing Zones.
+
+### Use Infrastructure as Code tooling
+
+Most teams build the optional modules for Landing Zones with Infrastructure as Code tooling. Common examples are Terraform, Azure Bicep , Google Cloud Resource Manager or AWS Cloud Formation.
+
+### Manage Services GitOps style
+
+GitOps is a proven pattern for managing optional Landing Zones modules. Having easily accessible definitions of Infrastructure as Code files in a version control system makes inspecting and updating Landing Zones a lot easier. When integrating with Cloud Foundation Platforms that support Open Service Broker API for implementing Landing Zones modules, the open-source [UniPipe Service Broker](https://github.com/meshcloud/unipipe-service-broker/) can be used to implement a GitOps workflow.
 

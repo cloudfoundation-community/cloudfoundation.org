@@ -261,7 +261,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "DevOps Teams / Developers can quickly provision cloud environments for experimentation / learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned.",
+      "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned.",
       "tool-implementations": [],
       "name": "Playground / Sandbox Environments"
     }
@@ -380,7 +380,9 @@ export const index = [
       "cluster": "💵 Chargeback",
       "enables": [],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "cd162600-e742-4a80-b022-989da423ca43"
+      ],
       "scope": "🏢 Core",
       "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.",
       "tool-implementations": [],
@@ -533,11 +535,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/explore/blocks/ceritfied-isms-compliance.md",
+    "file": "docs/explore/blocks/certified-isms-compliance.md",
     "meta": {
       "id": "3c7081e5-c451-40b6-806d-a8d21b130612",
-      "url": "https://www.notion.so/Ceritfied-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612",
-      "title": "Ceritfied ISMS Compliance",
+      "url": "https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612",
+      "title": "Certified ISMS Compliance",
       "category": "Blocks",
       "layout": "CFMMBlock"
     },
@@ -551,7 +553,7 @@ export const index = [
       "scope": "🛬 Landing Zone",
       "summary": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
       "tool-implementations": [],
-      "name": "Ceritfied ISMS Compliance"
+      "name": "Certified ISMS Compliance"
     }
   },
   {
@@ -1002,7 +1004,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Landing Zones allow modular extension with services or products. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like lego blocks.",
+      "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks.",
       "tool-implementations": [],
       "name": "Modular Landing Zones"
     }
@@ -1084,6 +1086,23 @@ export const index = [
       "summary": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
       "tool-implementations": [],
       "name": "Resource Hierarchy"
+    }
+  },
+  {
+    "meta": {
+      "id": "acf452d3-8425-41e2-ba8b-ee212a6fb189",
+      "url": "https://www.notion.so/meshcloud-Cloud-Foundation-CLI-tool-acf452d3842541e2ba8bee212a6fb189"
+    },
+    "properties": {
+      "block": [
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+      ],
+      "tool": [
+        "5c2013b6-4c56-4813-8be7-ad86757014af"
+      ],
+      "summary": "With Collie CLI you can easily find out what your cloud landscape across AWS, Azure or GCP looks like within minutes.",
+      "link": "https://collie-cli.io/",
+      "name": "meshcloud Cloud Foundation CLI tool"
     }
   },
   {
@@ -1195,8 +1214,8 @@ export const index = [
       "tool": [
         "84cf2301-844f-4e77-8f86-ed3d9244d623"
       ],
-      "summary": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.\n\nAn example Stakeholder map can be found under [https://www.meshcloud.io/cloud-foundation-stakeholder-map](https://www.meshcloud.io/cloud-foundation-stakeholder-map)",
-      "link": "https://www.meshcloud.io/wp-content/uploads/2021/12/cloud-stakeholder-map.pdf",
+      "summary": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.",
+      "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
       "name": "meshcloud Cloud Foundation Stakeholder Map"
     }
   },
@@ -1251,7 +1270,9 @@ export const index = [
     "properties": {
       "cluster": "💵 Chargeback",
       "enables": [
-        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6"
+        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
+        "28740e92-5559-4931-ab04-17cfb026edd5",
+        "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
       ],
       "journey-stage": "⭐️",
       "depends-on": [],
@@ -1421,6 +1442,26 @@ export const index = [
     }
   },
   {
+    "file": "docs/explore/blocks/cloud-zones.md",
+    "meta": {
+      "id": "dc16dccf-7530-4179-a8e2-b82cc54b990f",
+      "url": "https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f",
+      "title": "Cloud Zones",
+      "category": "Blocks",
+      "layout": "CFMMBlock"
+    },
+    "properties": {
+      "cluster": "🔖 Compliance",
+      "enables": [],
+      "journey-stage": "⭐️⭐️⭐️",
+      "depends-on": [],
+      "scope": "🏢 Core",
+      "summary": "Regulatory onboarding only captures what is required for getting acces to the cloud",
+      "tool-implementations": [],
+      "name": "Cloud Zones"
+    }
+  },
+  {
     "file": "docs/explore/blocks/tenant-provisioning.md",
     "meta": {
       "id": "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
@@ -1457,7 +1498,9 @@ export const index = [
       "cluster": "💵 Chargeback",
       "enables": [],
       "journey-stage": "⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "cd162600-e742-4a80-b022-989da423ca43"
+      ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
       "tool-implementations": [],
@@ -1482,7 +1525,9 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "acf452d3-8425-41e2-ba8b-ee212a6fb189"
+      ],
       "name": "Control access to cloud platforms and Landing Zones"
     }
   },

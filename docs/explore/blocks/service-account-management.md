@@ -21,19 +21,34 @@ properties:
   name: Service Account Management
 ---
 
-## What is Service Account Management?
-
-Service Accounts are identities that are tied to an application instead of a human.
-
-Service Accounts are used when automating tasks in the cloud.
-
 ## Why Service Account Management?
+
+Service Accounts are identities that are tied to an application instead of a human. Service Accounts are used when automating tasks in the cloud.
 
 Controlling access permissions is a central measure to minimize security risks in the cloud. Service Account Management means staying in control of access permissions. This is similar to the care with which access for human users is controlled.
 
-This building block is especially relevant for cloud platforms where creation of service accounts requires global administrative privileges and teams cannot create service accounts in self-service inside an isolated cloud tenant alone  (examples: Azure Service Principals require AAD permissions).
-
-
+Careful Service Account Management is especially relevant for cloud platforms where the creation of service accounts requires global administrative privileges. Take Azure for example: Creating a Service Principal requires AAD permissions. Therefore teams cannot create service accounts in self-service inside an isolated cloud tenant.
 
 The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](/explore/blocks/identity-and-access-management-concept.md) .
 
+## Proven patterns for Service Account Management
+
+### Self-Service is King
+
+Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams to create scoped Service Accounts, p referably self-service (See [Modular Landing Zones](/explore/blocks/modular-landing-zones.md) ).
+
+### Decide if you need to document permission
+
+Documentation of access rights is a common requirement for companies in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees DevOps teams from the burden of figuring out where to go after the account is created.
+
+### Clarify who is responsible
+
+There are multiple ways to do this:
+
+- Make the security owner of the project responsible for establishing proper use of service accounts
+
+- Make the person creating them accountable for their use. [Centralized audit logs](/explore/blocks/centralized-audit-logs.md) always contains a log finding out who created a Service Account.
+
+### Monitor service account usage
+
+Especially anti-patterns like lack of key rotation, extensive permissions (e.g. service accounts should never use default roles like GCP roles/editor) and unused service accounts should be detected and actions taken.

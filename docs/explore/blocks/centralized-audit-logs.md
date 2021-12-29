@@ -17,15 +17,24 @@ properties:
   name: Centralized audit logs
 ---
 
-## What are centralized audit logs?
-
-Audit Logs ensure are records of what actions were performed by whom. If Audit Logs are collected for all cloud tenants and stored in a single place, we speak of centralized audit logs.
-
 ## Why centralized audit logs?
 
-Centralized audit logs make analysis of logs easier for auditors. Standardizing and providing centralized audit log as part of Landing Zones frees DevOps teams to find out how to comply with auditor requirements.
+Audit Logs ensure are records of what actions were performed by whom. A centralized audit log stores audit logs from all cloud tenants.
 
-## Challenges
+The audit logs we need to store here cover interactions with the cloud API. A common example would be answering the question “who deployed and configured this specific Cloud Function?”. This is important to balance the freedom given to teams: “We let you deploy your own workload, but we will be looking over your shoulders”.
 
-Cloud Foundation teams need to provide Landing Zones that integrate centralized audit logs.
+Centralized audit logs make analysis of logs easier for auditors. Standardizing and providing centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements.
 
+## Proven pattern when implementing centralized audit logs
+
+### Store and retain first, worry about analytics later
+
+Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ( [Cloud SIEM](/explore/blocks/cloud-siem.md) ).
+
+### Carefully guard access to centralized audit logs
+
+DevOps teams are responsible for keeping secrets from leaking into logs. Even with rolling credentials, there is a chance that centralized audit logs contain sensible information. Therefore access should be restricted carefully to minimize risk.
+
+### Create a concept that outlines your centralized audit log strategy
+
+DevOps teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies.

@@ -22,25 +22,41 @@ properties:
   name: Virtual Network Service
 ---
 
-## What is a virtual network?
+## Why a virtual network service?
 
-A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet.
+A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
 
-Most cloud resources need a virtual network, which makes a virtual network service important for cloud foundations.
+A virtual network service provides virtual networks to DevOps teams.
 
-## What is a virtual network service?
-
-A virtual network service provides virtual networks to DevOps teams. The virtual network service has two inputs:
+A virtual network service has two inputs:
 
 - a cloud tenant for the virtual network
 
 - an IP address range, often in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
 
-The virtual network service registers the IP address range in the organization's IP address management tool (IPAM) and creates the virtual network in the cloud tenant.
+A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden of doing so from DevOps teams.
 
-## Best practices around virtual network services
+Given the security implications, networking services must be provided centrally for most Cloud Zones. (See [Cloud Zones](/explore/blocks/cloud-zones.md) ) The virtual network service forms the basis for the networking offering.
 
-Given the security implications, networking services must be provided centrally. The virtual network service forms the basis for the networking offering.
+## Proven pattern when implementing virtual network services
+
+### Align with your [Shared Responsibility Model](/explore/blocks/shared-responsibility-model.md) 
+
+Organizations should strive to make  applications go full cloud-native on networking (L7, APIs) or provide strongly centralized services (L3 networking like on-prem) .
+
+### Embrace cloud paradigm shift
+
+On-prem used L3 connectivity and often no authN/Z on application layer, cloud moves this to L7. Network zones are the most difficult to implement as they have a lot of shared responsibilities and interfaces.
+
+### Shift your view on networking
+
+On-prem networks are mostly flat, whereas in the cloud we can do micro-segmentations and networks become very hierarchical with DevOps teams having a lot of autonomy over their subnets
+
+### Provide it as a Landing Zone module
+
+Virtual network services can be modules for Modular Landing Zones (see [Modular Landing Zones](/explore/blocks/modular-landing-zones.md) ).
+
+### Make it compatible with adjacent services
 
 Virtual networks are most useful in combination with
 
