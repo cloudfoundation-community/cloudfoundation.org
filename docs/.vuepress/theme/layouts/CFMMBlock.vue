@@ -3,7 +3,7 @@
     <template #page-before>
       <p>
         {{ frontmatter.properties.scope }} /
-        {{ frontmatter.properties.cluster }} /
+        {{ frontmatter.properties.pillar }} /
         {{ frontmatter.properties["journey-stage"] }}
       </p>
       <div class="custom-container tip">

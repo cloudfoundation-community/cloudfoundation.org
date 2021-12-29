@@ -17,24 +17,24 @@ const config: SyncConfig = {
       outDir: "docs/explore",
       sorts: [
         {
-          property: "Scope",
-          direction: "ascending",
-        },
-        {
-          property: "Cluster",
+          property: "Pillar",
           direction: "ascending",
         },
         {
           property: "Journey Stage",
           direction: "ascending",
         },
+        {
+          property: "Scope",
+          direction: "ascending",
+        },
       ],
       properties: {
         include: [
           "Name",
-          "Scope",
-          "Cluster",
+          "Pillar",
           "Journey Stage",
+          "Scope",
           "Summary",
           "Enables",
           "Depends on",
@@ -45,7 +45,7 @@ const config: SyncConfig = {
       pages: {
         frontmatter: {
           category: {
-            static: "Blocks",
+              property: "Pillar"
           },
           extra: {
             layout: "CFMMBlock",
@@ -54,9 +54,9 @@ const config: SyncConfig = {
       },
       views: [
         {
-          title: "By Cluster",
+          title: "By Pillar",
           properties: {
-            groupBy: "Cluster",
+            groupBy: "Pillar",
             include: ["Name", "Scope", "Journey Stage", "Summary"],
           },
         },
@@ -64,7 +64,7 @@ const config: SyncConfig = {
           title: "By Journey Stage",
           properties: {
             groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Cluster", "Summary"],
+            include: ["Name", "Scope", "Pillar", "Summary"],
           },
         },
 
@@ -116,7 +116,7 @@ const config: SyncConfig = {
         },
       ],
       properties: {
-        include: ["Name", "Block", "Tool", "Summary", "Link"],
+        include: ["Name", "Summary", "Link"],
       },
       renderAs: "table",
       entries: {
