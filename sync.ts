@@ -14,7 +14,7 @@ const config: SyncConfig = {
   databases: {
 
     "6e7a1291-6f21-4979-b582-452b0158e2b2": {
-      outDir: "docs/explore",
+      outDir: "docs/maturity-model",
       sorts: [
         {
           property: "Pillar",
@@ -45,7 +45,7 @@ const config: SyncConfig = {
       pages: {
         frontmatter: {
           category: {
-              property: "Pillar"
+            property: "Pillar"
           },
           extra: {
             layout: "CFMMBlock",

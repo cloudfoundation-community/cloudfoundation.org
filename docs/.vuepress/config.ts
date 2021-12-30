@@ -11,7 +11,7 @@ const sidebar: SidebarConfig = {};
 const navbar: NavbarConfig = [];
 
 // use hardcoded order of sections
-const dirs = ["plan", "explore", "tools", "partners"]
+const dirs = ["understanding-cloud-foundation", "maturity-model"]
 
 dirs.forEach((dir) => {
   const link = `/${dir}/`;
