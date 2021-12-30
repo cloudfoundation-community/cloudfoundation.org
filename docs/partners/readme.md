@@ -1,6 +1,6 @@
 ---
-id: 0dc7ba44-fa38-44e1-adde-81ffeac910b9
-url: https://www.notion.so/Overview-0dc7ba44fa3844e1adde81ffeac910b9
+id: dabb667e-0f91-4bc0-b3d6-356b32e0b5ec
+url: https://www.notion.so/Overview-dabb667e0f914bc0b3d6356b32e0b5ec
 title: Overview
 category: Partners
 order: 0
@@ -11,4 +11,7 @@ properties:
   name: Overview
 ---
 
-<!-- included database 81090f8e-707a-4076-8ccf-6d58783e25cc -->
+<!-- included database 1e25ba18-20a1-46a8-a178-f077f395e574 -->
+| Name      | Specialty   | Category        |
+| --------- | ----------- | --------------- |
+| meshcloud | Assessments | Software Vendor |
