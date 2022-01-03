@@ -1,4 +1,13 @@
 @import './palette.scss';
+// Bootstrap imports
+// We import the core files first and then we import any specific parts of bootstrap that we want.
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// Here goes the exact bootstrap functionality that we want.
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/utilities';
+
 
 // override transition classes from default theme to make them snappier
 .fade-slide-y-enter-active {
