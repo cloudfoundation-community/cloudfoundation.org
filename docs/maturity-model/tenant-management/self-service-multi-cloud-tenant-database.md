@@ -18,4 +18,4 @@ properties:
   name: Self-Service Multi-Cloud Tenant Database
 ---
 
-A low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ).
+A low time-to-cloud is only sustainable via self-service onboarding for DevOps teams.

@@ -38,21 +38,21 @@ Keeping the metadata close on the cloud account and on resources enables the clo
 
 The most common metadata manage on cloud accounts and resources are listed below:
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
-<!-- unsupported block type: unsupported -->
+<!-- unsupported block type: table_row -->
 
 ## Challenges
 
