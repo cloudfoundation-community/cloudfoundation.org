@@ -10,8 +10,6 @@
           </span>
         </div>
         <div class="col-12 col-lg-6 hero-right">
-          <!-- TODO this image doesn't work in dark mode. Might have to get something else -->
-          <!-- or maybe it works better with SVG? Or get rid of darkmode altogether -->
           <img class="hero-right-image" src="./heroimage.png">
         </div>
       </div>
@@ -56,7 +54,7 @@ $small: 768px;
 $large: 1200px;
 
 main {
-  padding-top: var(--navbar-height);
+  padding-top: calc(var(--navbar-height) * 2.5);
 
   h1 {
     font-size: 24px;
