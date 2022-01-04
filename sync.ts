@@ -116,7 +116,7 @@ const config: SyncConfig = {
         },
       ],
       properties: {
-        include: ["Name", "Summary", "Link"],
+        include: ["Name", "Block", "Tool", "Summary", "Link"],
       },
       renderAs: "table",
       entries: {
