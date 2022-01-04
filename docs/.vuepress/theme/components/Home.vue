@@ -30,6 +30,7 @@
           <img src="./cfmm.png" style="height: 300px;">
         </div>
       </div>
+      <!-- Add GCP, AWS & Azure to rocket image -->
       <!-- TODO flex-column-reverse doesn't work. Maybe do it with plain CSS. -->
       <div class="row flex-column-reverse flex-md-row">
         <div class="col-12 col-lg-6">
