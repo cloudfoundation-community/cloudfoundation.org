@@ -8,29 +8,29 @@
             Bring cloud adoption at your organization to the next level with the Cloud Foundation Maturity Model.
             Use our free 50+ actionable building blocks to identify your current cloud maturity, and where to grow.
           </span>
+          <br/>
+          <a href="/maturity-model/" class="action-button">Explore Building Blocks →</a>
         </div>
         <div class="col-12 col-lg-6 hero-right">
-          <img class="hero-right-image" src="./heroimage.png">
+          <img src="./heroimage.png">
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-12 col-lg-6">
+          <img src="./cfmm.png">
+        </div>
         <div class="col-12 col-lg-6">
           <h1>What is the Cloud Foundation Maturity Model?</h1>
           <span class="desc">
-            The cloud foundation is an organisational approach to managing cloud adoption and
+            The cloud foundation is an organizational approach to managing cloud adoption and
             consumption through a single team.
 
             The Cloud Foundation Maturity Model (CFMM) is built on 50+ building blocks
             that help you build and improve your own cloud foundation team.
           </span>
         </div>
-        <div class="col-12 col-lg-6">
-          <img src="./cfmm.png" style="height: 300px;">
-        </div>
       </div>
-      <!-- Add GCP, AWS & Azure to rocket image -->
-      <!-- TODO flex-column-reverse doesn't work. Maybe do it with plain CSS. -->
-      <div class="row flex-column-reverse flex-md-row">
+      <div class="row">
         <div class="col-12 col-lg-6">
           <h1>Why a Cloud Foundation Team?</h1>
           <span class="desc">
@@ -42,19 +42,26 @@
           </span>
         </div>
         <div class="col-12 col-lg-6">
-          <img src="./team.png" style="height: 300px;">
+          <img src="./team.png">
         </div>
+      </div>
+      <div class="powered-by">
+        Built with ❤️ by <a href="https://meshcloud.io">meshcloud</a>
       </div>
     </div>
   </main>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 $small: 768px;
 $large: 1200px;
 
 main {
-  padding-top: calc(var(--navbar-height) * 2.5);
+  padding-top: calc(var(--navbar-height) * 1.5);
+
+  @media (min-width: $small) {
+    padding-top: calc(var(--navbar-height) * 2.5);
+  }
 
   h1 {
     font-size: 24px;
@@ -69,18 +76,48 @@ main {
     // This centers an image in its container
     display: block;
     margin: auto;
+    height: 240px;
+
+    @media (min-width: $small) {
+      height: 300px;
+    }
+
   }
 
   .hero {
     margin-bottom: 72px;
 
+    .action-button {
+      margin-top: 32px;
+      display: inline-block;
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: #3eaf7c;
+      padding: 0.8rem 1.6rem;
+      border-radius: 4px;
+      transition: background-color .1s ease;
+      box-sizing: border-box;
+      border-bottom: 1px solid #389d70;
+
+      &:hover {
+        background-color: #4abf8a;
+      }
+    }
+
+    img {
+      height: 240px;
+
+      @media (min-width: $small) {
+        height: 400px;
+      }
+    }
+
     .hero-title {
       font-size: 24px;
-      text-align: center;
+      margin-bottom: 32px;
 
       @media (min-width: $small) {
         font-size: 36px;
-        text-align: left;
       }
 
       @media (min-width: $large) {
@@ -89,9 +126,14 @@ main {
     }
   }
 
-  .hero-right {
-    .hero-right-image {
-      height: 400px;
+  .powered-by {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+
+    a {
+      font-weight: 700;
     }
   }
 }

@@ -18,3 +18,21 @@
 .fade-slide-y-leave-active {
   transition-duration: 0.1s;
 }
+
+// Bootstrap is a great help but some of its core CSS conflicts with our own Vuepress CSS. Use this section
+// to cancel out certain CSS from Bootstrap.
+a, a:hover {
+  color: var(--c-text-accent);
+}
+
+p {
+  margin-top: 1em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 1rem 0;
+}
