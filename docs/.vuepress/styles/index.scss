@@ -1,4 +1,14 @@
 @import './palette.scss';
+// Bootstrap imports
+// We import the core files first and then we import any specific parts of bootstrap that we want.
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
+// Here goes the exact bootstrap functionality that we want.
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/utilities';
 
 // override transition classes from default theme to make them snappier
 .fade-slide-y-enter-active {
@@ -7,4 +17,22 @@
 
 .fade-slide-y-leave-active {
   transition-duration: 0.1s;
+}
+
+// Bootstrap is a great help but some of its core CSS conflicts with our own Vuepress CSS. Use this section
+// to cancel out certain CSS from Bootstrap.
+a, a:hover {
+  color: var(--c-text-accent);
+}
+
+p {
+  margin-top: 1em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 1rem 0;
 }

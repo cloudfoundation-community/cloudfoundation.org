@@ -36,7 +36,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     navbar: navbar,
     repo: "meshcloud/cloudfoundation",
     editLink: true,
-    editLinkPattern: ":path"
+    editLinkPattern: ":path",
+    // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
+    // We might be able to flip the switch back on in the future if we figure out how to handle images.
+    darkMode: false
   },
   plugins: [
     vuePressPluginMermaid,

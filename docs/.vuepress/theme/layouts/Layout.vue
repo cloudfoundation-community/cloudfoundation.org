@@ -49,7 +49,7 @@ const onBeforeLeave = scrollPromise.pending;
 </script>
 
 <script lang="ts">
-import Home from "@vuepress/theme-default/lib/client/components/Home.vue";
+import Home from "../components/Home.vue";
 import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 
 export default {

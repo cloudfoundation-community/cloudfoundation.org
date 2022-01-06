@@ -29,7 +29,7 @@ const localTheme: ThemeObject = {
   },
   layouts: {
     CFMMBlock: path.resolve(__dirname, "layouts/CFMMBlock.vue"),
-    Layout: path.resolve(__dirname, "layouts/Layout.vue"),
+    Layout: path.resolve(__dirname, "layouts/Layout.vue")
   },
 };
 
