@@ -14,13 +14,10 @@ properties:
   summary: >-
     Cloud tenant resources are tagged and managed according to the companies
     needs
-  tool-implementations: []
+  tool-implementations:
+    - acf452d3-8425-41e2-ba8b-ee212a6fb189
   name: Cloud Tenant resources tagging
 ---
-
-> ⚠️ lessons learned from customers:
-
-limitations amount of tags. If different part of the organisation come up with a list of tags each without synching closely they can come up with different tags for the same thing but also they can exceed the max limit on a tenant or resources
 
 ## **What are Cloud Resource Tags?**
 
@@ -51,6 +48,7 @@ These questions will come up:
 - How many tags per resource are possible?
 
 - How many characters per tag and which characters are not allowed?
+There are limitations regarding number of tags and length of tag keys and values. If different part of the organisation come up with a list of tags each without synching closely they can come up with different tags for the same thing but also they can exceed the max limit on a tenant or resources
 
 - Is there a difference in requirements for keys and values?
 
@@ -60,12 +58,7 @@ To help you with that we've created our [Cheat Sheet for Tags and Labels on Clou
 
 Consistency in the usage and naming of tags becomes even more important when working in a multi-cloud architecture. It is extremely critical if you want to do queries based on tags - inconsistencies and typos can ruin the whole point of what you were trying to achieve.
 
-1
 
 
+> ✅ Get instant status reports on your cloud tags. The open source tool Collie-CLI will provide you a quick overview on your tags across all cloud providers. [https://github.com/meshcloud/collie-cli](https://github.com/meshcloud/collie-cli)
 
-## **Get an instant Status Report on your Cloud Tags**
-
-Our open-source Collie CLI enables you to view tags across clouds and analyze inconsistencies. Free on Github.
-
-[**ANALYZE MY TAGS —>**](https://github.com/meshcloud/collie-cli)

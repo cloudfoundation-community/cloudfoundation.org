@@ -39,7 +39,7 @@ Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams
 
 ### Decide if you need to document permission s
 
-Documentation of access rights is a common requirement for companies in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees DevOps teams from the burden of figuring out where to go after the account is created.
+Documentation of access rights is a common requirement for organizations in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees DevOps teams from the burden of figuring out where to go after the account is created.
 
 ### Clarify who is responsible
 

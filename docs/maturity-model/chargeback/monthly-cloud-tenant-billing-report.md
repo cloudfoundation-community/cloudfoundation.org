@@ -25,7 +25,7 @@ properties:
 
 A cloud tenant billing report makes cloud consumption transparent to DevOps teams. Accessing cloud tenant billing reports monthly ensures that DevOps teams are aware of their impact on resource costs.
 
-## Why is monthly cloud tenant billing report important?
+## Why is monthly cloud tenant billing reporting important?
 
 All organizations that are successfully using the cloud share a cloud-native mindset . The DevOps teams in these organizations use the properties of the cloud to their advantage. An important aspect is pay-per-use pricing which encourages to keep an eye on resource usage. Therefore pay-per-use pricing aligns incentives. With monthly cloud tenant billing reports, DevOps teams have a closed feedback loop: Improve the application efficiency and see the costs go down.
 

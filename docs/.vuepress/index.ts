@@ -178,10 +178,13 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [
-        "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+        "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+        "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
       ],
       "journey-stage": "⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+      ],
       "scope": "🏢 Core",
       "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL).",
       "tool-implementations": [],
@@ -438,7 +441,9 @@ export const index = [
       "depends-on": [],
       "scope": "🛬 Landing Zone",
       "summary": "Cloud tenant resources are tagged and managed according to the companies needs",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "acf452d3-8425-41e2-ba8b-ee212a6fb189"
+      ],
       "name": "Cloud Tenant resources tagging"
     }
   },
@@ -1047,7 +1052,9 @@ export const index = [
       "pillar": "🗂 Tenant Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "11af37b7-c948-4486-a5da-5b1db6de8193"
+      ],
       "scope": "🏢 Core",
       "summary": "Owners of cloud tenants can register, update and remove tenants from a central cloud tenant database in self service.",
       "tool-implementations": [],
@@ -1081,7 +1088,8 @@ export const index = [
     },
     "properties": {
       "block": [
-        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
+        "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
       ],
       "tool": [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
@@ -1166,7 +1174,9 @@ export const index = [
     },
     "properties": {
       "pillar": "🗂 Tenant Management",
-      "enables": [],
+      "enables": [
+        "11af37b7-c948-4486-a5da-5b1db6de8193"
+      ],
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1335,7 +1345,8 @@ export const index = [
     },
     "properties": {
       "block": [
-        "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+        "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
       ],
       "tool": [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
@@ -1528,7 +1539,8 @@ export const index = [
       "scope": "🏢 Core",
       "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
       "tool-implementations": [
-        "acf452d3-8425-41e2-ba8b-ee212a6fb189"
+        "acf452d3-8425-41e2-ba8b-ee212a6fb189",
+        "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
       ],
       "name": "Control access to cloud platforms and Landing Zones"
     }

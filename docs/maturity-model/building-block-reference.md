@@ -265,3 +265,6 @@ Together with "Pillar" cloud foundation teams can determine the stakeholders tha
 | [Cloud to Cloud interconnects](/maturity-model/networking/cloud-to-cloud-interconnects.md)           | 🛬 Landing Zone | 🌍 Networking | Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks.                                   |
 | [Tenant to Tenant Transit Networks](/maturity-model/networking/tenant-to-tenant-transit-networks.md) | 🛬 Landing Zone | 🌍 Networking | Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks.                                     |
 
+
+
+There you can look up the differences in Azure, AWS, and GCP tagging and labeling.'

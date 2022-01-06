@@ -6,7 +6,8 @@ category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
-  enables: []
+  enables:
+    - 11af37b7-c948-4486-a5da-5b1db6de8193
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
