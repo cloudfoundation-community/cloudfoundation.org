@@ -2,10 +2,10 @@
 id: dc16dccf-7530-4179-a8e2-b82cc54b990f
 url: https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f
 title: Cloud Zones
-category: Blocks
+category: 🔖 Compliance
 layout: CFMMBlock
 properties:
-  cluster: 🔖 Compliance
+  pillar: 🔖 Compliance
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on: []

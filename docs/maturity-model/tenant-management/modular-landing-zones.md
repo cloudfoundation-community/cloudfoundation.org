@@ -56,7 +56,7 @@ Cloud Foundation teams need control over who gets access to what Landing Zone (s
 
 ### Use Infrastructure as Code tooling
 
-Most teams build the optional modules for Landing Zones with Infrastructure as Code tooling. Common examples are Terraform, Azure Bicep , Google Cloud Resource Manager or AWS Cloud Formation.
+Most teams build the optional modules for Landing Zones with Infrastructure as Code tooling. Common examples are Terraform, Azure BluePrint or Bicep , Google Cloud Resource Manager or AWS Cloud Formation.
 
 ### Manage Services GitOps style
 

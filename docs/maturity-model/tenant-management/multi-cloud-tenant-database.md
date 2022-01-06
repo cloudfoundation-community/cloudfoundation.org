@@ -9,8 +9,10 @@ properties:
   pillar: 🗂 Tenant Management
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+    - ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9
   journey-stage: ⭐️
-  depends-on: []
+  depends-on:
+    - b875ac41-2b38-4ce4-ab8b-76ddd876d789
   scope: 🏢 Core
   summary: >-
     A central database provides information about tenants in different clouds

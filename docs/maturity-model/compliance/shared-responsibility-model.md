@@ -73,10 +73,6 @@ The Cloud Foundation teams needs to consider the following point when defining t
 
 
 
+> ✅ Checkout meshcloud’s Whitepaper “ **Best Practices of Modeling your Organizational Structure in the Cloud** ” as an introduction to organizational design in the cloud. [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
 
-
-Call-to-Action:
-
-- Stakeholder map - download
-
-- Whitepaper - cloud organization
+> ✅ The stakeholder map will help your to have a overview of your stakeholders to tackle the shared responsibility model. [https://](https://collie-cli.io/) [www.meshcloud.io/cloud-foundation-stakeholder-map](https://www.meshcloud.io/cloud-foundation-stakeholder-map)

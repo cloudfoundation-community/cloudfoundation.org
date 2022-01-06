@@ -21,8 +21,6 @@ properties:
   name: Playground / Sandbox Environments
 ---
 
-
-
 ## What is a Sandbox Environment?
 
 A sandbox environment is a special type of cloud tenant . It is fully isolated from other environments in the cloud platform and enables DevOps teams to experiment and learn in the cloud without being exposed to risks that typically come with a regular cloud tenant. Think about risks such as unintended access to the cloud tenant, forgetting about deleting resources and causing shadow IT in the organization, or simply spending more than desired on cloud services.
