@@ -14,27 +14,27 @@ const config: SyncConfig = {
   databases: {
 
     "6e7a1291-6f21-4979-b582-452b0158e2b2": {
-      outDir: "docs/explore",
+      outDir: "docs/maturity-model",
       sorts: [
         {
-          property: "Scope",
-          direction: "ascending",
-        },
-        {
-          property: "Cluster",
+          property: "Pillar",
           direction: "ascending",
         },
         {
           property: "Journey Stage",
           direction: "ascending",
         },
+        {
+          property: "Scope",
+          direction: "ascending",
+        },
       ],
       properties: {
         include: [
           "Name",
-          "Scope",
-          "Cluster",
+          "Pillar",
           "Journey Stage",
+          "Scope",
           "Summary",
           "Enables",
           "Depends on",
@@ -45,7 +45,7 @@ const config: SyncConfig = {
       pages: {
         frontmatter: {
           category: {
-            static: "Blocks",
+            property: "Pillar"
           },
           extra: {
             layout: "CFMMBlock",
@@ -54,9 +54,9 @@ const config: SyncConfig = {
       },
       views: [
         {
-          title: "By Cluster",
+          title: "By Pillar",
           properties: {
-            groupBy: "Cluster",
+            groupBy: "Pillar",
             include: ["Name", "Scope", "Journey Stage", "Summary"],
           },
         },
@@ -64,7 +64,7 @@ const config: SyncConfig = {
           title: "By Journey Stage",
           properties: {
             groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Cluster", "Summary"],
+            include: ["Name", "Scope", "Pillar", "Summary"],
           },
         },
 
