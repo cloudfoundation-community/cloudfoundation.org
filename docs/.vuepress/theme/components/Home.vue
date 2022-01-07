@@ -45,12 +45,14 @@
           <img src="./team.png">
         </div>
       </div>
-      <div class="powered-by">
-        Built with ❤️ by <a href="https://meshcloud.io">meshcloud</a>
-      </div>
+      <Footer />
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+import Footer from "./Footer.vue"
+</script>
 
 <style scoped lang="scss">
 $small: 768px;
@@ -126,15 +128,8 @@ main {
     }
   }
 
-  .powered-by {
-    margin-top: 50px;
-    margin-bottom: 20px;
+  .footer {
     text-align: center;
-    font-weight: 700;
-
-    a {
-      font-weight: 700;
-    }
   }
 }
 </style>
