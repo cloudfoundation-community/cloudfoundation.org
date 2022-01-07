@@ -12,6 +12,7 @@ properties:
     - 6e343acc-95bd-42aa-bb32-bdcce1c7d4ad
     - a31e4077-4e84-4129-a46c-1070a8591181
     - 6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone

@@ -7,6 +7,7 @@ layout: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone

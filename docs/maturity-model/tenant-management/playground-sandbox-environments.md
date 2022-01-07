@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform

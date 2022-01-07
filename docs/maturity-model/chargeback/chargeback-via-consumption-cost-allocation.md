@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 💵 Chargeback
   enables: []
+  redaction-state: Draft
   journey-stage: ⭐️
   depends-on:
     - cd162600-e742-4a80-b022-989da423ca43
