@@ -39,6 +39,7 @@ const config: SyncConfig = {
           "Enables",
           "Depends on",
           "Tool Implementations",
+          "Redaction State"
         ],
       },
       renderAs: "pages+views",
