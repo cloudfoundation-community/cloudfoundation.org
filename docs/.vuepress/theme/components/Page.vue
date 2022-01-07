@@ -13,10 +13,13 @@
     <PageNav />
 
     <slot name="bottom" />
+
+    <Footer />
   </main>
 </template>
 
 <script setup lang="ts">
 import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
+import Footer from "./Footer.vue"
 </script>
