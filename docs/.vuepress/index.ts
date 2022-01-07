@@ -1399,6 +1399,22 @@ export const index = [
     }
   },
   {
+    "file": "docs/plan/glossary.md",
+    "meta": {
+      "id": "d2e7b604-7462-4d50-9397-06637277e6e3",
+      "url": "https://www.notion.so/Glossary-d2e7b60474624d50939706637277e6e3",
+      "title": "Glossary",
+      "category": "Plan",
+      "order": 30
+    },
+    "properties": {
+      "order": 30,
+      "documentation": "Reference",
+      "category": "Plan",
+      "name": "Glossary"
+    }
+  },
+  {
     "file": "docs/maturity-model/service-ecosystem/managed-cloud-provider-support-contracts.md",
     "meta": {
       "id": "d871cfba-a86d-4ec1-a23d-42c9b3d73352",

@@ -31,13 +31,13 @@ At the minimum, the managed service needs to provide teams with a dedicated "env
 
 In addition to the source code repository, the managed service also needs to manage and scale any infrastructure required for running build jobs (typically virtual machines or containers). Depending on the implementation of the CI/CD platform, providing additional services like [Shared container registry](/maturity-model/service-ecosystem/shared-container-registry.md) and [Shared VM Image Repository](/maturity-model/service-ecosystem/shared-vm-image-repository.md) can be useful to provide base images and build environments for common developer toolchains (e.g. Python, Java, etc.).
 
-Popular choices of CI/CD platforms used to accelerate cloud-native development:
+Popular choices of CI/CD platforms for accelerating cloud-native development:
 
-- GitHub with GitHub Actions
+- GitHub Actions
 
-- Atlassian Stack (Jira + Bitbucket)
+- Atlassian Stack (Bitbucket Pipelines)
 
-- GitLab
+- GitLab CI
 
 - Azure DevOps
 
@@ -45,34 +45,25 @@ Popular choices of CI/CD platforms used to accelerate cloud-native development:
 
 ## Why use a Managed CI/CD Platform?
 
-Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. Providing a managed CI/CD platform to teams allows them to focus on core activities (software development and operations) instead of infrastructure.
+Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. A managed CI/CD platform allows DevOps teams to focus on core activities (software development and operations) instead of infrastructure.
 
 ## Best Practices of a Managed CI/CD Platform
 
-### Source Code Repository
+### Authorize Source Code Repositories
 
-The managed service should also provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) .
-
-
-
-### Managed CI/CD Platform
-
-
-
-
-
-
+The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) .
 
 ### Use Service Credentials
 
 Continuous delivery implies that the CI/CD platform also has the ability to execute deployments against cloud tenants owned by the development teams. Setting up the required service accounts and securing them is a challenge. If not handled correctly these service accounts introduce significant security risks as their compromise typically leads to full compromise of the deployed service. If the Cloud Foundation team wants to provide continuous delivery capabilities in addition to continuous integration capabilities, providing a way to handle service credentials is obligatory. In practice, the following implementations from simple to more advanced (and thus more secure) are observed:
 
-- rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](/maturity-model/iam/authorization-concept.md) 
+- rely on **manual** credential creation and rotation (this requires an "open" landing zone design , see [Authorization Concept](/maturity-model/iam/authorization-concept.md) )
 
-- a **semi-automated** process **** leverage credentials provided by [Service Account Management](/maturity-model/iam/service-account-management.md) manually transferred into the CI/CD platform
+- a **semi-automated** process **** leverages credentials provided by [Service Account Management](/maturity-model/iam/service-account-management.md) manually transferred into the CI/CD platform
 
-- a **fully automated** process sets up service accounts, transfers their credentials to the CI/CD platform, and also periodically rotates the credentials
+- a **fully automated** process sets up service accounts and allows the CI/CD platform to impersonate service accounts. This can be achieved by managing secrets for those service accounts, including regular rotations. An even better approach is Workload Identity Federation( [GCP](https://cloud.google.com/iam/docs/workload-identity-federation) , [Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation) ). With Workload Identity Federation no secrets need to be stored or rotated.
 
 Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) and [Service Account Management](/maturity-model/iam/service-account-management.md) 
 
 > 💡 Key rotation is a critical capability for CI/CD pipeline deployment secrets, as there is a high risk that build and deployment scripts accidentally expose service credentials in build logs or during remote debugging of builds. We thus recommend rolling service credentials used for deployment very frequently.
+
