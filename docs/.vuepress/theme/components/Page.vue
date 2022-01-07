@@ -13,6 +13,12 @@
     <PageNav />
 
     <slot name="bottom" />
+
+    <p class="footer">
+      © meshcloud · All rights reserved ·
+      <a href="https://www.meshcloud.io/imprint/">Imprint</a> ·
+      <a href="https://www.meshcloud.io/privacy-policy/">Privacy Policy</a>
+    </p>
   </main>
 </template>
 
@@ -20,3 +26,11 @@
 import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
 </script>
+
+
+
+<style scoped lang="scss">
+.footer {
+  text-align: center;
+}
+</style>
