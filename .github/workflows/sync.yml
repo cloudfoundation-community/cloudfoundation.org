@@ -9,7 +9,7 @@ on:
   schedule:
     # run every hour at minute 42
     # * is a special character in YAML so you have to quote this string
-    - cron: "42 9-18 * * *"
+    - cron: "42 9-18 * * 1-5"
 jobs:
   sync:
     runs-on: ubuntu-latest
