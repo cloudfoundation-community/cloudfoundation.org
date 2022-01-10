@@ -10,6 +10,7 @@ properties:
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
     - e7d63253-2e39-4bbf-9dd6-da11bb3edd0d
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core

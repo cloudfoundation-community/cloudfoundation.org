@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🔖 Compliance
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone

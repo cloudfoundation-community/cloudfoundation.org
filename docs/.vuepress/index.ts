@@ -132,6 +132,7 @@ export const index = [
       "enables": [
         "1afea746-da65-4164-9029-5e0bfa9432b1"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
@@ -245,6 +246,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -265,6 +267,7 @@ export const index = [
     "properties": {
       "pillar": "🔐 IAM",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
         "137ac22d-b96c-4d49-aa83-da5779e3d59c"
@@ -380,6 +383,7 @@ export const index = [
         "a31e4077-4e84-4129-a46c-1070a8591181",
         "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9"
       ],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -400,6 +404,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Compliance",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -437,6 +442,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Compliance",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -464,6 +470,7 @@ export const index = [
         "b4678790-ab53-4219-83e7-fbde18383d05",
         "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
       ],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -673,6 +680,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -695,6 +703,7 @@ export const index = [
       "enables": [
         "3c7081e5-c451-40b6-806d-a8d21b130612"
       ],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -813,6 +822,7 @@ export const index = [
         "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
         "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
       ],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -833,6 +843,7 @@ export const index = [
     "properties": {
       "pillar": "🛠 Service Ecosystem",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -992,6 +1003,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1133,6 +1145,7 @@ export const index = [
       "enables": [
         "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [
         "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
@@ -1270,6 +1283,7 @@ export const index = [
         "28740e92-5559-4931-ab04-17cfb026edd5",
         "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
       ],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1482,6 +1496,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Compliance",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -1504,6 +1519,7 @@ export const index = [
       "enables": [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1526,6 +1542,7 @@ export const index = [
     "properties": {
       "pillar": "💵 Chargeback",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [
         "cd162600-e742-4a80-b022-989da423ca43"
@@ -1548,6 +1565,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Compliance",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
         "707c41b8-6da0-4e78-b982-fa4b1365521b"

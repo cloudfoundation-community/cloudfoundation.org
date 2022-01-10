@@ -9,6 +9,7 @@ properties:
   pillar: 🔖 Compliance
   enables:
     - 3c7081e5-c451-40b6-806d-a8d21b130612
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
   scope: 🏢 Core

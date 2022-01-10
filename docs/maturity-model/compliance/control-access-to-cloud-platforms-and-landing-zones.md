@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🔖 Compliance
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b

@@ -7,6 +7,7 @@ layout: CFMMBlock
 properties:
   pillar: 🔖 Compliance
   enables: []
+  redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core

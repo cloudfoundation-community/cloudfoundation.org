@@ -37,6 +37,12 @@
           &nbsp;
         </span>
       </nav>
+
+      <p v-if="underConstruction">
+        <b
+          >🚧 This building block reference page is a draft. Future updates will expand it.</b
+        >
+      </p>
     </template>
 
     <template #page-after>
@@ -111,6 +117,11 @@ const tools = computed(() =>
   frontmatter.value.properties["tool-implementations"].map((id) =>
     resolveTool(id)
   )
+);
+const underConstruction = computed(
+  () =>
+    frontmatter.value.properties["redaction-state"] === undefined ||
+    frontmatter.value.properties["redaction-state"] === "Draft"
 );
 </script>
 

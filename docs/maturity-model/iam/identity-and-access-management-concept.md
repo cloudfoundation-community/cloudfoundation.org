@@ -12,6 +12,7 @@ properties:
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
     - b4678790-ab53-4219-83e7-fbde18383d05
     - 456f15f2-299e-4a8b-a8c9-cb0580a887d2
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
   scope: 🏢 Core
