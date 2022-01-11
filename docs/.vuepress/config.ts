@@ -34,8 +34,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
     sidebar: sidebar,
     navbar: navbar,
-    repo: "meshcloud/cloudfoundation",
-    editLink: true,
+    editLink: false,
     editLinkPattern: ":path",
     // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
     // We might be able to flip the switch back on in the future if we figure out how to handle images.
