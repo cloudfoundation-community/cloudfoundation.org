@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🔐 IAM
   enables: []
+  redaction-state: Draft
   journey-stage: ⭐️⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
