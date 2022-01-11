@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []
+  redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️
   depends-on:
     - 11af37b7-c948-4486-a5da-5b1db6de8193

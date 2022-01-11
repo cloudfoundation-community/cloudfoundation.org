@@ -8,6 +8,7 @@ properties:
   pillar: 🗂 Tenant Management
   enables:
     - 11af37b7-c948-4486-a5da-5b1db6de8193
+  redaction-state: Draft
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform

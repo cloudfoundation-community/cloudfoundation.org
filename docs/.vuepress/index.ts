@@ -159,6 +159,7 @@ export const index = [
       "enables": [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -182,6 +183,7 @@ export const index = [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef",
         "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [
         "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
@@ -310,6 +312,7 @@ export const index = [
     "properties": {
       "pillar": "🔐 IAM",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
@@ -587,6 +590,7 @@ export const index = [
     "properties": {
       "pillar": "🔐 IAM",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "b4678790-ab53-4219-83e7-fbde18383d05",
@@ -660,6 +664,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -755,6 +760,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -906,6 +912,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [
         "11af37b7-c948-4486-a5da-5b1db6de8193",
@@ -1063,6 +1070,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "11af37b7-c948-4486-a5da-5b1db6de8193"
@@ -1085,6 +1093,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1190,6 +1199,7 @@ export const index = [
       "enables": [
         "11af37b7-c948-4486-a5da-5b1db6de8193"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1610,6 +1620,7 @@ export const index = [
       "enables": [
         "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
       ],
+      "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "707c41b8-6da0-4e78-b982-fa4b1365521b"
