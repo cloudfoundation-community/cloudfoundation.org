@@ -38,11 +38,15 @@
         </span>
       </nav>
 
-      <p v-if="underConstruction">
-        <b
-          >🚧 This building block reference page is a draft. Future updates will expand it.</b
-        >
-      </p>
+      <div v-if="underConstruction">
+        <b>
+          🚧 This building block reference page is a draft.
+          Future updates will expand it.
+          If you want to be notified when the building block reference page is finished,
+          click <a href="https://webforms.pipedrive.com/f/2XgSCBA01BJiCqynYN1bKBMAdcQJVto4tNfMapytaWLX2pQD8fPPhin0iAbijt4vp">here</a>.
+          By entering your e-mail in the form, you agree with our <a href="">privacy policy</a>.
+        </b>
+      </div>
     </template>
 
     <template #page-after>
