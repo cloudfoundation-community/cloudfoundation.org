@@ -25,7 +25,10 @@
   },
   "dependencies": {
     "//": "this is super beta see, https://github.com/eFrane/vuepress-plugin-mermaidjs/pull/78",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/plugin-register-components": "2.0.0-beta.27",
     "bootstrap": "^4.6.1",
+    "lru-cache": "^6.0.0",
     "vuepress-plugin-mermaidjs": "https://github.com/laoergege/vuepress-plugin-mermaidjs.git#next"
   }
 }
