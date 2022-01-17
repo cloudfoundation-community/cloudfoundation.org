@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress-vite';
 import { path } from '@vuepress/utils';
 
 import { makeSidebarEntries } from './nav';
-import vuePressPluginMermaid from './theme/plugins/mermaid/index';
+import * as vuePressPluginMermaid from './theme/plugins/mermaid/index';
 
 import type { DefaultThemeOptions } from "vuepress-vite";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
@@ -45,5 +45,14 @@ export default defineUserConfig<DefaultThemeOptions>({
     [
       '@vuepress/plugin-search',
     ],
+    [
+      // This allows us to use custom components in our markdown files.
+      // Keep in mind that only components directly placed in the directory will be usable.
+      // It is not possible to create a nested folder structure.
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './theme/components/embeddable-components')
+      }
+    ]
   ]
 });

@@ -91,19 +91,6 @@ main {
 
     .action-button {
       margin-top: 32px;
-      display: inline-block;
-      font-size: 1.2rem;
-      color: #fff;
-      background-color: #3eaf7c;
-      padding: 0.8rem 1.6rem;
-      border-radius: 4px;
-      transition: background-color .1s ease;
-      box-sizing: border-box;
-      border-bottom: 1px solid #389d70;
-
-      &:hover {
-        background-color: #4abf8a;
-      }
     }
 
     img {
