@@ -22,7 +22,7 @@ properties:
   name: Control access to cloud platforms and Landing Zones
 ---
 
-he Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone
+The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone
 
 ## Why manage access to cloud platforms and landing zones
 
@@ -89,11 +89,12 @@ The following challenges need to be tackled to start with the metadata based acc
 
 - How can the metadata be synchronised across multiple cloud platforms and cloud resources?
 
-
-
-> ✅ Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
-
-> ✅ The “Cloud Zone” use case is a practical example for using tags to manage cloud platform and landing zone access. [https://www.meshcloud.io/use-case-cloud-zones/](https://www.meshcloud.io/use-case-cloud-zones/)
+<CallToAction>
+  <CtaHeader>Learn More on Automated Access Control</CtaHeader>
+  <CtaText>Understand how organizations leverage Cloud Zones in practice or how to pave your path to a winning multi-cloud tagging strategy.</CtaText>
+  <CtaButton url=https://www.meshcloud.io/use-case-cloud-zones/>Use Case Cloud Zones</CtaButton>
+  <CtaButton class="secondary" url=https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/>Tell me how to tag</CtaButton>
+</CallToAction>
 
 ## Azure
 
