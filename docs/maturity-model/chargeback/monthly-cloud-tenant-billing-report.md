@@ -18,7 +18,8 @@ properties:
   summary: >-
     Tenant owners can view a monthly cloud tenant billing report listing all
     incurred charges for cloud resource consumption.
-  tool-implementations: []
+  tool-implementations:
+    - 635ebffa-17e9-4231-9d38-b59625be9b03
   name: Monthly cloud tenant billing report
 ---
 

@@ -733,6 +733,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "635ebffa-17e9-4231-9d38-b59625be9b03",
+      "url": "https://www.notion.so/Check-monthly-cloud-tenant-costs-with-collie-635ebffa17e942319d38b59625be9b03"
+    },
+    "properties": {
+      "block": [
+        "cd162600-e742-4a80-b022-989da423ca43"
+      ],
+      "tool": [
+        "5c2013b6-4c56-4813-8be7-ad86757014af"
+      ],
+      "summary": "Collie CLI",
+      "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
+      "name": "Check monthly cloud tenant costs with collie"
+    }
+  },
+  {
     "file": "docs/tools/readme.md",
     "meta": {
       "id": "640be841-cf31-480d-835d-89d491b558f5",
@@ -1116,7 +1133,7 @@ export const index = [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
       ],
       "summary": "With Collie CLI you can easily find out what your cloud landscape across AWS, Azure or GCP looks like within minutes.",
-      "link": "https://collie-cli.io/",
+      "link": "https://github.com/meshcloud/collie-cli",
       "name": "meshcloud Cloud Foundation CLI tool"
     }
   },
@@ -1298,7 +1315,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "635ebffa-17e9-4231-9d38-b59625be9b03"
+      ],
       "name": "Monthly cloud tenant billing report"
     }
   },
