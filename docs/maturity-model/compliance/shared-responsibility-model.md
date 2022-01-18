@@ -32,6 +32,7 @@ The foundation of a well-defined cloud-native organization is the documentation 
 
 The minimum participants in an shared responsibility model are the cloud providers and DevOps teams as responsible parties. In practice shared teams - like CCoE (Cloud Center of Excellence), Cloud Foundation, Central IT or infrastructure teams - are also involved and need to be considered when defining your own organisations shared responsibility model.
 
+<!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Structure your clouds</CtaHeader>
   <CtaText>Check out meshcloud’s white paper “<b>Best Practices of Modeling your Organizational Structure in the Cloud</b>” as an introduction to organizational design in the cloud.</CtaText>

@@ -89,6 +89,7 @@ The following challenges need to be tackled to start with the metadata based acc
 
 - How can the metadata be synchronised across multiple cloud platforms and cloud resources?
 
+<!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Learn More on Automated Access Control</CtaHeader>
   <CtaText>Understand how organizations leverage Cloud Zones in practice or how to pave your path to a winning multi-cloud tagging strategy.</CtaText>
