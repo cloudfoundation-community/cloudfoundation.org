@@ -15,20 +15,17 @@
     "@meshcloud/notion-markdown-cms": "^0.4.0",
     "@types/mermaid": "^8.2.7",
     "@types/rimraf": "^3.0.2",
-    "@vuepress/plugin-search": "^2.0.0-beta.27",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/plugin-register-components": "2.0.0-beta.33",
+    "@vuepress/plugin-search": "^2.0.0-beta.33",
     "dotenv": "^10.0.0",
     "http-server": "^14.0.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.3",
-    "vuepress-vite": "^2.0.0-beta.26"
+    "vuepress": "^2.0.0-beta.33"
   },
   "dependencies": {
-    "//": "this is super beta see, https://github.com/eFrane/vuepress-plugin-mermaidjs/pull/78",
-    "@vue/component-compiler-utils": "^3.3.0",
-    "@vuepress/plugin-register-components": "2.0.0-beta.27",
-    "bootstrap": "^4.6.1",
-    "lru-cache": "^6.0.0",
-    "vuepress-plugin-mermaidjs": "https://github.com/laoergege/vuepress-plugin-mermaidjs.git#next"
+    "bootstrap": "^4.6.1"
   }
 }

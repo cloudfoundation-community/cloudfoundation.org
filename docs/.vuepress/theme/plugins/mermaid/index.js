@@ -13,7 +13,7 @@ const vuePressPluginMermaid = (options, ctx) => {
     extendsMarkdown(md) {
       md.use(mermaidjsPlugin)
     },
-    async extendsPageData({ filePathRelative }) {
+    async extendsPage({ filePathRelative }) {
       return {
         '$graphs': graphs[filePathRelative]
       }

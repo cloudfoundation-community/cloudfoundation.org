@@ -60,8 +60,7 @@
                 {{ toolimpl.summary }}
               </p>
               <a class="card-btn" v-bind:href="toolimpl.link" target="_blank"
-                >Learn More <OutboundLink
-              /></a>
+                >Learn More <ExternalLinkIcon/></a>
             </div>
           </div>
         </li>
