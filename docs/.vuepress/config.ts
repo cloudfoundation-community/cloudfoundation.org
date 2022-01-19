@@ -30,6 +30,13 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: "Cloud Foundation",
   description: "A solid foundation for your Cloud Journey",
   theme: path.resolve(__dirname, "./theme"),
+  head: [
+    ['script', {
+      src: 'https://plausible.io/js/plausible.js',
+      defer: '',
+      'data-domain': 'cfmm.meshcloud.io'
+    }]
+  ],
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
     sidebar: sidebar,
