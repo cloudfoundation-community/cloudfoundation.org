@@ -21,22 +21,27 @@ dirs.forEach((dir) => {
   navbar.push({ text, link });
 });
 
-
+console.log('The generated sidebar will look like the following: ');
 console.log(JSON.stringify(sidebar, null, 2));
-console.log(vuePressPluginMermaid);
+
+const headConfig = [];
+if (process.env.NODE_ENV === 'production') {
+  // The netlify.toml file will take care of setting the production value for production builds.
+  headConfig.push(
+    ['script', {
+      src: '/js/script.js',
+      defer: '',
+      'data-domain': 'cfmm.meshcloud.io'
+    }]
+  );
+}
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
   title: "Cloud Foundation",
   description: "A solid foundation for your Cloud Journey",
   theme: path.resolve(__dirname, "./theme"),
-  head: [
-    ['script', {
-      src: '/js/script.js',
-      defer: '',
-      'data-domain': 'cfmm.meshcloud.io'
-    }]
-  ],
+  head: headConfig,
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
     sidebar: sidebar,
