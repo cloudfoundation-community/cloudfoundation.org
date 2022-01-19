@@ -23,6 +23,7 @@ export default {
     color: #3eaf7c;
     border: 2px solid #3eaf7c;
     background: var(--c-tip-bg);
+    margin-top: 12px;
 
     &:hover {
       background: rgba(62, 175, 124, 0.1);
