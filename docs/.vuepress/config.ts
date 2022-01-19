@@ -32,7 +32,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   theme: path.resolve(__dirname, "./theme"),
   head: [
     ['script', {
-      src: 'https://plausible.io/js/plausible.js',
+      src: '/js/script.js',
       defer: '',
       'data-domain': 'cfmm.meshcloud.io'
     }]
