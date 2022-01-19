@@ -12,7 +12,7 @@
     "serve": "http-server docs/.vuepress/dist"
   },
   "devDependencies": {
-    "@meshcloud/notion-markdown-cms": "^0.3.0",
+    "@meshcloud/notion-markdown-cms": "^0.4.0",
     "@types/mermaid": "^8.2.7",
     "@types/rimraf": "^3.0.2",
     "@vuepress/plugin-search": "^2.0.0-beta.27",
