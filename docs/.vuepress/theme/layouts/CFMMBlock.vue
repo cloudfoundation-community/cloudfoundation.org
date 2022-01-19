@@ -56,7 +56,7 @@
     <template #page-after>
       <h2>Related Tools</h2>
 
-      <ul class="cards">
+      <ul class="cards mb-4">
         <li class="cards-item" v-for="toolimpl in tools" :key="toolimpl.id">
           <div class="card">
             <div class="card-content">
@@ -78,6 +78,8 @@
           welcome!</i
         >
       </p>
+
+      <Feedback v-bind:page="frontmatter.title" v-if="!underConstruction"></Feedback>
     </template>
   </Layout>
 </template>
@@ -86,6 +88,7 @@
 import { usePageFrontmatter } from "@vuepress/client";
 import { computed, watch } from "vue";
 import { index } from "../../index";
+import Feedback from '../components/Feedback.vue';
 
 function formatLink(path: string) {
   return path.substring("docs".length).replace(".md", ".html");

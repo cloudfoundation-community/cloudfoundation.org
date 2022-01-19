@@ -1,33 +1,35 @@
-
 export function doPost(e) {
-  MailApp.sendEmail({
-    to: "jdburger@meshcloud.io",
-    subject: "call 123 example",
-    htmlBody: JSON.stringify(e)
-  });
+  const body = JSON.parse(e.postData.contents);
+  collectFeedback(body.page, body.answer, body.longAnswer);
 
   return ContentService
     .createTextOutput("OK")
-    .setMimeType(ContentService.MimeType.JAVASCRIPT);
+    .setMimeType(ContentService.MimeType.JSON);
 }
 
-export function myFunction() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet(); // get active spreadsheet
-  var sheet = ss.getSheetByName('Feedback'); // get sheet by name from active spreadsheet
+/**
+ * Insert the collected feedback into a Google Sheet.
+ *
+ * @param page The particular CFMM page that was visited.
+ * @param answer Either 'yes' or 'no'.
+ * @param longAnswer Optional long-text answer where a user can describe why they liked/disliked something.
+ */
+function collectFeedback(page: string, answer: string, longAnswer?: string) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet(); // get active spreadsheet
+  const sheet = ss.getSheetByName('Feedback'); // get sheet by name from active spreadsheet
 
   if (!sheet){
     throw new Error("Could not find Feedback sheet");
   }
 
-  var row : any[]= [];
+  const row: string[] = [];
+  row.push(new Date().toISOString());
+  row.push(page);
+  row.push(answer);
+  if (longAnswer) {
+    row.push(longAnswer);
+  }
 
-  var date = new Date(); //create new date for timestamp
-
-  row.push(date);
-  // TODO: which page?
-  row.push('Yes');
-  row.push('This is just a test');
-
-  //append the row to the active sheet
+  // append the row to the active sheet
   sheet.appendRow(row);
 }
