@@ -32,7 +32,7 @@ if (process.env.VUEPRESS_ENV === "production") {
     {
       src: "/js/script.js",
       defer: "",
-      "data-domain": "cfmm.meshcloud.io",
+      "data-domain": "cloudfoundation.meshcloud.io",
     },
   ]);
 }
