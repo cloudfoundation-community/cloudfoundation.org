@@ -25,7 +25,7 @@ console.log('The generated sidebar will look like the following: ');
 console.log(JSON.stringify(sidebar, null, 2));
 
 const headConfig = [];
-if (process.env.NODE_ENV === 'production') {
+if (process.env.VUEPRESS_ENV === 'production') {
   // The netlify.toml file will take care of setting the production value for production builds.
   headConfig.push(
     ['script', {

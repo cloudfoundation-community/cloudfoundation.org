@@ -1,2 +1,2 @@
 [context.production]
-  environment = { NODE_ENV = "production" }
+  environment = { VUEPRESS_ENV = "production" }
