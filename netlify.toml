@@ -1,2 +1,24 @@
 [context.production]
   environment = { VUEPRESS_ENV = "production" }
+
+## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS.
+[[redirects]]
+  from = "http://cfmm.meshcloud.io/*"
+  to = "https://cloudfoundation.meshcloud.io/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://cfmm.meshcloud.io/*"
+  to = "https://cloudfoundation.meshcloud.io/:splat"
+  status = 301
+
+## Redirects required for bypassing adblockers with our analytics software.
+[[redirects]]
+  from = "/js/script.js"
+  to = "https://plausible.io/js/plausible.js"
+  status = 200
+
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 202
