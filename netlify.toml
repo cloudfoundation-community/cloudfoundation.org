@@ -1,16 +1,19 @@
 [context.production]
   environment = { VUEPRESS_ENV = "production" }
 
-## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS.
-[[redirects]]
-  from = "http://cfmm.meshcloud.io/*"
-  to = "https://cloudfoundation.meshcloud.io/:splat"
-  status = 301
-
+## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS
+## See https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing for the force option
 [[redirects]]
   from = "https://cfmm.meshcloud.io/*"
   to = "https://cloudfoundation.meshcloud.io/:splat"
   status = 301
+  force = true 
+
+[[redirects]]
+  from = "http://cfmm.meshcloud.io/*"
+  to = "https://cloudfoundation.meshcloud.io/:splat"
+  status = 301
+  force = true
 
 ## Redirects required for bypassing adblockers with our analytics software.
 [[redirects]]
