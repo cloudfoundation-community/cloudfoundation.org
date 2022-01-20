@@ -39,7 +39,7 @@ Common examples for optional modules are
 
 - [Managed CI/CD Platform](/maturity-model/service-ecosystem/managed-cicd-platform.md)
 
-- [On-Premise Network Connection](/maturity-model/networking/on-premise-network-connection.md)
+- [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md)
 
 Already a small number of optional modules can lead to a large number of combinations of those modules.
 
@@ -49,11 +49,11 @@ Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps
 
 ### Split up existing Monolithic Landing Zones
 
-You do not have to start form scratch, if you already have an existing Monolithic Landing Zone (see [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) ). When splitting up existing Landing Zones, a general guideline is: Policies and security settings go into the Landing Zone baseline. Infrastructure that requires workload (e.g. [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) , [Virtual Network Service](/maturity-model/networking/virtual-network-service.md) ) goes into modules.
+You do not have to start form scratch, if you already have an existing Monolithic Landing Zone (see [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) ). When splitting up existing Landing Zones, a general guideline is: Policies and security settings go into the Landing Zone baseline. Infrastructure that requires workload (e.g. [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) , [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md) ) goes into modules.
 
 ### Use a Cloud Foundation Platform
 
-Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](/maturity-model/compliance/control-access-to-cloud-platforms-and-landing-zones.md) ). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying a baseline of Landing Zones to tenants. This makes Cloud Foundation Platform the best choice for managing the baseline of Landing Zones.
+Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md) ). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying a baseline of Landing Zones to tenants. This makes Cloud Foundation Platform the best choice for managing the baseline of Landing Zones.
 
 ### Use Infrastructure as Code tooling
 

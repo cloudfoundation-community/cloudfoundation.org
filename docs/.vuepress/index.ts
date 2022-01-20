@@ -1,15 +1,15 @@
 export const index = [
   {
-    "file": "docs/maturity-model/compliance/cloud-siem.md",
+    "file": "docs/maturity-model/security-and-compliance/cloud-siem.md",
     "meta": {
       "id": "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02",
       "url": "https://www.notion.so/Cloud-SIEM-012dc29a5b794eeb81549ef0f2ae0f02",
       "title": "Cloud SIEM",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
@@ -37,16 +37,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/billing-to-different-legal-entities.md",
+    "file": "docs/maturity-model/cost-management/billing-to-different-legal-entities.md",
     "meta": {
       "id": "0217c4da-6542-41d6-84c7-12af887e7d15",
       "url": "https://www.notion.so/Billing-to-different-legal-entities-0217c4da654241d684c712af887e7d15",
       "title": "Billing to different legal entities",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -57,16 +57,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/private-cloud-pay-per-use-pricing.md",
+    "file": "docs/maturity-model/cost-management/private-cloud-pay-per-use-pricing.md",
     "meta": {
       "id": "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
       "url": "https://www.notion.so/Private-Cloud-pay-per-use-pricing-02e4de2c7e1e4dd9aa76b58a88f04ff6",
       "title": "Private Cloud pay-per-use pricing",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️",
       "depends-on": [
@@ -81,16 +81,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/automated-security-scanning.md",
+    "file": "docs/maturity-model/security-and-compliance/automated-security-scanning.md",
     "meta": {
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
       "url": "https://www.notion.so/Automated-Security-Scanning-09e744c5e12a49e88b6fb7e3c44ba63b",
       "title": "Automated Security Scanning",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [
         "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
       ],
@@ -325,16 +325,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/on-premise-network-connection.md",
+    "file": "docs/maturity-model/service-ecosystem/on-premise-network-connection.md",
     "meta": {
       "id": "2468d240-6cca-4680-b9c4-6f237defa511",
       "url": "https://www.notion.so/On-Premise-Network-Connection-2468d2406cca4680b9c46f237defa511",
       "title": "On-Premise Network Connection",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [
@@ -347,16 +347,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/monthly-cloud-project-billing-report.md",
+    "file": "docs/maturity-model/cost-management/monthly-cloud-project-billing-report.md",
     "meta": {
       "id": "28740e92-5559-4931-ab04-17cfb026edd5",
       "url": "https://www.notion.so/Monthly-cloud-project-billing-report-28740e9255594931ab0417cfb026edd5",
       "title": "Monthly cloud project billing report",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [
@@ -369,16 +369,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/virtual-network-service.md",
+    "file": "docs/maturity-model/service-ecosystem/virtual-network-service.md",
     "meta": {
       "id": "2be4d7d1-4109-406b-a4f7-da6c566123fd",
       "url": "https://www.notion.so/Virtual-Network-Service-2be4d7d14109406ba4f7da6c566123fd",
       "title": "Virtual Network Service",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [
         "f90c7375-88b9-42dc-8e98-a65c006b927a",
         "2468d240-6cca-4680-b9c4-6f237defa511",
@@ -396,16 +396,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/centralized-audit-logs.md",
+    "file": "docs/maturity-model/security-and-compliance/centralized-audit-logs.md",
     "meta": {
       "id": "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
       "url": "https://www.notion.so/Centralized-audit-logs-2c7cfeb1248143b8b31c82cb5ba3375f",
       "title": "Centralized audit logs",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
@@ -434,16 +434,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/cloud-tenant-resources-tagging.md",
+    "file": "docs/maturity-model/security-and-compliance/cloud-tenant-resources-tagging.md",
     "meta": {
       "id": "344b75a4-595b-4ba5-8851-ddfb6d4acf7c",
       "url": "https://www.notion.so/Cloud-Tenant-resources-tagging-344b75a4595b4ba58851ddfb6d4acf7c",
       "title": "Cloud Tenant resources tagging",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️",
@@ -500,16 +500,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/individual-project-cost-optimization-via-reservation.md",
+    "file": "docs/maturity-model/cost-management/individual-project-cost-optimization-via-reservation.md",
     "meta": {
       "id": "3c65a957-cb62-40fe-978e-709e3450f7fe",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservation-3c65a957cb6240fe978e709e3450f7fe",
       "title": "Individual Project Cost Optimization via Reservation",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
@@ -520,16 +520,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/certified-isms-compliance.md",
+    "file": "docs/maturity-model/security-and-compliance/certified-isms-compliance.md",
     "meta": {
       "id": "3c7081e5-c451-40b6-806d-a8d21b130612",
       "url": "https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612",
       "title": "Certified ISMS Compliance",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
       "depends-on": [
@@ -695,16 +695,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/shared-responsibility-model.md",
+    "file": "docs/maturity-model/security-and-compliance/shared-responsibility-model.md",
     "meta": {
       "id": "57c521ba-73a4-4187-a507-bbd5eaa80212",
       "url": "https://www.notion.so/Shared-Responsibility-Model-57c521ba73a44187a507bbd5eaa80212",
       "title": "Shared Responsibility Model",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [
         "3c7081e5-c451-40b6-806d-a8d21b130612"
       ],
@@ -787,16 +787,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/managed-bastion-hosts.md",
+    "file": "docs/maturity-model/service-ecosystem/managed-bastion-hosts.md",
     "meta": {
       "id": "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
       "url": "https://www.notion.so/Managed-bastion-hosts-6c9827e973b249f5bfb53fe23fd5b9e9",
       "title": "Managed bastion hosts",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [
@@ -809,16 +809,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/tenant-to-tenant-transit-networks.md",
+    "file": "docs/maturity-model/service-ecosystem/tenant-to-tenant-transit-networks.md",
     "meta": {
       "id": "6e343acc-95bd-42aa-bb32-bdcce1c7d4ad",
       "url": "https://www.notion.so/Tenant-to-Tenant-Transit-Networks-6e343acc95bd42aabb32bdcce1c7d4ad",
       "title": "Tenant to Tenant Transit Networks",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
       "depends-on": [
@@ -831,16 +831,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/central-management-of-tenant-tags-and-metadata.md",
+    "file": "docs/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md",
     "meta": {
       "id": "707c41b8-6da0-4e78-b982-fa4b1365521b",
       "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-707c41b86da04e78b982fa4b1365521b",
       "title": "Central Management of Tenant tags and metadata",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [
         "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
         "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
@@ -878,16 +878,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/soc-integration.md",
+    "file": "docs/maturity-model/security-and-compliance/soc-integration.md",
     "meta": {
       "id": "74295ae4-dcd5-449b-8825-f12c5267e89b",
       "url": "https://www.notion.so/SOC-Integration-74295ae4dcd5449b8825f12c5267e89b",
       "title": "SOC Integration",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -980,16 +980,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/incident-management-process.md",
+    "file": "docs/maturity-model/security-and-compliance/incident-management-process.md",
     "meta": {
       "id": "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
       "url": "https://www.notion.so/Incident-Management-Process-802fdd8d7fc04749937fe9e0ccb3f273",
       "title": "Incident Management Process",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [
@@ -1037,16 +1037,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/cloud-to-cloud-interconnects.md",
+    "file": "docs/maturity-model/service-ecosystem/cloud-to-cloud-interconnects.md",
     "meta": {
       "id": "a31e4077-4e84-4129-a46c-1070a8591181",
       "url": "https://www.notion.so/Cloud-to-Cloud-interconnects-a31e40774e844129a46c1070a8591181",
       "title": "Cloud to Cloud interconnects",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
       "depends-on": [
@@ -1138,16 +1138,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/centralized-workload-and-infrastructure-logs.md",
+    "file": "docs/maturity-model/security-and-compliance/centralized-workload-and-infrastructure-logs.md",
     "meta": {
       "id": "b0a04ae8-c9b3-4060-abfd-e760723995d8",
       "url": "https://www.notion.so/Centralized-workload-and-infrastructure-logs-b0a04ae8c9b34060abfde760723995d8",
       "title": "Centralized workload and infrastructure logs",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -1183,16 +1183,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/global-cost-optimization-via-reservations.md",
+    "file": "docs/maturity-model/cost-management/global-cost-optimization-via-reservations.md",
     "meta": {
       "id": "b6b24f70-3fba-4f67-a375-2b0d26a16324",
       "url": "https://www.notion.so/Global-Cost-Optimization-via-Reservations-b6b24f703fba4f67a3752b0d26a16324",
       "title": "Global Cost Optimization via Reservations",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
@@ -1273,16 +1273,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/pay-per-use-for-internal-services.md",
+    "file": "docs/maturity-model/cost-management/pay-per-use-for-internal-services.md",
     "meta": {
       "id": "c9728af5-49fe-4948-8701-2d6485bfbe93",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-c9728af549fe494887012d6485bfbe93",
       "title": "Pay-per-Use for internal Services",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [
         "d2cb8a5e-3e28-448b-8944-14ff38fad792"
       ],
@@ -1295,16 +1295,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/monthly-cloud-tenant-billing-report.md",
+    "file": "docs/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md",
     "meta": {
       "id": "cd162600-e742-4a80-b022-989da423ca43",
       "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-cd162600e7424a80b022989da423ca43",
       "title": "Monthly cloud tenant billing report",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [
         "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
         "28740e92-5559-4931-ab04-17cfb026edd5",
@@ -1322,16 +1322,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/api-gateway-to-on-premises-apis.md",
+    "file": "docs/maturity-model/service-ecosystem/api-gateway-to-on-premises-apis.md",
     "meta": {
       "id": "cf125421-fd90-4bff-a4c6-f7c994a14591",
       "url": "https://www.notion.so/API-Gateway-to-on-premises-APIs-cf125421fd904bffa4c6f7c994a14591",
       "title": "API Gateway to on-premises APIs",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
@@ -1342,16 +1342,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/onboarding-portal.md",
+    "file": "docs/maturity-model/security-and-compliance/onboarding-portal.md",
     "meta": {
       "id": "cf487857-542f-4d74-8fe9-885b7be8ccf3",
       "url": "https://www.notion.so/Onboarding-Portal-cf487857542f4d748fe9885b7be8ccf3",
       "title": "Onboarding Portal",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
@@ -1362,16 +1362,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/resource-policies-blacklisting.md",
+    "file": "docs/maturity-model/security-and-compliance/resource-policies-blacklisting.md",
     "meta": {
       "id": "d1904912-b420-4a10-a62c-aa578fb847ff",
       "url": "https://www.notion.so/Resource-Policies-Blacklisting-d1904912b4204a10a62caa578fb847ff",
       "title": "Resource Policies - Blacklisting",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "journey-stage": "⭐️",
       "depends-on": [],
@@ -1400,16 +1400,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/chargeback-at-full-cost-allocation.md",
+    "file": "docs/maturity-model/cost-management/chargeback-at-full-cost-allocation.md",
     "meta": {
       "id": "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
       "url": "https://www.notion.so/Chargeback-at-full-cost-allocation-d2a35b4e7e9e4b1ca09769d0e8ce02f1",
       "title": "Chargeback at full cost allocation",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
@@ -1420,16 +1420,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/consumption-based-pay-per-use-for-internal-services.md",
+    "file": "docs/maturity-model/cost-management/consumption-based-pay-per-use-for-internal-services.md",
     "meta": {
       "id": "d2cb8a5e-3e28-448b-8944-14ff38fad792",
       "url": "https://www.notion.so/Consumption-based-pay-per-use-for-internal-Services-d2cb8a5e3e28448b894414ff38fad792",
       "title": "Consumption based pay-per-use for internal Services",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
@@ -1514,16 +1514,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/cloud-zones.md",
+    "file": "docs/maturity-model/security-and-compliance/cloud-zones.md",
     "meta": {
       "id": "dc16dccf-7530-4179-a8e2-b82cc54b990f",
       "url": "https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f",
       "title": "Cloud Zones",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️",
@@ -1560,16 +1560,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/chargeback-via-consumption-cost-allocation.md",
+    "file": "docs/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md",
     "meta": {
       "id": "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
       "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-e063e4d281f44bb8ac7a7424ba882161",
       "title": "Chargeback via consumption cost allocation",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "redaction-state": "Draft",
       "journey-stage": "⭐️",
@@ -1583,16 +1583,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/compliance/control-access-to-cloud-platforms-and-landing-zones.md",
+    "file": "docs/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md",
     "meta": {
       "id": "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
       "url": "https://www.notion.so/Control-access-to-cloud-platforms-and-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2",
       "title": "Control access to cloud platforms and Landing Zones",
-      "category": "🔖 Compliance",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🔖 Compliance",
+      "pillar": "🔖 Security & Compliance",
       "enables": [],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -1651,16 +1651,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/networking/managed-internet-egress.md",
+    "file": "docs/maturity-model/service-ecosystem/managed-internet-egress.md",
     "meta": {
       "id": "f90c7375-88b9-42dc-8e98-a65c006b927a",
       "url": "https://www.notion.so/Managed-Internet-Egress-f90c737588b942dc8e98a65c006b927a",
       "title": "Managed Internet Egress",
-      "category": "🌍 Networking",
+      "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🌍 Networking",
+      "pillar": "🛠 Service Ecosystem",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
@@ -1673,16 +1673,16 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/chargeback/budget-approval-process.md",
+    "file": "docs/maturity-model/cost-management/budget-approval-process.md",
     "meta": {
       "id": "f96feedc-d969-48f8-adb4-93031cc0a24d",
       "url": "https://www.notion.so/Budget-Approval-Process-f96feedcd96948f8adb493031cc0a24d",
       "title": "Budget Approval Process",
-      "category": "💵 Chargeback",
+      "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "💵 Chargeback",
+      "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],

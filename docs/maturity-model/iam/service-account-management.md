@@ -48,7 +48,7 @@ There are multiple ways to do this:
 
 - Make the security owner of the project responsible for establishing proper use of service accounts
 
-- Make the person creating them accountable for their use. [Centralized audit logs](/maturity-model/compliance/centralized-audit-logs.md) always contain a log finding out who created a Service Account.
+- Make the person creating them accountable for their use. [Centralized audit logs](/maturity-model/security-and-compliance/centralized-audit-logs.md) always contain a log finding out who created a Service Account.
 
 ### Monitor service account usage
 
