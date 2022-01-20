@@ -63,6 +63,7 @@ flowchart BT;
   end
   DevOps["DevOps Team"]
   DevOps --> Tenant & IAM & Services & Compliance & Chargeback
+
 ```
 
 <!-- unsupported block type: embed -->
@@ -123,7 +124,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md) . To provide [On-Premise Network Connection](/maturity-model/networking/on-premise-network-connection.md) , the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway.
+To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md) . To provide [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) , the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway.
 
 Of course, building a cloud foundation is a challenging task. It can involve interesting technical challenges that allow an organization to achieve a high degree of automation that compares favorably to public services. However, achieving full service automation is not required for adopting the cloud foundation as an organizational approach. The key to its success is that it absorbs responsibility for service integration and allows an organization to exercise wholistic and effective cloud governance.
 

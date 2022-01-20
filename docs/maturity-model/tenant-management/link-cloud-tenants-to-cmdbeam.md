@@ -25,7 +25,7 @@ properties:
 
 Organizations can implement this using naming and tagging policies.
 
-A more advanced implementation leverages [Central Management of Tenant tags and metadata](/maturity-model/compliance/central-management-of-tenant-tags-and-metadata.md) 
+A more advanced implementation leverages [Central Management of Tenant tags and metadata](/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md) 
 
 
 
