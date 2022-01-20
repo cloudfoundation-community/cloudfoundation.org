@@ -38,13 +38,18 @@
         </span>
       </nav>
 
-      <div v-if="underConstruction">
-        <b>
+      <div class="custom-container warning" v-if="underConstruction">
+        <p class="custom-container-title">
           🚧 This building block reference page is a draft.
-          If you want to be notified when the building block reference page is finished,
-          click <a href="https://webforms.pipedrive.com/f/2XgSCBA01BJiCqynYN1bKBMAdcQJVto4tNfMapytaWLX2pQD8fPPhin0iAbijt4vp">here</a>.
-          By entering your e-mail in the form, you agree with the meshcloud <a href="https://www.meshcloud.io/privacy-policy/">privacy policy</a>.
-        </b>
+        </p>
+        <p>
+          If you want to be notified when the building block reference page is
+          finished, click
+          <a
+            href="https://webforms.pipedrive.com/f/2XgSCBA01BJiCqynYN1bKBMAdcQJVto4tNfMapytaWLX2pQD8fPPhin0iAbijt4vp"
+            >here</a
+          >.
+        </p>
       </div>
     </template>
 
@@ -60,7 +65,8 @@
                 {{ toolimpl.summary }}
               </p>
               <a class="card-btn" v-bind:href="toolimpl.link" target="_blank"
-                >Learn More <ExternalLinkIcon/></a>
+                >Learn More <ExternalLinkIcon
+              /></a>
             </div>
           </div>
         </li>
