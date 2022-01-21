@@ -1,3 +1,4 @@
+
 <template>
   <div class="call-to-action">
     <slot></slot>
@@ -6,9 +7,11 @@
 
 <style scoped lang="scss">
 div {
-  padding: 20px;
+  padding: 2rem;
   background: var(--c-tip-bg);
   border-radius: 5px;
   margin: 1rem 0;
 }
+
+
 </style>
