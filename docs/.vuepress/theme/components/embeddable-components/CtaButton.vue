@@ -1,5 +1,5 @@
 <template>
-  <a v-bind:href="url" class="btn btn-lg mr-2"> <slot></slot> → </a>
+  <a v-bind:href="url" class="btn mr-2"> <slot></slot> → </a>
 </template>
 
 <script>

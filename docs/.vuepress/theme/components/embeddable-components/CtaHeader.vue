@@ -1,5 +1,5 @@
 <template>
-  <h3>
+  <h3 class="mt-0 mb-3">
     <slot></slot>
   </h3>
 </template>
