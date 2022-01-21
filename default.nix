@@ -1,9 +1,9 @@
 { pkgs ? import <nixpkgs> { } }:
 
 pkgs.mkShell {
-  NIX_SHELL = "meshcloud-docs";
+  NIX_SHELL = "meshcloud-cloudfoundation";
   shellHook = ''
-    echo starting meshcloud docs shell
+    echo starting meshcloud cloudfoundation shell
   '';
 
   buildInputs = [    
