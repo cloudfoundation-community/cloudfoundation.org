@@ -19,12 +19,12 @@ export default {
   margin-right: 12px;
   text-decoration: none !important;
   font-weight: 500;
+  margin-top: 0.75rem;
 
   &.btn-secondary {
     color: #3eaf7c;
     border: 2px solid #3eaf7c;
     background: var(--c-tip-bg);
-    margin-top: 12px; // TODO fix by using bootstrap
 
     &:hover {
       background: rgba(62, 175, 124, 0.1);
