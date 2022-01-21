@@ -32,6 +32,13 @@ There are two different kinds of tags: The ones that are automatically generated
 
 In this building block, we'll focus on the user-defined tags since they enable us to freely enrich our cloud resources with the information we consider relevant.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Make your Cloud Security a Priority</CtaHeader>
+  <CtaText>One central advantage of using the cloud is rapid scalability. <b>Tag early - tag often </b> to keep track of what is going on in your cloud infrastructure while it is constantly growing and changing.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/">Learn more</CtaButton>
+</CallToAction>
+
 ## **Why a tagging strategy is an absolute must-have**
 
 One central advantage of using the cloud is rapid scalability. And with this comes the necessity to keep track of what is going on in your cloud infrastructure while it is constantly growing and changing. That's where tags come in: You will need a consistent set of tags to apply globally across all of your resources following a consistent set of rules. Tagging is the cornerstone to effective cloud governance: Cost allocation, reporting, chargeback and showback, cost optimization, compliance, and security - all these aspects can only be managed with proper tagging in place.

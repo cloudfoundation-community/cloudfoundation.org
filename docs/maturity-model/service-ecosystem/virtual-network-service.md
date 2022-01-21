@@ -39,6 +39,13 @@ A virtual network service creates the virtual network in the cloud tenant. If ne
 
 Given the security implications, networking services must be provided centrally for most Cloud Zones (see [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) ). The virtual network service forms the basis for the networking offering.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
+  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>service Marketplace</b>”</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace"/>Learn more</CtaButton>
+</CallToAction>
+
 ## Proven patterns when implementing virtual network services
 
 ### Align with your [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) 
