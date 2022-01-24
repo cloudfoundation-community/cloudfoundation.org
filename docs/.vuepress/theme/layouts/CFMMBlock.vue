@@ -84,7 +84,7 @@
 
 <script setup lang="ts">
 import { usePageFrontmatter } from "@vuepress/client";
-import { computed } from "vue";
+import { computed, watch } from "vue";
 import { index } from "../../index";
 
 function formatLink(path: string) {
@@ -92,7 +92,7 @@ function formatLink(path: string) {
 }
 
 // todo: all these O(n) searches against the index are bad, we should probably wrap that in a better structure
-// or even better - service
+// or even better - a service/mixin
 function resolvePage(id: string) {
   const page = index.find((x) => x.meta.id === id);
   return {
@@ -131,6 +131,25 @@ const underConstruction = computed(
     frontmatter.value.properties["redaction-state"] === undefined ||
     frontmatter.value.properties["redaction-state"] === "Draft"
 );
+
+import { usePlausible } from "../plugins/plausible/client";
+const plausible = usePlausible();
+
+// track the block view, with the most important properties
+// note: the trackable properties can change, e.g. when routing from one block to the next
+const trackableProperties = computed(() => ({
+  id: frontmatter.value.id,
+  title: frontmatter.value.title,
+  pillar: frontmatter.value.properties.pillar,
+  journeyStage: frontmatter.value.properties["journey-stage"],
+  scope: frontmatter.value.properties.scope,
+  redactionState: frontmatter.value.properties["redaction-state"]
+}));
+
+watch(trackableProperties, (props) => {
+  console.log(props);
+  plausible.value.trackEvent("block-view", { props });
+});
 </script>
 
 <script lang="ts">
