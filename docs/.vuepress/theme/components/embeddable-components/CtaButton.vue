@@ -1,5 +1,5 @@
 <template>
-  <a v-bind:href="urlWithTags" v-on:click="onClick" class="btn mr-2">
+  <a v-bind:href="urlWithTags" v-on:click="onClick" class="btn mr-2 mb-1">
     <slot></slot> →
   </a>
 </template>
