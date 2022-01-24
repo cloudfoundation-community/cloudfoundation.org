@@ -147,7 +147,6 @@ const trackableProperties = computed(() => ({
 }));
 
 watch(trackableProperties, (props) => {
-  console.log(props);
   plausible.value.trackEvent("block-view", { props });
 });
 </script>
