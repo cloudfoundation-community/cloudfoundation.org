@@ -1,12 +1,14 @@
 import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
+import type { DefaultThemeOptions } from "vuepress-vite";
 
-import { path } from "@vuepress/utils";
+import { path, debug } from "@vuepress/utils";
+import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
 
 import { makeSidebarEntries } from "./nav";
 import vuePressPluginMermaid from "./theme/plugins/mermaid/index";
 
-import type { DefaultThemeOptions } from "vuepress-vite";
-import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
+const log = debug("cloudfoundation:config");
+
 const sidebar: SidebarConfig = {};
 const navbar: NavbarConfig = [];
 
@@ -21,8 +23,8 @@ dirs.forEach((dir) => {
   navbar.push({ text, link });
 });
 
-console.log("The generated sidebar will look like the following: ");
-console.log(JSON.stringify(sidebar, null, 2));
+log("The generated sidebar will look like the following: ");
+log(JSON.stringify(sidebar, null, 2));
 
 const headConfig = [];
 if (process.env.VUEPRESS_ENV === "production") {
@@ -69,7 +71,5 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       },
     ],
   ],
-  bundlerConfig: {
-    
-  }
+  bundlerConfig: {},
 });

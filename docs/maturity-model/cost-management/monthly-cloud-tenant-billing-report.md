@@ -35,8 +35,8 @@ All organizations that are successfully using the cloud share a cloud-native min
 <CallToAction>
   <CtaHeader>Next Level Cloud Cost Management</CtaHeader>
   <CtaText>Track costs and split bills no matter the complexity of large multi-cloud architectures.</CtaText>
-  <CtaButton class="btn-primary" url=https://www.meshcloud.io/finops/>Free Whitepaper</CtaButton>
-  <CtaButton class="btn-secondary" url=https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/>Learn more</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/finops/">Free Whitepaper</CtaButton>
+  <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Learn more</CtaButton>
 </CallToAction>
 
 
