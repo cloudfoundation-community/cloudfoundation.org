@@ -5,7 +5,8 @@ import { path, debug } from "@vuepress/utils";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
 
 import { makeSidebarEntries } from "./nav";
-import vuePressPluginMermaid from "./theme/plugins/mermaid/index";
+import pluginMermaid from "./theme/plugins/mermaid";
+import pluginPlausible from "./theme/plugins/plausible";
 
 const log = debug("cloudfoundation:config");
 
@@ -26,25 +27,11 @@ dirs.forEach((dir) => {
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
 
-const headConfig = [];
-if (process.env.VUEPRESS_ENV === "production") {
-  // The netlify.toml file will take care of setting the production value for production builds.
-  headConfig.push([
-    "script",
-    {
-      src: "/js/script.js",
-      defer: "",
-      "data-domain": "cloudfoundation.meshcloud.io",
-    },
-  ]);
-}
-
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
   title: "Cloud Foundation",
   description: "A solid foundation for your Cloud Journey",
   theme: path.resolve(__dirname, "./theme"),
-  head: headConfig,
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
     sidebar: sidebar,
@@ -52,11 +39,26 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     editLink: false,
     editLinkPattern: ":path",
     // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
-    // We might be able to flip the switch back on in the future if we figure out how to handle images.
+    // We might be able to flip the switch back on in the future iPf we figure out how to handle images.
     darkMode: false,
   },
   plugins: [
-    vuePressPluginMermaid,
+    pluginMermaid,
+    [
+      pluginPlausible,
+      {
+        enableAutoPageviews: true,
+        enableAutoOutboundTracking: true, // may have issue, see
+        trackerOptions: {
+          // note: when the domain is localhost, plausible automatically ignores sending events
+          apiHost: "/",
+          domain:
+            process.env.CONTEXT !== "production" // see https://docs.netlify.com/configure-builds/environment-variables/#build-metadat
+              ? "cloudfoundation.meshcloud.io"
+              : "preview.cloudfoundation.meshcloud.io",
+        },
+      },
+    ],
     ["@vuepress/plugin-search"],
     [
       // This allows us to use custom components in our markdown files.
