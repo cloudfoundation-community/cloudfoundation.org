@@ -53,9 +53,9 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
           // note: when the domain is localhost, plausible automatically ignores sending events
           apiHost: "https://cloudfoundation.meshcloud.io",
           domain:
-            process.env.CONTEXT !== "production" // see https://docs.netlify.com/configure-builds/environment-variables/#build-metadat
-              ? "cloudfoundation.meshcloud.io"
-              : "preview.cloudfoundation.meshcloud.io",
+            process.env.CONTEXT === "production" // see https://docs.netlify.com/configure-builds/environment-variables/#build-metadat
+            ? "cloudfoundation.meshcloud.io"
+            : "preview.cloudfoundation.meshcloud.io",
         },
       },
     ],
