@@ -31,6 +31,13 @@ An Identity and Access Management Concept is a document that describes your Iden
 
 An important distinction is IAM for humans vs. IAM for workload. Making this distinction in the Identity and Access Management Concept allows the discussion of one topic at a time.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Easy Management of Roles, Users and Permissions</CtaHeader>
+  <CtaText>Managing Identities is at the core of managing trust in the cloud. Doing so requires an airtight concept - especially for the growing complexity of multi-cloud environments.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/19/the-cloud-identity-and-access-management-guide-for-2021/"></CtaButton>
+</CallToAction>
+
 ## What an Identity and Access Management Concept has to cover
 
 #### Core questions

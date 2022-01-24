@@ -45,6 +45,13 @@ Already a small number of optional modules can lead to a large number of combina
 
 Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps team while keeping redundancy low and complexity manageable.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Secure your Cloud Accounts across all Clouds</CtaHeader>
+  <CtaText>Having large numbers of accounts with multiple cloud providers requires an airtight management solution: The creation, administration, security configuration and deprovisioning has to be easy and transparent.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/06/08/cloud-landing-zone-lifecycle-explained/">Learn more</CtaButton>
+</CallToAction>
+
 ## Proven patterns for building Modular Landing Zones
 
 ### Split up existing Monolithic Landing Zones

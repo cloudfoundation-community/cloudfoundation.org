@@ -34,6 +34,14 @@ Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone 
 
 See **How to manage access to landing zones**
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Learn More on Automated Access Control</CtaHeader>
+  <CtaText>Understand how organizations leverage Cloud Zones in practice or how to pave your path to a winning multi-cloud tagging strategy.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/use-case-cloud-zones/">Use Case Cloud Zones</CtaButton>
+  <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/">Tell me how to tag</CtaButton>
+</CallToAction>
+
 
 
 The Cloud Foundation team wants to enable their customers and provide them cloud tenants according to their requirements without neglecting compliance and security. It is therefore appropriate to define landing zones depending on clusters of similar use cases (or similar requirements) or based on governance, compliance and risk to reduce the implementation effort - the benefits of re-usable artifacts.
@@ -88,14 +96,6 @@ The following challenges need to be tackled to start with the metadata based acc
 - What controls or tools are offered by the cloud provider to enforce policies, apply templates, landing zones or similar for the cloud resources provisioning?
 
 - How can the metadata be synchronised across multiple cloud platforms and cloud resources?
-
-<!--notion-markdown-cms:raw-->
-<CallToAction>
-  <CtaHeader>Learn More on Automated Access Control</CtaHeader>
-  <CtaText>Understand how organizations leverage Cloud Zones in practice or how to pave your path to a winning multi-cloud tagging strategy.</CtaText>
-  <CtaButton url=https://www.meshcloud.io/use-case-cloud-zones/>Use Case Cloud Zones</CtaButton>
-  <CtaButton class="btn-secondary" url=https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/>Tell me how to tag</CtaButton>
-</CallToAction>
 
 ## Azure
 

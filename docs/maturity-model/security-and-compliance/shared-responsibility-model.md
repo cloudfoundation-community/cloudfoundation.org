@@ -36,7 +36,7 @@ The minimum participants in an shared responsibility model are the cloud provide
 <CallToAction>
   <CtaHeader>Structure your clouds</CtaHeader>
   <CtaText>Check out meshcloud’s white paper “<b>Best Practices of Modeling your Organizational Structure in the Cloud</b>” as an introduction to organizational design in the cloud.</CtaText>
-  <CtaButton url=https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/>Tell me about structuring my clouds</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/">Tell me about structuring my clouds</CtaButton>
 </CallToAction>
 
 The shared responsibility model by cloud providers like AWS, Azure or GCP - only shows the model from the external perspective. In general the models describe the responsibility of the Cloud Provider and the consumer party (you). In short the model defines a responsibility border based on the service offering:

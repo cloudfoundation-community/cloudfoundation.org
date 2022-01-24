@@ -44,6 +44,14 @@ Popular choices of CI/CD platforms for accelerating cloud-native development:
 
 - Jenkins
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
+  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>service Marketplace</b>”</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/wp-content/uploads/2021/05/Factsheetservicemarketplace_final.pdf">Download Free Factsheet</CtaButton>
+  <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
+</CallToAction>
+
 ## Why use a Managed CI/CD Platform?
 
 Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. A managed CI/CD platform allows DevOps teams to focus on core activities (software development and operations) instead of infrastructure.
