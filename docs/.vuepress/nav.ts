@@ -1,7 +1,10 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from "fs";
+import * as path from "path";
 
-import { index } from './index';
+import { index } from "./index";
+import { inferPagePath, SiteLocaleConfig } from "vuepress";
+import { RenderedDatabaseEntry } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabaseEntry";
+import { RenderedDatabasePage } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabasePage"; // todo: nmdcms should export them instead of us importing them from private modules
 
 /**
  * DESIGN:
@@ -23,21 +26,21 @@ export function getChildDirectories(path: string) {
 export function getChildFiles(path: string) {
   return fs
     .readdirSync(path, { withFileTypes: true })
-    .filter((x) =>
-      x.isFile() && !x.name.startsWith(".") && x.name.endsWith(".md")
+    .filter(
+      (x) => x.isFile() && !x.name.startsWith(".") && x.name.endsWith(".md")
     )
     .map((x) => x.name);
 }
 
 export function makeSidebarEntries(dir: string) {
   const children = getChildDirectories(dir).map(
-    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0], // ugly hack because we wrap into an array at the end...
+    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0] // ugly hack because we wrap into an array at the end...
   );
 
   // try to find original, "unslugged" category name, otherwise use the slugified category name
   const category = pathToCategory(dir);
   const indexItem = index.find(
-    (x) => x.file && path.dirname(x.file) === dir && x.meta.category,
+    (x) => x.file && path.dirname(x.file) === dir && x.meta.category
   );
   if (!indexItem) {
     console.warn(
@@ -45,7 +48,7 @@ export function makeSidebarEntries(dir: string) {
         category +
         " in dir: " +
         dir +
-        ". Using category slug name instead",
+        ". Using category slug name instead"
     );
   }
   const categoryName = indexItem?.meta.category || category;
@@ -61,15 +64,26 @@ export function makeSidebarEntries(dir: string) {
 }
 
 function sortedSidebar(dir: string) {
-  return getChildFiles(dir)
-    .map((x) => dir + "/" + x) // to full path, including the "docs/" prefix
-    .sort((x, y) => {
-      const ix = index.find((i) => i.file === x);
-      const iy = index.find((i) => i.file === y);
+  // stub a faked locale config, this is harcoded and only works because the size is not localized
+  const locales: SiteLocaleConfig = {};
+  const app: any = { siteData: { locales } };
 
-      return ix?.meta.order - iy?.meta.order;
+  return getChildFiles(dir)
+    .map((x) => {
+      const fullPath = dir + "/" + x; // to full path, including the "docs/" prefix
+      return {
+        fullPath,
+        indexEntry: index.find((i) => i.file === fullPath),
+      };
     })
-    .map((x) => stripDocs(x)) // strip the "docs" prefix
+    .sort((x, y) => {
+      return x.indexEntry.meta.order - y.indexEntry.meta.order;
+    })
+    .map((x) => ({
+      text: formatTitle(x.indexEntry),
+      link: inferPagePath({ app, filePathRelative: stripDocs(x.fullPath) })
+        .pathInferred,
+    }));
 }
 
 function stripDocs(path: string) {
@@ -80,4 +94,21 @@ function pathToCategory(dir: string): string {
   const result = path.basename(dir); // by convention, the category name is reflected in the directory hierarchy
 
   return result;
+}
+
+function formatTitle(
+  indexEntry: RenderedDatabasePage | RenderedDatabaseEntry
+): any {
+  // this may not be the cleanest way to detect this, with all the hardcoding going on
+  // however it works and we won't need this forever
+  const isBlock = indexEntry.meta["layout"] === "CFMMBlock";
+  if (isBlock) {
+    const rs = indexEntry.properties["redaction-state"];
+    const isDraft = !rs || rs === "Draft";
+    const icon = isDraft ? "🚧" : "📗";
+
+    return icon + " " + indexEntry.meta["title"];
+  }
+
+  return indexEntry.meta["title"];
 }

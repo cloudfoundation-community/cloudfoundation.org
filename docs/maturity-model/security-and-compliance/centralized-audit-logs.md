@@ -26,6 +26,15 @@ The audit logs we need to store here cover interactions with the cloud API. A co
 
 Centralized audit logs make an analysis of logs easier for auditors. Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements.
 
+
+
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Make your Cloud Security a Priority</CtaHeader>
+  <CtaText>Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Learn more</CtaButton>
+</CallToAction>
+
 ## Proven patterns when implementing centralized audit logs
 
 ### Store and retain first, worry about analytics later

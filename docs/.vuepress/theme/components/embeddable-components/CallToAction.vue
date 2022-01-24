@@ -1,14 +1,15 @@
+
 <template>
-  <div class="call-to-action">
+  <div class="call-to-action p-4">
     <slot></slot>
   </div>
 </template>
 
 <style scoped lang="scss">
 div {
-  padding: 20px;
   background: var(--c-tip-bg);
-  border-radius: 5px;
-  margin: 1rem 0;
+  border-radius: .5rem;
 }
+
+
 </style>

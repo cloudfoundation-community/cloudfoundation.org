@@ -1,17 +1,86 @@
-@import './palette.scss';
-// Bootstrap imports
-// We import the core files first and then we import any specific parts of bootstrap that we want.
+
+@use "sass:map";
+
+// Bootstrap is a great help but some of its core CSS conflicts with the default Vuepress CSS.
+// So we align bootstrap and vuepress vars here
+
+// We import the core files in palette so that in turn vuepress can override some of the styles defined by them
+// See https://getbootstrap.com/docs/4.6/getting-started/theming/#importing for import ordering of bootstrap
 @import "node_modules/bootstrap/scss/functions";
+
+$primary: #3eaf7c;
+$info: #42b983;
+$warning: #e7c000;
+$danger: #cc0000;
+
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import 'node_modules/bootstrap/scss/root';
-@import 'node_modules/bootstrap/scss/reboot';
-// Here goes the exact bootstrap functionality that we want.
+
+// do not import bootstrap reboot, vuepress already uses its own normlize
+// however, bootstrap only works with this border box mode
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
 @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/buttons';
 
-// override transition classes from default theme to make them snappier
+// vuepress theme uses css variables
+// define them in terms of bootstrap scss variables
+:root {
+  // brand colors
+  --c-brand: #{$primary};
+  --c-brand-light: #4abf8a;
+
+  // background colors
+  --c-bg: #ffffff;
+  --c-bg-light: #f3f4f5;
+  --c-bg-lighter: #eeeeee;
+  --c-bg-navbar: var(--c-bg);
+  --c-bg-sidebar: var(--c-bg);
+  --c-bg-arrow: #cccccc;
+
+  // text colors
+  --c-text: #2c3e50;
+  --c-text-accent: var(--c-brand);
+  --c-text-light: #3a5169;
+  --c-text-lighter: #4e6e8e;
+  --c-text-lightest: #6a8bad;
+  --c-text-quote: #999999;
+
+  // border colors
+  --c-border: #eaecef;
+  --c-border-dark: #dfe2e5;
+
+  // custom container colors
+  --c-tip: #{$info};
+  --c-tip-bg: var(--c-bg-light);
+  --c-tip-title: var(--c-text);
+  --c-tip-text: var(--c-text);
+  --c-tip-text-accent: var(--c-text-accent);
+  --c-warning: #{$warning};
+  --c-warning-bg: #fffae3;
+  --c-warning-title: #ad9000;
+  --c-warning-text: #746000;
+  --c-warning-text-accent: var(--c-text);
+  --c-danger: #{$danger};
+  --c-danger-bg: #ffe0e0;
+  --c-danger-title: #990000;
+  --c-danger-text: #660000;
+  --c-danger-text-accent: var(--c-text);
+  --c-details-bg: #eeeeee;
+
+  --font-family: #{$font-family-base};
+  
+  --content-width: 860px;
+  
+  
+}
+
+// override transition classes from vuepress default-theme to make them snappier
 .fade-slide-y-enter-active {
   transition-duration: 0.1s;
 }
@@ -20,43 +89,8 @@
   transition-duration: 0.1s;
 }
 
-.action-button {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: #fff;
-  background-color: #3eaf7c;
-  padding: 0.8rem 1.6rem;
-  border-radius: 4px;
-  transition: background-color .1s ease;
-  box-sizing: border-box;
-  border-bottom: 1px solid #389d70;
-
-  &:hover {
-    background-color: #4abf8a;
-    color: white;
-    cursor: pointer;
-  }
-}
-
-
-// Bootstrap is a great help but some of its core CSS conflicts with our own Vuepress CSS. Use this section
-// to cancel out certain CSS from Bootstrap.
-a, a:hover {
-  color: var(--c-text-accent);
-}
-
-p {
-  margin-top: 1em;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-blockquote {
-  margin: 1rem 0;
-}
-
-.btn-primary {
-  border: none;
+a.btn:hover {
+  // the vuepress theme likes to use text-decoration on links, which makes sense for e.g. references to other pages
+  //  but not here for bootstrap buttons so we reset this
+ text-decoration: none !important;
 }

@@ -30,7 +30,14 @@ A sandbox environment is a special type of cloud tenant . It is fully isolated f
 
 A sandbox environment is a powerful tool for enabling DevOps teams to learn more about the cloud in a secure and isolated environment. It gives developers the freedom that they need to learn and experiment with the large variety of cloud services that are offered nowadays. A sandbox environment is a superior alternative to providing developers access to existing cloud tenants where other projects might be already worked on. Sandbox environments will accelerate the cloud expertise in your organization with the least risk associated.
 
-## Best Practices of sandbox environments
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Manage all Accounts - across all Clouds</CtaHeader>
+  <CtaText>Having large numbers of accounts with multiple cloud providers requires an airtight management solution: The creation, administration, security configuration and deprovisioning has to be easy and transparent.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn more</CtaButton>
+</CallToAction>
+
+Best Practices of sandbox environments
 
 The following best practices minimize the risks of newly provisioned sandbox environments in your cloud foundation team:
 

@@ -32,6 +32,13 @@ Careful Service Account Management is especially relevant for cloud platforms wh
 
 The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md) .
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Enable Self-Service and Control Access Permissions</CtaHeader>
+  <CtaText>Service Account Management for central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/"></CtaButton>
+</CallToAction>
+
 ## Proven patterns for Service Account Management
 
 ### Self-Service is King

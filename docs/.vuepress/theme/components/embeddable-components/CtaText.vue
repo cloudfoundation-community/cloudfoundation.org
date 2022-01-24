@@ -1,14 +1,8 @@
 <template>
-  <span>
+  <p class="mb-3">
     <slot></slot>
-  </span>
+  </p>
 </template>
 
 <style scoped lang="scss">
-
-span {
-  display: block;
-  margin-bottom: 10px;
-}
-
 </style>
