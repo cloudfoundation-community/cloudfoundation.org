@@ -48,7 +48,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       pluginPlausible,
       {
         enableAutoPageviews: true,
-        enableAutoOutboundTracking: true, // may have issue, see
+        enableAutoOutboundTracking: false, // may have issue, see https://github.com/plausible/plausible-tracker/issues/12 We use custom tracking via CtaButton component instead, so this is less relevant for us.
         trackerOptions: {
           // note: when the domain is localhost, plausible automatically ignores sending events
           apiHost: "/",
