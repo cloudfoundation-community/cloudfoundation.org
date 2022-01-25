@@ -19,7 +19,7 @@ The following sections are going to look at different strategies for building an
 
 ## Stage by Stage
 
-> 📌 Build cloud capabilities across all pillars evenly, progressing from essential to more advanced capabilities.
+> **📌**" Build cloud capabilities across all pillars evenly, progressing from essential to more advanced capabilities.
 
 Cloud Foundation teams that have strong stakeholder alignment for all functional pillars, can implement capability building bocks evenly across all pillars.
 
@@ -68,7 +68,7 @@ Our cloud foundation team experts agree on a schema for budget metadata and add 
 
 ## Pillar by Pillar
 
-> 📌 Build cloud capabilities in each pillar in isolation with little coordination about interdependencies.
+> **📌**" Build cloud capabilities in each pillar in isolation with little coordination about interdependencies.
 
 Organizations that lack stakeholder alignment for all functional pillars, or only have alignment for a subset of pillars, can resolve to building capabilities in pillars individually. This is a common mode of operation in many organizations that are just starting out their cloud journey and have not recognized the need for a Cloud Foundation team yet.
 
@@ -125,7 +125,7 @@ During the next quarterly review the colleagues from finance and controlling sta
 
 ## Platform by Platform
 
-> 📌 Build cloud capabilities individually and independently for each cloud platform. Organizations can combine this approach with a Pillar by Pillar or Stage by Stage implementation approach.
+> **📌**" Build cloud capabilities individually and independently for each cloud platform. Organizations can combine this approach with a Pillar by Pillar or Stage by Stage implementation approach.
 
 When organizations adopt multi-cloud strategies, they typically do not start working with all available public cloud providers and private cloud platform technologies from day one. It's very common to see organizations adoption one or two hyperscalers, and then spacing out adoption of other platforms to later stages of their cloud journey. This creates the challenge for organizations that they have to provide the same cloud governance capabilities for each new platform that they seek to adopt.
 

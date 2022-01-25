@@ -1,4 +1,3 @@
-
 @use "sass:map";
 
 // Bootstrap is a great help but some of its core CSS conflicts with the default Vuepress CSS.
@@ -15,10 +14,10 @@ $danger: #cc0000;
 
 // make button padding slightly larger - we don't want "app" buttons that are geared towards
 // interactivity but want buttons to stand out
-$btn-padding-y:         .5rem !default;
-$btn-padding-x:         1rem !default;
-$btn-padding-y-lg:      .75rem !default;
-$btn-padding-x-lg:      1.5rem !default;
+$btn-padding-y: 0.5rem !default;
+$btn-padding-x: 1rem !default;
+$btn-padding-y-lg: 0.75rem !default;
+$btn-padding-x-lg: 1.5rem !default;
 
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -31,9 +30,9 @@ $btn-padding-x-lg:      1.5rem !default;
   box-sizing: border-box; // 1
 }
 
-@import 'node_modules/bootstrap/scss/grid';
-@import 'node_modules/bootstrap/scss/utilities';
-@import 'node_modules/bootstrap/scss/buttons';
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/buttons";
 
 // vuepress theme uses css variables
 // define them in terms of bootstrap scss variables
@@ -81,10 +80,8 @@ $btn-padding-x-lg:      1.5rem !default;
   --c-details-bg: #eeeeee;
 
   --font-family: #{$font-family-base};
-  
+
   --content-width: 860px;
-  
-  
 }
 
 // override transition classes from vuepress default-theme to make them snappier
@@ -98,6 +95,21 @@ $btn-padding-x-lg:      1.5rem !default;
 
 a.btn:hover {
   // the vuepress theme likes to use text-decoration on links, which makes sense for e.g. references to other pages
-  //  but not here for bootstrap buttons so we reset this
- text-decoration: none !important;
+  //  but not here for bootstrap buttons so we reset this for bootstrap buttons
+  text-decoration: none !important;
+}
+
+// style block-quotes
+blockquote {
+  background: var(--c-tip-bg);
+  color: var(--c-tip-text);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem; // more padding on the left
+  border-left: none;
+  strong:first-child {
+    // this is the callout emoji, float it to the left via negative margin
+    // markdown sync generates the emoji as **{emoji}** markddown by convention
+    margin-left: -1.5rem;
+    float: left;
+  }
 }

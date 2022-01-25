@@ -14,7 +14,7 @@ properties:
 
 ## What is the Cloud Foundation Maturity Model
 
-> 💡 The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customers needs.
+> **💡**" The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customers needs.
 
 The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey.
 

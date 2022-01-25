@@ -36,7 +36,7 @@ The approach to Service Account Management needs to be documented in [Identity a
 <CallToAction>
   <CtaHeader>Enable Self-Service and Control Access Permissions</CtaHeader>
   <CtaText>Service Account Management for central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.</CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/"></CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
 </CallToAction>
 
 ## Proven patterns for Service Account Management

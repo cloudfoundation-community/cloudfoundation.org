@@ -3,8 +3,7 @@ import { promises as fs } from 'fs';
 import * as path from 'path';
 import * as rimraf from 'rimraf';
 
-import { sync, SyncConfig } from '@meshcloud/notion-markdown-cms';
-import { RenderedDatabasePage } from '@meshcloud/notion-markdown-cms/dist/RenderedDatabasePage';
+import { RenderedDatabasePage, sync, SyncConfig } from '@meshcloud/notion-markdown-cms';
 
 dotenv();
 

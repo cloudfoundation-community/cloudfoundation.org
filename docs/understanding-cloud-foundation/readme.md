@@ -22,7 +22,7 @@ Most organisations today manage their IT as a portfolio of "IT Services". An IT 
 
 With IT services as the established management paradigm in mind, most organizations trying to move to the cloud instinctively reach towards IT services for providing the required organizational capabilities to procure, manage and charge back cloud services (cloud governance). As the following section will demonstrate, this corrupts the advantages that cloud computing has to offer. Whereas cloud computing emphasises customer self-service, consistent API-driven automation and pay-per use, most IT services build on semi-manual processes, with inconsistent  provisioning workflow and charge back back to a shared cost pool.
 
-> 💡 To take full advantage of cloud computing, organisations need to adopt a cloud-native organizational approach for providing capabilities to provision, manage and charge back cloud services.
+> **💡**" To take full advantage of cloud computing, organisations need to adopt a cloud-native organizational approach for providing capabilities to provision, manage and charge back cloud services.
 
 ## Functional Pillars of Cloud Governance
 
@@ -128,7 +128,7 @@ To achieve integration between the different pillars, the Cloud Foundation team 
 
 Of course, building a cloud foundation is a challenging task. It can involve interesting technical challenges that allow an organization to achieve a high degree of automation that compares favorably to public services. However, achieving full service automation is not required for adopting the cloud foundation as an organizational approach. The key to its success is that it absorbs responsibility for service integration and allows an organization to exercise wholistic and effective cloud governance.
 
-> 💡 Most organizations find  the most difficult challenge in building a cloud foundation is the required interdisciplinary collaboration and alignment of different stakeholders.
+> **💡**" Most organizations find  the most difficult challenge in building a cloud foundation is the required interdisciplinary collaboration and alignment of different stakeholders.
 
 ## Summary
 

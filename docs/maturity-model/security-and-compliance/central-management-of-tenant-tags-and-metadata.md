@@ -29,7 +29,7 @@ Storing relevant metadata is essential when it comes to establishing a comprehen
 
 Metadata on cloud resources are called differently depending on the cloud provider. It may be more known as tags, labels, key-value-pair etc.
 
-> ℹ️ In Azure and AWS its called Tags while in GCP its called labels.
+> **ℹ️**" In Azure and AWS its called Tags while in GCP its called labels.
 
 
 
@@ -76,7 +76,7 @@ The following challenges needs to be tackled to ensure a central management of t
 
 
 
-> ✅ Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
+> **✅**" Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
 
-> ✅ Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.  [https://collie-cli.io/](https://collie-cli.io/)
+> **✅**" Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.  [https://collie-cli.io/](https://collie-cli.io/)
 
