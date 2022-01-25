@@ -51,7 +51,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         enableAutoOutboundTracking: false, // may have issue, see https://github.com/plausible/plausible-tracker/issues/12 We use custom tracking via CtaButton component instead, so this is less relevant for us.
         trackerOptions: {
           // note: when the domain is localhost, plausible automatically ignores sending events
-          apiHost: "https://cloudfoundation.meshcloud.io",
+          apiHost: "",
           domain:
             process.env.CONTEXT === "production" // see https://docs.netlify.com/configure-builds/environment-variables/#build-metadat
             ? "cloudfoundation.meshcloud.io"
