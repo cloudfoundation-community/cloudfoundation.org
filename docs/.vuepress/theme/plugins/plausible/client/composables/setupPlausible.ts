@@ -1,9 +1,9 @@
-import { computed, provide } from "vue";
+import Plausible, { EventOptions, PlausibleOptions } from 'plausible-tracker';
+import { computed, provide } from 'vue';
+
+import { PlausiblePluginOptions } from '../../shared';
+
 import type { ComputedRef, InjectionKey } from "vue";
-import Plausible, { EventOptions, PlausibleOptions } from "plausible-tracker";
-
-import { PlausiblePluginOptions } from "../../shared";
-
 declare const __PLAUSIBLE_OPTIONS__: PlausiblePluginOptions;
 const options = __PLAUSIBLE_OPTIONS__;
 
@@ -21,8 +21,12 @@ export const setupPlausible = (): void => {
 function resolvePlausible(): PlausibleTracker {
   const p = Plausible(options.trackerOptions);
 
-  options.enableAutoPageviews && p.enableAutoPageviews();
-  options.enableAutoOutboundTracking && p.enableAutoOutboundTracking();
+  if (!__VUEPRESS_SSR__) {
+    // plausible uses quite a few DOM API, so we can't use it in a node env
+    options.enableAutoPageviews && p.enableAutoPageviews();
+    options.enableAutoOutboundTracking && p.enableAutoOutboundTracking();
+  }
+
 
   return p;
 }
