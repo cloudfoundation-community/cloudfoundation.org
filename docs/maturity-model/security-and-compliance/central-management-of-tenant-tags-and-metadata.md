@@ -29,7 +29,7 @@ Storing relevant metadata is essential when it comes to establishing a comprehen
 
 Metadata on cloud resources are called differently depending on the cloud provider. It may be more known as tags, labels, key-value-pair etc.
 
-> **ℹ️**" In Azure and AWS its called Tags while in GCP its called labels.
+> **ℹ️** In Azure and AWS its called Tags while in GCP its called labels.
 
 
 
@@ -46,21 +46,15 @@ Keeping the metadata close on the cloud account and on resources enables the clo
 
 The most common metadata manage on cloud accounts and resources are listed below:
 
-<!-- unsupported block type: table -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
-
-<!-- unsupported block type: table_row -->
+<!-- included database 0843a682-c1c3-4fc0-936b-cc080684a3c2 -->
+| Metadata Name                   | Description                                                                                                                                                                                                                                                                            | Possible values                                                           |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Contact Person                  | Email address or other information to get information about the responsible contact person for the cloud resource or cloud account.<br>Usually used for Security contact, Operations contact, Account owner etc.                                                                       | example@comodo.com                                                        |
+| Mailbox                         | Using a group email postbox instead of using a dedicated persons email address. This is in most scenarios more appropriate and has the benefit of protecting PII while ensuring that multiple recipients.<br>Usually used for Security contact, Operations contact, Account owner etc. | project-postbox@comodo.com                                                |
+| Integration and Automation tags | Metadata to enable automation or integrations. Cloud providers provides tools to apply templates, policies or similar depending on metadata.                                                                                                                                           | SoC, security requirement (high, mid, low) etc.                           |
+| Cost Center                     | Cost Center, Budget ID, internal recipient number for internal cost controlling and billing.                                                                                                                                                                                           | Any type of text or number depending on the enterprise cost center schema |
+| Data Classification             | Metadata describing the data classification of the information processed by the cloud resource or cloud account.                                                                                                                                                                       | internal, confidential, top secret, business secret                       |
+| Environment / Stage             | Metadata regarding the stage for which the cloud resource or cloud account is used.                                                                                                                                                                                                    | dev, test, qa, prod, ressource, data                                      |
 
 ## Challenges
 
@@ -76,7 +70,6 @@ The following challenges needs to be tackled to ensure a central management of t
 
 
 
-> **✅**" Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
+> **✅** Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
 
-> **✅**" Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.  [https://collie-cli.io/](https://collie-cli.io/)
-
+> **✅** Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.  [https://collie-cli.io/](https://collie-cli.io/)

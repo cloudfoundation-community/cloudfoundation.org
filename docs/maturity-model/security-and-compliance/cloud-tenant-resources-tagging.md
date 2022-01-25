@@ -68,5 +68,5 @@ Consistency in the usage and naming of tags becomes even more important when wor
 
 
 
-> **✅**" Get instant status reports on your cloud tags. The open source tool Collie-CLI will provide you a quick overview on your tags across all cloud providers. [https://github.com/meshcloud/collie-cli](https://github.com/meshcloud/collie-cli)
+> **✅** Get instant status reports on your cloud tags. The open source tool Collie-CLI will provide you a quick overview on your tags across all cloud providers. [https://github.com/meshcloud/collie-cli](https://github.com/meshcloud/collie-cli)
 

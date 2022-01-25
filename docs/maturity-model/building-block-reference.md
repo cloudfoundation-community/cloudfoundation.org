@@ -15,7 +15,7 @@ properties:
 
 ## Definition
 
-> **💡**" Building Blocks are the **capabilities** that a Cloud Foundation can provide.
+> **💡** Building Blocks are the **capabilities** that a Cloud Foundation can provide.
 
 Not all building blocks might be necessary for a cloud foundation that satisfies an organization's requirements. This needs to be answered according to the organization's unique requirements. We advocate an agile and iterative approach.
 
@@ -29,7 +29,7 @@ These four properties are described below.
 
 ### Journey Stage
 
-> **💡**" Each Building Block has a Journey Stage. The Journey Stage is a **subjective measure of how advanced a capability is for the majority of Cloud Foundations.** It gives an indication at which stage of an organization’s cloud journey the capability becomes relevant.
+> **💡** Each Building Block has a Journey Stage. The Journey Stage is a **subjective measure of how advanced a capability is for the majority of Cloud Foundations.** It gives an indication at which stage of an organization’s cloud journey the capability becomes relevant.
 
 As the individual needs of organizations vary, it's not productive to recommend a strictly ordered implementation sequence. However, Cloud Foundation teams will often find that implementing capabilities in a certain order reduces complexity and enables achieving a desired level of capabilities more easily. The journey stage in the Cloud Foundation Maturity model is therefore a guideline when teams should consider implementing a certain capability.
 
@@ -47,7 +47,7 @@ It's not uncommon to find cloud journeys generating demand for capabilities in d
 
 ### Pillar
 
-> **💡**" Pillars group **related organizational capabilities** . You can think of them as functional pillars of your cloud foundation.
+> **💡** Pillars group **related organizational capabilities** . You can think of them as functional pillars of your cloud foundation.
 
 Cloud Foundation teams needs to cover many different organizational aspects of cloud adoption and consumption. Pillars group related capabilities that are typically interfacing with different stakeholders inside an organizations.
 
@@ -65,7 +65,7 @@ Cloud Foundation teams needs to cover many different organizational aspects of c
 
 ### Scope
 
-> **💡**" The Scope describes at which "layer" of a cloud foundation the building block needs to be implemented.
+> **💡** The Scope describes at which "layer" of a cloud foundation the building block needs to be implemented.
 
 Many cloud foundation teams share the experience that the technical implementation of capabilities, is the smaller of their challenges. Creating organizational alignment about the exact requirements for a capability design and its effective implementation into the organizations existing processes is the more difficult part. In addition to Pillars, we therefore group capabilities into Scopes, indicating at which level a capability needs to be coordinated.
 
@@ -79,7 +79,7 @@ Together with "Pillar" cloud foundation teams can determine the stakeholders tha
 
 ### Implementation Maturity
 
-> **💡**" Each building block can be implemented in different levels of automation.
+> **💡** Each building block can be implemented in different levels of automation.
 
 - **Manual** : Operator executes operations by hand.
 

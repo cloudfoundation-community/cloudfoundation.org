@@ -14,7 +14,7 @@ properties:
 
 ## What is the Cloud Foundation Maturity Model
 
-> **💡**" The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customers needs.
+> **💡** The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customers needs.
 
 The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey.
 
@@ -28,7 +28,7 @@ In the Cloud Foundation Maturity Model capabilities are called building blocks. 
 <CallToAction>
   <CtaHeader>Get started with the model</CtaHeader>
   <CtaText></CtaText>
-  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/maturity-model/networking/virtual-network-service.html">Show me an example block</CtaButton>
-  <CtaButton class="btn-secondary" url=https://cloudfoundation.meshcloud.io/maturity-model/building-block-reference.html>Describe the model to me</CtaButton>
+  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/maturity-model/service-ecosystem/virtual-network-service.html">Show me an example block</CtaButton>
+  <CtaButton class="btn-secondary" url="https://cloudfoundation.meshcloud.io/maturity-model/building-block-reference.html">Describe the model to me</CtaButton>
 </CallToAction>
 

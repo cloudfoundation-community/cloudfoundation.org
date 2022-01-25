@@ -18,5 +18,5 @@ properties:
 
 
 
-> **⚠️**" limitations amount of tags. If different part of the organisation come up with a list of tags each without synching closely they can come up with different tags for the same thing but also they can exceed the max limit on a tenant or resource
+> **⚠️** limitations amount of tags. If different part of the organisation come up with a list of tags each without synching closely they can come up with different tags for the same thing but also they can exceed the max limit on a tenant or resource
 
