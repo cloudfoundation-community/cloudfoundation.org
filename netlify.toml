@@ -14,6 +14,7 @@
 
 ## Redirects required for bypassing adblockers with plausible.io
 ## See https://plausible.io/docs/proxy/guides/netlify
+## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177
 [[redirects]]
   from = "/api/event"
   to = "https://plausible.io/api/event"
