@@ -15,12 +15,8 @@
   status = 301
   force = true
 
-## Redirects required for bypassing adblockers with our analytics software.
-[[redirects]]
-  from = "/js/script.js"
-  to = "https://plausible.io/js/plausible.js"
-  status = 200
-
+## Redirects required for bypassing adblockers with plausible.io
+## See https://plausible.io/docs/proxy/guides/netlify
 [[redirects]]
   from = "/api/event"
   to = "https://plausible.io/api/event"
