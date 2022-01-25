@@ -47,9 +47,8 @@ Popular choices of CI/CD platforms for accelerating cloud-native development:
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
-  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>service Marketplace</b>”</CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/wp-content/uploads/2021/05/Factsheetservicemarketplace_final.pdf">Download Free Factsheet</CtaButton>
-  <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
+  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>Service Marketplace</b></CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
 </CallToAction>
 
 ## Why use a Managed CI/CD Platform?
