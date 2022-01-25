@@ -1,3 +1,11 @@
+## Redirects required for bypassing adblockers with plausible.io
+## See https://plausible.io/docs/proxy/guides/netlify
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 202
+  force = true
+
 ## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS
 ## See https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing for the force option
 [[redirects]]
@@ -12,10 +20,3 @@
   status = 301
   force = true
 
-## Redirects required for bypassing adblockers with plausible.io
-## See https://plausible.io/docs/proxy/guides/netlify
-[[redirects]]
-  from = "/api/event"
-  to = "https://plausible.io/api/event"
-  status = 202
-  force = true
