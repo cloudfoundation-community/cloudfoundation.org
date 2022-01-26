@@ -12,6 +12,7 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
   scope: 🏢 Core
   summary: >-
     Implement automated policies to steer cloud consumers to appropriate cloud
@@ -22,17 +23,17 @@ properties:
   name: Control access to cloud platforms and Landing Zones
 ---
 
-The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone
+Cloud Foundation teams often have to support customers with a wide variety of security and workload requirements. While [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) help foundation teams offer a composable set of services to cover varying workload requirements, addressing different security requirements comes not as easily.
+
+A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) ), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
 
 ## Why manage access to cloud platforms and landing zones
 
-Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). Depending on the requirements (from Cloud Foundation customers) landing zones must be defined (see [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) ) and access to these Landing Zones controlled. Managing the access to the landing zones can be complex and may need manual effort which makes its desirable to be automated.
+Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects, Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
 
-> **✏️** **Example Scenario** Implementation of specific security requirements based on assessments. 
-The most common known landing zone differentiation is probably the staging. We will only look into the network connectivity for simplification. While a PROD system needs to implement all security controls to be connected to the public world - DEV systems should usually never be connected to the internet.
-Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone?
+> **✏️** **Example Scenario: Landing Zone per Stage** Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone? See **How to manage access to landing zones**
 
-See **How to manage access to landing zones**
+
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -41,8 +42,6 @@ See **How to manage access to landing zones**
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/use-case-cloud-zones/">Use Case Cloud Zones</CtaButton>
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/">Tell me how to tag</CtaButton>
 </CallToAction>
-
-
 
 The Cloud Foundation team wants to enable their customers and provide them cloud tenants according to their requirements without neglecting compliance and security. It is therefore appropriate to define landing zones depending on clusters of similar use cases (or similar requirements) or based on governance, compliance and risk to reduce the implementation effort - the benefits of re-usable artifacts.
 
