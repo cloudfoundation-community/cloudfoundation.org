@@ -9,7 +9,7 @@
             Use 50+ actionable building blocks to identify your current cloud maturity, and where to grow.
           </span>
           <br/>
-          <a href="/maturity-model/" class="btn btn-primary btn-lg mt-4">Explore Building Blocks →</a>
+          <router-link to="/maturity-model/" class="btn btn-primary btn-lg mt-4">Explore Building Blocks →</router-link>
         </div>
         <div class="col-12 col-lg-6 hero-right">
           <img src="./heroimage.png">
