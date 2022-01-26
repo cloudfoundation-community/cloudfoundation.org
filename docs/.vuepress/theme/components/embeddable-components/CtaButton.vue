@@ -1,7 +1,10 @@
 <template>
-  <a v-bind:href="urlWithTags" v-on:click="onClick" class="btn mr-2 mb-1">
+  <a v-if="isExternalUrl" v-bind:href="urlWithTags" v-on:click="onClick" class="btn mr-2 mb-1">
     <slot></slot> →
   </a>
+  <router-link v-else :to="props.url" v-on:click="onClick" class="btn mr-2 mb-1">
+    <slot></slot> →
+  </router-link>
 </template>
 
 <script setup lang="ts">
@@ -10,6 +13,9 @@ import { computed, useSlots } from "vue";
 import { usePageFrontmatter } from "@vuepress/client";
 
 interface Props {
+  /**
+   * May be an absolute or relative URL
+   */
   url: string;
 }
 
@@ -36,8 +42,16 @@ const buttonText =
 
 const pageTitle = frontmatter.value.title;
 
+const isExternalUrl = computed(() => {
+  const origin = window.location.origin;
+  const url = new URL(props.url, origin); // construct with origin, in case we got a relative URL on the component
+
+  return url.origin !== origin;
+})
+
 const urlWithTags = computed(() => {
-  const url = new URL(props.url);
+  const url = new URL(props.url, origin); // construct with origin, in case we got a relative URL on the component
+
   const sp = url.searchParams;
   sp.append("utm_source", "cfmm");
   sp.append("utm_medium", "web");
