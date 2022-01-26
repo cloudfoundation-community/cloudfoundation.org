@@ -47,8 +47,8 @@ See **How to manage access to landing zones**
 The Cloud Foundation team wants to enable their customers and provide them cloud tenants according to their requirements without neglecting compliance and security. It is therefore appropriate to define landing zones depending on clusters of similar use cases (or similar requirements) or based on governance, compliance and risk to reduce the implementation effort - the benefits of re-usable artifacts.
 
 > **✏️** **Example** :
-Depending on the use cases certain restrictions or specific requirements may be necessary. 
-Use cases can be as simple as staging environments or more complex for on-premise connectivity or restrictions cloud resources in the cloud tenant. Additionally various policies or rules can be defined for the landing zones.
+> Depending on the use cases certain restrictions or specific requirements may be necessary. 
+> Use cases can be as simple as staging environments or more complex for on-premise connectivity or restrictions cloud resources in the cloud tenant. Additionally various policies or rules can be defined for the landing zones.
 
 The most common use case for access controls on landing zones are the definition of a security baseline for various staging environments (e.g. dev, test, QA, prod). The more differentiated the access controls need to be, the more important automated access controls become.
 
@@ -59,15 +59,12 @@ Usually, the restriction and controls on cloud tenants and the self-service prov
 The m etadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to DevOps teams.
 
 > **✏️** **Example Scenario** Restricting access based on risk and networking requirements
-
-Cloud Foundation team *Likvid Bank*  n eeds to regulate the access to cloud platforms and landing zones as required by their internal compliance.
-The access to the landing zones is depending on their risk estimate and on-premise integration.
-> risk estimate: high, middle, low
-> usage of on-premise integration: yes, no
-
-The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone.
-
-If the project has a risk estimate of *high* and on-premise integration *no* it should only be able to use landing zones appropriated security configuration, integration setup etc.) and so on. The appropriated landing zones will have therefore the metadata risk estimate *high* and on-premise integration *no.*
+> 
+> Cloud Foundation team *Likvid Bank*  n eeds to regulate the access to cloud platforms and landing zones as required by their internal compliance.
+> The access to the landing zones depends on the project’s risk estimate vs. use of on-premise integration.
+> > risk estimate: *high, middle, low* > usage of on-premise integration: *yes, no* The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone.
+> 
+> If the project has a risk estimate of *high* and on-premise integration *no* it should only be able to use landing zones appropriated security configuration, integration setup etc.) and so on. The appropriated landing zones will have therefore the metadata risk estimate *high* and on-premise integration *no.*
 
 ### Manual access control
 
@@ -75,7 +72,7 @@ For the manual access control the metadata is only used to store the information
 
 ### Automated access control
 
-> **ℹ️** Pre-requisition for the automated access control is the (semi-)automated [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) .
+> **ℹ️** (Semi-)automated [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) is a prerequisite for automated access control.
 
 It is important to clarify the following questions to achieve the automated steering of cloud provisioning based on the metadata:
 
