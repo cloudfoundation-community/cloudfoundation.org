@@ -25,13 +25,18 @@ properties:
 
 Cloud Foundation teams often have to support customers with a wide variety of security and workload requirements. While [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) help foundation teams offer a composable set of services to cover varying workload requirements, addressing different security requirements comes not as easily.
 
-A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) ), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
+A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
 
 ## Why manage access to cloud platforms and landing zones
 
-Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects, Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
+Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects, Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
 
-> **✏️** **Example Scenario: Landing Zone per Stage** Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone? See **How to manage access to landing zones**
+> **✏️** **Example Scenario: Landing Zone per Stage**
+> Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. 
+> 
+> Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone?
+> 
+> See **How to manage access to landing zones**
 
 
 
@@ -45,7 +50,7 @@ Cloud Foundation teams want to enable fast self-service cloud tenant provisionin
 
 The Cloud Foundation team wants to enable their customers and provide them cloud tenants according to their requirements without neglecting compliance and security. It is therefore appropriate to define landing zones depending on clusters of similar use cases (or similar requirements) or based on governance, compliance and risk to reduce the implementation effort - the benefits of re-usable artifacts.
 
-> **✏️** **Example** :
+> **✏️** **Example**:
 > Depending on the use cases certain restrictions or specific requirements may be necessary. 
 > Use cases can be as simple as staging environments or more complex for on-premise connectivity or restrictions cloud resources in the cloud tenant. Additionally various policies or rules can be defined for the landing zones.
 
@@ -55,13 +60,17 @@ Usually, the restriction and controls on cloud tenants and the self-service prov
 
 ## How to manage access to landing zones
 
-The m etadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to DevOps teams.
+The metadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to DevOps teams.
 
-> **✏️** **Example Scenario** Restricting access based on risk and networking requirements
+> **✏️** **Example Scenario**
+> Restricting access based on risk and networking requirements
 > 
-> Cloud Foundation team *Likvid Bank*  n eeds to regulate the access to cloud platforms and landing zones as required by their internal compliance.
+> Cloud Foundation team *Likvid Bank* needs to regulate the access to cloud platforms and landing zones as required by their internal compliance.
 > The access to the landing zones depends on the project’s risk estimate vs. use of on-premise integration.
-> > risk estimate: *high, middle, low* > usage of on-premise integration: *yes, no* The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone.
+> > risk estimate: *high, middle, low*
+> > usage of on-premise integration: *yes, no*
+> 
+> The Cloud Foundation team enforces compliance by validating projects risk estimate and on-premise integration usage match the target landing zone.
 > 
 > If the project has a risk estimate of *high* and on-premise integration *no* it should only be able to use landing zones appropriated security configuration, integration setup etc.) and so on. The appropriated landing zones will have therefore the metadata risk estimate *high* and on-premise integration *no.*
 
@@ -83,7 +92,9 @@ It is important to clarify the following questions to achieve the automated stee
 
     - Avoid to over-engineer the concept or the technical implementation. Cloud access controls based on metadata can be implemented with simple matching rules.
 
-The metadata needs to be stored on the landing zone as well as on the customers request (e.g. on a digital form, ticket or directly on the provisioned cloud tenant). The landing zones is then applied on the cloud tenant based on the metadata. Therefore the automation implementation are read the metadata from the request ticket, create a cloud tenant and apply the landing zone which matches the metadata. Each cloud provider has APIs to apply landing zones on cloud tenants. Alternatively, the customer could only choose a landing zone in a form depending on the input metadata.
+The metadata needs to be stored on the landing zone as well as on the customers request (e.g. on a digital form, ticket or directly on the provisioned cloud tenant). The landing zones is then applied on the cloud tenant based on the metadata. 
+Therefore the automation implementation are read the metadata from the request ticket, create a cloud tenant and apply the landing zone which matches the metadata. Each cloud provider has APIs to apply landing zones on cloud tenants.
+Alternatively, the customer could only choose a landing zone in a form depending on the input metadata.
 
 ## Challenges
 

@@ -13,7 +13,7 @@ properties:
   scope: 🛬 Landing Zone
   summary: >-
     Audit logs from all cloud tenants (API/resource access) are centrally
-    collected and stored.
+    collected and stored. 
   tool-implementations: []
   name: Centralized audit logs
 ---
@@ -24,7 +24,7 @@ Audit Logs are records of what actions were performed by whom. A centralized aud
 
 The audit logs we need to store here cover interactions with the cloud API. A common example would be answering the question “who deployed and configured this specific Cloud Function?”. This is important to balance the freedom given to teams: “We let you deploy your own workload, but we will be looking over your shoulders”.
 
-Centralized audit logs make an analysis of logs easier for auditors. Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements.
+Centralized audit logs make an analysis of logs easier for auditors. Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements. 
 
 
 
@@ -39,7 +39,7 @@ Centralized audit logs make an analysis of logs easier for auditors. Standardizi
 
 ### Store and retain first, worry about analytics later
 
-Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ( [Cloud SIEM](/maturity-model/security-and-compliance/cloud-siem.md) ).
+Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ([Cloud SIEM](/maturity-model/security-and-compliance/cloud-siem.md)).
 
 ### Carefully guard access to centralized audit logs
 
@@ -47,4 +47,4 @@ DevOps teams are responsible for keeping secrets from leaking into logs. Even wi
 
 ### Create a concept that outlines your centralized audit log strategy
 
-DevOps teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies.
+DevOps teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies. 

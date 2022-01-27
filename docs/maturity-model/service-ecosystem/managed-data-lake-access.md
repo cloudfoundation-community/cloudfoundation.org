@@ -18,7 +18,7 @@ properties:
     DL/DW tools like BigQuery that provide a self-service UI and "advanced data
     pipelines" where teams need to load/query data from the central lake into
     their own pipelines (e.g. different teams building ML models for different
-    purposes from common data).
+    purposes from common data). 
   tool-implementations: []
   name: Managed Data Lake access
 ---

@@ -18,20 +18,20 @@ properties:
     Implement appropriate security controls for privileged access as defined in
     the Authorization Concept. These must cover access to administrative cloud
     platform roles (e.g. Global Admins, Global Readers) and shared services
-    (e.g. on-premise connectivity hubs).
+    (e.g. on-premise connectivity hubs). 
   tool-implementations: []
   name: Privileged Access Management
 ---
 
 Access to cloud tenants is usually not a privileged operation from the point of view of a cloud foundation, however DevOps teams using these cloud tenants need to be equipped with appropriate means to secure access to their environments. From DevOps team PoV cloud tenants are infrastructure and access to application infra is usally administrative/privileged from this PoV.
 
-- See meshStack authroization concept
+- See meshStack authroization concept 
 
 - Emergency Users [https://docs.meshcloud.io/docs/administration.emergency-users.html#docsNav](https://docs.meshcloud.io/docs/administration.emergency-users.html#docsNav)
 
 
 
-Common implementations for platform operator PAM:
+Common implementations for platform operator PAM: 
 
 - for Azure could be using [Azure AD Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure)
 

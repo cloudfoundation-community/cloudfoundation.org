@@ -20,5 +20,5 @@ properties:
   name: Managed Key Vault
 ---
 
-Often used to enable [Service Account Management](/maturity-model/iam/service-account-management.md) and [Managed CI/CD Platform](/maturity-model/service-ecosystem/managed-cicd-platform.md) .
+Often used to enable [Service Account Management](/maturity-model/iam/service-account-management.md) and [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md).
 

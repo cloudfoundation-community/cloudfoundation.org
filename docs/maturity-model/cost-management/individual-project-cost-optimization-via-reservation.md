@@ -17,10 +17,10 @@ properties:
     tenants like instance reservations. The chargeback process considers any
     resulting pre-payments and benefits out of these reservations. A system is
     in place to manage associated risks (e.g. budget authorization,
-    overcommitment, lack of budget).
+    overcommitment, lack of budget). 
   tool-implementations: []
   name: Individual Project Cost Optimization via Reservation
 ---
 
-This is a building block that Cloud Foundation teams can use in addition or instead of [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md) .
+This is a building block that Cloud Foundation teams can use in addition or instead of [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md).
 

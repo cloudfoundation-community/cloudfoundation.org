@@ -15,7 +15,7 @@ properties:
   scope: 🏢 Core
   summary: >-
     There's a clear owner for every cloud tenant responsible for incident
-    management. Incidents are automatically routed to these owners.
+    management. Incidents are automatically routed to these owners. 
   tool-implementations: []
   name: Incident Management Process
 ---

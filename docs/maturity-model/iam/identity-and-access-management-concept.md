@@ -23,11 +23,11 @@ properties:
   name: Identity and Access Management Concept
 ---
 
-## Why do you need an Identity and Access Management Concept?
+## Why do you need an Identity and Access Management Concept? 
 
 Identity and Access Management is at the core of managing trust in the cloud. Authentication and Authorization based on identities replace mechanisms from the private data center era such as trust-based on host IP.
 
-An Identity and Access Management Concept is a document that describes your Identity and Access Management architecture for future reference.
+An Identity and Access Management Concept is a document that describes your Identity and Access Management architecture for future reference. 
 
 An important distinction is IAM for humans vs. IAM for workload. Making this distinction in the Identity and Access Management Concept allows the discussion of one topic at a time.
 
@@ -42,9 +42,9 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 #### Core questions
 
-[ ] What is your source of identities?
+[ ] What is your source of identities? 
 
-[ ] How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md) )
+[ ] How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md))
 
 [ ] What level of separation will you have between different applications?
 
@@ -54,9 +54,9 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 An Identity and Access Management Concept needs to answer the following questions:
 
-[ ] How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md) )
+[ ] How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md))
 
-[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has?
+[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has? 
 
 [ ] Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/maturity-model/iam/privileged-access-management.md) )
 
@@ -72,13 +72,13 @@ An Identity and Access Management Concept needs to answer the following question
 
 ## How to set up resource hierarchy for access management
 
-The public cloud providers have resource hierarchies that allow inheriting permissions. Carefully crafting permission inheritance is a proven way of staying in control of access rights.
+The public cloud providers have resource hierarchies that allow inheriting permissions. Carefully crafting permission inheritance is a proven way of staying in control of access rights. 
 
 The design of your resource hierarchies must be taken into account for the Identity and Access Management Concept.
 
 #### Azure
 
-For Azure, the recommendation is to map applications that want to use the cloud to subscriptions. See
+For Azure, the recommendation is to map applications that want to use the cloud to subscriptions. See 
 
 [https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/](https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/)
 

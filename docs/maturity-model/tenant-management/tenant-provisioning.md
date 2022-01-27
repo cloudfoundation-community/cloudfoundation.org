@@ -20,19 +20,19 @@ properties:
   name: Tenant Provisioning
 ---
 
-Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform. Since it's so quintessential, practitioners should consider the following implementation maturities as they are growing the overall maturity of offered cloud foundation capabilities.
+Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform. Since it's so quintessential, practitioners should consider the following implementation maturities as they are growing the overall maturity of offered cloud foundation capabilities. 
 
-- ⭐️ **manual provisioning** : when starting out and serving only a small amount of customers, manual provisioning of "naked" cloud provider tenants via cloud provider portals (GUI) is a feasible approach
+- ⭐️  **manual provisioning**: when starting out and serving only a small amount of customers, manual provisioning of "naked" cloud provider tenants via cloud provider portals (GUI) is a feasible approach
 
-- ⭐️⭐️ **semi-automated provisioning:** as the number of other cloud foundation capabilities grows, more and more post-provisioning steps will be required to enable advanced cloud foundation capabilities like Landing Zones. Automation is key to achieve consistent results.
+- ⭐️⭐️ **semi-automated provisioning:** as the number of other cloud foundation capabilities grows, more and more post-provisioning steps will be required to enable advanced cloud foundation capabilities like Landing Zones. Automation is key to achieve consistent results. 
 
-- ⭐️⭐️⭐️ - ⭐️⭐️⭐️⭐️ **fully automated provisioning:** for managing a high number of internal customers and a significant number of integrations with other cloud foundation capabilities like Landing Zones and Managed Services, a repeatable and fully automated provisioning of cloud tenants must be possible.
+- ⭐️⭐️⭐️ - ⭐️⭐️⭐️⭐️ **fully automated provisioning:** for managing a high number of internal customers and a significant number of integrations with other cloud foundation capabilities like Landing Zones and Managed Services, a repeatable and fully automated provisioning of cloud tenants must be possible. 
 
 > **💡** In practice we observe many cloud foundation teams missing the right point in time to invest into full automation capabilities for tenant provisioning. This occurs because each time of adding "just one more manual step" to a semi-automated process feels like an insignificant decision. However the compounding effect of these decisions together with increasing internal demand burdens cloud foundation teams with operational chores. The burden of these chores eventually leaves teams with too little time and resources to rectify the situation.
 
-Semi-automated provisioning often leads to [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher level capabilities in later journey stages..
+Semi-automated provisioning often leads to [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher level capabilities in later journey stages.. 
 
-Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) .
+Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md).
 
 ## Best Practices for Tenant Provisioning
 

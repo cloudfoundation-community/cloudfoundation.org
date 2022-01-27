@@ -23,13 +23,13 @@ properties:
 
 <!-- unsupported block type: synced_block -->
 
-A Monolithic Landing Zone is a one-size-fits-all Landing Zone mostly seen in early stage Cloud Foundations. Given that different DevOps teams have different needs most Cloud Foundations split up Monolithic Landing Zones into modules as they mature. (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) )
+A Monolithic Landing Zone is a one-size-fits-all Landing Zone mostly seen in early stage Cloud Foundations. Given that different DevOps teams have different needs most Cloud Foundations split up Monolithic Landing Zones into modules as they mature. (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md))
 
-The Monolithic Landing Zone keeps complexity low while sacrificing flexibility in the short-term.
+The Monolithic Landing Zone keeps complexity low while sacrificing flexibility in the short-term. 
 
 ## When to build a Monolithic Landing Zone
 
 A Monolithic Landing Zone can be a starting point for getting to know the needs of your first few customers. By starting simple, you avoid spending time thinking about overly complicated abstractions too early.
 
-After learning more about your customers’ needs, you can split up existing Landing Zones into modules (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) ).
+After learning more about your customers’ needs, you can split up existing Landing Zones into modules (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)). 
 

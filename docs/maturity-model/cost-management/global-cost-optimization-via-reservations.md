@@ -15,12 +15,12 @@ properties:
     Cloud providers offer different programs offering lower pay-per-use rates in
     exchange for making spend or resource reservation commitments (e.g. reserved
     instances). Centrally plan resource demand to take advantage of cost
-    optimization opportunities offered by cloud providers.
+    optimization opportunities offered by cloud providers. 
   tool-implementations: []
   name: Global Cost Optimization via Reservations
 ---
 
-Cloud Foundation teams should consider implementing this building block before looking into [Individual Project Cost Optimization via Reservation](/maturity-model/cost-management/individual-project-cost-optimization-via-reservation.md) . However, depending on the organisational philosophy (cf. [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) ) Cloud Foundation teams can also consider implement only one or both capabilities.
+Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservation](/maturity-model/cost-management/individual-project-cost-optimization-via-reservation.md). However, depending on the organisational philosophy (cf. [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implement only one or both capabilities.
 
 ## Implementation
 

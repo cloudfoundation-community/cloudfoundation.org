@@ -14,11 +14,11 @@ properties:
 
 <!-- unsupported block type: synced_block -->
 
-The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. A cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery.
+The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. A cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery. 
 
 ## From IT Services to Cloud Foundation
 
-Most organisations today manage their IT as a portfolio of "IT Services". An IT Service provides a distinctive functionality to its customers. For example, an "IAM Group" service may allow a customer to create a group in the organization's central directory and manage its members through the service. The owner of the "IAM Group" IT service gets to define its own processes for how customers can procure, manage and get charged for the service.
+Most organisations today manage their IT as a portfolio of "IT Services". An IT Service provides a distinctive functionality to its customers. For example, an "IAM Group" service may allow a customer to create a group in the organization's central directory and manage its members through the service. The owner of the "IAM Group" IT service gets to define its own processes for how customers can procure, manage and get charged for the service. 
 
 With IT services as the established management paradigm in mind, most organizations trying to move to the cloud instinctively reach towards IT services for providing the required organizational capabilities to procure, manage and charge back cloud services (cloud governance). As the following section will demonstrate, this corrupts the advantages that cloud computing has to offer. Whereas cloud computing emphasises customer self-service, consistent API-driven automation and pay-per use, most IT services build on semi-manual processes, with inconsistent  provisioning workflow and charge back back to a shared cost pool.
 
@@ -38,11 +38,11 @@ No matter how an organization decides to implement its cloud governance, it alwa
 
 - **🔖 Security & Compliance:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
 
-- **🛠 Service Ecosystem:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services.
+- **🛠 Service Ecosystem:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
 
 While representing independent functions, organizations need to integrate these functional pillars to implement an effective and wholistic cloud governance.
 
-As an illustration, let's look at the dependencies of the Tenant Management pillar. For an effective cloud governance, each of the pillars needs to maintain different metadata associated with a cloud tenant (e.g. an AWS Account).
+As an illustration, let's look at the dependencies of the Tenant Management pillar. For an effective cloud governance, each of the pillars needs to maintain different metadata associated with a cloud tenant (e.g. an AWS Account). 
 
 <!-- unsupported block type: toggle -->
 
@@ -124,7 +124,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md) . To provide [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) , the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway.
+To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md). To provide [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md), the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway. 
 
 Of course, building a cloud foundation is a challenging task. It can involve interesting technical challenges that allow an organization to achieve a high degree of automation that compares favorably to public services. However, achieving full service automation is not required for adopting the cloud foundation as an organizational approach. The key to its success is that it absorbs responsibility for service integration and allows an organization to exercise wholistic and effective cloud governance.
 
@@ -132,7 +132,7 @@ Of course, building a cloud foundation is a challenging task. It can involve int
 
 ## Summary
 
-Here is how the Cloud Foundation approach compare to the IT Services approach.
+Here is how the Cloud Foundation approach compare to the IT Services approach. 
 
 <!-- included database 3fe4130d-5cc2-4fce-8dac-20675cb0c4fd -->
 | Criteria                     | IT Services                                                                                                                                                                                                       | Cloud Foundation                                                                                                                                    |

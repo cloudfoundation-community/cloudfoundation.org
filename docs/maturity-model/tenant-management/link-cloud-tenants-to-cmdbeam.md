@@ -18,12 +18,12 @@ properties:
     Maintain a link between cloud tenants and a central CMDB/EAM repository
     (e.g. IT System identifier, Application Id). Linking cloud tenants to
     CMDB/EAM systems is a foundational capability that enables use cases like
-    basic chargeback, systematic risk assessment and change management.
+    basic chargeback, systematic risk assessment and change management. 
   tool-implementations: []
   name: Link Cloud Tenants to CMDB/EAM
 ---
 
-Organizations can implement this using naming and tagging policies.
+Organizations can implement this using naming and tagging policies. 
 
 A more advanced implementation leverages [Central Management of Tenant tags and metadata](/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md) 
 

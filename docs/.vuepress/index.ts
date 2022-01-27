@@ -189,7 +189,7 @@ export const index = [
         "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
       ],
       "scope": "🏢 Core",
-      "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL).",
+      "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
       "tool-implementations": [],
       "name": "Multi-Cloud Tenant Database"
     }
@@ -252,7 +252,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned.",
+      "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "tool-implementations": [],
       "name": "Playground / Sandbox Environments"
     }
@@ -319,7 +319,7 @@ export const index = [
         "0dd09c75-2acd-4e87-9721-6b5f563da035"
       ],
       "scope": "☁️ Platform",
-      "summary": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs).",
+      "summary": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs). ",
       "tool-implementations": [],
       "name": "Privileged Access Management"
     }
@@ -363,7 +363,7 @@ export const index = [
         "cd162600-e742-4a80-b022-989da423ca43"
       ],
       "scope": "🏢 Core",
-      "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.",
+      "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
       "tool-implementations": [],
       "name": "Monthly cloud project billing report"
     }
@@ -411,7 +411,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored.",
+      "summary": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored. ",
       "tool-implementations": [],
       "name": "Centralized audit logs"
     }
@@ -514,7 +514,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget).",
+      "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
       "tool-implementations": [],
       "name": "Individual Project Cost Optimization via Reservation"
     }
@@ -706,7 +706,8 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [
-        "3c7081e5-c451-40b6-806d-a8d21b130612"
+        "3c7081e5-c451-40b6-806d-a8d21b130612",
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
       ],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️",
@@ -744,7 +745,7 @@ export const index = [
       "tool": [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
       ],
-      "summary": "Collie CLI",
+      "summary": "Collie CLI ",
       "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
       "name": "Check monthly cloud tenant costs with collie"
     }
@@ -781,7 +782,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
-      "summary": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model.",
+      "summary": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
       "tool-implementations": [],
       "name": "Tenant Inventory Reconciliation"
     }
@@ -825,7 +826,7 @@ export const index = [
         "2be4d7d1-4109-406b-a4f7-da6c566123fd"
       ],
       "scope": "🛬 Landing Zone",
-      "summary": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks.",
+      "summary": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks. ",
       "tool-implementations": [],
       "name": "Tenant to Tenant Transit Networks"
     }
@@ -855,11 +856,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/service-ecosystem/managed-cicd-platform.md",
+    "file": "docs/maturity-model/service-ecosystem/managed-devops-toolchain.md",
     "meta": {
       "id": "71143f29-2fe9-452b-8398-fc40f270a2b6",
-      "url": "https://www.notion.so/Managed-CI-CD-Platform-71143f292fe9452b8398fc40f270a2b6",
-      "title": "Managed CI/CD Platform",
+      "url": "https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6",
+      "title": "Managed DevOps Toolchain",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock"
     },
@@ -870,11 +871,11 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Teams can use a CI/CD platform that is integrated with the cloud tenants used by the team. Service account and automation user credentials are automatically maintained and rotated.",
+      "summary": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "tool-implementations": [
         "3c377c14-3fbf-4766-a47a-e30bd070ed7f"
       ],
-      "name": "Managed CI/CD Platform"
+      "name": "Managed DevOps Toolchain"
     }
   },
   {
@@ -912,7 +913,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data).",
+      "summary": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
       "tool-implementations": [],
       "name": "Managed Data Lake access"
     }
@@ -997,7 +998,7 @@ export const index = [
         "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
       ],
       "scope": "🏢 Core",
-      "summary": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners.",
+      "summary": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners. ",
       "tool-implementations": [],
       "name": "Incident Management Process"
     }
@@ -1031,7 +1032,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks.",
+      "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
       "tool-implementations": [],
       "name": "Modular Landing Zones"
     }
@@ -1053,7 +1054,7 @@ export const index = [
         "2be4d7d1-4109-406b-a4f7-da6c566123fd"
       ],
       "scope": "🛬 Landing Zone",
-      "summary": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks.",
+      "summary": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks. ",
       "tool-implementations": [],
       "name": "Cloud to Cloud interconnects"
     }
@@ -1152,7 +1153,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored.",
+      "summary": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored. ",
       "tool-implementations": [],
       "name": "Centralized workload and infrastructure logs"
     }
@@ -1177,7 +1178,7 @@ export const index = [
         "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
       ],
       "scope": "☁️ Platform",
-      "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication.",
+      "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication. ",
       "tool-implementations": [],
       "name": "Federated Identity and Authentication"
     }
@@ -1197,7 +1198,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
-      "summary": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers.",
+      "summary": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers. ",
       "tool-implementations": [],
       "name": "Global Cost Optimization via Reservations"
     }
@@ -1289,7 +1290,7 @@ export const index = [
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
-      "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback.",
+      "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "tool-implementations": [],
       "name": "Pay-per-Use for internal Services"
     }
@@ -1597,7 +1598,8 @@ export const index = [
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
-        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+        "707c41b8-6da0-4e78-b982-fa4b1365521b",
+        "57c521ba-73a4-4187-a507-bbd5eaa80212"
       ],
       "scope": "🏢 Core",
       "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
@@ -1645,7 +1647,7 @@ export const index = [
         "707c41b8-6da0-4e78-b982-fa4b1365521b"
       ],
       "scope": "🏢 Core",
-      "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management.",
+      "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
       "tool-implementations": [],
       "name": "Link Cloud Tenants to CMDB/EAM"
     }

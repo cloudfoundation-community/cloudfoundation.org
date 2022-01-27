@@ -29,7 +29,7 @@ Not doing a pay-per-use pricing model such as shared cost, or fixed cost contrib
 
 Common methods to arrive at pricing models
 
-- study the public cloud market for typical pricing models (e.g. charge per vCPU, RAM, storage for IaaS, charge by RAM for PaaS)
+- study the public cloud market for typical pricing models (e.g. charge per vCPU, RAM, storage for IaaS, charge by RAM for PaaS)     
 
 - calculate prices according to CAPEX/OPEX cost of the cloud platform and expected usage
 
@@ -65,6 +65,6 @@ Requires a profit-center mindset
 
 1. Collect total costs of operating the cluster on the public cloud.
 
-    **Example operating cost** : 100000 US-$
+    **Example operating cost**: 100000 US-$
 
 1. 

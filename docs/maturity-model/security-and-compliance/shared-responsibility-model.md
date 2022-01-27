@@ -9,6 +9,7 @@ properties:
   pillar: 🔖 Security & Compliance
   enables:
     - 3c7081e5-c451-40b6-806d-a8d21b130612
+    - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
@@ -49,7 +50,7 @@ The shared responsibility model is therefore defined based on the service from t
 
 
 
-In general if a company or an enterprise approaches one or multiple cloud adoption a dedicated team is assembled - which can include stakeholder from all kinds of other teams and departments like networking, infrastructure and security. This assembled team is what will be referred as the **Cloud Foundation team** . The team also usually discuss relevant aspects of the cloud adoption internally e.g. with the IAM, Security Team, Governance Risk and Compliance, Infra. Team, ITSM Team, Controlling, etc. They also usually work together with specialist for each of the cloud providers to clarify their problem scope, questions and various other things. Especially of interest to the cloud foundation team is how the shared responsibility is implemented for various services as well as how to secure their cloud for their responsible parts.
+In general if a company or an enterprise approaches one or multiple cloud adoption a dedicated team is assembled - which can include stakeholder from all kinds of other teams and departments like networking, infrastructure and security. This assembled team is what will be referred as the **Cloud Foundation team**. The team also usually discuss relevant aspects of the cloud adoption internally e.g. with the IAM, Security Team, Governance Risk and Compliance, Infra. Team, ITSM Team, Controlling, etc. They also usually work together with specialist for each of the cloud providers to clarify their problem scope, questions and various other things. Especially of interest to the cloud foundation team is how the shared responsibility is implemented for various services as well as how to secure their cloud for their responsible parts.
 
 This Cloud Foundation is responsible for the cloud transformation within the enterprise. While the size and some of the responsibilities of the teams vary from enterprise to enterprise the central tasks is the same - bringing the enterprise successfully and secure to the cloud (Cloud Journey).
 

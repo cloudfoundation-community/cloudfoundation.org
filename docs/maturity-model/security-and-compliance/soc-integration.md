@@ -19,4 +19,4 @@ properties:
   name: SOC Integration
 ---
 
-[Tenable.io](http://tenable.io)  [https://www.tenable.com/products/tenable-io](https://www.tenable.com/products/tenable-io)
+[Tenable.io](http://tenable.io) [https://www.tenable.com/products/tenable-io](https://www.tenable.com/products/tenable-io)

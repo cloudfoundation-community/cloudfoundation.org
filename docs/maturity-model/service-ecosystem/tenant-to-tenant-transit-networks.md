@@ -14,7 +14,7 @@ properties:
   scope: 🛬 Landing Zone
   summary: >-
     Provides managed connectivity between cloud tenants on the same cloud
-    platform via centrally managed transit networks.
+    platform via centrally managed transit networks. 
   tool-implementations: []
   name: Tenant to Tenant Transit Networks
 ---

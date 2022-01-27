@@ -33,7 +33,7 @@ Metadata on cloud resources are called differently depending on the cloud provid
 
 
 
-Keeping the metadata close on the cloud account and on resources enables the cloud foundation team as well as other teams like the security, controlling and operations team to keep a better overview on the cloud resources. Also most of the cloud providers offer an API to read the metadata which allows the cloud foundation team to develop or build reporting automations or similar. The cloud providers usually enables the customers to create reports and dashboards for cloud resources based on the metadata by providing tools, CLIs or other native services.
+Keeping the metadata close on the cloud account and on resources enables the cloud foundation team as well as other teams like the security, controlling and operations team to keep a better overview on the cloud resources. Also most of the cloud providers offer an API to read the metadata which allows the cloud foundation team to develop or build reporting automations or similar. The cloud providers usually enables the customers to create reports and dashboards for cloud resources based on the metadata by providing tools, CLIs or other native services. 
 
 <!--notion-markdown-cms:raw-->
  <CallToAction>
@@ -70,6 +70,10 @@ The following challenges needs to be tackled to ensure a central management of t
 
 
 
-> **✅** Checkout meshcloud’s blog post regarding Cloud Tagging “ **Your Path to a Winning Multi-Cloud Tagging Strategy** ” as an introduction to cloud tagging and its benefits towards your Cloud Governance. [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
+> **✅** Checkout meshcloud’s blog post regarding Cloud Tagging “**Your Path to a Winning Multi-Cloud Tagging Strategy**” as an introduction to cloud tagging and its benefits towards your Cloud Governance.
+> 
+> [https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/](https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/) 
 
-> **✅** Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.  [https://collie-cli.io/](https://collie-cli.io/)
+> **✅** Use collie-cli to checkout the current metadata on your public cloud accounts or to build your own small dashboards and automations.
+> 
+> [https://collie-cli.io/](https://collie-cli.io/)

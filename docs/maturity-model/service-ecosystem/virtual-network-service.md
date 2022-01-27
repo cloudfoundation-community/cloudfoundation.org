@@ -27,7 +27,7 @@ properties:
 
 A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
 
-A virtual network service provides virtual networks to DevOps teams.
+A virtual network service provides virtual networks to DevOps teams. 
 
 A virtual network service has two inputs:
 
@@ -37,12 +37,12 @@ A virtual network service has two inputs:
 
 A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden away from DevOps teams.
 
-Given the security implications, networking services must be provided centrally for most Cloud Zones (see [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) ). The virtual network service forms the basis for the networking offering.
+Given the security implications, networking services must be provided centrally for most Cloud Zones (see [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) ). The virtual network service forms the basis for the networking offering. 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
-  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>service Marketplace</b>”</CtaText>
+  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>service Marketplace</b>.</CtaText>
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
 </CallToAction>
 
@@ -62,7 +62,7 @@ On-premise networks are mostly flat, whereas in the cloud we can do micro-segmen
 
 ### Provide it as a Landing Zone module
 
-Virtual network services can be modules for Modular Landing Zones (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) ).
+Virtual network services can be modules for Modular Landing Zones (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)).
 
 ### Make it compatible with adjacent services
 
@@ -74,7 +74,7 @@ Virtual networks are most useful in combination with
 
 - DNS entries
 
-Most applications need to connect to resources outside the virtual network than their own. The following services need a virtual network as input:
+Most applications need to connect to resources outside the virtual network than their own. The following services need a virtual network as input: 
 
 - [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) 
 
