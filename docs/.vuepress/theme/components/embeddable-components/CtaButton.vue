@@ -42,15 +42,15 @@ const buttonText =
 
 const pageTitle = frontmatter.value.title;
 
-const isExternalUrl = computed(() => {
-  const origin = window.location.origin;
-  const url = new URL(props.url, origin); // construct with origin, in case we got a relative URL on the component
+// see https://stackoverflow.com/a/19709846/125407
+const isAbsoluteUrlRegex = new RegExp('^(?:[a-z]+:)?//', 'i');
 
-  return url.origin !== origin;
+const isExternalUrl = computed(() => {
+  return isAbsoluteUrlRegex.test(props.url);
 })
 
 const urlWithTags = computed(() => {
-  const url = new URL(props.url, origin); // construct with origin, in case we got a relative URL on the component
+  const url = new URL(props.url);
 
   const sp = url.searchParams;
   sp.append("utm_source", "cfmm");
