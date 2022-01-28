@@ -14,15 +14,19 @@ properties:
 
 ## What is the Cloud Foundation Maturity Model
 
-> **💡** The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customers needs.
+> **💡** The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customer’s needs.
 
-The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey.
+![image-334ccfed-d1c6-4f95-a147-9c3d2ec75bf9](./334ccfed-d1c6-4f95-a147-9c3d2ec75bf9.png)
 
-The Cloud Foundation Maturity Model is **vendor agnostic**. While meshcloud GmbH initially created the Cloud Foundation Maturity Model and is a vendor in the Cloud Foundation Platform space, the model is concerned with “what capabilities are offered” and not “how are they implemented”.
+The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey. It captures the capabilities that organizations need to build in order to succeed at empowering DevOps teams with access to cloud infrastructure and services while staying in control. 
+
+The Cloud Foundation Maturity Model is **implementation agnostic**. While meshcloud initially created model and offers a Cloud Foundation Platform, the model is concerned with “what capabilities are offered” and not “how are they implemented”.
 
 ## Structure of the Cloud Foundation Maturity Model
 
 In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [Building Block Reference](/maturity-model/building-block-reference.md).
+
+The model also captures how building blocks relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another) and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now. 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
