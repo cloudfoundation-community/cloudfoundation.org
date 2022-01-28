@@ -14,7 +14,7 @@ properties:
 
 <!-- unsupported block type: synced_block -->
 
-The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. A cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery. 
+The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. A cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery.
 
 ## From IT Services to Cloud Foundation
 
