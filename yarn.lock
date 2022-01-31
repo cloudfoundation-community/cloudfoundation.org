@@ -24,10 +24,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@meshcloud/notion-markdown-cms@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.5.3.tgz#4b4c32b9f0c5365cfdfd33b140204a995315241a"
-  integrity sha512-+6ydK913JdsSS0qmRBsbqhrlAbRJW7HWsYiVcOmLkve4Wk59oyLSTK32ef+ggqC6B9lF6u0X86MF1mCJGx0LoQ==
+"@meshcloud/notion-markdown-cms@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.6.0.tgz#acd16f5775d19c10ba4f465546300a20d483c2b6"
+  integrity sha512-5R2PpzJg/CJY7kZTGyvn4hsJv6xtZEfexvKjIbYEqANW8MrRrOQdCZOKoa8mqe3UNebnxfHyHwgbYfP02RWtMQ==
   dependencies:
     "@notionhq/client" "^0.3.2"
     chalk "^4.1.2"
