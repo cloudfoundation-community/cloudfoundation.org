@@ -7,9 +7,11 @@ on:
         required: false
         default: 'manually triggered sync'
   schedule:
-    # run every hour at minute 42
     # * is a special character in YAML so you have to quote this string
-    - cron: "42 9-18 * * *"
+    # https://crontab.guru/#42_8-20_*_*_1-5
+    # At minute 42 past every hour from 8 through 20 on every day-of-week from Monday through Friday.
+    # Conserve some resources, when working on weekends we can still trigger syncs manually ;-)
+    - cron: "42 8-20 * * 1-5"
 jobs:
   sync:
     runs-on: ubuntu-latest
