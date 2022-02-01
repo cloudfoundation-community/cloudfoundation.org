@@ -54,4 +54,4 @@ Adopting a collaborative approach for maintaining the metadata together with the
 
 ### Integrate with other Information Repositories
 
-Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider to also implement the building block [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to maintaining duplicate information on your own.
+Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider to also implement the building block [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicate in different systems.

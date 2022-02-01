@@ -1,8 +1,8 @@
 ---
 id: 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
 url: >-
-  https://www.notion.so/Private-Cloud-pay-per-use-chargebackpage-02e4de2c7e1e4dd9aa76b58a88f04ff6
-title: Private Cloud pay-per-use chargebackpage
+  https://www.notion.so/Private-Cloud-pay-per-use-chargeback-02e4de2c7e1e4dd9aa76b58a88f04ff6
+title: Private Cloud pay-per-use chargeback
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:
@@ -19,10 +19,10 @@ properties:
     pricing model.
   tool-implementations:
     - c7b3902e-6708-4b0e-9e43-776f863baa3e
-  name: Private Cloud pay-per-use chargebackpage
+  name: Private Cloud pay-per-use chargeback
 ---
 
-As outlined in the building block [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md), pay-per-use is an essential cornerstone of the cloud computing paradigm. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. When offering private cloud platforms such as OpenStack, Cloud Foundry or multi-tenant Kubernetes clusters such as OpenShift, organizations should implement a pay-per-use model for these platforms. 
+As outlined in the building block [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md), pay-per-use is an essential cornerstone of cloud computing. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. When offering private cloud platforms such as OpenStack, Cloud Foundry or multi-tenant Kubernetes clusters such as OpenShift, organizations should implement a pay-per-use model for these platforms. 
 
 ## Why you should implement private cloud chargeback using pay-per-use 
 
@@ -32,9 +32,9 @@ A key challenge with shared cost models is that they treat IT infrastructure as 
 
 > **💡** A **cost center** is only responsible for its contribution to the organization’s cost, while a **profit center** is responsible for cost and profit. 
 
-Subjecting a private cloud to traditional shared cost allocation disables many benefits of the cloud computing paradigm. Most importantly, it disables the key incentive for teams to leverage the cloud’s technical scaling capabilities to optimize resource consumption. Private cloud platforms thus often fail to meet the goals set out like cost savings due to higher resource utilization.
+Subjecting a private cloud to traditional shared cost allocation cancel many benefits of cloud computing. Most importantly, it disables the key incentive for teams to leverage the cloud’s technical scaling capabilities to optimize resource consumption. Private cloud platforms thus often fail to meet the goals set out like cost savings due to higher resource utilization.
 
-The most successful private cloud platforms operate with a public cloud mindset and spirit. This means treating the private cloud as a profit center, aiming to offer the best quality of service in a convincing commercial package to internal customers.
+The most successful implementations of a private cloud operate with a public cloud mindset. This means treating the private cloud as a profit center, offering internal customers the best quality of service in a convincing commercial package
 
 ```html
 <CallToAction>
@@ -53,7 +53,7 @@ Now that we covered the motivation for using a pay-per-use cost model to chargeb
 
 In order to provide cost feedback loops to all IT system stakeholders (responsible product owners, engineers), cost reports must be available on a frequent basis. It’s a best practice to provide [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md)s with fine granular listings of the individual resources consumed. While considerably more work than an annual cost split based on a pooling factor, proper tooling can automate the entire process of metering resource consumption, applying a pricing model and generating monthly billing reports. See the [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md) building block for more details.
 
-### Building a private cloud pricing model
+### Build a private cloud pricing model
 
 A key consideration for building a successful private cloud pricing model is setting pricing up front. This is a big shift from the “ex post” model of shared cost allocation and requires a profit-center mindset.
 
