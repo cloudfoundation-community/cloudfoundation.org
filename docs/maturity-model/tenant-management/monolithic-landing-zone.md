@@ -21,7 +21,7 @@ properties:
 
 ## Why Monolithic Landing Zone
 
-<!-- unsupported block type: synced_block -->
+
 
 A Monolithic Landing Zone is a one-size-fits-all Landing Zone mostly seen in early stage Cloud Foundations. Given that different DevOps teams have different needs most Cloud Foundations split up Monolithic Landing Zones into modules as they mature. (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md))
 

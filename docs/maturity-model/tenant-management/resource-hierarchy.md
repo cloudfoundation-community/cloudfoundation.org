@@ -36,8 +36,5 @@ management group level.
 
 
 
-<!-- could not resolve mentioned page e872fb6f-6b6b-442f-9664-45322f8b86b4 --> 
-
-
-
 We have a Whitepaper [https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/](https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/)
+

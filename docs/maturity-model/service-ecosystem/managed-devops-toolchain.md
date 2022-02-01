@@ -89,13 +89,24 @@ Organizations seeking to accelerate software development often find that teams s
 
 While there are clear benefits to offering pre-integrated toolchains, plan for flexibility. Teams can have different requirements and using alternate tooling should thus be possible. For example, one team may be happy to use cloud-native observability tools (e.g. AWS CloudWatch or GCP Stackdriver) to build highly customised monitoring and alerting infrastructure, while another team gets a huge head-start from a “batteries included” solution like Datadog. It thus makes sense to offer the toolchain as a set of composable services, instead of one big monolithic “all or nothing” solution.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
+  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>Service Marketplace</b></CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
+</CallToAction>
+
 ### Authorize Source Code Repositories
 
 The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md) and  [Authorization Concept](/maturity-model/iam/authorization-concept.md).
 
 ### Manage Service Credentials
 
-Continuous delivery implies that the CI/CD platform also has the ability to execute deployments against cloud tenants owned by the development teams. Setting up the required service accounts and securing them is a challenge. If not handled correctly these service accounts introduce significant security risks as their compromise typically leads to full compromise of the deployed service. If the Cloud Foundation team wants to provide continuous delivery capabilities in addition to continuous integration capabilities, providing a way to handle service credentials is obligatory. In practice, the following implementations from simple to more advanced (and thus more secure) are observed:
+Continuous delivery implies that the CI/CD platform also has the ability to execute deployments against cloud tenants owned by the development teams. Setting up the required service accounts and securing them is a challenge. If not handled correctly these service accounts introduce significant security risks as their compromise typically leads to full compromise of the deployed service. 
+
+> **💡** Key rotation is a critical capability for CI/CD pipeline deployment secrets, as there is a high risk that build and deployment scripts accidentally expose service credentials in build logs or during remote debugging of builds. We thus recommend rolling service credentials used for deployment very frequently. 
+
+If the Cloud Foundation team wants to provide continuous delivery capabilities in addition to continuous integration capabilities, providing a way to handle service credentials is obligatory. In practice, the following implementations from simple to more advanced (and thus more secure) are observed:
 
 - rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](/maturity-model/iam/authorization-concept.md))
 
@@ -103,15 +114,5 @@ Continuous delivery implies that the CI/CD platform also has the ability to exec
 
 - a **fully automated** process sets up service accounts and allows the CI/CD platform to impersonate service accounts. This can be achieved by managing secrets for those service accounts, including regular rotations. An even better approach is Workload Identity Federation([GCP](https://cloud.google.com/iam/docs/workload-identity-federation), [Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)). With Workload Identity Federation no secrets need to be stored or rotated.
 
-Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) and [Service Account Management](/maturity-model/iam/service-account-management.md) 
+Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) and [Service Account Management](/maturity-model/iam/service-account-management.md).
 
-> **💡** Key rotation is a critical capability for CI/CD pipeline deployment secrets, as there is a high risk that build and deployment scripts accidentally expose service credentials in build logs or during remote debugging of builds. We thus recommend rolling service credentials used for deployment very frequently. 
-
-
-
-<!--notion-markdown-cms:raw-->
-<CallToAction>
-  <CtaHeader>Cloud-native Service Marketplace</CtaHeader>
-  <CtaText>Implement enterprise-wide distribution of cloud infrastructure services via a <b>Service Marketplace</b></CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
-</CallToAction>

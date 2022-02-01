@@ -21,8 +21,6 @@ properties:
 
 ## Why Modular Landing Zones?
 
-<!-- unsupported block type: synced_block -->
-
 A Landing Zone describes how a cloud tenant should be prepared before DevOps teams can access it. 
 
 Modular Landing Zones have a baseline and are extendable with optional modules.

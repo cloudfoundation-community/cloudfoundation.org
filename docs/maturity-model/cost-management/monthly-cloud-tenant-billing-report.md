@@ -8,7 +8,6 @@ layout: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables:
-    - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
     - 28740e92-5559-4931-ab04-17cfb026edd5
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
   redaction-state: mvp1
@@ -29,7 +28,7 @@ A cloud tenant billing report makes cloud consumption transparent to DevOps team
 
 ## Why is monthly cloud tenant billing reporting important?
 
-All organizations that are successfully using the cloud share a cloud-native mindset. The DevOps teams in these organizations use the properties of the cloud to their advantage. An important aspect is pay-per-use pricing which encourages to keep an eye on resource usage. Therefore pay-per-use pricing aligns incentives. With monthly cloud tenant billing reports, DevOps teams have a closed feedback loop: Improve the application efficiency and see the costs go down.
+All organizations that are successfully using the cloud share a cloud-native mindset. The DevOps teams in these organizations use the properties of the cloud to their advantage. An important aspect is pay-per-use pricing which encourages to keep an eye on resource usage. This is especially critical when organizations aim to implement FinOps (Cloud Financial Management) practices with the goal to bring financial accountability to the pay-per-use model of the cloud. Pay-per-use pricing aligns incentives. It enables DevOps teams to take ownership of their cloud usage. With monthly cloud tenant billing reports, they have a closed feedback loop: Improve the application efficiency and see the costs go down.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -39,13 +38,17 @@ All organizations that are successfully using the cloud share a cloud-native min
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Learn more</CtaButton>
 </CallToAction>
 
-
-
 ## Proven patterns when building monthly cloud tenant billing report
 
 ### Cover all cloud platforms
 
-A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. (See [Private Cloud pay-per-use pricing](/maturity-model/cost-management/private-cloud-pay-per-use-pricing.md))
+A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. See [Private Cloud pay-per-use chargebackpage](/maturity-model/cost-management/private-cloud-pay-per-use-chargebackpage.md) for more details.
+
+### Automate billing reports
+
+Cloud Foundation teams that want to generate billing reports on a monthly basis for different cloud platforms have to aim for a high degree of automation across the entire process. The cost of manual steps in the process typically becomes prohibitive once a cloud foundation team scales beyond serving a handful of customers. 
+
+Automation of this process offers further avenues, like providing billing previews more frequently (e.g. hourly). This provides tight feedback loops to engineering teams actively scaling their systems up and down.
 
 ### Unify tenant billing reports across clouds
 
