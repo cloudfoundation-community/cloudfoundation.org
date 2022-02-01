@@ -18,7 +18,7 @@ properties:
   name: Centralized audit logs
 ---
 
-## Why centralized audit logs?
+## Why Centralized Audit Logs?
 
 Audit Logs are records of what actions were performed by whom. A centralized audit log stores audit logs from all cloud tenants.
 
@@ -35,16 +35,16 @@ Centralized audit logs make an analysis of logs easier for auditors. Standardizi
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Learn more</CtaButton>
 </CallToAction>
 
-## Proven patterns when implementing centralized audit logs
+## Proven Patterns When Implementing Centralized Audit Logs
 
-### Store and retain first, worry about analytics later
+### Store and Retain First, Worry about Analytics Later
 
 Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ([Cloud SIEM](/maturity-model/security-and-compliance/cloud-siem.md)).
 
-### Carefully guard access to centralized audit logs
+### Carefully Guard Access to Centralized Audit Logs
 
 DevOps teams are responsible for keeping secrets from leaking into logs. Even with rolling credentials, there is a chance that centralized audit logs contain sensible information. Therefore access should be restricted carefully to minimize risk.
 
-### Create a concept that outlines your centralized audit log strategy
+### Create a Concept That Outlines Your Centralized Audit Log Strategy
 
 DevOps teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies. 

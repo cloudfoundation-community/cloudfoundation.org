@@ -23,7 +23,7 @@ properties:
   name: Shared Responsibility Model
 ---
 
-## What is the Shared Responsibility Model
+## What Is the Shared Responsibility Model
 
 The common known shared responsibility model definition explained by cloud providers like AWS, GCP or Azure are not sufficient to enable a success story for enterprises as it does not take into account customer internal structures and organizations at all. Every successful cloud-native organization[?] has defined an agreed-on holistic shared responsibility model.
 

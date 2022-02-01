@@ -12,7 +12,7 @@ properties:
 ---
 
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
-## CFMM Tools - cli
+## CFMM Tools - Cli
 
 | Name                                   | Category |
 | -------------------------------------- | -------- |

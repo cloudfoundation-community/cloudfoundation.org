@@ -27,7 +27,7 @@ Cloud Foundation teams often have to support customers with a wide variety of se
 
 A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
 
-## Why manage access to cloud platforms and landing zones
+## Why Manage Access to Cloud Platforms and Landing Zones
 
 Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects, Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
 
@@ -58,7 +58,7 @@ The most common use case for access controls on landing zones are the definition
 
 Usually, the restriction and controls on cloud tenants and the self-service provisioning contradict each other. This could force a decision to establish more control at the cost of a slower provisioning processes. It is important to know where your “balance of freedom” is defined. This means that the Cloud Foundation team needs to agree with their stakeholders (e.g. security) on the balance between the responsibilities for the self-service cloud tenant provisioning and the controls for restricting the access to landing zones. Again, automation can support you to keep accelerating the self-service provisioning.
 
-## How to manage access to landing zones
+## How to Manage Access to Landing Zones
 
 The metadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to DevOps teams.
 
@@ -74,11 +74,11 @@ The metadata allows Cloud Foundation teams to control the access to landing zone
 > 
 > If the project has a risk estimate of *high* and on-premise integration *no* it should only be able to use landing zones appropriated security configuration, integration setup etc.) and so on. The appropriated landing zones will have therefore the metadata risk estimate *high* and on-premise integration *no.*
 
-### Manual access control
+### Manual Access Control
 
 For the manual access control the metadata is only used to store the information which landing zone should be used for the cloud tenant provisioning. An operator from the Cloud Foundation team will read this information (on a form, ticket or other project related document) and provide the cloud tenant with the according landing zone.
 
-### Automated access control
+### Automated Access Control
 
 > **ℹ️** (Semi-)automated [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) is a prerequisite for automated access control.
 

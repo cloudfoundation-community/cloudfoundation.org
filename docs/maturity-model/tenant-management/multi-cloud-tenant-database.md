@@ -28,10 +28,10 @@ Organizations following a multi-cloud strategy often start implementing dedicate
 
 Furthermore, maintaining different tenant databases per platform leads to inconsistent metadata about your cloud tenants, making it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md) or [Central Management of Tenant tags and metadata](/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md).
 
-## Best practices for establishing multi-cloud visibility with a cloud tenant database
+## Best Practices for Establishing Multi-Cloud Visibility with a Cloud Tenant Database
 
 To successfully implement a multi-cloud tenant database, it needs to cater to the demands of each individual platform and also establish consistency across all platforms. You should thus review the platform-scoped building block [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) first. 
 
-### Don’t settle on the lowest common denominator
+### Don’t Settle on the Lowest Common Denominator
 
 Requires strong guidance by an empowered cloud foundation team (don’t build platform silos) 

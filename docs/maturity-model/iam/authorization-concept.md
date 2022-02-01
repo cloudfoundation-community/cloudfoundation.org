@@ -24,7 +24,7 @@ properties:
   name: Authorization Concept
 ---
 
-## Key considerations and Best Practices
+## Key Considerations and Best Practices
 
 - **Start with default roles** - cloud providers typically offer a set of built-in roles that grant typical set of permissions (e.g. `Contributor` on Azure or `Editor` on GCP). While a more fine-granular segregation of roles can enable better fulfilment of least-privilege principle, the advantages of centralised oversight and consistency typically outweigh these benefits in the early stages of a cloud journey. Most authorization concepts use 2-3 types of default roles (e.g. `Reader`, `Developer`, `Manager`). 
 

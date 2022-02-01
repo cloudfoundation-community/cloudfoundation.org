@@ -23,7 +23,7 @@ properties:
 
 Once cloud foundation customers have successfully provisioned a cloud tenant for their project (see [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md)), the next challenge they face is how to deploy their workload. Embracing cloud native paradigms, most teams will want to leverage modern DevOps tools like a CI/CD pipeline with infrastructure as code deployments. Setting up these deployment pipelines quickly and securely can be a challenging and time consuming task. Offering popular DevOps tools as a “managed service” to your teams can accelerate cloud onboarding and improve your organization’s security posture. 
 
-## What is a Managed DevOps toolchain?
+## What Is a Managed DevOps Toolchain?
 
 A managed DevOps toolchain is a service offered by the cloud foundation team which offers an easy and fast experience to getting access and working with cloud-native DevOps tooling in the context of a cloud project. There are a few core components to a DevOps toolchain.
 
@@ -79,13 +79,13 @@ While the CI/CD platform provides a space for executing the DevOps toolchain, se
 
 - ELK Stack (Elasticsearch, Logstash, Kibana)
 
-## Why use a Managed DevOps Toolchain?
+## Why Use a Managed DevOps Toolchain?
 
 Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. A managed CI/CD platform allows DevOps teams to focus on core activities (software development and operations) instead of infrastructure.
 
 ## Best Practices for a Managed DevOps Toolchain
 
-### Pre-integrated, but composable
+### Pre-Integrated, but Composable
 
 While there are clear benefits to offering pre-integrated toolchains, plan for flexibility. Teams can have different requirements and using alternate tooling should thus be possible. For example, one team may be happy to use cloud-native observability tools (e.g. AWS CloudWatch or GCP Stackdriver) to build highly customised monitoring and alerting infrastructure, while another team gets a huge head-start from a “batteries included” solution like Datadog. It thus makes sense to offer the toolchain as a set of composable services, instead of one big monolithic “all or nothing” solution.
 
