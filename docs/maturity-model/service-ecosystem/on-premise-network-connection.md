@@ -24,7 +24,7 @@ TODO: describe IPAM integration
 
 
 
-A key challenge with On-Premise network connections is to make them scale, see <!-- could not resolve mentioned page a829cf56-b38b-48e8-a34e-e3a4cf2c14ac --> 
+A key challenge with On-Premise network connections is to make them scale
 
 
 

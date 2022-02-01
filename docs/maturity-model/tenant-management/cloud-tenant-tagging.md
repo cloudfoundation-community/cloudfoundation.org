@@ -9,7 +9,8 @@ properties:
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - b875ac41-2b38-4ce4-ab8b-76ddd876d789
   scope: ☁️ Platform
   summary: Cloud tenants are tagged and managed according to the companies needs
   tool-implementations: []

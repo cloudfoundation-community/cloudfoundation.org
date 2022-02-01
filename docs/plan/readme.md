@@ -11,8 +11,6 @@ properties:
   name: Overview
 ---
 
-<!-- unsupported block type: synced_block -->
-
 ## The Cloud Foundation Maturity Model
 
 If you use AWS, Azure or GCP - or all of them - this poster is a great introduction to the meshcloud cloud foundation maturity model.

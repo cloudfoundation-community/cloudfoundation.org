@@ -57,27 +57,28 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/cost-management/private-cloud-pay-per-use-pricing.md",
+    "file": "docs/maturity-model/cost-management/private-cloud-pay-per-use-chargebackpage.md",
     "meta": {
       "id": "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
-      "url": "https://www.notion.so/Private-Cloud-pay-per-use-pricing-02e4de2c7e1e4dd9aa76b58a88f04ff6",
-      "title": "Private Cloud pay-per-use pricing",
+      "url": "https://www.notion.so/Private-Cloud-pay-per-use-chargebackpage-02e4de2c7e1e4dd9aa76b58a88f04ff6",
+      "title": "Private Cloud pay-per-use chargebackpage",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
       "pillar": "💵 Cost Management",
       "enables": [],
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️",
       "depends-on": [
-        "cd162600-e742-4a80-b022-989da423ca43"
+        "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
       ],
       "scope": "☁️ Platform",
-      "summary": "Resource consumption on private cloud platforms such as OpenStack, Cloud Foundry or OpenShift (when used as a multi-tenant platform) is billed according to a pay-per-use pricing model.",
+      "summary": "Resource consumption on multi-tenant private cloud platforms such as OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use pricing model.",
       "tool-implementations": [
         "c7b3902e-6708-4b0e-9e43-776f863baa3e"
       ],
-      "name": "Private Cloud pay-per-use pricing"
+      "name": "Private Cloud pay-per-use chargebackpage"
     }
   },
   {
@@ -500,11 +501,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/cost-management/individual-project-cost-optimization-via-reservation.md",
+    "file": "docs/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md",
     "meta": {
       "id": "3c65a957-cb62-40fe-978e-709e3450f7fe",
-      "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservation-3c65a957cb6240fe978e709e3450f7fe",
-      "title": "Individual Project Cost Optimization via Reservation",
+      "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-3c65a957cb6240fe978e709e3450f7fe",
+      "title": "Individual Project Cost Optimization via Reservations",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
@@ -516,7 +517,7 @@ export const index = [
       "scope": "☁️ Platform",
       "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
       "tool-implementations": [],
-      "name": "Individual Project Cost Optimization via Reservation"
+      "name": "Individual Project Cost Optimization via Reservations"
     }
   },
   {
@@ -666,7 +667,9 @@ export const index = [
       "enables": [],
       "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+      ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenants are tagged and managed according to the companies needs",
       "tool-implementations": [],
@@ -1215,9 +1218,10 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [
-        "11af37b7-c948-4486-a5da-5b1db6de8193"
+        "11af37b7-c948-4486-a5da-5b1db6de8193",
+        "52d1e517-9d07-4acc-8c59-17526fa3af9d"
       ],
-      "redaction-state": "Draft",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1307,7 +1311,6 @@ export const index = [
     "properties": {
       "pillar": "💵 Cost Management",
       "enables": [
-        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
         "28740e92-5559-4931-ab04-17cfb026edd5",
         "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
       ],
@@ -1571,7 +1574,9 @@ export const index = [
     },
     "properties": {
       "pillar": "💵 Cost Management",
-      "enables": [],
+      "enables": [
+        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6"
+      ],
       "redaction-state": "Draft",
       "journey-stage": "⭐️",
       "depends-on": [
