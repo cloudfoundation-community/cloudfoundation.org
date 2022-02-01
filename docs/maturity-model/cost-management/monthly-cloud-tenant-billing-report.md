@@ -42,7 +42,7 @@ All organizations that are successfully using the cloud share a cloud-native min
 
 ### Cover all cloud platforms
 
-A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. See [Private Cloud pay-per-use chargebackpage](/maturity-model/cost-management/private-cloud-pay-per-use-chargebackpage.md) for more details.
+A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. See [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) for more details.
 
 ### Automate billing reports
 

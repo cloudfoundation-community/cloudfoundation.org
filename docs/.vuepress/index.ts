@@ -57,11 +57,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/cost-management/private-cloud-pay-per-use-chargebackpage.md",
+    "file": "docs/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md",
     "meta": {
       "id": "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
-      "url": "https://www.notion.so/Private-Cloud-pay-per-use-chargebackpage-02e4de2c7e1e4dd9aa76b58a88f04ff6",
-      "title": "Private Cloud pay-per-use chargebackpage",
+      "url": "https://www.notion.so/Private-Cloud-pay-per-use-chargeback-02e4de2c7e1e4dd9aa76b58a88f04ff6",
+      "title": "Private Cloud pay-per-use chargeback",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
@@ -78,7 +78,7 @@ export const index = [
       "tool-implementations": [
         "c7b3902e-6708-4b0e-9e43-776f863baa3e"
       ],
-      "name": "Private Cloud pay-per-use chargebackpage"
+      "name": "Private Cloud pay-per-use chargeback"
     }
   },
   {
@@ -1416,7 +1416,9 @@ export const index = [
       "pillar": "💵 Cost Management",
       "enables": [],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
+      ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
       "tool-implementations": [],
@@ -1575,9 +1577,10 @@ export const index = [
     "properties": {
       "pillar": "💵 Cost Management",
       "enables": [
-        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6"
+        "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
+        "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
       ],
-      "redaction-state": "Draft",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️",
       "depends-on": [
         "cd162600-e742-4a80-b022-989da423ca43"

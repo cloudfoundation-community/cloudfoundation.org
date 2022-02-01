@@ -9,7 +9,8 @@ properties:
   pillar: 💵 Cost Management
   enables: []
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - e063e4d2-81f4-4bb8-ac7a-7424ba882161
   scope: ☁️ Platform
   summary: >-
     Cloud tenant owners are transparently charged for resource consumption in
