@@ -8,7 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables: []
-  redaction-state: review-v1
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
@@ -26,24 +26,23 @@ As outlined in the building block [Chargeback via consumption cost allocation](/
 
 ## Why You Should Implement Private Cloud Chargeback Using Pay-per-Use 
 
-Organization seeking to successfully implement a hybrid-cloud strategy want to offer private and public cloud services to their teams. While public cloud vendors offer their services exclusively in a pay-per-use model, private cloud platforms often operate in an on-premise IT environment full of legacy processes like shared cost models.
+Organizations seeking to successfully implement a hybrid cloud strategy want to offer private and public cloud services to their teams. While public cloud vendors offer their services exclusively in a pay-per-use model, private cloud platforms often operate in an on-premise IT environment full of legacy processes like shared cost models.
 
 A key challenge with shared cost models is that they treat IT infrastructure as a cost center and chargeback on an “at cost” basis only. This mindset stifles innovation because it does not incentivize IT to develop and improve infrastructure services unless there’s a budgeted order from “the business”. This pressures IT into a reactive mindset, instead of enabling new services with a proactive attitude towards innovation. 
 
 > **💡** A **cost center** is only responsible for its contribution to the organization’s cost, while a **profit center** is responsible for cost and profit. 
 
-Subjecting a private cloud to traditional shared cost allocation cancel many benefits of cloud computing. Most importantly, it disables the key incentive for teams to leverage the cloud’s technical scaling capabilities to optimize resource consumption. Private cloud platforms thus often fail to meet the goals set out like cost savings due to higher resource utilization.
+Subjecting a private cloud to traditional shared cost allocation cancels many benefits of cloud computing. Most importantly, it disables the key incentive for teams to leverage the cloud’s technical scaling capabilities to optimize resource consumption. Private cloud platforms thus often fail to meet the goals set out like cost savings due to higher resource utilization.
 
 The most successful implementations of a private cloud operate with a public cloud mindset. This means treating the private cloud as a profit center, offering internal customers the best quality of service in a convincing commercial package
 
-```html
+<!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Next Level Cloud Cost Management</CtaHeader>
   <CtaText>Track costs and split bills no matter the complexity of large multi-cloud architectures.</CtaText>
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/finops/">Free Whitepaper</CtaButton>
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Learn more</CtaButton>
 </CallToAction>
-```
 
 ## How to Implement Private Cloud Pay-per-Use Pricing
 
@@ -85,7 +84,7 @@ This section presents an example calculation of a pricing model for an OpenShift
 
 1. Most private cloud platforms consume a certain amount of their own resources for running the platform. In our Kubernetes / OpenShift example, filter out shared namespaces hosting system components like `openshift-logging`.  Now calculate the sum of your customer’s resource consumption.
 
-    > **💡** If you do not have resource consumption data yet, make reasonable estimated based on the expected adoption of the cloud platform in your organization.
+    > **💡** If you do not have resource consumption data yet, make reasonable estimates based on the expected adoption of the cloud platform in your organization.
 
     <!-- included database f6d47d09-c8fa-42d2-86c0-e6f54d23c3b5 -->
     | Name         | Usage Amount |
