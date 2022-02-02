@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "name": "cfmm-feedback",
+  "version": "1.1.0",
+  "description": "Sample repository for Typescript based Google Apps Script projects",
+  "license": "MIT",
+  "keywords": [
+    "gas",
+    "google-apps-script",
+    "ts",
+    "typescript",
+    "v8"
+  ],
+  "scripts": {
+    "clean": "rimraf build",
+    "format": "prettier --write **.{ts,json}",
+    "lint": "xo --quiet",
+    "check:feedback": "tsc --build src/feedback",
+    "build:feedback": "esbuild  src/feedback/index.ts --bundle --outfile=build/feedback/main.js",
+    "postbuild:feedback": "copyfiles -u 2 src/feedback/appsscript.json build/feedback && ./strip-iife.sh build/feedback/main.js",
+    "push:feedback": "cd src/feedback && clasp push",
+    "webappdeploy:feedback": "cd src/feedback && clasp deploy --deploymentId AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV",
+    "deploy:feedback": "npm run check:feedback && npm run build:feedback && npm run push:feedback && npm run webappdeploy:feedback"
+    },
+  "repository": "https://github.com/PopGoesTheWza/ts-gas-project-starter.git",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.33",
+    "copyfiles": "^2.4.1",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4",
+    "xo": "^0.39.1",
+    "esbuild": "^0.14.8"
+  },
+  "xo": {
+    "ignores": [
+      "build",
+      "**.js"
+    ],
+    "space": 2,
+    "rules": {
+      "capitalized-comments": "warn",
+      "no-inner-declarations": "warn",
+      "no-undef": "off",
+      "@typescript-eslint/no-unsafe-argument": "warn",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/restrict-template-expressions": [
+        "warn",
+        {
+          "allowNumber": true,
+          "allowBoolean": false,
+          "allowAny": false,
+          "allowNullish": false
+        }
+      ],
+      "@typescript-eslint/triple-slash-reference": "off",
+      "unicorn/filename-case": "off"
+    },
+    "prettier": true
+  }
+}

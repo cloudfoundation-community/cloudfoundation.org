@@ -6,18 +6,15 @@ pkgs.mkShell {
     echo starting meshcloud cloudfoundation shell
   '';
 
-  buildInputs = [    
-
+  buildInputs = [
     # node / typescript (meshPanel, utilities eetc.)
     pkgs.nodejs-16_x
     (pkgs.yarn.override {
         nodejs = pkgs.nodejs-16_x;
     })
 
-    # dhall (meshStack config model)
-    pkgs.dhall
-    pkgs.dhall-nix
-    pkgs.dhall-json
-    pkgs.dhall-lsp-server
+    # currently not possible to override nodejs, see https://github.com/NixOS/nixpkgs/issues/151868
+    pkgs.google-clasp 
+    pkgs.google-cloud-sdk
   ];
 }
