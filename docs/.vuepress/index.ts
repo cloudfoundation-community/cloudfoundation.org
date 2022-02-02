@@ -68,7 +68,7 @@ export const index = [
     "properties": {
       "pillar": "💵 Cost Management",
       "enables": [],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [
         "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
@@ -184,7 +184,7 @@ export const index = [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef",
         "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
       ],
-      "redaction-state": "Draft",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [
         "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
@@ -1114,7 +1114,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "Draft",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1221,7 +1221,7 @@ export const index = [
         "11af37b7-c948-4486-a5da-5b1db6de8193",
         "52d1e517-9d07-4acc-8c59-17526fa3af9d"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1377,6 +1377,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [],
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -1554,7 +1555,7 @@ export const index = [
       "enables": [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef"
       ],
-      "redaction-state": "Draft",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1580,7 +1581,7 @@ export const index = [
         "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
         "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [
         "cd162600-e742-4a80-b022-989da423ca43"
