@@ -27,7 +27,7 @@ A Monolithic Landing Zone is a one-size-fits-all Landing Zone mostly seen in ear
 
 The Monolithic Landing Zone keeps complexity low while sacrificing flexibility in the short-term. 
 
-## When to build a Monolithic Landing Zone
+## When to Build a Monolithic Landing Zone
 
 A Monolithic Landing Zone can be a starting point for getting to know the needs of your first few customers. By starting simple, you avoid spending time thinking about overly complicated abstractions too early.
 

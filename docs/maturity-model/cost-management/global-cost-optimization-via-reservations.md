@@ -29,11 +29,11 @@ As an organization grows its consumption of cloud services, optimizing cloud spe
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Multi-Cloud Cost Management Guide</CtaButton>
 </CallToAction>
 
-## What are Reservations
+## What Are Reservations
 
 In the cloud foundation maturity model, we use the term “reservations” to describe any type of commercial agreement that offers reduced rate it exchange for some sort of reservation of cloud resources.
 
-### Why Cloud Providers offer reduced rates for Reservations
+### Why Cloud Providers Offer Reduced Rates for Reservations
 
 On-demand scaling is a cornerstone of cloud computing. By sharing infrastructure across many customers and different types of workloads, cloud providers can achieve very high utilization of their infrastructure. When customers take advantage of elastically scaling their workloads and the scaling patterns are not too closely correlated, cloud providers with a large number of customers can achieve an higher average utilization of their infrastructure compared to the utilization every customer could achieve when running their own dedicated infrastructure.
 
@@ -41,7 +41,7 @@ High utilization enables higher operational efficiency as well as accelerating t
 
 As much as cloud providers benefit from elastic workloads, uncertainty about future resource consumption makes capacity planning difficult and risky. Cloud providers thus charge a considerable premium for “on demand” services that can be scaled up or down instantaneously. When customers reserve cloud resources, the cloud provider gains certainty about future consumption and can plan its investments accordingly. By reducing the rates for reserved resources, cloud providers incentivize their customers to participate in capacity planning.
 
-### What type of Reservation options do cloud providers offer? 
+### What Type of Reservation Options Do Cloud Providers Offer? 
 
 At the most basic level, cloud providers offer commitment options based on **global financial spend** across the organization. Examples of these programs are Microsoft Enterprise Agreement or AWS Enterprise Discount Program. Organizations that plan to spend considerable amounts of money with a cloud provider (typically in the range of millions of USD/EUR) can negotiate good discounts this way. 
 

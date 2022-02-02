@@ -1,0 +1,6 @@
+{
+  "filters": {},
+  "rules": {
+    // note: rules from ./textlint are included via --rulesdir argument to textlint cli and cannot be configured here
+  }
+}

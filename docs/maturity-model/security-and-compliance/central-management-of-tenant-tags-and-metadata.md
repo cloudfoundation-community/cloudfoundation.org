@@ -21,7 +21,7 @@ properties:
   name: Central Management of Tenant tags and metadata
 ---
 
-## Why cloud metadata, labels and tags are important for a successful cloud governance
+## Why Cloud Metadata, Labels and Tags Are Important for a Successful Cloud Governance
 
 Storing relevant metadata is essential when it comes to establishing a comprehensive cloud governance in your organisation. Tags allow you to capture the metadata on your cloud applications and environments in a structured manner and will benefit not only the cloud compliance and cloud security setup of your cloud environments but also helps tremendously in other cloud pillars such as tenant management and billing.
 

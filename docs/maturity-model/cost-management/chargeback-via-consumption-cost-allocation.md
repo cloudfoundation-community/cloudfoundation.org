@@ -24,7 +24,7 @@ properties:
 
 Pay-per-use is an essential cornerstone of the cloud computing paradigm. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. 
 
-## Why you should implement chargeback via consumption cost allocation
+## Why You Should Implement Chargeback via Consumption Cost Allocation
 
 Traditionally, many organizations tried to leverage simplified cost allocations for IT infrastructure. These simplified models typically pool IT infrastructure cost and then distribute it between consumers on a pooling factor basis. Many organizations break down this split on a business unit or division level only, making it difficult to track the individual resource consumption of an IT system.
 
@@ -32,7 +32,7 @@ It’s also important to consider how often this cost allocation and chargeback 
 
 Subjecting cloud cost to a traditional shared cost allocation cancels many benefits of cloud computing. Most importantly, it disables the key incentive for teams to leverage the cloud’s technical scaling capabilities to optimize resource consumption. 
 
-## How to implement cloud cost allocation
+## How to Implement Cloud Cost Allocation
 
 ### Establish Proper Tenant Management
 
@@ -47,7 +47,7 @@ Cloud providers make consumption data available on a tenant level. With proper t
 </CallToAction>
 ```
 
-### Summarize consumption data in your Chargeback Statements
+### Summarize Consumption Data in Your Chargeback Statements
 
 It’s important that your customers understand what exactly they are being charged for. This is visibility into consumption data is important to keep all stakeholders in the loop. For example, it’s common that managers do not find the time to look into raw consumption data on the cloud consoles every month. However, having summarized consumption data included in their IT chargeback statement provides a transparent feedback loop and keeps them aware of the cloud consumption under their responsibilty.
 
