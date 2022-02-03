@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig-gas",
+  "files": ["index.ts"],
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "outFile": "../../build/feedback/tsout.js",
+    "noImplicitAny": false
+  }
+}

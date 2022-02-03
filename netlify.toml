@@ -12,6 +12,14 @@
   status = 301
   force = true
 
+## Redirects related to the feedback form.
+## Google App Script cannot be called directly from Vue due to CORS policy.
+[[redirects]]
+  from = "/api/feedback"
+  to = "https://script.google.com/macros/s/AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV/exec"
+  status = 200
+  force = true
+
 ## Redirects required for bypassing adblockers with plausible.io
 ## See https://plausible.io/docs/proxy/guides/netlify
 ## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177

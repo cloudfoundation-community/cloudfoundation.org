@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "libraries": [],
+    "enabledAdvancedServices": [
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "timeZone": "Etc/GMT",
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "ANYONE_ANONYMOUS"
+  }
+}
