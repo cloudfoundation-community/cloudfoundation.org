@@ -64,3 +64,25 @@ Adopting a collaborative approach for maintaining the metadata together with the
 ### Integrate with Other Information Repositories
 
 Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider also implementing the building block [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicates in different systems.
+
+## Common Metadata to Capture about Each Cloud Tenant
+
+Based on the recommendation and best practices above, here’s a list of the most common fields associated with each cloud tenant. This list is of course not exhaustive or prescriptive, but you can use it as 
+
+- `Tenant Id` AWS Account Number, GCP Project Id, ...
+
+- `Environment` the environment (otherwise known as ‘stage’) the tenant is used for. Usually, this is documented in at least three possible flavors: a “development”, “test”, and “production” environment. Make sure that a tenant is only used for one environment.
+
+- `IT System Id` this can be a unique identifier describing your IT system, e.g. in a CMDB or EAM system
+
+- `Security Contact` the person responsible for the security of the workload running in this cloud tenant. This is the cloud foundation team’s point of contact for any security incidents detected in this tenant, e.g. to send alerts from [Automated Security Scanning](/maturity-model/security-and-compliance/automated-security-scanning.md).
+
+- `Organizational Contact` the person organizationally responsible for the cloud tenant. This could be the manager of the team working with the cloud tenant.
+
+- `Business Unit` and `Department` responsible for this cloud tenant. There is typically an implied relation to the Organizational Contact.
+
+- `Data Classification` the sensitivity or confidentiality of the data that the IT system is working with in this cloud tenant. This is usually based on a classification according to an existing risk management system, e.g. “internal”, or “confidential”.
+
+- `Cost Center` or other chargeback related information
+
+- `Budget` even though cloud is pay per use, setting up cost alerts to prevent unexpectedly high cloud bills (bill-shock) is a common task of cloud foundation teams

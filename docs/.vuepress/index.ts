@@ -1091,13 +1091,13 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "Draft",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "11af37b7-c948-4486-a5da-5b1db6de8193"
       ],
       "scope": "🏢 Core",
-      "summary": "Owners of cloud tenants can register, update and remove tenants from a central cloud tenant database in self service.",
+      "summary": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
       "tool-implementations": [],
       "name": "Self-Service Multi-Cloud Tenant Database"
     }

@@ -19,9 +19,9 @@ properties:
   name: Resource Hierarchy
 ---
 
-Every cloud platform has a concept of multi-tenancy. At the most basic level, every resource or service in a cloud platform belongs to a “tenant”.  Tenants provide strong isolation guarantees between different customers so that resources in one tenant can not affect resource belonging to another tenant.
+Every cloud platform has a concept of multi-tenancy. At the most basic level, every resource or service in a cloud platform belongs to a “tenant”.  Tenants provide strong isolation guarantees between different customers so that resources in one tenant can not affect resources belonging to another tenant.
 
-Tenants and cloud resources therefore always form the concept of a hierarchy. This hierarchy  allows operators to establish rules and policies at the tenant level, that then apply to all resources within the tenant. One example for those are RBAC roles that grant permissions to modify an object storage bucket. When a user has this RBAC role assigned on the tenant level, they will have permission to modify any object storage bucket within the tenant.
+Tenants and cloud resources therefore always form the concept of a hierarchy. This hierarchy allows operators to establish rules and policies at the tenant level, that then apply to all resources within the tenant. One example of those are RBAC roles that grant permissions to modify an object storage bucket. When a user has this RBAC role assigned on the tenant level, they will have permission to modify any object storage bucket within the tenant.
 
 Most cloud platforms today also offer higher-level constructs that allow modeling resource hierarchies above the tenant level, e.g. by grouping related tenants under folders or organization units. These higher-level constructs afford cloud foundation teams to centrally define and enforce policies across multiple tenants, thereby reducing complexity and simplifying governance. 
 
@@ -62,9 +62,9 @@ Keep the resource hierarchy above the tenant level as flat as possible to reduce
 
 Avoid duplicating your organizational structure into the cloud resource hierarchy.
 
-> **💡** Many IT systems outlive the organizational team that initially created or deployed them. As the cloud is an infrastructure platform, start from IT systems as the primary unit of organization.
+> **💡** Many IT systems outlive the organizational team that initially created or deployed them. As the cloud is an infrastructure platform, start with IT systems as the primary unit of organization.
 
-Organizational structures are much more likely to change than IT systems. For example, an IT system may be handed over to another team for maintenance, but stay the same otherwise. Or your organization undergoes a reorganization with big changes to reporting hierarchies and department numbers. Would you want to reflect everyone of these changes in the cloud platform resource hierarchy? It’s much easier to apply these organizational changes in a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) while leaving the IT system’s infrastructure otherwise untouched. Instead of encoding organizational metadata in the resource hierarchy, [Cloud tenant tagging](/maturity-model/tenant-management/cloud-tenant-tagging.md) offers a more flexible way to bring up to date metadata into the cloud.
+Organizational structures are much more likely to change than IT systems. For example, an IT system may be handed over to another team for maintenance, but stay the same otherwise. Or your organization undergoes a reorganization with big changes to reporting hierarchies and department numbers. Would you want to reflect every one of these changes in the cloud platform resource hierarchy? It’s much easier to apply these organizational changes in a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) while leaving the IT system’s infrastructure otherwise untouched. Instead of encoding organizational metadata in the resource hierarchy, [Cloud tenant tagging](/maturity-model/tenant-management/cloud-tenant-tagging.md) offers a more flexible way to bring up-to-date metadata into the cloud.
 
 Design your resource hierarchy so that your internal customers can leverage dedicated tenants for the different stages (e.g. development, production) of IT systems. Most likely you will want to enforce different guardrails for productive and non-productive environments, which implies that they will live in separate parts of the resource hierarchy.
 
