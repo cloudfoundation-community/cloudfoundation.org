@@ -18,6 +18,12 @@ properties:
 | -------------------------------------- | -------- |
 | [collie-cli](/tools/cli/collie-cli.md) | cli      |
 
+## CFMM Tools - DevOps
+
+| Name                              | Category |
+| --------------------------------- | -------- |
+| [GitLab](/tools/devops/gitlab.md) | DevOps   |
+
 ## CFMM Tools - Governance Platform
 
 | Name                                                 | Category            |

@@ -18,6 +18,7 @@ properties:
     automatically maintained and rotated.
   tool-implementations:
     - 3c377c14-3fbf-4766-a47a-e30bd070ed7f
+    - 04470deb-8ef1-4c49-bcec-7243426790b5
   name: Managed DevOps Toolchain
 ---
 

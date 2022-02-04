@@ -82,6 +82,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "04470deb-8ef1-4c49-bcec-7243426790b5",
+      "url": "https://www.notion.so/DevOps-Toolchains-with-GitLab-04470deb8ef14c49bcec7243426790b5"
+    },
+    "properties": {
+      "block": [
+        "71143f29-2fe9-452b-8398-fc40f270a2b6"
+      ],
+      "tool": [
+        "decefdc2-0883-4adb-8fc0-13b451bb8c2f"
+      ],
+      "summary": "GitLab offers Git repositories, CI/CD, artifact scanning...",
+      "link": "https://about.gitlab.com",
+      "name": "DevOps Toolchains with GitLab"
+    }
+  },
+  {
     "file": "docs/maturity-model/security-and-compliance/automated-security-scanning.md",
     "meta": {
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
@@ -876,7 +893,8 @@ export const index = [
       "scope": "🛬 Landing Zone",
       "summary": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "tool-implementations": [
-        "3c377c14-3fbf-4766-a47a-e30bd070ed7f"
+        "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
+        "04470deb-8ef1-4c49-bcec-7243426790b5"
       ],
       "name": "Managed DevOps Toolchain"
     }
@@ -1564,6 +1582,19 @@ export const index = [
         "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
       ],
       "name": "Tenant Provisioning"
+    }
+  },
+  {
+    "file": "docs/tools/devops/gitlab.md",
+    "meta": {
+      "id": "decefdc2-0883-4adb-8fc0-13b451bb8c2f",
+      "url": "https://www.notion.so/GitLab-decefdc208834adb8fc013b451bb8c2f",
+      "title": "GitLab",
+      "category": "DevOps"
+    },
+    "properties": {
+      "category": "DevOps",
+      "name": "GitLab"
     }
   },
   {

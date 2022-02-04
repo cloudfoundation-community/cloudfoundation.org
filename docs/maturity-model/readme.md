@@ -18,6 +18,13 @@ properties:
 
 ![image-334ccfed-d1c6-4f95-a147-9c3d2ec75bf9](./334ccfed-d1c6-4f95-a147-9c3d2ec75bf9.png)
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>The Cloud Foundation Maturity Model as a Poster</CtaHeader>
+  <CtaText>Get the full overview on our more than 50 building blocks.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloud-assessment-free-poster/#download">Download Poster</CtaButton>
+</CallToAction>
+
 The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey. It captures the capabilities that organizations need to build in order to succeed at empowering DevOps teams with access to cloud infrastructure and services while staying in control. 
 
 The Cloud Foundation Maturity Model is **implementation agnostic**. While meshcloud initially created model and offers a Cloud Foundation Platform, the model is concerned with “what capabilities are offered” and not “how are they implemented”.
