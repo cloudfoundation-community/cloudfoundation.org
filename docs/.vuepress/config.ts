@@ -32,6 +32,17 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   title: "Cloud Foundation",
   description: "A solid foundation for your Cloud Journey",
   theme: path.resolve(__dirname, "./theme"),
+  head: [
+    // This list of links was given by https://favicon.io/favicon-converter/.
+    // <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    // <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    // <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    // <link rel="manifest" href="/site.webmanifest">
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
+    ['link', { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' }],
+    ['link', { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+  ],
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
     sidebar: sidebar,
