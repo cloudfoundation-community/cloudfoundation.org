@@ -18,7 +18,8 @@ properties:
   summary: >-
     Cloud tenant owners are transparently charged for the resource consumption
     as it is charged from the cloud provider.
-  tool-implementations: []
+  tool-implementations:
+    - 13bd4bac-36f7-466e-a2b8-7f5c9f77c480
   name: Chargeback via consumption cost allocation
 ---
 

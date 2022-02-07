@@ -18,7 +18,6 @@ properties:
     Implement automated policies to steer cloud consumers to appropriate cloud
     platforms and landing zones based on metadata about the cloud consumer.
   tool-implementations:
-    - acf452d3-8425-41e2-ba8b-ee212a6fb189
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
   name: Control access to cloud platforms and Landing Zones
 ---

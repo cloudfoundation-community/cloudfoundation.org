@@ -13,7 +13,8 @@ properties:
   summary: >-
     A dedicated onboarding portal helps teams fullfill organisational (e.g.
     budget) and regulatory (e.g. compliance) cloud onboarding duties.
-  tool-implementations: []
+  tool-implementations:
+    - cce0a290-fdb4-412d-bfc7-da0ae83a53a6
   name: Onboarding Portal
 ---
 

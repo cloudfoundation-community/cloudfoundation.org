@@ -41,7 +41,7 @@ The myriad of cloud services and the technical abilities to implement resource b
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
-  <CtaHeader>Mutli-Cloud Security and Compliance</CtaHeader>
+  <CtaHeader>Multi-Cloud Security and Compliance</CtaHeader>
   <CtaText>Check out meshcloud’s comprehensive guide to “<b>Multi-Cloud Security and Compliance</b>” as an introduction to challenges of defining your compliance strategy and building compliant landing zones.</CtaText>
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Read the Guide</CtaButton>
 </CallToAction>

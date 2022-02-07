@@ -16,7 +16,8 @@ properties:
     Project owners can view a monthly billing report listing all incurred
     charges aggregated across all cloud platforms and services used in a
     project.  
-  tool-implementations: []
+  tool-implementations:
+    - 59cdf884-5bd2-4b55-87f8-824a4a35623c
   name: Monthly cloud project billing report
 ---
 

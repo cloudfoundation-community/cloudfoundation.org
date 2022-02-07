@@ -137,6 +137,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "0db736c5-6801-4619-92a6-97c3842c907c",
+      "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-0db736c56801461992a697c3842c907c"
+    },
+    "properties": {
+      "block": [
+        "c9728af5-49fe-4948-8701-2d6485bfbe93"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack can charge consumers for internal services based on the time the service was used.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html#docsNav",
+      "name": "**Pay-per-Use for internal Services**"
+    }
+  },
+  {
     "file": "docs/maturity-model/iam/authorization-concept.md",
     "meta": {
       "id": "0dd09c75-2acd-4e87-9721-6b5f563da035",
@@ -255,6 +272,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "13bd4bac-36f7-466e-a2b8-7f5c9f77c480",
+      "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-13bd4bac36f7466ea2b87f5c9f77c480"
+    },
+    "properties": {
+      "block": [
+        "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack sends chargeback statements to cloud tenant owners every month. These contain the exact charges from the cloud platform(s) and ensure that the right tenant owners are charged their own resource consumption.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
+      "name": "Chargeback via consumption cost allocation"
+    }
+  },
+  {
     "file": "docs/maturity-model/tenant-management/playground-sandbox-environments.md",
     "meta": {
       "id": "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
@@ -273,6 +307,23 @@ export const index = [
       "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "tool-implementations": [],
       "name": "Playground / Sandbox Environments"
+    }
+  },
+  {
+    "meta": {
+      "id": "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a",
+      "url": "https://www.notion.so/Identity-Lifecycle-Management-17a9ca395a774c5e9b0e87b01dc5e57a"
+    },
+    "properties": {
+      "block": [
+        "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack creates and manages identities for each cloud tenant",
+      "link": "https://docs.meshcloud.io/docs/meshstack.identity-federation.html",
+      "name": "**Identity Lifecycle Management**"
     }
   },
   {
@@ -382,8 +433,27 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "59cdf884-5bd2-4b55-87f8-824a4a35623c"
+      ],
       "name": "Monthly cloud project billing report"
+    }
+  },
+  {
+    "meta": {
+      "id": "2896046e-fd61-4fa7-b381-67bb4f8893b2",
+      "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-2896046efd614fa7b38167bb4f8893b2"
+    },
+    "properties": {
+      "block": [
+        "cd162600-e742-4a80-b022-989da423ca43"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack generates so-called tenant usage reports that contain the specific resources consumed within a cloud tenant in a given month. These tenant usage reports are visible for cloud tenant owners at any time.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#tenant-usage-reports",
+      "name": "**Monthly cloud tenant billing report**"
     }
   },
   {
@@ -475,6 +545,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "3481641d-0686-420d-8487-794acd4f5e04",
+      "url": "https://www.notion.so/meshStack-Cloud-Tenant-Database-3481641d0686420d8487794acd4f5e04"
+    },
+    "properties": {
+      "block": [
+        "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack maintains an always-up-to-date list of cloud tenants active in the organization, including their applied metadata.",
+      "link": "https://docs.meshcloud.io/docs/administration.tenants.html#docsNav",
+      "name": "meshStack Cloud Tenant Database"
+    }
+  },
+  {
     "file": "docs/maturity-model/iam/identity-and-access-management-concept.md",
     "meta": {
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
@@ -533,7 +620,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "4d280fde-532f-4eb2-9c9c-da2c9ece3c24"
+      ],
       "name": "Individual Project Cost Optimization via Reservations"
     }
   },
@@ -616,7 +705,9 @@ export const index = [
       ],
       "scope": "☁️ Platform",
       "summary": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a"
+      ],
       "name": "Identity Lifecycle Management"
     }
   },
@@ -651,6 +742,23 @@ export const index = [
       "documentation": "Reference",
       "category": "Plan",
       "name": "Pillar Reference"
+    }
+  },
+  {
+    "meta": {
+      "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
+      "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24"
+    },
+    "properties": {
+      "block": [
+        "3c65a957-cb62-40fe-978e-709e3450f7fe"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
+      "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html#docsNav",
+      "name": "**Individual Project Cost Optimization via Reservations**"
     }
   },
   {
@@ -689,7 +797,9 @@ export const index = [
       ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenants are tagged and managed according to the companies needs",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "71c1b0fb-2eea-4492-bbb8-05a83098544c"
+      ],
       "name": "Cloud tenant tagging"
     }
   },
@@ -741,6 +851,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "59cdf884-5bd2-4b55-87f8-824a4a35623c",
+      "url": "https://www.notion.so/Monthly-cloud-project-billing-report-59cdf8845bd24b5587f8824a4a35623c"
+    },
+    "properties": {
+      "block": [
+        "28740e92-5559-4931-ab04-17cfb026edd5"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
+      "name": "**Monthly cloud project billing report**"
+    }
+  },
+  {
     "file": "docs/tools/cli/collie-cli.md",
     "meta": {
       "id": "5c2013b6-4c56-4813-8be7-ad86757014af",
@@ -765,7 +892,7 @@ export const index = [
       "tool": [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
       ],
-      "summary": "Collie CLI ",
+      "summary": "Open-source Collie CLI allows you to view monthly costs per tenant across AWS, Azure & GCP for a given timeframe.",
       "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
       "name": "Check monthly cloud tenant costs with collie"
     }
@@ -871,7 +998,10 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Multi-Cloud governance is enforced by central management of tags and metadata for all kinds of cloud tenants, independent of the cloud provider",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
+        "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
+      ],
       "name": "Central Management of Tenant tags and metadata"
     }
   },
@@ -900,6 +1030,40 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "71c1b0fb-2eea-4492-bbb8-05a83098544c",
+      "url": "https://www.notion.so/meshStack-Tenant-Tagging-71c1b0fb2eea4492bbb805a83098544c"
+    },
+    "properties": {
+      "block": [
+        "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack ensures up-to-date tags at least once a day for all cloud tenants based on metadata entered by cloud tenant owners and/or platform operators. ",
+      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#tags-in-cloud-tenants",
+      "name": "meshStack Tenant Tagging"
+    }
+  },
+  {
+    "meta": {
+      "id": "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
+      "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-73cfa3f416ed40cf9c750611aad78d0b"
+    },
+    "properties": {
+      "block": [
+        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack makes metadata an integral part of the tenant provisioning process and allows cloud foundation teams to create a full customizable list of tags that should be filled in by cloud tenant owners.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#docsNav",
+      "name": "Central Management of Tenant tags and metadata"
+    }
+  },
+  {
     "file": "docs/maturity-model/security-and-compliance/soc-integration.md",
     "meta": {
       "id": "74295ae4-dcd5-449b-8825-f12c5267e89b",
@@ -914,7 +1078,7 @@ export const index = [
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
-      "summary": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like [Tenable.io](http://tenable.io) or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
+      "summary": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like tenable.io or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
       "tool-implementations": [],
       "name": "SOC Integration"
     }
@@ -937,6 +1101,23 @@ export const index = [
       "summary": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
       "tool-implementations": [],
       "name": "Managed Data Lake access"
+    }
+  },
+  {
+    "meta": {
+      "id": "7547a774-2b9f-45fc-9123-fbb2e48ccd09",
+      "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-7547a7742b9f45fc9123fbb2e48ccd09"
+    },
+    "properties": {
+      "block": [
+        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+      ],
+      "tool": [
+        "5c2013b6-4c56-4813-8be7-ad86757014af"
+      ],
+      "summary": "Get a quick overview of your current metadata with open-source Collie CLI across AWS, Azure & GCP.",
+      "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
+      "name": "Central Management of Tenant tags and metadata"
     }
   },
   {
@@ -1116,7 +1297,9 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "e2123339-0641-4d44-b774-32ce23fd634d"
+      ],
       "name": "Self-Service Multi-Cloud Tenant Database"
     }
   },
@@ -1148,7 +1331,6 @@ export const index = [
     },
     "properties": {
       "block": [
-        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
         "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
       ],
       "tool": [
@@ -1244,7 +1426,10 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "3481641d-0686-420d-8487-794acd4f5e04",
+        "e2123339-0641-4d44-b774-32ce23fd634d"
+      ],
       "name": "Cloud Tenant Database"
     }
   },
@@ -1290,9 +1475,26 @@ export const index = [
       "tool": [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
-      "summary": "meshStack has private cloud metering features for\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
+      "summary": "meshStack supports out of the box private cloud metering for:\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
       "link": "https://docs.meshcloud.io/docs/meshstack.billing.html",
       "name": "Private Cloud Metering with meshStack"
+    }
+  },
+  {
+    "meta": {
+      "id": "c88e6212-2a64-431f-a404-b39742574404",
+      "url": "https://www.notion.so/Consumption-based-pay-per-use-for-internal-services-c88e62122a64431fa404b39742574404"
+    },
+    "properties": {
+      "block": [
+        "d2cb8a5e-3e28-448b-8944-14ff38fad792"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack offers a marketplace where the cloud foundation team (or other teams) can offer internal services. This also support the use of customizable pay-per-use metering, e.g. pay $0.001 per API request or $1 per GB stored.",
+      "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
+      "name": "Consumption based pay-per-use for internal services"
     }
   },
   {
@@ -1313,8 +1515,27 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "0db736c5-6801-4619-92a6-97c3842c907c"
+      ],
       "name": "Pay-per-Use for internal Services"
+    }
+  },
+  {
+    "meta": {
+      "id": "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
+      "url": "https://www.notion.so/Onboarding-Portal-cce0a290fdb4412dbfc7da0ae83a53a6"
+    },
+    "properties": {
+      "block": [
+        "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "The API of meshStack can be connected to an external onboarding portal to help provision cloud tenants and introduce an approval flow for getting cloud access.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.onboarding.html#customer-registration",
+      "name": "Onboarding Portal"
     }
   },
   {
@@ -1338,7 +1559,8 @@ export const index = [
       "scope": "☁️ Platform",
       "summary": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
       "tool-implementations": [
-        "635ebffa-17e9-4231-9d38-b59625be9b03"
+        "635ebffa-17e9-4231-9d38-b59625be9b03",
+        "2896046e-fd61-4fa7-b381-67bb4f8893b2"
       ],
       "name": "Monthly cloud tenant billing report"
     }
@@ -1379,7 +1601,9 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "A dedicated onboarding portal helps teams fullfill organisational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "cce0a290-fdb4-412d-bfc7-da0ae83a53a6"
+      ],
       "name": "Onboarding Portal"
     }
   },
@@ -1417,7 +1641,7 @@ export const index = [
       "tool": [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
-      "summary": "meshStack automatically provisions and reconciles cloud tenants based on desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
+      "summary": "meshStack automatically provisions and reconciles cloud tenants based on the desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
       "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
       "name": "Tenant provisioning with meshStack"
     }
@@ -1440,7 +1664,9 @@ export const index = [
       ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "e129bdf8-7c01-47a7-a524-f764149c2a97"
+      ],
       "name": "Chargeback at full cost allocation"
     }
   },
@@ -1462,7 +1688,9 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "c88e6212-2a64-431f-a404-b39742574404"
+      ],
       "name": "Consumption based pay-per-use for internal Services"
     }
   },
@@ -1619,8 +1847,44 @@ export const index = [
       ],
       "scope": "☁️ Platform",
       "summary": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "13bd4bac-36f7-466e-a2b8-7f5c9f77c480"
+      ],
       "name": "Chargeback via consumption cost allocation"
+    }
+  },
+  {
+    "meta": {
+      "id": "e129bdf8-7c01-47a7-a524-f764149c2a97",
+      "url": "https://www.notion.so/Chargeback-at-full-cost-allocation-e129bdf87c0147a7a524f764149c2a97"
+    },
+    "properties": {
+      "block": [
+        "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack sends out so-called chargeback statements every month to cloud tenant owners. These statements contain detailed information on consumed resources. meshStack also support custom internal fees, e.g. charge 10% on top of resource consumption or a fixed amount, e.g. $50 per month. This helps the cloud foundation team become a profit center instead of a cost center.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
+      "name": "Chargeback at full cost allocation"
+    }
+  },
+  {
+    "meta": {
+      "id": "e2123339-0641-4d44-b774-32ce23fd634d",
+      "url": "https://www.notion.so/Collie-Cloud-Tenant-Database-e212333906414d44b77432ce23fd634d"
+    },
+    "properties": {
+      "block": [
+        "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+      ],
+      "tool": [
+        "5c2013b6-4c56-4813-8be7-ad86757014af"
+      ],
+      "summary": "Open-source Collie CLI can give you a list of all active tenants in your organization across AWS, Azure & GCP in minutes. This includes metadata and costs per month.",
+      "link": "https://github.com/meshcloud/collie-cli/wiki#listing-tenants",
+      "name": "Collie Cloud Tenant Database"
     }
   },
   {
@@ -1644,7 +1908,6 @@ export const index = [
       "scope": "🏢 Core",
       "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
       "tool-implementations": [
-        "acf452d3-8425-41e2-ba8b-ee212a6fb189",
         "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
       ],
       "name": "Control access to cloud platforms and Landing Zones"
@@ -1693,6 +1956,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b",
+      "url": "https://www.notion.so/Approving-budgets-with-meshStack-f1b54bf15f654c7d85e7d0085f8c2b2b"
+    },
+    "properties": {
+      "block": [
+        "f96feedc-d969-48f8-adb4-93031cc0a24d"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack can be setup to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html#docsNav",
+      "name": "Approving budgets with meshStack"
+    }
+  },
+  {
     "file": "docs/maturity-model/service-ecosystem/managed-internet-egress.md",
     "meta": {
       "id": "f90c7375-88b9-42dc-8e98-a65c006b927a",
@@ -1730,7 +2010,9 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Budgets are approved by controllers / people with budget responsibility",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b"
+      ],
       "name": "Budget Approval Process"
     }
   },

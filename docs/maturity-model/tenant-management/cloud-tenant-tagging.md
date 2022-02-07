@@ -13,7 +13,8 @@ properties:
     - b875ac41-2b38-4ce4-ab8b-76ddd876d789
   scope: ☁️ Platform
   summary: Cloud tenants are tagged and managed according to the companies needs
-  tool-implementations: []
+  tool-implementations:
+    - 71c1b0fb-2eea-4492-bbb8-05a83098544c
   name: Cloud tenant tagging
 ---
 

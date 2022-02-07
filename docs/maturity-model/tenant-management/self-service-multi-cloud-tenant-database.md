@@ -16,7 +16,8 @@ properties:
   summary: >-
     Owners of cloud tenants can register, update and remove tenant metadata in a
     central multi-cloud tenant database in self service.
-  tool-implementations: []
+  tool-implementations:
+    - e2123339-0641-4d44-b774-32ce23fd634d
   name: Self-Service Multi-Cloud Tenant Database
 ---
 

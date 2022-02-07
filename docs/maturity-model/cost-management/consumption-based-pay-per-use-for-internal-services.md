@@ -15,7 +15,8 @@ properties:
   summary: >-
     Enable fine-grained pay-per-use options for managed services offered on the
     cloud foundation, e.g. pay per API request, per GB/h stored etc.
-  tool-implementations: []
+  tool-implementations:
+    - c88e6212-2a64-431f-a404-b39742574404
   name: Consumption based pay-per-use for internal Services
 ---
 

@@ -53,18 +53,13 @@ At the most basic level, cloud providers offer commitment options based on **glo
 
 - Azure Reserved Virtual Machine Instances
 
-**Resource Performance reservations** guarantee s specific level of resource performance, e.g. provisioned IOPS.
+**Resource performance reservations** guarantee specific levels of resource performance, e.g. provisioned IOPS.
 
-> **💡** Resource Performance reservations are very workload specific and thus best implemented as [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). 
+> **💡** Resource performance reservations are very workload specific and thus best implemented as [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). 
 
 ## Implementation
 
-Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). However, depending on the organisational philosophy (cf. [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implement only one or both capabilities.
+Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). However, depending on the organizational philosophy (cf. [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implementing only one or both capabilities.
 
 
 
-
-
-## Resources
-
-- [https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/](https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/)

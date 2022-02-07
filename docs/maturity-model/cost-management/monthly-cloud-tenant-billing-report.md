@@ -19,6 +19,7 @@ properties:
     incurred charges for cloud resource consumption.
   tool-implementations:
     - 635ebffa-17e9-4231-9d38-b59625be9b03
+    - 2896046e-fd61-4fa7-b381-67bb4f8893b2
   name: Monthly cloud tenant billing report
 ---
 
