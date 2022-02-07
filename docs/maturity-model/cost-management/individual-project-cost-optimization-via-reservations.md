@@ -18,7 +18,8 @@ properties:
     resulting pre-payments and benefits out of these reservations. A system is
     in place to manage associated risks (e.g. budget authorization,
     overcommitment, lack of budget). 
-  tool-implementations: []
+  tool-implementations:
+    - 4d280fde-532f-4eb2-9c9c-da2c9ece3c24
   name: Individual Project Cost Optimization via Reservations
 ---
 

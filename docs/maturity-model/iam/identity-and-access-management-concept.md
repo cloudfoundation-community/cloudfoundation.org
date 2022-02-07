@@ -42,33 +42,33 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 #### Core Questions
 
-[ ] What is your source of identities? 
+- What is your source of identities? 
 
-[ ] How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md))
+- How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md))
 
-[ ] What level of separation will you have between different applications?
+- What level of separation will you have between different applications?
 
-[ ] How do you keep a central overview over access permissions when there are multiple clouds involved?
+- How do you keep a central overview over access permissions when there are multiple clouds involved?
 
 #### Specific Questions on IAM for Humans
 
 An Identity and Access Management Concept needs to answer the following questions:
 
-[ ] How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md))
+- How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md))
 
-[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has? 
+- How does a cloud-native, self-service approach fit together with the control requirements your organization has? 
 
-[ ] Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/maturity-model/iam/privileged-access-management.md) )
+- Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/maturity-model/iam/privileged-access-management.md) )
 
 #### Specific Questions on IAM for Workload
 
 An Identity and Access Management Concept needs to answer the following questions:
 
-[ ] What documentation around access rights needs to happen? Documentation of access rights is a common requirement for companies in the finance or healthcare industries.
+- What documentation around access rights needs to happen? Documentation of access rights is a common requirement for companies in the finance or healthcare industries.
 
-[ ] How does a cloud-native, self-service approach fit together with the control requirements your organization has? (See [Service Account Management](/maturity-model/iam/service-account-management.md) )
+- How does a cloud-native, self-service approach fit together with the control requirements your organization has? (See [Service Account Management](/maturity-model/iam/service-account-management.md) )
 
-[ ] What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow (e.g. zero trust)?
+- What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow (e.g. zero trust)?
 
 ## How to Set up Resource Hierarchy for Access Management
 
@@ -78,15 +78,15 @@ The design of your resource hierarchies must be taken into account for the Ident
 
 #### Azure
 
-For Azure, the recommendation is to map applications that want to use the cloud to subscriptions. See 
+For Azure, the recommendation is to map applications that want to use the cloud to **subscriptions**. See 
 
 [https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/](https://www.meshcloud.io/modeling-your-organizational-hierarchy-on-azure/)
 
 #### GCP
 
-For GCP, the recommendation is to map applications that want to use the cloud to projects. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
+For GCP, the recommendation is to map applications that want to use the cloud to **projects**. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
 
 #### AWS
 
-For AWS, the recommendation is to map applications that want to use the cloud to accounts. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
+For AWS, the recommendation is to map applications that want to use the cloud to **accounts**. See [https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/](https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/)
 

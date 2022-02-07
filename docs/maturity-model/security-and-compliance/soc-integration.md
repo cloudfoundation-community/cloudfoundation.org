@@ -12,11 +12,11 @@ properties:
   scope: 🛬 Landing Zone
   summary: >-
     Virtual machines are integrated into a central Security Operations Center
-    (SOC) solution like [Tenable.io](http://tenable.io) or Qualys. The cloud
-    inventory of existing machines is reconciled against the SOC to ensure
-    completeness.
+    (SOC) solution like tenable.io or Qualys. The cloud inventory of existing
+    machines is reconciled against the SOC to ensure completeness.
   tool-implementations: []
   name: SOC Integration
 ---
 
-[Tenable.io](http://tenable.io) [https://www.tenable.com/products/tenable-io](https://www.tenable.com/products/tenable-io)
+
+

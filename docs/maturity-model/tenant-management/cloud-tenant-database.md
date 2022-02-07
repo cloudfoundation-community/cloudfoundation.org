@@ -16,7 +16,9 @@ properties:
   summary: >-
     Maintenance of a database of cloud tenants and associated metadata like
     responsible owners and chargeback information like cost center.
-  tool-implementations: []
+  tool-implementations:
+    - 3481641d-0686-420d-8487-794acd4f5e04
+    - e2123339-0641-4d44-b774-32ce23fd634d
   name: Cloud Tenant Database
 ---
 
