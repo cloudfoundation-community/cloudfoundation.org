@@ -14,7 +14,7 @@
     "lint:text": "textlint ./docs/"
   },
   "devDependencies": {
-    "@meshcloud/notion-markdown-cms": "^0.7.0",
+    "@meshcloud/notion-markdown-cms": "^0.8.0",
     "@types/mermaid": "^8.2.7",
     "@types/rimraf": "^3.0.2",
     "@vue/component-compiler-utils": "^3.3.0",

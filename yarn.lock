@@ -36,10 +36,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@meshcloud/notion-markdown-cms@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.7.0.tgz#c4548c83654bc1c1c4649909cf822b8a4bcae3cc"
-  integrity sha512-ucPakhVHZqIyZkLrW95qgSWpM9rxykw4AsiMAslpAwRWWRTs2govQBJ3UXTnuz1n2GMbW4tqO1bWi84TasTeQA==
+"@meshcloud/notion-markdown-cms@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.8.0.tgz#6f115cd7e8743ec9569c9d9c50263181f99a9973"
+  integrity sha512-LgOQcWWUbxSJ5zyKjVUkAJFvjvjYleYwf7YlavMe8MVQ8dcRmxfmwYNJPfWavRYMK4u38O4U7JRJ7UYUzMGebA==
   dependencies:
     "@notionhq/client" "^0.3.2"
     chalk "^4.1.2"
@@ -2130,11 +2130,6 @@ flatted@^2.0.0:
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
 
 follow-redirects@^1.0.0:
-  version "1.14.7"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
-  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
-
-follow-redirects@^1.14.7:
   version "1.14.7"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
   integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
