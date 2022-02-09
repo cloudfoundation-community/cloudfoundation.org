@@ -19,7 +19,8 @@ properties:
     A central database of all multi-cloud tenants initiates tenant provisioning
     and deprovisioning processes. The database acts as an authoritative source
     of tenants and ensures tenant metadata is always up to date.
-  tool-implementations: []
+  tool-implementations:
+    - 5154be86-47d3-4453-888d-102be5b07786
   name: Multi-cloud tenant database integrated with lifecycle management
 ---
 

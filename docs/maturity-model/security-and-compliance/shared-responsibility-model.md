@@ -25,7 +25,7 @@ properties:
 
 ## What Is the Shared Responsibility Model
 
-The common known shared responsibility model definition explained by cloud providers like AWS, GCP or Azure are not sufficient to enable a success story for enterprises as it does not take into account customer internal structures and organizations at all. Every successful cloud-native organization[?] has defined an agreed-on holistic shared responsibility model.
+The common known shared responsibility model definition explained by cloud providers like AWS, GCP or Azure are not sufficient to enable a success story for enterprises as it does not take into account customer internal structures and organizations at all. Every successful cloud-native organization has defined an agreed-on holistic shared responsibility model.
 
 The foundation of a well-defined cloud-native organization is the documentation of the shared responsibility model as well as further information for other stakeholders. This is implemented usually in form of an documented internally shared wiki like Confluence.
 

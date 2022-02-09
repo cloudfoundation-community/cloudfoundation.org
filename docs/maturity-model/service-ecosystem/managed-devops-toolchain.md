@@ -111,7 +111,7 @@ If the Cloud Foundation team wants to provide continuous delivery capabilities i
 
 - rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](/maturity-model/iam/authorization-concept.md))
 
-- a **semi-automated** process ****leverages credentials provided by [Service Account Management](/maturity-model/iam/service-account-management.md) manually transferred into the CI/CD platform
+- a **semi-automated** process leverages credentials provided by [Service Account Management](/maturity-model/iam/service-account-management.md) manually transferred into the CI/CD platform
 
 - a **fully automated** process sets up service accounts and allows the CI/CD platform to impersonate service accounts. This can be achieved by managing secrets for those service accounts, including regular rotations. An even better approach is Workload Identity Federation([GCP](https://cloud.google.com/iam/docs/workload-identity-federation), [Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)). With Workload Identity Federation no secrets need to be stored or rotated.
 

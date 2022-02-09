@@ -15,7 +15,8 @@ properties:
     Definition of a cloud resource hierarchy that facilitates tenant isolation
     and policy enforcement. Cloud tenants are deliberately placed in this
     resource hierarchy when tenants are provisioned.
-  tool-implementations: []
+  tool-implementations:
+    - 11f50039-a1d6-49de-9fbd-247a1955b474
   name: Resource Hierarchy
 ---
 

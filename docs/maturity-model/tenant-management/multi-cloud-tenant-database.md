@@ -20,7 +20,8 @@ properties:
     using a unified information schema. Tenants can be registered in this
     database via an API or are stored there by combining different tenant
     lists/exports into a common database schema (ETL). 
-  tool-implementations: []
+  tool-implementations:
+    - 65b1a609-a258-4e93-898c-9d115b6e32c5
   name: Multi-Cloud Tenant Database
 ---
 

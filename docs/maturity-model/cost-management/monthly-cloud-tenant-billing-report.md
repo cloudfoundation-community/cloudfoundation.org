@@ -53,7 +53,7 @@ Automation of this process offers further avenues, like providing billing previe
 
 ### Unify Tenant Billing Reports across Clouds
 
-The interfaces and billing data formats are different for every cloud provider. Providing a cost view across clouds is only possible after unifying data from all different sources (see [Monthly cloud project billing report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md)).
+The interfaces and billing data formats are different for every cloud provider. Providing a cost view across clouds is only possible after unifying data from all different sources (see [Monthly Cloud Project Billing Report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md)).
 
 Furthermore, building chargeback capabilities also depends on building a common billing data view across clouds (see [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md)) and managing global IT spend.
 

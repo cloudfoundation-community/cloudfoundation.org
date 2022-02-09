@@ -15,7 +15,8 @@ properties:
     Landing Zones includes a common set of core resources like virtual networks.
     These resources are managed with the same life-cycle as the underlying cloud
     tenant.
-  tool-implementations: []
+  tool-implementations:
+    - 254476a2-de92-4724-a06e-65931ebb5aec
   name: Monolithic Landing Zone
 ---
 

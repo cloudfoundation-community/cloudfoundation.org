@@ -18,6 +18,7 @@ properties:
     central multi-cloud tenant database in self service.
   tool-implementations:
     - e2123339-0641-4d44-b774-32ce23fd634d
+    - 334eb216-fa16-4946-9fe5-8f66bb7fc3fa
   name: Self-Service Multi-Cloud Tenant Database
 ---
 
