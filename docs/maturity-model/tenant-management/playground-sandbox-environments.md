@@ -18,7 +18,8 @@ properties:
     Playgrounds use relaxed policies (e.g. more cloud services are allowed) but
     come with time- or spend-limits that are tightly controlled. Expired
     playgrounds are automatically deprovisioned. 
-  tool-implementations: []
+  tool-implementations:
+    - 8b5e9c3f-82b4-429c-ad60-49176671d537
   name: Playground / Sandbox Environments
 ---
 

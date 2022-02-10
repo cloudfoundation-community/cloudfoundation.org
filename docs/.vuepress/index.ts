@@ -149,7 +149,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack can charge consumers for internal services based on the time the service was used.",
-      "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html#docsNav",
+      "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html",
       "name": "**Pay-per-Use for internal Services**"
     }
   },
@@ -225,8 +225,27 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "65b1a609-a258-4e93-898c-9d115b6e32c5"
+      ],
       "name": "Multi-Cloud Tenant Database"
+    }
+  },
+  {
+    "meta": {
+      "id": "11f50039-a1d6-49de-9fbd-247a1955b474",
+      "url": "https://www.notion.so/Resource-Hierarchy-11f50039a1d649de9fbd247a1955b474"
+    },
+    "properties": {
+      "block": [
+        "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack’s Landing Zones allow cloud foundation teams to pre-define a desired resource hierarchy for newly created (and yet existing) cloud tenants. meshStacks supports the hierarchy concept for all public and private cloud platforms, e.g. Azure Management Groups & AWS Organization Units.",
+      "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
+      "name": "Resource Hierarchy "
     }
   },
   {
@@ -305,7 +324,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "8b5e9c3f-82b4-429c-ad60-49176671d537"
+      ],
       "name": "Playground / Sandbox Environments"
     }
   },
@@ -416,17 +437,36 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "254476a2-de92-4724-a06e-65931ebb5aec",
+      "url": "https://www.notion.so/Monolithic-Landing-Zone-254476a2de924724a06e65931ebb5aec"
+    },
+    "properties": {
+      "block": [
+        "57c00ed4-e699-4167-a0f5-6009bf31b600"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack enables you to create monolithic landing zones for all major public/private cloud platforms:\n- AWS\n- Azure\n- GCP\n- OpenShift\n- Kubernetes",
+      "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
+      "name": "Monolithic Landing Zone"
+    }
+  },
+  {
     "file": "docs/maturity-model/cost-management/monthly-cloud-project-billing-report.md",
     "meta": {
       "id": "28740e92-5559-4931-ab04-17cfb026edd5",
-      "url": "https://www.notion.so/Monthly-cloud-project-billing-report-28740e9255594931ab0417cfb026edd5",
-      "title": "Monthly cloud project billing report",
+      "url": "https://www.notion.so/Monthly-Cloud-Project-Billing-Report-28740e9255594931ab0417cfb026edd5",
+      "title": "Monthly Cloud Project Billing Report",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock"
     },
     "properties": {
       "pillar": "💵 Cost Management",
-      "enables": [],
+      "enables": [
+        "ce20312c-aa7a-453f-82f2-f186469dd973"
+      ],
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "cd162600-e742-4a80-b022-989da423ca43"
@@ -436,7 +476,7 @@ export const index = [
       "tool-implementations": [
         "59cdf884-5bd2-4b55-87f8-824a4a35623c"
       ],
-      "name": "Monthly cloud project billing report"
+      "name": "Monthly Cloud Project Billing Report"
     }
   },
   {
@@ -522,6 +562,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "334eb216-fa16-4946-9fe5-8f66bb7fc3fa",
+      "url": "https://www.notion.so/Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa"
+    },
+    "properties": {
+      "block": [
+        "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack allows internal customers to create and manage tenants in self-service. This goes both for the tenant itself as well as the metadata of the tenant.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
+      "name": "**Self-Service Multi-Cloud Tenant Database**"
+    }
+  },
+  {
     "file": "docs/maturity-model/security-and-compliance/cloud-tenant-resources-tagging.md",
     "meta": {
       "id": "344b75a4-595b-4ba5-8851-ddfb6d4acf7c",
@@ -557,7 +614,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack maintains an always-up-to-date list of cloud tenants active in the organization, including their applied metadata.",
-      "link": "https://docs.meshcloud.io/docs/administration.tenants.html#docsNav",
+      "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
       "name": "meshStack Cloud Tenant Database"
     }
   },
@@ -757,7 +814,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
-      "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html#docsNav",
+      "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html",
       "name": "**Individual Project Cost Optimization via Reservations**"
     }
   },
@@ -776,6 +833,23 @@ export const index = [
       "category": "Maturity Model",
       "redaction-state": "Sketch",
       "name": "Introduction"
+    }
+  },
+  {
+    "meta": {
+      "id": "5154be86-47d3-4453-888d-102be5b07786",
+      "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786"
+    },
+    "properties": {
+      "block": [
+        "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
+      "name": "**Multi-cloud tenant database integrated with lifecycle management**"
     }
   },
   {
@@ -820,7 +894,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "254476a2-de92-4724-a06e-65931ebb5aec"
+      ],
       "name": "Monolithic Landing Zone"
     }
   },
@@ -930,8 +1006,27 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "9b740724-686e-45f2-8924-9000279b806b"
+      ],
       "name": "Tenant Inventory Reconciliation"
+    }
+  },
+  {
+    "meta": {
+      "id": "65b1a609-a258-4e93-898c-9d115b6e32c5",
+      "url": "https://www.notion.so/Mulit-cloud-tenant-database-65b1a609a2584e93898c9d115b6e32c5"
+    },
+    "properties": {
+      "block": [
+        "11af37b7-c948-4486-a5da-5b1db6de8193"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack automatically maintains a database of all tenants under management by the cloud foundation.",
+      "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
+      "name": "Mulit-cloud tenant database"
     }
   },
   {
@@ -1059,7 +1154,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack makes metadata an integral part of the tenant provisioning process and allows cloud foundation teams to create a full customizable list of tags that should be filled in by cloud tenant owners.",
-      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#docsNav",
+      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
       "name": "Central Management of Tenant tags and metadata"
     }
   },
@@ -1141,7 +1236,9 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "A central database of all multi-cloud tenants initiates tenant provisioning and deprovisioning processes. The database acts as an authoritative source of tenants and ensures tenant metadata is always up to date.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "5154be86-47d3-4453-888d-102be5b07786"
+      ],
       "name": "Multi-cloud tenant database integrated with lifecycle management"
     }
   },
@@ -1219,6 +1316,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "8b5e9c3f-82b4-429c-ad60-49176671d537",
+      "url": "https://www.notion.so/Playground-Sandbox-Environments-8b5e9c3f82b4429cad6049176671d537"
+    },
+    "properties": {
+      "block": [
+        "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "Through the use of meshStack’s landing zones, platform operators can create a dedicated path for cloud tenant owners to quickly spin up a new playground / sandbox environment.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
+      "name": "Playground / Sandbox Environments"
+    }
+  },
+  {
     "file": "docs/maturity-model/tenant-management/modular-landing-zones.md",
     "meta": {
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
@@ -1237,6 +1351,23 @@ export const index = [
       "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
       "tool-implementations": [],
       "name": "Modular Landing Zones"
+    }
+  },
+  {
+    "meta": {
+      "id": "9b740724-686e-45f2-8924-9000279b806b",
+      "url": "https://www.notion.so/Tenant-Inventory-Reconciliation-9b740724686e45f289249000279b806b"
+    },
+    "properties": {
+      "block": [
+        "64284b14-faab-461c-80bb-5e8efbae4dcc"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack gives an overview of unmanaged tenants. These are tenants that are not yet under management of the cloud foundation team and they can be easily imported into the governance model.",
+      "link": "https://example.com/",
+      "name": "Tenant Inventory Reconciliation"
     }
   },
   {
@@ -1298,7 +1429,8 @@ export const index = [
       "scope": "🏢 Core",
       "summary": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
       "tool-implementations": [
-        "e2123339-0641-4d44-b774-32ce23fd634d"
+        "e2123339-0641-4d44-b774-32ce23fd634d",
+        "334eb216-fa16-4946-9fe5-8f66bb7fc3fa"
       ],
       "name": "Self-Service Multi-Cloud Tenant Database"
     }
@@ -1320,7 +1452,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "11f50039-a1d6-49de-9fbd-247a1955b474"
+      ],
       "name": "Resource Hierarchy"
     }
   },
@@ -1563,6 +1697,29 @@ export const index = [
         "2896046e-fd61-4fa7-b381-67bb4f8893b2"
       ],
       "name": "Monthly cloud tenant billing report"
+    }
+  },
+  {
+    "file": "docs/maturity-model/cost-management/monthly-cloud-project-carbon-footprint-report.md",
+    "meta": {
+      "id": "ce20312c-aa7a-453f-82f2-f186469dd973",
+      "url": "https://www.notion.so/Monthly-Cloud-Project-Carbon-Footprint-Report-ce20312caa7a453f82f2f186469dd973",
+      "title": "Monthly Cloud Project Carbon Footprint Report",
+      "category": "💵 Cost Management",
+      "layout": "CFMMBlock"
+    },
+    "properties": {
+      "pillar": "💵 Cost Management",
+      "enables": [],
+      "redaction-state": "Draft",
+      "journey-stage": "⭐️⭐️⭐️⭐️",
+      "depends-on": [
+        "28740e92-5559-4931-ab04-17cfb026edd5"
+      ],
+      "scope": "🏢 Core",
+      "summary": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
+      "tool-implementations": [],
+      "name": "Monthly Cloud Project Carbon Footprint Report"
     }
   },
   {
@@ -1888,6 +2045,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29",
+      "url": "https://www.notion.so/Link-Cloud-Tenants-to-CMDB-EAM-e4b2c4ffb42c4a77bac75f1a2ca24c29"
+    },
+    "properties": {
+      "block": [
+        "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack allows defining custom metadata tags that are applied on the actual cloud tenants in AWS, Azure & GCP. These tags can be used for maintaining connections to CMDB or EAM systems.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#how-to-view-and-define-available-tags",
+      "name": "Link Cloud Tenants to CMDB/EAM"
+    }
+  },
+  {
     "file": "docs/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md",
     "meta": {
       "id": "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
@@ -1951,7 +2125,9 @@ export const index = [
       ],
       "scope": "🏢 Core",
       "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29"
+      ],
       "name": "Link Cloud Tenants to CMDB/EAM"
     }
   },
@@ -1968,7 +2144,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack can be setup to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
-      "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html#docsNav",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html",
       "name": "Approving budgets with meshStack"
     }
   },
