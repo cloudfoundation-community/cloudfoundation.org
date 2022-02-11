@@ -21,7 +21,7 @@ properties:
 
 ## Why Modular Landing Zones?
 
-A Landing Zone describes how a cloud tenant should be prepared before DevOps teams can access it. 
+A Landing Zone describes how a cloud tenant should be prepared before DevOps teams can access it.
 
 Modular Landing Zones have a baseline and are extendable with optional modules.
 
@@ -71,4 +71,3 @@ GitOps is a proven pattern for managing optional Landing Zones modules. Having e
 ### Find the Right Balance between Control and Freedom
 
 Do DevOps teams get IAM management rights in their tenant? An “open” approach to tenant permissions allows DevOps teams to iterate faster. A “closed” approach minimizes risks stemming from misconfigured permissions.
-

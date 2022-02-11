@@ -564,7 +564,7 @@ export const index = [
   {
     "meta": {
       "id": "334eb216-fa16-4946-9fe5-8f66bb7fc3fa",
-      "url": "https://www.notion.so/Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa"
+      "url": "https://www.notion.so/meshStack-Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa"
     },
     "properties": {
       "block": [
@@ -573,9 +573,9 @@ export const index = [
       "tool": [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
-      "summary": "meshStack allows internal customers to create and manage tenants in self-service. This goes both for the tenant itself as well as the metadata of the tenant.",
+      "summary": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
       "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
-      "name": "**Self-Service Multi-Cloud Tenant Database**"
+      "name": "meshStack **Self-Service Multi-Cloud Tenant Database**"
     }
   },
   {
@@ -1421,7 +1421,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "11af37b7-c948-4486-a5da-5b1db6de8193"
@@ -1447,7 +1447,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1532,6 +1532,7 @@ export const index = [
     "properties": {
       "pillar": "💵 Cost Management",
       "enables": [],
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1776,7 +1777,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",

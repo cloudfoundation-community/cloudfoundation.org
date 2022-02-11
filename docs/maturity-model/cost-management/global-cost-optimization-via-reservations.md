@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
@@ -29,7 +30,7 @@ As an organization grows its consumption of cloud services, optimizing cloud spe
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Multi-Cloud Cost Management Guide</CtaButton>
 </CallToAction>
 
-## What Are Reservations
+## What Are Cloud Resource Reservations
 
 In the cloud foundation maturity model, we use the term “reservations” to describe any type of commercial agreement that offers reduced rate it exchange for some sort of reservation of cloud resources.
 
