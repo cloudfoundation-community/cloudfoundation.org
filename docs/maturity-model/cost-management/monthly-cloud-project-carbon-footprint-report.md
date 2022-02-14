@@ -22,8 +22,6 @@ properties:
   name: Monthly Cloud Project Carbon Footprint Report
 ---
 
-
-
 ## About Carbon Footprint Reporting
 
 - explain GHG scope 1, 2, 3
@@ -31,8 +29,6 @@ properties:
     - sourcing from public cloud provider: most likely scope 3
 
 - explain how cloud providers model carbon footprint
-
-
 
 ## Proven Patterns When Implementing Cloud Carbon Footprint Reporting
 
@@ -55,3 +51,4 @@ implementing this capability can help meet regulatory requirements (e.g. EU CSRD
 ### Implement Carbon Footprint Reporting for Private Cloud & Services
 
 > **💡** Future versions of the CFMM model may include these as separate capabilities, similar to [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) and [Consumption based pay-per-use for internal Services](/maturity-model/cost-management/consumption-based-pay-per-use-for-internal-services.md) (but with carbon, instead of currency)
+

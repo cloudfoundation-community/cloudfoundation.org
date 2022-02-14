@@ -7,7 +7,7 @@ layout: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []
-  redaction-state: review-v1
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
@@ -40,7 +40,7 @@ The following list is a quick reference to the different resource hierarchies in
 
 - **Kubernetes (and OpenShift): Namespace (Project)** → *Resources*
 
-- **OpenStack:** Domain → **Project** → *Resources*
+    - **OpenStack:** Domain → **Project** → *Resources*
 
 - **Cloud Foundry:** Foundation → Organization → **Space** → Resources
 
