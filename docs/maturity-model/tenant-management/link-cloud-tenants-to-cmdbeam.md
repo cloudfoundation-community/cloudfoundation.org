@@ -11,8 +11,7 @@ properties:
     - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273
   redaction-state: Draft
   journey-stage: ⭐️⭐️
-  depends-on:
-    - 707c41b8-6da0-4e78-b982-fa4b1365521b
+  depends-on: []
   scope: 🏢 Core
   summary: >-
     Maintain a link between cloud tenants and a central CMDB/EAM repository
@@ -26,7 +25,7 @@ properties:
 
 Organizations can implement this using naming and tagging policies. 
 
-A more advanced implementation leverages [Central Management of Tenant tags and metadata](/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md) 
+A more advanced implementation leverages [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md) 
 
 
 

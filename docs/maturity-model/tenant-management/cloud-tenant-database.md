@@ -36,16 +36,20 @@ To ensure accountability, organizations must at all times maintain key informati
 
 - **Where** is the cloud tenant? How is it uniquely identified?
 
-There are many different ways to implement a cloud tenant database. Many cloud foundation teams start by maintaining it directly in the cloud platform via  [Cloud tenant tagging](/maturity-model/tenant-management/cloud-tenant-tagging.md). While tagging is a valid implementation of a cloud tenant database, tagging often provides an insufficient solution to capture all relevant information (e.g. because tags limit the type and amount of data they can store). In the cloud foundation maturity model, we therefore consider a tenant database and [Cloud tenant tagging](/maturity-model/tenant-management/cloud-tenant-tagging.md) separate capabilities.
+There are many different ways to implement a cloud tenant database. Many cloud foundation teams start by maintaining their metadata directly in the cloud platform using cloud tenant tags.
+
+> **💡** While  [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md)  is a valid way to implement a cloud tenant database, tagging often provides an insufficient solution to capture all relevant information due to technical limitations (amount of tags, data types, data length).
+
+ In the cloud foundation maturity model, we therefore consider a tenant database and [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) separate capabilities.
+
+## Proven Patterns When Building a Cloud Tenant Database
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
-	<CtaHeader>Capture Key Information with Consistent Cloud Tagging</CtaHeader>
-	<CtaText>Understand how to pave your path to a winning multi-cloud tagging strategy.</CtaText>
-	<CtaButton class="btn-primary" url=" https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy / ">Tell me how to tag</CtaButton>
+	<CtaHeader>Cloud Tenant Management Guide</CtaHeader>
+	<CtaText>Learn more about the organizational needs driving cloud tenant database requirements in the "Cloud Tenant Management Guide - what you need to know in 2021" guide.</CtaText>
+	<CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
-
-## Proven Patterns When Building a Cloud Tenant Database
 
 ### Integrate with the Provisioning Process
 
@@ -88,3 +92,5 @@ Based on the recommendation and best practices above, here’s a list of the mos
 - `Cost Center` or other chargeback related information
 
 - `Budget` even though cloud is pay per use, setting up cost alerts to prevent unexpectedly high cloud bills (bill-shock) is a common task of cloud foundation teams
+
+[https://www.notion.so/meshcloud/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d#72519ff6f6d8427baeaf0352ae56e1cc](https://www.notion.so/meshcloud/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d#72519ff6f6d8427baeaf0352ae56e1cc)

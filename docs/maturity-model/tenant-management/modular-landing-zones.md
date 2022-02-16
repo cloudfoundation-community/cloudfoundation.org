@@ -15,13 +15,14 @@ properties:
     Landing Zones are extendable with with services. These services have their
     own lifecycle and can be reconfigured during the lifespan of a tenant. The
     modular design allows combining services like LEGO® blocks. 
-  tool-implementations: []
+  tool-implementations:
+    - ccba2e9a-1bc0-4b53-8d5e-4773680d9e14
   name: Modular Landing Zones
 ---
 
 ## Why Modular Landing Zones?
 
-A Landing Zone describes how a cloud tenant should be prepared before DevOps teams can access it.
+A Landing Zone describes the desired state of a cloud tenant. Landing Zones are applied to cloud tenants before DevOps teams access tenants for the first time and are re-applied regularly to avoid a configuration drift.
 
 Modular Landing Zones have a baseline and are extendable with optional modules.
 

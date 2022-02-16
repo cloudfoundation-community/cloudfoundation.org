@@ -32,7 +32,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack allows operators to define a multi-cloud role model that teams can consume in self-service. meshStack replicates assigned roles and groups to cloud platform directories and cloud tenants.",
-      "link": "https://docs.meshcloud.io/docs/meshcloud.project.html#access-control-on-a-meshproject",
+      "link": "https://docs.meshcloud.io/docs/meshstack.authorization.html#meshproject-roles",
       "name": "Multi-Cloud Authorization with meshStack"
     }
   },
@@ -93,7 +93,7 @@ export const index = [
       "tool": [
         "decefdc2-0883-4adb-8fc0-13b451bb8c2f"
       ],
-      "summary": "GitLab offers Git repositories, CI/CD, artifact scanning...",
+      "summary": "GitLab offers Git repositories, CI/CD, artifact scanning and many more DevOps tools.",
       "link": "https://about.gitlab.com",
       "name": "DevOps Toolchains with GitLab"
     }
@@ -192,14 +192,17 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [
-        "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+        "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+        "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
       ],
-      "redaction-state": "Draft",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "431fe444-0b73-4592-b525-7e09a48a6457"
+      ],
       "name": "Tenant Deprovisioning / Decomissioning"
     }
   },
@@ -321,7 +324,9 @@ export const index = [
       "enables": [],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "119bfca5-dda6-408c-b35d-c59d0f209fcf"
+      ],
       "scope": "☁️ Platform",
       "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "tool-implementations": [
@@ -579,26 +584,28 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/security-and-compliance/cloud-tenant-resources-tagging.md",
+    "file": "docs/maturity-model/security-and-compliance/cloud-resource-tagging.md",
     "meta": {
       "id": "344b75a4-595b-4ba5-8851-ddfb6d4acf7c",
-      "url": "https://www.notion.so/Cloud-Tenant-resources-tagging-344b75a4595b4ba58851ddfb6d4acf7c",
-      "title": "Cloud Tenant resources tagging",
+      "url": "https://www.notion.so/Cloud-Resource-Tagging-344b75a4595b4ba58851ddfb6d4acf7c",
+      "title": "Cloud Resource Tagging",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
       "pillar": "🔖 Security & Compliance",
-      "enables": [],
-      "redaction-state": "mvp1",
+      "enables": [
+        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+      ],
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
-      "scope": "🛬 Landing Zone",
-      "summary": "Cloud tenant resources are tagged and managed according to the companies needs",
+      "scope": "☁️ Platform",
+      "summary": "Cloud resources are tagged using a consistent tagging strategy to facilitate security and compliance processes for cloud workloads.",
       "tool-implementations": [
         "acf452d3-8425-41e2-ba8b-ee212a6fb189"
       ],
-      "name": "Cloud Tenant resources tagging"
+      "name": "Cloud Resource Tagging"
     }
   },
   {
@@ -743,6 +750,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "431fe444-0b73-4592-b525-7e09a48a6457",
+      "url": "https://www.notion.so/Private-Cloud-Tenant-Deprovisioning-with-meshStack-431fe4440b734592b5257e09a48a6457"
+    },
+    "properties": {
+      "block": [
+        "119bfca5-dda6-408c-b35d-c59d0f209fcf"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack automates tenant lifecycle management for private cloud platforms OpenStack and Cloud Foundry including decommissioning. An automated resource check ensures customers delete all workload before decommissioning the tenant. ",
+      "link": "https://docs.meshcloud.io/docs/meshstack.platforms.html#deprovisioning--deleting-projects",
+      "name": "Private Cloud Tenant Deprovisioning with meshStack"
+    }
+  },
+  {
     "file": "docs/maturity-model/iam/identity-lifecycle-management.md",
     "meta": {
       "id": "456f15f2-299e-4a8b-a8c9-cb0580a887d2",
@@ -837,6 +861,23 @@ export const index = [
   },
   {
     "meta": {
+      "id": "507e5776-239f-4a65-a6f5-d4944536e35a",
+      "url": "https://www.notion.so/Manage-access-to-Cloud-Zones-with-meshStack-507e5776239f4a65a6f5d4944536e35a"
+    },
+    "properties": {
+      "block": [
+        "dc16dccf-7530-4179-a8e2-b82cc54b990f"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack’s tags and policies are ideal for making Cloud Zones available to exactly the right customers.",
+      "link": "https://docs.meshcloud.io/docs/meshcloud.policies.html",
+      "name": "Manage access to Cloud Zones with meshStack"
+    }
+  },
+  {
+    "meta": {
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786"
     },
@@ -853,28 +894,31 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/tenant-management/cloud-tenant-tagging.md",
+    "file": "docs/maturity-model/security-and-compliance/cloud-tenant-tagging.md",
     "meta": {
       "id": "52d1e517-9d07-4acc-8c59-17526fa3af9d",
-      "url": "https://www.notion.so/Cloud-tenant-tagging-52d1e5179d074acc8c5917526fa3af9d",
-      "title": "Cloud tenant tagging",
-      "category": "🗂 Tenant Management",
+      "url": "https://www.notion.so/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d",
+      "title": "Cloud Tenant Tagging",
+      "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
-      "pillar": "🗂 Tenant Management",
-      "enables": [],
-      "redaction-state": "Draft",
-      "journey-stage": "⭐️⭐️⭐️",
+      "pillar": "🔖 Security & Compliance",
+      "enables": [
+        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+      ],
+      "redaction-state": "review-v1",
+      "journey-stage": "⭐️⭐️",
       "depends-on": [
         "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
       ],
       "scope": "☁️ Platform",
-      "summary": "Cloud tenants are tagged and managed according to the companies needs",
+      "summary": "Cloud tenants are tagged using a consistent tagging strategy to facilitate cloud platform operations.",
       "tool-implementations": [
-        "71c1b0fb-2eea-4492-bbb8-05a83098544c"
+        "71c1b0fb-2eea-4492-bbb8-05a83098544c",
+        "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
       ],
-      "name": "Cloud tenant tagging"
+      "name": "Cloud Tenant Tagging"
     }
   },
   {
@@ -889,7 +933,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "Draft",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -1001,7 +1045,7 @@ export const index = [
     "properties": {
       "pillar": "🗂 Tenant Management",
       "enables": [],
-      "redaction-state": "Draft",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
@@ -1074,30 +1118,32 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.md",
+    "file": "docs/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md",
     "meta": {
       "id": "707c41b8-6da0-4e78-b982-fa4b1365521b",
-      "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-707c41b86da04e78b982fa4b1365521b",
-      "title": "Central Management of Tenant tags and metadata",
+      "url": "https://www.notion.so/Multi-Cloud-Tagging-Policy-707c41b86da04e78b982fa4b1365521b",
+      "title": "Multi-Cloud Tagging Policy",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock"
     },
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [
-        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
-        "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
       ],
-      "redaction-state": "mvp1",
+      "redaction-state": "review-v1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "52d1e517-9d07-4acc-8c59-17526fa3af9d",
+        "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
+      ],
       "scope": "🏢 Core",
-      "summary": "Multi-Cloud governance is enforced by central management of tags and metadata for all kinds of cloud tenants, independent of the cloud provider",
+      "summary": "Define and enforce a consistent tagging of cloud tenants and resource across multiple cloud platforms.  ",
       "tool-implementations": [
         "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
         "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
       ],
-      "name": "Central Management of Tenant tags and metadata"
+      "name": "Multi-Cloud Tagging Policy"
     }
   },
   {
@@ -1201,18 +1247,19 @@ export const index = [
   {
     "meta": {
       "id": "7547a774-2b9f-45fc-9123-fbb2e48ccd09",
-      "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-7547a7742b9f45fc9123fbb2e48ccd09"
+      "url": "https://www.notion.so/collie-analyze-tags-7547a7742b9f45fc9123fbb2e48ccd09"
     },
     "properties": {
       "block": [
-        "707c41b8-6da0-4e78-b982-fa4b1365521b"
+        "707c41b8-6da0-4e78-b982-fa4b1365521b",
+        "52d1e517-9d07-4acc-8c59-17526fa3af9d"
       ],
       "tool": [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
       ],
-      "summary": "Get a quick overview of your current metadata with open-source Collie CLI across AWS, Azure & GCP.",
+      "summary": "Get a quick overview of cloud tenant tags with open-source Collie CLI across AWS, Azure & GCP.",
       "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
-      "name": "Central Management of Tenant tags and metadata"
+      "name": "collie analyze tags"
     }
   },
   {
@@ -1349,7 +1396,9 @@ export const index = [
       "depends-on": [],
       "scope": "☁️ Platform",
       "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14"
+      ],
       "name": "Modular Landing Zones"
     }
   },
@@ -1366,7 +1415,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack gives an overview of unmanaged tenants. These are tenants that are not yet under management of the cloud foundation team and they can be easily imported into the governance model.",
-      "link": "https://example.com/",
+      "link": "https://docs.meshcloud.io/docs/administration.unmanaged-tenants.html",
       "name": "Tenant Inventory Reconciliation"
     }
   },
@@ -1470,8 +1519,8 @@ export const index = [
       "tool": [
         "5c2013b6-4c56-4813-8be7-ad86757014af"
       ],
-      "summary": "With Collie CLI you can easily find out what your cloud landscape across AWS, Azure or GCP looks like within minutes.",
-      "link": "https://github.com/meshcloud/collie-cli",
+      "summary": "With Collie CLI you can find out within minutes what your current cloud tagging strategy looks like; across AWS, Azure, and GCP.",
+      "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
       "name": "meshcloud Cloud Foundation CLI tool"
     }
   },
@@ -1611,7 +1660,7 @@ export const index = [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
       "summary": "meshStack supports out of the box private cloud metering for:\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
-      "link": "https://docs.meshcloud.io/docs/meshstack.billing.html",
+      "link": "https://docs.meshcloud.io/docs/meshstack.billing.html#private-cloud-billing-with-meshcloud",
       "name": "Private Cloud Metering with meshStack"
     }
   },
@@ -1654,6 +1703,23 @@ export const index = [
         "0db736c5-6801-4619-92a6-97c3842c907c"
       ],
       "name": "Pay-per-Use for internal Services"
+    }
+  },
+  {
+    "meta": {
+      "id": "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14",
+      "url": "https://www.notion.so/Modular-Landing-Zones-with-meshStack-ccba2e9a1bc04b538d5e4773680d9e14"
+    },
+    "properties": {
+      "block": [
+        "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack enables the use of modular landing zones by building marketplace services on top of landing zones.",
+      "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
+      "name": "Modular Landing Zones with meshStack"
     }
   },
   {
@@ -1941,7 +2007,9 @@ export const index = [
       "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Regulatory onboarding only captures what is required for getting acces to the cloud",
-      "tool-implementations": [],
+      "tool-implementations": [
+        "507e5776-239f-4a65-a6f5-d4944536e35a"
+      ],
       "name": "Cloud Zones"
     }
   },
@@ -2121,9 +2189,7 @@ export const index = [
       ],
       "redaction-state": "Draft",
       "journey-stage": "⭐️⭐️",
-      "depends-on": [
-        "707c41b8-6da0-4e78-b982-fa4b1365521b"
-      ],
+      "depends-on": [],
       "scope": "🏢 Core",
       "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
       "tool-implementations": [
@@ -2144,7 +2210,7 @@ export const index = [
       "tool": [
         "c5757e31-5c6c-487a-81b2-96ba50dda3af"
       ],
-      "summary": "meshStack can be setup to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
+      "summary": "meshStack can be set up to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
       "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html",
       "name": "Approving budgets with meshStack"
     }
