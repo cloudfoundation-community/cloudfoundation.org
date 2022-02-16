@@ -19,7 +19,7 @@ properties:
   name: Cloud Zones
 ---
 
-Enterprises in heavily regulated industries like finance and healthcare must ensure that DevOps teams meet regulatory requirements before accessing cloud tenants and services. But not all onboarding steps are necessary for all use cases. Cloud Foundation teams offer tailored onboarding paths that lead to different Cloud Zones to make onboarding as easy as possible. Cloud Zones allow better time-to cloud often for a matority of use cases than one-size fit all cloud onboardings.
+DevOps teams in heavily regulated industries like finance and healthcare must meet regulatory requirements before accessing cloud tenants and services. But not all onboarding steps are necessary for all use cases. Cloud Foundation teams offer tailored onboarding paths that lead to different Cloud Zones to make onboarding as easy as possible. Cloud Zones allow better time-to cloud often for a matority of use cases than one-size fit all cloud onboardings.
 
 **Example**: Compare the onboarding paths of two different teams at the imaginary likvid bank.
 
@@ -27,7 +27,7 @@ Enterprises in heavily regulated industries like finance and healthcare must ens
 
 - In contrast, the DevOps team “Robo-Advisor Website Analytics” wanted to explore the Analytics options of GCP in a [Playground / Sandbox Environments](/maturity-model/tenant-management/playground-sandbox-environments.md). It did not need on-prem connectivity. Therefore their cloud onboarding did not include the step for registering on-prem connectivity. No manual sign-off was needed and  [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) happened within minutes. The environment is located in the “Island” Cloud Zone.
 
-
+An application can be in exactly one Cloud Zone at the time. Advanced Cloud Foundations offer upgrade paths from more restrictive to less restrictive Cloud Zones.
 
 ## Proven Patterns When Implementing Cloud Zones
 
@@ -35,7 +35,13 @@ Enterprises in heavily regulated industries like finance and healthcare must ens
 
 1. Write down all steps that are needed for cloud onboardings
 
-1. 
+1. Find the minimal set of steps that allow some of your customers to access the cloud. 
+
+    Example use cases 
+
+    - Marketplace-only projects. Customers that only use managed services from the [Internal Service Marketplace](/maturity-model/service-ecosystem/internal-service-marketplace.md) and do not need infrastructure level access.
+
+    - [Playground / Sandbox Environments](/maturity-model/tenant-management/playground-sandbox-environments.md) 
 
 ### Provide Guidance for Choosing the Right Cloud Zone
 
@@ -53,5 +59,10 @@ graph TD
 		H --> I(Connected Cloud Zone)
 ```
 
-### Guard Cloud Zones
+### Tag Every Application with Its Cloud Zone
 
+Store the Cloud Zone as tenant tags for security and cost analysis per Cloud Zone. Make Cloud Zone tags part of [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md).
+
+### Guard Access to Cloud Zones
+
+The logical step after defining regulatory onboarding paths is to steer who gets access to which services (see [Control access to cloud platforms and Landing Zones](/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md)).

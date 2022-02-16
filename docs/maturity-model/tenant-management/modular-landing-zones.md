@@ -28,7 +28,7 @@ Modular Landing Zones have a baseline and are extendable with optional modules.
 
 The baseline determines
 
-- Where a tenant lives in the cloud provider’s resource hierarchy 
+- Where a tenant lives in the cloud provider’s resource hierarchy (which has consequences on the applied policies, see [Resource Policies - Blacklisting](/maturity-model/security-and-compliance/resource-policies-blacklisting.md))
 
 - Which roles team leads can assign their developers
 

@@ -9,7 +9,7 @@ properties:
   pillar: 🔖 Security & Compliance
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
-  redaction-state: review-v1
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
     - 52d1e517-9d07-4acc-8c59-17526fa3af9d
@@ -37,7 +37,7 @@ Cloud Foundation teams who implement [Cloud Tenant Tagging](/maturity-model/secu
 
 ### Establish a Naming Convention for Tags
 
-Cloud Tagging works best when following a consistent naming convention. This naming convention should consider the technical limitations for storing tags in cloud platforms. Adding a namespace prefix to tags can also help separate the responsibilities for maintenance of a particular tag. For example, when some tags are automatically reconciled with a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) by the cloud foundation’s automation systems, giving them a clear prefix helps separate those tags from tags maintained by customers individually.
+Cloud Tagging works best when following a consistent naming convention. This naming convention should consider t[he technical limitations for storing tags in cloud platforms](https://www.meshcloud.io/2022/02/07/tags-and-labels-on-cloud-platforms-cheat-sheet-2020/). Namespace prefixes on tags help to separate the responsibilities for maintenance of a particular tag. For example, when some tags are automatically reconciled with a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) by the cloud foundation’s automation systems, giving them a clear prefix helps separate those tags from tags maintained by customers individually.
 
 ### Focus on Information That’s Relevant across All Cloud Platforms
 

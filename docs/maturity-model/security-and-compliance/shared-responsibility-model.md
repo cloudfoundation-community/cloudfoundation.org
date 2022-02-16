@@ -76,5 +76,5 @@ The Cloud Foundation teams needs to consider the following point when defining t
 
 - Define and describe the approached organisational structure. It may be helpful to you to read the whitepaper “Cloud Organization”?
 
-- Define clear boarders - it must be clear to anyone internal “who is responsible for what”. This is important for all processes, e.g. who is responsible for [Tenant Deprovisioning / Decomissioning](/maturity-model/tenant-management/tenant-deprovisioning-decomissioning.md) etc.
+- Define clear boarders - it must be clear to anyone internal “who is responsible for what”. This is important for all processes, e.g. who is responsible for [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) etc.
 
