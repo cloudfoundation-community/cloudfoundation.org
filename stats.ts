@@ -1,12 +1,13 @@
-import * as fs from 'fs';
-import * as globby from 'globby';
-import * as path from 'path';
-import * as CSVFormatter from 'textstat/lib/src/formatter/textstat-formatter-csv';
-import * as JSONFormatter from 'textstat/lib/src/formatter/textstat-formatter-json';
+import * as fs from "fs";
+import * as globby from "globby";
+import * as path from "path";
+import * as CSVFormatter from "textstat/lib/src/formatter/textstat-formatter-csv";
 
-import { TextstatKernel } from '@textstat/kernel';
-import { TextstatRulePreset } from '@textstat/rule-context';
-import { createPreset } from '@textstat/textstat-rule-preset-standard';
+import { TextstatKernel } from "@textstat/kernel";
+import { TextstatRulePreset } from "@textstat/rule-context";
+import { createPreset } from "@textstat/textstat-rule-preset-standard";
+
+import countWordsRule from "./.textstat/count-words";
 
 const osLocale = require("os-locale");
 
@@ -60,7 +61,10 @@ export async function report(options: ReportOptions) {
     return textstat.report(text, {
       filePath: filePath,
       ext: path.extname(filePath),
-      rules: createTextstatPresetToTextlintPreset(createPreset()),
+      rules: [
+        countWordsRule,
+        ...createTextstatPresetToTextlintPreset(createPreset()),
+      ],
       plugins: [
         {
           pluginId: "markdown",
