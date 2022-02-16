@@ -10,7 +10,8 @@ properties:
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - f077cfd1-d8f4-4c30-a1bd-4f252b840e4f
   scope: 🏢 Core
   summary: >-
     Enable usage based chargeback for internal, managed IT services offered via

@@ -181,11 +181,11 @@ export const index = [
     }
   },
   {
-    "file": "docs/maturity-model/tenant-management/tenant-deprovisioning-decomissioning.md",
+    "file": "docs/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md",
     "meta": {
       "id": "119bfca5-dda6-408c-b35d-c59d0f209fcf",
-      "url": "https://www.notion.so/Tenant-Deprovisioning-Decomissioning-119bfca5dda6408cb35dc59d0f209fcf",
-      "title": "Tenant Deprovisioning / Decomissioning",
+      "url": "https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf",
+      "title": "Tenant Deprovisioning / Decommissioning",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock"
     },
@@ -195,7 +195,7 @@ export const index = [
         "77942f5f-e395-49c6-8927-e5fa3ef28aef",
         "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -203,7 +203,7 @@ export const index = [
       "tool-implementations": [
         "431fe444-0b73-4592-b525-7e09a48a6457"
       ],
-      "name": "Tenant Deprovisioning / Decomissioning"
+      "name": "Tenant Deprovisioning / Decommissioning"
     }
   },
   {
@@ -597,7 +597,7 @@ export const index = [
       "enables": [
         "707c41b8-6da0-4e78-b982-fa4b1365521b"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "☁️ Platform",
@@ -907,7 +907,7 @@ export const index = [
       "enables": [
         "707c41b8-6da0-4e78-b982-fa4b1365521b"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️",
       "depends-on": [
         "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
@@ -1131,7 +1131,7 @@ export const index = [
       "enables": [
         "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
       ],
-      "redaction-state": "review-v1",
+      "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
         "52d1e517-9d07-4acc-8c59-17526fa3af9d",
@@ -1618,6 +1618,23 @@ export const index = [
     }
   },
   {
+    "meta": {
+      "id": "c3af4eea-6d9a-4c64-a117-ec018524979a",
+      "url": "https://www.notion.so/Offer-internal-services-on-meshStack-marketplace-c3af4eea6d9a4c64a117ec018524979a"
+    },
+    "properties": {
+      "block": [
+        "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
+      "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
+      "name": "Offer internal services on meshStack marketplace"
+    }
+  },
+  {
     "file": "docs/tools/governance-platform/meshstack.md",
     "meta": {
       "id": "c5757e31-5c6c-487a-81b2-96ba50dda3af",
@@ -1696,7 +1713,9 @@ export const index = [
         "d2cb8a5e-3e28-448b-8944-14ff38fad792"
       ],
       "journey-stage": "⭐️⭐️",
-      "depends-on": [],
+      "depends-on": [
+        "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+      ],
       "scope": "🏢 Core",
       "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "tool-implementations": [
@@ -1908,7 +1927,8 @@ export const index = [
       "enables": [],
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [
-        "c9728af5-49fe-4948-8701-2d6485bfbe93"
+        "c9728af5-49fe-4948-8701-2d6485bfbe93",
+        "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
       ],
       "scope": "🏢 Core",
       "summary": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
@@ -2196,6 +2216,32 @@ export const index = [
         "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29"
       ],
       "name": "Link Cloud Tenants to CMDB/EAM"
+    }
+  },
+  {
+    "file": "docs/maturity-model/service-ecosystem/internal-service-marketplace.md",
+    "meta": {
+      "id": "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
+      "url": "https://www.notion.so/Internal-Service-Marketplace-f077cfd1d8f44c30a1bd4f252b840e4f",
+      "title": "Internal Service Marketplace",
+      "category": "🛠 Service Ecosystem",
+      "layout": "CFMMBlock"
+    },
+    "properties": {
+      "pillar": "🛠 Service Ecosystem",
+      "enables": [
+        "d2cb8a5e-3e28-448b-8944-14ff38fad792",
+        "c9728af5-49fe-4948-8701-2d6485bfbe93"
+      ],
+      "redaction-state": "Draft",
+      "journey-stage": "⭐️",
+      "depends-on": [],
+      "scope": "🏢 Core",
+      "summary": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
+      "tool-implementations": [
+        "c3af4eea-6d9a-4c64-a117-ec018524979a"
+      ],
+      "name": "Internal Service Marketplace"
     }
   },
   {
