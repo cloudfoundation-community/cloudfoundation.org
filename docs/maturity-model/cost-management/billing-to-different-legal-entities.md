@@ -19,6 +19,6 @@ properties:
   name: Billing to different legal entities
 ---
 
-meshStack solution archetypes (does not exist yet): multiple meshplatforms, billing account settings etc. (see docs)
+meshStack solution archetypes (does not exist yet): multiple meshPlatforms, billing account settings etc. (see docs)
 
-We can filter GCP big query imports (of cost data). we can also import cost data from different GCP billing accounts living in different organisations
+We can filter GCP big query imports (of cost data). we can also import cost data from different GCP billing accounts living in different organizations

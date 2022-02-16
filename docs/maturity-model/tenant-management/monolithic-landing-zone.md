@@ -7,7 +7,7 @@ layout: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []
-  redaction-state: Draft
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
@@ -20,17 +20,29 @@ properties:
   name: Monolithic Landing Zone
 ---
 
-## Why Monolithic Landing Zone
 
 
+Early stage cloud foundations often start with a “one-size-fits-all” approach to Landing Zones. This means that the baseline configuration provisioned and enforced by the landing zone has to serve multiple concerns. For example the landing zone may include a prescriptive network configuration for enabling [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) as well as mandatory audit configuration (see [Centralized audit logs](/maturity-model/security-and-compliance/centralized-audit-logs.md) ). When the Cloud Foundation team encounters a new concern, like [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md) , it also gets added to the baseline. Because different DevOps teams have different needs most Cloud Foundations will split up an organically grown Monolithic Landing Zone into [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md). The pain points frequently encountered are listed in the last section of this page.
 
-A Monolithic Landing Zone is a one-size-fits-all Landing Zone mostly seen in early stage Cloud Foundations. Given that different DevOps teams have different needs most Cloud Foundations split up Monolithic Landing Zones into modules as they mature. (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md))
-
-The Monolithic Landing Zone keeps complexity low while sacrificing flexibility in the short-term. 
+The Monolithic Landing Zone is known to be a local maximum that keeps complexity low in the short term while sacrificing flexibility in the long term. 
 
 ## When to Build a Monolithic Landing Zone
 
-A Monolithic Landing Zone can be a starting point for getting to know the needs of your first few customers. By starting simple, you avoid spending time thinking about overly complicated abstractions too early.
+> **⚠️** For Cloud Foundation that are getting started with building Landing Zones the Monolithic Approach is considered an anti-pattern. A modular approach as laid out in [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)  is recommended.
 
-After learning more about your customers’ needs, you can split up existing Landing Zones into modules (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)). 
+For Cloud Foundations that find themselves with organically grown Monolithic Landing Zone, the next section will help to decide when to re-structure existing Monolithic Landing Zones.
+
+## Pain Points of Monolithic Landing Zone
+
+As Cloud Foundations serve more customers the limitations of the Monolithic Landing Zone  approach will become more numerous. Here are indicators that your Cloud Foundation needs to move to [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md):
+
+- Every time a customer wants to book a service, it is added to the Monolithic Landing Zone.
+
+- The Monolithic Landing Zone creates workload that is not required by some teams.
+
+- The Monolithic Landing Zone hosts conflicting combinations like different [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md) providers or [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md)s.
+
+- Customers request different combinations of Landing Zone services that are managed with a growing number of feature-toggles.
+
+- Re-using parts of Monolithic Landing Zone is not easily possible for other Landing Zones.
 

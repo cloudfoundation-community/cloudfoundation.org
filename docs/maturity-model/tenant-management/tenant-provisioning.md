@@ -44,6 +44,8 @@ In practice, many cloud foundation teams miss the right point in time to invest 
 
 - Record provisioned cloud tenants and their purpose in a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) from day one. This way your organization always has a complete inventory of the cloud tenants managed by the cloud foundation.
 
+- Consider making [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) a part of the provisioning process
+
 - Beware of the pitfalls of insufficient automation. Semi-automated provisioning often leads to [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher-level capabilities in later journey stages. Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md).
 
 

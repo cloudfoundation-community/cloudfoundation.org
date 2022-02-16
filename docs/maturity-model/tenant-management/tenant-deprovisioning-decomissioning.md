@@ -9,14 +9,90 @@ properties:
   pillar: 🗂 Tenant Management
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
-  redaction-state: Draft
+    - 155c0ead-cbd0-4e0c-9387-cc57946f80e9
+  redaction-state: review-v1
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
   summary: >-
     Process for decommissioning and deprovisioning cloud tenants that are no
     longer needed.
-  tool-implementations: []
+  tool-implementations:
+    - 431fe444-0b73-4592-b525-7e09a48a6457
   name: Tenant Deprovisioning / Decomissioning
 ---
+
+At the start of an organization’s cloud journey, cloud foundation teams focus on the challenge of [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md), giving little afterthought to “day-2” challenges. After all, supporting cloud adoption is the key imperative a this stage. As most cloud foundation teams have to find out the hard way, the initial surge of excitement about bringing more internal customers into the cloud soon turns into operational chore. Some of your cloud customers will inevitably abandon their project. When they forget to decomission all cloud infrastructure, the organization end up with zombie workloads.
+
+> **💡** Establishing a clean tenant decomission process is paramount for avoiding problems like abandoned “zombie workloads” that pose security risk and incur uncontrolled cloud spend. 
+
+## Tackle Zombie Workloads with Clear Decomissioning Responsibilities
+
+Most zombie workloads are the result of unclear responsibilities - not malice. When investigating the chain of unfortunate events that leads to them, cloud foundation teams often hear a series of excuses from their customers.
+
+- “I didn’t create that AWS Account, so I didn’t consider it my job to delete it!”
+
+- “Deleting that GCP Project brought up a scary confirmation dialog about loosing all data forever! I didn’t feel sure if there isn’t something important worth saving in there so I just left it.”
+
+- “When the project team was wound down, I took on responsibilities in a new project and assumed one of my old colleagues would delete the Azure Subscription.”
+
+If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) better. 
+
+## Proven Patterns for Implementing a Cloud Tenant Decomissioning Process
+
+Tenant decomissioning is a fundamental tenant management process. Cloud foundation teams will need it in order to enable implementation of higher-level capabilities in the Tenant Management pillar like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md).
+
+### Plan for Involuntary Decomissioning
+
+Setting clear boundaries and expectations with a [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) is crucial. Unfortunately the cloud foundation team sometimes has to enforced these boundaries. For example, cloud foundation teams may find internal customers
+
+- violating their duty to handle assigned incidents as part of the [Incident Management Process](/maturity-model/security-and-compliance/incident-management-process.md)
+
+- not providing enough or incorrect metadata in the [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) to enable proper [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md)
+
+- operating unregistered cloud tenants found via [Tenant Inventory Reconciliation](/maturity-model/tenant-management/tenant-inventory-reconciliation.md)
+
+In this cases the cloud foundation team needs to have the capability and authorization to forcefully decomission cloud tenants in their workload.
+
+### Consider Data Retention and Recovery Requirements
+
+Decomissioning a cloud tenant results in the destruction of all workload and data stored in the cloud tenant. While systems that were not used productively will typically not have relevant data that needs to be kept, productive systems may require special precautions. Regulations for the financial service industry for example can require that organizations maintain records processed in  systems (and the means to read them!) for a minimum periods of 10 years. 
+
+> **💡** A good [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) concept that’s consistently applied can help cloud foundation teams quickly determine if decomissioning a cloud tenant requires special precautions, for example if the tenant was used for productive workloads.
+
+Another consideration is that cloud tenants very often also hold other valuable resources like public IP Addresses, DNS Records and Cryptographic Keys (e.g. SSL Certificates, Encryption Keys) that may be used well beyond the scope of an individual IT System. Public cloud providers are multi-tenant environments. Cloud resources like IP Addresses and DNS Names may be reused by other customers of the cloud provider. This can open attack vectors for phishing or spoofing. Some examples that cloud foundation teams should be aware of
+
+- Cloud providers pool public IP Addresses and reuse [enables subdomain takeover](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover) attacks.
+
+- DNS Names for [S3 Buckets can be reused](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html) and this can enable [subdomain takeover](https://towardsaws.com/subdomain-takeover-aws-s3-bucket-4699815d1b62).
+
+- IP Addresses are an important signal in email sender reputation management. Apart from loosing a valuable high-reputation IP, spammers can abuse the IP to spoof email and send spam or phishing emails.
+
+### Security Implications of Automated Tenant Decomissioning
+
+Scenarios like [Playground / Sandbox Environments](/maturity-model/tenant-management/playground-sandbox-environments.md) call for automation of tenant decommissioning. However, an automation system capable of deleting most of an organizations cloud workload with only a handful of API calls is a big security risk and conversely an attractive attack target. To mitigate this risk, automation systems for tenant decomissioning should include checks and balances. Useful mitigations are
+
+- 4-eye principle approval processes for tenant deletion
+
+- restrict the automation’s permissions to non-productive tenants (e.g. designated by landing zone or tag)
+
+### Decomissioning of AWS Accounts Best Practices
+
+AWS Organizations has [important caveats](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) to consider when closing organization member accounts
+
+- Closed accounts will be suspended and then follow a [staged close process](https://aws.amazon.com/premiumsupport/knowledge-center/reactivate-suspended-account/) until termination
+
+- Organization member accounts can only be closed by logging in with the account root user, this typically requires a password reset procedure that’s difficult to automate
+
+- AWS Account root email addresses cannot be reused 
+
+- AWS will continue to charge for reserved instance and saving plans [even after the account has been closed](https://aws.amazon.com/premiumsupport/knowledge-center/closed-account-bill/)
+
+- AWS will [stop on-demand billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html#on-demand-closure)  as soon as the account is closed. However, on-demand charges for any workload that is not explicitly deleted before account closure will be incurred when the account is reinstated during the post-closure period. 
+
+### Considerations for Decomissioning OpenStack Projects 
+
+OpenStack does not include a process for deleting all cloud resources when deleting a project in Keystone. Cloud foundation teams thus need to ensure deletion of all of a project’s cloud resources in each OpenStack service (Nova, Neutron, Cinder, ...) in order to avoid creating orphaned workloads.
+
+
 

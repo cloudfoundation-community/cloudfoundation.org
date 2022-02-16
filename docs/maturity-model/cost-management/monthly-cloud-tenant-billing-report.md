@@ -23,8 +23,6 @@ properties:
   name: Monthly cloud tenant billing report
 ---
 
-## What Is a Cloud Tenant Billing Report?
-
 A cloud tenant billing report makes cloud consumption transparent to DevOps teams. Accessing cloud tenant billing reports monthly ensures that DevOps teams are aware of their impact on resource costs.    
 
 ## Why Is Monthly Cloud Tenant Billing Reporting Important?
@@ -57,4 +55,5 @@ The interfaces and billing data formats are different for every cloud provider. 
 
 Furthermore, building chargeback capabilities also depends on building a common billing data view across clouds (see [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md)) and managing global IT spend.
 
-The fine granular data of each cloud can still be used for individual cost optimization (we have separate building blocks for those as well). However, having that unified chargeback process is really important. Lots of organizations run into problems “trying to run before walking”, e.g. trying to do [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md)
+The fine granular data of each cloud can still be used for individual cost optimization. However, having that unified chargeback process is really important. Lots of organizations run into problems “trying to run before walking”, e.g. trying to do [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md)
+

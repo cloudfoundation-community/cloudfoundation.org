@@ -28,7 +28,7 @@ A common source for different security requirements are data classifications and
 
 ## Why Manage Access to Cloud Platforms and Landing Zones
 
-Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects, Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
+Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects (see [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) ), Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
 
 > **✏️** **Example Scenario: Landing Zone per Stage**
 > Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. 
