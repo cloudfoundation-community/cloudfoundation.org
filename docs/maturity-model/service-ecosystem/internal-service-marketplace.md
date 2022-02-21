@@ -22,5 +22,5 @@ properties:
   name: Internal Service Marketplace
 ---
 
-Cloud is a way to deliver IT that maximizes business outcomes. Where classical IT services meant opening tickets or writing emails to 10 different stakeholders, cloud is about having a single interface for DevOps teams to get everything they need to be productive. An internal service marketplace is a crucial part of getting from an classical IT service operating model to the 
+Cloud is a way to deliver IT that maximizes business outcomes. Where classical IT services meant opening tickets or writing emails to 10 different stakeholders, the cloud is about having a single interface for DevOps teams to get everything they need to be productive. An internal service marketplace is a crucial part of getting away from a classical IT service operating model.
 
