@@ -38,17 +38,27 @@ In practice, many cloud foundation teams miss the right point in time to invest 
 
 ## Best Practices for Tenant Provisioning
 
+### Apply Proper Tenant Isolation
+
 - Isolate teams and workloads using tenants - no sharing! One of the worst anti-patterns caused by not having sufficient tenant provisioning capability is that teams put development and production workloads into the same tenant. This encourages bad security practices that can lead to compromise of production environments.
 
-- Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) that details how and to what extent teams can access cloud tenants.
+### IAM Should Be Part of Tenant Provisioning
 
-- Record provisioned cloud tenants and their purpose in a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) from day one. This way your organization always has a complete inventory of the cloud tenants managed by the cloud foundation.
+Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) that details how and to what extent teams can access cloud tenants.
 
-- Consider making [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) a part of the provisioning process
+### Maintain a Cloud Tenant Database
 
-- Beware of the pitfalls of insufficient automation. Semi-automated provisioning often leads to [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher-level capabilities in later journey stages. Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md).
+Record provisioned cloud tenants and their purpose in a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) from day one. This way your organization always has a complete inventory of the cloud tenants managed by the cloud foundation.
 
+### Establish Tenant Naming and Tagging Conventions
 
+> **💡** Use lowercase and dashes
+
+Consider making [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) a part of the provisioning process.
+
+### Automate Tenant Provisioning
+
+Beware of the pitfalls of insufficient automation. Semi-automated provisioning often leads to [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher-level capabilities in later journey stages. 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -57,4 +67,8 @@ In practice, many cloud foundation teams miss the right point in time to invest 
   <CtaButton class="btn-primary" url=" https://www.meshcloud.io/use-case-cloud-zones/ ">Get a Demo</CtaButton>
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
+
+Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md).
+
+
 

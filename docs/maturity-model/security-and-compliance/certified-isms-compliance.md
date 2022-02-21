@@ -8,6 +8,7 @@ layout: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables: []
+  redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️⭐️⭐️
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212

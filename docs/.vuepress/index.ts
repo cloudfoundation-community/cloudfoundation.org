@@ -337,6 +337,23 @@ export const index = [
   },
   {
     "meta": {
+      "id": "166cca26-ca4d-4efc-8657-10d2462e811a",
+      "url": "https://www.notion.so/Guided-self-service-onboarding-166cca26ca4d4efc865710d2462e811a"
+    },
+    "properties": {
+      "block": [
+        "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+      ],
+      "tool": [
+        "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+      ],
+      "summary": "meshStack’s tags guide customers to provide the right information at the right time.",
+      "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
+      "name": "Guided self-service onboarding"
+    }
+  },
+  {
+    "meta": {
       "id": "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a",
       "url": "https://www.notion.so/Identity-Lifecycle-Management-17a9ca395a774c5e9b0e87b01dc5e57a"
     },
@@ -702,6 +719,7 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [],
+      "redaction-state": "partner is working on it",
       "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
       "depends-on": [
         "57c521ba-73a4-4187-a507-bbd5eaa80212"
@@ -741,6 +759,7 @@ export const index = [
     "properties": {
       "pillar": "🛠 Service Ecosystem",
       "enables": [],
+      "redaction-state": "partner is working on it",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🛬 Landing Zone",
@@ -1840,12 +1859,14 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [],
+      "redaction-state": "partner is working on it",
       "journey-stage": "⭐️⭐️⭐️",
       "depends-on": [],
       "scope": "🏢 Core",
-      "summary": "A dedicated onboarding portal helps teams fullfill organisational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
+      "summary": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
       "tool-implementations": [
-        "cce0a290-fdb4-412d-bfc7-da0ae83a53a6"
+        "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
+        "166cca26-ca4d-4efc-8657-10d2462e811a"
       ],
       "name": "Onboarding Portal"
     }
@@ -2022,9 +2043,11 @@ export const index = [
     "properties": {
       "pillar": "🔖 Security & Compliance",
       "enables": [],
-      "redaction-state": "Draft",
-      "journey-stage": "⭐️⭐️⭐️",
-      "depends-on": [],
+      "redaction-state": "review-v1",
+      "journey-stage": "⭐️⭐️⭐️⭐️",
+      "depends-on": [
+        "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+      ],
       "scope": "🏢 Core",
       "summary": "Regulatory onboarding only captures what is required for getting acces to the cloud",
       "tool-implementations": [
@@ -2161,7 +2184,9 @@ export const index = [
     },
     "properties": {
       "pillar": "🔖 Security & Compliance",
-      "enables": [],
+      "enables": [
+        "dc16dccf-7530-4179-a8e2-b82cc54b990f"
+      ],
       "redaction-state": "mvp1",
       "journey-stage": "⭐️⭐️⭐️⭐️",
       "depends-on": [

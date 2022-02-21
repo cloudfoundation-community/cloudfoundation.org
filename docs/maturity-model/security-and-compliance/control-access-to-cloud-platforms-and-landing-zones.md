@@ -7,7 +7,8 @@ category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
-  enables: []
+  enables:
+    - dc16dccf-7530-4179-a8e2-b82cc54b990f
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
