@@ -38,7 +38,6 @@
     "vuepress": "^2.0.0-beta.35"
   },
   "dependencies": {
-    "//": "even though we have our own vendored version of the mermaid plugin, we import a remote version as that works aroudn a vuepress/vite bug - see https://github.com/vuepress/vuepress-next/issues/617 for details. Until fixed upstream, don't waste time trying to fix this mess,",
     "bootstrap": "^4.6.1",
     "plausible-tracker": "^0.3.4",
     "vuepress-plugin-mermaidjs": "https://github.com/laoergege/vuepress-plugin-mermaidjs.git#ef3b7fadf07c16289bd971eb8b20a388eab61469"
