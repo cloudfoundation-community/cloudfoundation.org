@@ -29,6 +29,8 @@ Most organisations rely on an Active Directory or LDAP based on-premise system a
 
 Synchronize the central enterprise AD to Azure using the [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool. Leverage [hybrid identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) architecture to federate AAD authentication to an on-premise ADFS service.
 
+Identities (Users, Groups, and Memberships) are synchronized into an AAD Tenant owned by the organization.
+
 Leveraging Azure AD Connect Sync also makes it trivial to implement [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md).
 
 ### Google Cloud Identity

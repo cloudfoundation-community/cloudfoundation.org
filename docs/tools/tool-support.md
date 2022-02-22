@@ -10,6 +10,8 @@ properties:
   category: Tools
   redaction-state: Sketch
   name: Tool Support
+  stakeholders: ''
+  summary: ''
 ---
 
 Tools can deliver an out of the box support for CFMM Blocks.

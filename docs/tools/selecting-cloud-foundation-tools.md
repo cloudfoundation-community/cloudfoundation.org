@@ -11,6 +11,8 @@ properties:
   category: Tools
   redaction-state: Sketch
   name: Selecting Cloud Foundation Tools
+  stakeholders: ''
+  summary: ''
 ---
 
 ## Use the Right Tool for the Job

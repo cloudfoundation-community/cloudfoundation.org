@@ -11,6 +11,8 @@ properties:
   category: Maturity Model
   redaction-state: Draft
   name: Building Block Reference
+  stakeholders: ''
+  summary: ''
 ---
 
 ## Definition
@@ -55,9 +57,9 @@ Cloud Foundation teams needs to cover many different organizational aspects of c
 
 - **🔐 IAM:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
 
-- **💵 Cost Management:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
-
 - **🔖 Security & Compliance:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
+
+- **💵 Cost Management:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
 
 - **🛠 Service Ecosystem:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
 

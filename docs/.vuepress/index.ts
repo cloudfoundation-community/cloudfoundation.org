@@ -121,22 +121,6 @@ export const index = [
     }
   },
   {
-    "file": "docs/plan/readme.md",
-    "meta": {
-      "id": "0bf64e3d-2d0a-410f-ad94-e7c7b8a6512b",
-      "url": "https://www.notion.so/Overview-0bf64e3d2d0a410fad94e7c7b8a6512b",
-      "title": "Overview",
-      "category": "Plan",
-      "order": 0
-    },
-    "properties": {
-      "order": 0,
-      "category": "Plan",
-      "redaction-state": "Sketch",
-      "name": "Overview"
-    }
-  },
-  {
     "meta": {
       "id": "0db736c5-6801-4619-92a6-97c3842c907c",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-0db736c56801461992a697c3842c907c"
@@ -580,7 +564,27 @@ export const index = [
       "documentation": "Guide",
       "category": "Tools",
       "redaction-state": "Sketch",
-      "name": "Selecting Cloud Foundation Tools"
+      "name": "Selecting Cloud Foundation Tools",
+      "stakeholders": "",
+      "summary": ""
+    }
+  },
+  {
+    "file": "docs/understanding-cloud-foundation/security-and-compliance.md",
+    "meta": {
+      "id": "321cc809-0eec-477f-8f75-6d39da0c8b1a",
+      "url": "https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a",
+      "title": "🔖 Security & Compliance",
+      "category": "Understanding Cloud Foundation",
+      "order": 22
+    },
+    "properties": {
+      "order": 22,
+      "documentation": "Explanation",
+      "category": "Understanding Cloud Foundation",
+      "name": "🔖 Security & Compliance",
+      "stakeholders": "Interfaces with IT Security and Compliance stakeholders.",
+      "summary": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services."
     }
   },
   {
@@ -731,23 +735,6 @@ export const index = [
     }
   },
   {
-    "file": "docs/plan/the-enterprise-cloud-journey.md",
-    "meta": {
-      "id": "3f662324-3648-435b-a4ec-5ea5bc21c52e",
-      "url": "https://www.notion.so/The-Enterprise-Cloud-Journey-3f6623243648435ba4ec5ea5bc21c52e",
-      "title": "The Enterprise Cloud Journey",
-      "category": "Plan",
-      "order": 20
-    },
-    "properties": {
-      "order": 20,
-      "documentation": "Explanation",
-      "category": "Plan",
-      "redaction-state": "Sketch",
-      "name": "The Enterprise Cloud Journey"
-    }
-  },
-  {
     "file": "docs/maturity-model/service-ecosystem/kubernetes-cluster-as-a-service.md",
     "meta": {
       "id": "42fae8c2-1ef8-4e1e-bcb4-eb6ca1520ec4",
@@ -825,23 +812,9 @@ export const index = [
       "documentation": "Reference",
       "category": "Maturity Model",
       "redaction-state": "Draft",
-      "name": "Building Block Reference"
-    }
-  },
-  {
-    "file": "docs/plan/pillar-reference.md",
-    "meta": {
-      "id": "491d87c1-5a14-4e80-8b8c-27c90fbe7346",
-      "url": "https://www.notion.so/Pillar-Reference-491d87c15a144e808b8c27c90fbe7346",
-      "title": "Pillar Reference",
-      "category": "Plan",
-      "order": 5
-    },
-    "properties": {
-      "order": 5,
-      "documentation": "Reference",
-      "category": "Plan",
-      "name": "Pillar Reference"
+      "name": "Building Block Reference",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -875,7 +848,9 @@ export const index = [
       "documentation": "Reference",
       "category": "Maturity Model",
       "redaction-state": "Sketch",
-      "name": "Introduction"
+      "name": "Introduction",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -938,6 +913,24 @@ export const index = [
         "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
       ],
       "name": "Cloud Tenant Tagging"
+    }
+  },
+  {
+    "file": "docs/understanding-cloud-foundation/cost-management.md",
+    "meta": {
+      "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
+      "url": "https://www.notion.so/Cost-Management-57502241e2f44b759e33de39b26a6eb8",
+      "title": "💵 Cost Management",
+      "category": "Understanding Cloud Foundation",
+      "order": 23
+    },
+    "properties": {
+      "order": 23,
+      "documentation": "Explanation",
+      "category": "Understanding Cloud Foundation",
+      "name": "💵 Cost Management",
+      "stakeholders": "Interfaces with Finance/Controlling stakeholders.",
+      "summary": "Provide cost management and chargeback capabilities for all available cloud platforms and services."
     }
   },
   {
@@ -1020,6 +1013,24 @@ export const index = [
     }
   },
   {
+    "file": "docs/understanding-cloud-foundation/service-ecosystem.md",
+    "meta": {
+      "id": "621771b3-97a0-4c4e-80ab-3331cd6719f0",
+      "url": "https://www.notion.so/Service-Ecosystem-621771b397a04c4e80ab3331cd6719f0",
+      "title": "🛠 Service Ecosystem",
+      "category": "Understanding Cloud Foundation",
+      "order": 24
+    },
+    "properties": {
+      "order": 24,
+      "documentation": "Explanation",
+      "category": "Understanding Cloud Foundation",
+      "name": "🛠 Service Ecosystem",
+      "stakeholders": "Interfaces with internal or external teams providing these services.",
+      "summary": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services."
+    }
+  },
+  {
     "meta": {
       "id": "635ebffa-17e9-4231-9d38-b59625be9b03",
       "url": "https://www.notion.so/Check-monthly-cloud-tenant-costs-with-collie-635ebffa17e942319d38b59625be9b03"
@@ -1049,7 +1060,9 @@ export const index = [
       "order": 0,
       "category": "Tools",
       "redaction-state": "Sketch",
-      "name": "Overview"
+      "name": "Overview",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -1342,7 +1355,9 @@ export const index = [
       "documentation": "Reference",
       "category": "Tools",
       "redaction-state": "Sketch",
-      "name": "Tool Support"
+      "name": "Tool Support",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -1439,6 +1454,24 @@ export const index = [
     }
   },
   {
+    "file": "docs/understanding-cloud-foundation/iam.md",
+    "meta": {
+      "id": "9ee0a54d-9b9e-47dd-9fc0-9d81213ce76c",
+      "url": "https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c",
+      "title": "🔐 IAM",
+      "category": "Understanding Cloud Foundation",
+      "order": 21
+    },
+    "properties": {
+      "order": 21,
+      "documentation": "Explanation",
+      "category": "Understanding Cloud Foundation",
+      "name": "🔐 IAM",
+      "stakeholders": "Needs alignment with Enterprise IAM stakeholders.",
+      "summary": "Provide Identity and Access management capabilities for all available cloud platforms and services."
+    }
+  },
+  {
     "file": "docs/maturity-model/service-ecosystem/cloud-to-cloud-interconnects.md",
     "meta": {
       "id": "a31e4077-4e84-4129-a46c-1070a8591181",
@@ -1467,14 +1500,16 @@ export const index = [
       "url": "https://www.notion.so/Approaches-to-building-a-Cloud-Foundation-a544bc7c979f427a83352011cdcb6247",
       "title": "Approaches to building a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
-      "order": 40
+      "order": 30
     },
     "properties": {
-      "order": 40,
+      "order": 30,
       "documentation": "Explanation",
       "category": "Understanding Cloud Foundation",
       "redaction-state": "Draft",
-      "name": "Approaches to building a Cloud Foundation"
+      "name": "Approaches to building a Cloud Foundation",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -1634,6 +1669,24 @@ export const index = [
         "e2123339-0641-4d44-b774-32ce23fd634d"
       ],
       "name": "Cloud Tenant Database"
+    }
+  },
+  {
+    "file": "docs/understanding-cloud-foundation/tenant-management.md",
+    "meta": {
+      "id": "bd309e8a-9ecd-4a0d-a3c3-b464f734ca54",
+      "url": "https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54",
+      "title": "🗂 Tenant Management",
+      "category": "Understanding Cloud Foundation",
+      "order": 20
+    },
+    "properties": {
+      "order": 20,
+      "documentation": "Explanation",
+      "category": "Understanding Cloud Foundation",
+      "name": "🗂 Tenant Management",
+      "stakeholders": "This is often an original responsibility of cloud foundation teams that requires internal alignment between platform specialists.",
+      "summary": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts)."
     }
   },
   {
@@ -1960,22 +2013,6 @@ export const index = [
     }
   },
   {
-    "file": "docs/plan/glossary.md",
-    "meta": {
-      "id": "d2e7b604-7462-4d50-9397-06637277e6e3",
-      "url": "https://www.notion.so/Glossary-d2e7b60474624d50939706637277e6e3",
-      "title": "Glossary",
-      "category": "Plan",
-      "order": 30
-    },
-    "properties": {
-      "order": 30,
-      "documentation": "Reference",
-      "category": "Plan",
-      "name": "Glossary"
-    }
-  },
-  {
     "file": "docs/maturity-model/service-ecosystem/managed-cloud-provider-support-contracts.md",
     "meta": {
       "id": "d871cfba-a86d-4ec1-a23d-42c9b3d73352",
@@ -2013,22 +2050,6 @@ export const index = [
       "summary": "A central repository provides hardened virtual machine images.",
       "tool-implementations": [],
       "name": "Shared VM Image Repository"
-    }
-  },
-  {
-    "file": "docs/partners/readme.md",
-    "meta": {
-      "id": "dabb667e-0f91-4bc0-b3d6-356b32e0b5ec",
-      "url": "https://www.notion.so/Overview-dabb667e0f914bc0b3d6356b32e0b5ec",
-      "title": "Overview",
-      "category": "Partners",
-      "order": 0
-    },
-    "properties": {
-      "order": 0,
-      "category": "Partners",
-      "redaction-state": "Sketch",
-      "name": "Overview"
     }
   },
   {
@@ -2215,7 +2236,9 @@ export const index = [
       "documentation": "Reference",
       "category": "Plan",
       "redaction-state": "Draft",
-      "name": "What is a Building Block"
+      "name": "What is a Building Block",
+      "stakeholders": "",
+      "summary": ""
     }
   },
   {
@@ -2334,8 +2357,8 @@ export const index = [
     "file": "docs/understanding-cloud-foundation/readme.md",
     "meta": {
       "id": "fe4fd51c-8f57-46f1-afa1-2fc3402063b8",
-      "url": "https://www.notion.so/Why-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8",
-      "title": "Why Cloud Foundation",
+      "url": "https://www.notion.so/Why-Build-a-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8",
+      "title": "Why Build a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
       "order": 0
     },
@@ -2344,7 +2367,9 @@ export const index = [
       "documentation": "Explanation",
       "category": "Understanding Cloud Foundation",
       "redaction-state": "Draft",
-      "name": "Why Cloud Foundation"
+      "name": "Why Build a Cloud Foundation",
+      "stakeholders": "",
+      "summary": ""
     }
   }
 ];

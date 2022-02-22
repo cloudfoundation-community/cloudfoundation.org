@@ -4,16 +4,18 @@ url: >-
   https://www.notion.so/Approaches-to-building-a-Cloud-Foundation-a544bc7c979f427a83352011cdcb6247
 title: Approaches to building a Cloud Foundation
 category: Understanding Cloud Foundation
-order: 40
+order: 30
 properties:
-  order: 40
+  order: 30
   documentation: Explanation
   category: Understanding Cloud Foundation
   redaction-state: Draft
   name: Approaches to building a Cloud Foundation
+  stakeholders: ''
+  summary: ''
 ---
 
-Building a successful cloud foundation is a strategic undertaking. Since a cloud foundation is about building a single organisational capability to manage cloud adoption and consumption, it requires strong organizational alignment between different stakeholders. It therefore follows that the most successful approaches for building a cloud foundation seek to establish this alignment and productive collaboration from day one. However, this alignment between stakeholders may not be available from day one in your organization (see the Functional Pillars in [Why Cloud Foundation](/understanding-cloud-foundation/why-cloud-foundation.md) for an overview of stakeholders). While we see that the organizations most successful at cloud adoption are able to create and foster strong alignment between all involved functions, teams looking to build a cloud foundation can also iteratively build a cloud foundation while navigating the pitfalls created by lacking alignment. 
+Building a successful cloud foundation is a strategic undertaking. Since a cloud foundation is about building a single organisational capability to manage cloud adoption and consumption, it requires strong organizational alignment between different stakeholders. It therefore follows that the most successful approaches for building a cloud foundation seek to establish this alignment and productive collaboration from day one. However, this alignment between stakeholders may not be available from day one in your organization (see the Functional Pillars in [Why Build a Cloud Foundation](/understanding-cloud-foundation/why-build-a-cloud-foundation.md) for an overview of stakeholders). While we see that the organizations most successful at cloud adoption are able to create and foster strong alignment between all involved functions, teams looking to build a cloud foundation can also iteratively build a cloud foundation while navigating the pitfalls created by lacking alignment. 
 
 The following sections are going to look at different strategies for building and maturing a cloud foundation in different settings.
 

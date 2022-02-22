@@ -1,7 +1,8 @@
 ---
 id: fe4fd51c-8f57-46f1-afa1-2fc3402063b8
-url: https://www.notion.so/Why-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8
-title: Why Cloud Foundation
+url: >-
+  https://www.notion.so/Why-Build-a-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8
+title: Why Build a Cloud Foundation
 category: Understanding Cloud Foundation
 order: 0
 properties:
@@ -9,10 +10,12 @@ properties:
   documentation: Explanation
   category: Understanding Cloud Foundation
   redaction-state: Draft
-  name: Why Cloud Foundation
+  name: Why Build a Cloud Foundation
+  stakeholders: ''
+  summary: ''
 ---
 
-The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. A cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery.
+The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. As an **operations model**, the cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery.
 
 ## From IT Services to Cloud Foundation
 
@@ -30,9 +33,9 @@ No matter how an organization decides to implement its cloud governance, it alwa
 
 - **🔐 IAM:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
 
-- **💵 Cost Management:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
-
 - **🔖 Security & Compliance:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
+
+- **💵 Cost Management:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
 
 - **🛠 Service Ecosystem:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
 
@@ -48,9 +51,9 @@ flowchart BT;
     %% direction TB;
     Tenant["🗂 Tenant Management"]
     IAM["🔐 IAM"]
-    Services["🛠 Managed Services"]
-    Compliance["🔖 Compliance"]
-    Chargeback["💵 Chargeback"]
+    Compliance["🔖 Security & Compliance"]
+    Chargeback["💵 Cost Management"]
+    Services["🛠 Service Ecosystem"]
 		%% Tenant<-.->IAM & Services & Compliance & Chargeback
 		Tenant<-.what are the permissions for?.->IAM
 		Tenant<-.where to provision service?.->Services
@@ -66,7 +69,7 @@ flowchart BT;
 
 Manually maintaining this associated metadata in different functional silos is challenging and burdensome. Data inconsistencies are likely and make applying good governance difficult. Imagine detecting a critical security vulnerability in one of your AWS Accounts, only to figure out that the responsible security contact is no longer working at your organization...
 
-This example is only scratching the surface of the complex interdependencies that can exist between pillars. Managed services for example will require integration with IAM (who can order, configure a service?), Compliance (is the service allowed for a particular cloud environment?) and Chargeback (who's going to pay for the service?) etc.
+This example is only scratching the surface of the complex inter-dependencies that can exist between pillars. Managed services for example will require integration with IAM (who can order, configure a service?), Compliance (is the service allowed for a particular cloud environment?) and Chargeback (who's going to pay for the service?) etc.
 
 ## A Team's Cloud Journey - with IT Services
 
@@ -109,9 +112,9 @@ flowchart BT;
     Foundation["☁️ Cloud Foundation"]
     Tenant["🗂 Tenant Management"]
     IAM["🔐 IAM"]
-    Services["🛠 Managed Services"]
-    Compliance["🔖 Compliance"]
-    Chargeback["💵 Chargeback"]
+    Compliance["🔖 Security & Compliance"]
+    Chargeback["💵 Cost Management"]
+    Services["🛠 Service Ecosystem"]
 		Foundation<-.->Tenant & IAM & Services & Compliance & Chargeback
   end
   DevOps["DevOps Team"]

@@ -9,6 +9,8 @@ properties:
   category: Tools
   redaction-state: Sketch
   name: Overview
+  stakeholders: ''
+  summary: ''
 ---
 
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
