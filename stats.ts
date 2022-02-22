@@ -1,81 +1,62 @@
-import * as fs from "fs";
-import * as globby from "globby";
-import * as path from "path";
 import * as CSVFormatter from "textstat/lib/src/formatter/textstat-formatter-csv";
+import { Storage } from "@google-cloud/storage";
 
-import { TextstatKernel } from "@textstat/kernel";
-import { TextstatRulePreset } from "@textstat/rule-context";
-import { createPreset } from "@textstat/textstat-rule-preset-standard";
+import { run } from "./.textstat/cli";
+import { writeFile } from "fs/promises";
+import { index } from "./docs/.vuepress/index";
+import { Parser } from "json2csv";
 
-import countWordsRule from "./.textstat/count-words";
+async function main() {
+  const statsCsvPath = await writeStats();
+  const pagesCsvPath = await writePages();
 
-const osLocale = require("os-locale");
-
-run({
-  globPatterns: ["docs/**/*.md"],
-  locale: "en",
-})
-  .then((results) => {
-    const output = CSVFormatter.format(results);
-    console.log(output);
-  })
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
-
-export interface RunOptions {
-  locale: string;
-  globPatterns: string[];
+  await uploadFiles([statsCsvPath, pagesCsvPath]);
 }
 
-export async function run(options: RunOptions) {
-  const locale = options.locale ? options.locale : (osLocale.sync() as string);
-  return await report({
-    locale,
-    globPatterns: options.globPatterns,
-  });
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
+
+async function writePages() {
+  const pagesCsvPath = "./pages.csv";
+  const pagesCsvData = formatPagesIndex();
+  await writeFile(pagesCsvPath, pagesCsvData);
+  return pagesCsvPath;
 }
 
-function createTextstatPresetToTextlintPreset(preset: TextstatRulePreset) {
-  return Object.keys(preset.rules).map((key) => {
-    const rule = preset.rules[key];
-    return {
-      ruleId: key,
-      rule: rule,
-      options: preset.rulesConfig[key],
-    };
+async function writeStats() {
+  const results = await run({
+    globPatterns: ["docs/**/*.md"],
+    locale: "en"
   });
+
+  const statsCsvPath = "./textstats.csv";
+  const statsCsvData = CSVFormatter.format(results);
+
+  await writeFile(statsCsvPath, statsCsvData);
+  return statsCsvPath;
 }
 
-export interface ReportOptions {
-  locale: string;
-  globPatterns: string[];
-}
+async function uploadFiles(paths: string[]) {
+  const GOOGLE_CLOUD_PROJECT_ID = "meshcloud-data-team";
+  const GOOGLE_CLOUD_BUCKET = "meshbarn-field-cfmm";
+  const GOOGLE_CLOUD_KEYFILE = "./credentials.json";
 
-export async function report(options: ReportOptions) {
-  const fileList = await globby(options.globPatterns);
-  const textstat = new TextstatKernel();
-  const promises = fileList.map((filePath: string) => {
-    const text = fs.readFileSync(filePath, "utf-8");
-    return textstat.report(text, {
-      filePath: filePath,
-      ext: path.extname(filePath),
-      rules: [
-        countWordsRule,
-        ...createTextstatPresetToTextlintPreset(createPreset()),
-      ],
-      plugins: [
-        {
-          pluginId: "markdown",
-          plugin: require("@textlint/textlint-plugin-markdown").default, // for some reason we mess with importing this stuff
-        },
-      ],
-      sharedDeps: {
-        filePathList: fileList,
-        locale: options.locale,
-      },
-    });
+  const storage = new Storage({
+    projectId: GOOGLE_CLOUD_PROJECT_ID,
+    keyFilename: GOOGLE_CLOUD_KEYFILE,
   });
-  return Promise.all(promises);
+
+  for (const path of paths) {
+    await storage.bucket(GOOGLE_CLOUD_BUCKET).upload(path);
+  }
+}
+export function formatPagesIndex(): string {
+  const parser = new Parser({
+    flatten: true,
+    flattenSeparator: "_",
+  });
+  
+  return parser.parse(index);
 }
