@@ -7,8 +7,8 @@
 // See https://getbootstrap.com/docs/4.6/getting-started/theming/#importing for import ordering of bootstrap
 @import "node_modules/bootstrap/scss/functions";
 
-$primary: #3eaf7c;
-$info: #42b983;
+$primary: #1ab9de;
+$info: #56c8e1;
 $warning: #e7c000;
 $danger: #cc0000;
 
@@ -39,7 +39,7 @@ $btn-padding-x-lg: 1.5rem !default;
 :root {
   // brand colors
   --c-brand: #{$primary};
-  --c-brand-light: #4abf8a;
+  --c-brand-light: #42bfdc;
 
   // background colors
   --c-bg: #ffffff;
