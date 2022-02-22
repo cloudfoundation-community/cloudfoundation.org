@@ -44,7 +44,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
   ],
   themeConfig: {
-    logo: "https://avatars.githubusercontent.com/u/24991463?s=200&v=4",
+    logo: "/logo.png",
     sidebar: sidebar,
     navbar: navbar,
     editLink: false,
