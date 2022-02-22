@@ -1,5 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["@vuepress/client/types"]
+    "types": ["@vuepress/client/types", "node"]
   }
 }
