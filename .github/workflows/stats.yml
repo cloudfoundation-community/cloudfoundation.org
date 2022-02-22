@@ -1,0 +1,28 @@
+name: "Update Stats"
+on:
+  workflow_dispatch:
+    inputs: 
+      description:
+        description: 'description'
+        required: false
+        default: 'manually triggered stats update'
+  push: # trigger when someone pushes to main (e.g. by merging a PR)
+    branches:
+      - "main"
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Update Stats
+    steps:
+      - uses: actions/checkout@v2
+      - name: prepare credentials.json
+        run: |
+          echo "${{ secrets.MESHBARN_FIELD_CFMM_WRITER_CREDENTIALS_JSON}}" | base64 --decode > credentials.json
+          ls -lah credentials.json
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - run: yarn --frozen-lockfile
+      - run: yarn stats
