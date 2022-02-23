@@ -4,17 +4,6 @@ url: https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54
 title: 🗂 Tenant Management
 category: Understanding Cloud Foundation
 order: 20
-properties:
-  order: 20
-  documentation: Explanation
-  category: Understanding Cloud Foundation
-  name: 🗂 Tenant Management
-  stakeholders: >-
-    This is often an original responsibility of cloud foundation teams that
-    requires internal alignment between platform specialists.
-  summary: >-
-    Manage provisioning, configuration and lifecycle of cloud environments (e.g.
-    AWS Accounts).
 ---
 
 > **💡** Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts).

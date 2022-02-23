@@ -5,14 +5,6 @@ url: >-
 title: Selecting Cloud Foundation Tools
 category: Tools
 order: 10
-properties:
-  order: 10
-  documentation: Guide
-  category: Tools
-  redaction-state: Sketch
-  name: Selecting Cloud Foundation Tools
-  stakeholders: ''
-  summary: ''
 ---
 
 ## Use the Right Tool for the Job

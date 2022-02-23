@@ -5,14 +5,6 @@ url: >-
 title: Building Block Reference
 category: Maturity Model
 order: 20
-properties:
-  order: 20
-  documentation: Reference
-  category: Maturity Model
-  redaction-state: Draft
-  name: Building Block Reference
-  stakeholders: ''
-  summary: ''
 ---
 
 ## Definition

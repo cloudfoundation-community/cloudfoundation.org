@@ -5,14 +5,6 @@ url: >-
 title: Why Build a Cloud Foundation
 category: Understanding Cloud Foundation
 order: 0
-properties:
-  order: 0
-  documentation: Explanation
-  category: Understanding Cloud Foundation
-  redaction-state: Draft
-  name: Why Build a Cloud Foundation
-  stakeholders: ''
-  summary: ''
 ---
 
 The cloud foundation is an **organisational approach** to managing cloud adoption and consumption from a single organisational capability. As an **operations model**, the cloud foundation provides software development teams a single point of contact for provisioning, accessing and managing all cloud services they need to get their job done. Like a cloud provider, the cloud foundation offers its services using a unified control plane that covers tenant management, Identity and Access management (IAM) and billing. This frees teams from organizational burden and empowers them to focus on software delivery.

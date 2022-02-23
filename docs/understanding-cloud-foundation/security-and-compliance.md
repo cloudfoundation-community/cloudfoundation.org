@@ -4,15 +4,6 @@ url: https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a
 title: 🔖 Security & Compliance
 category: Understanding Cloud Foundation
 order: 22
-properties:
-  order: 22
-  documentation: Explanation
-  category: Understanding Cloud Foundation
-  name: 🔖 Security & Compliance
-  stakeholders: Interfaces with IT Security and Compliance stakeholders.
-  summary: >-
-    Provide capabilities for governing workloads and enforcing security
-    guidelines across all available cloud platforms and services.
 ---
 
 More description

@@ -4,15 +4,6 @@ url: https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c
 title: 🔐 IAM
 category: Understanding Cloud Foundation
 order: 21
-properties:
-  order: 21
-  documentation: Explanation
-  category: Understanding Cloud Foundation
-  name: 🔐 IAM
-  stakeholders: Needs alignment with Enterprise IAM stakeholders.
-  summary: >-
-    Provide Identity and Access management capabilities for all available cloud
-    platforms and services.
 ---
 
 Identity and Access Management (IAM) is a crucial key pillar regarding any application or integration effort. IAM covers the life cycle for identities as well as controls for authentication and authorisation. There are multiple ways to integrate or implement an IAM system in a classical enterprise architecture.
