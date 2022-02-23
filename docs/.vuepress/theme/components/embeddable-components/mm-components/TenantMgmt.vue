@@ -3,39 +3,30 @@
         Tenant MGMT.
     </h4>
 
-    <MaturityModelAtom  v-for="item in rows"
-        :step = "item.properties['journey-stage']"
-        :title = "item.meta.title"
-        :scope = "item.properties['scope']"
-        :link = "item.link"
-       
-         >
+    <MaturityModelAtom  v-for="item in dataList"
+        :step="item.step"
+        :title="item.title"
+        :scope="item.scope"
+        :link="item.link"
+    >
+
     </MaturityModelAtom>
 </template>
 
 
 <script lang="ts">
 import MaturityModelAtom from "./MaturityModelAtom.vue";
-import { getCategoryData } from "../../../../utils/maturity_model";
 export default {
   components: {
     MaturityModelAtom
   },
-
-  data() {
-    return {
-      rows: []
-    };
-  },
-  created() {
-    this.rows = getCategoryData("🗂 Tenant Management");
-  }
+  props: ["dataList"],
 };
 </script>
 
 <style lang="scss">
 h4 {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   color: #ffffff !important;
 }
 .title {
