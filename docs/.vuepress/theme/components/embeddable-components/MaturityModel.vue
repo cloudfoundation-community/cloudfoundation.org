@@ -124,31 +124,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.no-sidebar {
-  .theme-default-content {
-    max-width: none;
-    min-height: calc(100vh - 58px);
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    h1 {
-      display: none;
-    }
-  }
-  .page-meta,
-  footer,
-  .footer {
-    display: none;
-  }
-}
-.page {
-  padding-bottom: 0;
-}
-</style>
-
-
-
 <style scoped lang="scss">
 .card {
   display: flex;
