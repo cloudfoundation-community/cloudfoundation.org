@@ -106,11 +106,10 @@ const config: SyncConfig = {
           direction: "ascending",
         },
       ],
-      // note: support for properties filterins missing here, do we need to add this back? make it look like views[] for pages+views?
-      // properties: {
-      //   include: ["Name", "Block", "Tool", "Summary", "Link"],
-      // },
       renderAs: "table",
+      // we don't want to redner any view, just emit them to the index
+      // tbd: do we need to filter properties?
+      views: [],
       entries: {
         emitToIndex: true,
       },
