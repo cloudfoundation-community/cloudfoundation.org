@@ -26,14 +26,12 @@
         </MaturityModelAtom>
       </div>
 
-      </div>
-
+    </div>
 </template>
 
 <script  lang="ts">
 import { index } from "../../../index";
 import MaturityModelAtom from "./MaturityModelAtom.vue";
-import { switchCase, switchStatement, returnStatement } from "@babel/types";
 interface IMaturityModelAtom {
   step: string;
   scope: string;
