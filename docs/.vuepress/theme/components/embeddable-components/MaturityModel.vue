@@ -1,52 +1,34 @@
 <template>
     <div class="card">
 
-        <div class="card-col">
+      <div class="card-col">
+        <MaturityModelAtom :data-list="tenantMgmt" :title="'TENANT MGMT.'">
+        </MaturityModelAtom>
+      </div>
 
-         <MaturityModelAtom :data-list="tenantMgmt" :title="'TENANT MGMT.'">
-
-         </MaturityModelAtom>
-        </div>
-
-
-        <div class="card-col">
+      <div class="card-col">
          <MaturityModelAtom :data-list="iam" :title="'IAM'">
-
          </MaturityModelAtom>
-        </div>
+      </div>
 
+      <div class="card-col">
+        <MaturityModelAtom :data-list="compliance" :title="'COMPLIANCE'">
+        </MaturityModelAtom>
+      </div>
 
-        <div class="card-col">
-         <MaturityModelAtom :data-list="compliance" :title="'COMPLIANCE'">
+      <div class="card-col">
+        <MaturityModelAtom :data-list="chargeBack" :title="'CHARGEBACK'">
+        </MaturityModelAtom>
+      </div>
 
-         </MaturityModelAtom>
-        </div>
-
-
-        <div class="card-col">
-
-            <MaturityModelAtom :data-list="chargeBack" :title="'CHARGEBACK'">
-
-            </MaturityModelAtom>
-       
-        </div>
-
-
-        <div class="card-col">
-
-            <MaturityModelAtom :data-list="serviceEcosystem" :title="'SERVICE ECOSYSTEM'">
-
-            </MaturityModelAtom>
-         
-        </div>
-     
+      <div class="card-col">
+        <MaturityModelAtom :data-list="serviceEcosystem" :title="'SERVICE ECOSYSTEM'">
+        </MaturityModelAtom>
+      </div>
 
       </div>
 
-
 </template>
-
-
 
 <script  lang="ts">
 import { index } from "../../../index";
@@ -58,7 +40,6 @@ interface IMaturityModelAtom {
   title: string;
   link: string;
 }
-
 export default {
   components: {
     MaturityModelAtom
@@ -80,7 +61,6 @@ export default {
       return this.getFilterData("🛠 Service Ecosystem");
     }
   },
-
   methods: {
     getFilterData(groupName): IMaturityModelAtom[] {
       return index
@@ -106,7 +86,6 @@ export default {
     },
     getJourneyStageUrl(journeyStageValue: number): string {
       let suffix = "";
-
       switch (journeyStageValue) {
         case 1:
           suffix = "red";
@@ -130,7 +109,6 @@ export default {
     },
     getScopeCubeUrl(scopeName): string {
       const prefix = "scope-cube-";
-
       switch (scopeName) {
         case "🛬 Landing Zone":
           return `${prefix}turquoise.svg`;
@@ -144,26 +122,34 @@ export default {
     }
   }
 };
-
-if(window.location.pathname === '/maturity-model/') {
-    const themeDefaultContentClass = document.getElementsByClassName("theme-default-content")[0];
-        themeDefaultContentClass.style.maxWidth = '100%';
-        themeDefaultContentClass.style.padding = '0';
-
-    document.getElementsByClassName("footer")[0].style.display='none';
-    document.getElementsByClassName("page-meta")[0].style.display='none';
-    document.getElementsByTagName("footer")[0].style.display="none";
-    document.getElementsByTagName("h1")[0].style.display="none";
-
-    document.getElementsByClassName("page")[0].style.paddingBottom='0';
-
-
-}
-
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+.no-sidebar {
+  .theme-default-content {
+    max-width: none;
+    min-height: calc(100vh - 58px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      display: none;
+    }
+  }
+  .page-meta,
+  footer,
+  .footer {
+    display: none;
+  }
+}
+.page {
+  padding-bottom: 0;
+}
+</style>
 
+
+
+<style scoped lang="scss">
 .card {
   display: flex;
   background-color: #9fd9ec;
@@ -171,11 +157,9 @@ if(window.location.pathname === '/maturity-model/') {
   padding-right: 65px;
   flex-direction: row;
   flex-wrap: wrap;
-
   .card-col {
     flex-grow: 1;
     max-width: 20%;
-
     @media only screen and (max-width: 1400px) {
       min-width: 25%;
     }
