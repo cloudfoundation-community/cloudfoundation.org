@@ -63,11 +63,11 @@ export default {
   methods: {
     getFilterData(groupName): IMaturityModelAtom[] {
       return index
-        .filter(value => value.file && value.meta.category === groupName)
+        .filter(value => value.file && value.frontmatter.category === groupName)
         .sort(function(a, b) {
           return (
-            a.properties["journey-stage"].length -
-            b.properties["journey-stage"].length
+            a.frontmatter.properties["journey-stage"].length -
+            b.frontmatter.properties["journey-stage"].length
           );
         })
         .map(value => {
@@ -75,12 +75,12 @@ export default {
           url.splice(0, 2);
           return {
             step: this.getJourneyStageUrl(
-              value.properties["journey-stage"].length / 2 //Each emoji length is two
+              value.frontmatter.properties["journey-stage"].length / 2 //Each emoji length is two
             ),
-            scope: this.getScopeCubeUrl(value.properties.scope),
-            title: value.meta.title,
+            scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
+            title: value.frontmatter.title,
             link: url.join("/").split(".")[0],
-            summary: value.properties.summary
+            summary: value.frontmatter.properties.summary
           };
         });
     },

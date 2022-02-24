@@ -91,29 +91,29 @@ import { index } from "../../index";
 import Feedback from '../components/Feedback.vue';
 
 function formatLink(path: string) {
-  return path.substring("docs".length).replace(".md", ".html");
+  return "/" + path.replace(".md", ".html");
 }
 
 // todo: all these O(n) searches against the index are bad, we should probably wrap that in a better structure
 // or even better - a service/mixin
 function resolvePage(id: string) {
-  const page = index.find((x) => x.meta.id === id);
+  const page = index.find((x) => x.frontmatter.id === id);
   return {
     id,
-    title: page.meta.title,
+    title: page.frontmatter.title,
     href: formatLink(page.file),
   };
 }
 
 function resolveTool(id: string) {
-  const page = index.find((x) => x.meta.id === id);
-  const tool = index.find((x) => x.meta.id === page.properties.tool[0]);
+  const page = index.find((x) => x.frontmatter.id === id);
+  const tool = index.find((x) => x.frontmatter.id === page.frontmatter.properties.tool[0]);
 
   return {
     id,
-    summary: page.properties.summary,
-    link: page.properties.link,
-    tool: tool.meta.title,
+    summary: page.frontmatter.properties.summary,
+    link: page.frontmatter.properties.link,
+    tool: tool.frontmatter.title,
   };
 }
 

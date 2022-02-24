@@ -8,8 +8,8 @@ import {
   slugify,
   sync,
   SyncConfig,
+  DatabasePageProperties,
 } from "@meshcloud/notion-markdown-cms";
-import { DatabasePageProperties } from "@meshcloud/notion-markdown-cms/dist/DatabasePageProperties";
 
 dotenv();
 
@@ -111,7 +111,13 @@ const config: SyncConfig = {
       // tbd: do we need to filter properties?
       views: [],
       entries: {
-        emitToIndex: true,
+        frontmatterBuilder: (page) => ({
+          ...commonFrontmatter(page),
+          properties: buildProperties(
+            ["Block", "Tool", "Summary", "Link", "Name"],
+            page
+          ),
+        }),
       },
     },
     "627fe3b0-0475-4f87-a37c-5136a4d00ac3": {
@@ -157,12 +163,18 @@ async function main() {
   // change into the docs dir, this simplifies handling relative paths
   process.chdir("docs/");
 
-  const rendered = await sync(notionApiToken, config);
+  const synced = await sync(notionApiToken, config);
+  const rendered = synced.map((x) => {
+    const page = x as RenderedDatabasePage;
+    return page.file
+      ? { file: page.file, frontmatter: x.frontmatter }
+      : { frontmatter: x.frontmatter };
+  });
 
   // by convention, find all "first" files in a category and rename them README.md because vuepress expects them that way
   const categoryHomes = rendered.filter((x) => {
     const page = x as RenderedDatabasePage;
-    return page.properties?.get("order") === 0 && !!page.file;
+    return page.frontmatter?.order === 0 && !!page.file;
   });
 
   for (const home of categoryHomes) {
@@ -179,7 +191,9 @@ async function main() {
 
   // we sort the rendered pages by id, this way we have a more consistent index.ts
   // file that has less churn and thus plays along better with git versioning
-  const sorted = rendered.sort((x, y) => x.meta.id.localeCompare(y.meta.id));
+  const sorted = rendered.sort((x, y) =>
+    x.frontmatter.id.localeCompare(y.frontmatter.id)
+  );
 
   await fs.writeFile(
     ".vuepress/index.ts",

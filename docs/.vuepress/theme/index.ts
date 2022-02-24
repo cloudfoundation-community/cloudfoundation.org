@@ -17,7 +17,7 @@ const localTheme: ThemeObject = {
       headers.push({
         title: "Related Tools",
         level: 3,
-        slug: "related-tool",
+        slug: "related-tools",
         children: [],
       });
     }

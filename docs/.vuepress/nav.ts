@@ -39,19 +39,17 @@ export function makeSidebarEntries(dir: string) {
 
   // try to find original, "unslugged" category name, otherwise use the slugified category name
   const category = pathToCategory(dir);
+  const strippedDir = stripDocs(dir);
   const indexItem = index.find(
-    (x) => x.file && path.dirname(x.file) === dir && x.meta.category
+    (x) =>
+      x.file && path.dirname(x.file) === strippedDir && x.frontmatter.category
   );
   if (!indexItem) {
     console.warn(
-      "Could not find index item with category: " +
-      category +
-      " in dir: " +
-      dir +
-      ". Using category slug name instead"
+      `Could not find index item to determine category name for dir: ${dir}. Using category slug ${category} instead`
     );
   }
-  const categoryName = indexItem?.meta.category || category;
+  const categoryName = indexItem?.frontmatter.category || category;
 
   const entry = [
     {
@@ -70,24 +68,26 @@ function sortedSidebar(dir: string) {
 
   return getChildFiles(dir)
     .map((x) => {
-      const fullPath = dir + "/" + x; // to full path, including the "docs/" prefix
+      const relativePath = stripDocs(dir + "/" + x); // to relative path
       return {
-        fullPath,
-        indexEntry: index.find((i) => i.file === fullPath),
+        relativePath: relativePath,
+        indexEntry: index.find((i) => i.file === relativePath),
       };
     })
     .sort((x, y) => {
-      return x.indexEntry?.meta.order - y.indexEntry?.meta.order;
+      return x.indexEntry?.frontmatter.order - y.indexEntry?.frontmatter.order;
     })
-    .map((x) => ({
-      text: formatTitle(x.indexEntry),
-      link: inferPagePath({ app, filePathRelative: stripDocs(x.fullPath) })
-        .pathInferred,
-    }));
+    .map((x) => {
+      return {
+        text: formatTitle(x.indexEntry),
+        link: inferPagePath({ app, filePathRelative: x.relativePath })
+          .pathInferred,
+      };
+    });
 }
 
 function stripDocs(path: string) {
-  return path.substring("docs".length);
+  return path.substring("docs/".length);
 }
 
 function pathToCategory(dir: string): string {
@@ -101,14 +101,14 @@ function formatTitle(
 ): any {
   // this may not be the cleanest way to detect this, with all the hardcoding going on
   // however it works and we won't need this forever
-  const isBlock = indexEntry?.meta["layout"] === "CFMMBlock";
+  const isBlock = indexEntry?.frontmatter["layout"] === "CFMMBlock";
   if (isBlock) {
-    const rs = indexEntry.properties["redaction-state"];
+    const rs = indexEntry.frontmatter.properties["redaction-state"];
     const isDraft = !rs || rs === "Draft";
     const icon = isDraft ? "🚧" : "📗";
 
-    return icon + " " + indexEntry?.meta["title"];
+    return icon + " " + indexEntry?.frontmatter["title"];
   }
 
-  return indexEntry?.meta["title"];
+  return indexEntry?.frontmatter["title"];
 }
