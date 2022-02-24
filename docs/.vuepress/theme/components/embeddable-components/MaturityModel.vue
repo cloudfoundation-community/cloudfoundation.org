@@ -3,40 +3,40 @@
 
         <div class="card-col">
 
-         <TenantMgmt :data-list="tenantMgmt">
+         <MaturityModelAtom :data-list="tenantMgmt" :title="'TENANT MGMT.'">
 
-         </TenantMgmt>
+         </MaturityModelAtom>
         </div>
 
 
         <div class="card-col">
-         <Iam :data-list="iam">
+         <MaturityModelAtom :data-list="iam" :title="'IAM'">
 
-         </Iam>
+         </MaturityModelAtom>
         </div>
 
 
         <div class="card-col">
-         <Compliance :data-list="compliance">
+         <MaturityModelAtom :data-list="compliance" :title="'COMPLIANCE'">
 
-         </Compliance>
+         </MaturityModelAtom>
         </div>
 
 
         <div class="card-col">
 
-            <ChargeBack :data-list="chargeBack">
+            <MaturityModelAtom :data-list="chargeBack" :title="'CHARGEBACK'">
 
-            </ChargeBack>
+            </MaturityModelAtom>
        
         </div>
 
 
         <div class="card-col">
 
-            <ServiceEcoSystem :data-list="serviceEcosystem">
+            <MaturityModelAtom :data-list="serviceEcosystem" :title="'SERVICE ECOSYSTEM'">
 
-            </ServiceEcoSystem>
+            </MaturityModelAtom>
          
         </div>
      
@@ -50,101 +50,120 @@
 
 <script  lang="ts">
 import { index } from "../../../index";
-import TenantMgmt from "./mm-components/TenantMgmt.vue";
-import Iam from "./mm-components/Iam.vue";
-import Compliance from "./mm-components/Compliance.vue";
-import ChargeBack from "./mm-components/ChargeBack.vue";
-import ServiceEcoSystem from "./mm-components/ServiceEcoSystem.vue";
-
+import MaturityModelAtom from "./MaturityModelAtom.vue";
+import { switchCase, switchStatement, returnStatement } from "@babel/types";
 interface IMaturityModelAtom {
-  step: string,
-  scope: string,
-  title: string,
-  link: string
+  step: string;
+  scope: string;
+  title: string;
+  link: string;
 }
 
 export default {
   components: {
-    TenantMgmt,
-    Iam,
-    Compliance,
-    ChargeBack,
-    ServiceEcoSystem
+    MaturityModelAtom
   },
   computed: {
-    tenantMgmt():IMaturityModelAtom[] {
-      return this.getFilterData("🗂 Tenant Management")
+    tenantMgmt(): IMaturityModelAtom[] {
+      return this.getFilterData("🗂 Tenant Management");
     },
-    iam():IMaturityModelAtom[] {
-      return this.getFilterData("🔐 IAM")
+    iam(): IMaturityModelAtom[] {
+      return this.getFilterData("🔐 IAM");
     },
-    compliance():IMaturityModelAtom[] {
-      return this.getFilterData("🔖 Security & Compliance")
+    compliance(): IMaturityModelAtom[] {
+      return this.getFilterData("🔖 Security & Compliance");
     },
-    chargeBack():IMaturityModelAtom[] {
-      return this.getFilterData("💵 Cost Management")
+    chargeBack(): IMaturityModelAtom[] {
+      return this.getFilterData("💵 Cost Management");
     },
-    serviceEcosystem():IMaturityModelAtom[] {
-      return this.getFilterData("🛠 Service Ecosystem")
+    serviceEcosystem(): IMaturityModelAtom[] {
+      return this.getFilterData("🛠 Service Ecosystem");
     }
   },
+
   methods: {
     getFilterData(groupName): IMaturityModelAtom[] {
       return index
-          .filter(value => value.file && value.meta.category === groupName)
-          .sort(function (a, b) {
-            return a.properties["journey-stage"].length - b.properties["journey-stage"].length;
-          })
-          .map(value => {
-            const url = value.file.split("/");
-            url.splice(0, 2);
-            return {
-              step: this.getJourneyStageUrl(value.properties["journey-stage"].length / 2),
-              scope: this.getScopeCubeUrl(value.properties.scope),
-              title: value.meta.title,
-              link: url.join('/').replace(".md", ".html")
-            }
+        .filter(value => value.file && value.meta.category === groupName)
+        .sort(function(a, b) {
+          return (
+            a.properties["journey-stage"].length -
+            b.properties["journey-stage"].length
+          );
         })
+        .map(value => {
+          const url = value.file.split("/");
+          url.splice(0, 2);
+          return {
+            step: this.getJourneyStageUrl(
+              value.properties["journey-stage"].length / 2 //Each emoji length is two
+            ),
+            scope: this.getScopeCubeUrl(value.properties.scope),
+            title: value.meta.title,
+            link: url.join("/").split(".")[0]
+          };
+        });
     },
     getJourneyStageUrl(journeyStageValue: number): string {
       let suffix = "";
-        if (journeyStageValue === 1) suffix = "red";
-        if (journeyStageValue === 2) suffix = "orange";
-        if (journeyStageValue === 3) suffix = "yellow";
-        if (journeyStageValue === 4) suffix = "green";
-        if (journeyStageValue === 5) suffix = "blue";
-      return `journey-stage-${journeyStageValue}-${suffix}.svg`
+
+      switch (journeyStageValue) {
+        case 1:
+          suffix = "red";
+          break;
+        case 2:
+          suffix = "orange";
+          break;
+        case 3:
+          suffix = "yellow";
+          break;
+        case 4:
+          suffix = "green";
+          break;
+        case 5:
+          suffix = "blue";
+          break;
+        default:
+          throw `Invalid Journey Stage Value ${journeyStageValue}`;
+      }
+      return `journey-stage-${journeyStageValue}-${suffix}.svg`;
     },
     getScopeCubeUrl(scopeName): string {
       const prefix = "scope-cube-";
-      if (scopeName === "🛬 Landing Zone") return `${prefix}turquoise.svg`;
-      else if (scopeName === "☁️ Platform") return `${prefix}purple.svg`;
-      else if (scopeName === "🏢 Core") return `${prefix}blue.svg`;
-      else if (scopeName === "🏢 Core") return `${prefix}blue.svg`;
+
+      switch (scopeName) {
+        case "🛬 Landing Zone":
+          return `${prefix}turquoise.svg`;
+        case "☁️ Platform":
+          return `${prefix}purple.svg`;
+        case "🏢 Core":
+          return `${prefix}blue.svg`;
+        default:
+          throw `Invalid Scope Cube Value ${scopeName}`;
+      }
     }
   }
 };
+
+if(window.location.pathname === '/maturity-model/') {
+    const themeDefaultContentClass = document.getElementsByClassName("theme-default-content")[0];
+        themeDefaultContentClass.style.maxWidth = '100%';
+        themeDefaultContentClass.style.padding = '0';
+
+    document.getElementsByClassName("footer")[0].style.display='none';
+    document.getElementsByClassName("page-meta")[0].style.display='none';
+    document.getElementsByTagName("footer")[0].style.display="none";
+    document.getElementsByTagName("h1")[0].style.display="none";
+
+    document.getElementsByClassName("page")[0].style.paddingBottom='0';
+
+
+}
+
 </script>
 
-
-
-<style >
-.theme-default-content {
-  max-width: 100% !important;
-  padding: 0 !important;
-}
-h1,
-.page-meta,
-footer,
-.footer {
-  display: none !important;
-}
-
-.page {
-  padding-bottom: 0 !important;
-}
-</style>
 <style scoped lang="scss">
+
 .card {
   display: flex;
   background-color: #9fd9ec;
@@ -157,7 +176,7 @@ footer,
     flex-grow: 1;
     max-width: 20%;
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1400px) {
       min-width: 25%;
     }
     @media only screen and (max-width: 1024px) {
