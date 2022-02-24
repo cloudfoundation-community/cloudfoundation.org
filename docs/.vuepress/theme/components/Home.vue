@@ -12,12 +12,12 @@
           <router-link to="/maturity-model/" class="btn btn-primary btn-lg mt-4">Explore Building Blocks →</router-link>
         </div>
         <div class="col-12 col-lg-6 hero-right">
-          <img src="./heroimage.png">
+          <img src="./heroimage.webp">
         </div>
       </div>
       <div class="row flex-column-reverse flex-md-row">
         <div class="col-12 col-lg-6">
-          <img src="./cfmm.png">
+          <img src="./cfmm.svg">
         </div>
         <div class="col-12 col-lg-6">
           <h1>What is the Cloud Foundation Maturity Model?</h1>
@@ -42,7 +42,7 @@
           </span>
         </div>
         <div class="col-12 col-lg-6">
-          <img src="./team.png">
+          <img src="./team.svg">
         </div>
       </div>
       <Footer />
