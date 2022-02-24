@@ -9,18 +9,29 @@ import {
   sync,
   SyncConfig,
 } from "@meshcloud/notion-markdown-cms";
+import { DatabasePageProperties } from "@meshcloud/notion-markdown-cms/dist/DatabasePageProperties";
 
 dotenv();
+
+function commonFrontmatter(page) {
+  return {
+    id: page.meta.id,
+    url: page.meta.url,
+    title: page.meta.title,
+  };
+}
+
+function buildProperties(include: string[], page: DatabasePageProperties) {
+  const kvp = include.map((x) => [slugify(x), page.properties.get(x)]);
+  return Object.fromEntries([...kvp]);
+}
 
 const config: SyncConfig = {
   cmsDatabaseId: "6043a6d4-5611-4741-aa0d-1b11ec19112a",
   pages: {
-    destinationPathBuilder: (page) => slugify(page.properties.get("Category")),
-    filenameBuilder: (page) => slugify(page.meta.title),
+    destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
     frontmatterBuilder: (page) => ({
-      id: page.meta.id,
-      url: page.meta.url,
-      title: page.meta.title,
+      ...commonFrontmatter(page),
       category: page.properties.get("Category"),
       order: page.properties.get("order"),
     }),
@@ -44,9 +55,8 @@ const config: SyncConfig = {
       ],
       renderAs: "pages+views",
       pages: {
-        destinationPathBuilder: (page) =>
+        destinationDirBuilder: (page) =>
           "maturity-model/" + slugify(page.properties.get("Pillar")),
-        filenameBuilder: (page) => slugify(page.meta.title),
         frontmatterBuilder: (page) => {
           const include = [
             // order chosen here to keep code generation as close as possible to the old
@@ -61,29 +71,42 @@ const config: SyncConfig = {
             "Name",
           ];
 
-          const kvp = include.map((x) => [slugify(x), page.properties.get(x)]);
-          const properties = Object.fromEntries([...kvp]);
+          const properties = buildProperties(include, page);
 
           return {
-            id: page.meta.id,
-            url: page.meta.url,
-            title: page.meta.title,
+            ...commonFrontmatter(page),
             category: page.properties.get("Pillar"),
             layout: "CFMMBlock",
             properties,
           };
         },
       },
-      views: [], // do we still need those?
+      views: [
+        {
+          title: "By Pillar",
+          properties: {
+            groupBy: "Pillar",
+            include: ["Name", "Scope", "Journey Stage", "Summary"],
+          },
+        },
+        {
+          title: "By Journey Stage",
+          properties: {
+            groupBy: "Journey Stage",
+            include: ["Name", "Scope", "Pillar", "Summary"],
+          },
+        },
+      ],
     },
     "6f849704-d765-443f-ac32-b611fc5270cc": {
+      // tool2block, part of the "tool support" page
       sorts: [
         {
           property: "Tool",
           direction: "ascending",
         },
       ],
-      // note: support for properties filterins missing here, would need to add this!
+      // note: support for properties filterins missing here, do we need to add this back? make it look like views[] for pages+views?
       // properties: {
       //   include: ["Name", "Block", "Tool", "Summary", "Link"],
       // },
@@ -101,13 +124,10 @@ const config: SyncConfig = {
       ],
       renderAs: "pages+views",
       pages: {
-        destinationPathBuilder: (page) =>
+        destinationDirBuilder: (page) =>
           "tools/" + slugify(page.properties.get("Category")),
-        filenameBuilder: (page) => slugify(page.meta.title),
         frontmatterBuilder: (page) => ({
-          id: page.meta.id,
-          url: page.meta.url,
-          title: page.meta.title,
+          ...commonFrontmatter(page),
           category: page.properties.get("Category"),
           order: page.properties.get("order"),
         }),
