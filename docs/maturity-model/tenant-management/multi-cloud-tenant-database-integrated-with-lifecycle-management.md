@@ -3,6 +3,10 @@ id: 77942f5f-e395-49c6-8927-e5fa3ef28aef
 url: >-
   https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-77942f5fe39549c68927e5fa3ef28aef
 title: Multi-cloud tenant database integrated with lifecycle management
+description: >-
+  A central database of all multi-cloud tenants initiates tenant provisioning
+  and deprovisioning processes. The database acts as an authoritative source of
+  tenants and ensures tenant metadata is always up to date.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:

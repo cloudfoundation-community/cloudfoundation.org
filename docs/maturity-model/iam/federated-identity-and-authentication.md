@@ -3,6 +3,9 @@ id: b4678790-ab53-4219-83e7-fbde18383d05
 url: >-
   https://www.notion.so/Federated-Identity-and-Authentication-b4678790ab53421983e7fbde18383d05
 title: Federated Identity and Authentication
+description: >-
+  Integration Cloud Platform IAM systems with Enterprise IAM landscape incl.
+  federated authentication. 
 category: 🔐 IAM
 layout: CFMMBlock
 properties:

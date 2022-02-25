@@ -2,6 +2,10 @@
 id: 913a8ad1-7ad4-4ade-9e88-801a7afa4b40
 url: https://www.notion.so/Modular-Landing-Zones-913a8ad17ad44ade9e88801a7afa4b40
 title: Modular Landing Zones
+description: >-
+  Landing Zones are extendable with with services. These services have their own
+  lifecycle and can be reconfigured during the lifespan of a tenant. The modular
+  design allows combining services like LEGO® blocks. 
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -51,9 +55,9 @@ Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/06/08/cloud-landing-zone-lifecycle-explained/">Learn more</CtaButton>
 </CallToAction>
 
-## Proven Patterns for Building Modular Landing Zones
+## Proven patterns for building Modular Landing Zones
 
-### Split up Existing Monolithic Landing Zones
+### Split up existing Monolithic Landing Zones
 
 You do not have to start form scratch, if you already have an existing Monolithic Landing Zone (see [Monolithic Landing Zone](/maturity-model/tenant-management/monolithic-landing-zone.md)). When splitting up existing Landing Zones, a general guideline is: Policies and security settings go into the Landing Zone baseline. Infrastructure that requires workload (e.g. [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md), [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md)) goes into modules.
 
@@ -61,14 +65,14 @@ You do not have to start form scratch, if you already have an existing Monolithi
 
 Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md)). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying a baseline of Landing Zones to tenants. This makes Cloud Foundation Platform the best choice for managing the baseline of Landing Zones.
 
-### Use Infrastructure as Code Tooling
+### Use Infrastructure as Code tooling
 
 Most teams build the optional modules for Landing Zones with Infrastructure as Code tooling. Common examples are Terraform, Azure BluePrint or Bicep, Google Cloud Resource Manager or AWS Cloud Formation.
 
-### Manage Services GitOps Style
+### Manage Services GitOps style
 
 GitOps is a proven pattern for managing optional Landing Zones modules. Having easily accessible definitions of Infrastructure as Code files in a version control system makes inspecting and updating Landing Zones a lot easier. When integrating with Cloud Foundation Platforms that support Open Service Broker API for implementing Landing Zones modules, the open-source [UniPipe Service Broker](https://github.com/meshcloud/unipipe-service-broker/) can be used to implement a GitOps workflow.
 
-### Find the Right Balance between Control and Freedom
+### Find the right balance between control and freedom
 
 Do DevOps teams get IAM management rights in their tenant? An “open” approach to tenant permissions allows DevOps teams to iterate faster. A “closed” approach minimizes risks stemming from misconfigured permissions.

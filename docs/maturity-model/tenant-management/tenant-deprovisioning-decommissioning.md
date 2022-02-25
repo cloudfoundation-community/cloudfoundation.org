@@ -3,6 +3,9 @@ id: 119bfca5-dda6-408c-b35d-c59d0f209fcf
 url: >-
   https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf
 title: Tenant Deprovisioning / Decommissioning
+description: >-
+  Process for decommissioning and deprovisioning cloud tenants that are no
+  longer needed.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -38,11 +41,11 @@ Most zombie workloads are the result of unclear responsibilities - not malice. W
 
 If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) better. 
 
-## Proven Patterns for Implementing a Cloud Tenant Decommissioning Process
+## Proven patterns for implementing a Cloud Tenant Decommissioning Process
 
 Tenant decommissioning is a fundamental tenant management process. Cloud foundation teams will need it to implement higher-level capabilities in the Tenant Management pillar like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md).
 
-### Plan for Involuntary Decommissioning
+### Plan for involuntary Decommissioning
 
 Setting clear boundaries and expectations with a [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) is crucial. Unfortunately, the cloud foundation team sometimes has to enforce these boundaries. For example, cloud foundation teams may find internal customers
 

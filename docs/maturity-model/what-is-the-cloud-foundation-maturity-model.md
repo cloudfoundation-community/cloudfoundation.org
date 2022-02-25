@@ -7,7 +7,7 @@ category: Maturity Model
 order: 30
 ---
 
-## What Is the Cloud Foundation Maturity Model
+## What is the Cloud Foundation Maturity Model
 
 > **💡** The Cloud Foundation Maturity Model is a model that describes the capabilities Cloud Foundations are building to meet their customer’s needs.
 

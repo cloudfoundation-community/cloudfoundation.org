@@ -3,6 +3,9 @@ id: 802fdd8d-7fc0-4749-937f-e9e0ccb3f273
 url: >-
   https://www.notion.so/Incident-Management-Process-802fdd8d7fc04749937fe9e0ccb3f273
 title: Incident Management Process
+description: >-
+  There's a clear owner for every cloud tenant responsible for incident
+  management. Incidents are automatically routed to these owners. 
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:

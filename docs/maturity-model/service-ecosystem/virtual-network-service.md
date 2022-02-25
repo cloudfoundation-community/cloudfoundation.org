@@ -2,6 +2,9 @@
 id: 2be4d7d1-4109-406b-a4f7-da6c566123fd
 url: https://www.notion.so/Virtual-Network-Service-2be4d7d14109406ba4f7da6c566123fd
 title: Virtual Network Service
+description: >-
+  A virtual network service provides a pre-configured virtual network. It is a
+  pre-requisite for higher-level services built on virtual networks.
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:
@@ -23,7 +26,7 @@ properties:
   name: Virtual Network Service
 ---
 
-## Why a Virtual Network Service?
+## Why a virtual network service?
 
 A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
 
@@ -46,25 +49,25 @@ Given the security implications, networking services must be provided centrally 
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
 </CallToAction>
 
-## Proven Patterns When Implementing Virtual Network Services
+## Proven patterns when implementing virtual network services
 
-### Align with Your [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) 
+### Align with your [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) 
 
 Organizations should strive to make applications go full cloud-native on networking (L7, APIs) or provide strongly centralized services (L3 networking like on-premise).
 
-### Embrace Cloud Paradigm Shift
+### Embrace cloud paradigm shift
 
 On-premise used L3 connectivity and often no authN/Z on the application layer. The cloud moves this to L7. Network zones are the most difficult to implement as they have a lot of shared responsibilities and interfaces.
 
-### Shift Your View on Networking
+### Shift your view on networking
 
 On-premise networks are mostly flat, whereas in the cloud we can do micro-segmentation and networks become very hierarchical with DevOps teams having a lot of autonomy over their subnets
 
-### Provide It as a Landing Zone Module
+### Provide it as a Landing Zone module
 
 Virtual network services can be modules for Modular Landing Zones (see [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)).
 
-### Make It Compatible with Adjacent Services
+### Make it compatible with adjacent services
 
 Virtual networks are most useful in combination with
 

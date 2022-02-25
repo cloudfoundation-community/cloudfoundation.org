@@ -3,6 +3,11 @@ id: 18256d4f-e096-4281-809a-f77c5dd20ef0
 url: >-
   https://www.notion.so/Service-Account-Management-18256d4fe0964281809af77c5dd20ef0
 title: Service Account Management
+description: >-
+  Managed provisioning and inventory of Service Accounts including their
+  permission sets. Enables central enforcement of compliance policies for
+  technical users like re-certification, credential strength and credential
+  rotation.
 category: 🔐 IAM
 layout: CFMMBlock
 properties:
@@ -39,17 +44,17 @@ The approach to Service Account Management needs to be documented in [Identity a
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/15/cloud-infrastructure-services-enterprise-wide-distribution-via-a-marketplace/">Learn more</CtaButton>
 </CallToAction>
 
-## Proven Patterns for Service Account Management
+## Proven patterns for Service Account Management
 
-### Self-Service Is King
+### Self-Service is King
 
 Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams to create scoped Service Accounts, preferably self-service (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) ).
 
-### Decide if You Need to Document Permissions
+### Decide if you need to document permissions
 
 Documentation of access rights is a common requirement for organizations in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees DevOps teams from the burden of figuring out where to go after the account is created.
 
-### Clarify Who Is Responsible
+### Clarify who is responsible
 
 There are multiple ways to do this: 
 
@@ -57,6 +62,6 @@ There are multiple ways to do this:
 
 - Make the person creating them accountable for their use.  [Centralized audit logs](/maturity-model/security-and-compliance/centralized-audit-logs.md) always contain a log finding out who created a Service Account.
 
-### Monitor Service Account Usage
+### Monitor service account usage
 
 Especially anti-patterns like lack of key rotation, extensive permissions (e.g. service accounts should never use default roles like GCP roles/editor) and unused service accounts should be detected and actions should be taken.

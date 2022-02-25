@@ -2,6 +2,9 @@
 id: cf487857-542f-4d74-8fe9-885b7be8ccf3
 url: https://www.notion.so/Onboarding-Portal-cf487857542f4d748fe9885b7be8ccf3
 title: Onboarding Portal
+description: >-
+  Teams are guided through the organizational (e.g. budget) and regulatory (e.g.
+  compliance) cloud onboarding duties.
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
@@ -26,12 +29,12 @@ Depending on the organizational needs, Cloud Onboardings can be as easy as signi
 
 Guided cloud onboardings help DevOps teams
 
-## Proven Patterns When Implementing X
+## Proven patterns when implementing x
 
-### Do A
+### Do a
 
 *Explain why one should do a*
 
-### Do B
+### Do b
 
 *Explain why one should do b*

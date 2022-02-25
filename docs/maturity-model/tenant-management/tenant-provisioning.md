@@ -2,6 +2,9 @@
 id: deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
 url: https://www.notion.so/Tenant-Provisioning-deb9d28ee5924c3cb7da020b7ba6bb0d
 title: Tenant Provisioning
+description: >-
+  On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure
+  Subscriptions etc.).
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -22,7 +25,7 @@ properties:
 
 Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform. 
 
-## Why You Need to Automate Cloud Tenant Provisioning
+## Why you need to Automate Cloud Tenant Provisioning
 
 Since Tenant provisioning is so quintessential, practitioners should consider the following implementation maturities as they are growing the overall maturity of offered cloud foundation capabilities. 
 
@@ -38,11 +41,11 @@ In practice, many cloud foundation teams miss the right point in time to invest 
 
 ## Best Practices for Tenant Provisioning
 
-### Apply Proper Tenant Isolation
+### Apply proper Tenant Isolation
 
 - Isolate teams and workloads using tenants - no sharing! One of the worst anti-patterns caused by not having sufficient tenant provisioning capability is that teams put development and production workloads into the same tenant. This encourages bad security practices that can lead to compromise of production environments.
 
-### IAM Should Be Part of Tenant Provisioning
+### IAM should be part of Tenant Provisioning
 
 Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) that details how and to what extent teams can access cloud tenants.
 

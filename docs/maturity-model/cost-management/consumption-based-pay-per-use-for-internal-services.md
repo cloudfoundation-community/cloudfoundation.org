@@ -3,6 +3,9 @@ id: d2cb8a5e-3e28-448b-8944-14ff38fad792
 url: >-
   https://www.notion.so/Consumption-based-pay-per-use-for-internal-Services-d2cb8a5e3e28448b894414ff38fad792
 title: Consumption based pay-per-use for internal Services
+description: >-
+  Enable fine-grained pay-per-use options for managed services offered on the
+  cloud foundation, e.g. pay per API request, per GB/h stored etc.
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:

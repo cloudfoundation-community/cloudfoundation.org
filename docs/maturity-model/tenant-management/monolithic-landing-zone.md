@@ -2,6 +2,10 @@
 id: 57c00ed4-e699-4167-a0f5-6009bf31b600
 url: https://www.notion.so/Monolithic-Landing-Zone-57c00ed4e6994167a0f56009bf31b600
 title: Monolithic Landing Zone
+description: >-
+  Landing Zones includes a common set of core resources like virtual networks.
+  These resources are managed with the same life-cycle as the underlying cloud
+  tenant.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -26,7 +30,7 @@ Early stage cloud foundations often start with a “one-size-fits-all” approac
 
 The Monolithic Landing Zone is known to be a local maximum that keeps complexity low in the short term while sacrificing flexibility in the long term. 
 
-## When to Build a Monolithic Landing Zone
+## When to build a Monolithic Landing Zone
 
 > **⚠️** For Cloud Foundation that are getting started with building Landing Zones the Monolithic Approach is considered an anti-pattern. A modular approach as laid out in [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)  is recommended.
 

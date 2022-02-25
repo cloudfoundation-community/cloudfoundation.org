@@ -3,6 +3,11 @@ id: e7d63253-2e39-4bbf-9dd6-da11bb3edd0d
 url: >-
   https://www.notion.so/Link-Cloud-Tenants-to-CMDB-EAM-e7d632532e394bbf9dd6da11bb3edd0d
 title: Link Cloud Tenants to CMDB/EAM
+description: >-
+  Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g.
+  IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM
+  systems is a foundational capability that enables use cases like basic
+  chargeback, systematic risk assessment and change management. 
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:

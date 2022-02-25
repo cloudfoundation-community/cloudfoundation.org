@@ -3,6 +3,11 @@ id: 64284b14-faab-461c-80bb-5e8efbae4dcc
 url: >-
   https://www.notion.so/Tenant-Inventory-Reconciliation-64284b14faab461c80bb5e8efbae4dcc
 title: Tenant Inventory Reconciliation
+description: >-
+  The inventory of cloud tenants is automatically reconciled against the tenants
+  actually present in the cloud platforms. This allows organizations to detect
+  "shadow IT" or "dark matter" in the cloud. A process is in place to adopt
+  these existing tenants into the prescribed governance model. 
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -69,10 +74,10 @@ Discovering a shadow workload should be treated as an incident and the remediati
 
 - starting a root cause analysis to find out how the tenant was created. Audit logs provided by the cloud platform will be helpful for this analysis
 
-### Have a Clear Tenant Decomissioning Process
+### Have a clear tenant decomissioning process
 
 The final step of the escalation process for unregistered tenants is a forceful decomissioning of the tenant and its workload. This requires a clear [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) process that also accounts for “involuntary” deprovisioning scenarios. See the referenced building block for more details.
 
-### Perform Tenant Inventory Reconciliations Regularly
+### Perform tenant inventory reconciliations regularly
 
 Because shadow workloads on cloud platforms can have profoundly negative information security implications, cloud foundation teams should run tenant inventory reconciliations frequently. Compared to running a big annual reconciliation with big excel-sheets, an automated and regular reconciliation will also spread the workload for dealing with in-compliant cloud tenants and keep remediation processes in the teams “working memory”.  Cloud foundation teams with mature capabilities will run these reconciliations daily.

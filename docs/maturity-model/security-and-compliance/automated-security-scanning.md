@@ -3,6 +3,11 @@ id: 09e744c5-e12a-49e8-8b6f-b7e3c44ba63b
 url: >-
   https://www.notion.so/Automated-Security-Scanning-09e744c5e12a49e88b6fb7e3c44ba63b
 title: Automated Security Scanning
+description: >-
+  Cloud workloads are automatically scanned for security/compliance violations
+  (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud
+  resource configuration (e.g. VPC ACLs), not about workload configuration (e.g.
+  software firewall)
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:

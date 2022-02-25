@@ -14,11 +14,18 @@ import {
 dotenv();
 
 function commonFrontmatter(page) {
-  return {
+  const frontmatter: any = {
     id: page.meta.id,
     url: page.meta.url,
-    title: page.meta.title,
+    title: page.meta.title
   };
+  // By this logic, you can attach a 'Summary' field to any page
+  // and it will render a <meta description> tag based on the summary text.
+  const summary = page.properties?.get('Summary');
+  if (summary) {
+    frontmatter.description = summary;
+  }
+  return frontmatter;
 }
 
 function buildProperties(include: string[], page: DatabasePageProperties) {

@@ -3,6 +3,9 @@ id: a31e4077-4e84-4129-a46c-1070a8591181
 url: >-
   https://www.notion.so/Cloud-to-Cloud-interconnects-a31e40774e844129a46c1070a8591181
 title: Cloud to Cloud interconnects
+description: >-
+  Provides managed connectivity between cloud tenants on different cloud
+  platforms via centrally managed transit networks. 
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:

@@ -3,6 +3,11 @@ id: 1afea746-da65-4164-9029-5e0bfa9432b1
 url: >-
   https://www.notion.so/Privileged-Access-Management-1afea746da65416490295e0bfa9432b1
 title: Privileged Access Management
+description: >-
+  Implement appropriate security controls for privileged access as defined in
+  the Authorization Concept. These must cover access to administrative cloud
+  platform roles (e.g. Global Admins, Global Readers) and shared services (e.g.
+  on-premise connectivity hubs). 
 category: 🔐 IAM
 layout: CFMMBlock
 properties:

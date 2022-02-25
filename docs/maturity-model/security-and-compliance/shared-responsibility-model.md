@@ -3,6 +3,10 @@ id: 57c521ba-73a4-4187-a507-bbd5eaa80212
 url: >-
   https://www.notion.so/Shared-Responsibility-Model-57c521ba73a44187a507bbd5eaa80212
 title: Shared Responsibility Model
+description: >-
+  A shared responsibility model describes the services provided by the cloud
+  foundation and how it interacts with the cloud provider's shared
+  responsibility model.
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:

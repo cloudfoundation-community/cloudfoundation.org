@@ -3,6 +3,9 @@ id: cf125421-fd90-4bff-a4c6-f7c994a14591
 url: >-
   https://www.notion.so/API-Gateway-to-on-premises-APIs-cf125421fd904bffa4c6f7c994a14591
 title: API Gateway to on-premises APIs
+description: >-
+  Provide managed API (L7) connectivity to APIs running in on-premise
+  environments.
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:
