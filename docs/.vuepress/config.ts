@@ -7,6 +7,9 @@ import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
 import { makeSidebarEntries } from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
+import pluginSitemap, {
+  SitemapOptions,
+} from "./theme/plugins/plugin-sitemap/src/node";
 
 const log = debug("cloudfoundation:config");
 
@@ -27,6 +30,11 @@ dirs.forEach((dir) => {
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
 
+const sitemapOptions: SitemapOptions = {
+  hostname: "https://cloudfoundation.meshcloud.io",
+  excludeUrls: ["/404.html"],
+  changefreq: "daily",
+};
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
   title: "Cloud Foundation",
@@ -84,6 +92,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         ),
       },
     ],
+    [pluginSitemap, sitemapOptions],
   ],
   bundlerConfig: {},
 });
