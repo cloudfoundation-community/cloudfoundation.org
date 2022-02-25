@@ -9,25 +9,25 @@ order: 0
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
 ## CFMM Tools - Cli
 
-| Name                                   | Category |
-| -------------------------------------- | -------- |
-| [collie-cli](/tools/cli/collie-cli.md) | cli      |
+| Name       | Category |
+| ---------- | -------- |
+| collie-cli | cli      |
 
 ## CFMM Tools - DevOps
 
-| Name                              | Category |
-| --------------------------------- | -------- |
-| [GitLab](/tools/devops/gitlab.md) | DevOps   |
+| Name   | Category |
+| ------ | -------- |
+| GitLab | DevOps   |
 
 ## CFMM Tools - Governance Platform
 
-| Name                                                 | Category            |
-| ---------------------------------------------------- | ------------------- |
-| [meshStack](/tools/governance-platform/meshstack.md) | Governance Platform |
+| Name      | Category            |
+| --------- | ------------------- |
+| meshStack | Governance Platform |
 
 ## CFMM Tools - Downloads
 
-| Name                                                   | Category  |
-| ------------------------------------------------------ | --------- |
-| [Stakeholder Map](/tools/downloads/stakeholder-map.md) | Downloads |
+| Name            | Category  |
+| --------------- | --------- |
+| Stakeholder Map | Downloads |
 

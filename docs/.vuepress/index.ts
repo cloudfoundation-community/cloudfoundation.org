@@ -986,12 +986,10 @@ export const index = [
     }
   },
   {
-    "file": "tools/cli/collie-cli.md",
     "frontmatter": {
       "id": "5c2013b6-4c56-4813-8be7-ad86757014af",
       "url": "https://www.notion.so/collie-cli-5c2013b64c5648138be7ad86757014af",
-      "title": "collie-cli",
-      "category": "cli"
+      "title": "collie-cli"
     }
   },
   {
@@ -1346,12 +1344,10 @@ export const index = [
     }
   },
   {
-    "file": "tools/downloads/stakeholder-map.md",
     "frontmatter": {
       "id": "84cf2301-844f-4e77-8f86-ed3d9244d623",
       "url": "https://www.notion.so/Stakeholder-Map-84cf2301844f4e778f86ed3d9244d623",
-      "title": "Stakeholder Map",
-      "category": "Downloads"
+      "title": "Stakeholder Map"
     }
   },
   {
@@ -1644,12 +1640,10 @@ export const index = [
     }
   },
   {
-    "file": "tools/governance-platform/meshstack.md",
     "frontmatter": {
       "id": "c5757e31-5c6c-487a-81b2-96ba50dda3af",
       "url": "https://www.notion.so/meshStack-c5757e315c6c487a81b296ba50dda3af",
-      "title": "meshStack",
-      "category": "Governance Platform"
+      "title": "meshStack"
     }
   },
   {
@@ -2042,12 +2036,10 @@ export const index = [
     }
   },
   {
-    "file": "tools/devops/gitlab.md",
     "frontmatter": {
       "id": "decefdc2-0883-4adb-8fc0-13b451bb8c2f",
       "url": "https://www.notion.so/GitLab-decefdc208834adb8fc013b451bb8c2f",
-      "title": "GitLab",
-      "category": "DevOps"
+      "title": "GitLab"
     }
   },
   {

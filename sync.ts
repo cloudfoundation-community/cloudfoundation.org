@@ -135,14 +135,10 @@ const config: SyncConfig = {
           direction: "ascending",
         },
       ],
-      renderAs: "pages+views",
-      pages: {
-        destinationDirBuilder: (page) =>
-          "tools/" + slugify(page.properties.get("Category")),
+      renderAs: "table",
+      entries: {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
-          category: page.properties.get("Category"),
-          order: page.properties.get("order"),
         }),
       },
       views: [
