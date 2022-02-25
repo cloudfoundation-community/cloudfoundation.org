@@ -97,10 +97,10 @@
     stream-events "^1.0.4"
     xdg-basedir "^4.0.0"
 
-"@meshcloud/notion-markdown-cms@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.8.0.tgz#6f115cd7e8743ec9569c9d9c50263181f99a9973"
-  integrity sha512-LgOQcWWUbxSJ5zyKjVUkAJFvjvjYleYwf7YlavMe8MVQ8dcRmxfmwYNJPfWavRYMK4u38O4U7JRJ7UYUzMGebA==
+"@meshcloud/notion-markdown-cms@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.9.0.tgz#28793baa5d0cada84e3a3bd27da8e37a9ad72bbd"
+  integrity sha512-S4vfkjCl5vrCaDii3iJINjrHdlVZ6r90Jfl0t5h5yttrtugQzOXtttVZKegLQPKEU/Q8PIa2pykZT1WJQajMPw==
   dependencies:
     "@notionhq/client" "^0.3.2"
     chalk "^4.1.2"
@@ -609,17 +609,17 @@
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node-fetch@^2.5.10":
-  version "2.5.12"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.12.tgz#8a6f779b1d4e60b7a57fb6fd48d84fb545b9cc66"
-  integrity sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.6.1.tgz#8f127c50481db65886800ef496f20bbf15518975"
+  integrity sha512-oMqjURCaxoSIsHSr1E47QHzbmzNR5rK8McHuNb11BOM9cHcIK3Avy0s/b2JlXHoQGTYS3NsvWzV1M0iK7l0wbA==
   dependencies:
     "@types/node" "*"
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "17.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
-  integrity sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==
+  version "17.0.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.20.tgz#29626bd9c9119df5b8194353d34044c895fe56e3"
+  integrity sha512-Q15Clj3lZSLnhVA6yKw1G7SQz46DeL9gO1TEgfK1OQGvMdQ6TUWmCeWf1QBUNkw2BDfV52i2YuYd9OF3ZwGhjw==
 
 "@types/node@^17.0.18":
   version "17.0.18"
@@ -3624,9 +3624,9 @@ keyv-file@^0.2.0:
     tslib "^1.9.3"
 
 keyv@^4.0.0:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.0.5.tgz#bb12b467aba372fab2a44d4420c00d3c4ebd484c"
-  integrity sha512-531pkGLqV3BMg0eDqqJFI0R1mkK1Nm5xIP2mM6keP5P8WfFtCkg2IOwplTUmlGoTgIg9yQYZ/kdihhz89XH3vA==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.1.1.tgz#02c538bfdbd2a9308cc932d4096f05ae42bfa06a"
+  integrity sha512-tGv1yP6snQVDSM4X6yxrv2zzq/EvpW+oYiUz6aueW1u9CtS8RzUQYxxmFwgZlO2jSgCxQbchhxaqXXp2hnKGpQ==
   dependencies:
     json-buffer "3.0.1"
 

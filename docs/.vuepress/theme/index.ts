@@ -17,7 +17,7 @@ const localTheme: ThemeObject = {
       headers.push({
         title: "Related Tools",
         level: 3,
-        slug: "related-tool",
+        slug: "related-tools",
         children: [],
       });
     }
@@ -28,8 +28,9 @@ const localTheme: ThemeObject = {
     };
   },
   layouts: {
+    Layout: path.resolve(__dirname, "layouts/Layout.vue"),
+    Fullsize: path.resolve(__dirname, "layouts/Fullsize.vue"),
     CFMMBlock: path.resolve(__dirname, "layouts/CFMMBlock.vue"),
-    Layout: path.resolve(__dirname, "layouts/Layout.vue")
   },
 };
 

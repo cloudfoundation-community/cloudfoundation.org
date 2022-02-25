@@ -4,12 +4,11 @@
       <div class="row hero">
         <div class="col-12 col-lg-6 hero-left">
           <h1 class="hero-title">Build your Cloud Foundation!</h1>
-          <span class="desc">
+          <p class="desc">
             Bring cloud adoption at your organization to the next level with the free Cloud Foundation Maturity Model.
             Use 50+ actionable building blocks to identify your current cloud maturity, and where to grow.
-          </span>
-          <br/>
-          <router-link to="/maturity-model/" class="btn btn-primary btn-lg mt-4">Explore Building Blocks →</router-link>
+          </p>
+          <router-link to="/maturity-model/" class="btn btn-primary btn-lg mt-2">Explore Building Blocks →</router-link>
         </div>
         <div class="col-12 col-lg-6 hero-right">
           <img src="./heroimage.webp">
@@ -21,25 +20,26 @@
         </div>
         <div class="col-12 col-lg-6">
           <h1>What is the Cloud Foundation Maturity Model?</h1>
-          <span class="desc">
+          <p class="desc">
             The cloud foundation is an organizational approach to managing cloud adoption and
             consumption through a single team.
 
             The Cloud Foundation Maturity Model (CFMM) is built on 50+ building blocks
             that help you build and improve your own cloud foundation team.
-          </span>
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-lg-6">
           <h1>Why a Cloud Foundation Team?</h1>
-          <span class="desc">
+          <p class="desc">
             A cloud foundation team provides DevOps teams a single point of contact for provisioning,
             accessing and managing all cloud services they need to get their job done. It frees DevOps
             teams from organizational burden and empowers them to focus on their core value: delivering software.
 
             Having a cloud foundation team also helps aligning technical and management stakeholders.
-          </span>
+          </p>
+          <router-link to="/understanding-cloud-foundation/" class="btn btn-secondary btn-lg mt-2">About Cloud Foundations →</router-link>
         </div>
         <div class="col-12 col-lg-6">
           <img src="./team.svg">

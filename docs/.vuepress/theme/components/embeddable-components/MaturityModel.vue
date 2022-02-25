@@ -63,24 +63,22 @@ export default {
   methods: {
     getFilterData(groupName): IMaturityModelAtom[] {
       return index
-        .filter(value => value.file && value.meta.category === groupName)
+        .filter(value => value.file && value.frontmatter.category === groupName)
         .sort(function(a, b) {
           return (
-            a.properties["journey-stage"].length -
-            b.properties["journey-stage"].length
+            a.frontmatter.properties["journey-stage"].length -
+            b.frontmatter.properties["journey-stage"].length
           );
         })
         .map(value => {
-          const url = value.file.split("/");
-          url.splice(0, 2);
           return {
             step: this.getJourneyStageUrl(
-              value.properties["journey-stage"].length / 2 //Each emoji length is two
+              value.frontmatter.properties["journey-stage"].length / 2 //Each emoji length is two
             ),
-            scope: this.getScopeCubeUrl(value.properties.scope),
-            title: value.meta.title,
-            link: url.join("/").split(".")[0],
-            summary: value.properties.summary
+            scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
+            title: value.frontmatter.title,
+            link: "/" + value.file,
+            summary: value.frontmatter.properties.summary
           };
         });
     },
@@ -123,31 +121,6 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.no-sidebar {
-  .theme-default-content {
-    max-width: none;
-    min-height: calc(100vh - 58px);
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    h1 {
-      display: none;
-    }
-  }
-  .page-meta,
-  footer,
-  .footer {
-    display: none;
-  }
-}
-.page {
-  padding-bottom: 0;
-}
-</style>
-
-
 
 <style scoped lang="scss">
 .card {

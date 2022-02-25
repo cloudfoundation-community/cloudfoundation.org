@@ -1,19 +1,52 @@
-import { config as dotenv } from 'dotenv';
-import { promises as fs } from 'fs';
-import * as path from 'path';
-import * as rimraf from 'rimraf';
+import { config as dotenv } from "dotenv";
+import { promises as fs } from "fs";
+import * as path from "path";
+import * as rimraf from "rimraf";
 
-import { RenderedDatabasePage, sync, SyncConfig } from '@meshcloud/notion-markdown-cms';
+import {
+  RenderedDatabasePage,
+  slugify,
+  sync,
+  SyncConfig,
+  DatabasePageProperties,
+} from "@meshcloud/notion-markdown-cms";
 
 dotenv();
 
+function commonFrontmatter(page) {
+  return {
+    id: page.meta.id,
+    url: page.meta.url,
+    title: page.meta.title,
+  };
+}
+
+function buildProperties(include: string[], page: DatabasePageProperties) {
+  const kvp = include.map((x) => [slugify(x), page.properties.get(x)]);
+  return Object.fromEntries([...kvp]);
+}
+
 const config: SyncConfig = {
   cmsDatabaseId: "6043a6d4-5611-4741-aa0d-1b11ec19112a",
-  outDir: "docs",
-  databases: {
+  pages: {
+    destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
+    frontmatterBuilder: (page) => {
+      const extraFrontmatter =
+        page.meta.title === "Explore All Blocks"
+          ? { layout: "Fullsize", sidebar: false }
+          : {};
 
+      return {
+        ...commonFrontmatter(page),
+        category: page.properties.get("Category"),
+        order: page.properties.get("order"),
+        ...extraFrontmatter,
+      };
+    },
+  },
+
+  databases: {
     "6e7a1291-6f21-4979-b582-452b0158e2b2": {
-      outDir: "docs/maturity-model",
       sorts: [
         {
           property: "Pillar",
@@ -28,28 +61,32 @@ const config: SyncConfig = {
           direction: "ascending",
         },
       ],
-      properties: {
-        include: [
-          "Name",
-          "Pillar",
-          "Journey Stage",
-          "Scope",
-          "Summary",
-          "Enables",
-          "Depends on",
-          "Tool Implementations",
-          "Redaction State"
-        ],
-      },
       renderAs: "pages+views",
       pages: {
-        frontmatter: {
-          category: {
-            property: "Pillar"
-          },
-          extra: {
+        destinationDirBuilder: (page) =>
+          "maturity-model/" + slugify(page.properties.get("Pillar")),
+        frontmatterBuilder: (page) => {
+          const include = [
+            // order chosen here to keep code generation as close as possible to the old
+            "Pillar",
+            "Enables",
+            "Redaction State",
+            "Journey Stage",
+            "Depends on",
+            "Scope",
+            "Summary",
+            "Tool Implementations",
+            "Name",
+          ];
+
+          const properties = buildProperties(include, page);
+
+          return {
+            ...commonFrontmatter(page),
+            category: page.properties.get("Pillar"),
             layout: "CFMMBlock",
-          },
+            properties,
+          };
         },
       },
       views: [
@@ -67,61 +104,52 @@ const config: SyncConfig = {
             include: ["Name", "Scope", "Pillar", "Summary"],
           },
         },
-
-      ],
-    },
-    "81090f8e-707a-4076-8ccf-6d58783e25cc": {
-      outDir: "docs/partners",
-      sorts: [
-        {
-          property: "Name",
-          direction: "ascending",
-        },
-      ],
-      renderAs: "pages+views",
-      properties: {
-        include: ["Name", "Category", "Specialty"],
-      },
-      pages: { frontmatter: { category: { property: "Category" } } },
-      views: [],
-    },
-    "627fe3b0-0475-4f87-a37c-5136a4d00ac3": {
-      outDir: "docs/tools",
-      sorts: [
-        {
-          property: "Name",
-          direction: "ascending",
-        },
-      ],
-      properties: {
-        include: ["Name", "Category"],
-      },
-      renderAs: "pages+views",
-      pages: { frontmatter: { category: { property: "Category" } } },
-      views: [
-        {
-          title: "CFMM Tools",
-          properties: {
-            groupBy: "Category",
-          },
-        },
       ],
     },
     "6f849704-d765-443f-ac32-b611fc5270cc": {
-      outDir: "docs/tool-support",
+      // tool2block, part of the "tool support" page
       sorts: [
         {
           property: "Tool",
           direction: "ascending",
         },
       ],
-      properties: {
-        include: ["Name", "Block", "Tool", "Summary", "Link"],
+      renderAs: "table",
+      // we don't want to redner any view, just emit them to the index
+      // tbd: do we need to filter properties?
+      views: [],
+      entries: {
+        frontmatterBuilder: (page) => ({
+          ...commonFrontmatter(page),
+          properties: buildProperties(
+            ["Block", "Tool", "Summary", "Link", "Name"],
+            page
+          ),
+        }),
       },
+    },
+    "627fe3b0-0475-4f87-a37c-5136a4d00ac3": {
+      sorts: [
+        {
+          property: "Name",
+          direction: "ascending",
+        },
+      ],
       renderAs: "table",
       entries: {
-        emitToIndex: true,
+        frontmatterBuilder: (page) => ({
+          ...commonFrontmatter(page),
+        }),
       },
+      views: [
+        {
+          title: "CFMM Tools",
+          properties: {
+            groupBy: "Category",
+            include: ["Name", "Category"],
+          },
+        },
+      ],
     },
   },
 };
@@ -136,12 +164,21 @@ async function main() {
 
   rimraf.sync("docs/!(README.md)**/*");
 
-  const rendered = await sync(notionApiToken, config);
+  // change into the docs dir, this simplifies handling relative paths
+  process.chdir("docs/");
+
+  const synced = await sync(notionApiToken, config);
+  const rendered = synced.map((x) => {
+    const page = x as RenderedDatabasePage;
+    return page.file
+      ? { file: page.file, frontmatter: x.frontmatter }
+      : { frontmatter: x.frontmatter };
+  });
 
   // by convention, find all "first" files in a category and rename them README.md because vuepress expects them that way
   const categoryHomes = rendered.filter((x) => {
     const page = x as RenderedDatabasePage;
-    return page.meta?.order === 0 && !!page.file;
+    return page.frontmatter?.order === 0 && !!page.file;
   });
 
   for (const home of categoryHomes) {
@@ -158,17 +195,18 @@ async function main() {
 
   // we sort the rendered pages by id, this way we have a more consistent index.ts
   // file that has less churn and thus plays along better with git versioning
-  const sorted = rendered.sort((x, y) => x.meta.id.localeCompare(y.meta.id));
+  const sorted = rendered.sort((x, y) =>
+    x.frontmatter.id.localeCompare(y.frontmatter.id)
+  );
 
   await fs.writeFile(
-    "docs/.vuepress/index.ts",
+    ".vuepress/index.ts",
     `export const index = ${JSON.stringify(sorted, null, 2)};`
   );
 }
 
 // cannot use top-level async await, so we explicitly have to listen for and catch errors
-main()
-  .catch(e => {
-    console.error(e);
-    process.exit(1);
-  });
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
