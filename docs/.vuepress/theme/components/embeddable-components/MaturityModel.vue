@@ -171,9 +171,11 @@ export default {
     }
     @media only screen and (max-width: 580px) {
       min-width: 100%;
-      padding-left: 25px !important;
-      padding-right: 15px !important;
     }
+  }
+  @media only screen and (max-width: 580px) {
+    padding-left: 25px;
+    padding-right: 15px;
   }
 }
 </style>
