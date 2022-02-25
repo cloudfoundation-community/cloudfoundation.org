@@ -37,6 +37,7 @@ interface IMaturityModelAtom {
   scope: string;
   title: string;
   link: string;
+  summary: string;
 }
 export default {
   components: {
@@ -78,7 +79,8 @@ export default {
             ),
             scope: this.getScopeCubeUrl(value.properties.scope),
             title: value.meta.title,
-            link: url.join("/").split(".")[0]
+            link: url.join("/").split(".")[0],
+            summary: value.properties.summary
           };
         });
     },
@@ -169,8 +171,8 @@ export default {
     }
     @media only screen and (max-width: 580px) {
       min-width: 100%;
-      padding-left: 25px;
-      padding-right: 15px;
+      padding-left: 25px !important;
+      padding-right: 15px !important;
     }
   }
 }

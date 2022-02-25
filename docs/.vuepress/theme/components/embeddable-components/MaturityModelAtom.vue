@@ -2,7 +2,8 @@
   <h4 class="title">{{title}}</h4>
 
   <div v-for="item in dataList">
-      <router-link :to="item.link" >
+      <router-link :to="item.link" class="tooltip"  >
+        <span class="tooltiptext">{{item.summary}}</span>
         <div class="block" >
             <img class="block-step" :src="$withBase('/mm/' + item.step)" :alt="item.step" alt="journeyStageColor.svg" />
             <img class="block-scope" :src="$withBase('/mm/' + item.scope)" :alt="item.scope" alt="scopeColorBox.svg"  />
@@ -40,6 +41,30 @@ h4 {
 </style>
 
 <style lang="scss" scoped>
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  width: 10rem;
+  margin-top: 3.6rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 a:hover {
   text-decoration: none !important;
 }
