@@ -79,7 +79,10 @@
         >
       </p>
 
-      <Feedback v-bind:page="frontmatter.title" v-if="!underConstruction"></Feedback>
+      <Feedback
+        v-bind:page="frontmatter.title"
+        v-if="!underConstruction"
+      ></Feedback>
     </template>
   </Layout>
 </template>
@@ -88,7 +91,7 @@
 import { usePageFrontmatter } from "@vuepress/client";
 import { computed, watch } from "vue";
 import { index } from "../../index";
-import Feedback from '../components/Feedback.vue';
+import Feedback from "../components/Feedback.vue";
 
 function formatLink(path: string) {
   return "/" + path.replace(".md", ".html");
@@ -107,7 +110,9 @@ function resolvePage(id: string) {
 
 function resolveTool(id: string) {
   const page = index.find((x) => x.frontmatter.id === id);
-  const tool = index.find((x) => x.frontmatter.id === page.frontmatter.properties.tool[0]);
+  const tool = index.find(
+    (x) => x.frontmatter.id === page.frontmatter.properties.tool[0]
+  );
 
   return {
     id,
@@ -140,17 +145,29 @@ const plausible = usePlausible();
 
 // track the block view, with the most important properties
 // note: the trackable properties can change, e.g. when routing from one block to the next
-const trackableProperties = computed(() => ({
-  id: frontmatter.value.id,
-  title: frontmatter.value.title,
-  pillar: frontmatter.value.properties.pillar,
-  journeyStage: frontmatter.value.properties["journey-stage"],
-  scope: frontmatter.value.properties.scope,
-  redactionState: frontmatter.value.properties["redaction-state"]
-}));
+const trackableProperties = computed(() => {
+  // unfortunately the computed property is still triggering when leaving the CFMMBlock layout, which means
+  // that we will see the frontmatter of a different page (and with a different schema)
+  // we therefore handle this here explicitly - may not be the cleanest way to do this with vue but I don't know better
+  const isLeavingBlock = frontmatter.value.layout !== "CFMMBlock";
+  if (isLeavingBlock) {
+    return null;
+  }
+
+  return {
+    id: frontmatter.value.id,
+    title: frontmatter.value.title,
+    pillar: frontmatter.value.properties.pillar,
+    journeyStage: frontmatter.value.properties["journey-stage"],
+    scope: frontmatter.value.properties.scope,
+    redactionState: frontmatter.value.properties["redaction-state"],
+  };
+});
 
 watch(trackableProperties, (props) => {
-  plausible.value.trackEvent("block-view", { props });
+  if (props) {
+    plausible.value.trackEvent("block-view", { props });
+  }
 });
 </script>
 

@@ -19,7 +19,4 @@ import Footer from "../components/Footer.vue"
 
 const page = usePageData();
 
-// with a fullsize layout we never want a sidebar, so we just hack this in here
-page.value.frontmatter.sidebar = false;
-
 </script>

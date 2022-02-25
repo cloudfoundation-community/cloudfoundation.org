@@ -30,11 +30,19 @@ const config: SyncConfig = {
   cmsDatabaseId: "6043a6d4-5611-4741-aa0d-1b11ec19112a",
   pages: {
     destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
-    frontmatterBuilder: (page) => ({
-      ...commonFrontmatter(page),
-      category: page.properties.get("Category"),
-      order: page.properties.get("order"),
-    }),
+    frontmatterBuilder: (page) => {
+      const extraFrontmatter =
+        page.meta.title === "Explore All Blocks"
+          ? { layout: "Fullsize", sidebar: false }
+          : {};
+
+      return {
+        ...commonFrontmatter(page),
+        category: page.properties.get("Category"),
+        order: page.properties.get("order"),
+        ...extraFrontmatter,
+      };
+    },
   },
 
   databases: {

@@ -4,6 +4,8 @@ url: https://www.notion.so/Explore-All-Blocks-0147ba139f8342cd9c102e5f113c96f2
 title: Explore All Blocks
 category: Maturity Model
 order: 0
+layout: Fullsize
+sidebar: false
 ---
 
 <!--notion-markdown-cms:raw-->

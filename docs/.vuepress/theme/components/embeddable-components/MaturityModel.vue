@@ -71,15 +71,13 @@ export default {
           );
         })
         .map(value => {
-          const url = value.file.split("/");
-          url.splice(0, 2);
           return {
             step: this.getJourneyStageUrl(
               value.frontmatter.properties["journey-stage"].length / 2 //Each emoji length is two
             ),
             scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
             title: value.frontmatter.title,
-            link: url.join("/").split(".")[0],
+            link: "/" + value.file,
             summary: value.frontmatter.properties.summary
           };
         });
