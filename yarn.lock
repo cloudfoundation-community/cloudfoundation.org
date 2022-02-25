@@ -97,10 +97,10 @@
     stream-events "^1.0.4"
     xdg-basedir "^4.0.0"
 
-"@meshcloud/notion-markdown-cms@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.8.1.tgz#f179a57794f3de4887ad9f9059a1bb76eff5a711"
-  integrity sha512-9cUpuHb54MFCxmFQ7Fa8ohZp4Yo6MPdUc0QlIlHnbBbXBXI/U2r9xfR+iozpntaRh3HY5suWFHMfABss+OjSmg==
+"@meshcloud/notion-markdown-cms@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@meshcloud/notion-markdown-cms/-/notion-markdown-cms-0.9.0.tgz#28793baa5d0cada84e3a3bd27da8e37a9ad72bbd"
+  integrity sha512-S4vfkjCl5vrCaDii3iJINjrHdlVZ6r90Jfl0t5h5yttrtugQzOXtttVZKegLQPKEU/Q8PIa2pykZT1WJQajMPw==
   dependencies:
     "@notionhq/client" "^0.3.2"
     chalk "^4.1.2"
