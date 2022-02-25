@@ -45,10 +45,10 @@ export function makeSidebarEntries(dir: string) {
   if (!indexItem) {
     console.warn(
       "Could not find index item with category: " +
-        category +
-        " in dir: " +
-        dir +
-        ". Using category slug name instead"
+      category +
+      " in dir: " +
+      dir +
+      ". Using category slug name instead"
     );
   }
   const categoryName = indexItem?.meta.category || category;
@@ -77,7 +77,7 @@ function sortedSidebar(dir: string) {
       };
     })
     .sort((x, y) => {
-      return x.indexEntry.meta.order - y.indexEntry.meta.order;
+      return x.indexEntry?.meta.order - y.indexEntry?.meta.order;
     })
     .map((x) => ({
       text: formatTitle(x.indexEntry),
@@ -101,14 +101,14 @@ function formatTitle(
 ): any {
   // this may not be the cleanest way to detect this, with all the hardcoding going on
   // however it works and we won't need this forever
-  const isBlock = indexEntry.meta["layout"] === "CFMMBlock";
+  const isBlock = indexEntry?.meta["layout"] === "CFMMBlock";
   if (isBlock) {
     const rs = indexEntry.properties["redaction-state"];
     const isDraft = !rs || rs === "Draft";
     const icon = isDraft ? "🚧" : "📗";
 
-    return icon + " " + indexEntry.meta["title"];
+    return icon + " " + indexEntry?.meta["title"];
   }
 
-  return indexEntry.meta["title"];
+  return indexEntry?.meta["title"];
 }

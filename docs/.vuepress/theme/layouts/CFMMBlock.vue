@@ -164,7 +164,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .cards {
   display: flex;
   flex-wrap: wrap;
