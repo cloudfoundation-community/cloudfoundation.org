@@ -17,11 +17,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Cloud workloads are automatically scanned for security/compliance violations
-    (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud
-    resource configuration (e.g. VPC ACLs), not about workload configuration
-    (e.g. software firewall)
   tool-implementations: []
   name: Automated Security Scanning
 ---

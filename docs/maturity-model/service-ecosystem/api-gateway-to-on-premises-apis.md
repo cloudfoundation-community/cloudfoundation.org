@@ -14,9 +14,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Provide managed API (L7) connectivity to APIs running in on-premise
-    environments.
   tool-implementations: []
   name: API Gateway to on-premises APIs
 ---

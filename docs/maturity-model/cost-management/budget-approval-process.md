@@ -11,7 +11,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: Budgets are approved by controllers / people with budget responsibility
   tool-implementations:
     - f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b
   name: Budget Approval Process

@@ -19,12 +19,6 @@ properties:
   depends-on:
     - 119bfca5-dda6-408c-b35d-c59d0f209fcf
   scope: ☁️ Platform
-  summary: >-
-    DevOps Teams can quickly provision cloud environments for experimentation
-    and learning, thereby accelerating an organization's cloud journey.
-    Playgrounds use relaxed policies (e.g. more cloud services are allowed) but
-    come with time- or spend-limits that are tightly controlled. Expired
-    playgrounds are automatically deprovisioned. 
   tool-implementations:
     - 8b5e9c3f-82b4-429c-ad60-49176671d537
   name: Playground / Sandbox Environments
@@ -32,7 +26,7 @@ properties:
 
 A sandbox environment is a special type of cloud tenant. It is fully isolated from other environments in the cloud platform and enables DevOps teams to experiment and learn in the cloud without being exposed to risks that typically come with a regular cloud tenant. Think about risks such as unintended access to the cloud tenant, forgetting about deleting resources and causing shadow IT in the organization, or simply spending more than desired on cloud services.
 
-## Why use a Sandbox Environment?
+## Why Use a Sandbox Environment?
 
 A sandbox environment is a powerful tool for enabling DevOps teams to learn more about the cloud in a secure and isolated environment. It gives developers the freedom that they need to learn and experiment with the large variety of cloud services that are offered nowadays. A sandbox environment is a superior alternative to providing developers access to existing cloud tenants where other projects might be already worked on. Sandbox environments will accelerate the cloud expertise in your organization with the least risk associated.
 

@@ -17,9 +17,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: >-
-    Teams offer services to other teams and make them accessible on a
-    marketplace that is integrated with Cost Management and IAM:
   tool-implementations:
     - c3af4eea-6d9a-4c64-a117-ec018524979a
   name: Internal Service Marketplace

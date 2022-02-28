@@ -17,9 +17,6 @@ properties:
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
   scope: ☁️ Platform
-  summary: >-
-    Integration Cloud Platform IAM systems with Enterprise IAM landscape incl.
-    federated authentication. 
   tool-implementations: []
   name: Federated Identity and Authentication
 ---

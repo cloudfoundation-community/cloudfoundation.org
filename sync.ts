@@ -81,7 +81,6 @@ const config: SyncConfig = {
             "Journey Stage",
             "Depends on",
             "Scope",
-            "Summary",
             "Tool Implementations",
             "Name",
           ];
@@ -101,14 +100,14 @@ const config: SyncConfig = {
           title: "By Pillar",
           properties: {
             groupBy: "Pillar",
-            include: ["Name", "Scope", "Journey Stage", "Summary"],
+            include: ["Name", "Scope", "Journey Stage"],
           },
         },
         {
           title: "By Journey Stage",
           properties: {
             groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Pillar", "Summary"],
+            include: ["Name", "Scope", "Pillar"],
           },
         },
       ],
@@ -129,7 +128,7 @@ const config: SyncConfig = {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
           properties: buildProperties(
-            ["Block", "Tool", "Summary", "Link", "Name"],
+            ["Block", "Tool", "Link", "Name"],
             page
           ),
         }),

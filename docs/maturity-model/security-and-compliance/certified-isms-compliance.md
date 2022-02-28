@@ -16,10 +16,6 @@ properties:
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
   scope: 🛬 Landing Zone
-  summary: >-
-    The landing zone and its operation by the cloud foundation team are
-    certified according to an information security management system like ISO
-    27001 or C5.
   tool-implementations: []
   name: Certified ISMS Compliance
 ---

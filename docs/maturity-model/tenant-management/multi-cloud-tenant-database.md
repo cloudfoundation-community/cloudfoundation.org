@@ -20,11 +20,6 @@ properties:
   depends-on:
     - b875ac41-2b38-4ce4-ab8b-76ddd876d789
   scope: 🏢 Core
-  summary: >-
-    A central database provides information about tenants in different clouds
-    using a unified information schema. Tenants can be registered in this
-    database via an API or are stored there by combining different tenant
-    lists/exports into a common database schema (ETL). 
   tool-implementations:
     - 65b1a609-a258-4e93-898c-9d115b6e32c5
   name: Multi-Cloud Tenant Database
@@ -34,7 +29,7 @@ Organizations following a multi-cloud strategy often start implementing dedicate
 
 Furthermore, maintaining different tenant databases per platform leads to inconsistent metadata about your cloud tenants. This makes it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md) or [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md).
 
-## Best practices for establishing multi-cloud visibility with a cloud tenant database
+## Best Practices for Establishing Multi-Cloud Visibility with a Cloud Tenant Database
 
 To successfully implement a multi-cloud tenant database, it needs to serve as a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) for each platform. Review that building block for considerations and best practices of building a cloud tenant database. This building block focuses on the considerations to establish a consistent multi-cloud database.
 
@@ -51,11 +46,11 @@ Creating this alignment between different platform implementations and functiona
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/03/04/6-things-to-watch-out-for-when-starting-your-cloud-journey/">Start your Cloud Journey</CtaButton>
 </CallToAction>
 
-### Consider collaborative approaches to maintaining tenant metadata
+### Consider Collaborative Approaches to Maintaining Tenant Metadata
 
 Maintaining tenant data at scale is a lot of work. Even more so than with a platform-specific [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md), enabling collaboration between different stakeholders is the key to maintaining a high-quality information repository about cloud tenants. The building block  [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) covers implementing this in more detail.
 
-### Maintain a Cloud Service Register to meet regulatory requirements
+### Maintain a Cloud Service Register to Meet Regulatory Requirements
 
 Industry-specific regulation can require your organization to maintain a register of all cloud outsourcing activities. A multi-cloud tenant database can help meet these requirements. One example of this is the “Cloud Service Register” in the financial industry as recommended by the European Banking Authority’s [Recommendations on Cloud Outsourcing](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1).
 

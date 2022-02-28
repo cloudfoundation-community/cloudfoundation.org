@@ -16,9 +16,6 @@ properties:
   depends-on:
     - 11af37b7-c948-4486-a5da-5b1db6de8193
   scope: 🏢 Core
-  summary: >-
-    Owners of cloud tenants can register, update and remove tenant metadata in a
-    central multi-cloud tenant database in self service.
   tool-implementations:
     - e2123339-0641-4d44-b774-32ce23fd634d
     - 334eb216-fa16-4946-9fe5-8f66bb7fc3fa
@@ -31,7 +28,7 @@ This building block represents an evolution of the capabilities of a [Multi-Clou
 
 Unfortunately, your cloud customers can decide at any point to change the responsibilities within their team. Chances are, they won’t inform the cloud foundation team about this change. Even if they do, it’s a manual step for cloud foundation team to update the information in the tenant database.
 
-## Best Practices for building a self-service multi-cloud tenant database
+## Best Practices for Building a Self-Service Multi-Cloud Tenant Database
 
 Here’s a set of best practices to consider when building self-service for your cloud tenant database.
 
@@ -39,10 +36,10 @@ Here’s a set of best practices to consider when building self-service for your
 
 Managers responsible for multiple IT systems should be able to edit the metadata for these IT systems only.  This establishes clear responsibilities and ensures that data quality is maintained at a high level
 
-### Notify stakeholders about missing metadata
+### Notify Stakeholders about Missing Metadata
 
 When your metadata schema evolves, for example by including a new field, this data will be initially missing from the majority of your existing cloud tenants. Your tenant database should thus have a process to contact your cloud customers and ask them to fill out the additional metadata.
 
-### Have an administrative interface
+### Have an Administrative Interface
 
 While self-service will free up a lot of time for the cloud foundation team, there will be exceptions to the regular process. Having an administrative interface to override tenant data is thus a useful capability for your cloud foundation team.

@@ -18,9 +18,6 @@ properties:
     - 52d1e517-9d07-4acc-8c59-17526fa3af9d
     - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
   scope: 🏢 Core
-  summary: >-
-    Define and enforce a consistent tagging of cloud tenants and resource across
-    multiple cloud platforms.  
   tool-implementations:
     - 73cfa3f4-16ed-40cf-9c75-0611aad78d0b
     - 7547a774-2b9f-45fc-9123-fbb2e48ccd09
@@ -36,13 +33,13 @@ Cloud Foundation teams who implement [Cloud Tenant Tagging](/maturity-model/secu
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/">Learn more about Tags</CtaButton>
 </CallToAction>
 
-## Best Practices for a multi-cloud tagging convention
+## Best Practices for a Multi-Cloud Tagging Convention
 
-### Establish a naming convention for tags
+### Establish a Naming Convention for Tags
 
 Cloud Tagging works best when following a consistent naming convention. This naming convention should consider t[he technical limitations for storing tags in cloud platforms](https://www.meshcloud.io/2022/02/07/tags-and-labels-on-cloud-platforms-cheat-sheet-2020/). Namespace prefixes on tags help to separate the responsibilities for maintenance of a particular tag. For example, when some tags are automatically reconciled with a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) by the cloud foundation’s automation systems, giving them a clear prefix helps separate those tags from tags maintained by customers individually.
 
-### Focus on Information that’s relevant across all cloud platforms
+### Focus on Information That’s Relevant across All Cloud Platforms
 
 The most common metadata manage on cloud accounts and resources are listed below. Namespacing can be a good solution to enable individual cloud platforms to maintain additional tags that are relevant to their operation.
 
@@ -56,7 +53,7 @@ The most common metadata manage on cloud accounts and resources are listed below
 | Data Classification             | Metadata describing the data classification of the information processed by the cloud resource or cloud account.                                                                                                                                                                       | internal, confidential, top secret, business secret                       |
 | Environment / Stage             | Metadata regarding the stage for which the cloud resource or cloud account is used.                                                                                                                                                                                                    | dev, test, qa, prod, ressource, data                                      |
 
-### Involve all Cloud Foundation Stakeholders
+### Involve All Cloud Foundation Stakeholders
 
 Tagging can serve many different use cases. It’s thus important that the cloud foundation involves [all cloud foundation stakeholders](/fe4fd51c8f5746f1afa12fc3402063b8) in the definition and evolution of the central tagging policy. 
 

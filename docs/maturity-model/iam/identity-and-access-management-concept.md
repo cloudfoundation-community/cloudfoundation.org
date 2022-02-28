@@ -19,14 +19,11 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: >-
-    Multi-Cloud IAM architecture concept based on federated identities and
-    authentication.
   tool-implementations: []
   name: Identity and Access Management Concept
 ---
 
-## Why do you need an Identity and Access Management Concept? 
+## Why Do You Need an Identity and Access Management Concept? 
 
 Identity and Access Management is at the core of managing trust in the cloud. Authentication and Authorization based on identities replace mechanisms from the private data center era such as trust-based on host IP.
 
@@ -41,9 +38,9 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/19/the-cloud-identity-and-access-management-guide-for-2021/">Learn more</CtaButton>
 </CallToAction>
 
-## What an Identity and Access Management Concept has to cover
+## What an Identity and Access Management Concept Has to Cover
 
-#### Core questions
+#### Core Questions
 
 - What is your source of identities? 
 
@@ -53,7 +50,7 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 - How do you keep a central overview over access permissions when there are multiple clouds involved?
 
-#### Specific questions on IAM for humans
+#### Specific Questions on IAM for Humans
 
 An Identity and Access Management Concept needs to answer the following questions:
 
@@ -63,7 +60,7 @@ An Identity and Access Management Concept needs to answer the following question
 
 - Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/maturity-model/iam/privileged-access-management.md) )
 
-#### Specific questions on IAM for workload
+#### Specific Questions on IAM for Workload
 
 An Identity and Access Management Concept needs to answer the following questions:
 
@@ -73,7 +70,7 @@ An Identity and Access Management Concept needs to answer the following question
 
 - What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow (e.g. zero trust)?
 
-## How to set up resource hierarchy for access management
+## How to Set up Resource Hierarchy for Access Management
 
 The public cloud providers have resource hierarchies that allow inheriting permissions. Carefully crafting permission inheritance is a proven way of staying in control of access rights. 
 

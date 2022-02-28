@@ -15,10 +15,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Definition of a cloud resource hierarchy that facilitates tenant isolation
-    and policy enforcement. Cloud tenants are deliberately placed in this
-    resource hierarchy when tenants are provisioned.
   tool-implementations:
     - 11f50039-a1d6-49de-9fbd-247a1955b474
   name: Resource Hierarchy
@@ -50,7 +46,7 @@ The following list is a quick reference to the different resource hierarchies in
 
 Despite all the differences in naming and implementation details, there are a lot of conceptual similarities between the different platforms. Cloud foundation teams on a mission to implement a multi-cloud strategy can leverage these conceptual similarities to drive a consistent governance approach across multiple clouds. 
 
-## Best practices for setting up cloud resource hierarchy
+## Best Practices for Setting up Cloud Resource Hierarchy
 
 A lot of guidance about setting up cloud resource hierarchies you may find elsewhere is focused on helping an organization *adopt* a *single cloud* only. There are two challenges with this type of guidance. First, it looks at practices from the perspective of an organization that’s new to cloud and wants to solve the “onboarding” part of the cloud journey while paying little attention to day two operations. Second, it emphasizes outsourcing governance operations as much as possible to the cloud platform’s built-in capabilities. This can create “organizational vendor lock-in” and make it difficult to implement consistent governance across multiple clouds.
 
@@ -59,11 +55,11 @@ A lot of guidance about setting up cloud resource hierarchies you may find elsew
 >   - managing day-two operations like reorganization and changing responsibilities
 >   - adopting a multi-cloud strategy
 
-### As flat as possible, as deep as necessary
+### As Flat as Possible, as Deep as Necessary
 
 Keep the resource hierarchy above the tenant level as flat as possible to reduce complexity and management overhead. Every layer in the resource hierarchy can define its own set of policies and exceptions. Deeply nested structures thus make it more difficult to track the final set of policies that a tenant inherits. This complexity makes it more difficult to maintain and evolve your cloud foundation.
 
-### Decouple cloud resource hierarchy from your org chart
+### Decouple Cloud Resource Hierarchy from Your Org Chart
 
 Avoid duplicating your organizational structure into the cloud resource hierarchy.
 
@@ -80,7 +76,7 @@ Design your resource hierarchy so that your internal customers can leverage dedi
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/best-practices-organizational-structure-in-the-cloud/">Tell me about structuring my clouds</CtaButton>
 </CallToAction>
 
-### Resource Hierarchy is not a substitute for proper cloud governance processes
+### Resource Hierarchy Is Not a Substitute for Proper Cloud Governance Processes
 
 When just starting out on a cloud journey, it’s tempting to leverage resource hierarchy to quickly offer self-service capabilities to larger organization units like departments or divisions by giving them their own place in the cloud resource hierarchy. For example, giving a department head `Owner` permissions on a Folder in a Google Cloud Organization can allow that department to quickly create new projects, manage IAM permissions and billing for all of their projects. However, this individual freedom will make it difficult to establish a scalable governance architecture later that leverages landing zones to enforce consistency across a large number of cloud tenants. A proper [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) process, [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md) and [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md) can provide similar (or greater!) freedom to your internal customers while ensuring a scalable governance approach. 
 
@@ -90,6 +86,6 @@ Another consideration is what governance concerns you want to leverage the resou
 
 As the cloud foundation team you will likely want to add more advanced capabilities like [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) to your service offering later on. Separate these shared services and customer workloads in the resource hierarchy on a very high level up the tree. This is especially relevant if you want to simultaneously enforce policies like [Resource Policies - Blacklisting](/maturity-model/security-and-compliance/resource-policies-blacklisting.md) to enforce use of shared services. 
 
-### Consider separating productive and non-productive workloads
+### Consider Separating Productive and Non-Productive Workloads
 
 Strong separation of productive and non-productive workloads is often a key criteria for building landing zones. This especially critical if productive systems are facing additional regulatory requirements compared to development or test workloads.

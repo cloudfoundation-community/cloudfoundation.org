@@ -15,9 +15,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Basic policies on cloud resources enforce Blacklisting of forbidden
-    services, regions.
   tool-implementations: []
   name: Resource Policies - Blacklisting
 ---
@@ -38,7 +35,7 @@ Cloud platforms offer different types of mechanisms to implement these policies.
 
 - **IAM-based policies** are an implementation alternative when a resource-based policy mechanism is not available. Never granting the required IAM permissions to create a type of resource (or actively denying its creation) effectively creates a blacklist for the resource.
 
-## Proven patterns for implementing cloud resource policies
+## Proven Patterns for Implementing Cloud Resource Policies
 
 The myriad of cloud services and the technical abilities to implement resource black listing of most cloud platforms are endless. This can make it difficult for cloud foundation teams to find the right balance between establishing important guard rails, while not getting lost in the details.
 
@@ -49,7 +46,7 @@ The myriad of cloud services and the technical abilities to implement resource b
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Read the Guide</CtaButton>
 </CallToAction>
 
-### Start coarse, go fine
+### Start Coarse, Go Fine
 
 Start out with the most basic policies before going more fine granular. A cloud foundation evolves and you will have to plan for supporting this evolution anyway. In practice, this means starting with basic restrictions before going into details.
 
@@ -59,7 +56,7 @@ Start out with the most basic policies before going more fine granular. A cloud 
 
 **Restrict access to typical “shared services”**. Some cloud services like those required to implement [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) (e.g. AWS Transit Gateway, Azure ExpressRoute) should not be available to your internal cloud customers. Put those on a blacklist as they should be provided and controlled centrally by the cloud foundation team.
 
-### Define your Shared Responsibility Model
+### Define Your Shared Responsibility Model
 
 The [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
 

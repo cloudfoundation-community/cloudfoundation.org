@@ -19,11 +19,6 @@ properties:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
   scope: ☁️ Platform
-  summary: >-
-    Implement appropriate security controls for privileged access as defined in
-    the Authorization Concept. These must cover access to administrative cloud
-    platform roles (e.g. Global Admins, Global Readers) and shared services
-    (e.g. on-premise connectivity hubs). 
   tool-implementations: []
   name: Privileged Access Management
 ---

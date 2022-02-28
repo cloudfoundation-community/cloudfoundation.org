@@ -14,10 +14,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: |-
-    Cloud Tenant Audit logs are automatically analysed for anomalies
-    - proactive analysis
-    ...
   tool-implementations: []
   name: Cloud SIEM
 ---

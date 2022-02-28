@@ -17,11 +17,6 @@ properties:
   depends-on:
     - 28740e92-5559-4931-ab04-17cfb026edd5
   scope: 🏢 Core
-  summary: >-
-    Project owners can view a monthly report listing the consumption-based
-    carbon footprint caused by their project’s cloud usage. This enables
-    sustainability reporting and gives teams feedback towards achieving
-    sustainability goals.
   tool-implementations: []
   name: Monthly Cloud Project Carbon Footprint Report
 ---
@@ -34,7 +29,7 @@ properties:
 
 - explain how cloud providers model carbon footprint
 
-## Proven patterns when implementing cloud carbon footprint reporting
+## Proven Patterns When Implementing Cloud Carbon Footprint Reporting
 
 > **💡** Imperfect methodology is not a valid reason to delay taking action. Focus on the big picture, then improve the details
 
@@ -42,7 +37,7 @@ properties:
 
 Treat “cost to the budget” and “cost to the environment” as equally important to raise stakeholder awareness. Build on [Monthly Cloud Project Billing Report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md) 
 
-### Build on established public cloud carbon reporting
+### Build on Established Public Cloud Carbon Reporting
 
 - e.g. Google Cloud Carbon Footprint
 
@@ -52,7 +47,7 @@ Treat “cost to the budget” and “cost to the environment” as equally impo
 
 implementing this capability can help meet regulatory requirements (e.g. EU CSRD > 2023)
 
-### Implement Carbon Footprint reporting for private cloud & services
+### Implement Carbon Footprint Reporting for Private Cloud & Services
 
 > **💡** Future versions of the CFMM model may include these as separate capabilities, similar to [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) and [Consumption based pay-per-use for internal Services](/maturity-model/cost-management/consumption-based-pay-per-use-for-internal-services.md) (but with carbon, instead of currency)
 

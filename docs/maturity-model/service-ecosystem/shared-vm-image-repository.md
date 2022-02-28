@@ -12,7 +12,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: A central repository provides hardened virtual machine images.
   tool-implementations: []
   name: Shared VM Image Repository
 ---

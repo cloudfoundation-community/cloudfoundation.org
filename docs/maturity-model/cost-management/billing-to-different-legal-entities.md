@@ -15,10 +15,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Support billing cloud workloads to different legal entities of an
-    enterprise. This may manifest e.g. as different billing accounts (GCP),
-    enterprise agreement (Azure) or Payer Accounts (AWS).
   tool-implementations: []
   name: Billing to different legal entities
 ---

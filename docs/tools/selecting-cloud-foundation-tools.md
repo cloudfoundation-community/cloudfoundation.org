@@ -7,10 +7,10 @@ category: Tools
 order: 10
 ---
 
-## Use the right tool for the Job
+## Use the Right Tool for the Job
 
 Tools have different strengths. Leverage a "best of breed" approach to combine the best tools and add their strengths.
 
-## Keep complexity in Check
+## Keep Complexity in Check
 
 Using too many tools in isolation can lead to silos, leading to high integration cost.

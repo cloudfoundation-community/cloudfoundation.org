@@ -18,10 +18,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: >-
-    A shared responsibility model describes the services provided by the cloud
-    foundation and how it interacts with the cloud provider's shared
-    responsibility model.
   tool-implementations:
     - c596a5f1-dc63-46b6-8d1f-25dcf12ff484
   name: Shared Responsibility Model

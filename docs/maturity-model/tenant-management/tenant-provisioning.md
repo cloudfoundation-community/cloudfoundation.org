@@ -15,9 +15,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure
-    Subscriptions etc.).
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
   name: Tenant Provisioning
@@ -25,7 +22,7 @@ properties:
 
 Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform. 
 
-## Why you need to Automate Cloud Tenant Provisioning
+## Why You Need to Automate Cloud Tenant Provisioning
 
 Since Tenant provisioning is so quintessential, practitioners should consider the following implementation maturities as they are growing the overall maturity of offered cloud foundation capabilities. 
 
@@ -41,11 +38,11 @@ In practice, many cloud foundation teams miss the right point in time to invest 
 
 ## Best Practices for Tenant Provisioning
 
-### Apply proper Tenant Isolation
+### Apply Proper Tenant Isolation
 
 - Isolate teams and workloads using tenants - no sharing! One of the worst anti-patterns caused by not having sufficient tenant provisioning capability is that teams put development and production workloads into the same tenant. This encourages bad security practices that can lead to compromise of production environments.
 
-### IAM should be part of Tenant Provisioning
+### IAM Should Be Part of Tenant Provisioning
 
 Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) and [Authorization Concept](/maturity-model/iam/authorization-concept.md) that details how and to what extent teams can access cloud tenants.
 
@@ -67,7 +64,7 @@ Beware of the pitfalls of insufficient automation. Semi-automated provisioning o
 <CallToAction>
   <CtaHeader>Self-Service Tenant Provisioning</CtaHeader>
   <CtaText>See a fully automated tenant provisioning process live in action or learn more on best practices for tenant management.</CtaText>
-  <CtaButton class="btn-primary" url=" https://www.meshcloud.io/use-case-cloud-zones/ ">Get a Demo</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/use-case-cloud-zones/">Get a Demo</CtaButton>
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
 

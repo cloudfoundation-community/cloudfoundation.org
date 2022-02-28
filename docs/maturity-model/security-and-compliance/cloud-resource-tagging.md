@@ -15,9 +15,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Cloud resources are tagged using a consistent tagging strategy to facilitate
-    security and compliance processes for cloud workloads.
   tool-implementations:
     - acf452d3-8425-41e2-ba8b-ee212a6fb189
   name: Cloud Resource Tagging
@@ -38,7 +35,7 @@ Cloud Foundation teams can tag resources with information relevant to security a
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/10/27/your-path-to-a-winning-multi-cloud-tagging-strategy/">Learn more</CtaButton>
 </CallToAction>
 
-## Best practices for Cloud Resource Tagging
+## Best Practices for Cloud Resource Tagging
 
 In addition to the concerns and best practices about cloud tagging already laid out in [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md), the following best practices apply specifically to cloud resource tagging.
 
@@ -62,7 +59,7 @@ As with every rule, there are also valid exceptions for leveraging cloud resourc
 
 Leveraging resource tagging for chargeback requires solid automation to detect untagged or incorrectly tagged resources.  
 
-### Align cloud resource tagging across multiple clouds
+### Align Cloud Resource Tagging across Multiple Clouds
 
 Cloud resource tagging is a platform-zone-scoped building block in the cloud foundation maturity model. Cloud Foundation teams following a multi-cloud strategy should look into [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md) to implement consistent tagging across all cloud platforms. This becomes especially critical when the cloud foundation team wants to centralize security and compliance capabilities like [Incident Management Process](/maturity-model/security-and-compliance/incident-management-process.md). 
 

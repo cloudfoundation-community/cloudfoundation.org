@@ -15,9 +15,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Provides Kubernetes Clusters as a Service. These are deployed as workloads
-    into the customer's cloud tenants.
   tool-implementations: []
   name: Kubernetes Cluster as a Service
 ---

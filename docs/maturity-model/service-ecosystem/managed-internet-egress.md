@@ -14,10 +14,6 @@ properties:
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
   scope: 🛬 Landing Zone
-  summary: >-
-    Cloud tenants can connect to internet egress using managed infrastructure
-    that ensures compliance and cost efficiency (network separation, proxies
-    etc.).
   tool-implementations: []
   name: Managed Internet Egress
 ---

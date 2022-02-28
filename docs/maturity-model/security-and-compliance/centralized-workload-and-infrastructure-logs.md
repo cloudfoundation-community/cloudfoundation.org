@@ -14,9 +14,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Audit logs from cloud workloads and infrastructure (e.g. network flow logs)
-    are centrally collected and stored. 
   tool-implementations: []
   name: Centralized workload and infrastructure logs
 ---

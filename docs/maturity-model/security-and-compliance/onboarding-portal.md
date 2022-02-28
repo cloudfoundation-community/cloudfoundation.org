@@ -14,9 +14,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: >-
-    Teams are guided through the organizational (e.g. budget) and regulatory
-    (e.g. compliance) cloud onboarding duties.
   tool-implementations:
     - cce0a290-fdb4-412d-bfc7-da0ae83a53a6
     - 166cca26-ca4d-4efc-8657-10d2462e811a
@@ -29,12 +26,12 @@ Depending on the organizational needs, Cloud Onboardings can be as easy as signi
 
 Guided cloud onboardings help DevOps teams
 
-## Proven patterns when implementing x
+## Proven Patterns When Implementing X
 
-### Do a
+### Do A
 
 *Explain why one should do a*
 
-### Do b
+### Do B
 
 *Explain why one should do b*

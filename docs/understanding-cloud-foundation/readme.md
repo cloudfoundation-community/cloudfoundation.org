@@ -91,7 +91,7 @@ flowchart BT;
 
 As the figure above illustrates, the team needs to "shop around" different services and integrate their capabilities. Provisioning each service involves finding the right contact point, following its procurement process and then composing it with other services. This is a challenge as teams may need to learn about the hidden interdependencies between IT services and how they can make them "click" together. For example, when a Team provisions a new AWS Account, they may need to set up an IAM group with a conventional name that contains the AWS Account number.
 
-## A team's Cloud Journey - with a Cloud Foundation
+## A Team's Cloud Journey - with a Cloud Foundation
 
 The Cloud Foundation approach frees DevOps teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables DevOps teams to provision and manage cloud services from a single organisational capability and leveraging a consistent control plane offering API-driven self-service, IAM and billing.
 

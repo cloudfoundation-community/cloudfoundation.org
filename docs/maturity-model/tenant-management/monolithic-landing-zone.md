@@ -15,10 +15,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Landing Zones includes a common set of core resources like virtual networks.
-    These resources are managed with the same life-cycle as the underlying cloud
-    tenant.
   tool-implementations:
     - 254476a2-de92-4724-a06e-65931ebb5aec
   name: Monolithic Landing Zone
@@ -30,7 +26,7 @@ Early stage cloud foundations often start with a “one-size-fits-all” approac
 
 The Monolithic Landing Zone is known to be a local maximum that keeps complexity low in the short term while sacrificing flexibility in the long term. 
 
-## When to build a Monolithic Landing Zone
+## When to Build a Monolithic Landing Zone
 
 > **⚠️** For Cloud Foundation that are getting started with building Landing Zones the Monolithic Approach is considered an anti-pattern. A modular approach as laid out in [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)  is recommended.
 

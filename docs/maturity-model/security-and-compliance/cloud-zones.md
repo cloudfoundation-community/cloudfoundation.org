@@ -15,9 +15,6 @@ properties:
   depends-on:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
   scope: 🏢 Core
-  summary: >-
-    Regulatory onboarding only captures what is required for getting acces to
-    the cloud
   tool-implementations:
     - 507e5776-239f-4a65-a6f5-d4944536e35a
   name: Cloud Zones
@@ -57,7 +54,7 @@ graph LR
 		end
 ```
 
-## How to implement Cloud Zones
+## How to Implement Cloud Zones
 
 > **💡** Finding Cloud Zones is an exercise that demands a good knowledge of the regulatory landscape and the Cloud Foundation service offering. 
 
@@ -95,7 +92,7 @@ graph LR
 
 1. Put controls in place to ensure compliant usage of Cloud Zones. That means, only customers that followed a Cloud Onboarding Path are allowed to. The capability to [Control access to cloud platforms and Landing Zones](/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md) is needed.
 
-## Best practices around Cloud Zones
+## Best Practices around Cloud Zones
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -103,11 +100,11 @@ graph LR
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/use-case-cloud-zones/">Tell me more about Cloud Zones</CtaButton>
 </CallToAction>
 
-### Keep it simple
+### Keep It Simple
 
 The “your application stage (dev, prod) is your Cloud Zone” approach might be sufficient for your enterprise.
 
-### Help DevOps teams pick the right Cloud Zone
+### Help DevOps Teams Pick the Right Cloud Zone
 
 Cloud Foundation teams guide their customers to the right Cloud Zone. Common implementations are a decision tree diagram on a Wiki page or an interactive assessment on the [Onboarding Portal](/maturity-model/security-and-compliance/onboarding-portal.md).
 
@@ -122,6 +119,6 @@ graph LR
 		L --L7: APIs--> 7[Connected Cloud Zone]
 ```
 
-### Tag every application with its Cloud Zone
+### Tag Every Application with Its Cloud Zone
 
 Store the Cloud Zone as tenant tags for security and cost analysis per Cloud Zone. Make Cloud Zones part of [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md).

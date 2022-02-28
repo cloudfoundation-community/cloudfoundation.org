@@ -19,18 +19,12 @@ properties:
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
   scope: 🏢 Core
-  summary: >-
-    Define a multi-cloud authorization concept that platforms can implement
-    independently and according to the cloud platform's native authorization
-    capabilities. The authorization concept should consider key principles like
-    segregation of duties, need-to-know and separation of privileged and
-    unprivileged roles.
   tool-implementations:
     - 01a9cbca-3dd4-4378-b1f5-1ae64b76cc19
   name: Authorization Concept
 ---
 
-## Key considerations and Best Practices
+## Key Considerations and Best Practices
 
 - **Start with default roles** - cloud providers typically offer a set of built-in roles that grant typical set of permissions (e.g. `Contributor` on Azure or `Editor` on GCP). While a more fine-granular segregation of roles can enable better fulfilment of least-privilege principle, the advantages of centralised oversight and consistency typically outweigh these benefits in the early stages of a cloud journey. Most authorization concepts use 2-3 types of default roles (e.g. `Reader`, `Developer`, `Manager`). 
 

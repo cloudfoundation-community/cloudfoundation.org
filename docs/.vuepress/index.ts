@@ -14,7 +14,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud Tenant Audit logs are automatically analysed for anomalies\n- proactive analysis\n...",
         "tool-implementations": [],
         "name": "Cloud SIEM"
       }
@@ -45,7 +44,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows operators to define a multi-cloud role model that teams can consume in self-service. meshStack replicates assigned roles and groups to cloud platform directories and cloud tenants.",
         "link": "https://docs.meshcloud.io/docs/meshstack.authorization.html#meshproject-roles",
         "name": "Multi-Cloud Authorization with meshStack"
       }
@@ -66,7 +64,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Support billing cloud workloads to different legal entities of an enterprise. This may manifest e.g. as different billing accounts (GCP), enterprise agreement (Azure) or Payer Accounts (AWS).",
         "tool-implementations": [],
         "name": "Billing to different legal entities"
       }
@@ -90,7 +87,6 @@ export const index = [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
         "scope": "☁️ Platform",
-        "summary": "Resource consumption on multi-tenant private cloud platforms such as OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use pricing model.",
         "tool-implementations": [
           "c7b3902e-6708-4b0e-9e43-776f863baa3e"
         ],
@@ -111,7 +107,6 @@ export const index = [
         "tool": [
           "decefdc2-0883-4adb-8fc0-13b451bb8c2f"
         ],
-        "summary": "GitLab offers Git repositories, CI/CD, artifact scanning and many more DevOps tools.",
         "link": "https://about.gitlab.com",
         "name": "DevOps Toolchains with GitLab"
       }
@@ -134,7 +129,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud workloads are automatically scanned for security/compliance violations (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud resource configuration (e.g. VPC ACLs), not about workload configuration (e.g. software firewall)",
         "tool-implementations": [],
         "name": "Automated Security Scanning"
       }
@@ -153,7 +147,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack can charge consumers for internal services based on the time the service was used.",
         "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html",
         "name": "**Pay-per-Use for internal Services**"
       }
@@ -179,7 +172,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "🏢 Core",
-        "summary": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
         "tool-implementations": [
           "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19"
         ],
@@ -206,7 +198,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
         "tool-implementations": [
           "431fe444-0b73-4592-b525-7e09a48a6457"
         ],
@@ -235,7 +226,6 @@ export const index = [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
         "scope": "🏢 Core",
-        "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
         "tool-implementations": [
           "65b1a609-a258-4e93-898c-9d115b6e32c5"
         ],
@@ -256,7 +246,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s Landing Zones allow cloud foundation teams to pre-define a desired resource hierarchy for newly created (and yet existing) cloud tenants. meshStacks supports the hierarchy concept for all public and private cloud platforms, e.g. Azure Management Groups & AWS Organization Units.",
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Resource Hierarchy "
       }
@@ -277,7 +266,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
         "tool-implementations": [],
         "name": "3rd party PaaS Service Integration"
       }
@@ -300,7 +288,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Managed key management services that allow applications to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
         "tool-implementations": [],
         "name": "Managed Key Vault"
       }
@@ -319,7 +306,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack sends chargeback statements to cloud tenant owners every month. These contain the exact charges from the cloud platform(s) and ensure that the right tenant owners are charged their own resource consumption.",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback via consumption cost allocation"
       }
@@ -343,7 +329,6 @@ export const index = [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
         "scope": "☁️ Platform",
-        "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
         "tool-implementations": [
           "8b5e9c3f-82b4-429c-ad60-49176671d537"
         ],
@@ -364,7 +349,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s tags guide customers to provide the right information at the right time.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
         "name": "Guided self-service onboarding"
       }
@@ -383,7 +367,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack creates and manages identities for each cloud tenant",
         "link": "https://docs.meshcloud.io/docs/meshstack.identity-federation.html",
         "name": "**Identity Lifecycle Management**"
       }
@@ -407,7 +390,6 @@ export const index = [
           "137ac22d-b96c-4d49-aa83-da5779e3d59c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Managed provisioning and inventory of Service Accounts including their permission sets. Enables central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.",
         "tool-implementations": [],
         "name": "Service Account Management"
       }
@@ -428,7 +410,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A central repository provides hardened container images.",
         "tool-implementations": [],
         "name": "Shared container registry"
       }
@@ -453,7 +434,6 @@ export const index = [
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
         ],
         "scope": "☁️ Platform",
-        "summary": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs). ",
         "tool-implementations": [],
         "name": "Privileged Access Management"
       }
@@ -476,7 +456,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed IP (L3) connectivity to on-premises networks. This is commonly implemented using hub&spoke network architectures and a combination of VPNs or private network peerings.",
         "tool-implementations": [],
         "name": "On-Premise Network Connection"
       }
@@ -495,7 +474,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack enables you to create monolithic landing zones for all major public/private cloud platforms:\n- AWS\n- Azure\n- GCP\n- OpenShift\n- Kubernetes",
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Monolithic Landing Zone"
       }
@@ -520,7 +498,6 @@ export const index = [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
         "scope": "🏢 Core",
-        "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
         "tool-implementations": [
           "59cdf884-5bd2-4b55-87f8-824a4a35623c"
         ],
@@ -541,7 +518,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack generates so-called tenant usage reports that contain the specific resources consumed within a cloud tenant in a given month. These tenant usage reports are visible for cloud tenant owners at any time.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#tenant-usage-reports",
         "name": "**Monthly cloud tenant billing report**"
       }
@@ -569,7 +545,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A virtual network service provides a pre-configured virtual network. It is a pre-requisite for higher-level services built on virtual networks.",
         "tool-implementations": [],
         "name": "Virtual Network Service"
       }
@@ -591,7 +566,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored. ",
         "tool-implementations": [],
         "name": "Centralized audit logs"
       }
@@ -631,7 +605,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
         "name": "meshStack **Self-Service Multi-Cloud Tenant Database**"
       }
@@ -655,7 +628,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud resources are tagged using a consistent tagging strategy to facilitate security and compliance processes for cloud workloads.",
         "tool-implementations": [
           "acf452d3-8425-41e2-ba8b-ee212a6fb189"
         ],
@@ -676,7 +648,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack maintains an always-up-to-date list of cloud tenants active in the organization, including their applied metadata.",
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "meshStack Cloud Tenant Database"
       }
@@ -703,7 +674,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
         "tool-implementations": [],
         "name": "Identity and Access Management Concept"
       }
@@ -722,7 +692,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows cloud foundation teams to provide additional services via a marketplace. DevOps teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Managed DevOps toolchains with meshStack"
       }
@@ -743,7 +712,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
         "tool-implementations": [
           "4d280fde-532f-4eb2-9c9c-da2c9ece3c24"
         ],
@@ -769,7 +737,6 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
         "tool-implementations": [],
         "name": "Certified ISMS Compliance"
       }
@@ -791,7 +758,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides Kubernetes Clusters as a Service. These are deployed as workloads into the customer's cloud tenants.",
         "tool-implementations": [],
         "name": "Kubernetes Cluster as a Service"
       }
@@ -810,7 +776,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automates tenant lifecycle management for private cloud platforms OpenStack and Cloud Foundry including decommissioning. An automated resource check ensures customers delete all workload before decommissioning the tenant. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.platforms.html#deprovisioning--deleting-projects",
         "name": "Private Cloud Tenant Deprovisioning with meshStack"
       }
@@ -835,7 +800,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
         "tool-implementations": [
           "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a"
         ],
@@ -866,7 +830,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html",
         "name": "**Individual Project Cost Optimization via Reservations**"
       }
@@ -895,7 +858,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s tags and policies are ideal for making Cloud Zones available to exactly the right customers.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.policies.html",
         "name": "Manage access to Cloud Zones with meshStack"
       }
@@ -914,7 +876,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "**Multi-cloud tenant database integrated with lifecycle management**"
       }
@@ -940,7 +901,6 @@ export const index = [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenants are tagged using a consistent tagging strategy to facilitate cloud platform operations.",
         "tool-implementations": [
           "71c1b0fb-2eea-4492-bbb8-05a83098544c",
           "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
@@ -976,7 +936,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
         "tool-implementations": [
           "254476a2-de92-4724-a06e-65931ebb5aec"
         ],
@@ -1003,7 +962,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
         "tool-implementations": [
           "c596a5f1-dc63-46b6-8d1f-25dcf12ff484"
         ],
@@ -1024,7 +982,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
         "name": "**Monthly cloud project billing report**"
       }
@@ -1061,7 +1018,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Open-source Collie CLI allows you to view monthly costs per tenant across AWS, Azure & GCP for a given timeframe.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
         "name": "Check monthly cloud tenant costs with collie"
       }
@@ -1093,7 +1049,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
         "tool-implementations": [
           "9b740724-686e-45f2-8924-9000279b806b"
         ],
@@ -1114,7 +1069,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically maintains a database of all tenants under management by the cloud foundation.",
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "Mulit-cloud tenant database"
       }
@@ -1137,7 +1091,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
         "tool-implementations": [],
         "name": "Managed bastion hosts"
       }
@@ -1160,7 +1113,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks. ",
         "tool-implementations": [],
         "name": "Tenant to Tenant Transit Networks"
       }
@@ -1187,7 +1139,6 @@ export const index = [
           "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
         ],
         "scope": "🏢 Core",
-        "summary": "Define and enforce a consistent tagging of cloud tenants and resource across multiple cloud platforms.  ",
         "tool-implementations": [
           "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
           "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
@@ -1212,7 +1163,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
         "tool-implementations": [
           "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
           "04470deb-8ef1-4c49-bcec-7243426790b5"
@@ -1234,7 +1184,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack ensures up-to-date tags at least once a day for all cloud tenants based on metadata entered by cloud tenant owners and/or platform operators. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#tags-in-cloud-tenants",
         "name": "meshStack Tenant Tagging"
       }
@@ -1253,7 +1202,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack makes metadata an integral part of the tenant provisioning process and allows cloud foundation teams to create a full customizable list of tags that should be filled in by cloud tenant owners.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
         "name": "Central Management of Tenant tags and metadata"
       }
@@ -1274,7 +1222,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like tenable.io or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
         "tool-implementations": [],
         "name": "SOC Integration"
       }
@@ -1295,7 +1242,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
         "tool-implementations": [],
         "name": "Managed Data Lake access"
       }
@@ -1315,7 +1261,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Get a quick overview of cloud tenant tags with open-source Collie CLI across AWS, Azure & GCP.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "collie analyze tags"
       }
@@ -1341,7 +1286,6 @@ export const index = [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
         "scope": "🏢 Core",
-        "summary": "A central database of all multi-cloud tenants initiates tenant provisioning and deprovisioning processes. The database acts as an authoritative source of tenants and ensures tenant metadata is always up to date.",
         "tool-implementations": [
           "5154be86-47d3-4453-888d-102be5b07786"
         ],
@@ -1364,7 +1308,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "In-house teams provide PaaS services for commonly needed infrastructure services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
         "tool-implementations": [],
         "name": "In-house PaaS Service Integration"
       }
@@ -1398,7 +1341,6 @@ export const index = [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
         ],
         "scope": "🏢 Core",
-        "summary": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners. ",
         "tool-implementations": [],
         "name": "Incident Management Process"
       }
@@ -1424,7 +1366,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "Through the use of meshStack’s landing zones, platform operators can create a dedicated path for cloud tenant owners to quickly spin up a new playground / sandbox environment.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
         "name": "Playground / Sandbox Environments"
       }
@@ -1446,7 +1387,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
         "tool-implementations": [
           "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14"
         ],
@@ -1467,7 +1407,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack gives an overview of unmanaged tenants. These are tenants that are not yet under management of the cloud foundation team and they can be easily imported into the governance model.",
         "link": "https://docs.meshcloud.io/docs/administration.unmanaged-tenants.html",
         "name": "Tenant Inventory Reconciliation"
       }
@@ -1501,7 +1440,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks. ",
         "tool-implementations": [],
         "name": "Cloud to Cloud interconnects"
       }
@@ -1535,7 +1473,6 @@ export const index = [
           "11af37b7-c948-4486-a5da-5b1db6de8193"
         ],
         "scope": "🏢 Core",
-        "summary": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
         "tool-implementations": [
           "e2123339-0641-4d44-b774-32ce23fd634d",
           "334eb216-fa16-4946-9fe5-8f66bb7fc3fa"
@@ -1560,7 +1497,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
         "tool-implementations": [
           "11f50039-a1d6-49de-9fbd-247a1955b474"
         ],
@@ -1581,7 +1517,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "With Collie CLI you can find out within minutes what your current cloud tagging strategy looks like; across AWS, Azure, and GCP.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "meshcloud Cloud Foundation CLI tool"
       }
@@ -1602,7 +1537,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored. ",
         "tool-implementations": [],
         "name": "Centralized workload and infrastructure logs"
       }
@@ -1628,7 +1562,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication. ",
         "tool-implementations": [],
         "name": "Federated Identity and Authentication"
       }
@@ -1650,7 +1583,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers. ",
         "tool-implementations": [],
         "name": "Global Cost Optimization via Reservations"
       }
@@ -1675,7 +1607,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
         "tool-implementations": [
           "3481641d-0686-420d-8487-794acd4f5e04",
           "e2123339-0641-4d44-b774-32ce23fd634d"
@@ -1708,7 +1639,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Offer internal services on meshStack marketplace"
       }
@@ -1734,7 +1664,6 @@ export const index = [
         "tool": [
           "84cf2301-844f-4e77-8f86-ed3d9244d623"
         ],
-        "summary": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.",
         "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
         "name": "meshcloud Cloud Foundation Stakeholder Map"
       }
@@ -1753,7 +1682,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack supports out of the box private cloud metering for:\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing.html#private-cloud-billing-with-meshcloud",
         "name": "Private Cloud Metering with meshStack"
       }
@@ -1772,7 +1700,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack offers a marketplace where the cloud foundation team (or other teams) can offer internal services. This also support the use of customizable pay-per-use metering, e.g. pay $0.001 per API request or $1 per GB stored.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Consumption based pay-per-use for internal services"
       }
@@ -1797,7 +1724,6 @@ export const index = [
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
         "scope": "🏢 Core",
-        "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
         "tool-implementations": [
           "0db736c5-6801-4619-92a6-97c3842c907c"
         ],
@@ -1818,7 +1744,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack enables the use of modular landing zones by building marketplace services on top of landing zones.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Modular Landing Zones with meshStack"
       }
@@ -1837,7 +1762,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "The API of meshStack can be connected to an external onboarding portal to help provision cloud tenants and introduce an approval flow for getting cloud access.",
         "link": "https://docs.meshcloud.io/docs/meshstack.onboarding.html#customer-registration",
         "name": "Onboarding Portal"
       }
@@ -1862,7 +1786,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
         "tool-implementations": [
           "635ebffa-17e9-4231-9d38-b59625be9b03",
           "2896046e-fd61-4fa7-b381-67bb4f8893b2"
@@ -1889,7 +1812,6 @@ export const index = [
           "28740e92-5559-4931-ab04-17cfb026edd5"
         ],
         "scope": "🏢 Core",
-        "summary": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
         "tool-implementations": [],
         "name": "Monthly Cloud Project Carbon Footprint Report"
       }
@@ -1910,7 +1832,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Provide managed API (L7) connectivity to APIs running in on-premise environments.",
         "tool-implementations": [],
         "name": "API Gateway to on-premises APIs"
       }
@@ -1932,7 +1853,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
         "tool-implementations": [
           "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
           "166cca26-ca4d-4efc-8657-10d2462e811a"
@@ -1957,7 +1877,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Basic policies on cloud resources enforce Blacklisting of forbidden services, regions.",
         "tool-implementations": [],
         "name": "Resource Policies - Blacklisting"
       }
@@ -1977,7 +1896,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically provisions and reconciles cloud tenants based on the desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "Tenant provisioning with meshStack"
       }
@@ -2000,7 +1918,6 @@ export const index = [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
         "tool-implementations": [
           "e129bdf8-7c01-47a7-a524-f764149c2a97"
         ],
@@ -2026,7 +1943,6 @@ export const index = [
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
         "scope": "🏢 Core",
-        "summary": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
         "tool-implementations": [
           "c88e6212-2a64-431f-a404-b39742574404"
         ],
@@ -2049,7 +1965,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Owners can access support in self-service and are transparently charged for support fees incurred.",
         "tool-implementations": [],
         "name": "Managed Cloud Provider Support Contracts"
       }
@@ -2070,7 +1985,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A central repository provides hardened virtual machine images.",
         "tool-implementations": [],
         "name": "Shared VM Image Repository"
       }
@@ -2094,7 +2008,6 @@ export const index = [
           "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
         ],
         "scope": "🏢 Core",
-        "summary": "Regulatory onboarding only captures what is required for getting acces to the cloud",
         "tool-implementations": [
           "507e5776-239f-4a65-a6f5-d4944536e35a"
         ],
@@ -2120,7 +2033,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure Subscriptions etc.).",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
         ],
@@ -2156,7 +2068,6 @@ export const index = [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
         "tool-implementations": [
           "13bd4bac-36f7-466e-a2b8-7f5c9f77c480"
         ],
@@ -2177,7 +2088,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack sends out so-called chargeback statements every month to cloud tenant owners. These statements contain detailed information on consumed resources. meshStack also support custom internal fees, e.g. charge 10% on top of resource consumption or a fixed amount, e.g. $50 per month. This helps the cloud foundation team become a profit center instead of a cost center.",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback at full cost allocation"
       }
@@ -2196,7 +2106,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Open-source Collie CLI can give you a list of all active tenants in your organization across AWS, Azure & GCP in minutes. This includes metadata and costs per month.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-tenants",
         "name": "Collie Cloud Tenant Database"
       }
@@ -2215,7 +2124,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows defining custom metadata tags that are applied on the actual cloud tenants in AWS, Azure & GCP. These tags can be used for maintaining connections to CMDB or EAM systems.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#how-to-view-and-define-available-tags",
         "name": "Link Cloud Tenants to CMDB/EAM"
       }
@@ -2242,7 +2150,6 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "scope": "🏢 Core",
-        "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
         ],
@@ -2278,7 +2185,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
         "tool-implementations": [
           "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29"
         ],
@@ -2305,7 +2211,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
         "tool-implementations": [
           "c3af4eea-6d9a-4c64-a117-ec018524979a"
         ],
@@ -2326,7 +2231,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack can be set up to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html",
         "name": "Approving budgets with meshStack"
       }
@@ -2349,7 +2253,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud tenants can connect to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
         "tool-implementations": [],
         "name": "Managed Internet Egress"
       }
@@ -2370,7 +2273,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Budgets are approved by controllers / people with budget responsibility",
         "tool-implementations": [
           "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b"
         ],

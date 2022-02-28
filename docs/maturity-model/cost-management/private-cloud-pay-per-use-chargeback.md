@@ -17,10 +17,6 @@ properties:
   depends-on:
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
   scope: ☁️ Platform
-  summary: >-
-    Resource consumption on multi-tenant private cloud platforms such as
-    OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use
-    pricing model.
   tool-implementations:
     - c7b3902e-6708-4b0e-9e43-776f863baa3e
   name: Private Cloud pay-per-use chargeback
@@ -28,7 +24,7 @@ properties:
 
 As outlined in the building block [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md), pay-per-use is an essential cornerstone of cloud computing. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. When offering private cloud platforms such as OpenStack, Cloud Foundry or multi-tenant Kubernetes clusters such as OpenShift, organizations should implement a pay-per-use model for these platforms. 
 
-## Why you should implement private cloud chargeback using pay-per-use 
+## Why You Should Implement Private Cloud Chargeback Using Pay-per-Use 
 
 Organizations seeking to successfully implement a hybrid cloud strategy want to offer private and public cloud services to their teams. While public cloud vendors offer their services exclusively in a pay-per-use model, private cloud platforms often operate in an on-premise IT environment full of legacy processes like shared cost models.
 
@@ -48,21 +44,21 @@ The most successful implementations of a private cloud operate with a public clo
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Learn more</CtaButton>
 </CallToAction>
 
-## How to implement Private Cloud Pay-per-use Pricing
+## How to Implement Private Cloud Pay-per-Use Pricing
 
 Now that we covered the motivation for using a pay-per-use cost model to chargeback private cloud consumption, this section looks at key considerations for successfully implementing such a pricing model.
 
-### Automate private Cloud Metering and Chargeback
+### Automate Private Cloud Metering and Chargeback
 
 In order to provide cost feedback loops to all IT system stakeholders (responsible product owners, engineers), cost reports must be available on a frequent basis. It’s a best practice to provide [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md)s with fine granular listings of the individual resources consumed. While considerably more work than an annual cost split based on a pooling factor, proper tooling can automate the entire process of metering resource consumption, applying a pricing model and generating monthly billing reports. See the [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md) building block for more details.
 
-### Build a private cloud pricing model
+### Build a Private Cloud Pricing Model
 
 A key consideration for building a successful private cloud pricing model is setting pricing up front. This is a big shift from the “ex post” model of shared cost allocation and requires a profit-center mindset.
 
 To arrive at a private cloud pricing model, organizations should study the public cloud market for typical pricing models. For example, most public cloud providers charge IaaS services by vCPU, RAM, storage and network traffic, while most PaaS services only charge for RAM. In the next step, the platform team needs to calculate its own cost for building (e.g. CAPEX for hardware) and running (e.g. OPEX for staff) the cloud platform. When factoring in the expected usage of the platform, platform teams can arrive at a pricing model that will allow them to break even quickly given a successful uptake of its offering within the organization.
 
-#### Example: Calculating a pricing model for an OpenShift cluster 
+#### Example: Calculating a Pricing Model for an OpenShift Cluster 
 
 This section presents an example calculation of a pricing model for an OpenShift Cluster. The cluster has been running for a while already, so there’s confidence in the actual cost incurred.
 

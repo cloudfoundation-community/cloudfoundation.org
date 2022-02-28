@@ -12,7 +12,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: A central repository provides hardened container images.
   tool-implementations: []
   name: Shared container registry
 ---

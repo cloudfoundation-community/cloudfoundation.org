@@ -78,7 +78,7 @@ export default {
             scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
             title: value.frontmatter.title,
             link: "/" + value.file,
-            summary: value.frontmatter.properties.summary
+            summary: value.frontmatter.description
           };
         });
     },
