@@ -37,7 +37,7 @@ watch(
   props,
   (value) => {
     const graph = page.value.$graphs[value.id];
-    mermaid.value.render("mm-" + value.id, graph, (x) => {
+    mermaid.render("mm-" + value.id, graph, (x) => {
       svg.value = x;
     });
   },
