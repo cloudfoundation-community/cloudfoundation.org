@@ -1,6 +1,6 @@
 import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 import type { DefaultThemeOptions } from "vuepress-vite";
-
+import { visualizer } from "rollup-plugin-visualizer";
 import { path, debug } from "@vuepress/utils";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
 
@@ -94,5 +94,19 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ],
     [pluginSitemap, sitemapOptions],
   ],
-  bundlerConfig: {},
+  bundlerConfig: {
+    viteOptions: {
+      plugins: [visualizer()],
+      build: {
+        rollupOptions: {
+          output: {
+            inlineDynamicImports: false,
+            manualChunks: {
+              mermaid: ["mermaid"],
+            },
+          },
+        },
+      }
+    },
+  },
 });

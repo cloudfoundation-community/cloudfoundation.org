@@ -5,7 +5,7 @@ const vuePressPluginMermaid = (options, app) => {
   return {
     name: "MermaidJSPlugin",
     define: {
-      MERMAID_OPTIONS: options,
+      __MERMAID_OPTIONS__: options,
     },
     extendsMarkdown(md) {
       md.use(mermaidjsPlugin);
@@ -13,7 +13,8 @@ const vuePressPluginMermaid = (options, app) => {
     async extendsPage(page) {
       page.data["$graphs"] = graphs[page.filePathRelative];
     },
-    clientAppEnhanceFiles: path.resolve(__dirname, "clientAppEnhanceFile.js"),
+    clientAppEnhanceFiles: path.resolve(__dirname, "./client/clientAppEnhanceFile.js"),
+    clientAppSetupFiles: path.resolve(__dirname, "./client/clientAppSetup.ts"),
   };
 };
 
