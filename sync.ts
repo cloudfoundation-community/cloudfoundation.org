@@ -183,23 +183,34 @@ async function main() {
       : { frontmatter: x.frontmatter };
   });
 
+  console.log("processing page 'order' conventions");
+  
   // by convention, find all "first" files in a category and rename them README.md because vuepress expects them that way
   const categoryHomes = rendered.filter((x) => {
     const page = x as RenderedDatabasePage;
     return page.frontmatter?.order === 0 && !!page.file;
   });
-
+  
   for (const home of categoryHomes) {
     const rendered = home as RenderedDatabasePage;
     const old = rendered.file;
     const readme = path.join(path.dirname(old), "readme.md");
 
-    console.log("renaming " + old + " -> " + readme);
+    console.warn("renaming " + old + " -> " + readme);
     await fs.rename(old, readme);
 
     // patch the index, important so that it is correct for sorting
     rendered.file = readme;
   }
+
+  // by convention, find all files with negative sort values and remove them
+  // this is our hacky way to prevent publishing pages
+  rendered
+    .filter((x) => x.frontmatter?.order < 0 && !!x.file)
+    .forEach((x) => {
+      console.warn("removing " + x.file);
+      fs.unlink(x.file);
+    });
 
   // we sort the rendered pages by id, this way we have a more consistent index.ts
   // file that has less churn and thus plays along better with git versioning
@@ -207,6 +218,7 @@ async function main() {
     x.frontmatter.id.localeCompare(y.frontmatter.id)
   );
 
+  console.log("writing .vuepress/index.ts");
   await fs.writeFile(
     ".vuepress/index.ts",
     `export const index = ${JSON.stringify(sorted, null, 2)};`

@@ -1541,7 +1541,7 @@ export const index = [
       "url": "https://www.notion.so/Cloud-Foundation-Pillars-b3f64e6c3799457d96ee413d3acae899",
       "title": "Cloud Foundation Pillars",
       "category": "Maturity Model",
-      "order": 30
+      "order": -1
     }
   },
   {
