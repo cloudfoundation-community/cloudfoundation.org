@@ -97,16 +97,6 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   bundlerConfig: {
     viteOptions: {
       plugins: [visualizer()],
-      build: {
-        rollupOptions: {
-          output: {
-            inlineDynamicImports: false,
-            manualChunks: {
-              mermaid: ["mermaid"],
-            },
-          },
-        },
-      }
     },
   },
 });
