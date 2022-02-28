@@ -17,11 +17,11 @@ function commonFrontmatter(page) {
   const frontmatter: any = {
     id: page.meta.id,
     url: page.meta.url,
-    title: page.meta.title
+    title: page.meta.title,
   };
   // By this logic, you can attach a 'Summary' field to any page
   // and it will render a <meta description> tag based on the summary text.
-  const summary = page.properties?.get('Summary');
+  const summary = page.properties?.get("Summary");
   if (summary) {
     frontmatter.description = summary;
   }
@@ -39,7 +39,7 @@ const config: SyncConfig = {
     destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
     frontmatterBuilder: (page) => {
       const extraFrontmatter =
-        page.meta.title === "Explore All Blocks"
+        page.meta.title === "Explore All Building Blocks"
           ? { layout: "Fullsize", sidebar: false }
           : {};
 
@@ -95,22 +95,27 @@ const config: SyncConfig = {
           };
         },
       },
-      views: [
+      views: [],
+    },
+    "3958983e-15f0-4446-9226-6e8af5eccbc9": {
+      sorts: [
         {
-          title: "By Pillar",
-          properties: {
-            groupBy: "Pillar",
-            include: ["Name", "Scope", "Journey Stage"],
-          },
-        },
-        {
-          title: "By Journey Stage",
-          properties: {
-            groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Pillar"],
-          },
+          property: "order",
+          direction: "ascending",
         },
       ],
+      renderAs: "pages+views",
+      pages: {
+        destinationDirBuilder: (page) =>
+          "maturity-model/" + slugify(page.properties.get("Name")),
+        filenameBuilder: (_) => "readme",
+        frontmatterBuilder: (page) => {
+          return {
+            ...commonFrontmatter(page),
+          };
+        },
+      },
+      views: [],
     },
     "6f849704-d765-443f-ac32-b611fc5270cc": {
       // tool2block, part of the "tool support" page
@@ -127,10 +132,7 @@ const config: SyncConfig = {
       entries: {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
-          properties: buildProperties(
-            ["Block", "Tool", "Link", "Name"],
-            page
-          ),
+          properties: buildProperties(["Block", "Tool", "Link", "Name"], page),
         }),
       },
     },
