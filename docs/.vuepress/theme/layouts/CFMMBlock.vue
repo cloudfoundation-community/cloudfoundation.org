@@ -8,7 +8,7 @@
       </p>
       <div class="custom-container tip">
         <p class="custom-container-title">Summary</p>
-        <p>{{ frontmatter.properties.summary }}</p>
+        <p>{{ frontmatter.description }}</p>
       </div>
 
       <nav v-if="dependsOn.length">
@@ -116,7 +116,7 @@ function resolveTool(id: string) {
 
   return {
     id,
-    summary: page.frontmatter.properties.summary,
+    summary: page.frontmatter.description,
     link: page.frontmatter.properties.link,
     tool: tool.frontmatter.title,
   };

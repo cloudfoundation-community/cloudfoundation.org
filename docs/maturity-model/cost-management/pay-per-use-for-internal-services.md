@@ -3,6 +3,10 @@ id: c9728af5-49fe-4948-8701-2d6485bfbe93
 url: >-
   https://www.notion.so/Pay-per-Use-for-internal-Services-c9728af549fe494887012d6485bfbe93
 title: Pay-per-Use for internal Services
+description: >-
+  Enable usage based chargeback for internal, managed IT services offered via
+  the cloud foundation (see Landing Zone building Blocks). Consumers can book
+  services from a single marketplace and get a single "invoice" for chargeback. 
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:
@@ -13,11 +17,6 @@ properties:
   depends-on:
     - f077cfd1-d8f4-4c30-a1bd-4f252b840e4f
   scope: 🏢 Core
-  summary: >-
-    Enable usage based chargeback for internal, managed IT services offered via
-    the cloud foundation (see Landing Zone building Blocks). Consumers can book
-    services from a single marketplace and get a single "invoice" for
-    chargeback. 
   tool-implementations:
     - 0db736c5-6801-4619-92a6-97c3842c907c
   name: Pay-per-Use for internal Services

@@ -3,6 +3,11 @@ id: b6b24f70-3fba-4f67-a375-2b0d26a16324
 url: >-
   https://www.notion.so/Global-Cost-Optimization-via-Reservations-b6b24f703fba4f67a3752b0d26a16324
 title: Global Cost Optimization via Reservations
+description: >-
+  Cloud providers offer different programs offering lower pay-per-use rates in
+  exchange for making spend or resource reservation commitments (e.g. reserved
+  instances). Centrally plan resource demand to take advantage of cost
+  optimization opportunities offered by cloud providers. 
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:
@@ -12,11 +17,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Cloud providers offer different programs offering lower pay-per-use rates in
-    exchange for making spend or resource reservation commitments (e.g. reserved
-    instances). Centrally plan resource demand to take advantage of cost
-    optimization opportunities offered by cloud providers. 
   tool-implementations: []
   name: Global Cost Optimization via Reservations
 ---

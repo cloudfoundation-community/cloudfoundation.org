@@ -2,6 +2,10 @@
 id: ac8a21c3-f692-4d23-a9bb-796fd311c39f
 url: https://www.notion.so/Resource-Hierarchy-ac8a21c3f6924d23a9bb796fd311c39f
 title: Resource Hierarchy
+description: >-
+  Definition of a cloud resource hierarchy that facilitates tenant isolation and
+  policy enforcement. Cloud tenants are deliberately placed in this resource
+  hierarchy when tenants are provisioned.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -11,10 +15,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Definition of a cloud resource hierarchy that facilitates tenant isolation
-    and policy enforcement. Cloud tenants are deliberately placed in this
-    resource hierarchy when tenants are provisioned.
   tool-implementations:
     - 11f50039-a1d6-49de-9fbd-247a1955b474
   name: Resource Hierarchy

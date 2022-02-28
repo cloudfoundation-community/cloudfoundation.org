@@ -2,6 +2,9 @@
 id: 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
 url: https://www.notion.so/Cloud-Resource-Tagging-344b75a4595b4ba58851ddfb6d4acf7c
 title: Cloud Resource Tagging
+description: >-
+  Cloud resources are tagged using a consistent tagging strategy to facilitate
+  security and compliance processes for cloud workloads.
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
@@ -12,9 +15,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Cloud resources are tagged using a consistent tagging strategy to facilitate
-    security and compliance processes for cloud workloads.
   tool-implementations:
     - acf452d3-8425-41e2-ba8b-ee212a6fb189
   name: Cloud Resource Tagging

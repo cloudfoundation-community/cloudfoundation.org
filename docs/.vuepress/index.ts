@@ -5,6 +5,7 @@ export const index = [
       "id": "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02",
       "url": "https://www.notion.so/Cloud-SIEM-012dc29a5b794eeb81549ef0f2ae0f02",
       "title": "Cloud SIEM",
+      "description": "Cloud Tenant Audit logs are automatically analysed for anomalies\n- proactive analysis\n...",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -13,7 +14,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud Tenant Audit logs are automatically analysed for anomalies\n- proactive analysis\n...",
         "tool-implementations": [],
         "name": "Cloud SIEM"
       }
@@ -36,6 +36,7 @@ export const index = [
       "id": "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19",
       "url": "https://www.notion.so/Multi-Cloud-Authorization-with-meshStack-01a9cbca3dd44378b1f51ae64b76cc19",
       "title": "Multi-Cloud Authorization with meshStack",
+      "description": "meshStack allows operators to define a multi-cloud role model that teams can consume in self-service. meshStack replicates assigned roles and groups to cloud platform directories and cloud tenants.",
       "properties": {
         "block": [
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
@@ -43,7 +44,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows operators to define a multi-cloud role model that teams can consume in self-service. meshStack replicates assigned roles and groups to cloud platform directories and cloud tenants.",
         "link": "https://docs.meshcloud.io/docs/meshstack.authorization.html#meshproject-roles",
         "name": "Multi-Cloud Authorization with meshStack"
       }
@@ -55,6 +55,7 @@ export const index = [
       "id": "0217c4da-6542-41d6-84c7-12af887e7d15",
       "url": "https://www.notion.so/Billing-to-different-legal-entities-0217c4da654241d684c712af887e7d15",
       "title": "Billing to different legal entities",
+      "description": "Support billing cloud workloads to different legal entities of an enterprise. This may manifest e.g. as different billing accounts (GCP), enterprise agreement (Azure) or Payer Accounts (AWS).",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -63,7 +64,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Support billing cloud workloads to different legal entities of an enterprise. This may manifest e.g. as different billing accounts (GCP), enterprise agreement (Azure) or Payer Accounts (AWS).",
         "tool-implementations": [],
         "name": "Billing to different legal entities"
       }
@@ -75,6 +75,7 @@ export const index = [
       "id": "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
       "url": "https://www.notion.so/Private-Cloud-pay-per-use-chargeback-02e4de2c7e1e4dd9aa76b58a88f04ff6",
       "title": "Private Cloud pay-per-use chargeback",
+      "description": "Resource consumption on multi-tenant private cloud platforms such as OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use pricing model.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -86,7 +87,6 @@ export const index = [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
         "scope": "☁️ Platform",
-        "summary": "Resource consumption on multi-tenant private cloud platforms such as OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use pricing model.",
         "tool-implementations": [
           "c7b3902e-6708-4b0e-9e43-776f863baa3e"
         ],
@@ -99,6 +99,7 @@ export const index = [
       "id": "04470deb-8ef1-4c49-bcec-7243426790b5",
       "url": "https://www.notion.so/DevOps-Toolchains-with-GitLab-04470deb8ef14c49bcec7243426790b5",
       "title": "DevOps Toolchains with GitLab",
+      "description": "GitLab offers Git repositories, CI/CD, artifact scanning and many more DevOps tools.",
       "properties": {
         "block": [
           "71143f29-2fe9-452b-8398-fc40f270a2b6"
@@ -106,7 +107,6 @@ export const index = [
         "tool": [
           "decefdc2-0883-4adb-8fc0-13b451bb8c2f"
         ],
-        "summary": "GitLab offers Git repositories, CI/CD, artifact scanning and many more DevOps tools.",
         "link": "https://about.gitlab.com",
         "name": "DevOps Toolchains with GitLab"
       }
@@ -118,6 +118,7 @@ export const index = [
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
       "url": "https://www.notion.so/Automated-Security-Scanning-09e744c5e12a49e88b6fb7e3c44ba63b",
       "title": "Automated Security Scanning",
+      "description": "Cloud workloads are automatically scanned for security/compliance violations (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud resource configuration (e.g. VPC ACLs), not about workload configuration (e.g. software firewall)",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -128,7 +129,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud workloads are automatically scanned for security/compliance violations (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud resource configuration (e.g. VPC ACLs), not about workload configuration (e.g. software firewall)",
         "tool-implementations": [],
         "name": "Automated Security Scanning"
       }
@@ -139,6 +139,7 @@ export const index = [
       "id": "0db736c5-6801-4619-92a6-97c3842c907c",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-0db736c56801461992a697c3842c907c",
       "title": "**Pay-per-Use for internal Services**",
+      "description": "meshStack can charge consumers for internal services based on the time the service was used.",
       "properties": {
         "block": [
           "c9728af5-49fe-4948-8701-2d6485bfbe93"
@@ -146,7 +147,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack can charge consumers for internal services based on the time the service was used.",
         "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html",
         "name": "**Pay-per-Use for internal Services**"
       }
@@ -158,6 +158,7 @@ export const index = [
       "id": "0dd09c75-2acd-4e87-9721-6b5f563da035",
       "url": "https://www.notion.so/Authorization-Concept-0dd09c752acd4e8797216b5f563da035",
       "title": "Authorization Concept",
+      "description": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -171,7 +172,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "🏢 Core",
-        "summary": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
         "tool-implementations": [
           "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19"
         ],
@@ -185,6 +185,7 @@ export const index = [
       "id": "119bfca5-dda6-408c-b35d-c59d0f209fcf",
       "url": "https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf",
       "title": "Tenant Deprovisioning / Decommissioning",
+      "description": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -197,7 +198,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
         "tool-implementations": [
           "431fe444-0b73-4592-b525-7e09a48a6457"
         ],
@@ -211,6 +211,7 @@ export const index = [
       "id": "11af37b7-c948-4486-a5da-5b1db6de8193",
       "url": "https://www.notion.so/Multi-Cloud-Tenant-Database-11af37b7c9484486a5da5b1db6de8193",
       "title": "Multi-Cloud Tenant Database",
+      "description": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -225,7 +226,6 @@ export const index = [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
         "scope": "🏢 Core",
-        "summary": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
         "tool-implementations": [
           "65b1a609-a258-4e93-898c-9d115b6e32c5"
         ],
@@ -238,6 +238,7 @@ export const index = [
       "id": "11f50039-a1d6-49de-9fbd-247a1955b474",
       "url": "https://www.notion.so/Resource-Hierarchy-11f50039a1d649de9fbd247a1955b474",
       "title": "Resource Hierarchy ",
+      "description": "meshStack’s Landing Zones allow cloud foundation teams to pre-define a desired resource hierarchy for newly created (and yet existing) cloud tenants. meshStacks supports the hierarchy concept for all public and private cloud platforms, e.g. Azure Management Groups & AWS Organization Units.",
       "properties": {
         "block": [
           "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
@@ -245,7 +246,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s Landing Zones allow cloud foundation teams to pre-define a desired resource hierarchy for newly created (and yet existing) cloud tenants. meshStacks supports the hierarchy concept for all public and private cloud platforms, e.g. Azure Management Groups & AWS Organization Units.",
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Resource Hierarchy "
       }
@@ -257,6 +257,7 @@ export const index = [
       "id": "124d5b65-1e6c-47c5-81fc-134315c72e32",
       "url": "https://www.notion.so/3rd-party-PaaS-Service-Integration-124d5b651e6c47c581fc134315c72e32",
       "title": "3rd party PaaS Service Integration",
+      "description": "Teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -265,7 +266,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
         "tool-implementations": [],
         "name": "3rd party PaaS Service Integration"
       }
@@ -277,6 +277,7 @@ export const index = [
       "id": "137ac22d-b96c-4d49-aa83-da5779e3d59c",
       "url": "https://www.notion.so/Managed-Key-Vault-137ac22db96c4d49aa83da5779e3d59c",
       "title": "Managed Key Vault",
+      "description": "Managed key management services that allow applications to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -287,7 +288,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Managed key management services that allow applications to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
         "tool-implementations": [],
         "name": "Managed Key Vault"
       }
@@ -298,6 +298,7 @@ export const index = [
       "id": "13bd4bac-36f7-466e-a2b8-7f5c9f77c480",
       "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-13bd4bac36f7466ea2b87f5c9f77c480",
       "title": "Chargeback via consumption cost allocation",
+      "description": "meshStack sends chargeback statements to cloud tenant owners every month. These contain the exact charges from the cloud platform(s) and ensure that the right tenant owners are charged their own resource consumption.",
       "properties": {
         "block": [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
@@ -305,7 +306,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack sends chargeback statements to cloud tenant owners every month. These contain the exact charges from the cloud platform(s) and ensure that the right tenant owners are charged their own resource consumption.",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback via consumption cost allocation"
       }
@@ -317,6 +317,7 @@ export const index = [
       "id": "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-155c0eadcbd04e0c9387cc57946f80e9",
       "title": "Playground / Sandbox Environments",
+      "description": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -328,7 +329,6 @@ export const index = [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
         "scope": "☁️ Platform",
-        "summary": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
         "tool-implementations": [
           "8b5e9c3f-82b4-429c-ad60-49176671d537"
         ],
@@ -341,6 +341,7 @@ export const index = [
       "id": "166cca26-ca4d-4efc-8657-10d2462e811a",
       "url": "https://www.notion.so/Guided-self-service-onboarding-166cca26ca4d4efc865710d2462e811a",
       "title": "Guided self-service onboarding",
+      "description": "meshStack’s tags guide customers to provide the right information at the right time.",
       "properties": {
         "block": [
           "cf487857-542f-4d74-8fe9-885b7be8ccf3"
@@ -348,7 +349,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s tags guide customers to provide the right information at the right time.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
         "name": "Guided self-service onboarding"
       }
@@ -359,6 +359,7 @@ export const index = [
       "id": "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a",
       "url": "https://www.notion.so/Identity-Lifecycle-Management-17a9ca395a774c5e9b0e87b01dc5e57a",
       "title": "**Identity Lifecycle Management**",
+      "description": "meshStack creates and manages identities for each cloud tenant",
       "properties": {
         "block": [
           "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
@@ -366,7 +367,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack creates and manages identities for each cloud tenant",
         "link": "https://docs.meshcloud.io/docs/meshstack.identity-federation.html",
         "name": "**Identity Lifecycle Management**"
       }
@@ -378,6 +378,7 @@ export const index = [
       "id": "18256d4f-e096-4281-809a-f77c5dd20ef0",
       "url": "https://www.notion.so/Service-Account-Management-18256d4fe0964281809af77c5dd20ef0",
       "title": "Service Account Management",
+      "description": "Managed provisioning and inventory of Service Accounts including their permission sets. Enables central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -389,7 +390,6 @@ export const index = [
           "137ac22d-b96c-4d49-aa83-da5779e3d59c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Managed provisioning and inventory of Service Accounts including their permission sets. Enables central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.",
         "tool-implementations": [],
         "name": "Service Account Management"
       }
@@ -401,6 +401,7 @@ export const index = [
       "id": "1a1cdeb0-de7e-4ea9-a963-e409b9abed54",
       "url": "https://www.notion.so/Shared-container-registry-1a1cdeb0de7e4ea9a963e409b9abed54",
       "title": "Shared container registry",
+      "description": "A central repository provides hardened container images.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -409,7 +410,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A central repository provides hardened container images.",
         "tool-implementations": [],
         "name": "Shared container registry"
       }
@@ -421,6 +421,7 @@ export const index = [
       "id": "1afea746-da65-4164-9029-5e0bfa9432b1",
       "url": "https://www.notion.so/Privileged-Access-Management-1afea746da65416490295e0bfa9432b1",
       "title": "Privileged Access Management",
+      "description": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs). ",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -433,7 +434,6 @@ export const index = [
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
         ],
         "scope": "☁️ Platform",
-        "summary": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs). ",
         "tool-implementations": [],
         "name": "Privileged Access Management"
       }
@@ -445,6 +445,7 @@ export const index = [
       "id": "2468d240-6cca-4680-b9c4-6f237defa511",
       "url": "https://www.notion.so/On-Premise-Network-Connection-2468d2406cca4680b9c46f237defa511",
       "title": "On-Premise Network Connection",
+      "description": "Provides managed IP (L3) connectivity to on-premises networks. This is commonly implemented using hub&spoke network architectures and a combination of VPNs or private network peerings.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -455,7 +456,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed IP (L3) connectivity to on-premises networks. This is commonly implemented using hub&spoke network architectures and a combination of VPNs or private network peerings.",
         "tool-implementations": [],
         "name": "On-Premise Network Connection"
       }
@@ -466,6 +466,7 @@ export const index = [
       "id": "254476a2-de92-4724-a06e-65931ebb5aec",
       "url": "https://www.notion.so/Monolithic-Landing-Zone-254476a2de924724a06e65931ebb5aec",
       "title": "Monolithic Landing Zone",
+      "description": "meshStack enables you to create monolithic landing zones for all major public/private cloud platforms:\n- AWS\n- Azure\n- GCP\n- OpenShift\n- Kubernetes",
       "properties": {
         "block": [
           "57c00ed4-e699-4167-a0f5-6009bf31b600"
@@ -473,7 +474,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack enables you to create monolithic landing zones for all major public/private cloud platforms:\n- AWS\n- Azure\n- GCP\n- OpenShift\n- Kubernetes",
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Monolithic Landing Zone"
       }
@@ -485,6 +485,7 @@ export const index = [
       "id": "28740e92-5559-4931-ab04-17cfb026edd5",
       "url": "https://www.notion.so/Monthly-Cloud-Project-Billing-Report-28740e9255594931ab0417cfb026edd5",
       "title": "Monthly Cloud Project Billing Report",
+      "description": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -497,7 +498,6 @@ export const index = [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
         "scope": "🏢 Core",
-        "summary": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
         "tool-implementations": [
           "59cdf884-5bd2-4b55-87f8-824a4a35623c"
         ],
@@ -510,6 +510,7 @@ export const index = [
       "id": "2896046e-fd61-4fa7-b381-67bb4f8893b2",
       "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-2896046efd614fa7b38167bb4f8893b2",
       "title": "**Monthly cloud tenant billing report**",
+      "description": "meshStack generates so-called tenant usage reports that contain the specific resources consumed within a cloud tenant in a given month. These tenant usage reports are visible for cloud tenant owners at any time.",
       "properties": {
         "block": [
           "cd162600-e742-4a80-b022-989da423ca43"
@@ -517,7 +518,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack generates so-called tenant usage reports that contain the specific resources consumed within a cloud tenant in a given month. These tenant usage reports are visible for cloud tenant owners at any time.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#tenant-usage-reports",
         "name": "**Monthly cloud tenant billing report**"
       }
@@ -529,6 +529,7 @@ export const index = [
       "id": "2be4d7d1-4109-406b-a4f7-da6c566123fd",
       "url": "https://www.notion.so/Virtual-Network-Service-2be4d7d14109406ba4f7da6c566123fd",
       "title": "Virtual Network Service",
+      "description": "A virtual network service provides a pre-configured virtual network. It is a pre-requisite for higher-level services built on virtual networks.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -544,7 +545,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A virtual network service provides a pre-configured virtual network. It is a pre-requisite for higher-level services built on virtual networks.",
         "tool-implementations": [],
         "name": "Virtual Network Service"
       }
@@ -556,6 +556,7 @@ export const index = [
       "id": "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
       "url": "https://www.notion.so/Centralized-audit-logs-2c7cfeb1248143b8b31c82cb5ba3375f",
       "title": "Centralized audit logs",
+      "description": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored. ",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -565,7 +566,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored. ",
         "tool-implementations": [],
         "name": "Centralized audit logs"
       }
@@ -587,6 +587,7 @@ export const index = [
       "id": "321cc809-0eec-477f-8f75-6d39da0c8b1a",
       "url": "https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a",
       "title": "🔖 Security & Compliance",
+      "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.",
       "category": "Understanding Cloud Foundation",
       "order": 22
     }
@@ -596,6 +597,7 @@ export const index = [
       "id": "334eb216-fa16-4946-9fe5-8f66bb7fc3fa",
       "url": "https://www.notion.so/meshStack-Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa",
       "title": "meshStack **Self-Service Multi-Cloud Tenant Database**",
+      "description": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
       "properties": {
         "block": [
           "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
@@ -603,7 +605,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
         "name": "meshStack **Self-Service Multi-Cloud Tenant Database**"
       }
@@ -615,6 +616,7 @@ export const index = [
       "id": "344b75a4-595b-4ba5-8851-ddfb6d4acf7c",
       "url": "https://www.notion.so/Cloud-Resource-Tagging-344b75a4595b4ba58851ddfb6d4acf7c",
       "title": "Cloud Resource Tagging",
+      "description": "Cloud resources are tagged using a consistent tagging strategy to facilitate security and compliance processes for cloud workloads.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -626,7 +628,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud resources are tagged using a consistent tagging strategy to facilitate security and compliance processes for cloud workloads.",
         "tool-implementations": [
           "acf452d3-8425-41e2-ba8b-ee212a6fb189"
         ],
@@ -639,6 +640,7 @@ export const index = [
       "id": "3481641d-0686-420d-8487-794acd4f5e04",
       "url": "https://www.notion.so/meshStack-Cloud-Tenant-Database-3481641d0686420d8487794acd4f5e04",
       "title": "meshStack Cloud Tenant Database",
+      "description": "meshStack maintains an always-up-to-date list of cloud tenants active in the organization, including their applied metadata.",
       "properties": {
         "block": [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
@@ -646,7 +648,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack maintains an always-up-to-date list of cloud tenants active in the organization, including their applied metadata.",
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "meshStack Cloud Tenant Database"
       }
@@ -658,6 +659,7 @@ export const index = [
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
       "url": "https://www.notion.so/Identity-and-Access-Management-Concept-37862f9f3d8a4e258e90e487dc455b0c",
       "title": "Identity and Access Management Concept",
+      "description": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -672,7 +674,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
         "tool-implementations": [],
         "name": "Identity and Access Management Concept"
       }
@@ -683,6 +684,7 @@ export const index = [
       "id": "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
       "url": "https://www.notion.so/Managed-DevOps-toolchains-with-meshStack-3c377c143fbf4766a47ae30bd070ed7f",
       "title": "Managed DevOps toolchains with meshStack",
+      "description": "meshStack allows cloud foundation teams to provide additional services via a marketplace. DevOps teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
       "properties": {
         "block": [
           "71143f29-2fe9-452b-8398-fc40f270a2b6"
@@ -690,7 +692,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows cloud foundation teams to provide additional services via a marketplace. DevOps teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Managed DevOps toolchains with meshStack"
       }
@@ -702,6 +703,7 @@ export const index = [
       "id": "3c65a957-cb62-40fe-978e-709e3450f7fe",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-3c65a957cb6240fe978e709e3450f7fe",
       "title": "Individual Project Cost Optimization via Reservations",
+      "description": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -710,7 +712,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
         "tool-implementations": [
           "4d280fde-532f-4eb2-9c9c-da2c9ece3c24"
         ],
@@ -724,6 +725,7 @@ export const index = [
       "id": "3c7081e5-c451-40b6-806d-a8d21b130612",
       "url": "https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612",
       "title": "Certified ISMS Compliance",
+      "description": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -735,7 +737,6 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
         "tool-implementations": [],
         "name": "Certified ISMS Compliance"
       }
@@ -747,6 +748,7 @@ export const index = [
       "id": "42fae8c2-1ef8-4e1e-bcb4-eb6ca1520ec4",
       "url": "https://www.notion.so/Kubernetes-Cluster-as-a-Service-42fae8c21ef84e1ebcb4eb6ca1520ec4",
       "title": "Kubernetes Cluster as a Service",
+      "description": "Provides Kubernetes Clusters as a Service. These are deployed as workloads into the customer's cloud tenants.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -756,7 +758,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides Kubernetes Clusters as a Service. These are deployed as workloads into the customer's cloud tenants.",
         "tool-implementations": [],
         "name": "Kubernetes Cluster as a Service"
       }
@@ -767,6 +768,7 @@ export const index = [
       "id": "431fe444-0b73-4592-b525-7e09a48a6457",
       "url": "https://www.notion.so/Private-Cloud-Tenant-Deprovisioning-with-meshStack-431fe4440b734592b5257e09a48a6457",
       "title": "Private Cloud Tenant Deprovisioning with meshStack",
+      "description": "meshStack automates tenant lifecycle management for private cloud platforms OpenStack and Cloud Foundry including decommissioning. An automated resource check ensures customers delete all workload before decommissioning the tenant. ",
       "properties": {
         "block": [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
@@ -774,7 +776,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automates tenant lifecycle management for private cloud platforms OpenStack and Cloud Foundry including decommissioning. An automated resource check ensures customers delete all workload before decommissioning the tenant. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.platforms.html#deprovisioning--deleting-projects",
         "name": "Private Cloud Tenant Deprovisioning with meshStack"
       }
@@ -786,6 +787,7 @@ export const index = [
       "id": "456f15f2-299e-4a8b-a8c9-cb0580a887d2",
       "url": "https://www.notion.so/Identity-Lifecycle-Management-456f15f2299e4a8ba8c9cb0580a887d2",
       "title": "Identity Lifecycle Management",
+      "description": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -798,7 +800,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
         "tool-implementations": [
           "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a"
         ],
@@ -821,6 +822,7 @@ export const index = [
       "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24",
       "title": "**Individual Project Cost Optimization via Reservations**",
+      "description": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
       "properties": {
         "block": [
           "3c65a957-cb62-40fe-978e-709e3450f7fe"
@@ -828,7 +830,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html",
         "name": "**Individual Project Cost Optimization via Reservations**"
       }
@@ -849,6 +850,7 @@ export const index = [
       "id": "507e5776-239f-4a65-a6f5-d4944536e35a",
       "url": "https://www.notion.so/Manage-access-to-Cloud-Zones-with-meshStack-507e5776239f4a65a6f5d4944536e35a",
       "title": "Manage access to Cloud Zones with meshStack",
+      "description": "meshStack’s tags and policies are ideal for making Cloud Zones available to exactly the right customers.",
       "properties": {
         "block": [
           "dc16dccf-7530-4179-a8e2-b82cc54b990f"
@@ -856,7 +858,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack’s tags and policies are ideal for making Cloud Zones available to exactly the right customers.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.policies.html",
         "name": "Manage access to Cloud Zones with meshStack"
       }
@@ -867,6 +868,7 @@ export const index = [
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786",
       "title": "**Multi-cloud tenant database integrated with lifecycle management**",
+      "description": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
       "properties": {
         "block": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef"
@@ -874,7 +876,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "**Multi-cloud tenant database integrated with lifecycle management**"
       }
@@ -886,6 +887,7 @@ export const index = [
       "id": "52d1e517-9d07-4acc-8c59-17526fa3af9d",
       "url": "https://www.notion.so/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d",
       "title": "Cloud Tenant Tagging",
+      "description": "Cloud tenants are tagged using a consistent tagging strategy to facilitate cloud platform operations.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -899,7 +901,6 @@ export const index = [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenants are tagged using a consistent tagging strategy to facilitate cloud platform operations.",
         "tool-implementations": [
           "71c1b0fb-2eea-4492-bbb8-05a83098544c",
           "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
@@ -914,6 +915,7 @@ export const index = [
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
       "url": "https://www.notion.so/Cost-Management-57502241e2f44b759e33de39b26a6eb8",
       "title": "💵 Cost Management",
+      "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services.",
       "category": "Understanding Cloud Foundation",
       "order": 23
     }
@@ -924,6 +926,7 @@ export const index = [
       "id": "57c00ed4-e699-4167-a0f5-6009bf31b600",
       "url": "https://www.notion.so/Monolithic-Landing-Zone-57c00ed4e6994167a0f56009bf31b600",
       "title": "Monolithic Landing Zone",
+      "description": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -933,7 +936,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
         "tool-implementations": [
           "254476a2-de92-4724-a06e-65931ebb5aec"
         ],
@@ -947,6 +949,7 @@ export const index = [
       "id": "57c521ba-73a4-4187-a507-bbd5eaa80212",
       "url": "https://www.notion.so/Shared-Responsibility-Model-57c521ba73a44187a507bbd5eaa80212",
       "title": "Shared Responsibility Model",
+      "description": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -959,7 +962,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
         "tool-implementations": [
           "c596a5f1-dc63-46b6-8d1f-25dcf12ff484"
         ],
@@ -972,6 +974,7 @@ export const index = [
       "id": "59cdf884-5bd2-4b55-87f8-824a4a35623c",
       "url": "https://www.notion.so/Monthly-cloud-project-billing-report-59cdf8845bd24b5587f8824a4a35623c",
       "title": "**Monthly cloud project billing report**",
+      "description": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
       "properties": {
         "block": [
           "28740e92-5559-4931-ab04-17cfb026edd5"
@@ -979,7 +982,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
         "name": "**Monthly cloud project billing report**"
       }
@@ -998,6 +1000,7 @@ export const index = [
       "id": "621771b3-97a0-4c4e-80ab-3331cd6719f0",
       "url": "https://www.notion.so/Service-Ecosystem-621771b397a04c4e80ab3331cd6719f0",
       "title": "🛠 Service Ecosystem",
+      "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services.",
       "category": "Understanding Cloud Foundation",
       "order": 24
     }
@@ -1007,6 +1010,7 @@ export const index = [
       "id": "635ebffa-17e9-4231-9d38-b59625be9b03",
       "url": "https://www.notion.so/Check-monthly-cloud-tenant-costs-with-collie-635ebffa17e942319d38b59625be9b03",
       "title": "Check monthly cloud tenant costs with collie",
+      "description": "Open-source Collie CLI allows you to view monthly costs per tenant across AWS, Azure & GCP for a given timeframe.",
       "properties": {
         "block": [
           "cd162600-e742-4a80-b022-989da423ca43"
@@ -1014,7 +1018,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Open-source Collie CLI allows you to view monthly costs per tenant across AWS, Azure & GCP for a given timeframe.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
         "name": "Check monthly cloud tenant costs with collie"
       }
@@ -1036,6 +1039,7 @@ export const index = [
       "id": "64284b14-faab-461c-80bb-5e8efbae4dcc",
       "url": "https://www.notion.so/Tenant-Inventory-Reconciliation-64284b14faab461c80bb5e8efbae4dcc",
       "title": "Tenant Inventory Reconciliation",
+      "description": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1045,7 +1049,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
         "tool-implementations": [
           "9b740724-686e-45f2-8924-9000279b806b"
         ],
@@ -1058,6 +1061,7 @@ export const index = [
       "id": "65b1a609-a258-4e93-898c-9d115b6e32c5",
       "url": "https://www.notion.so/Mulit-cloud-tenant-database-65b1a609a2584e93898c9d115b6e32c5",
       "title": "Mulit-cloud tenant database",
+      "description": "meshStack automatically maintains a database of all tenants under management by the cloud foundation.",
       "properties": {
         "block": [
           "11af37b7-c948-4486-a5da-5b1db6de8193"
@@ -1065,7 +1069,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically maintains a database of all tenants under management by the cloud foundation.",
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "Mulit-cloud tenant database"
       }
@@ -1077,6 +1080,7 @@ export const index = [
       "id": "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
       "url": "https://www.notion.so/Managed-bastion-hosts-6c9827e973b249f5bfb53fe23fd5b9e9",
       "title": "Managed bastion hosts",
+      "description": "Teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1087,7 +1091,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
         "tool-implementations": [],
         "name": "Managed bastion hosts"
       }
@@ -1099,6 +1102,7 @@ export const index = [
       "id": "6e343acc-95bd-42aa-bb32-bdcce1c7d4ad",
       "url": "https://www.notion.so/Tenant-to-Tenant-Transit-Networks-6e343acc95bd42aabb32bdcce1c7d4ad",
       "title": "Tenant to Tenant Transit Networks",
+      "description": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks. ",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1109,7 +1113,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks. ",
         "tool-implementations": [],
         "name": "Tenant to Tenant Transit Networks"
       }
@@ -1121,6 +1124,7 @@ export const index = [
       "id": "707c41b8-6da0-4e78-b982-fa4b1365521b",
       "url": "https://www.notion.so/Multi-Cloud-Tagging-Policy-707c41b86da04e78b982fa4b1365521b",
       "title": "Multi-Cloud Tagging Policy",
+      "description": "Define and enforce a consistent tagging of cloud tenants and resource across multiple cloud platforms.  ",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1135,7 +1139,6 @@ export const index = [
           "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
         ],
         "scope": "🏢 Core",
-        "summary": "Define and enforce a consistent tagging of cloud tenants and resource across multiple cloud platforms.  ",
         "tool-implementations": [
           "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
           "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
@@ -1150,6 +1153,7 @@ export const index = [
       "id": "71143f29-2fe9-452b-8398-fc40f270a2b6",
       "url": "https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6",
       "title": "Managed DevOps Toolchain",
+      "description": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1159,7 +1163,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
         "tool-implementations": [
           "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
           "04470deb-8ef1-4c49-bcec-7243426790b5"
@@ -1173,6 +1176,7 @@ export const index = [
       "id": "71c1b0fb-2eea-4492-bbb8-05a83098544c",
       "url": "https://www.notion.so/meshStack-Tenant-Tagging-71c1b0fb2eea4492bbb805a83098544c",
       "title": "meshStack Tenant Tagging",
+      "description": "meshStack ensures up-to-date tags at least once a day for all cloud tenants based on metadata entered by cloud tenant owners and/or platform operators. ",
       "properties": {
         "block": [
           "52d1e517-9d07-4acc-8c59-17526fa3af9d"
@@ -1180,7 +1184,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack ensures up-to-date tags at least once a day for all cloud tenants based on metadata entered by cloud tenant owners and/or platform operators. ",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#tags-in-cloud-tenants",
         "name": "meshStack Tenant Tagging"
       }
@@ -1191,6 +1194,7 @@ export const index = [
       "id": "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
       "url": "https://www.notion.so/Central-Management-of-Tenant-tags-and-metadata-73cfa3f416ed40cf9c750611aad78d0b",
       "title": "Central Management of Tenant tags and metadata",
+      "description": "meshStack makes metadata an integral part of the tenant provisioning process and allows cloud foundation teams to create a full customizable list of tags that should be filled in by cloud tenant owners.",
       "properties": {
         "block": [
           "707c41b8-6da0-4e78-b982-fa4b1365521b"
@@ -1198,7 +1202,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack makes metadata an integral part of the tenant provisioning process and allows cloud foundation teams to create a full customizable list of tags that should be filled in by cloud tenant owners.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
         "name": "Central Management of Tenant tags and metadata"
       }
@@ -1210,6 +1213,7 @@ export const index = [
       "id": "74295ae4-dcd5-449b-8825-f12c5267e89b",
       "url": "https://www.notion.so/SOC-Integration-74295ae4dcd5449b8825f12c5267e89b",
       "title": "SOC Integration",
+      "description": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like tenable.io or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1218,7 +1222,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like tenable.io or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
         "tool-implementations": [],
         "name": "SOC Integration"
       }
@@ -1230,6 +1233,7 @@ export const index = [
       "id": "74bf9fe5-6bd5-4940-9714-aad2b25e03c4",
       "url": "https://www.notion.so/Managed-Data-Lake-access-74bf9fe56bd549409714aad2b25e03c4",
       "title": "Managed Data Lake access",
+      "description": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1238,7 +1242,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
         "tool-implementations": [],
         "name": "Managed Data Lake access"
       }
@@ -1249,6 +1252,7 @@ export const index = [
       "id": "7547a774-2b9f-45fc-9123-fbb2e48ccd09",
       "url": "https://www.notion.so/collie-analyze-tags-7547a7742b9f45fc9123fbb2e48ccd09",
       "title": "collie analyze tags",
+      "description": "Get a quick overview of cloud tenant tags with open-source Collie CLI across AWS, Azure & GCP.",
       "properties": {
         "block": [
           "707c41b8-6da0-4e78-b982-fa4b1365521b",
@@ -1257,7 +1261,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Get a quick overview of cloud tenant tags with open-source Collie CLI across AWS, Azure & GCP.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "collie analyze tags"
       }
@@ -1269,6 +1272,7 @@ export const index = [
       "id": "77942f5f-e395-49c6-8927-e5fa3ef28aef",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-77942f5fe39549c68927e5fa3ef28aef",
       "title": "Multi-cloud tenant database integrated with lifecycle management",
+      "description": "A central database of all multi-cloud tenants initiates tenant provisioning and deprovisioning processes. The database acts as an authoritative source of tenants and ensures tenant metadata is always up to date.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1282,7 +1286,6 @@ export const index = [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
         "scope": "🏢 Core",
-        "summary": "A central database of all multi-cloud tenants initiates tenant provisioning and deprovisioning processes. The database acts as an authoritative source of tenants and ensures tenant metadata is always up to date.",
         "tool-implementations": [
           "5154be86-47d3-4453-888d-102be5b07786"
         ],
@@ -1296,6 +1299,7 @@ export const index = [
       "id": "78586f52-5868-4ff6-b59b-5b71e66affd5",
       "url": "https://www.notion.so/In-house-PaaS-Service-Integration-78586f5258684ff6b59b5b71e66affd5",
       "title": "In-house PaaS Service Integration",
+      "description": "In-house teams provide PaaS services for commonly needed infrastructure services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1304,7 +1308,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "In-house teams provide PaaS services for commonly needed infrastructure services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
         "tool-implementations": [],
         "name": "In-house PaaS Service Integration"
       }
@@ -1326,6 +1329,7 @@ export const index = [
       "id": "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
       "url": "https://www.notion.so/Incident-Management-Process-802fdd8d7fc04749937fe9e0ccb3f273",
       "title": "Incident Management Process",
+      "description": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners. ",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1337,7 +1341,6 @@ export const index = [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
         ],
         "scope": "🏢 Core",
-        "summary": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners. ",
         "tool-implementations": [],
         "name": "Incident Management Process"
       }
@@ -1355,6 +1358,7 @@ export const index = [
       "id": "8b5e9c3f-82b4-429c-ad60-49176671d537",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-8b5e9c3f82b4429cad6049176671d537",
       "title": "Playground / Sandbox Environments",
+      "description": "Through the use of meshStack’s landing zones, platform operators can create a dedicated path for cloud tenant owners to quickly spin up a new playground / sandbox environment.",
       "properties": {
         "block": [
           "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
@@ -1362,7 +1366,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "Through the use of meshStack’s landing zones, platform operators can create a dedicated path for cloud tenant owners to quickly spin up a new playground / sandbox environment.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
         "name": "Playground / Sandbox Environments"
       }
@@ -1374,6 +1377,7 @@ export const index = [
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
       "url": "https://www.notion.so/Modular-Landing-Zones-913a8ad17ad44ade9e88801a7afa4b40",
       "title": "Modular Landing Zones",
+      "description": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1383,7 +1387,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
         "tool-implementations": [
           "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14"
         ],
@@ -1396,6 +1399,7 @@ export const index = [
       "id": "9b740724-686e-45f2-8924-9000279b806b",
       "url": "https://www.notion.so/Tenant-Inventory-Reconciliation-9b740724686e45f289249000279b806b",
       "title": "Tenant Inventory Reconciliation",
+      "description": "meshStack gives an overview of unmanaged tenants. These are tenants that are not yet under management of the cloud foundation team and they can be easily imported into the governance model.",
       "properties": {
         "block": [
           "64284b14-faab-461c-80bb-5e8efbae4dcc"
@@ -1403,7 +1407,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack gives an overview of unmanaged tenants. These are tenants that are not yet under management of the cloud foundation team and they can be easily imported into the governance model.",
         "link": "https://docs.meshcloud.io/docs/administration.unmanaged-tenants.html",
         "name": "Tenant Inventory Reconciliation"
       }
@@ -1415,6 +1418,7 @@ export const index = [
       "id": "9ee0a54d-9b9e-47dd-9fc0-9d81213ce76c",
       "url": "https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c",
       "title": "🔐 IAM",
+      "description": "Provide Identity and Access management capabilities for all available cloud platforms and services.",
       "category": "Understanding Cloud Foundation",
       "order": 21
     }
@@ -1425,6 +1429,7 @@ export const index = [
       "id": "a31e4077-4e84-4129-a46c-1070a8591181",
       "url": "https://www.notion.so/Cloud-to-Cloud-interconnects-a31e40774e844129a46c1070a8591181",
       "title": "Cloud to Cloud interconnects",
+      "description": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks. ",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1435,7 +1440,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks. ",
         "tool-implementations": [],
         "name": "Cloud to Cloud interconnects"
       }
@@ -1457,6 +1461,7 @@ export const index = [
       "id": "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
       "url": "https://www.notion.so/Self-Service-Multi-Cloud-Tenant-Database-ab10bed170d547cfb3cd4a4448bdb9a9",
       "title": "Self-Service Multi-Cloud Tenant Database",
+      "description": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1468,7 +1473,6 @@ export const index = [
           "11af37b7-c948-4486-a5da-5b1db6de8193"
         ],
         "scope": "🏢 Core",
-        "summary": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
         "tool-implementations": [
           "e2123339-0641-4d44-b774-32ce23fd634d",
           "334eb216-fa16-4946-9fe5-8f66bb7fc3fa"
@@ -1483,6 +1487,7 @@ export const index = [
       "id": "ac8a21c3-f692-4d23-a9bb-796fd311c39f",
       "url": "https://www.notion.so/Resource-Hierarchy-ac8a21c3f6924d23a9bb796fd311c39f",
       "title": "Resource Hierarchy",
+      "description": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1492,7 +1497,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
         "tool-implementations": [
           "11f50039-a1d6-49de-9fbd-247a1955b474"
         ],
@@ -1505,6 +1509,7 @@ export const index = [
       "id": "acf452d3-8425-41e2-ba8b-ee212a6fb189",
       "url": "https://www.notion.so/meshcloud-Cloud-Foundation-CLI-tool-acf452d3842541e2ba8bee212a6fb189",
       "title": "meshcloud Cloud Foundation CLI tool",
+      "description": "With Collie CLI you can find out within minutes what your current cloud tagging strategy looks like; across AWS, Azure, and GCP.",
       "properties": {
         "block": [
           "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
@@ -1512,7 +1517,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "With Collie CLI you can find out within minutes what your current cloud tagging strategy looks like; across AWS, Azure, and GCP.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "meshcloud Cloud Foundation CLI tool"
       }
@@ -1524,6 +1528,7 @@ export const index = [
       "id": "b0a04ae8-c9b3-4060-abfd-e760723995d8",
       "url": "https://www.notion.so/Centralized-workload-and-infrastructure-logs-b0a04ae8c9b34060abfde760723995d8",
       "title": "Centralized workload and infrastructure logs",
+      "description": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored. ",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1532,7 +1537,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored. ",
         "tool-implementations": [],
         "name": "Centralized workload and infrastructure logs"
       }
@@ -1544,6 +1548,7 @@ export const index = [
       "id": "b4678790-ab53-4219-83e7-fbde18383d05",
       "url": "https://www.notion.so/Federated-Identity-and-Authentication-b4678790ab53421983e7fbde18383d05",
       "title": "Federated Identity and Authentication",
+      "description": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication. ",
       "category": "🔐 IAM",
       "layout": "CFMMBlock",
       "properties": {
@@ -1557,7 +1562,6 @@ export const index = [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "scope": "☁️ Platform",
-        "summary": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication. ",
         "tool-implementations": [],
         "name": "Federated Identity and Authentication"
       }
@@ -1569,6 +1573,7 @@ export const index = [
       "id": "b6b24f70-3fba-4f67-a375-2b0d26a16324",
       "url": "https://www.notion.so/Global-Cost-Optimization-via-Reservations-b6b24f703fba4f67a3752b0d26a16324",
       "title": "Global Cost Optimization via Reservations",
+      "description": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers. ",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1578,7 +1583,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers. ",
         "tool-implementations": [],
         "name": "Global Cost Optimization via Reservations"
       }
@@ -1590,6 +1594,7 @@ export const index = [
       "id": "b875ac41-2b38-4ce4-ab8b-76ddd876d789",
       "url": "https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789",
       "title": "Cloud Tenant Database",
+      "description": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1602,7 +1607,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
         "tool-implementations": [
           "3481641d-0686-420d-8487-794acd4f5e04",
           "e2123339-0641-4d44-b774-32ce23fd634d"
@@ -1617,6 +1621,7 @@ export const index = [
       "id": "bd309e8a-9ecd-4a0d-a3c3-b464f734ca54",
       "url": "https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54",
       "title": "🗂 Tenant Management",
+      "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts).",
       "category": "Understanding Cloud Foundation",
       "order": 20
     }
@@ -1626,6 +1631,7 @@ export const index = [
       "id": "c3af4eea-6d9a-4c64-a117-ec018524979a",
       "url": "https://www.notion.so/Offer-internal-services-on-meshStack-marketplace-c3af4eea6d9a4c64a117ec018524979a",
       "title": "Offer internal services on meshStack marketplace",
+      "description": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
       "properties": {
         "block": [
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
@@ -1633,7 +1639,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Offer internal services on meshStack marketplace"
       }
@@ -1651,6 +1656,7 @@ export const index = [
       "id": "c596a5f1-dc63-46b6-8d1f-25dcf12ff484",
       "url": "https://www.notion.so/meshcloud-Cloud-Foundation-Stakeholder-Map-c596a5f1dc6346b68d1f25dcf12ff484",
       "title": "meshcloud Cloud Foundation Stakeholder Map",
+      "description": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.",
       "properties": {
         "block": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
@@ -1658,7 +1664,6 @@ export const index = [
         "tool": [
           "84cf2301-844f-4e77-8f86-ed3d9244d623"
         ],
-        "summary": "A good place to get started with a shared responsibility model is getting a clear picture of the involved parties. \n\nA Stakeholder Map lists Stakeholder and is a useful starting point for a Shared Responsibility Model.",
         "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
         "name": "meshcloud Cloud Foundation Stakeholder Map"
       }
@@ -1669,6 +1674,7 @@ export const index = [
       "id": "c7b3902e-6708-4b0e-9e43-776f863baa3e",
       "url": "https://www.notion.so/Private-Cloud-Metering-with-meshStack-c7b3902e67084b0e9e43776f863baa3e",
       "title": "Private Cloud Metering with meshStack",
+      "description": "meshStack supports out of the box private cloud metering for:\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
       "properties": {
         "block": [
           "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6"
@@ -1676,7 +1682,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack supports out of the box private cloud metering for:\n- OpenStack\n- Cloud Foundry\n- OpenShift\n- Kubernetes",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing.html#private-cloud-billing-with-meshcloud",
         "name": "Private Cloud Metering with meshStack"
       }
@@ -1687,6 +1692,7 @@ export const index = [
       "id": "c88e6212-2a64-431f-a404-b39742574404",
       "url": "https://www.notion.so/Consumption-based-pay-per-use-for-internal-services-c88e62122a64431fa404b39742574404",
       "title": "Consumption based pay-per-use for internal services",
+      "description": "meshStack offers a marketplace where the cloud foundation team (or other teams) can offer internal services. This also support the use of customizable pay-per-use metering, e.g. pay $0.001 per API request or $1 per GB stored.",
       "properties": {
         "block": [
           "d2cb8a5e-3e28-448b-8944-14ff38fad792"
@@ -1694,7 +1700,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack offers a marketplace where the cloud foundation team (or other teams) can offer internal services. This also support the use of customizable pay-per-use metering, e.g. pay $0.001 per API request or $1 per GB stored.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Consumption based pay-per-use for internal services"
       }
@@ -1706,6 +1711,7 @@ export const index = [
       "id": "c9728af5-49fe-4948-8701-2d6485bfbe93",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-c9728af549fe494887012d6485bfbe93",
       "title": "Pay-per-Use for internal Services",
+      "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1718,7 +1724,6 @@ export const index = [
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
         "scope": "🏢 Core",
-        "summary": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
         "tool-implementations": [
           "0db736c5-6801-4619-92a6-97c3842c907c"
         ],
@@ -1731,6 +1736,7 @@ export const index = [
       "id": "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14",
       "url": "https://www.notion.so/Modular-Landing-Zones-with-meshStack-ccba2e9a1bc04b538d5e4773680d9e14",
       "title": "Modular Landing Zones with meshStack",
+      "description": "meshStack enables the use of modular landing zones by building marketplace services on top of landing zones.",
       "properties": {
         "block": [
           "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
@@ -1738,7 +1744,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack enables the use of modular landing zones by building marketplace services on top of landing zones.",
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Modular Landing Zones with meshStack"
       }
@@ -1749,6 +1754,7 @@ export const index = [
       "id": "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
       "url": "https://www.notion.so/Onboarding-Portal-cce0a290fdb4412dbfc7da0ae83a53a6",
       "title": "Onboarding Portal",
+      "description": "The API of meshStack can be connected to an external onboarding portal to help provision cloud tenants and introduce an approval flow for getting cloud access.",
       "properties": {
         "block": [
           "cf487857-542f-4d74-8fe9-885b7be8ccf3"
@@ -1756,7 +1762,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "The API of meshStack can be connected to an external onboarding portal to help provision cloud tenants and introduce an approval flow for getting cloud access.",
         "link": "https://docs.meshcloud.io/docs/meshstack.onboarding.html#customer-registration",
         "name": "Onboarding Portal"
       }
@@ -1768,6 +1773,7 @@ export const index = [
       "id": "cd162600-e742-4a80-b022-989da423ca43",
       "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-cd162600e7424a80b022989da423ca43",
       "title": "Monthly cloud tenant billing report",
+      "description": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1780,7 +1786,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
         "tool-implementations": [
           "635ebffa-17e9-4231-9d38-b59625be9b03",
           "2896046e-fd61-4fa7-b381-67bb4f8893b2"
@@ -1795,6 +1800,7 @@ export const index = [
       "id": "ce20312c-aa7a-453f-82f2-f186469dd973",
       "url": "https://www.notion.so/Monthly-Cloud-Project-Carbon-Footprint-Report-ce20312caa7a453f82f2f186469dd973",
       "title": "Monthly Cloud Project Carbon Footprint Report",
+      "description": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1806,7 +1812,6 @@ export const index = [
           "28740e92-5559-4931-ab04-17cfb026edd5"
         ],
         "scope": "🏢 Core",
-        "summary": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
         "tool-implementations": [],
         "name": "Monthly Cloud Project Carbon Footprint Report"
       }
@@ -1818,6 +1823,7 @@ export const index = [
       "id": "cf125421-fd90-4bff-a4c6-f7c994a14591",
       "url": "https://www.notion.so/API-Gateway-to-on-premises-APIs-cf125421fd904bffa4c6f7c994a14591",
       "title": "API Gateway to on-premises APIs",
+      "description": "Provide managed API (L7) connectivity to APIs running in on-premise environments.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1826,7 +1832,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Provide managed API (L7) connectivity to APIs running in on-premise environments.",
         "tool-implementations": [],
         "name": "API Gateway to on-premises APIs"
       }
@@ -1838,6 +1843,7 @@ export const index = [
       "id": "cf487857-542f-4d74-8fe9-885b7be8ccf3",
       "url": "https://www.notion.so/Onboarding-Portal-cf487857542f4d748fe9885b7be8ccf3",
       "title": "Onboarding Portal",
+      "description": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1847,7 +1853,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
         "tool-implementations": [
           "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
           "166cca26-ca4d-4efc-8657-10d2462e811a"
@@ -1862,6 +1867,7 @@ export const index = [
       "id": "d1904912-b420-4a10-a62c-aa578fb847ff",
       "url": "https://www.notion.so/Resource-Policies-Blacklisting-d1904912b4204a10a62caa578fb847ff",
       "title": "Resource Policies - Blacklisting",
+      "description": "Basic policies on cloud resources enforce Blacklisting of forbidden services, regions.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -1871,7 +1877,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "Basic policies on cloud resources enforce Blacklisting of forbidden services, regions.",
         "tool-implementations": [],
         "name": "Resource Policies - Blacklisting"
       }
@@ -1882,6 +1887,7 @@ export const index = [
       "id": "d24b4c3a-1f97-4426-8999-f82a97bf1e75",
       "url": "https://www.notion.so/Tenant-provisioning-with-meshStack-d24b4c3a1f9744268999f82a97bf1e75",
       "title": "Tenant provisioning with meshStack",
+      "description": "meshStack automatically provisions and reconciles cloud tenants based on the desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
       "properties": {
         "block": [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
@@ -1890,7 +1896,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack automatically provisions and reconciles cloud tenants based on the desired state. This includes metadata (tags) as well as authorization (role assignments, groups).",
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "Tenant provisioning with meshStack"
       }
@@ -1902,6 +1907,7 @@ export const index = [
       "id": "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
       "url": "https://www.notion.so/Chargeback-at-full-cost-allocation-d2a35b4e7e9e4b1ca09769d0e8ce02f1",
       "title": "Chargeback at full cost allocation",
+      "description": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1912,7 +1918,6 @@ export const index = [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
         "tool-implementations": [
           "e129bdf8-7c01-47a7-a524-f764149c2a97"
         ],
@@ -1926,6 +1931,7 @@ export const index = [
       "id": "d2cb8a5e-3e28-448b-8944-14ff38fad792",
       "url": "https://www.notion.so/Consumption-based-pay-per-use-for-internal-Services-d2cb8a5e3e28448b894414ff38fad792",
       "title": "Consumption based pay-per-use for internal Services",
+      "description": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -1937,7 +1943,6 @@ export const index = [
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
         "scope": "🏢 Core",
-        "summary": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
         "tool-implementations": [
           "c88e6212-2a64-431f-a404-b39742574404"
         ],
@@ -1951,6 +1956,7 @@ export const index = [
       "id": "d871cfba-a86d-4ec1-a23d-42c9b3d73352",
       "url": "https://www.notion.so/Managed-Cloud-Provider-Support-Contracts-d871cfbaa86d4ec1a23d42c9b3d73352",
       "title": "Managed Cloud Provider Support Contracts",
+      "description": "Cloud tenant owners can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Owners can access support in self-service and are transparently charged for support fees incurred.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1959,7 +1965,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Owners can access support in self-service and are transparently charged for support fees incurred.",
         "tool-implementations": [],
         "name": "Managed Cloud Provider Support Contracts"
       }
@@ -1971,6 +1976,7 @@ export const index = [
       "id": "d9c211e3-647c-4fd7-bf3b-3c806baeea7f",
       "url": "https://www.notion.so/Shared-VM-Image-Repository-d9c211e3647c4fd7bf3b3c806baeea7f",
       "title": "Shared VM Image Repository",
+      "description": "A central repository provides hardened virtual machine images.",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -1979,7 +1985,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "summary": "A central repository provides hardened virtual machine images.",
         "tool-implementations": [],
         "name": "Shared VM Image Repository"
       }
@@ -1991,6 +1996,7 @@ export const index = [
       "id": "dc16dccf-7530-4179-a8e2-b82cc54b990f",
       "url": "https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f",
       "title": "Cloud Zones",
+      "description": "Regulatory onboarding only captures what is required for getting acces to the cloud",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -2002,7 +2008,6 @@ export const index = [
           "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
         ],
         "scope": "🏢 Core",
-        "summary": "Regulatory onboarding only captures what is required for getting acces to the cloud",
         "tool-implementations": [
           "507e5776-239f-4a65-a6f5-d4944536e35a"
         ],
@@ -2016,6 +2021,7 @@ export const index = [
       "id": "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
       "url": "https://www.notion.so/Tenant-Provisioning-deb9d28ee5924c3cb7da020b7ba6bb0d",
       "title": "Tenant Provisioning",
+      "description": "On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure Subscriptions etc.).",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -2027,7 +2033,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "☁️ Platform",
-        "summary": "On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure Subscriptions etc.).",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
         ],
@@ -2048,6 +2053,7 @@ export const index = [
       "id": "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
       "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-e063e4d281f44bb8ac7a7424ba882161",
       "title": "Chargeback via consumption cost allocation",
+      "description": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -2062,7 +2068,6 @@ export const index = [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
         "scope": "☁️ Platform",
-        "summary": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
         "tool-implementations": [
           "13bd4bac-36f7-466e-a2b8-7f5c9f77c480"
         ],
@@ -2075,6 +2080,7 @@ export const index = [
       "id": "e129bdf8-7c01-47a7-a524-f764149c2a97",
       "url": "https://www.notion.so/Chargeback-at-full-cost-allocation-e129bdf87c0147a7a524f764149c2a97",
       "title": "Chargeback at full cost allocation",
+      "description": "meshStack sends out so-called chargeback statements every month to cloud tenant owners. These statements contain detailed information on consumed resources. meshStack also support custom internal fees, e.g. charge 10% on top of resource consumption or a fixed amount, e.g. $50 per month. This helps the cloud foundation team become a profit center instead of a cost center.",
       "properties": {
         "block": [
           "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
@@ -2082,7 +2088,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack sends out so-called chargeback statements every month to cloud tenant owners. These statements contain detailed information on consumed resources. meshStack also support custom internal fees, e.g. charge 10% on top of resource consumption or a fixed amount, e.g. $50 per month. This helps the cloud foundation team become a profit center instead of a cost center.",
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback at full cost allocation"
       }
@@ -2093,6 +2098,7 @@ export const index = [
       "id": "e2123339-0641-4d44-b774-32ce23fd634d",
       "url": "https://www.notion.so/Collie-Cloud-Tenant-Database-e212333906414d44b77432ce23fd634d",
       "title": "Collie Cloud Tenant Database",
+      "description": "Open-source Collie CLI can give you a list of all active tenants in your organization across AWS, Azure & GCP in minutes. This includes metadata and costs per month.",
       "properties": {
         "block": [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
@@ -2100,7 +2106,6 @@ export const index = [
         "tool": [
           "5c2013b6-4c56-4813-8be7-ad86757014af"
         ],
-        "summary": "Open-source Collie CLI can give you a list of all active tenants in your organization across AWS, Azure & GCP in minutes. This includes metadata and costs per month.",
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-tenants",
         "name": "Collie Cloud Tenant Database"
       }
@@ -2111,6 +2116,7 @@ export const index = [
       "id": "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29",
       "url": "https://www.notion.so/Link-Cloud-Tenants-to-CMDB-EAM-e4b2c4ffb42c4a77bac75f1a2ca24c29",
       "title": "Link Cloud Tenants to CMDB/EAM",
+      "description": "meshStack allows defining custom metadata tags that are applied on the actual cloud tenants in AWS, Azure & GCP. These tags can be used for maintaining connections to CMDB or EAM systems.",
       "properties": {
         "block": [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
@@ -2118,7 +2124,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack allows defining custom metadata tags that are applied on the actual cloud tenants in AWS, Azure & GCP. These tags can be used for maintaining connections to CMDB or EAM systems.",
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#how-to-view-and-define-available-tags",
         "name": "Link Cloud Tenants to CMDB/EAM"
       }
@@ -2130,6 +2135,7 @@ export const index = [
       "id": "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
       "url": "https://www.notion.so/Control-access-to-cloud-platforms-and-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2",
       "title": "Control access to cloud platforms and Landing Zones",
+      "description": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
       "category": "🔖 Security & Compliance",
       "layout": "CFMMBlock",
       "properties": {
@@ -2144,7 +2150,6 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "scope": "🏢 Core",
-        "summary": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
         ],
@@ -2168,6 +2173,7 @@ export const index = [
       "id": "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d",
       "url": "https://www.notion.so/Link-Cloud-Tenants-to-CMDB-EAM-e7d632532e394bbf9dd6da11bb3edd0d",
       "title": "Link Cloud Tenants to CMDB/EAM",
+      "description": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
       "category": "🗂 Tenant Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -2179,7 +2185,6 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
         "tool-implementations": [
           "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29"
         ],
@@ -2193,6 +2198,7 @@ export const index = [
       "id": "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
       "url": "https://www.notion.so/Internal-Service-Marketplace-f077cfd1d8f44c30a1bd4f252b840e4f",
       "title": "Internal Service Marketplace",
+      "description": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -2205,7 +2211,6 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
         "tool-implementations": [
           "c3af4eea-6d9a-4c64-a117-ec018524979a"
         ],
@@ -2218,6 +2223,7 @@ export const index = [
       "id": "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b",
       "url": "https://www.notion.so/Approving-budgets-with-meshStack-f1b54bf15f654c7d85e7d0085f8c2b2b",
       "title": "Approving budgets with meshStack",
+      "description": "meshStack can be set up to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
       "properties": {
         "block": [
           "f96feedc-d969-48f8-adb4-93031cc0a24d"
@@ -2225,7 +2231,6 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "summary": "meshStack can be set up to allow the creation of so-called payment methods (i.e. budgets) by financial administrators only. This ensures that no pre-approved cloud charges can occur.",
         "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html",
         "name": "Approving budgets with meshStack"
       }
@@ -2237,6 +2242,7 @@ export const index = [
       "id": "f90c7375-88b9-42dc-8e98-a65c006b927a",
       "url": "https://www.notion.so/Managed-Internet-Egress-f90c737588b942dc8e98a65c006b927a",
       "title": "Managed Internet Egress",
+      "description": "Cloud tenants can connect to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
       "category": "🛠 Service Ecosystem",
       "layout": "CFMMBlock",
       "properties": {
@@ -2247,7 +2253,6 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "summary": "Cloud tenants can connect to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
         "tool-implementations": [],
         "name": "Managed Internet Egress"
       }
@@ -2259,6 +2264,7 @@ export const index = [
       "id": "f96feedc-d969-48f8-adb4-93031cc0a24d",
       "url": "https://www.notion.so/Budget-Approval-Process-f96feedcd96948f8adb493031cc0a24d",
       "title": "Budget Approval Process",
+      "description": "Budgets are approved by controllers / people with budget responsibility",
       "category": "💵 Cost Management",
       "layout": "CFMMBlock",
       "properties": {
@@ -2267,7 +2273,6 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
-        "summary": "Budgets are approved by controllers / people with budget responsibility",
         "tool-implementations": [
           "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b"
         ],

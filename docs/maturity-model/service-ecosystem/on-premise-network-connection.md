@@ -3,6 +3,10 @@ id: 2468d240-6cca-4680-b9c4-6f237defa511
 url: >-
   https://www.notion.so/On-Premise-Network-Connection-2468d2406cca4680b9c46f237defa511
 title: On-Premise Network Connection
+description: >-
+  Provides managed IP (L3) connectivity to on-premises networks. This is
+  commonly implemented using hub&spoke network architectures and a combination
+  of VPNs or private network peerings.
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:
@@ -12,10 +16,6 @@ properties:
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
   scope: 🛬 Landing Zone
-  summary: >-
-    Provides managed IP (L3) connectivity to on-premises networks. This is
-    commonly implemented using hub&spoke network architectures and a combination
-    of VPNs or private network peerings.
   tool-implementations: []
   name: On-Premise Network Connection
 ---

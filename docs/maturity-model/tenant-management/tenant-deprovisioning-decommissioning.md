@@ -3,6 +3,9 @@ id: 119bfca5-dda6-408c-b35d-c59d0f209fcf
 url: >-
   https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf
 title: Tenant Deprovisioning / Decommissioning
+description: >-
+  Process for decommissioning and deprovisioning cloud tenants that are no
+  longer needed.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -14,9 +17,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Process for decommissioning and deprovisioning cloud tenants that are no
-    longer needed.
   tool-implementations:
     - 431fe444-0b73-4592-b525-7e09a48a6457
   name: Tenant Deprovisioning / Decommissioning

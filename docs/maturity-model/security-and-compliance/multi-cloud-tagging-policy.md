@@ -3,6 +3,9 @@ id: 707c41b8-6da0-4e78-b982-fa4b1365521b
 url: >-
   https://www.notion.so/Multi-Cloud-Tagging-Policy-707c41b86da04e78b982fa4b1365521b
 title: Multi-Cloud Tagging Policy
+description: >-
+  Define and enforce a consistent tagging of cloud tenants and resource across
+  multiple cloud platforms.  
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
@@ -15,9 +18,6 @@ properties:
     - 52d1e517-9d07-4acc-8c59-17526fa3af9d
     - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
   scope: 🏢 Core
-  summary: >-
-    Define and enforce a consistent tagging of cloud tenants and resource across
-    multiple cloud platforms.  
   tool-implementations:
     - 73cfa3f4-16ed-40cf-9c75-0611aad78d0b
     - 7547a774-2b9f-45fc-9123-fbb2e48ccd09

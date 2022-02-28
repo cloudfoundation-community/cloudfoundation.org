@@ -2,6 +2,9 @@
 id: 52d1e517-9d07-4acc-8c59-17526fa3af9d
 url: https://www.notion.so/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d
 title: Cloud Tenant Tagging
+description: >-
+  Cloud tenants are tagged using a consistent tagging strategy to facilitate
+  cloud platform operations.
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
@@ -13,9 +16,6 @@ properties:
   depends-on:
     - b875ac41-2b38-4ce4-ab8b-76ddd876d789
   scope: ☁️ Platform
-  summary: >-
-    Cloud tenants are tagged using a consistent tagging strategy to facilitate
-    cloud platform operations.
   tool-implementations:
     - 71c1b0fb-2eea-4492-bbb8-05a83098544c
     - 7547a774-2b9f-45fc-9123-fbb2e48ccd09

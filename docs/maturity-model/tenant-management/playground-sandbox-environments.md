@@ -3,6 +3,12 @@ id: 155c0ead-cbd0-4e0c-9387-cc57946f80e9
 url: >-
   https://www.notion.so/Playground-Sandbox-Environments-155c0eadcbd04e0c9387cc57946f80e9
 title: Playground / Sandbox Environments
+description: >-
+  DevOps Teams can quickly provision cloud environments for experimentation and
+  learning, thereby accelerating an organization's cloud journey. Playgrounds
+  use relaxed policies (e.g. more cloud services are allowed) but come with
+  time- or spend-limits that are tightly controlled. Expired playgrounds are
+  automatically deprovisioned. 
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -13,12 +19,6 @@ properties:
   depends-on:
     - 119bfca5-dda6-408c-b35d-c59d0f209fcf
   scope: ☁️ Platform
-  summary: >-
-    DevOps Teams can quickly provision cloud environments for experimentation
-    and learning, thereby accelerating an organization's cloud journey.
-    Playgrounds use relaxed policies (e.g. more cloud services are allowed) but
-    come with time- or spend-limits that are tightly controlled. Expired
-    playgrounds are automatically deprovisioned. 
   tool-implementations:
     - 8b5e9c3f-82b4-429c-ad60-49176671d537
   name: Playground / Sandbox Environments

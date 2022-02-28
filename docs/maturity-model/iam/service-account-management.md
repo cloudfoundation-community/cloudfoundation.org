@@ -3,6 +3,11 @@ id: 18256d4f-e096-4281-809a-f77c5dd20ef0
 url: >-
   https://www.notion.so/Service-Account-Management-18256d4fe0964281809af77c5dd20ef0
 title: Service Account Management
+description: >-
+  Managed provisioning and inventory of Service Accounts including their
+  permission sets. Enables central enforcement of compliance policies for
+  technical users like re-certification, credential strength and credential
+  rotation.
 category: 🔐 IAM
 layout: CFMMBlock
 properties:
@@ -13,11 +18,6 @@ properties:
   depends-on:
     - 137ac22d-b96c-4d49-aa83-da5779e3d59c
   scope: ☁️ Platform
-  summary: >-
-    Managed provisioning and inventory of Service Accounts including their
-    permission sets. Enables central enforcement of compliance policies for
-    technical users like re-certification, credential strength and credential
-    rotation.
   tool-implementations: []
   name: Service Account Management
 ---

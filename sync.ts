@@ -14,11 +14,18 @@ import {
 dotenv();
 
 function commonFrontmatter(page) {
-  return {
+  const frontmatter: any = {
     id: page.meta.id,
     url: page.meta.url,
-    title: page.meta.title,
+    title: page.meta.title
   };
+  // By this logic, you can attach a 'Summary' field to any page
+  // and it will render a <meta description> tag based on the summary text.
+  const summary = page.properties?.get('Summary');
+  if (summary) {
+    frontmatter.description = summary;
+  }
+  return frontmatter;
 }
 
 function buildProperties(include: string[], page: DatabasePageProperties) {
@@ -74,7 +81,6 @@ const config: SyncConfig = {
             "Journey Stage",
             "Depends on",
             "Scope",
-            "Summary",
             "Tool Implementations",
             "Name",
           ];
@@ -94,14 +100,14 @@ const config: SyncConfig = {
           title: "By Pillar",
           properties: {
             groupBy: "Pillar",
-            include: ["Name", "Scope", "Journey Stage", "Summary"],
+            include: ["Name", "Scope", "Journey Stage"],
           },
         },
         {
           title: "By Journey Stage",
           properties: {
             groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Pillar", "Summary"],
+            include: ["Name", "Scope", "Pillar"],
           },
         },
       ],
@@ -122,7 +128,7 @@ const config: SyncConfig = {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
           properties: buildProperties(
-            ["Block", "Tool", "Summary", "Link", "Name"],
+            ["Block", "Tool", "Link", "Name"],
             page
           ),
         }),

@@ -2,6 +2,12 @@
 id: 0dd09c75-2acd-4e87-9721-6b5f563da035
 url: https://www.notion.so/Authorization-Concept-0dd09c752acd4e8797216b5f563da035
 title: Authorization Concept
+description: >-
+  Define a multi-cloud authorization concept that platforms can implement
+  independently and according to the cloud platform's native authorization
+  capabilities. The authorization concept should consider key principles like
+  segregation of duties, need-to-know and separation of privileged and
+  unprivileged roles.
 category: 🔐 IAM
 layout: CFMMBlock
 properties:
@@ -13,12 +19,6 @@ properties:
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
   scope: 🏢 Core
-  summary: >-
-    Define a multi-cloud authorization concept that platforms can implement
-    independently and according to the cloud platform's native authorization
-    capabilities. The authorization concept should consider key principles like
-    segregation of duties, need-to-know and separation of privileged and
-    unprivileged roles.
   tool-implementations:
     - 01a9cbca-3dd4-4378-b1f5-1ae64b76cc19
   name: Authorization Concept

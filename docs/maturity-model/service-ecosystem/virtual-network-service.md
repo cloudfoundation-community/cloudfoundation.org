@@ -2,6 +2,9 @@
 id: 2be4d7d1-4109-406b-a4f7-da6c566123fd
 url: https://www.notion.so/Virtual-Network-Service-2be4d7d14109406ba4f7da6c566123fd
 title: Virtual Network Service
+description: >-
+  A virtual network service provides a pre-configured virtual network. It is a
+  pre-requisite for higher-level services built on virtual networks.
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:
@@ -16,9 +19,6 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    A virtual network service provides a pre-configured virtual network. It is a
-    pre-requisite for higher-level services built on virtual networks.
   tool-implementations: []
   name: Virtual Network Service
 ---

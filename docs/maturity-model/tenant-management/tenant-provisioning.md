@@ -2,6 +2,9 @@
 id: deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
 url: https://www.notion.so/Tenant-Provisioning-deb9d28ee5924c3cb7da020b7ba6bb0d
 title: Tenant Provisioning
+description: >-
+  On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure
+  Subscriptions etc.).
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -12,9 +15,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure
-    Subscriptions etc.).
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
   name: Tenant Provisioning
@@ -64,7 +64,7 @@ Beware of the pitfalls of insufficient automation. Semi-automated provisioning o
 <CallToAction>
   <CtaHeader>Self-Service Tenant Provisioning</CtaHeader>
   <CtaText>See a fully automated tenant provisioning process live in action or learn more on best practices for tenant management.</CtaText>
-  <CtaButton class="btn-primary" url=" https://www.meshcloud.io/use-case-cloud-zones/ ">Get a Demo</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/use-case-cloud-zones/">Get a Demo</CtaButton>
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
 

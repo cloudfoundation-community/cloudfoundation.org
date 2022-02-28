@@ -3,6 +3,10 @@ id: ce20312c-aa7a-453f-82f2-f186469dd973
 url: >-
   https://www.notion.so/Monthly-Cloud-Project-Carbon-Footprint-Report-ce20312caa7a453f82f2f186469dd973
 title: Monthly Cloud Project Carbon Footprint Report
+description: >-
+  Project owners can view a monthly report listing the consumption-based carbon
+  footprint caused by their project’s cloud usage. This enables sustainability
+  reporting and gives teams feedback towards achieving sustainability goals.
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:
@@ -13,11 +17,6 @@ properties:
   depends-on:
     - 28740e92-5559-4931-ab04-17cfb026edd5
   scope: 🏢 Core
-  summary: >-
-    Project owners can view a monthly report listing the consumption-based
-    carbon footprint caused by their project’s cloud usage. This enables
-    sustainability reporting and gives teams feedback towards achieving
-    sustainability goals.
   tool-implementations: []
   name: Monthly Cloud Project Carbon Footprint Report
 ---

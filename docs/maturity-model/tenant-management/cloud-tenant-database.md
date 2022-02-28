@@ -2,6 +2,9 @@
 id: b875ac41-2b38-4ce4-ab8b-76ddd876d789
 url: https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789
 title: Cloud Tenant Database
+description: >-
+  Maintenance of a database of cloud tenants and associated metadata like
+  responsible owners and chargeback information like cost center.
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -13,9 +16,6 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Maintenance of a database of cloud tenants and associated metadata like
-    responsible owners and chargeback information like cost center.
   tool-implementations:
     - 3481641d-0686-420d-8487-794acd4f5e04
     - e2123339-0641-4d44-b774-32ce23fd634d

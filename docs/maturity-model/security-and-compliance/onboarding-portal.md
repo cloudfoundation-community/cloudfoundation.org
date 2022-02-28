@@ -2,6 +2,9 @@
 id: cf487857-542f-4d74-8fe9-885b7be8ccf3
 url: https://www.notion.so/Onboarding-Portal-cf487857542f4d748fe9885b7be8ccf3
 title: Onboarding Portal
+description: >-
+  Teams are guided through the organizational (e.g. budget) and regulatory (e.g.
+  compliance) cloud onboarding duties.
 category: 🔖 Security & Compliance
 layout: CFMMBlock
 properties:
@@ -11,9 +14,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core
-  summary: >-
-    Teams are guided through the organizational (e.g. budget) and regulatory
-    (e.g. compliance) cloud onboarding duties.
   tool-implementations:
     - cce0a290-fdb4-412d-bfc7-da0ae83a53a6
     - 166cca26-ca4d-4efc-8657-10d2462e811a

@@ -3,6 +3,10 @@ id: 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
 url: >-
   https://www.notion.so/Private-Cloud-pay-per-use-chargeback-02e4de2c7e1e4dd9aa76b58a88f04ff6
 title: Private Cloud pay-per-use chargeback
+description: >-
+  Resource consumption on multi-tenant private cloud platforms such as
+  OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use
+  pricing model.
 category: 💵 Cost Management
 layout: CFMMBlock
 properties:
@@ -13,10 +17,6 @@ properties:
   depends-on:
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
   scope: ☁️ Platform
-  summary: >-
-    Resource consumption on multi-tenant private cloud platforms such as
-    OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use
-    pricing model.
   tool-implementations:
     - c7b3902e-6708-4b0e-9e43-776f863baa3e
   name: Private Cloud pay-per-use chargeback

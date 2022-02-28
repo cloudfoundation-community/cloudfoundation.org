@@ -2,6 +2,10 @@
 id: 913a8ad1-7ad4-4ade-9e88-801a7afa4b40
 url: https://www.notion.so/Modular-Landing-Zones-913a8ad17ad44ade9e88801a7afa4b40
 title: Modular Landing Zones
+description: >-
+  Landing Zones are extendable with with services. These services have their own
+  lifecycle and can be reconfigured during the lifespan of a tenant. The modular
+  design allows combining services like LEGO® blocks. 
 category: 🗂 Tenant Management
 layout: CFMMBlock
 properties:
@@ -11,10 +15,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: ☁️ Platform
-  summary: >-
-    Landing Zones are extendable with with services. These services have their
-    own lifecycle and can be reconfigured during the lifespan of a tenant. The
-    modular design allows combining services like LEGO® blocks. 
   tool-implementations:
     - ccba2e9a-1bc0-4b53-8d5e-4773680d9e14
   name: Modular Landing Zones

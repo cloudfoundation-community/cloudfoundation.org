@@ -3,6 +3,10 @@ id: 71143f29-2fe9-452b-8398-fc40f270a2b6
 url: >-
   https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6
 title: Managed DevOps Toolchain
+description: >-
+  Teams can use a DevOps tools that are integrated with the cloud tenants used
+  by the team. Any required service account or automation user credentials are
+  automatically maintained and rotated.
 category: 🛠 Service Ecosystem
 layout: CFMMBlock
 properties:
@@ -12,10 +16,6 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  summary: >-
-    Teams can use a DevOps tools that are integrated with the cloud tenants used
-    by the team. Any required service account or automation user credentials are
-    automatically maintained and rotated.
   tool-implementations:
     - 3c377c14-3fbf-4766-a47a-e30bd070ed7f
     - 04470deb-8ef1-4c49-bcec-7243426790b5
