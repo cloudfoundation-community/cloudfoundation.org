@@ -118,7 +118,7 @@ $btn-padding-x-lg: 1.5rem !default;
   --c-danger-text-accent: var(--c-text);
   --c-details-bg: #eeeeee;
 
-  --font-family: "Montserrat", sans-serif;
+  --font-family: #{$font-family-base};
 
   --content-width: 860px;
 }

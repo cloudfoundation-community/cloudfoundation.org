@@ -130,6 +130,7 @@ export default {
   padding-right: 65px;
   flex-direction: row;
   flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
   .card-col {
     flex-grow: 1;
     max-width: 20%;
