@@ -49,7 +49,6 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['link', { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700;900&display=swap' }],
   ],
   themeConfig: {
     logo: "/logo.png",
