@@ -17,7 +17,7 @@
       </div>
 
       <div class="card-col">
-        <MaturityModelAtom :data-list="chargeBack" :title="'CHARGEBACK'">
+        <MaturityModelAtom :data-list="costMgmt" :title="'COST MGMT.'">
         </MaturityModelAtom>
       </div>
 
@@ -53,7 +53,7 @@ export default {
     compliance(): IMaturityModelAtom[] {
       return this.getFilterData("🔖 Security & Compliance");
     },
-    chargeBack(): IMaturityModelAtom[] {
+    costMgmt(): IMaturityModelAtom[] {
       return this.getFilterData("💵 Cost Management");
     },
     serviceEcosystem(): IMaturityModelAtom[] {
