@@ -17,11 +17,11 @@ function commonFrontmatter(page) {
   const frontmatter: any = {
     id: page.meta.id,
     url: page.meta.url,
-    title: page.meta.title
+    title: page.meta.title,
   };
   // By this logic, you can attach a 'Summary' field to any page
   // and it will render a <meta description> tag based on the summary text.
-  const summary = page.properties?.get('Summary');
+  const summary = page.properties?.get("Summary");
   if (summary) {
     frontmatter.description = summary;
   }
@@ -39,7 +39,7 @@ const config: SyncConfig = {
     destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
     frontmatterBuilder: (page) => {
       const extraFrontmatter =
-        page.meta.title === "Explore All Blocks"
+        page.meta.title === "Explore All Building Blocks"
           ? { layout: "Fullsize", sidebar: false }
           : {};
 
@@ -95,22 +95,27 @@ const config: SyncConfig = {
           };
         },
       },
-      views: [
+      views: [],
+    },
+    "3958983e-15f0-4446-9226-6e8af5eccbc9": {
+      sorts: [
         {
-          title: "By Pillar",
-          properties: {
-            groupBy: "Pillar",
-            include: ["Name", "Scope", "Journey Stage"],
-          },
-        },
-        {
-          title: "By Journey Stage",
-          properties: {
-            groupBy: "Journey Stage",
-            include: ["Name", "Scope", "Pillar"],
-          },
+          property: "order",
+          direction: "ascending",
         },
       ],
+      renderAs: "pages+views",
+      pages: {
+        destinationDirBuilder: (page) =>
+          "maturity-model/" + slugify(page.properties.get("Name")),
+        filenameBuilder: (_) => "readme",
+        frontmatterBuilder: (page) => {
+          return {
+            ...commonFrontmatter(page),
+          };
+        },
+      },
+      views: [],
     },
     "6f849704-d765-443f-ac32-b611fc5270cc": {
       // tool2block, part of the "tool support" page
@@ -127,10 +132,7 @@ const config: SyncConfig = {
       entries: {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
-          properties: buildProperties(
-            ["Block", "Tool", "Link", "Name"],
-            page
-          ),
+          properties: buildProperties(["Block", "Tool", "Link", "Name"], page),
         }),
       },
     },
@@ -181,23 +183,34 @@ async function main() {
       : { frontmatter: x.frontmatter };
   });
 
+  console.log("processing page 'order' conventions");
+  
   // by convention, find all "first" files in a category and rename them README.md because vuepress expects them that way
   const categoryHomes = rendered.filter((x) => {
     const page = x as RenderedDatabasePage;
     return page.frontmatter?.order === 0 && !!page.file;
   });
-
+  
   for (const home of categoryHomes) {
     const rendered = home as RenderedDatabasePage;
     const old = rendered.file;
     const readme = path.join(path.dirname(old), "readme.md");
 
-    console.log("renaming " + old + " -> " + readme);
+    console.warn("renaming " + old + " -> " + readme);
     await fs.rename(old, readme);
 
     // patch the index, important so that it is correct for sorting
     rendered.file = readme;
   }
+
+  // by convention, find all files with negative sort values and remove them
+  // this is our hacky way to prevent publishing pages
+  rendered
+    .filter((x) => x.frontmatter?.order < 0 && !!x.file)
+    .forEach((x) => {
+      console.warn("removing " + x.file);
+      fs.unlink(x.file);
+    });
 
   // we sort the rendered pages by id, this way we have a more consistent index.ts
   // file that has less churn and thus plays along better with git versioning
@@ -205,6 +218,7 @@ async function main() {
     x.frontmatter.id.localeCompare(y.frontmatter.id)
   );
 
+  console.log("writing .vuepress/index.ts");
   await fs.writeFile(
     ".vuepress/index.ts",
     `export const index = ${JSON.stringify(sorted, null, 2)};`

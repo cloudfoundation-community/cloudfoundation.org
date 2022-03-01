@@ -2,7 +2,7 @@
   "files": [
     {
       "path": "docs/.vuepress/dist/assets/app.????????.js",
-      "maxSize": "200 kB",
+      "maxSize": "250 kB",
       "compression": "none",
       "description": "this is the app bundle that's always loaded and on the critical path"
     },

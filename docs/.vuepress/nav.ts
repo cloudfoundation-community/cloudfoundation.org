@@ -6,6 +6,14 @@ import { inferPagePath, SiteLocaleConfig } from "vuepress";
 import { RenderedDatabaseEntry } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabaseEntry";
 import { RenderedDatabasePage } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabasePage"; // todo: nmdcms should export them instead of us importing them from private modules
 
+function lookupPagePath(relativePath: string) {
+  // stub a faked locale config, this is harcoded and only works because the size is not localized
+  const locales: SiteLocaleConfig = {};
+  const app: any = { siteData: { locales } };
+
+  return inferPagePath({ app, filePathRelative: relativePath }).pathInferred;
+}
+
 /**
  * DESIGN:
  * Generate the navbar from the actual directory structure + the index file.
@@ -33,9 +41,8 @@ export function getChildFiles(path: string) {
 }
 
 export function makeSidebarEntries(dir: string) {
-  const children = getChildDirectories(dir).map(
-    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0] // ugly hack because we wrap into an array at the end...
-  );
+  const readmePath = `${dir}/readme.md`;
+  const hasReadme = fs.existsSync(readmePath);
 
   // try to find original, "unslugged" category name, otherwise use the slugified category name
   const category = pathToCategory(dir);
@@ -51,10 +58,21 @@ export function makeSidebarEntries(dir: string) {
   }
   const categoryName = indexItem?.frontmatter.category || category;
 
+  // sidebar entries for children directories
+  const childDirs = getChildDirectories(dir).map(
+    (child) => makeSidebarEntries(`${dir}/${child}`).entry[0] // ugly hack because we wrap into an array at the end...
+  );
+
+  // docs that are direct children of this directory
+  const childDocs = sortedSidebar(dir).filter(
+    (x) => x.text !== categoryName // filter "reamde.md" links, otherwise we have it both as a category as well as a child item
+  );
+
   const entry = [
     {
       text: categoryName,
-      children: [...sortedSidebar(dir), ...children],
+      children: [...childDocs, ...childDirs],
+      link: hasReadme ? lookupPagePath(stripDocs(readmePath)) : undefined, // add a link fot the readme.md if we have one for this directory
     },
   ];
 
@@ -62,10 +80,6 @@ export function makeSidebarEntries(dir: string) {
 }
 
 function sortedSidebar(dir: string) {
-  // stub a faked locale config, this is harcoded and only works because the size is not localized
-  const locales: SiteLocaleConfig = {};
-  const app: any = { siteData: { locales } };
-
   return getChildFiles(dir)
     .map((x) => {
       const relativePath = stripDocs(dir + "/" + x); // to relative path
@@ -80,8 +94,7 @@ function sortedSidebar(dir: string) {
     .map((x) => {
       return {
         text: formatTitle(x.indexEntry),
-        link: inferPagePath({ app, filePathRelative: x.relativePath })
-          .pathInferred,
+        link: lookupPagePath(x.relativePath),
       };
     });
 }

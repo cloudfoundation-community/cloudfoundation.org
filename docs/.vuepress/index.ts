@@ -23,8 +23,8 @@ export const index = [
     "file": "maturity-model/readme.md",
     "frontmatter": {
       "id": "0147ba13-9f83-42cd-9c10-2e5f113c96f2",
-      "url": "https://www.notion.so/Explore-All-Blocks-0147ba139f8342cd9c102e5f113c96f2",
-      "title": "Explore All Blocks",
+      "url": "https://www.notion.so/Explore-All-Building-Blocks-0147ba139f8342cd9c102e5f113c96f2",
+      "title": "Explore All Building Blocks",
       "category": "Maturity Model",
       "order": 0,
       "layout": "Fullsize",
@@ -582,14 +582,12 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/security-and-compliance.md",
+    "file": "maturity-model/security-and-compliance/readme.md",
     "frontmatter": {
       "id": "321cc809-0eec-477f-8f75-6d39da0c8b1a",
       "url": "https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a",
       "title": "🔖 Security & Compliance",
-      "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.",
-      "category": "Understanding Cloud Foundation",
-      "order": 22
+      "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services."
     }
   },
   {
@@ -808,11 +806,11 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/building-block-reference.md",
+    "file": "maturity-model/what-is-a-building-block.md",
     "frontmatter": {
       "id": "479f18c8-ac4b-477d-b5b4-4df2f04fc4f3",
-      "url": "https://www.notion.so/Building-Block-Reference-479f18c8ac4b477db5b44df2f04fc4f3",
-      "title": "Building Block Reference",
+      "url": "https://www.notion.so/What-is-a-Building-Block-479f18c8ac4b477db5b44df2f04fc4f3",
+      "title": "What is a Building Block",
       "category": "Maturity Model",
       "order": 20
     }
@@ -836,13 +834,13 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/what-is-the-cloud-foundation-maturity-model.md",
+    "file": "understanding-cloud-foundation/readme.md",
     "frontmatter": {
       "id": "4f1a5a1d-8abe-42e1-ba96-0f5a6b68e38f",
       "url": "https://www.notion.so/What-is-the-Cloud-Foundation-Maturity-Model-4f1a5a1d8abe42e1ba960f5a6b68e38f",
       "title": "What is the Cloud Foundation Maturity Model",
-      "category": "Maturity Model",
-      "order": 30
+      "category": "Understanding Cloud Foundation",
+      "order": 0
     }
   },
   {
@@ -910,14 +908,12 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/cost-management.md",
+    "file": "maturity-model/cost-management/readme.md",
     "frontmatter": {
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
       "url": "https://www.notion.so/Cost-Management-57502241e2f44b759e33de39b26a6eb8",
       "title": "💵 Cost Management",
-      "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services.",
-      "category": "Understanding Cloud Foundation",
-      "order": 23
+      "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services."
     }
   },
   {
@@ -995,14 +991,12 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/service-ecosystem.md",
+    "file": "maturity-model/service-ecosystem/readme.md",
     "frontmatter": {
       "id": "621771b3-97a0-4c4e-80ab-3331cd6719f0",
       "url": "https://www.notion.so/Service-Ecosystem-621771b397a04c4e80ab3331cd6719f0",
       "title": "🛠 Service Ecosystem",
-      "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services.",
-      "category": "Understanding Cloud Foundation",
-      "order": 24
+      "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services."
     }
   },
   {
@@ -1413,14 +1407,12 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/iam.md",
+    "file": "maturity-model/iam/readme.md",
     "frontmatter": {
       "id": "9ee0a54d-9b9e-47dd-9fc0-9d81213ce76c",
       "url": "https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c",
       "title": "🔐 IAM",
-      "description": "Provide Identity and Access management capabilities for all available cloud platforms and services.",
-      "category": "Understanding Cloud Foundation",
-      "order": 21
+      "description": "Provide Identity and Access management capabilities for all available cloud platforms and services."
     }
   },
   {
@@ -1543,6 +1535,16 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/cloud-foundation-pillars.md",
+    "frontmatter": {
+      "id": "b3f64e6c-3799-457d-96ee-413d3acae899",
+      "url": "https://www.notion.so/Cloud-Foundation-Pillars-b3f64e6c3799457d96ee413d3acae899",
+      "title": "Cloud Foundation Pillars",
+      "category": "Maturity Model",
+      "order": -1
+    }
+  },
+  {
     "file": "maturity-model/iam/federated-identity-and-authentication.md",
     "frontmatter": {
       "id": "b4678790-ab53-4219-83e7-fbde18383d05",
@@ -1616,14 +1618,12 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/tenant-management.md",
+    "file": "maturity-model/tenant-management/readme.md",
     "frontmatter": {
       "id": "bd309e8a-9ecd-4a0d-a3c3-b464f734ca54",
       "url": "https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54",
       "title": "🗂 Tenant Management",
-      "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts).",
-      "category": "Understanding Cloud Foundation",
-      "order": 20
+      "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts)."
     }
   },
   {
@@ -2281,13 +2281,13 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/readme.md",
+    "file": "understanding-cloud-foundation/why-build-a-cloud-foundation.md",
     "frontmatter": {
       "id": "fe4fd51c-8f57-46f1-afa1-2fc3402063b8",
       "url": "https://www.notion.so/Why-Build-a-Cloud-Foundation-fe4fd51c8f5746f1afa12fc3402063b8",
       "title": "Why Build a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
-      "order": 0
+      "order": 10
     }
   }
 ];

@@ -152,7 +152,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities as building blocks and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** (see [Building Block Reference](/maturity-model/building-block-reference.md)) of building blocks allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
+The Cloud Foundation Maturity model can help practioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities as building blocks and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** (see [What is a Building Block](/maturity-model/what-is-a-building-block.md)) of building blocks allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
 
 ### Advantages and Disadvantages
 
