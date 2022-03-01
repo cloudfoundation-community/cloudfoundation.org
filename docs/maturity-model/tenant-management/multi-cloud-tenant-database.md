@@ -37,7 +37,7 @@ To successfully implement a multi-cloud tenant database, it needs to serve as a 
 
 If your organization has historically managed cloud platforms as separate silos, chances are high that platform teams have implemented processes like [Tenant Provisioning](./tenant-provisioning.md), [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md)  or [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) individually. When building a multi-cloud tenant database, you will also have to consider how to align these processes across clouds so they can be integrated with a single multi-cloud tenant database. A natural next step in this process could be implementing the building block [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md). 
 
-Creating this alignment between different platform implementations and functional stakeholders (IAM, Compliance, Finance) can be challenging. Establishing a [Cloud Foundation team](/fe4fd51c8f5746f1afa12fc3402063b8) empowered with a clear-cut mission is the best approach to overcome these challenges.
+Creating this alignment between different platform implementations and functional stakeholders (IAM, Compliance, Finance) can be challenging. Establishing a Cloud Foundation team empowered with a clear-cut mission is the best approach to overcome these challenges.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>

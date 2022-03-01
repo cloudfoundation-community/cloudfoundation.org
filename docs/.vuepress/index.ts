@@ -2158,16 +2158,6 @@ export const index = [
     }
   },
   {
-    "file": "plan/what-is-a-building-block.md",
-    "frontmatter": {
-      "id": "e6848e89-8f3c-4e14-824f-b0122c3fc3cc",
-      "url": "https://www.notion.so/What-is-a-Building-Block-e6848e898f3c4e14824fb0122c3fc3cc",
-      "title": "What is a Building Block",
-      "category": "Plan",
-      "order": 10
-    }
-  },
-  {
     "file": "maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md",
     "frontmatter": {
       "id": "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d",

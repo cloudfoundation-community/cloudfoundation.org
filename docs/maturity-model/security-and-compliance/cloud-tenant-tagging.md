@@ -47,7 +47,7 @@ Since tagging with key-value pairs is such a basic mechanism, cloud foundation t
 
 ### Consistent Tagging Is a Matter of Compliance
 
-While cloud tenant tagging enables a basic implementation of many other [cloud foundation building blocks](/479f18c8ac4b477db5b44df2f04fc4f3), Cloud Foundation teams should treat adherence to the established tagging strategy as a matter of compliance. This is why the Cloud Foundation Maturity Model puts this building block into the Security & Compliance pillar, as opposed to putting it in the Tenant Management or Cost Management pillar.
+While cloud tenant tagging enables a basic implementation of many other cloud foundation building blocks, Cloud Foundation teams should treat adherence to the established tagging strategy as a matter of compliance. This is why the Cloud Foundation Maturity Model puts this building block into the Security & Compliance pillar, as opposed to putting it in the Tenant Management or Cost Management pillar.
 
 ### Tag the Most Useful Subset of Tenant Metadata
 

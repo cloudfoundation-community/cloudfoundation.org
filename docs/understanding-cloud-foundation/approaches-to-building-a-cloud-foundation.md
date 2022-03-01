@@ -42,7 +42,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Building Block](../plan/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Building Block](../maturity-model/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
@@ -91,7 +91,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Cluster** (see [What is a Building Block](../plan/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Cluster** (see  [What is a Building Block](../maturity-model/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
