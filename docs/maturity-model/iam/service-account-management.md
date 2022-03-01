@@ -30,7 +30,7 @@ Controlling access permissions is a central measure to minimize security risks i
 
 Careful Service Account Management is especially relevant for cloud platforms where the creation of service accounts requires global administrative privileges. Take Azure for example: Creating a Service Principal requires AAD permissions. Therefore teams cannot create service accounts in self-service inside an isolated cloud tenant.
 
-The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md).
+The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](./identity-and-access-management-concept.md).
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -43,7 +43,7 @@ The approach to Service Account Management needs to be documented in [Identity a
 
 ### Self-Service Is King
 
-Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams to create scoped Service Accounts, preferably self-service (See [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) ).
+Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams to create scoped Service Accounts, preferably self-service (See [Modular Landing Zones](../tenant-management/modular-landing-zones.md) ).
 
 ### Decide if You Need to Document Permissions
 
@@ -55,7 +55,7 @@ There are multiple ways to do this:
 
 - Make the security owner of the project responsible for establishing proper use of service accounts
 
-- Make the person creating them accountable for their use.  [Centralized audit logs](/maturity-model/security-and-compliance/centralized-audit-logs.md) always contain a log finding out who created a Service Account.
+- Make the person creating them accountable for their use.  [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md) always contain a log finding out who created a Service Account.
 
 ### Monitor Service Account Usage
 

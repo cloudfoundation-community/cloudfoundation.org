@@ -38,9 +38,9 @@ To ensure accountability, organizations must at all times maintain key informati
 
 There are many different ways to implement a cloud tenant database. Many cloud foundation teams start by maintaining their metadata directly in the cloud platform using cloud tenant tags.
 
-> **💡** While  [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md)  is a valid way to implement a cloud tenant database, tagging often provides an insufficient solution to capture all relevant information due to technical limitations (amount of tags, data types, data length).
+> **💡** While  [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md)  is a valid way to implement a cloud tenant database, tagging often provides an insufficient solution to capture all relevant information due to technical limitations (amount of tags, data types, data length).
 
- In the cloud foundation maturity model, we therefore consider a tenant database and [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) separate capabilities.
+ In the cloud foundation maturity model, we therefore consider a tenant database and [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) separate capabilities.
 
 ## Proven Patterns When Building a Cloud Tenant Database
 
@@ -53,23 +53,23 @@ There are many different ways to implement a cloud tenant database. Many cloud f
 
 ### Integrate with the Provisioning Process
 
-In the early days of an organization’s cloud journey, cloud foundation teams may be tempted to just create and hand out new tenants on an ad-hoc basis. Especially when the team has not yet established a formal [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) process, these tenants may not be recorded in a cloud tenant database. Catching up on this mistake as soon as the cloud foundation scales to managing more than a handful of tenants, foundation teams find themselves painfully chasing after customers to enquire missing metadata. 
+In the early days of an organization’s cloud journey, cloud foundation teams may be tempted to just create and hand out new tenants on an ad-hoc basis. Especially when the team has not yet established a formal [Tenant Provisioning](./tenant-provisioning.md) process, these tenants may not be recorded in a cloud tenant database. Catching up on this mistake as soon as the cloud foundation scales to managing more than a handful of tenants, foundation teams find themselves painfully chasing after customers to enquire missing metadata. 
 
 At this point, many organizations learn the downsides of the initial freedom they gave away:  abandoned cloud workloads that still incur significant charges, unclear ownership of security incidents, and unresponsive customers that impede their ability to iterate on the cloud foundation.
 
 ### Consider a Consistent Multi-Cloud Tenant Database
 
-The “Cloud Tenant Database” building block looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. Since most organizations follow a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
+The “Cloud Tenant Database” building block looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. Since most organizations follow a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Multi-Cloud Tenant Database](./multi-cloud-tenant-database.md) as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
 
 ### Plan for Automating Your Cloud Tenant Database
 
 While a simple database like an Excel workbook on SharePoint is a much better start than going without a cloud tenant database, most cloud foundation teams will quickly outgrow the limitations of a home-grown solution. As the number of tenants grows, foundation teams will find the need to evolve the schema of metadata captured in their cloud tenant database. The cloud foundation team can also quickly become a bottleneck for updating metadata like changing ownership of an IT system, changing cost centers, etc.
 
-Adopting a collaborative approach for maintaining the metadata together with their customers can solve these challenges. Cloud Foundation teams should thus look into the [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) or even better, [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md) capability, as a key building block for that next stage of their cloud journey.
+Adopting a collaborative approach for maintaining the metadata together with their customers can solve these challenges. Cloud Foundation teams should thus look into the [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) or even better, [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md) capability, as a key building block for that next stage of their cloud journey.
 
 ### Integrate with Other Information Repositories
 
-Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider also implementing the building block [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicates in different systems.
+Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider also implementing the building block [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicates in different systems.
 
 ## Common Metadata to Capture about Each Cloud Tenant
 
@@ -81,7 +81,7 @@ Based on the recommendation and best practices above, here’s a list of the mos
 
 - `IT System Id` this can be a unique identifier describing your IT system, e.g. in a CMDB or EAM system
 
-- `Security Contact` the person responsible for the security of the workload running in this cloud tenant. This is the cloud foundation team’s point of contact for any security incidents detected in this tenant, e.g. to send alerts from [Automated Security Scanning](/maturity-model/security-and-compliance/automated-security-scanning.md).
+- `Security Contact` the person responsible for the security of the workload running in this cloud tenant. This is the cloud foundation team’s point of contact for any security incidents detected in this tenant, e.g. to send alerts from [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md).
 
 - `Organizational Contact` the person organizationally responsible for the cloud tenant. This could be the manager of the team working with the cloud tenant.
 

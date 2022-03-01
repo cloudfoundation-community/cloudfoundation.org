@@ -138,7 +138,7 @@ export const index = [
     "frontmatter": {
       "id": "0db736c5-6801-4619-92a6-97c3842c907c",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-0db736c56801461992a697c3842c907c",
-      "title": "**Pay-per-Use for internal Services**",
+      "title": "Pay-per-Use for internal Services",
       "description": "meshStack can charge consumers for internal services based on the time the service was used.",
       "properties": {
         "block": [
@@ -148,7 +148,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html",
-        "name": "**Pay-per-Use for internal Services**"
+        "name": "Pay-per-Use for internal Services"
       }
     }
   },
@@ -358,7 +358,7 @@ export const index = [
     "frontmatter": {
       "id": "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a",
       "url": "https://www.notion.so/Identity-Lifecycle-Management-17a9ca395a774c5e9b0e87b01dc5e57a",
-      "title": "**Identity Lifecycle Management**",
+      "title": "Identity Lifecycle Management",
       "description": "meshStack creates and manages identities for each cloud tenant",
       "properties": {
         "block": [
@@ -368,7 +368,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.identity-federation.html",
-        "name": "**Identity Lifecycle Management**"
+        "name": "Identity Lifecycle Management"
       }
     }
   },
@@ -509,7 +509,7 @@ export const index = [
     "frontmatter": {
       "id": "2896046e-fd61-4fa7-b381-67bb4f8893b2",
       "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-2896046efd614fa7b38167bb4f8893b2",
-      "title": "**Monthly cloud tenant billing report**",
+      "title": "Monthly cloud tenant billing report",
       "description": "meshStack generates so-called tenant usage reports that contain the specific resources consumed within a cloud tenant in a given month. These tenant usage reports are visible for cloud tenant owners at any time.",
       "properties": {
         "block": [
@@ -519,7 +519,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#tenant-usage-reports",
-        "name": "**Monthly cloud tenant billing report**"
+        "name": "Monthly cloud tenant billing report"
       }
     }
   },
@@ -594,7 +594,7 @@ export const index = [
     "frontmatter": {
       "id": "334eb216-fa16-4946-9fe5-8f66bb7fc3fa",
       "url": "https://www.notion.so/meshStack-Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa",
-      "title": "meshStack **Self-Service Multi-Cloud Tenant Database**",
+      "title": "meshStack  Self-Service Multi-Cloud Tenant Database",
       "description": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
       "properties": {
         "block": [
@@ -604,7 +604,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
-        "name": "meshStack **Self-Service Multi-Cloud Tenant Database**"
+        "name": "meshStack  Self-Service Multi-Cloud Tenant Database"
       }
     }
   },
@@ -819,7 +819,7 @@ export const index = [
     "frontmatter": {
       "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24",
-      "title": "**Individual Project Cost Optimization via Reservations**",
+      "title": "Individual Project Cost Optimization via Reservations",
       "description": "meshStack supports pre-paying AWS reserved instances and charging these back correctly to the cloud tenant owners. ",
       "properties": {
         "block": [
@@ -829,7 +829,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html",
-        "name": "**Individual Project Cost Optimization via Reservations**"
+        "name": "Individual Project Cost Optimization via Reservations"
       }
     }
   },
@@ -865,7 +865,7 @@ export const index = [
     "frontmatter": {
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786",
-      "title": "**Multi-cloud tenant database integrated with lifecycle management**",
+      "title": "Multi-cloud tenant database integrated with lifecycle management",
       "description": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
       "properties": {
         "block": [
@@ -875,7 +875,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
-        "name": "**Multi-cloud tenant database integrated with lifecycle management**"
+        "name": "Multi-cloud tenant database integrated with lifecycle management"
       }
     }
   },
@@ -969,7 +969,7 @@ export const index = [
     "frontmatter": {
       "id": "59cdf884-5bd2-4b55-87f8-824a4a35623c",
       "url": "https://www.notion.so/Monthly-cloud-project-billing-report-59cdf8845bd24b5587f8824a4a35623c",
-      "title": "**Monthly cloud project billing report**",
+      "title": "Monthly cloud project billing report",
       "description": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
       "properties": {
         "block": [
@@ -979,7 +979,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
-        "name": "**Monthly cloud project billing report**"
+        "name": "Monthly cloud project billing report"
       }
     }
   },

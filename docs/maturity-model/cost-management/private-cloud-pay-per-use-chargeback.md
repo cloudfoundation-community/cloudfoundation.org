@@ -22,7 +22,7 @@ properties:
   name: Private Cloud pay-per-use chargeback
 ---
 
-As outlined in the building block [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md), pay-per-use is an essential cornerstone of cloud computing. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. When offering private cloud platforms such as OpenStack, Cloud Foundry or multi-tenant Kubernetes clusters such as OpenShift, organizations should implement a pay-per-use model for these platforms. 
+As outlined in the building block [Chargeback via consumption cost allocation](./chargeback-via-consumption-cost-allocation.md), pay-per-use is an essential cornerstone of cloud computing. It helps balance the freedom to allocate resources dynamically and at any time with an incentive mechanism for consumers to only allocate resources they actually need. When offering private cloud platforms such as OpenStack, Cloud Foundry or multi-tenant Kubernetes clusters such as OpenShift, organizations should implement a pay-per-use model for these platforms. 
 
 ## Why You Should Implement Private Cloud Chargeback Using Pay-per-Use 
 
@@ -50,7 +50,7 @@ Now that we covered the motivation for using a pay-per-use cost model to chargeb
 
 ### Automate Private Cloud Metering and Chargeback
 
-In order to provide cost feedback loops to all IT system stakeholders (responsible product owners, engineers), cost reports must be available on a frequent basis. It’s a best practice to provide [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md)s with fine granular listings of the individual resources consumed. While considerably more work than an annual cost split based on a pooling factor, proper tooling can automate the entire process of metering resource consumption, applying a pricing model and generating monthly billing reports. See the [Monthly cloud tenant billing report](/maturity-model/cost-management/monthly-cloud-tenant-billing-report.md) building block for more details.
+In order to provide cost feedback loops to all IT system stakeholders (responsible product owners, engineers), cost reports must be available on a frequent basis. It’s a best practice to provide [Monthly cloud tenant billing report](./monthly-cloud-tenant-billing-report.md)s with fine granular listings of the individual resources consumed. While considerably more work than an annual cost split based on a pooling factor, proper tooling can automate the entire process of metering resource consumption, applying a pricing model and generating monthly billing reports. See the [Monthly cloud tenant billing report](./monthly-cloud-tenant-billing-report.md) building block for more details.
 
 ### Build a Private Cloud Pricing Model
 
