@@ -1,15 +1,14 @@
-import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
+import { defineUserConfig, ViteBundlerOptions } from 'vuepress-vite';
+
+import { debug, path } from '@vuepress/utils';
+
+import { makeSidebarEntries } from './nav';
+import pluginMermaid from './theme/plugins/mermaid';
+import pluginPlausible from './theme/plugins/plausible';
+import pluginSitemap, { SitemapOptions } from './theme/plugins/plugin-sitemap/src/node';
+
 import type { DefaultThemeOptions } from "vuepress-vite";
-
-import { path, debug } from "@vuepress/utils";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
-
-import { makeSidebarEntries } from "./nav";
-import pluginMermaid from "./theme/plugins/mermaid";
-import pluginPlausible from "./theme/plugins/plausible";
-import pluginSitemap, {
-  SitemapOptions,
-} from "./theme/plugins/plugin-sitemap/src/node";
 
 const log = debug("cloudfoundation:config");
 
@@ -93,6 +92,5 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       },
     ],
     [pluginSitemap, sitemapOptions],
-  ],
-  bundlerConfig: {},
+  ]
 });
