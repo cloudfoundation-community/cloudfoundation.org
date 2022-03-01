@@ -35,8 +35,11 @@ This is not a full guide, but here's what we learned about bundling so far
 - Vite runs 2x during a `docs:build`, first to generate the vuepress app, second to SSR it.
 - There's a [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) similar to webpack-bundle-analyzer, but I could not get reliable results from it(e.g. it said app bundle was 1 MiB but it was actually only 200 KiB)
 - Using `await import(...);` is possible and helps rollup make better bundling decisions
+- `docs:build --debug` will skip minification of bundles, allowing better debugging or gauging what's in them
+- We use [bundlesize](https://github.com/siddharthkp/bundlesize) to characterize our output bundles and ensure our bundles match what we expect. An additional `description` in each entry in `bundlesize.config.json` documents the bundling decision we expect
 
 Open issues and questions
 
 - Can we use `await import` from a `<script setup>` tag in a vue SFC? It appears there are issues with top-level await
 - We still have small bundles e.g. `CtaButton` `CtaHeader` that should be bundled together - maybe an index.ts barrel file achieves this?
+- The search index of the search plugin is still part of the app bundle, maybe it could be externalized/lazy loaded?

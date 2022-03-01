@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs --clean-cache --clean-temp && yarn bundlesize",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "postdocs:build": "bundlesize",
     "sync": "ts-node sync.ts && yarn lint:autofix",
     "serve": "http-server docs/.vuepress/dist",
     "lint:autofix": "textlint ./docs/ --config .autofix.textlinrc --rulesdir .textlint/ --fix",
