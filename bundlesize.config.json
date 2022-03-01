@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "path": "docs/.vuepress/dist/assets/app.*.js",
+      "maxSize": "200 kB",
+      "compression": "none"
+    },
+    {
+      "path": "docs/.vuepress/dist/assets/mermaid.esm.min.*.js",
+      "maxSize": "1100 kB",
+      "compression": "none"
+    }
+  ]
+}
