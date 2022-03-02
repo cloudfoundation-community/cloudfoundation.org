@@ -28,3 +28,18 @@
   to = "https://plausible.io/api/event"
   status = 200
   force = true
+
+
+## Redirects for individual pages that we moved/renamed but we want to make sure
+## we don't confuse google
+
+[[redirects]]
+  from = "/maturity-model/what-is-the-cloud-foundation-maturity-model.html"
+  to = "/understanding-cloud-foundation/"
+  status = 301
+
+[[redirects]]
+  from = "/maturity-model/building-block-reference.html"
+  to = "/maturity-model/what-is-a-building-block.html"
+  status = 301
+  
