@@ -36,41 +36,32 @@ $btn-padding-x-lg: 1.5rem !default;
 
 // Fonts
 // unicode-range: U+000-5FF instructs the browser to only load the required glyph ranges (U+000 – U+5FF).
-// we use woff and woff2 font formats which are optimized formats and work in most modern browsers.
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url(./fonts/Montserrat-Regular.woff2) format('woff2');
-  unicode-range: U+000-5FF;
+  src: url(./fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-  src: url(./fonts/Montserrat-Medium.woff2) format('woff2');
-  unicode-range: U+000-5FF;
+  src: url(./fonts/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
-  src: url(./fonts/Montserrat-SemiBold.woff2) format('woff2');
-  unicode-range: U+000-5FF;
+  src: url(./fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  font-display: swap;
-  src: url(./fonts/Montserrat-Bold.woff2) format('woff2');
-  unicode-range: U+000-5FF;
+  src: url(./fonts/Montserrat-Bold.ttf);
 }
 
 // vuepress theme uses css variables
