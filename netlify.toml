@@ -43,3 +43,7 @@
   to = "/maturity-model/what-is-a-building-block.html"
   status = 301
   
+[[redirects]]
+  from = "/maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.html"
+  to = "/maturity-model/security-and-compliance/multi-cloud-tagging-policy.html"
+  status = 301
