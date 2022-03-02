@@ -37,7 +37,7 @@ A sandbox environment is a powerful tool for enabling DevOps teams to learn more
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn more</CtaButton>
 </CallToAction>
 
-Best Practices of sandbox environments
+## Best Practices of Sandbox Environments
 
 The following best practices minimize the risks of newly provisioned sandbox environments in your cloud foundation team:
 

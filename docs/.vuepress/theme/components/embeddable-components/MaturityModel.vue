@@ -17,7 +17,7 @@
       </div>
 
       <div class="card-col">
-        <MaturityModelAtom :data-list="chargeBack" :title="'CHARGEBACK'">
+        <MaturityModelAtom :data-list="costMgmt" :title="'COST MGMT.'">
         </MaturityModelAtom>
       </div>
 
@@ -32,6 +32,7 @@
 <script  lang="ts">
 import { index } from "../../../index";
 import MaturityModelAtom from "./MaturityModelAtom.vue";
+
 interface IMaturityModelAtom {
   step: string;
   scope: string;
@@ -39,6 +40,13 @@ interface IMaturityModelAtom {
   link: string;
   summary: string;
 }
+
+// this is stupid and duplicate with CFMMBlock.vue, but it works
+// we probably should extract all those index lookup shenanigans to a separate service
+function formatLink(path: string) {
+  return "/" + path.replace(".md", ".html");
+}
+
 export default {
   components: {
     MaturityModelAtom
@@ -53,7 +61,7 @@ export default {
     compliance(): IMaturityModelAtom[] {
       return this.getFilterData("🔖 Security & Compliance");
     },
-    chargeBack(): IMaturityModelAtom[] {
+    costMgmt(): IMaturityModelAtom[] {
       return this.getFilterData("💵 Cost Management");
     },
     serviceEcosystem(): IMaturityModelAtom[] {
@@ -77,7 +85,7 @@ export default {
             ),
             scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
             title: value.frontmatter.title,
-            link: "/" + value.file,
+            link: formatLink(value.file),
             summary: value.frontmatter.description
           };
         });

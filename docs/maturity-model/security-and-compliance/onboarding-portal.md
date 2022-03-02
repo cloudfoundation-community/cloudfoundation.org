@@ -22,7 +22,7 @@ properties:
 
 If your answer to “Who in your organization may use the cloud?” is “Everybody!”, you can skip this building block. Everybody else; pay attention.
 
-Depending on the organizational needs, Cloud Onboardings can be as easy as signing into [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) and clicking a button and as complex as getting 10 approvals from 10 different stakeholders before finally getting the approval to the cloud.
+Depending on the organizational needs, Cloud Onboardings can be as easy as signing into [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) and clicking a button and as complex as getting 10 approvals from 10 different stakeholders before finally getting the approval to the cloud.
 
 Guided cloud onboardings help DevOps teams
 

@@ -25,7 +25,7 @@ properties:
 
 Organizations can implement this using naming and tagging policies. 
 
-A more advanced implementation leverages [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md) 
+A more advanced implementation leverages [Multi-Cloud Tagging Policy](../security-and-compliance/multi-cloud-tagging-policy.md) 
 
 
 
