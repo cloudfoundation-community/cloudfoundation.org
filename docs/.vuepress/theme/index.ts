@@ -1,5 +1,5 @@
 import type { ThemeObject } from "@vuepress/core";
-import { path } from '@vuepress/utils';
+import { path } from "@vuepress/utils";
 
 const localTheme: ThemeObject = {
   name: "vuepress-theme-local",
@@ -13,7 +13,7 @@ const localTheme: ThemeObject = {
      * The headers on the other hand are used to build the sidebar nav structure.
      */
     const headers = page.headers;
-    if (page.frontmatter.layout === "CFMMBlock") {
+    if (page.frontmatter.pageType === "CFMMBlock") {
       headers.push({
         title: "Related Tools",
         level: 3,
@@ -24,13 +24,11 @@ const localTheme: ThemeObject = {
 
     return {
       filePathRelative: page.frontmatter["url"],
-      headers      
+      headers,
     };
   },
   layouts: {
     Layout: path.resolve(__dirname, "layouts/Layout.vue"),
-    Fullsize: path.resolve(__dirname, "layouts/Fullsize.vue"),
-    CFMMBlock: path.resolve(__dirname, "layouts/CFMMBlock.vue"),
   },
 };
 

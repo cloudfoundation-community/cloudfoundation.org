@@ -6,7 +6,7 @@ description: >-
   Maintenance of a database of cloud tenants and associated metadata like
   responsible owners and chargeback information like cost center.
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables:

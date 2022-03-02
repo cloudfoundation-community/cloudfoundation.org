@@ -7,7 +7,7 @@ description: >-
   Cloud tenant owners are transparently charged for the resource consumption as
   it is charged from the cloud provider.
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables:

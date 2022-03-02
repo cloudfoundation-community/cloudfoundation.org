@@ -6,7 +6,7 @@ description: >-
   Regulatory onboarding only captures what is required for getting acces to the
   cloud
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables: []

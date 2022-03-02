@@ -6,7 +6,7 @@ description: >-
   Cloud resources are tagged using a consistent tagging strategy to facilitate
   security and compliance processes for cloud workloads.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables:

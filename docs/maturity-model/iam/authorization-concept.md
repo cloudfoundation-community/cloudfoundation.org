@@ -9,7 +9,7 @@ description: >-
   segregation of duties, need-to-know and separation of privileged and
   unprivileged roles.
 category: 🔐 IAM
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔐 IAM
   enables:

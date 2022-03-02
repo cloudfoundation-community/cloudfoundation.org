@@ -8,7 +8,7 @@ description: >-
   and deprovisioning processes. The database acts as an authoritative source of
   tenants and ensures tenant metadata is always up to date.
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []

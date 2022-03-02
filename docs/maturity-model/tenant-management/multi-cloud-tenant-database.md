@@ -9,7 +9,7 @@ description: >-
   via an API or are stored there by combining different tenant lists/exports
   into a common database schema (ETL). 
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables:

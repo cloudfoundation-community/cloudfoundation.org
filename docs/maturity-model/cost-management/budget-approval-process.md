@@ -4,7 +4,7 @@ url: https://www.notion.so/Budget-Approval-Process-f96feedcd96948f8adb493031cc0a
 title: Budget Approval Process
 description: Budgets are approved by controllers / people with budget responsibility
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables: []

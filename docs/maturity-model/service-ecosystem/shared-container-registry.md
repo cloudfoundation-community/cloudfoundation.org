@@ -5,7 +5,7 @@ url: >-
 title: Shared container registry
 description: A central repository provides hardened container images.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []

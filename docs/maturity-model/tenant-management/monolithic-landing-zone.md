@@ -7,7 +7,7 @@ description: >-
   These resources are managed with the same life-cycle as the underlying cloud
   tenant.
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables: []

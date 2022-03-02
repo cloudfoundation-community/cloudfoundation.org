@@ -41,7 +41,7 @@ interface IMaturityModelAtom {
   summary: string;
 }
 
-// this is stupid and duplicate with CFMMBlock.vue, but it works
+// this is stupid and duplicate with CFMMBlockPage.vue, but it works
 // we probably should extract all those index lookup shenanigans to a separate service
 function formatLink(path: string) {
   return "/" + path.replace(".md", ".html");

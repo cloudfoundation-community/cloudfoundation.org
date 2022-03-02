@@ -8,7 +8,7 @@ description: >-
   aligned with the organization's policies for cryptography and secret
   management.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables:

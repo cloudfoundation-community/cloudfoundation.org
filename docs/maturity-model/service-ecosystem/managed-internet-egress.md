@@ -6,7 +6,7 @@ description: >-
   Cloud tenants can connect to internet egress using managed infrastructure that
   ensures compliance and cost efficiency (network separation, proxies etc.).
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []

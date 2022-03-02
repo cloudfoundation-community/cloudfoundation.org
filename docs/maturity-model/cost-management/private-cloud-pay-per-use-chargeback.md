@@ -8,7 +8,7 @@ description: >-
   OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use
   pricing model.
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables: []

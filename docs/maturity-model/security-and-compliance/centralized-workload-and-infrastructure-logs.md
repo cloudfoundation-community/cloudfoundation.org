@@ -7,7 +7,7 @@ description: >-
   Audit logs from cloud workloads and infrastructure (e.g. network flow logs)
   are centrally collected and stored. 
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables: []

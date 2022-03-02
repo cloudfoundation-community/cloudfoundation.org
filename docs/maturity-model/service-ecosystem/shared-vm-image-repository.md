@@ -5,7 +5,7 @@ url: >-
 title: Shared VM Image Repository
 description: A central repository provides hardened virtual machine images.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []

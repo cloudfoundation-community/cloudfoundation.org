@@ -7,7 +7,7 @@ export const index = [
       "title": "Cloud SIEM",
       "description": "Cloud Tenant Audit logs are automatically analysed for anomalies\n- proactive analysis\n...",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -27,7 +27,7 @@ export const index = [
       "title": "Explore All Building Blocks",
       "category": "Maturity Model",
       "order": 0,
-      "layout": "Fullsize",
+      "pageType": "Fullsize",
       "sidebar": false
     }
   },
@@ -57,7 +57,7 @@ export const index = [
       "title": "Billing to different legal entities",
       "description": "Support billing cloud workloads to different legal entities of an enterprise. This may manifest e.g. as different billing accounts (GCP), enterprise agreement (Azure) or Payer Accounts (AWS).",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -77,7 +77,7 @@ export const index = [
       "title": "Private Cloud pay-per-use chargeback",
       "description": "Resource consumption on multi-tenant private cloud platforms such as OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use pricing model.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -120,7 +120,7 @@ export const index = [
       "title": "Automated Security Scanning",
       "description": "Cloud workloads are automatically scanned for security/compliance violations (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud resource configuration (e.g. VPC ACLs), not about workload configuration (e.g. software firewall)",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -160,7 +160,7 @@ export const index = [
       "title": "Authorization Concept",
       "description": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [
@@ -187,7 +187,7 @@ export const index = [
       "title": "Tenant Deprovisioning / Decommissioning",
       "description": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [
@@ -213,7 +213,7 @@ export const index = [
       "title": "Multi-Cloud Tenant Database",
       "description": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [
@@ -259,7 +259,7 @@ export const index = [
       "title": "3rd party PaaS Service Integration",
       "description": "Teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -279,7 +279,7 @@ export const index = [
       "title": "Managed Key Vault",
       "description": "Managed key management services that allow applications to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [
@@ -319,7 +319,7 @@ export const index = [
       "title": "Playground / Sandbox Environments",
       "description": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -380,7 +380,7 @@ export const index = [
       "title": "Service Account Management",
       "description": "Managed provisioning and inventory of Service Accounts including their permission sets. Enables central enforcement of compliance policies for technical users like re-certification, credential strength and credential rotation.",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [],
@@ -403,7 +403,7 @@ export const index = [
       "title": "Shared container registry",
       "description": "A central repository provides hardened container images.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -423,7 +423,7 @@ export const index = [
       "title": "Privileged Access Management",
       "description": "Implement appropriate security controls for privileged access as defined in the Authorization Concept. These must cover access to administrative cloud platform roles (e.g. Global Admins, Global Readers) and shared services (e.g. on-premise connectivity hubs). ",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [],
@@ -447,7 +447,7 @@ export const index = [
       "title": "On-Premise Network Connection",
       "description": "Provides managed IP (L3) connectivity to on-premises networks. This is commonly implemented using hub&spoke network architectures and a combination of VPNs or private network peerings.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -487,7 +487,7 @@ export const index = [
       "title": "Monthly Cloud Project Billing Report",
       "description": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [
@@ -531,7 +531,7 @@ export const index = [
       "title": "Virtual Network Service",
       "description": "A virtual network service provides a pre-configured virtual network. It is a pre-requisite for higher-level services built on virtual networks.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [
@@ -558,7 +558,7 @@ export const index = [
       "title": "Centralized audit logs",
       "description": "Audit logs from all cloud tenants (API/resource access) are centrally collected and stored. ",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -616,7 +616,7 @@ export const index = [
       "title": "Cloud Resource Tagging",
       "description": "Cloud resources are tagged using a consistent tagging strategy to facilitate security and compliance processes for cloud workloads.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -659,7 +659,7 @@ export const index = [
       "title": "Identity and Access Management Concept",
       "description": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [
@@ -703,7 +703,7 @@ export const index = [
       "title": "Individual Project Cost Optimization via Reservations",
       "description": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -725,7 +725,7 @@ export const index = [
       "title": "Certified ISMS Compliance",
       "description": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -748,7 +748,7 @@ export const index = [
       "title": "Kubernetes Cluster as a Service",
       "description": "Provides Kubernetes Clusters as a Service. These are deployed as workloads into the customer's cloud tenants.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -787,7 +787,7 @@ export const index = [
       "title": "Identity Lifecycle Management",
       "description": "Identities are consistently governed across throughout the entire lifecycle from provisioning to deprovisioning.",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [],
@@ -887,7 +887,7 @@ export const index = [
       "title": "Cloud Tenant Tagging",
       "description": "Cloud tenants are tagged using a consistent tagging strategy to facilitate cloud platform operations.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -924,7 +924,7 @@ export const index = [
       "title": "Monolithic Landing Zone",
       "description": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -947,7 +947,7 @@ export const index = [
       "title": "Shared Responsibility Model",
       "description": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -1035,7 +1035,7 @@ export const index = [
       "title": "Tenant Inventory Reconciliation",
       "description": "The inventory of cloud tenants is automatically reconciled against the tenants actually present in the cloud platforms. This allows organizations to detect \"shadow IT\" or \"dark matter\" in the cloud. A process is in place to adopt these existing tenants into the prescribed governance model. ",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -1076,7 +1076,7 @@ export const index = [
       "title": "Managed bastion hosts",
       "description": "Teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1098,7 +1098,7 @@ export const index = [
       "title": "Tenant to Tenant Transit Networks",
       "description": "Provides managed connectivity between cloud tenants on the same cloud platform via centrally managed transit networks. ",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1120,7 +1120,7 @@ export const index = [
       "title": "Multi-Cloud Tagging Policy",
       "description": "Define and enforce a consistent tagging of cloud tenants and resource across multiple cloud platforms.  ",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -1149,7 +1149,7 @@ export const index = [
       "title": "Managed DevOps Toolchain",
       "description": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1209,7 +1209,7 @@ export const index = [
       "title": "SOC Integration",
       "description": "Virtual machines are integrated into a central Security Operations Center (SOC) solution like tenable.io or Qualys. The cloud inventory of existing machines is reconciled against the SOC to ensure completeness.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -1229,7 +1229,7 @@ export const index = [
       "title": "Managed Data Lake access",
       "description": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1268,7 +1268,7 @@ export const index = [
       "title": "Multi-cloud tenant database integrated with lifecycle management",
       "description": "A central database of all multi-cloud tenants initiates tenant provisioning and deprovisioning processes. The database acts as an authoritative source of tenants and ensures tenant metadata is always up to date.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -1295,7 +1295,7 @@ export const index = [
       "title": "In-house PaaS Service Integration",
       "description": "In-house teams provide PaaS services for commonly needed infrastructure services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1325,7 +1325,7 @@ export const index = [
       "title": "Incident Management Process",
       "description": "There's a clear owner for every cloud tenant responsible for incident management. Incidents are automatically routed to these owners. ",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -1373,7 +1373,7 @@ export const index = [
       "title": "Modular Landing Zones",
       "description": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -1423,7 +1423,7 @@ export const index = [
       "title": "Cloud to Cloud interconnects",
       "description": "Provides managed connectivity between cloud tenants on different cloud platforms via centrally managed transit networks. ",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1455,7 +1455,7 @@ export const index = [
       "title": "Self-Service Multi-Cloud Tenant Database",
       "description": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -1481,7 +1481,7 @@ export const index = [
       "title": "Resource Hierarchy",
       "description": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [],
@@ -1522,7 +1522,7 @@ export const index = [
       "title": "Centralized workload and infrastructure logs",
       "description": "Audit logs from cloud workloads and infrastructure (e.g. network flow logs) are centrally collected and stored. ",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -1552,7 +1552,7 @@ export const index = [
       "title": "Federated Identity and Authentication",
       "description": "Integration Cloud Platform IAM systems with Enterprise IAM landscape incl. federated authentication. ",
       "category": "🔐 IAM",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔐 IAM",
         "enables": [
@@ -1577,7 +1577,7 @@ export const index = [
       "title": "Global Cost Optimization via Reservations",
       "description": "Cloud providers offer different programs offering lower pay-per-use rates in exchange for making spend or resource reservation commitments (e.g. reserved instances). Centrally plan resource demand to take advantage of cost optimization opportunities offered by cloud providers. ",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -1598,7 +1598,7 @@ export const index = [
       "title": "Cloud Tenant Database",
       "description": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [
@@ -1713,7 +1713,7 @@ export const index = [
       "title": "Pay-per-Use for internal Services",
       "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [
@@ -1775,7 +1775,7 @@ export const index = [
       "title": "Monthly cloud tenant billing report",
       "description": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [
@@ -1802,7 +1802,7 @@ export const index = [
       "title": "Monthly Cloud Project Carbon Footprint Report",
       "description": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -1825,7 +1825,7 @@ export const index = [
       "title": "API Gateway to on-premises APIs",
       "description": "Provide managed API (L7) connectivity to APIs running in on-premise environments.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1845,7 +1845,7 @@ export const index = [
       "title": "Onboarding Portal",
       "description": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -1869,7 +1869,7 @@ export const index = [
       "title": "Resource Policies - Blacklisting",
       "description": "Basic policies on cloud resources enforce Blacklisting of forbidden services, regions.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -1909,7 +1909,7 @@ export const index = [
       "title": "Chargeback at full cost allocation",
       "description": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -1933,7 +1933,7 @@ export const index = [
       "title": "Consumption based pay-per-use for internal Services",
       "description": "Enable fine-grained pay-per-use options for managed services offered on the cloud foundation, e.g. pay per API request, per GB/h stored etc.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],
@@ -1958,7 +1958,7 @@ export const index = [
       "title": "Managed Cloud Provider Support Contracts",
       "description": "Cloud tenant owners can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Owners can access support in self-service and are transparently charged for support fees incurred.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1978,7 +1978,7 @@ export const index = [
       "title": "Shared VM Image Repository",
       "description": "A central repository provides hardened virtual machine images.",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -1998,7 +1998,7 @@ export const index = [
       "title": "Cloud Zones",
       "description": "Regulatory onboarding only captures what is required for getting acces to the cloud",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [],
@@ -2023,7 +2023,7 @@ export const index = [
       "title": "Tenant Provisioning",
       "description": "On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure Subscriptions etc.).",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [
@@ -2055,7 +2055,7 @@ export const index = [
       "title": "Chargeback via consumption cost allocation",
       "description": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [
@@ -2137,7 +2137,7 @@ export const index = [
       "title": "Control access to cloud platforms and Landing Zones",
       "description": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
       "category": "🔖 Security & Compliance",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🔖 Security & Compliance",
         "enables": [
@@ -2165,7 +2165,7 @@ export const index = [
       "title": "Link Cloud Tenants to CMDB/EAM",
       "description": "Maintain a link between cloud tenants and a central CMDB/EAM repository (e.g. IT System identifier, Application Id). Linking cloud tenants to CMDB/EAM systems is a foundational capability that enables use cases like basic chargeback, systematic risk assessment and change management. ",
       "category": "🗂 Tenant Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🗂 Tenant Management",
         "enables": [
@@ -2190,7 +2190,7 @@ export const index = [
       "title": "Internal Service Marketplace",
       "description": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [
@@ -2234,7 +2234,7 @@ export const index = [
       "title": "Managed Internet Egress",
       "description": "Cloud tenants can connect to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
       "category": "🛠 Service Ecosystem",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "🛠 Service Ecosystem",
         "enables": [],
@@ -2256,7 +2256,7 @@ export const index = [
       "title": "Budget Approval Process",
       "description": "Budgets are approved by controllers / people with budget responsibility",
       "category": "💵 Cost Management",
-      "layout": "CFMMBlock",
+      "pageType": "CFMMBlock",
       "properties": {
         "pillar": "💵 Cost Management",
         "enables": [],

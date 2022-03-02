@@ -7,7 +7,7 @@ description: >-
   Provides Kubernetes Clusters as a Service. These are deployed as workloads
   into the customer's cloud tenants.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []

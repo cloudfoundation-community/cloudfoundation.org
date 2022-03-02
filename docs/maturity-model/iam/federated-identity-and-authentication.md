@@ -7,7 +7,7 @@ description: >-
   Integration Cloud Platform IAM systems with Enterprise IAM landscape incl.
   federated authentication. 
 category: 🔐 IAM
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔐 IAM
   enables:

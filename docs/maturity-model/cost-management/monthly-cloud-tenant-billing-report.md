@@ -7,7 +7,7 @@ description: >-
   Tenant owners can view a monthly cloud tenant billing report listing all
   incurred charges for cloud resource consumption.
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables:

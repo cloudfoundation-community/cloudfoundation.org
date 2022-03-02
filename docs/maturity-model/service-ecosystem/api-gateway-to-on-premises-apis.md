@@ -7,7 +7,7 @@ description: >-
   Provide managed API (L7) connectivity to APIs running in on-premise
   environments.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []

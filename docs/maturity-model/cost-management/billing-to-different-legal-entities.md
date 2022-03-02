@@ -8,7 +8,7 @@ description: >-
   This may manifest e.g. as different billing accounts (GCP), enterprise
   agreement (Azure) or Payer Accounts (AWS).
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 💵 Cost Management
   enables: []

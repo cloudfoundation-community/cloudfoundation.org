@@ -8,7 +8,7 @@ description: >-
   foundation and how it interacts with the cloud provider's shared
   responsibility model.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables:

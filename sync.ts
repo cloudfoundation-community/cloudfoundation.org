@@ -40,7 +40,7 @@ const config: SyncConfig = {
     frontmatterBuilder: (page) => {
       const extraFrontmatter =
         page.meta.title === "Explore All Building Blocks"
-          ? { layout: "Fullsize", sidebar: false }
+          ? { pageType: "Fullsize", sidebar: false }
           : {};
 
       return {
@@ -90,7 +90,7 @@ const config: SyncConfig = {
           return {
             ...commonFrontmatter(page),
             category: page.properties.get("Pillar"),
-            layout: "CFMMBlock",
+            pageType: "CFMMBlock",
             properties,
           };
         },

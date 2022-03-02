@@ -9,7 +9,7 @@ description: >-
   technical users like re-certification, credential strength and credential
   rotation.
 category: 🔐 IAM
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔐 IAM
   enables: []

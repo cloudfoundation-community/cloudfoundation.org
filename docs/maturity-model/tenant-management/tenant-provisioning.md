@@ -6,7 +6,7 @@ description: >-
   On-demand provisioning of primitive cloud tenants (e.g. AWS Accounts, Azure
   Subscriptions etc.).
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🗂 Tenant Management
   enables:

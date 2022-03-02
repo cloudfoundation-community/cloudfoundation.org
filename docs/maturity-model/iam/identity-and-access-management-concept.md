@@ -7,7 +7,7 @@ description: >-
   Multi-Cloud IAM architecture concept based on federated identities and
   authentication.
 category: 🔐 IAM
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔐 IAM
   enables:

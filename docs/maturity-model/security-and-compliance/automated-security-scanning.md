@@ -9,7 +9,7 @@ description: >-
   resource configuration (e.g. VPC ACLs), not about workload configuration (e.g.
   software firewall)
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🔖 Security & Compliance
   enables:

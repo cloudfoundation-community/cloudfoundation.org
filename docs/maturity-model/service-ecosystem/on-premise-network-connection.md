@@ -8,7 +8,7 @@ description: >-
   commonly implemented using hub&spoke network architectures and a combination
   of VPNs or private network peerings.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
   pillar: 🛠 Service Ecosystem
   enables: []
