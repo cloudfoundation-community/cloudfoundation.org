@@ -8,7 +8,6 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️

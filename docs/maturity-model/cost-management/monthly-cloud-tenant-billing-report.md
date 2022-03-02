@@ -9,7 +9,6 @@ description: >-
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables:
     - 28740e92-5559-4931-ab04-17cfb026edd5
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161

@@ -10,7 +10,6 @@ description: >-
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792
   journey-stage: ⭐️⭐️

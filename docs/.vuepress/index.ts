@@ -9,7 +9,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -59,7 +58,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
@@ -79,7 +77,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -122,7 +119,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
@@ -162,7 +158,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [
           "1afea746-da65-4164-9029-5e0bfa9432b1"
         ],
@@ -189,7 +184,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
           "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
@@ -215,7 +209,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
           "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
@@ -261,7 +254,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
@@ -281,7 +273,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [
           "18256d4f-e096-4281-809a-f77c5dd20ef0"
         ],
@@ -321,7 +312,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -382,7 +372,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -405,7 +394,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
@@ -425,7 +413,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
@@ -449,7 +436,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
@@ -489,7 +475,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [
           "ce20312c-aa7a-453f-82f2-f186469dd973"
         ],
@@ -533,7 +518,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [
           "f90c7375-88b9-42dc-8e98-a65c006b927a",
           "2468d240-6cca-4680-b9c4-6f237defa511",
@@ -560,7 +544,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -618,7 +601,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "707c41b8-6da0-4e78-b982-fa4b1365521b"
         ],
@@ -661,7 +643,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [
           "1afea746-da65-4164-9029-5e0bfa9432b1",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
@@ -705,7 +686,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -727,7 +707,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "redaction-state": "partner is working on it",
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
@@ -750,7 +729,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "redaction-state": "partner is working on it",
         "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -789,7 +767,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
@@ -889,7 +866,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "707c41b8-6da0-4e78-b982-fa4b1365521b"
         ],
@@ -926,7 +902,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -949,7 +924,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "3c7081e5-c451-40b6-806d-a8d21b130612",
           "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
@@ -1037,7 +1011,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -1078,7 +1051,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
@@ -1100,7 +1072,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
         "depends-on": [
@@ -1122,7 +1093,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
         ],
@@ -1151,7 +1121,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
@@ -1211,7 +1180,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
@@ -1231,7 +1199,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -1270,7 +1237,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️⭐️",
@@ -1297,7 +1263,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -1327,7 +1292,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
@@ -1375,7 +1339,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
@@ -1425,7 +1388,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
         "depends-on": [
@@ -1457,7 +1419,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -1483,7 +1444,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -1524,7 +1484,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
@@ -1554,7 +1513,6 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔐 IAM",
         "enables": [
           "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
         ],
@@ -1579,7 +1537,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -1600,7 +1557,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [
           "11af37b7-c948-4486-a5da-5b1db6de8193",
           "52d1e517-9d07-4acc-8c59-17526fa3af9d"
@@ -1715,7 +1671,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [
           "d2cb8a5e-3e28-448b-8944-14ff38fad792"
         ],
@@ -1777,7 +1732,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [
           "28740e92-5559-4931-ab04-17cfb026edd5",
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
@@ -1804,7 +1758,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -1827,7 +1780,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -1847,7 +1799,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "redaction-state": "partner is working on it",
         "journey-stage": "⭐️⭐️⭐️",
@@ -1871,7 +1822,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -1911,7 +1861,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "journey-stage": "⭐️⭐️",
         "depends-on": [
@@ -1935,7 +1884,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
@@ -1960,7 +1908,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
@@ -1980,7 +1927,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
@@ -2000,7 +1946,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [],
         "redaction-state": "review-v1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
@@ -2025,7 +1970,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef"
         ],
@@ -2057,7 +2001,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [
           "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
           "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
@@ -2139,7 +2082,6 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🔖 Security & Compliance",
         "enables": [
           "dc16dccf-7530-4179-a8e2-b82cc54b990f"
         ],
@@ -2167,7 +2109,6 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🗂 Tenant Management",
         "enables": [
           "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
@@ -2192,7 +2133,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [
           "d2cb8a5e-3e28-448b-8944-14ff38fad792",
           "c9728af5-49fe-4948-8701-2d6485bfbe93"
@@ -2236,7 +2176,6 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "🛠 Service Ecosystem",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
@@ -2258,7 +2197,6 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "pillar": "💵 Cost Management",
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],

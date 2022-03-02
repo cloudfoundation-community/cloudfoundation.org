@@ -11,7 +11,6 @@ description: >-
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []

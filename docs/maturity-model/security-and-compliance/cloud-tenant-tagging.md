@@ -8,7 +8,6 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b
   redaction-state: mvp1

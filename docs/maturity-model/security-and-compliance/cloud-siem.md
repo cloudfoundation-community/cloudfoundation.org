@@ -9,7 +9,6 @@ description: |-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []

@@ -11,7 +11,6 @@ description: >-
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
-  pillar: 🗂 Tenant Management
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
     - ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9

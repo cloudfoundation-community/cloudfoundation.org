@@ -3,7 +3,7 @@
     <template #before>
       <p>
         {{ frontmatter.properties.scope }} /
-        {{ frontmatter.properties.pillar }} /
+        {{ frontmatter.category }} /
         {{ frontmatter.properties["journey-stage"] }}
       </p>
       <div class="custom-container tip">
@@ -152,14 +152,13 @@ const trackableProperties = computed(() => {
   // we therefore handle this here explicitly - may not be the cleanest way to do this with vue but I don't know better
   const isLeavingBlock = frontmatter.value.pageType !== "CFMMBlock";
   if (isLeavingBlock) {
-    console.log("IS LEAVING BLOCK")
     return null;
   }
 
   return {
     id: frontmatter.value.id,
     title: frontmatter.value.title,
-    pillar: frontmatter.value.properties.pillar,
+    pillar: frontmatter.value.category,
     journeyStage: frontmatter.value.properties["journey-stage"],
     scope: frontmatter.value.properties.scope,
     redactionState: frontmatter.value.properties["redaction-state"],

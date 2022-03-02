@@ -10,7 +10,6 @@ description: >-
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
-  pillar: 🗂 Tenant Management
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️

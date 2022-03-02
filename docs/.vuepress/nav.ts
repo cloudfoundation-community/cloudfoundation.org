@@ -114,7 +114,7 @@ function formatTitle(
 ): any {
   // this may not be the cleanest way to detect this, with all the hardcoding going on
   // however it works and we won't need this forever
-  const isBlock = indexEntry?.frontmatter["layout"] === "CFMMBlock";
+  const isBlock = indexEntry?.frontmatter.pageType === "CFMMBlock";
   if (isBlock) {
     const rs = indexEntry.frontmatter.properties["redaction-state"];
     const isDraft = !rs || rs === "Draft";

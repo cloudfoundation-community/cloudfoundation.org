@@ -11,7 +11,6 @@ description: >-
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
-  pillar: 🔐 IAM
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️

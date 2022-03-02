@@ -9,7 +9,6 @@ description: >-
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️⭐️

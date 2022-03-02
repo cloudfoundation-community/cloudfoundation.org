@@ -7,7 +7,6 @@ description: A central repository provides hardened virtual machine images.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️
   depends-on: []

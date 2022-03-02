@@ -10,7 +10,6 @@ description: >-
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️

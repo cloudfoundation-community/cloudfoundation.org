@@ -9,7 +9,6 @@ description: >-
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
-  pillar: 🔐 IAM
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️

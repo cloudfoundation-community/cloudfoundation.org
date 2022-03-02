@@ -10,7 +10,6 @@ description: >-
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️⭐️

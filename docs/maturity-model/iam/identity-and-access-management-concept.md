@@ -9,7 +9,6 @@ description: >-
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
-  pillar: 🔐 IAM
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
     - 0dd09c75-2acd-4e87-9721-6b5f563da035

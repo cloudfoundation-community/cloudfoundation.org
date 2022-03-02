@@ -11,7 +11,6 @@ description: >-
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
-  pillar: 🔐 IAM
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
   redaction-state: Draft

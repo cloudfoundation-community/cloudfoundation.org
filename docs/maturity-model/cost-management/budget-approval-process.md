@@ -6,7 +6,6 @@ description: Budgets are approved by controllers / people with budget responsibi
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on: []

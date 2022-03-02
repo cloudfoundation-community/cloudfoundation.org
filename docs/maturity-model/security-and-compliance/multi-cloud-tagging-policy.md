@@ -9,7 +9,6 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
   redaction-state: mvp1
