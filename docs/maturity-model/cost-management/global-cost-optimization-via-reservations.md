@@ -9,9 +9,8 @@ description: >-
   instances). Centrally plan resource demand to take advantage of cost
   optimization opportunities offered by cloud providers. 
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️

@@ -7,9 +7,8 @@ description: >-
   The landing zone and its operation by the cloud foundation team are certified
   according to an information security management system like ISO 27001 or C5.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️⭐️⭐️

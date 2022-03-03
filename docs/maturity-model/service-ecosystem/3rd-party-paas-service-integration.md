@@ -9,9 +9,8 @@ description: >-
   IAM in self-service and are transparently charged for all consumption cost
   incurred.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on: []

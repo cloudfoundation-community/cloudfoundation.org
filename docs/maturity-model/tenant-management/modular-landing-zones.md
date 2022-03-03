@@ -7,9 +7,8 @@ description: >-
   lifecycle and can be reconfigured during the lifespan of a tenant. The modular
   design allows combining services like LEGO® blocks. 
 category: 🗂 Tenant Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🗂 Tenant Management
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️

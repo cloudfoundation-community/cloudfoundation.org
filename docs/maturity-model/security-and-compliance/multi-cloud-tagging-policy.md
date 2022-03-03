@@ -7,9 +7,8 @@ description: >-
   Define and enforce a consistent tagging of cloud tenants and resource across
   multiple cloud platforms.  
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
   redaction-state: mvp1

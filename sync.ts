@@ -40,7 +40,7 @@ const config: SyncConfig = {
     frontmatterBuilder: (page) => {
       const extraFrontmatter =
         page.meta.title === "Explore All Building Blocks"
-          ? { layout: "Fullsize", sidebar: false }
+          ? { pageType: "Fullsize", sidebar: false }
           : {};
 
       return {
@@ -75,7 +75,7 @@ const config: SyncConfig = {
         frontmatterBuilder: (page) => {
           const include = [
             // order chosen here to keep code generation as close as possible to the old
-            "Pillar",
+            // note: Pillar is already the "category" of the page so we avoid duplication here
             "Enables",
             "Redaction State",
             "Journey Stage",
@@ -90,7 +90,7 @@ const config: SyncConfig = {
           return {
             ...commonFrontmatter(page),
             category: page.properties.get("Pillar"),
-            layout: "CFMMBlock",
+            pageType: "CFMMBlock",
             properties,
           };
         },

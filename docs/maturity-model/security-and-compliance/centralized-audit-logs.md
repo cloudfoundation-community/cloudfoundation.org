@@ -6,9 +6,8 @@ description: >-
   Audit logs from all cloud tenants (API/resource access) are centrally
   collected and stored. 
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️

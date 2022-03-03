@@ -7,9 +7,8 @@ description: |-
   - proactive analysis
   ...
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []

@@ -7,9 +7,8 @@ description: >-
   using managed bastion hosts or gateway services. These gateways are hardened
   and centrally audited.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on:

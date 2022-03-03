@@ -6,9 +6,8 @@ description: >-
   A virtual network service provides a pre-configured virtual network. It is a
   pre-requisite for higher-level services built on virtual networks.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables:
     - f90c7375-88b9-42dc-8e98-a65c006b927a
     - 2468d240-6cca-4680-b9c4-6f237defa511

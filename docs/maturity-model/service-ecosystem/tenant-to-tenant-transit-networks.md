@@ -7,9 +7,8 @@ description: >-
   Provides managed connectivity between cloud tenants on the same cloud platform
   via centrally managed transit networks. 
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️⭐️
   depends-on:

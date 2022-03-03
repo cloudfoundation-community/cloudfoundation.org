@@ -5,7 +5,7 @@ url: >-
 title: Explore All Building Blocks
 category: Maturity Model
 order: 0
-layout: Fullsize
+pageType: Fullsize
 sidebar: false
 ---
 

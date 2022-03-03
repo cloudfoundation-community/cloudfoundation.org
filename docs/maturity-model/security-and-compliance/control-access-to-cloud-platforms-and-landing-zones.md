@@ -7,9 +7,8 @@ description: >-
   Implement automated policies to steer cloud consumers to appropriate cloud
   platforms and landing zones based on metadata about the cloud consumer.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables:
     - dc16dccf-7530-4179-a8e2-b82cc54b990f
   redaction-state: mvp1

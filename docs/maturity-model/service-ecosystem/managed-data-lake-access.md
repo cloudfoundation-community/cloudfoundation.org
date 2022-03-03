@@ -12,9 +12,8 @@ description: >-
   their own pipelines (e.g. different teams building ML models for different
   purposes from common data). 
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []

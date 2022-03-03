@@ -7,9 +7,8 @@ description: >-
   Basic policies on cloud resources enforce Blacklisting of forbidden services,
   regions.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️

@@ -7,9 +7,8 @@ description: >-
   There's a clear owner for every cloud tenant responsible for incident
   management. Incidents are automatically routed to these owners. 
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on:

@@ -8,9 +8,8 @@ description: >-
   footprint caused by their project’s cloud usage. This enables sustainability
   reporting and gives teams feedback towards achieving sustainability goals.
 category: 💵 Cost Management
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 💵 Cost Management
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️⭐️⭐️

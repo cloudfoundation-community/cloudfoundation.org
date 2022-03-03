@@ -6,9 +6,8 @@ description: >-
   Teams are guided through the organizational (e.g. budget) and regulatory (e.g.
   compliance) cloud onboarding duties.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔖 Security & Compliance
   enables: []
   redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️

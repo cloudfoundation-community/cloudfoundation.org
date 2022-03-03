@@ -1,9 +1,9 @@
 <template>
-  <Layout>
-    <template #page-before>
+  <Page>
+    <template #before>
       <p>
         {{ frontmatter.properties.scope }} /
-        {{ frontmatter.properties.pillar }} /
+        {{ frontmatter.category }} /
         {{ frontmatter.properties["journey-stage"] }}
       </p>
       <div class="custom-container tip">
@@ -53,7 +53,7 @@
       </div>
     </template>
 
-    <template #page-after>
+    <template #after>
       <h2>Related Tools</h2>
 
       <ul class="cards mb-4">
@@ -84,14 +84,15 @@
         v-if="!underConstruction"
       ></Feedback>
     </template>
-  </Layout>
+  </Page>
 </template>
 
 <script setup lang="ts">
-import { usePageFrontmatter } from "@vuepress/client";
 import { computed, watch } from "vue";
+import { usePageFrontmatter } from "@vuepress/client";
+import Page from "./Page.vue";
+import Feedback from "./Feedback.vue";
 import { index } from "../../index";
-import Feedback from "../components/Feedback.vue";
 
 function formatLink(path: string) {
   return "/" + path.replace(".md", ".html");
@@ -149,7 +150,7 @@ const trackableProperties = computed(() => {
   // unfortunately the computed property is still triggering when leaving the CFMMBlock layout, which means
   // that we will see the frontmatter of a different page (and with a different schema)
   // we therefore handle this here explicitly - may not be the cleanest way to do this with vue but I don't know better
-  const isLeavingBlock = frontmatter.value.layout !== "CFMMBlock";
+  const isLeavingBlock = frontmatter.value.pageType !== "CFMMBlock";
   if (isLeavingBlock) {
     return null;
   }
@@ -157,7 +158,7 @@ const trackableProperties = computed(() => {
   return {
     id: frontmatter.value.id,
     title: frontmatter.value.title,
-    pillar: frontmatter.value.properties.pillar,
+    pillar: frontmatter.value.category,
     journeyStage: frontmatter.value.properties["journey-stage"],
     scope: frontmatter.value.properties.scope,
     redactionState: frontmatter.value.properties["redaction-state"],
@@ -169,16 +170,6 @@ watch(trackableProperties, (props) => {
     plausible.value.trackEvent("block-view", { props });
   }
 });
-</script>
-
-<script lang="ts">
-import Layout from "./Layout.vue";
-
-export default {
-  components: {
-    Layout,
-  },
-};
 </script>
 
 <style lang="scss" scoped>

@@ -7,9 +7,8 @@ description: >-
   Teams offer services to other teams and make them accessible on a marketplace
   that is integrated with Cost Management and IAM:
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🛠 Service Ecosystem
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792
     - c9728af5-49fe-4948-8701-2d6485bfbe93

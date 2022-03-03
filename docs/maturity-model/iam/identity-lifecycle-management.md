@@ -7,9 +7,8 @@ description: >-
   Identities are consistently governed across throughout the entire lifecycle
   from provisioning to deprovisioning.
 category: 🔐 IAM
-layout: CFMMBlock
+pageType: CFMMBlock
 properties:
-  pillar: 🔐 IAM
   enables: []
   redaction-state: Draft
   journey-stage: ⭐️⭐️
