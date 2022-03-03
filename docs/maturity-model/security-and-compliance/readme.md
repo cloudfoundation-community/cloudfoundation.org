@@ -58,7 +58,7 @@ Especially when considering a multi-cloud scenario, cloud foundation teams need 
   <CtaButton url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Read the Security & Compliance Guide</CtaButton>
 </CallToAction>
 
-## Stakeholders to Involve for Multi-Cloud Security & Compliance
+## Key Stakeholders for Multi-Cloud Security & Compliance
 
 Cloud Foundation teams need to cover the spectrum of knowledge about the organization’s security & compliance guidelines all the way to the technical implementation capabilities in different cloud platforms. Inter-disciplinary teams comprising information security specialists, enterprise architects and platform specialists are best positioned to define and automate security baselines that are compatible with both, compliance requirements and real-world- application requirements.
 
