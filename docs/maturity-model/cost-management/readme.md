@@ -27,21 +27,35 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🗂 Tenant Management](../tenant-management/readme.md) 
 
-- Tenant management process needs to provide the required data for chargeback, e.g. the responsible cost owners and cost-centers
+- Tenant management process needs to provide the required data for chargeback. Usually a [Multi-Cloud Tenant Database](../tenant-management/multi-cloud-tenant-database.md) keeps track of the responsible cost owners and cost-centers for chargeback.
 
+[🔐 IAM](../iam/readme.md) 
 
+- The [Authorization Concept](../iam/authorization-concept.md) should ensure that non-technical project stakeholders have sufficient access to cost reporting capabilities
 
-- *The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s* [*Shared Responsibility Model*](../security-and-compliance/shared-responsibility-model.md)  
+[🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- *Permissions are often a key component of* [*Automated Security Scanning*](../security-and-compliance/automated-security-scanning.md) *reports (e.g. to ensure principle of least privilege, preventing public access etc.)*
+- Cost Management processes often have a compliance angle to it. For example [Budget Approval Process](./budget-approval-process.md) define budgets, and when internal cloud customers overrun them you may want to handle them with an [Incident Management Process](../security-and-compliance/incident-management-process.md).
 
-- *IAM changes should be included in* [*Centralized audit logs*](../security-and-compliance/centralized-audit-logs.md)*. This is also important to document correct handling of Joiner/Mover/Leaver-Processes.*
+[🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 
-[*💵 Cost Management*](./readme.md) 
+- Once the cloud foundation team has established a clear chargeback process, extending it to the service ecosystem with [Pay-per-Use for internal Services](./pay-per-use-for-internal-services.md) or chargeback for [3rd party PaaS Service Integration](../service-ecosystem/3rd-party-paas-service-integration.md) is relatively straightforward and helps managing them with a cloud-native mindset.
 
-- *The* [*Authorization Concept*](../iam/authorization-concept.md) *should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources*
+## Designing a Multi-Cloud Cost Management Strategy
 
-[*🛠 Service Ecosystem*](../service-ecosystem/readme.md) 
+Especially when considering a multi-cloud scenario, cloud foundation teams need to design a security & compliance strategy that enables consistently securing workloads across all cloud platforms. 
 
-- *Cloud Foundation teams should evaluate how they can leverage existing permissions and IAM concepts to also grant teams access to internal services*
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Guide to Multi-Cloud Billing and Cost Management</CtaHeader>
+  <CtaText>Take a look at the comprehensive multi-cloud cost management guide for more insights on building an effective multi-cloud cost management strategy.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2020/12/23/the-2021-guide-to-multi-cloud-billing-and-cost-management/">Read the Cost Management Guide</CtaButton>
+</CallToAction>
 
+## Key Stakeholders for Multi-Cloud Cost Management
+
+The pay-per-use model for cloud consumption requires highly automated systems to process and chargeback cost, which can vary wildly from month to month. It’s therefore crucial for cloud foundation teams to have the capability to either procure and integrate third-party tooling or build custom automation solutions around cloud platform APIs. 
+
+In any case, the cloud foundation team needs to involve stakeholders from IT finance or controlling very closely. Many organizations find it extremely challenging to adopt internal processes to a pay-per-use paradigm when coming from a “traditional” IT background that views IT as a shared cost center. A strong mandate by the cloud foundation team to build cloud-native processes and a supportive controlling organization that’s running the “backoffice” processes for chargeback (e.g. ERP Systems) is mandatory in these situations.
+
+To gain the required support, Cloud Foundation Teams should seek to include upper management stakeholders like CIOs or CTOs early in the design process for the cost management pillar. One challenge that cloud foundation teams often need to overcome is that upper management is typically not much concerned about cloud costs at the outset of an organization’s cloud adoption. However, a lack of proper discipline and careful maintenance of individual responsibility for cloud cost can quickly lead to cloud costs spiraling out of control once cloud adoption accelerates. Cloud Foundation teams should therefore make their case based on planned cloud spends, for example based on [Budget Approval Process](./budget-approval-process.md) data or negotiated spend commitments made with cloud providers.

@@ -25,23 +25,23 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🗂 Tenant Management](../tenant-management/readme.md) 
 
-- As the tenant is the fundamental entry point into the cloud, providing access in line with the [Authorization Concept](./authorization-concept.md) should be part of the [Tenant Provisioning](../tenant-management/tenant-provisioning.md) processes
+- As the tenant is the fundamental entry point into the cloud, providing access in line with the [Authorization Concept](./authorization-concept.md) should be part of the [Tenant Provisioning](../tenant-management/tenant-provisioning.md) processes.
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)  
+- The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md).
 
-- Permissions are often a key component of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.)
+- Permissions are often a key component of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.).
 
 - IAM changes should be included in [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md). This is also important to document correct handling of Joiner/Mover/Leaver-Processes.
 
 [💵 Cost Management](../cost-management/readme.md) 
 
-- The [Authorization Concept](./authorization-concept.md) should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources
+- The [Authorization Concept](./authorization-concept.md) should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources.
 
 [🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 
-- Cloud Foundation teams should evaluate how they can leverage existing permissions and IAM concepts to also grant teams access to internal services
+- Cloud Foundation teams should evaluate how they can leverage existing permissions and IAM concepts to also grant teams access to internal services via an [Internal Service Marketplace](../service-ecosystem/internal-service-marketplace.md).
 
 ## Designing a Multi-Cloud IAM Strategy
 

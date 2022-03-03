@@ -54,7 +54,7 @@ Especially when considering a multi-cloud scenario, cloud foundation teams need 
 	<CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
 
-## Stakeholders to Involve for Multi-Cloud Tenant Management
+## Key Stakeholders for Multi-Cloud Tenant Management
 
 Cloud Tenant Management is an “original responsibility” of cloud foundation teams. Other Cloud Foundation Pillars like [🔐 IAM](../iam/readme.md) or [💵 Cost Management](../cost-management/readme.md) often have existing stakeholders in an IT organization responsible for their respective core activities. Tenant management however is a “new” requirement that arises out of cloud adoption specifically.
 

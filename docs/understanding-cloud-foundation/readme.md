@@ -34,6 +34,6 @@ The model also captures how building blocks relate to each other. They are clust
   <CtaHeader>Get started with the model</CtaHeader>
   <CtaText></CtaText>
   <CtaButton class="btn-primary" url="/maturity-model/service-ecosystem/virtual-network-service.html">Show me an example block</CtaButton>
-  <CtaButton class="btn-secondary" url="/maturity-model/building-block-reference.html">Describe the model to me</CtaButton>
+  <CtaButton class="btn-secondary" url="/maturity-model/what-is-a-building-block.html">About Building Blocks</CtaButton>
 </CallToAction>
 
