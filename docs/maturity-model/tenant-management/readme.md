@@ -9,81 +9,52 @@ description: >-
 
 Multi-tenancy is a cornerstone of cloud computing. It allows different customers of a cloud computing provider to share the same physical cloud infrastructure while maintaining strong isolation and security guarantees between tenants. Correctly leveraging the tenant isolation primitives like Accounts (AWS), Subscriptions (Azure) or Projects (GCP) is therefore very important to build a strong foundation for cloud security. 
 
-Tenant management is not only important for cloud security. It’s also the fundamental “entry point” into the cloud platform’s control plane for every operation. Whether you’re deploying new cloud resources, configuring [🔐 IAM](../iam/readme.md) or reviewing resource consumption with the platform’s [💵 Cost Management](../cost-management/readme.md) features, the tenant is always part of the operation’s context. 
+Tenant management is not only important for cloud security. It’s also the fundamental “entry point” into the cloud platform’s control plane for every operation. Whether you’re deploying new cloud resources, configuring IAM or reviewing resource consumption with the platform’s reporting features, the tenant is always part of the operation’s context. 
 
-## Key Activities for Cloud Tenant Management
+## Key Activities in Multi-Cloud Tenant Management
 
-Cloud Tenant Management involves the following key activities and capabilities
+Multi-Cloud Tenant Management involves the following key activities and capabilities 
 
-- Establishes processes for [Tenant Provisioning](./tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) 
+- Establish processes for [Tenant Provisioning](./tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) 
 
-- Define your organization’s [Resource Hierarchy](./resource-hierarchy.md) 
+- Define your organization’s [Resource Hierarchy](./resource-hierarchy.md)
 
 - Build a database of cloud tenants according to your organization’s needs starting with a simple [Cloud Tenant Database](./cloud-tenant-database.md) as the minimum
 
 - Establish a process for building and applying landing zones, e.g. [Modular Landing Zones](./modular-landing-zones.md) 
 
-## Designing a Cloud Tenant Management Strategy
+As the cloud foundation approach is all about integrating the capabilities of its constituent pillars, the Tenant Management pillar has several important links to other cloud foundation capabilities
 
-Especially when considering a multi-cloud scenario, cloud foundation teams need to design a tenant management strategy that they can implement consistently across all cloud platforms. Many cloud foundation teams make the mistake of focusing on the technical implementation details arising from the differences in resource hierarchy implementations of different cloud platforms. However, the true challenges lie elsewhere.
+[🔐 IAM](../iam/readme.md) 
 
-### Understand How Cloud Platforms Implement Multi-Tenancy
+- As the tenant is a fundamental entry point into the cloud, controlling access to the cloud at tenant-level is a key consideration for a multi-cloud [Authorization Concept](../iam/authorization-concept.md) 
 
-Cloud providers have historically chosen slightly different ways for implementing the abstract concept of multi-tenancy in their control planes. What they all have in common is that there’s some primitive concept that ties together all resources of a tenant and provides those isolation guarantees. The following list provides a reference of the different names that cloud platforms use for a “tenant” within their control plane
+[🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- **AWS**: Accounts
+- Tenant databases need to provide necessary metadata to enable [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) and [Cloud Resource Tagging](../security-and-compliance/cloud-resource-tagging.md) for compliance purposes
 
-- **GCP**: Projects
+- The tenant management process needs to identify the responsible security contact for each cloud tenant, which is an important prerequisite for establishing an [Incident Management Process](../security-and-compliance/incident-management-process.md) and informing the right stakeholders about the results of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) 
 
-- **Azure**: Subscriptions
+[💵 Cost Management](../cost-management/readme.md) 
 
-- **Kubernetes (incl. derived platforms like OpenShift, AKS, ...)**: Namespaces
+- Tenant management process needs to identify the responsible cost owners so that the organization can leverage [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) and [Monthly cloud tenant billing report](../cost-management/monthly-cloud-tenant-billing-report.md) for cost owners
 
-- **Cloud Foundry**: Spaces
+[🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 
-- **OpenStack**: Project
+- The concept of an “internal customer” that can order cloud tenants seamlessly extends well into also enabling that same customer to provision services from the service ecosystem. This is also a key requirement when adopting a [Modular Landing Zones](./modular-landing-zones.md) approach that provides baseline configurations for cloud tenants that customers can then extend with additional services
 
-Most Cloud Platforms today also have higher-level tenancy concepts that allow an organization to tie together a large number of these primitive tenants such as AWS and GCP Organizations, Azure Management Groups, and similar constructs. This creates a [Resource Hierarchy](./resource-hierarchy.md) that spans an “enterprise organization” with individual tenants down to individual cloud resources. Organizations can leverage this resource hierarchy to interact with the cloud platform’s control plane, for example, to consistently enforce policies across a grouping of tenants.
+## Designing a Multi-Cloud Tenant Management Strategy
 
-### Define Your Cloud Migration Strategy
+Especially when considering a multi-cloud scenario, cloud foundation teams need to design a tenant management strategy that they can implement consistently across all cloud platforms. 
 
-Much has been written about Cloud Migration Strategies and the most prevailing categorization of them is “the 6 R’s”. The migration strategies place different demands on the cloud foundations’ cloud tenant management capabilities as shown in the table below.
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+	<CtaHeader>Cloud Tenant Management Guide</CtaHeader>
+	<CtaText>Learn more about the organizational needs driving cloud tenant database requirements in the "Cloud Tenant Management Guide - what you need to know in 2021" guide.</CtaText>
+	<CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
+</CallToAction>
 
-<!-- included database 02b9c3c1-8a8b-47ca-a614-e12312dbd28e -->
-| Name       | What it means                                                                                       | Consequences for Cloud Tenant Management                                                                                                                                                |
-| ---------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Refactor   | rebuild the application to embrace cloud-native paradigm                                            | Very high amount of cloud tenants owned by different stakeholders (IT & Business teams) with strong expectations to leverage a wide variety of cloud-services from different platforms. |
-| Retain     | leave it unchanged, keep it on-premise                                                              | not required                                                                                                                                                                            |
-| Retire     | retire the application so that it’s no longer needed                                                | not required                                                                                                                                                                            |
-| Rehost     | lift& shift applications to the cloud without architectural changes                                 | Small amount of tenants owned by central IT teams                                                                                                                                       |
-| Replatform | make targeted changes to the application to leverage cloud-native capabilities like elastic scaling | Support a high amount of cloud tenants owned by different stakeholders (IT & Business teams)                                                                                            |
-| Repurchase | migrate to a different product, e.g. a SaaS                                                         | not required                                                                                                                                                                            |
-
-
-
-> **💡** Many organizations want to leverage multiple cloud migration strategies for their diverse IT portfolio. [Cloud Zones](../security-and-compliance/cloud-zones.md) are a good solution for cloud foundation teams to address the different demands that these migration strategies place on the cloud foundation.
-
-### Make Your IT Organization Structure Cloud-Ready
-
-By leveraging the primitive tenant isolation concept, organizations adopting the cloud can segregate IT systems into individual tenants. This establishes
-
-- clear boundaries of security responsibility 
-
-- clear boundaries of responsibility for cloud spend
-
-- clear boundaries of access (IAM) 
-
-- a good security posture by limiting blast radius at an infrastructure level
-
-While all of these are hallmarks of proper tenant segregation, the key requirement is that the organization can divide responsibility and infrastructure for IT systems cleanly to different teams. In most IT organizations, [Conway’s law](https://en.wikipedia.org/wiki/Conway%27s_law) is the main driver of Enterprise Architecture: The structure of IT systems follows the communication structure of the organization. 
-
-It’s thus necessary that an organization has a clear concept of boundaries between IT systems. Traditional IT organizations that separate “the business” from “the IT” are often challenged to implement these boundaries. The business makes requests towards IT to provide a system, and IT takes care of building and running the system within its own infrastructure. Consequently, the prevailing on-premise IT infrastructure is often built around the concept of having “trust” between different systems: after all, they’re run by the same people. One symptom of this trust is that most on-premise environments have rather flat network structures with little in the way of isolation between applications. 
-
-Embracing the cloud turns these assumptions on its head. When IT infrastructure is just a single API call away, organizations can now decentralize responsibility for building and running IT systems. After all, this is the key enabler for accelerated software delivery performance to drive digitalization initiatives. But organizations need not only be ready for the technical changes this implies to IT systems, like stronger network segmentation provided by virtual networks living in several cloud tenants. First and foremost, organizations need to embrace the paradigm shift that it brings to who’s owning an IT system and who’s responsible for building and operating it. 
-
-> **💡** A good tenant management strategy builds on clear organizational ownership of IT Systems. Enable each “internal customer” to allocate isolated tenants for each environment (e.g. dev, prod) of their IT system.
-
-### Involve All Cloud Tenant Management Stakeholders
+## Stakeholders to Involve for Multi-Cloud Tenant Management
 
 Cloud Tenant Management is an “original responsibility” of cloud foundation teams. Other Cloud Foundation Pillars like [🔐 IAM](../iam/readme.md) or [💵 Cost Management](../cost-management/readme.md) often have existing stakeholders in an IT organization responsible for their respective core activities. Tenant management however is a “new” requirement that arises out of cloud adoption specifically.
 

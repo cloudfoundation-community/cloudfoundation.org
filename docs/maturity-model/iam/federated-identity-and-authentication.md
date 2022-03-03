@@ -22,7 +22,30 @@ properties:
 
 ## Typical Implementations
 
-Most organisations rely on an Active Directory or LDAP based on-premise system as a central user directory. Enterprise IAM Systems provision users to this central directory, integrating HR workflows and master data (user onboarding/offboarding) as well as permission workflows (approval, job roles etc.).
+Most organisations rely on an Active Directory or LDAP based on-premise system as a central user directory. Enterprise IAM Systems provision users to this central directory, integrating HR workflows and master data (user onboarding/offboarding) as well as permission workflows (approval, job roles etc.). Cloud Platforms offer integrations and solutions for identity federation, identity sync or managing cloud native identities.
+
+The following shows an example high level architecture:
+
+```mermaid
+graph TB
+	iam[Enterprise IAM System]
+	identitySource[(Golden Identity Source)]
+	identityConnector[Connector/Sync]
+	az[Azure AAD]
+	gc[Google GCD]
+	aws[AWS SSO]
+	user([User])
+
+iam --> identitySource
+user -- 1. login --> iam
+identitySource --> identityConnector
+identityConnector --> az
+identityConnector --> gc
+identityConnector --> aws
+user -. 2. access .-> az
+user -. 2. access .-> gc
+user -. 2. access .-> aws
+```
 
 ### Azure Active Directory
 

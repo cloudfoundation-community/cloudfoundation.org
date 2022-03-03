@@ -7,73 +7,57 @@ description: >-
   platforms and services.
 ---
 
-Identity and Access Management (IAM) is a crucial key pillar regarding any application or integration effort. IAM covers the life cycle for identities as well as controls for authentication and authorisation. There are multiple ways to integrate or implement an IAM system in a classical enterprise architecture.
+Identity and Access Management (IAM) is a crucial part of building a solid cloud foundation. After all, access to the cloud platform’s API to deploy and manage cloud resources is akin to providing the keys to a virtual data center. IAM covers the life-cycle of identities as well as controls for authentication and authorization. Leveraging the cloud platform’s IAM systems like AWS IAM, Azure RBAC or GCP IAM is therefore crucial to achieve cloud security.
 
-Explore best practices, good real world examples or standards regarding IAM integration to design your own secure identity life cycle in the cloud. Public cloud providers offer integrations and solutions for identity federation, identity sync or managing cloud native identities.
+## Key Activities in Multi-Cloud IAM
 
-The following shows an example high level architecture:
+The IAM pillar of the Cloud Foundation Maturity Model encompasses the following key activities and capabilities
 
-```mermaid
-graph TB
-	iam[Enterprise IAM System]
-	identitySource[(Golden Identity Source)]
-	identityConnector[Connector/Sync]
-	az[Azure AAD]
-	gc[Google GCD]
-	aws[AWS SSO]
-	user([User])
+- An [Identity and Access Management Concept](./identity-and-access-management-concept.md) establishes a multi-cloud control plane for IAM with a consistent management paradigm for identity and permissions life-cycle across platforms.
 
-iam --> identitySource
-user -- 1. login --> iam
-identitySource --> identityConnector
-identityConnector --> az
-identityConnector --> gc
-identityConnector --> aws
-user -. 2. access .-> az
-user -. 2. access .-> gc
-user -. 2. access .-> aws
-```
+- A [Federated Identity and Authentication](./federated-identity-and-authentication.md) architecture adapted to each cloud platform provides the technical integration.
 
+- An [Authorization Concept](./authorization-concept.md) describes how the organization manages authorization for cloud tenants and resources. 
 
+- Cloud Foundation teams should strongly consider also establishing formal processes for [Privileged Access Management](./privileged-access-management.md), e.g. for administrative users
 
-The IAM pillar in the Cloud Foundation Model tries to solve the following problems:
+As the cloud foundation approach is all about integrating the capabilities of its constituent pillars, the Identity and Access Management pillar has several important links to other cloud foundation capabilities
 
-- Multi-Cloud IAM architecture and implementation with federated identities
+[🗂 Tenant Management](../tenant-management/readme.md) 
 
-- Multi-Cloud autorisation utilising cloud native capabilities
+- As the tenant is the fundamental entry point into the cloud, providing access in line with the [Authorization Concept](./authorization-concept.md) should be part of the [Tenant Provisioning](../tenant-management/tenant-provisioning.md) processes
 
-- Managing privileged user access in the cloud (e.g. administrative users)
+[🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- Identity lifecycle management in an mulit-cloud environment (Joiner-Mover-Leaver)
+- The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)  
 
-- Managing technical and service users
+- Permissions are often a key component of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.)
 
+- IAM changes should be included in [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md). This is also important to document correct handling of Joiner/Mover/Leaver-Processes.
 
+[💵 Cost Management](../cost-management/readme.md) 
 
-Important concepts and principals for a successful IAM alignment and integration for your Multicloud strategy and Cloud Foundation transformation are:
+- The [Authorization Concept](./authorization-concept.md) should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources
 
-- Role Based Access Control: Privileges and permissions are assigned by using Role definitions instead of individual assignments e.g. by defining groups of permissions for Auditor (read only)
+[🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 
-- Authentication (AuthN) and Authorization (AuthZ): How can users be identified, validated and authorised?
+- Cloud Foundation teams should evaluate how they can leverage existing permissions and IAM concepts to also grant teams access to internal services
 
-- Federation: Protocols like SAML, OIDC and OAuth can be used to use identities of a trustworthy source to enable AuthN and AuthZ in 3rd party applications and solutions.
+## Designing a Multi-Cloud IAM Strategy
 
-- Least Privilege: Users should only have access required by their role and tasks to avoid privilege creep, prevent violations of separation of duties and accidents.
-
-
-
-```html
-
-```
-
-
+Especially when considering a multi-cloud scenario, cloud foundation teams need to design an identity and access management strategy that they can implement consistently across all cloud platforms. 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>The Cloud Identity and Access Management Guide for 2021</CtaHeader>
-  <CtaText>Take a look into the IAM Guide 2021 for more insights regarding Cloud Identity and Access Management.</CtaText>
-  <CtaButton url="https://www.meshcloud.io/2021/01/19/the-cloud-identity-and-access-management-guide-for-2021/">I want to read the IAM Guide</CtaButton>
+  <CtaText>Take a look into the IAM Guide 2021 for a comprehensive guide to Cloud Identity and Access Management.</CtaText>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/01/19/the-cloud-identity-and-access-management-guide-for-2021/">Read the IAM Guide</CtaButton>
 </CallToAction>
 
+## Stakeholders to Involve for Multi-Cloud Tenant Management
 
+Cloud Foundation teams should have team members with first-party expertise of the organization’s existing IAM infrastructure and the established compliance processes. These can be “liaison officers” to the Enterprise IAM teams that already exist in most organization. This helps the cloud foundation team build a [Federated Identity and Authentication](./federated-identity-and-authentication.md) architecture for all cloud platforms that is already aligned with the central IAM team. 
 
+Cloud Foundation teams should also involve legal or compliance stakeholders to review data security concerns. IAM systems naturally deal with personally-identifiable information (PII) that is subject to high regulatory attention and scrutiny, e.g. through the EU GDPR.
+
+Building a cloud IAM architectures on the “green grass” without considering existing systems, and, depending on the industry even regulatory requirements, can quickly stall an organization’s cloud journey. Since IAM is so fundamental to enabling using of the cloud, any mistakes in the decisions here proof very costly to change and reconcile later. This is why a strong alignment with Enterprise IAM teams and their compliance advisors is so important.
