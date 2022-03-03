@@ -56,7 +56,7 @@ function scanTool2BlockUrls(): Link[] {
     }));
 }
 
-function lintFile(filePath) {
+async function lintFile(filePath) {
   const options = {
     rules: ["no-dead-link"],
     rulesConfig: {
@@ -72,14 +72,17 @@ function lintFile(filePath) {
   const engine = new TextLintEngine(options);
 
   const filePathList = [path.resolve(process.cwd(), filePath)];
-  return engine.executeOnFiles(filePathList).then(function (results) {
-    if (engine.isErrorResults(results)) {
-      const output = engine.formatResults(results);
-      console.log(output);
-    } else {
-      console.log("All Passed!");
-    }
-  });
+
+  const results = await engine.executeOnFiles(filePathList);
+
+  if (engine.isErrorResults(results)) {
+    const output = engine.formatResults(results);
+    console.log(output);
+    return false;
+  } else {
+    console.log("All Passed!");
+    return true;
+  }
 }
 
 async function main() {
@@ -87,10 +90,11 @@ async function main() {
   const tool2BlockUrls = scanTool2BlockUrls();
 
   // generate a fake markdown and run it through textlint
+  // escape the notion link in a code block otherwise textlint will try checking that link too ;-)
   const linksMarkdown = [...ctaUrls, ...tool2BlockUrls]
     .map(
       (x) =>
-        `${x.type} link originally found in "${x.source}" (notion: \`${x.notionUrl}\`): [link](${x.url})`
+        `${x.type} link originally found in "${x.source}" \`notion: ${x.notionUrl} \`): [link](${x.url})`
     )
     .join("\n\n");
 
@@ -102,7 +106,9 @@ async function main() {
   try {
     const tmpFile = path.join(tmpDir, "links.md");
     await fs.promises.writeFile(tmpFile, linksMarkdown);
-    await lintFile(tmpFile);
+
+    const hasPassed = await lintFile(tmpFile);
+    process.exitCode = hasPassed ? 0 : 1;
   } finally {
     await fs.promises.rm(tmpDir, { recursive: true, force: true });
   }
