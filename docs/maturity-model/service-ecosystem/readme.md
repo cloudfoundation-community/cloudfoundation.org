@@ -6,6 +6,7 @@ description: >-
   Provide managed services that help teams build and operate application on the
   cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with
   internal or external teams providing these services.
+category: Pillar
 ---
 
 As an organization’s cloud adoption accelerates, internal cloud customers will start requesting additional services from Cloud Foundation teams like managed on-premise connectivity or managed DevOps toolchains. Providing a rich ecosystem of services can helps teams build on the cloud more successfully and can also be an important enabler of cloud adoption speed.

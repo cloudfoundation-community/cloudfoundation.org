@@ -570,7 +570,8 @@ export const index = [
       "id": "321cc809-0eec-477f-8f75-6d39da0c8b1a",
       "url": "https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a",
       "title": "🔖 Security & Compliance",
-      "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services."
+      "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.",
+      "category": "Pillar"
     }
   },
   {
@@ -889,7 +890,8 @@ export const index = [
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
       "url": "https://www.notion.so/Cost-Management-57502241e2f44b759e33de39b26a6eb8",
       "title": "💵 Cost Management",
-      "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services."
+      "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services.",
+      "category": "Pillar"
     }
   },
   {
@@ -970,7 +972,8 @@ export const index = [
       "id": "621771b3-97a0-4c4e-80ab-3331cd6719f0",
       "url": "https://www.notion.so/Service-Ecosystem-621771b397a04c4e80ab3331cd6719f0",
       "title": "🛠 Service Ecosystem",
-      "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services."
+      "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services.",
+      "category": "Pillar"
     }
   },
   {
@@ -1375,7 +1378,8 @@ export const index = [
       "id": "9ee0a54d-9b9e-47dd-9fc0-9d81213ce76c",
       "url": "https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c",
       "title": "🔐 IAM",
-      "description": "Provide Identity and Access management capabilities for all available cloud platforms and services."
+      "description": "Provide Identity and Access management capabilities for all available cloud platforms and services.",
+      "category": "Pillar"
     }
   },
   {
@@ -1579,7 +1583,8 @@ export const index = [
       "id": "bd309e8a-9ecd-4a0d-a3c3-b464f734ca54",
       "url": "https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54",
       "title": "🗂 Tenant Management",
-      "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts)."
+      "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts).",
+      "category": "Pillar"
     }
   },
   {

@@ -97,7 +97,7 @@ const config: SyncConfig = {
       },
       views: [],
     },
-    "3958983e-15f0-4446-9226-6e8af5eccbc9": {
+    "3958983e-15f0-4446-9226-6e8af5eccbc9": { // pillar database
       sorts: [
         {
           property: "order",
@@ -112,6 +112,7 @@ const config: SyncConfig = {
         frontmatterBuilder: (page) => {
           return {
             ...commonFrontmatter(page),
+            category: "Pillar"
           };
         },
       },
