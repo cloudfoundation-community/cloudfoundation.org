@@ -13,6 +13,7 @@
     "serve": "http-server docs/.vuepress/dist",
     "lint:autofix": "textlint ./docs/ --config .autofix.textlinrc --rulesdir .textlint/ --fix",
     "lint:text": "textlint ./docs/",
+    "lint:links": "ts-node checklinks.ts",
     "stats": "ts-node stats.ts"
   },
   "devDependencies": {
