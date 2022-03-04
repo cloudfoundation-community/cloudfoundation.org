@@ -2,13 +2,13 @@
   <Layout>
     <template #page-top>
       <div class="bread-crumbs mt-3">
-        <span v-for="(crumb, index) in bread" :key="crumb.path">
+        <span v-for="(crumb, index) in bread" :key="crumb?.path">
           <router-link
-              :to="crumb.path"
+              :to="crumb?.path"
               :class="
-              crumb.path === '' ? 'bread-crumb bread-crumb-nolink' : 'bread-crumb'
+              crumb?.path === '' ? 'bread-crumb bread-crumb-nolink' : 'bread-crumb'
             "
-          >{{ crumb.title }}&nbsp;&nbsp;</router-link>
+          >{{ crumb?.title }}&nbsp;&nbsp;</router-link>
           <img src="../components/arrow-left.svg" v-if="index !== bread.length - 1" />
           &nbsp;&nbsp;
         </span>
@@ -31,9 +31,9 @@
           ><router-link
             :to="link.href"
             class="nav-link"
-            aria-label="{{link.title}}"
+            aria-label="{{link?.title}}"
           >
-            {{ link.title }}
+            {{ link?.title }}
           </router-link>
           &nbsp;
         </span>
@@ -44,9 +44,9 @@
           ><router-link
             :to="link.href"
             class="nav-link"
-            aria-label="{{link.title}}"
+            aria-label="{{link?.title}}"
           >
-            {{ link.title }}
+            {{ link?.title }}
           </router-link>
           &nbsp;
         </span>
@@ -94,7 +94,7 @@
       </p>
 
       <Feedback
-        v-bind:page="frontmatter.title"
+        v-bind:page="frontmatter?.title"
         v-if="!underConstruction"
       ></Feedback>
     </template>
@@ -117,7 +117,7 @@ function resolvePage(id: string) {
   const page = index.find((x) => x.frontmatter.id === id);
   return {
     id,
-    title: page.frontmatter.title,
+    title: page.frontmatter?.title,
     href: formatLink(page.file),
   };
 }
@@ -132,7 +132,7 @@ function resolveTool(id: string) {
     id,
     summary: page.frontmatter.description,
     link: page.frontmatter.properties.link,
-    tool: tool.frontmatter.title,
+    tool: tool.frontmatter?.title,
   };
 }
 
@@ -169,7 +169,7 @@ const trackableProperties = computed(() => {
 
   return {
     id: frontmatter.value.id,
-    title: frontmatter.value.title,
+    title: frontmatter.value?.title,
     pillar: frontmatter.value.category,
     journeyStage: frontmatter.value.properties["journey-stage"],
     scope: frontmatter.value.properties.scope,
@@ -188,7 +188,7 @@ watch(trackableProperties, (props) => {
 export default {
   computed: {
     bread() {
-      const parts = this.$page.path.split("/");
+      const parts = this.$page?.path.split("/");
       console.log(parts);
       // Bascially if there's a trailing slash then get rid of the blank
         parts.pop();
@@ -202,13 +202,13 @@ export default {
         link += "/";
         if (page) {
           return {
-            path: page.path,
-            title: page.title || page.frontmatter.breadcrumb,
+            path: page?.path,
+            title: page?.title || page.frontmatter.breadcrumb,
           };
         } else {
           return {
             path: link,
-            title: this.titleCase(slug),
+            title: this?.titleCase(slug),
           };
         }
       });
