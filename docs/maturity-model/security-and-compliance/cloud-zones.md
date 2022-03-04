@@ -105,7 +105,7 @@ The “your application stage (dev, prod) is your Cloud Zone” approach might b
 
 ### Help DevOps Teams Pick the Right Cloud Zone
 
-Cloud Foundation teams guide their customers to the right Cloud Zone. Common implementations are a decision tree diagram on a Wiki page or an interactive assessment on the [Onboarding Portal](./onboarding-portal.md).
+Cloud Foundation teams guide their customers to the right Cloud Zone. Common implementations are a decision tree diagram on a Wiki page or an interactive assessment on the [Guided Cloud Onboarding](./guided-cloud-onboarding.md).
 
 ```mermaid
 graph LR

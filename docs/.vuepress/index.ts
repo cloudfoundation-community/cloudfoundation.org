@@ -333,9 +333,7 @@ export const index = [
       "title": "Guided self-service onboarding",
       "description": "meshStack’s tags guide customers to provide the right information at the right time.",
       "properties": {
-        "block": [
-          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
-        ],
+        "block": [],
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
@@ -445,6 +443,13 @@ export const index = [
         "tool-implementations": [],
         "name": "On-Premise Network Connection"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "24caa5e5-9302-44fc-9820-f75529573090",
+      "url": "https://www.notion.so/CloudGate-24caa5e5930244fc9820f75529573090",
+      "title": "CloudGate"
     }
   },
   {
@@ -1712,9 +1717,9 @@ export const index = [
   {
     "frontmatter": {
       "id": "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
-      "url": "https://www.notion.so/Onboarding-Portal-cce0a290fdb4412dbfc7da0ae83a53a6",
-      "title": "Onboarding Portal",
-      "description": "The API of meshStack can be connected to an external onboarding portal to help provision cloud tenants and introduce an approval flow for getting cloud access.",
+      "url": "https://www.notion.so/Guided-Cloud-Onboarding-with-meshStack-cce0a290fdb4412dbfc7da0ae83a53a6",
+      "title": "Guided Cloud Onboarding with meshStack",
+      "description": "Implement simple onboarding workflows based on capturing organizational information as tags and setting tag-based policies. Model approval workflows using restricted tags that require an administrative permission to set.\n \nCloud Foundations can automate advanced scenarios by connecting the meshStack API to an external onboarding portal to configure customer and project tags.",
       "properties": {
         "block": [
           "cf487857-542f-4d74-8fe9-885b7be8ccf3"
@@ -1723,7 +1728,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.onboarding.html#customer-registration",
-        "name": "Onboarding Portal"
+        "name": "Guided Cloud Onboarding with meshStack"
       }
     }
   },
@@ -1795,25 +1800,25 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/security-and-compliance/onboarding-portal.md",
+    "file": "maturity-model/security-and-compliance/guided-cloud-onboarding.md",
     "frontmatter": {
       "id": "cf487857-542f-4d74-8fe9-885b7be8ccf3",
-      "url": "https://www.notion.so/Onboarding-Portal-cf487857542f4d748fe9885b7be8ccf3",
-      "title": "Onboarding Portal",
+      "url": "https://www.notion.so/Guided-Cloud-Onboarding-cf487857542f4d748fe9885b7be8ccf3",
+      "title": "Guided Cloud Onboarding",
       "description": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "partner is working on it",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
-          "166cca26-ca4d-4efc-8657-10d2462e811a"
+          "f17524c8-81e0-43ed-94f2-c0cfa3bf2026"
         ],
-        "name": "Onboarding Portal"
+        "name": "Guided Cloud Onboarding"
       }
     }
   },
@@ -2150,6 +2155,24 @@ export const index = [
           "c3af4eea-6d9a-4c64-a117-ec018524979a"
         ],
         "name": "Internal Service Marketplace"
+      }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "f17524c8-81e0-43ed-94f2-c0cfa3bf2026",
+      "url": "https://www.notion.so/CloudGate-f17524c881e043ed94f2c0cfa3bf2026",
+      "title": "CloudGate",
+      "description": "CloudGate is a SaaS solution for the onboarding of cloud use cases as well as compliance and risk management. It provides an overview in the central cloud register at any time and is also audit-proof. CloudGate makes the onboarding faster and more orderly. All stakeholders can work collaboratively and worflow-oriented on the review and release of cloud use cases. CloudGate offers numerous standard checklists and allows you to adapt to the individual requirements of the company.",
+      "properties": {
+        "block": [
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+        ],
+        "tool": [
+          "24caa5e5-9302-44fc-9820-f75529573090"
+        ],
+        "link": "https://www.microfin.de/produkte/tools/cloudgate/",
+        "name": "CloudGate"
       }
     }
   },
