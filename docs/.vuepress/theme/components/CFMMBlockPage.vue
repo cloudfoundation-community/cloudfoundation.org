@@ -137,8 +137,7 @@ const tools = computed(() =>
 );
 const underConstruction = computed(
   () =>
-    frontmatter.value.properties["redaction-state"] === undefined ||
-    frontmatter.value.properties["redaction-state"] === "Draft"
+    frontmatter.value.properties["redaction-state"] != "mvp1"
 );
 
 import { usePlausible } from "../plugins/plausible/client";
