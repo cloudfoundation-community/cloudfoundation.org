@@ -7,7 +7,8 @@ description: >-
   Enable fine-grained pay-per-use options for managed services offered on the
   cloud foundation, e.g. pay per API request, per GB/h stored etc.
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

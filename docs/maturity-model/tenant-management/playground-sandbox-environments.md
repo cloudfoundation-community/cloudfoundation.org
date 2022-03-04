@@ -10,7 +10,8 @@ description: >-
   time- or spend-limits that are tightly controlled. Expired playgrounds are
   automatically deprovisioned. 
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

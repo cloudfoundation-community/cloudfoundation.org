@@ -9,7 +9,8 @@ description: >-
   systems is a foundational capability that enables use cases like basic
   chargeback, systematic risk assessment and change management. 
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273

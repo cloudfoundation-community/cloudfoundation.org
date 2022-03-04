@@ -8,7 +8,8 @@ description: >-
   aligned with the organization's policies for cryptography and secret
   management.
 category: 🛠 Service Ecosystem
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 18256d4f-e096-4281-809a-f77c5dd20ef0

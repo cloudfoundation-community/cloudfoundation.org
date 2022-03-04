@@ -9,7 +9,8 @@ description: >-
   resource configuration (e.g. VPC ACLs), not about workload configuration (e.g.
   software firewall)
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273

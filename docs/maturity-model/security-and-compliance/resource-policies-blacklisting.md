@@ -7,7 +7,8 @@ description: >-
   Basic policies on cloud resources enforce Blacklisting of forbidden services,
   regions.
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1
@@ -65,4 +66,4 @@ One of the cornerstones of the cloud foundation operating model is that legal an
 
 ### Leverage Infrastructure-as-Code and Resource Hierarchy
 
-The policies and guardrails established by your cloud foundation team will have to evolve. By leveraging a [Resource Hierarchy](../tenant-management/resource-hierarchy.md) you can easily define policies at a central location and have them inherit to a large number of cloud tenants. Infrastructure-as-code also helps maintaining the set of policies and establishing a proper change management for the inevitable evolution of your policy definitions.
+The policies and guardrails established by your cloud foundation team will have to evolve. By leveraging a [Resource Hierarchy](/maturity-model/tenant-management/resource-hierarchy.md) you can easily define policies at a central location and have them inherit to a large number of cloud tenants. Infrastructure-as-code also helps maintaining the set of policies and establishing a proper change management for the inevitable evolution of your policy definitions.

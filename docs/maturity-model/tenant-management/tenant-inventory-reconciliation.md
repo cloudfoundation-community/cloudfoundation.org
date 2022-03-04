@@ -9,7 +9,8 @@ description: >-
   "shadow IT" or "dark matter" in the cloud. A process is in place to adopt
   these existing tenants into the prescribed governance model. 
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

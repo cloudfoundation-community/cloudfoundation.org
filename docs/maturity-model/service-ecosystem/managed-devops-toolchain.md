@@ -8,7 +8,8 @@ description: >-
   by the team. Any required service account or automation user credentials are
   automatically maintained and rotated.
 category: 🛠 Service Ecosystem
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

@@ -7,7 +7,8 @@ description: >-
   Define and enforce a consistent tagging of cloud tenants and resource across
   multiple cloud platforms.  
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
@@ -70,4 +71,4 @@ As a cloud foundation evolves, cloud foundation teams will discover the need to 
 
 One important technique to avoid the downsides of global state is to prevent uncoordinated mutation of this state by assigning explicit responsibilities and authority to systems and processes for maintaining this state. These systems can also enforce “business logic” around updating this state.
 
-Another good heuristic is to try and avoid global state in the first place. For example, a clear [Resource Hierarchy](../tenant-management/resource-hierarchy.md) can remove the need for some kind of tags. Having a [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) process integrated with the cloud tenant database (which is also useful for [Tenant Inventory Reconciliation](../tenant-management/tenant-inventory-reconciliation.md)) can avoid putting extensive chargeback related data into the cloud. Tenant-specific configuration data may be better kept in services like a  [Virtual Network Service](../service-ecosystem/virtual-network-service.md) instead of a `on-prem-conncetivity.cidr:10.0.0.0/24` tag. 
+Another good heuristic is to try and avoid global state in the first place. For example, a clear [Resource Hierarchy](/maturity-model/tenant-management/resource-hierarchy.md) can remove the need for some kind of tags. Having a [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md) process integrated with the cloud tenant database (which is also useful for [Tenant Inventory Reconciliation](/maturity-model/tenant-management/tenant-inventory-reconciliation.md)) can avoid putting extensive chargeback related data into the cloud. Tenant-specific configuration data may be better kept in services like a  [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md) instead of a `on-prem-conncetivity.cidr:10.0.0.0/24` tag. 

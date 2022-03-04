@@ -7,7 +7,8 @@ description: >-
   policy enforcement. Cloud tenants are deliberately placed in this resource
   hierarchy when tenants are provisioned.
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

@@ -6,7 +6,8 @@ description: >-
   Regulatory onboarding only captures what is required for getting acces to the
   cloud
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: review-v1
@@ -120,4 +121,4 @@ graph LR
 
 ### Tag Every Application with Its Cloud Zone
 
-Store the Cloud Zone as tenant tags for security and cost analysis per Cloud Zone. Make Cloud Zones part of [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md).
+Store the Cloud Zone as tenant tags for security and cost analysis per Cloud Zone. Make Cloud Zones part of [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md).

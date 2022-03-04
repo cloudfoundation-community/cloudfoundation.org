@@ -8,7 +8,8 @@ description: >-
   This may manifest e.g. as different billing accounts (GCP), enterprise
   agreement (Azure) or Payer Accounts (AWS).
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

@@ -8,7 +8,8 @@ description: >-
   the cloud foundation (see Landing Zone building Blocks). Consumers can book
   services from a single marketplace and get a single "invoice" for chargeback. 
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792

@@ -9,7 +9,8 @@ description: >-
   instances). Centrally plan resource demand to take advantage of cost
   optimization opportunities offered by cloud providers. 
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

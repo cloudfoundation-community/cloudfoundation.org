@@ -7,7 +7,8 @@ description: >-
   Cloud tenant owners are transparently charged for the resource consumption as
   it is charged from the cloud provider.
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
@@ -54,4 +55,4 @@ Public cloud platforms offer APIs to import consumption data, e.g. AWS Cost Expl
 
 ### Consider Full Cost Allocation
 
-Chargeback via consumption cost allocation is only the first step towards establishing cloud cost transparency and accountability. Consumption data on its own does not include additional overhead that your organization incurs for managing the cloud, e.g. provider management, security, and compliance as well as the cost of conducting the chargeback process itself. To also include these costs, consider implementing [Chargeback at full cost allocation](./chargeback-at-full-cost-allocation.md).
+Chargeback via consumption cost allocation is only the first step towards establishing cloud cost transparency and accountability. Consumption data on its own does not include additional overhead that your organization incurs for managing the cloud, e.g. provider management, security, and compliance as well as the cost of conducting the chargeback process itself. To also include these costs, consider implementing [Chargeback at full cost allocation](/maturity-model/cost-management/chargeback-at-full-cost-allocation.md).

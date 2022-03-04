@@ -8,7 +8,8 @@ description: >-
   OpenStack, Cloud Foundry or OpenShift is billed according to a pay-per-use
   pricing model.
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1
@@ -107,4 +108,3 @@ This section presents an example calculation of a pricing model for an OpenShift
       = 0.82$ / GiB-h
     ```
 
-    

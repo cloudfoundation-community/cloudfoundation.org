@@ -7,7 +7,8 @@ description: >-
   Owners of cloud tenants can register, update and remove tenant metadata in a
   central multi-cloud tenant database in self service.
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

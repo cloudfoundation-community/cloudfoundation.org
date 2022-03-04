@@ -8,7 +8,8 @@ description: >-
   enterprise support agreements from cloud providers. Owners can access support
   in self-service and are transparently charged for support fees incurred.
 category: 🛠 Service Ecosystem
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

@@ -6,7 +6,8 @@ description: >-
   Cloud tenants are tagged using a consistent tagging strategy to facilitate
   cloud platform operations.
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b

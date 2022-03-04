@@ -25,7 +25,17 @@ import { usePageData } from "@vuepress/client";
 import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
 import Footer from "./Footer.vue"
-
-const page = usePageData();
-
 </script>
+
+<style lang="scss">
+main.page {
+  padding-top: calc(var(--navbar-height) + 36px);
+  background: #9fd9ec;
+
+  .theme-default-content {
+    background: white;
+    border-radius: 12px;
+    padding-top: 1px !important;
+  }
+}
+</style>

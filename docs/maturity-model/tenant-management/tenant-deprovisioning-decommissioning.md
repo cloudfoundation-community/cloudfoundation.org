@@ -7,7 +7,8 @@ description: >-
   Process for decommissioning and deprovisioning cloud tenants that are no
   longer needed.
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef

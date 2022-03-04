@@ -11,7 +11,8 @@ description: >-
   manage associated risks (e.g. budget authorization, overcommitment, lack of
   budget). 
 category: 💵 Cost Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

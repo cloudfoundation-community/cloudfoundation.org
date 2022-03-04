@@ -7,7 +7,8 @@ description: >-
   (SOC) solution like tenable.io or Qualys. The cloud inventory of existing
   machines is reconciled against the SOC to ensure completeness.
 category: 🔖 Security & Compliance
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

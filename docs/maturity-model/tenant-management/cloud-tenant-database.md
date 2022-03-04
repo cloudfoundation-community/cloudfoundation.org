@@ -6,7 +6,8 @@ description: >-
   Maintenance of a database of cloud tenants and associated metadata like
   responsible owners and chargeback information like cost center.
 category: 🗂 Tenant Management
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 11af37b7-c948-4486-a5da-5b1db6de8193
@@ -91,3 +92,5 @@ Based on the recommendation and best practices above, here’s a list of the mos
 - `Cost Center` or other chargeback related information
 
 - `Budget` even though cloud is pay per use, setting up cost alerts to prevent unexpectedly high cloud bills (bill-shock) is a common task of cloud foundation teams
+
+[https://www.notion.so/meshcloud/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d#72519ff6f6d8427baeaf0352ae56e1cc](https://www.notion.so/meshcloud/Cloud-Tenant-Tagging-52d1e5179d074acc8c5917526fa3af9d#72519ff6f6d8427baeaf0352ae56e1cc)
