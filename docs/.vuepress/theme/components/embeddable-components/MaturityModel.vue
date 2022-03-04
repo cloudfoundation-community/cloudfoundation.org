@@ -32,7 +32,7 @@
         </PilarCategory>
       </div>
 
-      <div class="card-col">
+      <div class="card-col" v-if="chargeBack">
         <div class="mobile-intro bg-white mb-3 mr-2">
           <h1>COST MGMT.</h1>
           <button class="btn btn-primary mt-3" @click="handleClick(3)">{{chargeBack.length}} Building Blocks</button>

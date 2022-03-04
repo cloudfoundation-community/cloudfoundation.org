@@ -104,6 +104,7 @@
 <script setup lang="ts">
 import { computed, watch } from "vue";
 import Feedback from "../components/Feedback.vue";
+import Layout from "../layouts/Layout.vue";
 import { index } from "../../index";
 
 function formatLink(path: string) {
@@ -184,11 +185,7 @@ watch(trackableProperties, (props) => {
 </script>
 
 <script lang="ts">
-import Layout from "../layouts/Layout.vue";
 export default {
-  components: {
-    Layout,
-  },
   computed: {
     bread() {
       const parts = this.$page.path.split("/");
