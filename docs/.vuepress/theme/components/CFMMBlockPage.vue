@@ -1,7 +1,7 @@
 <template>
   <Page>
     <template #top>
-      <Breadcrumbs></Breadcrumbs>
+      <CFMMBlockBreadcrumbs />
     </template>
     <template #before>
       <p>
@@ -96,7 +96,7 @@ import {} from "@vuepress/client";
 
 import Page from "./Page.vue";
 import Feedback from "../components/Feedback.vue";
-import Breadcrumbs from "../components/Breadcrumbs.vue";
+import CFMMBlockBreadcrumbs from "../components/CFMMBlockBreadcrumbs.vue";
 import { index } from "../../index";
 
 function formatLink(path: string) {

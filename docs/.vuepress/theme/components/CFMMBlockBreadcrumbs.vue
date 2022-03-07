@@ -21,41 +21,22 @@
 import { computed } from "vue";
 import { usePageData } from "@vuepress/client";
 
-function titleCase(str) {
-  return str
-    .toLowerCase()
-    .split(" ")
-    .map(function (word) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    })
-    .join(" ");
-}
-
 const page = usePageData();
 
 const breadcrumbs = computed(() => {
   const parts = page.value.path.split("/");
-  // Bascially if there's a trailing slash then get rid of the blank
-  parts.pop();
-  let link = "";
-  // Loop through the crumbs
-  const crumbs = parts.map((slug) => {
-    link += slug;
-    const page = parts.find((el) => el === link || el === link + "/");
-    link += "/";
-    if (page) {
-      return {
-        path: page.path,
-        title: page.title,
-      };
-    } else {
-      return {
-        path: link,
-        title: titleCase(slug),
-      };
+  console.log(parts)
+  return [
+    {
+      path: parts.slice(0,2).join("/"),
+      title: "Maturity Model"
+    },
+    // pillar
+    {
+      path: parts.slice(0,3).join("/"),
+      title: page.value.frontmatter.category
     }
-  });
-  return crumbs;
+  ];
 });
 </script>
 
