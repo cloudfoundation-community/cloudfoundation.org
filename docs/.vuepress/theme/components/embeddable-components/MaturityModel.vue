@@ -32,13 +32,13 @@
         </PilarCategory>
       </div>
 
-      <div class="card-col" v-if="chargeBack">
+      <div class="card-col">
         <div class="mobile-intro bg-white mb-3 mr-2">
           <h1>COST MGMT.</h1>
-          <button class="btn btn-primary mt-3" @click="handleClick(3)">{{chargeBack.length}} Building Blocks</button>
+          <button class="btn btn-primary mt-3" @click="handleClick(3)">{{costMgmt.length}} Building Blocks</button>
           <span>Tenant Management enables your organization to get a clear and governed overview of all activity going on in the cloud platforms</span>
         </div>
-        <PilarCategory :show-detail="showDetailOfCategory[3].show" :data-list="chargeBack" :title="'CHARGEBACK'">
+        <PilarCategory :show-detail="showDetailOfCategory[3].show" :data-list="costMgmt" :title="'COST MGMT.'">
         </PilarCategory>
       </div>
 
