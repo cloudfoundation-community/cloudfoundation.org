@@ -40,7 +40,7 @@ All organizations that are successfully using the cloud share a cloud-native min
 
 ### Cover All Cloud Platforms
 
-A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. See [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) for more details.
+A cloud without billing is not a cloud. Public cloud providers offer great cloud tenant billing reports, satisfying the needs of most DevOps teams. Historically many private cloud technologies lack the capabilities and the operating model/mindset did not call for billing. However embracing multi-cloud should strongly look at billing private cloud, too. See [Private Cloud pay-per-use chargeback](./private-cloud-pay-per-use-chargeback.md) for more details.
 
 ### Automate Billing Reports
 
@@ -50,9 +50,9 @@ Automation of this process offers further avenues, like providing billing previe
 
 ### Unify Tenant Billing Reports across Clouds
 
-The interfaces and billing data formats are different for every cloud provider. Providing a cost view across clouds is only possible after unifying data from all different sources (see [Monthly Cloud Project Billing Report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md)).
+The interfaces and billing data formats are different for every cloud provider. Providing a cost view across clouds is only possible after unifying data from all different sources (see [Monthly Cloud Project Billing Report](./monthly-cloud-project-billing-report.md)).
 
-Furthermore, building chargeback capabilities also depends on building a common billing data view across clouds (see [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md)) and managing global IT spend.
+Furthermore, building chargeback capabilities also depends on building a common billing data view across clouds (see [Chargeback via consumption cost allocation](./chargeback-via-consumption-cost-allocation.md)) and managing global IT spend.
 
-The fine granular data of each cloud can still be used for individual cost optimization. However, having that unified chargeback process is really important. Lots of organizations run into problems “trying to run before walking”, e.g. trying to do [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md)
+The fine granular data of each cloud can still be used for individual cost optimization. However, having that unified chargeback process is really important. Lots of organizations run into problems “trying to run before walking”, e.g. trying to do [Global Cost Optimization via Reservations](./global-cost-optimization-via-reservations.md)
 

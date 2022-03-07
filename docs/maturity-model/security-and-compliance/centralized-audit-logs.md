@@ -36,7 +36,7 @@ Centralized audit logs make an analysis of logs easier for auditors. Standardizi
 
 ### Store and Retain First, Worry about Analytics Later
 
-Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ([Cloud SIEM](/maturity-model/security-and-compliance/cloud-siem.md)).
+Audit logs enable incident analysis right at the start. You can still build SIEM and preventive capabilities later. See ([Cloud SIEM](./cloud-siem.md)).
 
 ### Carefully Guard Access to Centralized Audit Logs
 

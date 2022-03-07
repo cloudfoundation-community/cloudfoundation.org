@@ -19,6 +19,6 @@ properties:
   name: Managed Key Vault
 ---
 
-Often used to enable [Service Account Management](/maturity-model/iam/service-account-management.md) and [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md).
+Often used to enable [Service Account Management](../iam/service-account-management.md) and [Managed DevOps Toolchain](./managed-devops-toolchain.md).
 
 Highly important for financial service customers and other regulated industries that need to leverage “Bring your own key” (BYOK) solutions.

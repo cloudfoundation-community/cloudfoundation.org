@@ -23,7 +23,7 @@ properties:
   name: Multi-Cloud Tagging Policy
 ---
 
-Cloud Foundation teams who implement [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) or [Cloud Resource Tagging](/maturity-model/security-and-compliance/cloud-resource-tagging.md) often find the need to centrally define and communicate tagging conventions. This is a pre-requisite for shared-responsibility tagging, e.g. cloud foundation teams enforcing tenant tagging but leaving cloud resource tagging to internal cloud customers. 
+Cloud Foundation teams who implement [Cloud Tenant Tagging](./cloud-tenant-tagging.md) or [Cloud Resource Tagging](./cloud-resource-tagging.md) often find the need to centrally define and communicate tagging conventions. This is a pre-requisite for shared-responsibility tagging, e.g. cloud foundation teams enforcing tenant tagging but leaving cloud resource tagging to internal cloud customers. 
 
 <!--notion-markdown-cms:raw-->
  <CallToAction>
@@ -36,7 +36,7 @@ Cloud Foundation teams who implement [Cloud Tenant Tagging](/maturity-model/secu
 
 ### Establish a Naming Convention for Tags
 
-Cloud Tagging works best when following a consistent naming convention. This naming convention should consider t[he technical limitations for storing tags in cloud platforms](https://www.meshcloud.io/2022/02/07/tags-and-labels-on-cloud-platforms-cheat-sheet-2020/). Namespace prefixes on tags help to separate the responsibilities for maintenance of a particular tag. For example, when some tags are automatically reconciled with a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) by the cloud foundation’s automation systems, giving them a clear prefix helps separate those tags from tags maintained by customers individually.
+Cloud Tagging works best when following a consistent naming convention. This naming convention should consider t[he technical limitations for storing tags in cloud platforms](https://www.meshcloud.io/2022/02/07/tags-and-labels-on-cloud-platforms-cheat-sheet-2020/). Namespace prefixes on tags help to separate the responsibilities for maintenance of a particular tag. For example, when some tags are automatically reconciled with a [Cloud Tenant Database](../tenant-management/cloud-tenant-database.md) by the cloud foundation’s automation systems, giving them a clear prefix helps separate those tags from tags maintained by customers individually.
 
 ### Focus on Information That’s Relevant across All Cloud Platforms
 
@@ -62,7 +62,7 @@ One important challenge here is to make stakeholders aware of the consequences t
 
 ### Consider Backwards Compatibility and Update Procedure
 
-As a cloud foundation evolves, cloud foundation teams will discover the need to define additional tags or change the definition of existing tags. Performing these changes should always consider the implications on existing cloud customers and automation processes. Enforcing the tagging policy via a [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) for example enables the cloud foundation team to request additional metadata from existing cloud customers or apply automated data migration to existing metadata. Combined with automation that reconciles cloud tenant and resource tags with this database, cloud foundation teams eliminate configuration drift and gain a lot of agility for evolving their tagging policy. 
+As a cloud foundation evolves, cloud foundation teams will discover the need to define additional tags or change the definition of existing tags. Performing these changes should always consider the implications on existing cloud customers and automation processes. Enforcing the tagging policy via a [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) for example enables the cloud foundation team to request additional metadata from existing cloud customers or apply automated data migration to existing metadata. Combined with automation that reconciles cloud tenant and resource tags with this database, cloud foundation teams eliminate configuration drift and gain a lot of agility for evolving their tagging policy. 
 
 ### Treat Tags like Global State
 
@@ -70,4 +70,4 @@ As a cloud foundation evolves, cloud foundation teams will discover the need to 
 
 One important technique to avoid the downsides of global state is to prevent uncoordinated mutation of this state by assigning explicit responsibilities and authority to systems and processes for maintaining this state. These systems can also enforce “business logic” around updating this state.
 
-Another good heuristic is to try and avoid global state in the first place. For example, a clear [Resource Hierarchy](/maturity-model/tenant-management/resource-hierarchy.md) can remove the need for some kind of tags. Having a [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md) process integrated with the cloud tenant database (which is also useful for [Tenant Inventory Reconciliation](/maturity-model/tenant-management/tenant-inventory-reconciliation.md)) can avoid putting extensive chargeback related data into the cloud. Tenant-specific configuration data may be better kept in services like a  [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md) instead of a `on-prem-conncetivity.cidr:10.0.0.0/24` tag. 
+Another good heuristic is to try and avoid global state in the first place. For example, a clear [Resource Hierarchy](../tenant-management/resource-hierarchy.md) can remove the need for some kind of tags. Having a [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) process integrated with the cloud tenant database (which is also useful for [Tenant Inventory Reconciliation](../tenant-management/tenant-inventory-reconciliation.md)) can avoid putting extensive chargeback related data into the cloud. Tenant-specific configuration data may be better kept in services like a  [Virtual Network Service](../service-ecosystem/virtual-network-service.md) instead of a `on-prem-conncetivity.cidr:10.0.0.0/24` tag. 

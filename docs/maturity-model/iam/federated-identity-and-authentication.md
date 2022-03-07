@@ -53,19 +53,19 @@ Synchronize the central enterprise AD to Azure using the [Azure AD Connect Sync]
 
 Identities (Users, Groups, and Memberships) are synchronized into an AAD Tenant owned by the organization.
 
-Leveraging Azure AD Connect Sync also makes it trivial to implement [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md).
+Leveraging Azure AD Connect Sync also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
 
 ### Google Cloud Identity
 
 Synchronize the central enterprise AD or LDAP using to Google Cloud Identity using the [Google Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) (GCDS) tool. Setup federated authentication to an on-premise authentication service such as ADFS or any other Identity Provider supporting SAML/OIDC based authentication.
 
-Leveraging GCDS also makes it trivial to implement [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md).
+Leveraging GCDS also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
 
 ### AWS SSO
 
 [AWS SSO](https://aws.amazon.com/single-sign-on/) supports the SCIM protocol for identity provisioning and deprovisioning. While SCIM is a well-established protocol, many deployed on-premise IAM systems still lack support for this protocol. Typical IAM architectures deploying AWS SSO therefore use a "cloud-enabled" Identity Provider such as Azure Active Directory or Google Cloud Identity that supports SCIM in a "two-tiered" IAM architecture that synchronises identities from On-Premise to e.g. AAD and then from AAD to AWS SSO.
 
-Leveraging SCIM in this manner also makes it trivial to implement [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md).
+Leveraging SCIM in this manner also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
 
 ## Sync Groups
 

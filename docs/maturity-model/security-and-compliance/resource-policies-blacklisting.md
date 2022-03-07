@@ -28,9 +28,9 @@ Cloud platforms offer different types of mechanisms to implement these policies.
 
 - **Location-based policies** can forbid the deployment of resources in a particular cloud location or region. For example, your organization may want to restrict deployment to certain geographic regions in order to comply with data privacy regulations.
 
-- **Resource- or service type-based policies** can forbid the use of certain types of cloud services. Motivations to enforce these restrictions include services that do not meet required regulatory standards or carry a high risk (e.g. security issues due to misconfiguration, bill-shock) associated with them. They are also useful to enforce a [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) concept.
+- **Resource- or service type-based policies** can forbid the use of certain types of cloud services. Motivations to enforce these restrictions include services that do not meet required regulatory standards or carry a high risk (e.g. security issues due to misconfiguration, bill-shock) associated with them. They are also useful to enforce a [Cloud Zones](./cloud-zones.md) concept.
 
-- **Quota-based policies** are mostly relevant to private cloud platforms. They enable private cloud operators to protect the stability of their platforms and can also substitute missing platform functionality for implementing location- or resource-based policies. An example of this substitution is setting a resource quota to zero, effectively blacklisting customer projects from using it. A motivating use case for this can be a storage pool that’s dedicated to a Database as a Service platform offered as part of a [In-house PaaS Service Integration](/maturity-model/service-ecosystem/in-house-paas-service-integration.md).
+- **Quota-based policies** are mostly relevant to private cloud platforms. They enable private cloud operators to protect the stability of their platforms and can also substitute missing platform functionality for implementing location- or resource-based policies. An example of this substitution is setting a resource quota to zero, effectively blacklisting customer projects from using it. A motivating use case for this can be a storage pool that’s dedicated to a Database as a Service platform offered as part of a [In-house PaaS Service Integration](../service-ecosystem/in-house-paas-service-integration.md).
 
 - **IAM-based policies** are an implementation alternative when a resource-based policy mechanism is not available. Never granting the required IAM permissions to create a type of resource (or actively denying its creation) effectively creates a blacklist for the resource.
 
@@ -53,11 +53,11 @@ Start out with the most basic policies before going more fine granular. A cloud 
 
 > **💡** In contrast to the general advice to favor blacklisting, location-based restrictions often make more sense to implement as a whitelist.
 
-**Restrict access to typical “shared services”**. Some cloud services like those required to implement [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) (e.g. AWS Transit Gateway, Azure ExpressRoute) should not be available to your internal cloud customers. Put those on a blacklist as they should be provided and controlled centrally by the cloud foundation team.
+**Restrict access to typical “shared services”**. Some cloud services like those required to implement [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) (e.g. AWS Transit Gateway, Azure ExpressRoute) should not be available to your internal cloud customers. Put those on a blacklist as they should be provided and controlled centrally by the cloud foundation team.
 
 ### Define Your Shared Responsibility Model
 
-The [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
+The [Shared Responsibility Model](./shared-responsibility-model.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
 
 ### Involve Legal and Compliance Stakeholders
 
@@ -65,4 +65,4 @@ One of the cornerstones of the cloud foundation operating model is that legal an
 
 ### Leverage Infrastructure-as-Code and Resource Hierarchy
 
-The policies and guardrails established by your cloud foundation team will have to evolve. By leveraging a [Resource Hierarchy](/maturity-model/tenant-management/resource-hierarchy.md) you can easily define policies at a central location and have them inherit to a large number of cloud tenants. Infrastructure-as-code also helps maintaining the set of policies and establishing a proper change management for the inevitable evolution of your policy definitions.
+The policies and guardrails established by your cloud foundation team will have to evolve. By leveraging a [Resource Hierarchy](../tenant-management/resource-hierarchy.md) you can easily define policies at a central location and have them inherit to a large number of cloud tenants. Infrastructure-as-code also helps maintaining the set of policies and establishing a proper change management for the inevitable evolution of your policy definitions.

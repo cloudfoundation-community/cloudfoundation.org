@@ -21,7 +21,7 @@ properties:
   name: Tenant Deprovisioning / Decommissioning
 ---
 
-At the start of an organization’s cloud journey, cloud foundation teams focus on the challenge of [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md), giving little afterthought to “day-2” challenges. After all, supporting cloud adoption is the key imperative at this stage. As most cloud foundation teams have to find out the hard way, the initial surge of excitement about bringing more internal customers into the cloud soon turns into an operational chore. Some of your cloud customers will inevitably abandon their projects. When they forget to decommission all cloud infrastructure, the organization ends up with zombie workloads.
+At the start of an organization’s cloud journey, cloud foundation teams focus on the challenge of [Tenant Provisioning](./tenant-provisioning.md), giving little afterthought to “day-2” challenges. After all, supporting cloud adoption is the key imperative at this stage. As most cloud foundation teams have to find out the hard way, the initial surge of excitement about bringing more internal customers into the cloud soon turns into an operational chore. Some of your cloud customers will inevitably abandon their projects. When they forget to decommission all cloud infrastructure, the organization ends up with zombie workloads.
 
 > **💡** Establishing a clean tenant decommission process is paramount for avoiding problems like abandoned “zombie workloads” that pose a security risk and incur uncontrolled cloud spend. 
 
@@ -35,21 +35,21 @@ Most zombie workloads are the result of unclear responsibilities - not malice. W
 
 - “When the project team was wound down, I took on responsibilities in a new project and assumed one of my old colleagues would delete the Azure Subscription.”
 
-If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) better. 
+If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) better. 
 
 ## Proven Patterns for Implementing a Cloud Tenant Decommissioning Process
 
-Tenant decommissioning is a fundamental tenant management process. Cloud foundation teams will need it to implement higher-level capabilities in the Tenant Management pillar like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md).
+Tenant decommissioning is a fundamental tenant management process. Cloud foundation teams will need it to implement higher-level capabilities in the Tenant Management pillar like [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md).
 
 ### Plan for Involuntary Decommissioning
 
-Setting clear boundaries and expectations with a [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md) is crucial. Unfortunately, the cloud foundation team sometimes has to enforce these boundaries. For example, cloud foundation teams may find internal customers
+Setting clear boundaries and expectations with a [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) is crucial. Unfortunately, the cloud foundation team sometimes has to enforce these boundaries. For example, cloud foundation teams may find internal customers
 
-- violating their duty to handle assigned incidents as part of the [Incident Management Process](/maturity-model/security-and-compliance/incident-management-process.md).
+- violating their duty to handle assigned incidents as part of the [Incident Management Process](../security-and-compliance/incident-management-process.md).
 
-- not providing enough or incorrect metadata in the [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) to enable proper [Chargeback via consumption cost allocation](/maturity-model/cost-management/chargeback-via-consumption-cost-allocation.md).
+- not providing enough or incorrect metadata in the [Cloud Tenant Database](./cloud-tenant-database.md) to enable proper [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md).
 
-- operating unregistered cloud tenants found via [Tenant Inventory Reconciliation](/maturity-model/tenant-management/tenant-inventory-reconciliation.md).
+- operating unregistered cloud tenants found via [Tenant Inventory Reconciliation](./tenant-inventory-reconciliation.md).
 
 In these cases, the cloud foundation team needs the capability and authorization to forcefully decommission cloud tenants in their workload.
 
@@ -57,7 +57,7 @@ In these cases, the cloud foundation team needs the capability and authorization
 
 Decommissioning a cloud tenant results in the destruction of all workload and data stored in the cloud tenant. While systems that were not used productively will typically not have relevant data that needs to be kept, productive systems may require special precautions. Regulations for the financial service industry for example can require that organizations maintain records processed in systems (and the means to read them!) for a minimum period of 10 years. 
 
-> **💡** A good [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) concept that’s consistently applied can help cloud foundation teams quickly determine if decommissioning a cloud tenant requires special precautions, for example, if the tenant was used for productive workloads.
+> **💡** A good [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) concept that’s consistently applied can help cloud foundation teams quickly determine if decommissioning a cloud tenant requires special precautions, for example, if the tenant was used for productive workloads.
 
 Another consideration is that cloud tenants very often also hold other valuable resources like public IP Addresses, DNS Records, and Cryptographic Keys (e.g. SSL Certificates, Encryption Keys) that may be used well beyond the scope of an individual IT System. Public cloud providers are multi-tenant environments. Cloud resources like IP Addresses and DNS Names may be reused by other customers of the cloud provider. This can open attack vectors for phishing or spoofing. Some examples that cloud foundation teams should be aware of
 
@@ -69,11 +69,11 @@ Another consideration is that cloud tenants very often also hold other valuable 
 
 ### Security Implications of Automated Tenant Decommissioning
 
-Scenarios like [Playground / Sandbox Environments](/maturity-model/tenant-management/playground-sandbox-environments.md) call for automation of tenant decommissioning. However, an automation system capable of deleting most of an organization's cloud workload with only a handful of API calls is a big security risk and conversely an attractive attack target. To mitigate this risk, automation systems for tenant decommissioning should include checks and balances. Useful mitigations are
+Scenarios like [Playground / Sandbox Environments](./playground-sandbox-environments.md) call for automation of tenant decommissioning. However, an automation system capable of deleting most of an organization's cloud workload with only a handful of API calls is a big security risk and conversely an attractive attack target. To mitigate this risk, automation systems for tenant decommissioning should include checks and balances. Useful mitigations are
 
 - 4-eye principle approval processes for tenant deletion
 
-- restrict the automation’s permissions to non-productive tenants (e.g. designated by landing zone or [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md))
+- restrict the automation’s permissions to non-productive tenants (e.g. designated by landing zone or [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md))
 
 ### Decommissioning of AWS Accounts Best Practices
 
