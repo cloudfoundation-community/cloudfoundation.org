@@ -328,22 +328,6 @@ export const index = [
   },
   {
     "frontmatter": {
-      "id": "166cca26-ca4d-4efc-8657-10d2462e811a",
-      "url": "https://www.notion.so/Guided-self-service-onboarding-166cca26ca4d4efc865710d2462e811a",
-      "title": "Guided self-service onboarding",
-      "description": "meshStack’s tags guide customers to provide the right information at the right time.",
-      "properties": {
-        "block": [],
-        "tool": [
-          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
-        ],
-        "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
-        "name": "Guided self-service onboarding"
-      }
-    }
-  },
-  {
-    "frontmatter": {
       "id": "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a",
       "url": "https://www.notion.so/Identity-Lifecycle-Management-17a9ca395a774c5e9b0e87b01dc5e57a",
       "title": "Identity Lifecycle Management",
@@ -1719,7 +1703,7 @@ export const index = [
       "id": "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
       "url": "https://www.notion.so/Guided-Cloud-Onboarding-with-meshStack-cce0a290fdb4412dbfc7da0ae83a53a6",
       "title": "Guided Cloud Onboarding with meshStack",
-      "description": "Implement simple onboarding workflows based on capturing organizational information as tags and setting tag-based policies. Model approval workflows using restricted tags that require an administrative permission to set.\n \nCloud Foundations can automate advanced scenarios by connecting the meshStack API to an external onboarding portal to configure customer and project tags.",
+      "description": "Implement simple onboarding workflows based on capturing organizational information as tags and setting tag-based policies. Model approval workflows using restricted tags that require an administrative permission to set.\n\nCloud Foundations can automate advanced scenarios by connecting the meshStack API to an external onboarding portal to configure customer and project tags.",
       "properties": {
         "block": [
           "cf487857-542f-4d74-8fe9-885b7be8ccf3"
