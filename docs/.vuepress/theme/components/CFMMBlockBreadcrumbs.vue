@@ -25,8 +25,8 @@ const page = usePageData();
 
 const breadcrumbs = computed(() => {
   const parts = page.value.path.split("/");
-  console.log(parts)
   return [
+    // root
     {
       path: parts.slice(0,2).join("/"),
       title: "Maturity Model"
