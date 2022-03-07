@@ -25,6 +25,8 @@ import { usePageData } from "@vuepress/client";
 import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
 import Footer from "./Footer.vue"
+
+const page = usePageData();
 </script>
 
 <style lang="scss">

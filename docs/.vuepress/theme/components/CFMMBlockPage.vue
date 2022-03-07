@@ -1,23 +1,11 @@
 <template>
-  <Layout>
-    <template #page-top>
-      <div class="bread-crumbs mt-3">
-        <span v-for="(crumb, index) in bread" :key="crumb?.path">
-          <router-link
-              :to="crumb?.path"
-              :class="
-              crumb?.path === '' ? 'bread-crumb bread-crumb-nolink' : 'bread-crumb'
-            "
-          >{{ crumb?.title }}&nbsp;&nbsp;</router-link>
-          <img src="../components/arrow-left.svg" v-if="index !== bread.length - 1" />
-          &nbsp;&nbsp;
-        </span>
-      </div>
+  <Page>
+    <template #top>
+      <Breadcrumbs></Breadcrumbs>
     </template>
-    <template #page-before>
+    <template #before>
       <p>
-        {{ frontmatter.properties.scope }} /
-        {{ frontmatter.category }} /
+        {{ frontmatter.properties.scope }} / {{ frontmatter.category }} /
         {{ frontmatter.properties["journey-stage"] }}
       </p>
       <div class="custom-container tip">
@@ -31,9 +19,9 @@
           ><router-link
             :to="link.href"
             class="nav-link"
-            aria-label="{{link?.title}}"
+            aria-label="{{link.title}}"
           >
-            {{ link?.title }}
+            {{ link.title }}
           </router-link>
           &nbsp;
         </span>
@@ -94,17 +82,21 @@
       </p>
 
       <Feedback
-        v-bind:page="frontmatter?.title"
+        v-bind:page="frontmatter.title"
         v-if="!underConstruction"
       ></Feedback>
     </template>
-  </Layout>
+  </Page>
 </template>
 
 <script setup lang="ts">
 import { computed, watch } from "vue";
+import { usePageData, usePageFrontmatter } from "@vuepress/client";
+import {} from "@vuepress/client";
+
+import Page from "./Page.vue";
 import Feedback from "../components/Feedback.vue";
-import Layout from "../layouts/Layout.vue";
+import Breadcrumbs from "../components/Breadcrumbs.vue";
 import { index } from "../../index";
 
 function formatLink(path: string) {
@@ -117,7 +109,7 @@ function resolvePage(id: string) {
   const page = index.find((x) => x.frontmatter.id === id);
   return {
     id,
-    title: page.frontmatter?.title,
+    title: page.frontmatter.title,
     href: formatLink(page.file),
   };
 }
@@ -132,7 +124,7 @@ function resolveTool(id: string) {
     id,
     summary: page.frontmatter.description,
     link: page.frontmatter.properties.link,
-    tool: tool.frontmatter?.title,
+    tool: tool.frontmatter.title,
   };
 }
 
@@ -149,8 +141,7 @@ const tools = computed(() =>
   )
 );
 const underConstruction = computed(
-  () =>
-    frontmatter.value.properties["redaction-state"] != "mvp1"
+  () => frontmatter.value.properties["redaction-state"] != "mvp1"
 );
 
 import { usePlausible } from "../plugins/plausible/client";
@@ -184,59 +175,7 @@ watch(trackableProperties, (props) => {
 });
 </script>
 
-<script lang="ts">
-export default {
-  computed: {
-    bread() {
-      const parts = this.$page?.path.split("/");
-      console.log(parts);
-      // Bascially if there's a trailing slash then get rid of the blank
-        parts.pop();
-      let link = "";
-      // Loop through the crumbs
-      const crumbs = parts.map((slug) => {
-        link += slug;
-        const page = parts.find(
-            (el) => el === link || el === link + "/"
-        );
-        link += "/";
-        if (page) {
-          return {
-            path: page?.path,
-            title: page?.title || page.frontmatter.breadcrumb,
-          };
-        } else {
-          return {
-            path: link,
-            title: this?.titleCase(slug),
-          };
-        }
-      });
-      return crumbs;
-    },
-  },
-  methods: {
-    titleCase(str) {
-      return str
-        .toLowerCase()
-        .split(" ")
-        .map(function (word) {
-          return word.charAt(0).toUpperCase() + word.slice(1);
-        })
-        .join(" ");
-    },
-  },
-};
-</script>
-
 <style lang="scss" scoped>
-
-.breadcrumb-wrapper {
-  max-width: 860px;
-  margin: 48px auto 0;
-  color: white;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -294,24 +233,5 @@ export default {
   border-radius: 0.125rem;
   font-size: 0.875rem;
   text-align: center;
-}
-
-.bread-crumbs {
-  padding: 1rem 0;
-  color: white;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  span {
-    display: inline-flex;
-    align-items: center;
-
-    a {
-      color: white;
-    }
-
-    img {
-      width: 12px;
-    }
-  }
 }
 </style>
