@@ -11,8 +11,7 @@ description: >-
   manage associated risks (e.g. budget authorization, overcommitment, lack of
   budget). 
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
@@ -23,9 +22,9 @@ properties:
   name: Individual Project Cost Optimization via Reservations
 ---
 
-This is a building block that Cloud Foundation teams can use in addition or instead of [Global Cost Optimization via Reservations](./global-cost-optimization-via-reservations.md). 
+This is a building block that Cloud Foundation teams can use in addition or instead of [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md). 
 
-> **💡** Review [Global Cost Optimization via Reservations](./global-cost-optimization-via-reservations.md) for an introduction of reservations and options.
+> **💡** Review [Global Cost Optimization via Reservations](/maturity-model/cost-management/global-cost-optimization-via-reservations.md) for an introduction of reservations and options.
 
 
 

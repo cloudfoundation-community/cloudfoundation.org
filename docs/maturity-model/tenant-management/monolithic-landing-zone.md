@@ -7,8 +7,7 @@ description: >-
   These resources are managed with the same life-cycle as the underlying cloud
   tenant.
 category: 🗂 Tenant Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: mvp1
@@ -22,25 +21,25 @@ properties:
 
 
 
-Early stage cloud foundations often start with a “one-size-fits-all” approach to Landing Zones. This means that the baseline configuration provisioned and enforced by the landing zone has to serve multiple concerns. For example the landing zone may include a prescriptive network configuration for enabling [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) as well as mandatory audit configuration (see [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md) ). When the Cloud Foundation team encounters a new concern, like [Managed DevOps Toolchain](../service-ecosystem/managed-devops-toolchain.md) , it also gets added to the baseline. Because different DevOps teams have different needs most Cloud Foundations will split up an organically grown Monolithic Landing Zone into [Modular Landing Zones](./modular-landing-zones.md). The pain points frequently encountered are listed in the last section of this page.
+Early stage cloud foundations often start with a “one-size-fits-all” approach to Landing Zones. This means that the baseline configuration provisioned and enforced by the landing zone has to serve multiple concerns. For example the landing zone may include a prescriptive network configuration for enabling [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) as well as mandatory audit configuration (see [Centralized audit logs](/maturity-model/security-and-compliance/centralized-audit-logs.md) ). When the Cloud Foundation team encounters a new concern, like [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md) , it also gets added to the baseline. Because different DevOps teams have different needs most Cloud Foundations will split up an organically grown Monolithic Landing Zone into [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md). The pain points frequently encountered are listed in the last section of this page.
 
 The Monolithic Landing Zone is known to be a local maximum that keeps complexity low in the short term while sacrificing flexibility in the long term. 
 
 ## When to Build a Monolithic Landing Zone
 
-> **⚠️** For Cloud Foundation that are getting started with building Landing Zones the Monolithic Approach is considered an anti-pattern. A modular approach as laid out in [Modular Landing Zones](./modular-landing-zones.md)  is recommended.
+> **⚠️** For Cloud Foundation that are getting started with building Landing Zones the Monolithic Approach is considered an anti-pattern. A modular approach as laid out in [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md)  is recommended.
 
 For Cloud Foundations that find themselves with organically grown Monolithic Landing Zone, the next section will help to decide when to re-structure existing Monolithic Landing Zones.
 
 ## Pain Points of Monolithic Landing Zone
 
-As Cloud Foundations serve more customers the limitations of the Monolithic Landing Zone  approach will become more numerous. Here are indicators that your Cloud Foundation needs to move to [Modular Landing Zones](./modular-landing-zones.md):
+As Cloud Foundations serve more customers the limitations of the Monolithic Landing Zone  approach will become more numerous. Here are indicators that your Cloud Foundation needs to move to [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md):
 
 - Every time a customer wants to book a service, it is added to the Monolithic Landing Zone.
 
 - The Monolithic Landing Zone creates workload that is not required by some teams.
 
-- The Monolithic Landing Zone hosts conflicting combinations like different [Managed DevOps Toolchain](../service-ecosystem/managed-devops-toolchain.md) providers or [Virtual Network Service](../service-ecosystem/virtual-network-service.md)s.
+- The Monolithic Landing Zone hosts conflicting combinations like different [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md) providers or [Virtual Network Service](/maturity-model/service-ecosystem/virtual-network-service.md)s.
 
 - Customers request different combinations of Landing Zone services that are managed with a growing number of feature-toggles.
 

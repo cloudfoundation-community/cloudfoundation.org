@@ -25,7 +25,7 @@ The Cloud Foundation Maturity Model is **implementation agnostic**. While meshcl
 
 ## Structure of the Cloud Foundation Maturity Model
 
-In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [What is a Building Block](../maturity-model/what-is-a-building-block.md).
+In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [What is a Building Block](/maturity-model/what-is-a-building-block.md).
 
 The model also captures how building blocks relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another) and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now. 
 

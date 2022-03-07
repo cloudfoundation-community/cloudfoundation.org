@@ -17,15 +17,15 @@ The Cloud Foundation Maturity Model assigns some common properties to every buil
 
 Cloud Foundation teams needs to cover many different organizational aspects of cloud adoption and consumption. Pillars group related capabilities that are typically interfacing with different stakeholders inside an organizations.
 
-- [🗂 Tenant Management](./tenant-management/readme.md)**:** Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts). This is often an original responsibility of cloud foundation teams that requires internal alignment between platform specialists.
+- [🗂 Tenant Management](/maturity-model/tenant-management/readme.md)**:** Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts). This is often an original responsibility of cloud foundation teams that requires internal alignment between platform specialists.
 
-- [🔐 IAM](./iam/readme.md)**:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
+- [🔐 IAM](/maturity-model/iam/readme.md)**:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
 
-- [🔖 Security & Compliance](./security-and-compliance/readme.md)**:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
+- [🔖 Security & Compliance](/maturity-model/security-and-compliance/readme.md)**:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
 
-- [💵 Cost Management](./cost-management/readme.md)**:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
+- [💵 Cost Management](/maturity-model/cost-management/readme.md)**:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
 
-- [🛠 Service Ecosystem](./service-ecosystem/readme.md)**:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
+- [🛠 Service Ecosystem](/maturity-model/service-ecosystem/readme.md)**:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
 
 ## Journey Stage
 

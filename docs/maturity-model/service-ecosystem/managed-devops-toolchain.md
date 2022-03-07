@@ -8,8 +8,7 @@ description: >-
   by the team. Any required service account or automation user credentials are
   automatically maintained and rotated.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: mvp1
@@ -22,7 +21,7 @@ properties:
   name: Managed DevOps Toolchain
 ---
 
-Once cloud foundation customers have successfully provisioned a cloud tenant for their project (see [Tenant Provisioning](../tenant-management/tenant-provisioning.md)), the next challenge they face is how to deploy their workload. Embracing cloud native paradigms, most teams will want to leverage modern DevOps tools like a CI/CD pipeline with infrastructure as code deployments. Setting up these deployment pipelines quickly and securely can be a challenging and time consuming task. Offering popular DevOps tools as a “managed service” to your teams can accelerate cloud onboarding and improve your organization’s security posture. 
+Once cloud foundation customers have successfully provisioned a cloud tenant for their project (see [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md)), the next challenge they face is how to deploy their workload. Embracing cloud native paradigms, most teams will want to leverage modern DevOps tools like a CI/CD pipeline with infrastructure as code deployments. Setting up these deployment pipelines quickly and securely can be a challenging and time consuming task. Offering popular DevOps tools as a “managed service” to your teams can accelerate cloud onboarding and improve your organization’s security posture. 
 
 ## What Is a Managed DevOps Toolchain?
 
@@ -34,7 +33,7 @@ At the minimum, the managed service needs to provide teams with a dedicated "env
 
 ### CI/CD Platform
 
-In addition to the source code repository, the managed service also needs to manage and scale any infrastructure required for running build jobs (typically virtual machines or containers). Depending on the implementation of the CI/CD platform, providing additional services like [Shared container registry](./shared-container-registry.md) and [Shared VM Image Repository](./shared-vm-image-repository.md) can be useful to provide base images and build environments for common developer toolchains (e.g. Python, Java, etc.).
+In addition to the source code repository, the managed service also needs to manage and scale any infrastructure required for running build jobs (typically virtual machines or containers). Depending on the implementation of the CI/CD platform, providing additional services like [Shared container registry](/maturity-model/service-ecosystem/shared-container-registry.md) and [Shared VM Image Repository](/maturity-model/service-ecosystem/shared-vm-image-repository.md) can be useful to provide base images and build environments for common developer toolchains (e.g. Python, Java, etc.).
 
 Popular choices of CI/CD platforms for accelerating cloud-native development:
 
@@ -99,7 +98,7 @@ While there are clear benefits to offering pre-integrated toolchains, plan for f
 
 ### Authorize Source Code Repositories
 
-The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](../iam/identity-and-access-management-concept.md) and  [Authorization Concept](../iam/authorization-concept.md).
+The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](/maturity-model/iam/identity-and-access-management-concept.md) and  [Authorization Concept](/maturity-model/iam/authorization-concept.md).
 
 ### Manage Service Credentials
 
@@ -109,11 +108,11 @@ Continuous delivery implies that the CI/CD platform also has the ability to exec
 
 If the Cloud Foundation team wants to provide continuous delivery capabilities in addition to continuous integration capabilities, providing a way to handle service credentials is obligatory. In practice, the following implementations from simple to more advanced (and thus more secure) are observed:
 
-- rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](../iam/authorization-concept.md))
+- rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](/maturity-model/iam/authorization-concept.md))
 
-- a **semi-automated** process leverages credentials provided by [Service Account Management](../iam/service-account-management.md) manually transferred into the CI/CD platform
+- a **semi-automated** process leverages credentials provided by [Service Account Management](/maturity-model/iam/service-account-management.md) manually transferred into the CI/CD platform
 
 - a **fully automated** process sets up service accounts and allows the CI/CD platform to impersonate service accounts. This can be achieved by managing secrets for those service accounts, including regular rotations. An even better approach is Workload Identity Federation([GCP](https://cloud.google.com/iam/docs/workload-identity-federation), [Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)). With Workload Identity Federation no secrets need to be stored or rotated.
 
-Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](./managed-key-vault.md) and [Service Account Management](../iam/service-account-management.md).
+Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](/maturity-model/service-ecosystem/managed-key-vault.md) and [Service Account Management](/maturity-model/iam/service-account-management.md).
 

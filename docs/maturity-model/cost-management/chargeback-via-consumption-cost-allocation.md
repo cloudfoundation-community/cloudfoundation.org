@@ -7,8 +7,7 @@ description: >-
   Cloud tenant owners are transparently charged for the resource consumption as
   it is charged from the cloud provider.
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
@@ -37,7 +36,7 @@ Subjecting cloud cost to a traditional shared cost allocation cancels many benef
 
 ### Establish Proper Tenant Management
 
-Cloud providers make consumption data available on a tenant level. With proper tenant management you should have established a [Cloud Tenant Database](../tenant-management/cloud-tenant-database.md) that includes basic cost allocation data like cost centers. This information from your tenant database will make it it easy to split up the cloud provider’s bill to cost centers, without requiring any additional effort like applying billing tags to cloud resources.
+Cloud providers make consumption data available on a tenant level. With proper tenant management you should have established a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) that includes basic cost allocation data like cost centers. This information from your tenant database will make it it easy to split up the cloud provider’s bill to cost centers, without requiring any additional effort like applying billing tags to cloud resources.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -51,7 +50,7 @@ Cloud providers make consumption data available on a tenant level. With proper t
 
 It’s important that your customers understand what exactly they are being charged for. This visibility into consumption data is important to keep all stakeholders in the loop. For example, it’s common that managers do not find the time to look into raw consumption data on the cloud consoles every month. However, having summarized consumption data included in their IT chargeback statement provides a transparent feedback loop and keeps them aware of the cloud consumption under their responsibility.
 
-Public cloud platforms offer APIs to import consumption data, e.g. AWS Cost Explorer API, Azure Cost Management API, or GCP Billing Exports in BigQuery. For private clouds, look into a metering solution and see how [Private Cloud pay-per-use chargeback](./private-cloud-pay-per-use-chargeback.md) can work.
+Public cloud platforms offer APIs to import consumption data, e.g. AWS Cost Explorer API, Azure Cost Management API, or GCP Billing Exports in BigQuery. For private clouds, look into a metering solution and see how [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) can work.
 
 ### Consider Full Cost Allocation
 

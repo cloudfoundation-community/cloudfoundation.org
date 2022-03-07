@@ -8,8 +8,7 @@ description: >-
   footprint caused by their project’s cloud usage. This enables sustainability
   reporting and gives teams feedback towards achieving sustainability goals.
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: Draft
@@ -35,7 +34,7 @@ properties:
 
 ### Integrate with Chargeback Process
 
-Treat “cost to the budget” and “cost to the environment” as equally important to raise stakeholder awareness. Build on [Monthly Cloud Project Billing Report](./monthly-cloud-project-billing-report.md) 
+Treat “cost to the budget” and “cost to the environment” as equally important to raise stakeholder awareness. Build on [Monthly Cloud Project Billing Report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md) 
 
 ### Build on Established Public Cloud Carbon Reporting
 
@@ -49,5 +48,5 @@ implementing this capability can help meet regulatory requirements (e.g. EU CSRD
 
 ### Implement Carbon Footprint Reporting for Private Cloud & Services
 
-> **💡** Future versions of the CFMM model may include these as separate capabilities, similar to [Private Cloud pay-per-use chargeback](./private-cloud-pay-per-use-chargeback.md) and [Consumption based pay-per-use for internal Services](./consumption-based-pay-per-use-for-internal-services.md) (but with carbon, instead of currency)
+> **💡** Future versions of the CFMM model may include these as separate capabilities, similar to [Private Cloud pay-per-use chargeback](/maturity-model/cost-management/private-cloud-pay-per-use-chargeback.md) and [Consumption based pay-per-use for internal Services](/maturity-model/cost-management/consumption-based-pay-per-use-for-internal-services.md) (but with carbon, instead of currency)
 

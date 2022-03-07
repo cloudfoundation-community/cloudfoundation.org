@@ -7,8 +7,7 @@ description: >-
   Implement automated policies to steer cloud consumers to appropriate cloud
   platforms and landing zones based on metadata about the cloud consumer.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - dc16dccf-7530-4179-a8e2-b82cc54b990f
@@ -23,13 +22,13 @@ properties:
   name: Control access to cloud platforms and Landing Zones
 ---
 
-Cloud Foundation teams often have to support customers with a wide variety of security and workload requirements. While [Modular Landing Zones](../tenant-management/modular-landing-zones.md) help foundation teams offer a composable set of services to cover varying workload requirements, addressing different security requirements comes not as easily.
+Cloud Foundation teams often have to support customers with a wide variety of security and workload requirements. While [Modular Landing Zones](/maturity-model/tenant-management/modular-landing-zones.md) help foundation teams offer a composable set of services to cover varying workload requirements, addressing different security requirements comes not as easily.
 
-A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](./shared-responsibility-model.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
+A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
 
 ## Why Manage Access to Cloud Platforms and Landing Zones
 
-Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects (see [Cloud Zones](./cloud-zones.md) ), Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
+Cloud Foundation teams want to enable fast self-service cloud tenant provisioning (see [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md)). As part of this process, customers need to choose a cloud platform and landing zone for their new cloud tenant. In order to ensure customers select landing zones in compliance with the risk estimates of their projects (see [Cloud Zones](/maturity-model/security-and-compliance/cloud-zones.md) ), Cloud Foundation teams must implement guardrails that prevent misconfigurations and help customers choose the correct landing zones.
 
 > **✏️** **Example Scenario: Landing Zone per Stage**
 > Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. 
@@ -80,7 +79,7 @@ For the manual access control the metadata is only used to store the information
 
 ### Automated Access Control
 
-> **ℹ️** (Semi-)automated [Tenant Provisioning](../tenant-management/tenant-provisioning.md) is a prerequisite for automated access control.
+> **ℹ️** (Semi-)automated [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) is a prerequisite for automated access control.
 
 It is important to clarify the following questions to achieve the automated steering of cloud provisioning based on the metadata:
 

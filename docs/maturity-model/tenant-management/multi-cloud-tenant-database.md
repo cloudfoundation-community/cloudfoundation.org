@@ -9,8 +9,7 @@ description: >-
   via an API or are stored there by combining different tenant lists/exports
   into a common database schema (ETL). 
 category: 🗂 Tenant Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
@@ -25,17 +24,17 @@ properties:
   name: Multi-Cloud Tenant Database
 ---
 
-Organizations following a multi-cloud strategy often start implementing dedicated processes for [Tenant Provisioning](./tenant-provisioning.md) and maintaining a [Cloud Tenant Database](./cloud-tenant-database.md) on each platform. This makes it difficult to establish visibility over the organization’s multi-cloud adoption. 
+Organizations following a multi-cloud strategy often start implementing dedicated processes for [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) and maintaining a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) on each platform. This makes it difficult to establish visibility over the organization’s multi-cloud adoption. 
 
-Furthermore, maintaining different tenant databases per platform leads to inconsistent metadata about your cloud tenants. This makes it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md) or [Multi-Cloud Tagging Policy](../security-and-compliance/multi-cloud-tagging-policy.md).
+Furthermore, maintaining different tenant databases per platform leads to inconsistent metadata about your cloud tenants. This makes it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](/maturity-model/tenant-management/link-cloud-tenants-to-cmdbeam.md) or [Multi-Cloud Tagging Policy](/maturity-model/security-and-compliance/multi-cloud-tagging-policy.md).
 
 ## Best Practices for Establishing Multi-Cloud Visibility with a Cloud Tenant Database
 
-To successfully implement a multi-cloud tenant database, it needs to serve as a [Cloud Tenant Database](./cloud-tenant-database.md) for each platform. Review that building block for considerations and best practices of building a cloud tenant database. This building block focuses on the considerations to establish a consistent multi-cloud database.
+To successfully implement a multi-cloud tenant database, it needs to serve as a [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) for each platform. Review that building block for considerations and best practices of building a cloud tenant database. This building block focuses on the considerations to establish a consistent multi-cloud database.
 
 ### Align and Centralize Requirements
 
-If your organization has historically managed cloud platforms as separate silos, chances are high that platform teams have implemented processes like [Tenant Provisioning](./tenant-provisioning.md), [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md)  or [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) individually. When building a multi-cloud tenant database, you will also have to consider how to align these processes across clouds so they can be integrated with a single multi-cloud tenant database. A natural next step in this process could be implementing the building block [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md). 
+If your organization has historically managed cloud platforms as separate silos, chances are high that platform teams have implemented processes like [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md), [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md)  or [Cloud Tenant Tagging](/maturity-model/security-and-compliance/cloud-tenant-tagging.md) individually. When building a multi-cloud tenant database, you will also have to consider how to align these processes across clouds so they can be integrated with a single multi-cloud tenant database. A natural next step in this process could be implementing the building block [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md). 
 
 Creating this alignment between different platform implementations and functional stakeholders (IAM, Compliance, Finance) can be challenging. Establishing a Cloud Foundation team empowered with a clear-cut mission is the best approach to overcome these challenges.
 
@@ -48,7 +47,7 @@ Creating this alignment between different platform implementations and functiona
 
 ### Consider Collaborative Approaches to Maintaining Tenant Metadata
 
-Maintaining tenant data at scale is a lot of work. Even more so than with a platform-specific [Cloud Tenant Database](./cloud-tenant-database.md), enabling collaboration between different stakeholders is the key to maintaining a high-quality information repository about cloud tenants. The building block  [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) covers implementing this in more detail.
+Maintaining tenant data at scale is a lot of work. Even more so than with a platform-specific [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md), enabling collaboration between different stakeholders is the key to maintaining a high-quality information repository about cloud tenants. The building block  [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) covers implementing this in more detail.
 
 ### Maintain a Cloud Service Register to Meet Regulatory Requirements
 

@@ -9,8 +9,7 @@ description: >-
   instances). Centrally plan resource demand to take advantage of cost
   optimization opportunities offered by cloud providers. 
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: mvp1
@@ -56,11 +55,11 @@ At the most basic level, cloud providers offer commitment options based on **glo
 
 **Resource performance reservations** guarantee specific levels of resource performance, e.g. provisioned IOPS.
 
-> **💡** Resource performance reservations are very workload specific and thus best implemented as [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md). 
+> **💡** Resource performance reservations are very workload specific and thus best implemented as [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). 
 
 ## Implementation
 
-Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md). However, depending on the organizational philosophy (cf. [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implementing only one or both capabilities.
+Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservations](/maturity-model/cost-management/individual-project-cost-optimization-via-reservations.md). However, depending on the organizational philosophy (cf. [Shared Responsibility Model](/maturity-model/security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implementing only one or both capabilities.
 
 
 

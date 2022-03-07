@@ -7,8 +7,7 @@ description: >-
   Multi-Cloud IAM architecture concept based on federated identities and
   authentication.
 category: 🔐 IAM
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
@@ -44,7 +43,7 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 - What is your source of identities? 
 
-- How do identities flow from the source to other systems? (See [Federated Identity and Authentication](./federated-identity-and-authentication.md))
+- How do identities flow from the source to other systems? (See [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md))
 
 - What level of separation will you have between different applications?
 
@@ -54,11 +53,11 @@ An important distinction is IAM for humans vs. IAM for workload. Making this dis
 
 An Identity and Access Management Concept needs to answer the following questions:
 
-- How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](./identity-lifecycle-management.md))
+- How do you ensure Joiner / Mover / Leaver processes are supported in different parts of your Identity and Access Management landscape? (See [Identity Lifecycle Management](/maturity-model/iam/identity-lifecycle-management.md))
 
 - How does a cloud-native, self-service approach fit together with the control requirements your organization has? 
 
-- Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](./privileged-access-management.md) )
+- Are there distinctions between identities (normal users versus admin users)? If yes, these distinctions must be laid out in the Identity and Access Management Concept. (See [Privileged Access Management](/maturity-model/iam/privileged-access-management.md) )
 
 #### Specific Questions on IAM for Workload
 
@@ -66,7 +65,7 @@ An Identity and Access Management Concept needs to answer the following question
 
 - What documentation around access rights needs to happen? Documentation of access rights is a common requirement for companies in the finance or healthcare industries.
 
-- How does a cloud-native, self-service approach fit together with the control requirements your organization has? (See [Service Account Management](./service-account-management.md) )
+- How does a cloud-native, self-service approach fit together with the control requirements your organization has? (See [Service Account Management](/maturity-model/iam/service-account-management.md) )
 
 - What guidelines do you have for teams migrating to the cloud? What guidelines should teams starting in the cloud follow (e.g. zero trust)?
 

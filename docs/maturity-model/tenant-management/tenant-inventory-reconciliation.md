@@ -9,8 +9,7 @@ description: >-
   "shadow IT" or "dark matter" in the cloud. A process is in place to adopt
   these existing tenants into the prescribed governance model. 
 category: 🗂 Tenant Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: mvp1
@@ -22,7 +21,7 @@ properties:
   name: Tenant Inventory Reconciliation
 ---
 
-After implementing basic functionality for managing cloud tenants like [Cloud Tenant Database](./cloud-tenant-database.md) or even more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md), a cloud foundation team still misses a critical control for ensuring there are are no shadow workloads running on cloud platforms. 
+After implementing basic functionality for managing cloud tenants like [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) or even more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md), a cloud foundation team still misses a critical control for ensuring there are are no shadow workloads running on cloud platforms. 
 
 > **💡** **Shadow workloads** are workloads running on a cloud platform that have unclear ownership, information security risk and cost responsibility. They are typically the result from brownfield situations or side-administration creating cloud tenants without the cloud foundation teams’ involvement. Shadow workloads are a form of “shadow IT”.
 
@@ -30,7 +29,7 @@ Tenant reconciliation is the comparison of the cloud tenant inventory registered
 
 ## Best Practices for Tenant Inventory Reconciliation
 
-Implementing a tenant inventory reconciliation process is easy when a cloud foundation team has already implemented earlier journey-stage capabilities like [Cloud Tenant Database](./cloud-tenant-database.md) as well as solid cost management capabilities like [Monthly Cloud Project Billing Report](../cost-management/monthly-cloud-project-billing-report.md). 
+Implementing a tenant inventory reconciliation process is easy when a cloud foundation team has already implemented earlier journey-stage capabilities like [Cloud Tenant Database](/maturity-model/tenant-management/cloud-tenant-database.md) as well as solid cost management capabilities like [Monthly Cloud Project Billing Report](/maturity-model/cost-management/monthly-cloud-project-billing-report.md). 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -41,7 +40,7 @@ Implementing a tenant inventory reconciliation process is easy when a cloud foun
 
 ### Restrict Tenant Creation
 
-Cloud foundation teams should restrict the ability to create tenants in cloud platforms in order to avoid tenant creation outside the boundaries of well-defined processes (like [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md)). This restriction can take different forms, depending on the cloud platform:
+Cloud foundation teams should restrict the ability to create tenants in cloud platforms in order to avoid tenant creation outside the boundaries of well-defined processes (like [Multi-cloud tenant database integrated with lifecycle management](/maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md)). This restriction can take different forms, depending on the cloud platform:
 
 - **AWS:** Ensure users do not have access to the `organizations:CreateAccount` permission.
 
@@ -59,7 +58,7 @@ A monthly cloud cost chargeback process offers a great opportunity for reconcili
 
 ### Integrate with Incident Management Process
 
-Discovering a shadow workload should be treated as an incident and the remediation thus be aligned with the [Incident Management Process](../security-and-compliance/incident-management-process.md). This means that cloud foundation teams should establish clear rules and procedures what happens upon discovering a shadow workload. An exemplary escalation plan for shadow workloads could be:
+Discovering a shadow workload should be treated as an incident and the remediation thus be aligned with the [Incident Management Process](/maturity-model/security-and-compliance/incident-management-process.md). This means that cloud foundation teams should establish clear rules and procedures what happens upon discovering a shadow workload. An exemplary escalation plan for shadow workloads could be:
 
 - immediately quarantining the workload by revoking all IAM permissions on the cloud tenant, placing firewall rules to prevent network access
 
@@ -71,7 +70,7 @@ Discovering a shadow workload should be treated as an incident and the remediati
 
 ### Have a Clear Tenant Decomissioning Process
 
-The final step of the escalation process for unregistered tenants is a forceful decomissioning of the tenant and its workload. This requires a clear [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) process that also accounts for “involuntary” deprovisioning scenarios. See the referenced building block for more details.
+The final step of the escalation process for unregistered tenants is a forceful decomissioning of the tenant and its workload. This requires a clear [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) process that also accounts for “involuntary” deprovisioning scenarios. See the referenced building block for more details.
 
 ### Perform Tenant Inventory Reconciliations Regularly
 

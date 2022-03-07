@@ -8,8 +8,7 @@ description: >-
   their cloud tenant as well as for any shared overhead cost incurred by the
   cloud foundation team for providing its services.
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   journey-stage: ⭐️⭐️

@@ -8,8 +8,7 @@ description: >-
   foundation and how it interacts with the cloud provider's shared
   responsibility model.
 category: 🔖 Security & Compliance
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 3c7081e5-c451-40b6-806d-a8d21b130612
@@ -74,5 +73,5 @@ The Cloud Foundation teams need to consider the following point when defining th
 
 - Define and describe the approached organizational structure. It may be helpful to you to read the whitepaper “Cloud Organization”?
 
-- Define clear borders - it must be clear to anyone internal “who is responsible for what”. This is important for all processes, e.g. who is responsible for [Tenant Deprovisioning / Decommissioning](../tenant-management/tenant-deprovisioning-decommissioning.md) etc.
+- Define clear borders - it must be clear to anyone internal “who is responsible for what”. This is important for all processes, e.g. who is responsible for [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) etc.
 

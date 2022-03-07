@@ -7,8 +7,7 @@ description: >-
   Project owners can view a monthly billing report listing all incurred charges
   aggregated across all cloud platforms and services used in a project.  
 category: 💵 Cost Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - ce20312c-aa7a-453f-82f2-f186469dd973

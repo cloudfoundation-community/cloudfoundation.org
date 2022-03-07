@@ -6,8 +6,7 @@ description: >-
   Regulatory onboarding only captures what is required for getting acces to the
   cloud
 category: 🔖 Security & Compliance
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: review-v1
@@ -28,9 +27,9 @@ For this reason, Cloud Foundation teams divide their service offerings into Clou
 
 **Example onboarding paths:** Compare two different teams at the imaginary likvid bank.
 
-- The newly founded DevOps team “Mobile Notification Backend” needs a cloud tenant to run their application in production. The Notification Backend system needs an [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) on layer 7. This access must be registered and approved by the Compliance department. The approval may take up to 5 business days. The application’s tenant will be in the “Connected” Cloud Zone.
+- The newly founded DevOps team “Mobile Notification Backend” needs a cloud tenant to run their application in production. The Notification Backend system needs an [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) on layer 7. This access must be registered and approved by the Compliance department. The approval may take up to 5 business days. The application’s tenant will be in the “Connected” Cloud Zone.
 
-- In contrast, the DevOps team “Robo-Advisor Website Analytics” wanted to explore the Analytics options of GCP in a [Playground / Sandbox Environments](../tenant-management/playground-sandbox-environments.md). It did not need on-prem connectivity. Therefore their cloud onboarding did not include the step for registering on-prem connectivity. No manual sign-off was needed and  [Tenant Provisioning](../tenant-management/tenant-provisioning.md) happened within minutes. The tenant is in the “Island” Cloud Zone.
+- In contrast, the DevOps team “Robo-Advisor Website Analytics” wanted to explore the Analytics options of GCP in a [Playground / Sandbox Environments](/maturity-model/tenant-management/playground-sandbox-environments.md). It did not need on-prem connectivity. Therefore their cloud onboarding did not include the step for registering on-prem connectivity. No manual sign-off was needed and  [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) happened within minutes. The tenant is in the “Island” Cloud Zone.
 
 ```mermaid
 graph LR
@@ -72,17 +71,17 @@ graph LR
 
     **Example Cloud Zones**
 
-    - Customers who only consume services from the[Internal Service Marketplace](../service-ecosystem/internal-service-marketplace.md) and do not need infrastructure level access.
+    - Customers who only consume services from the[Internal Service Marketplace](/maturity-model/service-ecosystem/internal-service-marketplace.md) and do not need infrastructure level access.
 
-    - Customers who need infrastructure level access without [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md).
+    - Customers who need infrastructure level access without [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md).
 
-    - Customers that need a tenant with [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) on L3
+    - Customers that need a tenant with [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) on L3
 
         - in dev
 
         - in prod
 
-    - Customers that need a tenant with [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) on L7
+    - Customers that need a tenant with [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md) on L7
 
         - in dev
 
@@ -90,7 +89,7 @@ graph LR
 
 1. For every Cloud Zone, write down a Cloud Onboarding Path as an ordered list of steps.
 
-1. Put controls in place to ensure compliant usage of Cloud Zones. That means, only customers that followed a Cloud Onboarding Path are allowed to. The capability to [Control access to cloud platforms and Landing Zones](./control-access-to-cloud-platforms-and-landing-zones.md) is needed.
+1. Put controls in place to ensure compliant usage of Cloud Zones. That means, only customers that followed a Cloud Onboarding Path are allowed to. The capability to [Control access to cloud platforms and Landing Zones](/maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md) is needed.
 
 ## Best Practices around Cloud Zones
 

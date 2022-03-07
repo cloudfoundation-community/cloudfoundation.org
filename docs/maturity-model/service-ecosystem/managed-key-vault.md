@@ -8,8 +8,7 @@ description: >-
   aligned with the organization's policies for cryptography and secret
   management.
 category: 🛠 Service Ecosystem
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 18256d4f-e096-4281-809a-f77c5dd20ef0
@@ -20,6 +19,6 @@ properties:
   name: Managed Key Vault
 ---
 
-Often used to enable [Service Account Management](../iam/service-account-management.md) and [Managed DevOps Toolchain](./managed-devops-toolchain.md).
+Often used to enable [Service Account Management](/maturity-model/iam/service-account-management.md) and [Managed DevOps Toolchain](/maturity-model/service-ecosystem/managed-devops-toolchain.md).
 
 Highly important for financial service customers and other regulated industries that need to leverage “Bring your own key” (BYOK) solutions.

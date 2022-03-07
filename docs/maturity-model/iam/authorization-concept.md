@@ -9,8 +9,7 @@ description: >-
   segregation of duties, need-to-know and separation of privileged and
   unprivileged roles.
 category: 🔐 IAM
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
@@ -32,7 +31,7 @@ There are two fundamental design approaches to answering this question: Open and
 
 **Open** landing zone designs allow teams to create and modify IAM roles and permissions on cloud tenants. The cloud foundation only enforces a minimum set of IAM policies on the tenant.  
 
-**Closed** landing zone designs on the other hand prevent teams from creating or modifying IAM roles and permissions on cloud tenants. Teams must request all such changes via the cloud foundation team or the provided tooling like [Service Account Management](./service-account-management.md).
+**Closed** landing zone designs on the other hand prevent teams from creating or modifying IAM roles and permissions on cloud tenants. Teams must request all such changes via the cloud foundation team or the provided tooling like [Service Account Management](/maturity-model/iam/service-account-management.md).
 
 ### Benefits and Risks of Landing Zone Designs
 
@@ -41,11 +40,7 @@ There are two fundamental design approaches to answering this question: Open and
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Privilege Escalation Risk    | ✅ Easy to control by scoping role permissions appropriately and avoiding IAM related permissions.                                                                                                                                                                            | ⚠️ Difficult to secure against privilege escalation attacks. Few platforms offer built-in mitigations capabilities (e.g. Kubernetes), others required complex measures (e.g. Azure Policy countering Azure RBAC). <br>Furthermore users can accumulate permissions over time.                                                                  |
 | Principle of Least Privilege | ⚠️ As roles tend to be more generic (cross resources) difficult to implement because user and service accounts often carry too many permissions. Risk of rogue users and automation impacting resources (e.g. unintentionally deleting resources).                           | ✅ Allows teams to create dedicated IAM roles for users and service accounts scoped to the least privileges necessary. Team members working in the same tenants can have different permissions on services and resources. Depending on the platform, "sudo" modes can be implemented by allowing users to assume a higher privileged role. <br> |
-| Recertification              | ✅ Simplified recertification based on known risk profiles of standard IAM roles. Depending on the implementation of  Federated Identity and Authentication  across supported cloud platforms, certification of the central IAM repository (e.g. an AD) might be sufficient.  | ⚠️ Difficult to perform as cloud tenants can have highly individualized IAM roles and assignments on resource level. This makes it difficult to assess risk profiles of individual roles and consider it in recertification processes appropriately.                                                                                           |
-
-
-
-## Key Considerations and Best Practices
+| Recertification              | ✅ Simplified recertification based on known risk profiles of standard IAM roles. Depending on the implementation of  Federated Identity and Authentication  across supported cloud platforms, certification of the central IAM repository (e.g. an AD) might be sufficient.  | ⚠️ Difficult to perform as cloud tenants can have highly individualized IAM roles and assignments on resource level. This makes it difficult to assess risk profiles of individual roles and consider it in recertification processes appropriately.          |## Key Considerations and Best Practices
 
 - **Start with default roles**
 

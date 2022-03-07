@@ -8,8 +8,7 @@ description: >-
   and deprovisioning processes. The database acts as an authoritative source of
   tenants and ensures tenant metadata is always up to date.
 category: 🗂 Tenant Management
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: Draft
@@ -24,7 +23,7 @@ properties:
   name: Multi-cloud tenant database integrated with lifecycle management
 ---
 
-This building block is the next evolution of the capabilities of a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) by integrating automated metadata maintenance with [Tenant Provisioning](./tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) processes. This process integration ensures that tenant data is always up to date and there are no “shadow workloads” on your cloud. 
+This building block is the next evolution of the capabilities of a [Self-Service Multi-Cloud Tenant Database](/maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) by integrating automated metadata maintenance with [Tenant Provisioning](/maturity-model/tenant-management/tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](/maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) processes. This process integration ensures that tenant data is always up to date and there are no “shadow workloads” on your cloud. 
 
-> **💡** Integration with tenant provisioning and deprovisioning processes is a “proactive” strategy to ensure all your cloud tenants are registered. [Tenant Inventory Reconciliation](./tenant-inventory-reconciliation.md) is the corresponding “reactive” strategy.
+> **💡** Integration with tenant provisioning and deprovisioning processes is a “proactive” strategy to ensure all your cloud tenants are registered. [Tenant Inventory Reconciliation](/maturity-model/tenant-management/tenant-inventory-reconciliation.md) is the corresponding “reactive” strategy.
 

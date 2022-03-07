@@ -9,8 +9,7 @@ description: >-
   platform roles (e.g. Global Admins, Global Readers) and shared services (e.g.
   on-premise connectivity hubs). 
 category: 🔐 IAM
-layout: CFMMBlock
-sidebar: false
+pageType: CFMMBlock
 properties:
   enables: []
   redaction-state: Draft

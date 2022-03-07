@@ -21,15 +21,15 @@ With IT services as the established management paradigm in mind, most organizati
 
 No matter how an organization decides to implement its cloud governance, it always needs to cover the following functional pillars:
 
-- [🗂 Tenant Management](../maturity-model/tenant-management/readme.md)**:** Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts). This is often an original responsibility of cloud foundation teams that requires internal alignment between platform specialists.
+- [🗂 Tenant Management](/maturity-model/tenant-management/readme.md)**:** Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts). This is often an original responsibility of cloud foundation teams that requires internal alignment between platform specialists.
 
-- [🔐 IAM](../maturity-model/iam/readme.md)**:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
+- [🔐 IAM](/maturity-model/iam/readme.md)**:** Provide Identity and Access management capabilities for all available cloud platforms and services. Needs alignment with Enterprise IAM stakeholders.
 
-- [🔖 Security & Compliance](../maturity-model/security-and-compliance/readme.md)**:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
+- [🔖 Security & Compliance](/maturity-model/security-and-compliance/readme.md)**:** Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.  Interfaces with IT Security and Compliance stakeholders.
 
-- [💵 Cost Management](../maturity-model/cost-management/readme.md)**:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
+- [💵 Cost Management](/maturity-model/cost-management/readme.md)**:** Provide cost management and chargeback capabilities for all available cloud platforms and services. Interfaces with Finance/Controlling stakeholders.
 
-- [🛠 Service Ecosystem](../maturity-model/service-ecosystem/readme.md)**:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
+- [🛠 Service Ecosystem](/maturity-model/service-ecosystem/readme.md)**:** Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services. 
 
 While representing independent functions, organizations need to integrate these functional pillars to implement an effective and wholistic cloud governance.
 
@@ -115,7 +115,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](../maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](../maturity-model/iam/federated-identity-and-authentication.md). To provide [On-Premise Network Connection](../maturity-model/service-ecosystem/on-premise-network-connection.md), the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway. 
+To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](/maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](/maturity-model/iam/federated-identity-and-authentication.md). To provide [On-Premise Network Connection](/maturity-model/service-ecosystem/on-premise-network-connection.md), the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway. 
 
 Of course, building a cloud foundation is a challenging task. It can involve interesting technical challenges that allow an organization to achieve a high degree of automation that compares favorably to public services. However, achieving full service automation is not required for adopting the cloud foundation as an organizational approach. The key to its success is that it absorbs responsibility for service integration and allows an organization to exercise wholistic and effective cloud governance.
 
