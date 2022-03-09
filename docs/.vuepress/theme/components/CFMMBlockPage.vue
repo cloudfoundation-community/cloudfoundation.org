@@ -4,15 +4,19 @@
       <CFMMBlockBreadcrumbs />
     </template>
     <template #before>
-      <p>
-        {{ frontmatter.properties.scope }} / {{ frontmatter.category }} /
-        {{ frontmatter.properties["journey-stage"] }}
-      </p>
-      <div class="custom-container tip">
-        <p class="custom-container-title">Summary</p>
-        <p>{{ frontmatter.description }}</p>
+      <div class="block-intro d-flex align-items-center">
+        <router-link
+          :to="'/maturity-model/what-is-a-building-block#journey-stage'"
+        >
+          <CFMMBlockJourneyStage
+            :journey-stage="frontmatter.properties['journey-stage']"
+          />
+        </router-link>
+        <router-link :to="'/maturity-model/what-is-a-building-block#scope'">
+          <CFMMBlockScope :scope="frontmatter.properties.scope" />
+        </router-link>
+        <span>{{ frontmatter.description }}</span>
       </div>
-
       <nav v-if="dependsOn.length">
         <b>Depends on: </b>
         <span class="depends" v-for="link in dependsOn" :key="link.id"
@@ -96,7 +100,10 @@ import {} from "@vuepress/client";
 
 import Page from "./Page.vue";
 import Feedback from "../components/Feedback.vue";
-import CFMMBlockBreadcrumbs from "../components/CFMMBlockBreadcrumbs.vue";
+import CFMMBlockBreadcrumbs from "./CFMMBlockBreadcrumbs.vue";
+import CFMMBlockScope from "./block/CFMMBlockScope.vue";
+import CFMMBlockJourneyStage from "./block/CFMMBlockJourneyStage.vue";
+
 import { index } from "../../index";
 
 function formatLink(path: string) {
@@ -176,6 +183,23 @@ watch(trackableProperties, (props) => {
 </script>
 
 <style lang="scss" scoped>
+.block-intro {
+  background-color: var(--c-bg-light);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  
+  img.block-step {
+    min-width: 30px;
+    max-width: 30px;
+  }
+  img.block-scope {
+    min-width: 66px;
+    max-width: 66px;
+    margin-right: 10px;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;

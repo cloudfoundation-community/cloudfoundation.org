@@ -2,8 +2,8 @@
   <div class="block-wrapper">
     <router-link :to="props.blockData.link" class="block-atom">
       <div class="block">
-        <CFMMBlockJourneyStage class="block-step" :journey-stage="blockData.journeyStage" />
-        <CFMMBlockScope class="block-scope" :scope="blockData.scope"/>
+        <CFMMBlockJourneyStage :journey-stage="blockData.journeyStage" />
+        <CFMMBlockScope :scope="blockData.scope"/>
         <div class="block-content">
           <p v-text="blockData.title"></p>
         </div>
