@@ -1,33 +1,57 @@
 <template>
-  <router-link :to="blockData.link" class="block-atom"  >
-    <div class="block-wrapper">
-      <div class="block" >
-      <img class="block-step" :src="$withBase('/mm/' + blockData.step)" :alt="blockData.step" alt="journeyStageColor.svg" />
-      <img class="block-scope" :src="$withBase('/mm/' + blockData.scope)" :alt="blockData.scope" alt="scopeColorBox.svg"  />
-      <div class="block-content">
-        <p v-text="blockData.title"></p>
+  <div class="block-wrapper">
+    <router-link :to="props.blockData.link" class="block-atom">
+      <div class="block">
+        <img
+          class="block-step"
+          :src="$withBase('/mm/' + blockData.step)"
+          :alt="blockData.step"
+          alt="journeyStageColor.svg"
+        />
+        <img
+          class="block-scope"
+          :src="$withBase('/mm/' + blockData.scope)"
+          :alt="blockData.scope"
+          alt="scopeColorBox.svg"
+        />
+        <div class="block-content">
+          <p v-text="blockData.title"></p>
+        </div>
+        <slot></slot>
       </div>
-      <slot></slot>
-    </div>
-    <div class="tooltip-text">
-      <p>{{blockData.summary}}</p>
-    </div>
-    </div>
-  </router-link>
+      <p class="tooltip-text">
+        {{ shortSummary }}
+      </p>
+    </router-link>
+  </div>
 </template>
 
-
-<script lang="ts">
+<script setup lang="ts">
+import { computed } from "vue";
 import { RouterLink } from "vue-router";
-export default {
-  components: {
-    RouterLink
-  },
-  props: ["blockData"]
-};
+
+interface Props {
+  blockData: {
+    link: string;
+    summary: string;
+  };
+}
+
+const props = defineProps<Props>();
+
+// we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
+// unfortunately we can't use css text-overflow to render ellipsis as that does not work on multi-line text
+const shortSummary = computed(() => {
+  const maxLength = 250;
+  const text = props.blockData.summary;
+
+  return text.length < maxLength ? text : text.substring(0, maxLength) + "...";
+});
 </script>
 
 <style lang="scss" scoped>
+@import "./maturity-model";
+
 h4 {
   margin-bottom: 0;
   color: #ffffff;
@@ -39,14 +63,12 @@ h4 {
   font-size: 18px;
   font-weight: 900;
 }
-</style>
 
-<style lang="scss" scoped>
 .block-wrapper {
-    background-color: white;
-    margin: 0rem;
-    margin: 0 10px 10px 0;
-    border-radius: 8px;
+  background-color: white;
+  margin: 0 10px 10px 0;
+  padding: 8px;
+  border-radius: 8px;
 }
 a:hover {
   text-decoration: none !important;
@@ -55,26 +77,31 @@ a:hover {
   position: relative;
 
   .tooltip-text {
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
-    display: none;
-    padding: 0 10px 10px;
-    text-align: left;
-    color: black;
+    margin: 0;
+    // provide a nice expand/collapse animation
+    // unfortunately we can't animate the display property, so we hack aroundo this with height and opacity
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    // notes regarding choice of values: the 100ms delay gives us a "debounce" effect so that
+    // animations don't start immediately
+    transition: max-height 200ms 100ms;
+    // some summarys may go on to long
   }
 
-    &:hover .tooltip-text {
-    display: block;
+  // note: this is in the wrong placce because it will already expand the tooltip when hovering the block's margin
+  &:hover .tooltip-text {
+    max-height: $block-summary-max-height;
+    opacity: 1;
+    // transition: opacity 400ms 0;
   }
 
   .block {
-    background-color: white;
-    padding: 8px;
     display: flex;
     align-items: center;
-    margin: 0 10px 10px 0;
-    height: 55px;
-    border-radius: 8px;
     font-family: "Montserrat", sans-serif;
     img.block-step {
       min-width: 15px;
@@ -86,7 +113,7 @@ a:hover {
       margin-right: 10px;
     }
     .block-content {
-      min-height: 45px;
+      height: 39px;
       flex-grow: 1;
       display: flex;
       align-items: center;
