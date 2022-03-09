@@ -6,6 +6,9 @@ description: >-
   Provide capabilities for governing workloads and enforcing security guidelines
   across all available cloud platforms and services.
 category: Pillar
+order: 22
+properties:
+  short-name: Compliance
 ---
 
 Ensuring security and compliance of IT systems is among the biggest concerns of organizations adopting a multi-cloud strategy. Leveraging cloud service provides with public cloud platforms is a form of outsourcing that requires oversight by a retained organization - and the cloud foundation team is best positioned to fulfill this need. This includes ensuring that workloads running on the cloud platform are managed and secured in accordance with the organization’s internal standards and policies.

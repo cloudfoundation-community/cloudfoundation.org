@@ -560,7 +560,11 @@ export const index = [
       "url": "https://www.notion.so/Security-Compliance-321cc8090eec477f8f756d39da0c8b1a",
       "title": "🔖 Security & Compliance",
       "description": "Provide capabilities for governing workloads and enforcing security guidelines across all available cloud platforms and services.",
-      "category": "Pillar"
+      "category": "Pillar",
+      "order": 22,
+      "properties": {
+        "short-name": "Compliance"
+      }
     }
   },
   {
@@ -880,7 +884,11 @@ export const index = [
       "url": "https://www.notion.so/Cost-Management-57502241e2f44b759e33de39b26a6eb8",
       "title": "💵 Cost Management",
       "description": "Provide cost management and chargeback capabilities for all available cloud platforms and services.",
-      "category": "Pillar"
+      "category": "Pillar",
+      "order": 23,
+      "properties": {
+        "short-name": "Cost Mgmt."
+      }
     }
   },
   {
@@ -962,7 +970,11 @@ export const index = [
       "url": "https://www.notion.so/Service-Ecosystem-621771b397a04c4e80ab3331cd6719f0",
       "title": "🛠 Service Ecosystem",
       "description": "Provide managed services that help teams build and operate application on the cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with internal or external teams providing these services.",
-      "category": "Pillar"
+      "category": "Pillar",
+      "order": 24,
+      "properties": {
+        "short-name": "Service Ecosytem"
+      }
     }
   },
   {
@@ -1368,7 +1380,11 @@ export const index = [
       "url": "https://www.notion.so/IAM-9ee0a54d9b9e47dd9fc09d81213ce76c",
       "title": "🔐 IAM",
       "description": "Provide Identity and Access management capabilities for all available cloud platforms and services.",
-      "category": "Pillar"
+      "category": "Pillar",
+      "order": 21,
+      "properties": {
+        "short-name": "IAM"
+      }
     }
   },
   {
@@ -1573,7 +1589,11 @@ export const index = [
       "url": "https://www.notion.so/Tenant-Management-bd309e8a9ecd4a0da3c3b464f734ca54",
       "title": "🗂 Tenant Management",
       "description": "Manage provisioning, configuration and lifecycle of cloud environments (e.g. AWS Accounts).",
-      "category": "Pillar"
+      "category": "Pillar",
+      "order": 20,
+      "properties": {
+        "short-name": "Tenant Mgmt."
+      }
     }
   },
   {

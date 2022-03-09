@@ -6,6 +6,9 @@ description: >-
   Provide cost management and chargeback capabilities for all available cloud
   platforms and services.
 category: Pillar
+order: 23
+properties:
+  short-name: Cost Mgmt.
 ---
 
 Pay-per-use is an essential cornerstone of the cloud computing paradigm. When deploying and scaling cloud resources is just a single API call away, managing the cost incurred under consumption-based billing is extremely important. Cloud Service Providers typically charge the organization as a single unit under an enterprise contract. Cloud Foundation teams need to process these invoices and allocate the cost to internal cloud customers (chargeback). Good cost management practices that leverage the technical capabilities of cloud cost reporting and involve all stakeholders of a cloud foundation are crucial to a successful cloud journey.

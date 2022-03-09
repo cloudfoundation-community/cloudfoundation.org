@@ -5,6 +5,7 @@ import { debug, path } from '@vuepress/utils';
 import { makeSidebarEntries } from './nav';
 import pluginMermaid from './theme/plugins/mermaid';
 import pluginPlausible from './theme/plugins/plausible';
+import pluginCfmm from './theme/plugins/cfmm';
 import pluginSitemap, { SitemapOptions } from './theme/plugins/plugin-sitemap/src/node';
 
 import type { DefaultThemeOptions } from "vuepress-vite";
@@ -61,6 +62,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     darkMode: false,
   },
   plugins: [
+    pluginCfmm,
     pluginMermaid,
     [
       pluginPlausible,

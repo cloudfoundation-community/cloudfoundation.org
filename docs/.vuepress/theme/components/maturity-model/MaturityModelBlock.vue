@@ -22,12 +22,10 @@ import { RouterLink } from "vue-router";
 
 import CFMMBlockScope from "../block/CFMMBlockScope.vue";
 import CFMMBlockJourneyStage from "../block/CFMMBlockJourneyStage.vue";
+import { MaturityModelBlock } from "../../plugins/cfmm/shared";
 
 interface Props {
-  blockData: {
-    link: string;
-    summary: string;
-  };
+  blockData: MaturityModelBlock
 }
 
 const props = defineProps<Props>();
