@@ -1,7 +1,10 @@
 <template>
-  <div class="mobile-intro mb-3 mr-2">
+  <div class="pillar-intro mb-3 mr-2">
     <h2>{{ pillar.shortTitle }}</h2>
-    <small>{{ pillar.summary }}</small>
+    <small class="d-block my-2 summary">{{ pillar.summary }}</small>
+    <small class="d-block my-2"
+      ><router-link :to="pillar.link">Learn More</router-link></small
+    >
   </div>
 </template>
 
@@ -27,15 +30,22 @@ const pillar = computed(() => {
 </script>
 
 <style scoped lang="scss">
-.mobile-intro {
-  height: 140px;
+.pillar-intro {
+  color: white;
 
+  height: 120px;
+  
   h2 {
     font-weight: 800;
-    color: white;
     border: none;
     text-transform: uppercase;
     margin: 0 0 0.5rem 0;
+  }
+
+  .summary {
+    overflow: hidden;
+    height: 3rem; // 3 lines of text - no ellipsis possible unfortunately
+    
   }
 }
 </style>

@@ -21,8 +21,8 @@ export class CloudFoundationMaturityModel {
     index.filter((x) => x.file && x.frontmatter.pageType === "CFMMBlock")
   );
 
-  readonly rawPillars = computed(() =>
-    index.filter((x) => x.file && x.frontmatter.category === "Pillar") // tbd: may need a nother page type!
+  readonly rawPillars = computed(
+    () => index.filter((x) => x.file && x.frontmatter.category === "Pillar") // tbd: may need a nother page type!
   );
 
   readonly pillars: Record<Pillar, ComputedRef<PillarModel>> = {
@@ -40,7 +40,7 @@ export class CloudFoundationMaturityModel {
     };
   }
 
-  private pillarPage(pillarName: string) : MaturityModelPillar {
+  private pillarPage(pillarName: string): MaturityModelPillar {
     const value = this.rawPillars.value.find(
       (x) => x.frontmatter.title === pillarName
     );
@@ -76,6 +76,11 @@ export class CloudFoundationMaturityModel {
   // this is stupid and duplicate with CFMMBlockPage.vue, but it works
   // we probably should extract all those index lookup shenanigans to a separate service
   formatLink(path: string) {
+    const readme = "readme.md";
+    if (path.endsWith(readme)) {
+      return "/" + path.substring(0, path.length - readme.length);
+    }
+
     return "/" + path.replace(".md", ".html");
   }
 }
