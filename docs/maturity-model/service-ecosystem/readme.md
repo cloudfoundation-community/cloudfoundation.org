@@ -7,7 +7,8 @@ description: >-
   cloud faster and more efficiently (e.g. on-prem connectivity). Interfaces with
   internal or external teams providing these services.
 category: Pillar
-order: 24
+pageType: CFMMPillar
+sidebar: false
 properties:
   short-name: Service Ecosytem
 ---

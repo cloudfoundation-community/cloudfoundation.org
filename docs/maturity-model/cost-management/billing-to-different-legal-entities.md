@@ -9,6 +9,7 @@ description: >-
   agreement (Azure) or Payer Accounts (AWS).
 category: 💵 Cost Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

@@ -8,6 +8,7 @@ description: >-
   longer needed.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef

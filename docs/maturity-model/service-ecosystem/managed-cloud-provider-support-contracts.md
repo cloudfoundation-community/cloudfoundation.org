@@ -9,6 +9,7 @@ description: >-
   in self-service and are transparently charged for support fees incurred.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

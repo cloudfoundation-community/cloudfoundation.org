@@ -8,6 +8,7 @@ description: >-
   management. Incidents are automatically routed to these owners. 
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

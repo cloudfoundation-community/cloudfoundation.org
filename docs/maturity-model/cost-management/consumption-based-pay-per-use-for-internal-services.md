@@ -8,6 +8,7 @@ description: >-
   cloud foundation, e.g. pay per API request, per GB/h stored etc.
 category: 💵 Cost Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

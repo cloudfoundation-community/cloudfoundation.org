@@ -8,6 +8,7 @@ description: >-
   according to an information security management system like ISO 27001 or C5.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: partner is working on it

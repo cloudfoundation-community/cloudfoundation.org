@@ -8,6 +8,7 @@ description: >-
   are centrally collected and stored. 
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

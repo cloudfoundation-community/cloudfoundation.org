@@ -9,6 +9,7 @@ description: >-
   responsibility model.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 3c7081e5-c451-40b6-806d-a8d21b130612

@@ -8,6 +8,7 @@ description: >-
   regions.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

@@ -8,6 +8,7 @@ description: >-
   machines is reconciled against the SOC to ensure completeness.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

@@ -1,12 +1,14 @@
-import { defineUserConfig, ViteBundlerOptions } from 'vuepress-vite';
+import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
-import { debug, path } from '@vuepress/utils';
+import { debug, path } from "@vuepress/utils";
 
-import { makeSidebarEntries } from './nav';
-import pluginMermaid from './theme/plugins/mermaid';
-import pluginPlausible from './theme/plugins/plausible';
-import pluginCfmm from './theme/plugins/cfmm';
-import pluginSitemap, { SitemapOptions } from './theme/plugins/plugin-sitemap/src/node';
+import { makeSidebarEntries } from "./nav";
+import pluginMermaid from "./theme/plugins/mermaid";
+import pluginPlausible from "./theme/plugins/plausible";
+import pluginCfmm from "./theme/plugins/cfmm";
+import pluginSitemap, {
+  SitemapOptions,
+} from "./theme/plugins/plugin-sitemap/src/node";
 
 import type { DefaultThemeOptions } from "vuepress-vite";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
@@ -46,10 +48,17 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     // <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     // <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     // <link rel="manifest" href="/site.webmanifest">
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
-    ['link', { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' }],
-    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+    ],
+    ["link", { rel: "icon", sizes: "32x32", href: "/favicon-32x32.png" }],
+    ["link", { rel: "icon", sizes: "16x16", href: "/favicon-16x16.png" }],
+    ["link", { rel: "manifest", href: "/site.webmanifest" }],
   ],
   themeConfig: {
     logo: "/logo.png",
@@ -81,6 +90,14 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ],
     ["@vuepress/plugin-search"],
     [
+      "@vuepress/plugin-git",
+      {
+        createdTime: false,
+        updateTime: true,
+        contributors: false,
+      },
+    ],
+    [
       // This allows us to use custom components in our markdown files.
       // Keep in mind that only components directly placed in the directory will be usable.
       // It is not possible to create a nested folder structure.
@@ -93,5 +110,5 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       },
     ],
     [pluginSitemap, sitemapOptions],
-  ]
+  ],
 });

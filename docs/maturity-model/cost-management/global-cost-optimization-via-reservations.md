@@ -10,6 +10,7 @@ description: >-
   optimization opportunities offered by cloud providers. 
 category: 💵 Cost Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

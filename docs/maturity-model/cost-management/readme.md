@@ -6,7 +6,8 @@ description: >-
   Provide cost management and chargeback capabilities for all available cloud
   platforms and services.
 category: Pillar
-order: 23
+pageType: CFMMPillar
+sidebar: false
 properties:
   short-name: Cost Mgmt.
 ---

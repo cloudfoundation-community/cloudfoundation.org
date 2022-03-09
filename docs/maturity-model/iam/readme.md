@@ -6,7 +6,8 @@ description: >-
   Provide Identity and Access management capabilities for all available cloud
   platforms and services.
 category: Pillar
-order: 21
+pageType: CFMMPillar
+sidebar: false
 properties:
   short-name: IAM
 ---

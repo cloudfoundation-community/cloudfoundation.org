@@ -7,17 +7,15 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
     <template #page>
       <Home v-if="frontmatter.home" />
       <FullsizePage v-else-if="frontmatter.pageType == 'Fullsize'" />
-      <Transition
-        v-else
-        name="fade-slide-y"
-        mode="out-in"
-        @before-enter="onBeforeEnter"
-        @before-leave="onBeforeLeave"
-      >
-        <CFMMBlockPage :key="page.path" v-if="frontmatter.pageType == 'CFMMBlock'" />
-        <Page :key="page.path" v-else>
-        </Page>
-      </Transition>
+      <CFMMBlockPage
+        :key="page.path"
+        v-else-if="frontmatter.pageType == 'CFMMBlock'"
+      />
+      <CFMMPillarPage
+        :key="page.path"
+        v-else-if="frontmatter.pageType == 'CFMMPillar'"
+      />
+      <Page :key="page.path" v-else> </Page>
     </template>
   </ParentLayout>
 </template>
@@ -26,8 +24,9 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
 import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 
 import Home from "../components/Home.vue";
-import FullsizePage from "../components/FullsizePage.vue"
-import CFMMBlockPage from "../components/CFMMBlockPage.vue"
+import FullsizePage from "../components/FullsizePage.vue";
+import CFMMBlockPage from "../components/CFMMBlockPage.vue";
+import CFMMPillarPage from "../components/CFMMPillarPage.vue";
 import Page from "../components/Page.vue";
 
 import { usePageData, usePageFrontmatter } from "@vuepress/client";

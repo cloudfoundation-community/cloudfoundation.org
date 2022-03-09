@@ -8,6 +8,7 @@ description: >-
   it is charged from the cloud provider.
 category: 💵 Cost Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6

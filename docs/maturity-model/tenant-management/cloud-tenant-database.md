@@ -7,6 +7,7 @@ description: >-
   responsible owners and chargeback information like cost center.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 11af37b7-c948-4486-a5da-5b1db6de8193

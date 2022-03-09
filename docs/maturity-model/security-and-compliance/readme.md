@@ -6,7 +6,8 @@ description: >-
   Provide capabilities for governing workloads and enforcing security guidelines
   across all available cloud platforms and services.
 category: Pillar
-order: 22
+pageType: CFMMPillar
+sidebar: false
 properties:
   short-name: Compliance
 ---

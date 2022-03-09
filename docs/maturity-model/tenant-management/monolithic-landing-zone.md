@@ -8,6 +8,7 @@ description: >-
   tenant.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

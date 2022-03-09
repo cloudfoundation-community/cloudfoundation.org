@@ -11,6 +11,7 @@ description: >-
   automatically deprovisioned. 
 category: 🗂 Tenant Management
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

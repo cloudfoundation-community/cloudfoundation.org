@@ -6,7 +6,8 @@ description: >-
   Manage provisioning, configuration and lifecycle of cloud environments (e.g.
   AWS Accounts).
 category: Pillar
-order: 20
+pageType: CFMMPillar
+sidebar: false
 properties:
   short-name: Tenant Mgmt.
 ---

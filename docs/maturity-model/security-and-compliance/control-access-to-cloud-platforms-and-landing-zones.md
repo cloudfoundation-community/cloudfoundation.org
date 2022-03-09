@@ -8,6 +8,7 @@ description: >-
   platforms and landing zones based on metadata about the cloud consumer.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - dc16dccf-7530-4179-a8e2-b82cc54b990f

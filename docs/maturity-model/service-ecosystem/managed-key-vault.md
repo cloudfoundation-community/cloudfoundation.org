@@ -9,6 +9,7 @@ description: >-
   management.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables:
     - 18256d4f-e096-4281-809a-f77c5dd20ef0

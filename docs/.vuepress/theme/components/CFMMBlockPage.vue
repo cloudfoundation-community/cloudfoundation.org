@@ -1,7 +1,7 @@
 <template>
-  <Page>
+  <Page :modelTheme="true">
     <template #top>
-      <CFMMBlockBreadcrumbs />
+      <CFMMBreadcrumbs />
     </template>
     <template #before>
       <div class="block-intro d-flex align-items-center">
@@ -100,7 +100,7 @@ import {} from "@vuepress/client";
 
 import Page from "./Page.vue";
 import Feedback from "../components/Feedback.vue";
-import CFMMBlockBreadcrumbs from "./CFMMBlockBreadcrumbs.vue";
+import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue";
 import CFMMBlockScope from "./block/CFMMBlockScope.vue";
 import CFMMBlockJourneyStage from "./block/CFMMBlockJourneyStage.vue";
 
@@ -188,14 +188,14 @@ watch(trackableProperties, (props) => {
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  
+
   img.block-step {
     min-width: 30px;
     max-width: 30px;
   }
   img.block-scope {
-    min-width: 66px;
-    max-width: 66px;
+    min-width: 45px;
+    max-width: 45px;
     margin-right: 10px;
   }
 }

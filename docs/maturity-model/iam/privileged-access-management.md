@@ -10,6 +10,7 @@ description: >-
   on-premise connectivity hubs). 
 category: 🔐 IAM
 pageType: CFMMBlock
+sidebar: false
 properties:
   enables: []
   redaction-state: Draft
