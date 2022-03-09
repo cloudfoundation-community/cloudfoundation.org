@@ -2,12 +2,7 @@
   <div class="block-wrapper">
     <router-link :to="props.blockData.link" class="block-atom">
       <div class="block">
-        <img
-          class="block-step"
-          :src="$withBase('/mm/' + blockData.step)"
-          :alt="blockData.step"
-          alt="journeyStageColor.svg"
-        />
+        <CFMMBlockJourneyStage class="block-step" :journey-stage="blockData.journeyStage" />
         <CFMMBlockScope class="block-scope" :scope="blockData.scope"/>
         <div class="block-content">
           <p v-text="blockData.title"></p>
@@ -26,6 +21,7 @@ import { computed } from "vue";
 import { RouterLink } from "vue-router";
 
 import CFMMBlockScope from "../block/CFMMBlockScope.vue";
+import CFMMBlockJourneyStage from "../block/CFMMBlockJourneyStage.vue";
 
 interface Props {
   blockData: {

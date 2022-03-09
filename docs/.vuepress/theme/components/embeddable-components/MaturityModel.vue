@@ -112,7 +112,7 @@ import MaturityModelAtom from "./MaturityModelAtom.vue";
 import PilarCategory from "./PilarCategory.vue";
 
 interface IMaturityModelAtom {
-  step: string;
+  journeyStage: string;
   scope: string;
   title: string;
   link: string;
@@ -178,38 +178,13 @@ export default {
         })
         .map((value) => {
           return {
-            step: this.getJourneyStageUrl(
-              value.frontmatter.properties["journey-stage"].length / 2 //Each emoji length is two
-            ),
+            journeyStage: value.frontmatter.properties["journey-stage"],
             scope: value.frontmatter.properties.scope,
             title: value.frontmatter.title,
             link: formatLink(value.file),
             summary: value.frontmatter.description,
           };
         });
-    },
-    getJourneyStageUrl(journeyStageValue: number): string {
-      let suffix = "";
-      switch (journeyStageValue) {
-        case 1:
-          suffix = "red";
-          break;
-        case 2:
-          suffix = "orange";
-          break;
-        case 3:
-          suffix = "yellow";
-          break;
-        case 4:
-          suffix = "green";
-          break;
-        case 5:
-          suffix = "blue";
-          break;
-        default:
-          throw `Invalid Journey Stage Value ${journeyStageValue}`;
-      }
-      return `journey-stage-${journeyStageValue}-${suffix}.svg`;
     },
   },
 };
@@ -287,11 +262,6 @@ export default {
         }
       }
     }
-  }
-
-
-  .spacer-row {
-
   }
 
   @media only screen and (max-width: 580px) {
