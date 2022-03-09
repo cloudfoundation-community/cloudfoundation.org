@@ -181,7 +181,7 @@ export default {
             step: this.getJourneyStageUrl(
               value.frontmatter.properties["journey-stage"].length / 2 //Each emoji length is two
             ),
-            scope: this.getScopeCubeUrl(value.frontmatter.properties.scope),
+            scope: value.frontmatter.properties.scope,
             title: value.frontmatter.title,
             link: formatLink(value.file),
             summary: value.frontmatter.description,
@@ -210,19 +210,6 @@ export default {
           throw `Invalid Journey Stage Value ${journeyStageValue}`;
       }
       return `journey-stage-${journeyStageValue}-${suffix}.svg`;
-    },
-    getScopeCubeUrl(scopeName): string {
-      const prefix = "scope-cube-";
-      switch (scopeName) {
-        case "🛬 Landing Zone":
-          return `${prefix}turquoise.svg`;
-        case "☁️ Platform":
-          return `${prefix}purple.svg`;
-        case "🏢 Core":
-          return `${prefix}blue.svg`;
-        default:
-          throw `Invalid Scope Cube Value ${scopeName}`;
-      }
     },
   },
 };

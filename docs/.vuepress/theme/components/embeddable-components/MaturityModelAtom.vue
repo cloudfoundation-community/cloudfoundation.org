@@ -8,12 +8,7 @@
           :alt="blockData.step"
           alt="journeyStageColor.svg"
         />
-        <img
-          class="block-scope"
-          :src="$withBase('/mm/' + blockData.scope)"
-          :alt="blockData.scope"
-          alt="scopeColorBox.svg"
-        />
+        <CFMMBlockScope class="block-scope" :scope="blockData.scope"/>
         <div class="block-content">
           <p v-text="blockData.title"></p>
         </div>
@@ -29,6 +24,8 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
+
+import CFMMBlockScope from "../block/CFMMBlockScope.vue";
 
 interface Props {
   blockData: {
