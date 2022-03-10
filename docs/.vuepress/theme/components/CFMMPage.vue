@@ -11,7 +11,7 @@
         <slot name="before" />
         <Content />
         <slot name="after" />
-        <Feedback v-bind:page="frontmatter.title"></Feedback>
+        <Feedback :page="frontmatter.title"></Feedback>
       </div>
       <PageMeta />
       <PageNav />
@@ -34,6 +34,7 @@ import { usePageFrontmatter } from "@vuepress/client";
 import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
 import Footer from "./Footer.vue";
+import Feedback from "./Feedback.vue";
 import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue"
 
 const page = usePageData();

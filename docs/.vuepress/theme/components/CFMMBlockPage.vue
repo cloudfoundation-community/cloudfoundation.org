@@ -1,8 +1,5 @@
 <template>
   <CFMMPage>
-    <template #top>
-      <CFMMBreadcrumbs />
-    </template>
     <template #before>
       <div class="block-intro d-flex align-items-center">
         <router-link
@@ -84,11 +81,6 @@
           welcome!</i
         >
       </p>
-
-      <Feedback
-        v-bind:page="frontmatter.title"
-        v-if="!underConstruction"
-      ></Feedback>
     </template>
   </CFMMPage>
 </template>
@@ -99,7 +91,7 @@ import { usePageData, usePageFrontmatter } from "@vuepress/client";
 import {} from "@vuepress/client";
 
 import CFMMPage from "./CFMMPage.vue";
-import Feedback from "./Feedback.vue";
+
 import CFMMBlockScope from "./block/CFMMBlockScope.vue";
 import CFMMBlockJourneyStage from "./block/CFMMBlockJourneyStage.vue";
 
