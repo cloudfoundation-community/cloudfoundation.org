@@ -10,7 +10,6 @@ description: >-
   all consumption cost incurred.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

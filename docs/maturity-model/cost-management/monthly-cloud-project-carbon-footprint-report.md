@@ -9,7 +9,6 @@ description: >-
   reporting and gives teams feedback towards achieving sustainability goals.
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: Draft

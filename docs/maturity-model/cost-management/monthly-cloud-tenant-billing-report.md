@@ -8,7 +8,6 @@ description: >-
   incurred charges for cloud resource consumption.
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - 28740e92-5559-4931-ab04-17cfb026edd5

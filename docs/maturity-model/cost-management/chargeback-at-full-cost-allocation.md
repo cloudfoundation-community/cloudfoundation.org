@@ -9,7 +9,6 @@ description: >-
   cloud foundation team for providing its services.
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️

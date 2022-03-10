@@ -1,12 +1,12 @@
 import * as fs from "fs";
 import * as path from "path";
 
-import { index } from "./index";
+import { index } from "./theme/plugins/cfmm/shared/blocks";
 import { inferPagePath, SiteLocaleConfig } from "vuepress";
 import { RenderedDatabaseEntry } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabaseEntry";
 import { RenderedDatabasePage } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabasePage"; // todo: nmdcms should export them instead of us importing them from private modules
 
-function lookupPagePath(relativePath: string) {
+export function lookupPagePath(relativePath: string) {
   // stub a faked locale config, this is harcoded and only works because the size is not localized
   const locales: SiteLocaleConfig = {};
   const app: any = { siteData: { locales } };

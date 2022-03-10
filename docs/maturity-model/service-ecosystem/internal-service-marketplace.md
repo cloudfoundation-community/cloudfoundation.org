@@ -8,7 +8,6 @@ description: >-
   that is integrated with Cost Management and IAM:
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792

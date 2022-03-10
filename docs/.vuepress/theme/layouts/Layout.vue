@@ -4,6 +4,10 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
 <template>
   <ParentLayout>
     <!-- override the page template slot in the default layout -->
+
+    <template #sidebar-top>
+      <h2 class="cfmm-page-heading">Content</h2>
+    </template>
     <template #page>
       <Home v-if="frontmatter.home" />
       <FullsizePage v-else-if="frontmatter.pageType == 'Fullsize'" />
@@ -40,3 +44,30 @@ const scrollPromise = useScrollPromise();
 const onBeforeEnter = scrollPromise.resolve;
 const onBeforeLeave = scrollPromise.pending;
 </script>
+
+<style lang="scss">
+@import "@vuepress/plugin-palette/palette";
+
+.theme-container {
+  background: var(--c-cfmm-bg);
+}
+
+.sidebar {
+  padding: 1rem;
+  border-color: var(--c-brand-light);
+}
+
+.sidebar-items {
+  background: var(--c-bg);
+  border-radius: var(--c-cfmm-border-radius-lg);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: $MQMobile) {
+  // reset custom styles so that the sidebar falls back nicely into the default theme
+  .sidebar {
+    margin: 0;
+  }
+}
+</style>

@@ -5,7 +5,6 @@ title: Budget Approval Process
 description: Budgets are approved by controllers / people with budget responsibility
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

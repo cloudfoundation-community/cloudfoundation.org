@@ -7,7 +7,6 @@ description: >-
   across all available cloud platforms and services.
 category: Pillar
 pageType: CFMMPillar
-sidebar: false
 properties:
   short-name: Compliance
 ---

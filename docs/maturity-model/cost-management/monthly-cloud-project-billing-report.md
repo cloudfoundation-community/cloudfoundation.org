@@ -8,7 +8,6 @@ description: >-
   aggregated across all cloud platforms and services used in a project.  
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - ce20312c-aa7a-453f-82f2-f186469dd973

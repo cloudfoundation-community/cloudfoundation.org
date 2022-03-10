@@ -9,7 +9,6 @@ description: >-
   services from a single marketplace and get a single "invoice" for chargeback. 
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792

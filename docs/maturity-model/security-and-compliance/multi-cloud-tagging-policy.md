@@ -8,7 +8,6 @@ description: >-
   multiple cloud platforms.  
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2

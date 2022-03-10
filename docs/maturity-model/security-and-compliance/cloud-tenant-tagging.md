@@ -7,7 +7,6 @@ description: >-
   cloud platform operations.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b

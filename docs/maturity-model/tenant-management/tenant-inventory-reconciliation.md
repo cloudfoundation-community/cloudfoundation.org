@@ -10,7 +10,6 @@ description: >-
   these existing tenants into the prescribed governance model. 
 category: 🗂 Tenant Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

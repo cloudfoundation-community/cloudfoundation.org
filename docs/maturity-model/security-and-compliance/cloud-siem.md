@@ -8,7 +8,6 @@ description: |-
   ...
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

@@ -9,7 +9,6 @@ description: >-
   pricing model.
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

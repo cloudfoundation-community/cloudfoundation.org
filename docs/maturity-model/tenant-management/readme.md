@@ -7,7 +7,6 @@ description: >-
   AWS Accounts).
 category: Pillar
 pageType: CFMMPillar
-sidebar: false
 properties:
   short-name: Tenant Mgmt.
 ---

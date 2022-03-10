@@ -9,7 +9,6 @@ description: >-
   tenants and ensures tenant metadata is always up to date.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: Draft

@@ -8,7 +8,6 @@ description: >-
   hierarchy when tenants are provisioned.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

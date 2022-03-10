@@ -9,7 +9,6 @@ description: >-
   automatically maintained and rotated.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

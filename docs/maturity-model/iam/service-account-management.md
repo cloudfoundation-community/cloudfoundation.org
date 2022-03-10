@@ -10,7 +10,6 @@ description: >-
   rotation.
 category: 🔐 IAM
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

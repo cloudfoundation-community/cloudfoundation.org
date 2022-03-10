@@ -63,7 +63,7 @@ const pillars: Pillar[] = [
       }
       @media only screen and (max-width: 580px) {
         min-width: 100%;
-        border-radius: 12px;
+          border-radius: var(--c-cfmm-border-radius-lg);
         margin-bottom: 12px;
       }
     }

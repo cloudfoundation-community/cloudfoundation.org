@@ -2,7 +2,7 @@ import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
 import { debug, path } from "@vuepress/utils";
 
-import { makeSidebarEntries } from "./nav";
+import { getChildDirectories, lookupPagePath, getChildFiles, makeSidebarEntries } from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
 import pluginCfmm from "./theme/plugins/cfmm";
@@ -19,7 +19,7 @@ const sidebar: SidebarConfig = {};
 const navbar: NavbarConfig = [];
 
 // use hardcoded order of sections
-const dirs = ["understanding-cloud-foundation", "maturity-model"];
+const dirs = ["understanding-cloud-foundation"];
 
 dirs.forEach((dir) => {
   const link = `/${dir}/`;
@@ -28,6 +28,23 @@ dirs.forEach((dir) => {
   sidebar[link] = entry;
   navbar.push({ text, link });
 });
+
+// for the maturity model, each _page_ gets its own sidebar entry!
+navbar.push({ text: "Maturity Model", link: "/maturity-model/" });
+
+const blockDirs = getChildDirectories("docs/maturity-model");
+blockDirs.forEach((dir) => {
+  const docDir = "docs/maturity-model/" + dir;
+  const blockFiles = getChildFiles(docDir);
+  blockFiles.forEach((file) => {
+    const path = `/maturity-model/${dir}/${file}`;
+    const link = lookupPagePath(path);
+    sidebar[link] = [link];
+  });
+});
+
+log("The generated sidebar will look like the following: ");
+console.log(JSON.stringify(sidebar, null, 2));
 
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
@@ -112,3 +129,4 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     [pluginSitemap, sitemapOptions],
   ],
 });
+ 

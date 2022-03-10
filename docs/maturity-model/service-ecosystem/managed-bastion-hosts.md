@@ -8,7 +8,6 @@ description: >-
   and centrally audited.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

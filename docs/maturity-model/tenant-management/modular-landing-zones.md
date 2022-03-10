@@ -8,7 +8,6 @@ description: >-
   design allows combining services like LEGO® blocks. 
 category: 🗂 Tenant Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

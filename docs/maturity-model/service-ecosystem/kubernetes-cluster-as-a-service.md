@@ -8,7 +8,6 @@ description: >-
   into the customer's cloud tenants.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: partner is working on it

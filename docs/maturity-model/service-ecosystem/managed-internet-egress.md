@@ -7,7 +7,6 @@ description: >-
   ensures compliance and cost efficiency (network separation, proxies etc.).
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

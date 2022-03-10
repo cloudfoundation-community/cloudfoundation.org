@@ -1,9 +1,5 @@
 <template>
   <main class="page model-theme">
-    <div class="model-theme-left">
-      <slot name="left" />
-    </div>
-
     <div class="model-theme-center">
       <CFMMBreadcrumbs />
       <h1 class="cfmm-page-heading">{{ page.title }}</h1>
@@ -35,7 +31,7 @@ import PageNav from "@vuepress/theme-default/lib/client/components/PageNav.vue";
 import PageMeta from "@vuepress/theme-default/lib/client/components/PageMeta.vue";
 import Footer from "./Footer.vue";
 import Feedback from "./Feedback.vue";
-import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue"
+import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue";
 
 const page = usePageData();
 
@@ -44,16 +40,17 @@ const frontmatter = usePageFrontmatter<any>();
 
 <style lang="scss">
 @import "./cfmm";
-
+.page {
+  padding-left: calc(var(--sidebar-width) + 1rem);
+}
 main.model-theme {
-  padding-top: calc(var(--navbar-height) + 36px);
-  background: #9fd9ec;
+  padding-top: calc(var(--navbar-height) + 2rem);
+  background: var(--c-cfmm-bg);
   display: flex;
-
 
   .theme-default-content {
     background: white;
-    border-radius: 12px;
+    border-radius: var(--c-cfmm-border-radius-lg);
     padding-top: 2.5rem;
 
     > p:first-child {
@@ -62,8 +59,8 @@ main.model-theme {
   }
 }
 
-.model-theme-left {
-  width: 240px;
+.model-theme-center {
+  padding-left: 2rem;
 }
 
 .model-theme-right {

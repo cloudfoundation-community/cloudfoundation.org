@@ -7,7 +7,6 @@ description: >-
   pre-requisite for higher-level services built on virtual networks.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables:
     - f90c7375-88b9-42dc-8e98-a65c006b927a

@@ -8,7 +8,6 @@ description: >-
   internal or external teams providing these services.
 category: Pillar
 pageType: CFMMPillar
-sidebar: false
 properties:
   short-name: Service Ecosytem
 ---

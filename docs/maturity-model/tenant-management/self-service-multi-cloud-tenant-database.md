@@ -8,7 +8,6 @@ description: >-
   central multi-cloud tenant database in self service.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   redaction-state: mvp1

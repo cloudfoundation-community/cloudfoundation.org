@@ -6,7 +6,6 @@ title: Shared VM Image Repository
 description: A central repository provides hardened virtual machine images.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️

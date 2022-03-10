@@ -12,7 +12,6 @@ description: >-
   budget). 
 category: 💵 Cost Management
 pageType: CFMMBlock
-sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️

@@ -91,7 +91,6 @@ const config: SyncConfig = {
             ...commonFrontmatter(page),
             category: page.properties.get("Pillar"),
             pageType: "CFMMBlock",
-            sidebar: false,
             properties,
           };
         },
@@ -124,7 +123,6 @@ const config: SyncConfig = {
             ...commonFrontmatter(page),
             category: "Pillar",
             pageType: "CFMMPillar",
-            sidebar: false,
             properties,
           };
         },
