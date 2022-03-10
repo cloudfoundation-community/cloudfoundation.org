@@ -16,7 +16,7 @@ import {
   useCloudFoundationMaturityModel,
 } from "../../plugins/cfmm/client";
 
-import MaturityModelBlock from "./MaturityModelBlock.vue"
+import MaturityModelBlock from "./MaturityModelBlock.vue";
 
 interface Props {
   pillar: Pillar;
@@ -26,7 +26,11 @@ const props = defineProps<Props>();
 const cfmm = useCloudFoundationMaturityModel();
 
 const blocks = computed(() => {
-  return cfmm.value.pillars[props.pillar].value.blocks;
+  const model = cfmm.value.pillars[props.pillar];
+  if (!model) {
+    throw new Error("Could not find pillar model for pillar: " + props.pillar);
+  }
+  return model.value.blocks;
 });
 </script>
 
