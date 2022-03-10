@@ -14,9 +14,8 @@
     <PageNav />
 
     <slot name="bottom" />
-
-    <Footer />
   </main>
+    <Footer />
 </template>
 
 <script setup lang="ts">
