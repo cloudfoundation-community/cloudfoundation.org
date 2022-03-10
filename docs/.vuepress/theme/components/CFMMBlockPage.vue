@@ -1,5 +1,5 @@
 <template>
-  <Page :modelTheme="true">
+  <CFMMPage>
     <template #top>
       <CFMMBreadcrumbs />
     </template>
@@ -90,7 +90,7 @@
         v-if="!underConstruction"
       ></Feedback>
     </template>
-  </Page>
+  </CFMMPage>
 </template>
 
 <script setup lang="ts">
@@ -98,9 +98,8 @@ import { computed, watch } from "vue";
 import { usePageData, usePageFrontmatter } from "@vuepress/client";
 import {} from "@vuepress/client";
 
-import Page from "./Page.vue";
-import Feedback from "../components/Feedback.vue";
-import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue";
+import CFMMPage from "./CFMMPage.vue";
+import Feedback from "./Feedback.vue";
 import CFMMBlockScope from "./block/CFMMBlockScope.vue";
 import CFMMBlockJourneyStage from "./block/CFMMBlockJourneyStage.vue";
 

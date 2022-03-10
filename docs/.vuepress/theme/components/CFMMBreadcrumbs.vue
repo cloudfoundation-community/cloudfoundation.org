@@ -1,5 +1,5 @@
 <template>
-  <div class="bread-crumbs mt-3">
+  <div class="bread-crumbs">
     <span v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
       <router-link
         :to="crumb.path"
@@ -41,19 +41,13 @@ const breadcrumbs = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.breadcrumb-wrapper {
-  max-width: 860px;
-  margin: 48px auto 0;
-  color: white;
-}
- 
 
 .bread-crumbs {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   color: white;
   max-width: var(--content-width);
-  margin: 0 auto;
-  span {
+  height: 2rem;
+span {
     display: inline-flex;
     align-items: center;
 

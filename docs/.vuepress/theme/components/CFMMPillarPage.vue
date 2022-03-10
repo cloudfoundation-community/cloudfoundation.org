@@ -1,23 +1,18 @@
 <template>
-  <Page :modelTheme="true">
-    <template #top>
-      <CFMMBreadcrumbs />
+  <CFMMPage>
+    <template #right>
+      <h2 class="cfmm-page-heading">Building Blocks</h2>
+      <MaturityModelPillarBlocks :pillar="'iam'" />
     </template>
-
-    <Feedback v-bind:page="frontmatter.title"></Feedback>
-  </Page>
+  </CFMMPage>
 </template>
 
 <script setup lang="ts">
-import { usePageFrontmatter } from "@vuepress/client";
-
-import Page from "./Page.vue";
-import Feedback from "../components/Feedback.vue";
-import CFMMBreadcrumbs from "./CFMMBreadcrumbs.vue";
-
-const frontmatter = usePageFrontmatter<any>();
+import CFMMPage from "./CFMMPage.vue";
+import MaturityModelPillarBlocks from "./maturity-model/MaturityModelPillarBlocks.vue";
 </script>
 
 <style lang="scss">
- 
+@import "./cfmm";
+
 </style>
