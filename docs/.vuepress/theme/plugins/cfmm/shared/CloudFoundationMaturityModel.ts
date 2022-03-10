@@ -1,5 +1,5 @@
 import { computed, ComputedRef } from "vue";
-import { index } from "../../../../index";
+import { index } from "./blocks";
 
 import { MaturityModelBlock } from "./MaturityModelBlock";
 import { MaturityModelPillar } from "./MaturityModelPillar";

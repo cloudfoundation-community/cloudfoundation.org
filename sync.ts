@@ -234,7 +234,7 @@ async function main() {
 
   console.log("writing .vuepress/index.ts");
   await fs.writeFile(
-    ".vuepress/index.ts",
+    ".vuepress/theme/plugins/cfmm/shared/blocks.ts",
     `export const index = ${JSON.stringify(sorted, null, 2)};`
   );
 }
