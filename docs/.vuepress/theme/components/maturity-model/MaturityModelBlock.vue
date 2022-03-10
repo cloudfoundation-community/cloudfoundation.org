@@ -2,8 +2,8 @@
   <div class="block-wrapper">
     <router-link :to="props.blockData.link" class="block-atom">
       <div class="block">
-        <CFMMBlockJourneyStage :journey-stage="blockData.journeyStage" />
-        <CFMMBlockScope :scope="blockData.scope"/>
+        <BlockJourneyStage :journey-stage="blockData.journeyStage" />
+        <BlockScope :scope="blockData.scope"/>
         <div class="block-content">
           <p v-text="blockData.title"></p>
         </div>
@@ -20,8 +20,8 @@
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
 
-import CFMMBlockScope from "../block/CFMMBlockScope.vue";
-import CFMMBlockJourneyStage from "../block/CFMMBlockJourneyStage.vue";
+import BlockScope from "../block/BlockScope.vue";
+import BlockJourneyStage from "../block/BlockJourneyStage.vue";
 import { MaturityModelBlock } from "../../plugins/cfmm/shared";
 
 interface Props {

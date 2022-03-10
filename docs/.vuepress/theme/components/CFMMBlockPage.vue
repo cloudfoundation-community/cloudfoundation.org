@@ -5,12 +5,12 @@
         <router-link
           :to="'/maturity-model/what-is-a-building-block#journey-stage'"
         >
-          <CFMMBlockJourneyStage
+          <BlockJourneyStage
             :journey-stage="frontmatter.properties['journey-stage']"
           />
         </router-link>
         <router-link :to="'/maturity-model/what-is-a-building-block#scope'">
-          <CFMMBlockScope :scope="frontmatter.properties.scope" />
+          <BlockScope :scope="frontmatter.properties.scope" />
         </router-link>
         <span>{{ frontmatter.description }}</span>
       </div>
@@ -92,8 +92,8 @@ import {} from "@vuepress/client";
 
 import CFMMPage from "./CFMMPage.vue";
 
-import CFMMBlockScope from "./block/CFMMBlockScope.vue";
-import CFMMBlockJourneyStage from "./block/CFMMBlockJourneyStage.vue";
+import BlockScope from "./block/BlockScope.vue";
+import BlockJourneyStage from "./block/BlockJourneyStage.vue";
 
 import { index } from "../../index";
 
