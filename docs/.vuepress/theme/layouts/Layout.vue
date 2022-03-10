@@ -48,12 +48,15 @@ const onBeforeLeave = scrollPromise.pending;
 <style lang="scss">
 @import "@vuepress/plugin-palette/palette";
 
-.theme-container {
+.theme-container:not(.white){
   background: var(--c-cfmm-bg);
 }
-
+.theme-container {
+  min-height: 100vh;
+}
 .sidebar {
   padding: 1rem;
+  padding-bottom: 0;
   border-color: var(--c-brand-light);
 }
 

@@ -61,12 +61,19 @@ main.model-theme {
 
 .model-theme-center {
   padding-left: 2rem;
+
+  .cfmm-page-heading {
+    max-width: var(--content-width);
+  }
 }
 
 .model-theme-right {
   padding-top: 2rem;
   padding-left: 1rem;
   width: 350px;
+  .cfmm-page-heading {
+    max-width: 350px
+  }
 }
 
 .model-theme .page-meta .meta-item {

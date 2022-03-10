@@ -120,9 +120,5 @@ main {
       }
     }
   }
-
-  .footer {
-    text-align: center;
-  }
 }
 </style>
