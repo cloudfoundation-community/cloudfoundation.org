@@ -14,33 +14,7 @@
         </router-link>
         <span>{{ frontmatter.description }}</span>
       </div>
-      <nav v-if="dependsOn.length">
-        <b>Depends on: </b>
-        <span class="depends" v-for="link in dependsOn" :key="link.id"
-          ><router-link
-            :to="link.href"
-            class="nav-link"
-            aria-label="{{link.title}}"
-          >
-            {{ link.title }}
-          </router-link>
-          &nbsp;
-        </span>
-      </nav>
-      <nav v-if="enables.length">
-        <b>Enables: </b>
-        <span class="enables" v-for="link in enables" :key="link.id"
-          ><router-link
-            :to="link.href"
-            class="nav-link"
-            aria-label="{{link?.title}}"
-          >
-            {{ link?.title }}
-          </router-link>
-          &nbsp;
-        </span>
-      </nav>
-
+     
       <div class="custom-container warning" v-if="underConstruction">
         <p class="custom-container-title">
           🚧 This building block reference page is a draft.
@@ -82,6 +56,13 @@
         >
       </p>
     </template>
+
+    <template #right>
+      <h2 class="cfmm-page-heading">Enables</h2>
+      <MaturityModelRelatedBlocks :ids="frontmatter.properties.enables" />
+      <h2 class="cfmm-page-heading">Depends On</h2>
+      <MaturityModelRelatedBlocks :ids="frontmatter.properties['depends-on']" />
+    </template>
   </CFMMPage>
 </template>
 
@@ -94,22 +75,12 @@ import CFMMPage from "./CFMMPage.vue";
 
 import BlockScope from "./block/BlockScope.vue";
 import BlockJourneyStage from "./block/BlockJourneyStage.vue";
+import MaturityModelRelatedBlocks from "./maturity-model/MaturityModelRelatedBlocks.vue";
 
-import { index } from "../../index";
+import { index } from "../plugins/cfmm/shared/blocks";
 
 function formatLink(path: string) {
   return "/" + path.replace(".md", ".html");
-}
-
-// todo: all these O(n) searches against the index are bad, we should probably wrap that in a better structure
-// or even better - a service/mixin
-function resolvePage(id: string) {
-  const page = index.find((x) => x.frontmatter.id === id);
-  return {
-    id,
-    title: page.frontmatter.title,
-    href: formatLink(page.file),
-  };
 }
 
 function resolveTool(id: string) {
@@ -127,12 +98,7 @@ function resolveTool(id: string) {
 }
 
 const frontmatter = usePageFrontmatter<any>();
-const dependsOn = computed(() =>
-  frontmatter.value.properties["depends-on"].map((id) => resolvePage(id))
-);
-const enables = computed(() =>
-  frontmatter.value.properties["enables"].map((id) => resolvePage(id))
-);
+
 const tools = computed(() =>
   frontmatter.value.properties["tool-implementations"].map((id) =>
     resolveTool(id)

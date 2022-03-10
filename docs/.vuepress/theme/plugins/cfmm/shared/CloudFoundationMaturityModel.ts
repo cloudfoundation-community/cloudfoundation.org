@@ -17,8 +17,18 @@ export class CloudFoundationMaturityModel {
   /**
    * all blocks raw from the index
    */
-  readonly rawBlocks = computed(() =>
-    index.filter((x) => x.file && x.frontmatter.pageType === "CFMMBlock")
+  readonly blocks = computed(() =>
+    index
+      .filter((x) => x.file && x.frontmatter.pageType === "CFMMBlock")
+      .map((value) => ({
+        id: value.frontmatter.id,
+        pillar: value.frontmatter.category,
+        journeyStage: value.frontmatter.properties["journey-stage"],
+        scope: value.frontmatter.properties.scope,
+        title: value.frontmatter.title,
+        link: this.formatLink(value.file),
+        summary: value.frontmatter.description,
+      }))
   );
 
   readonly rawPillars = computed(
@@ -32,6 +42,12 @@ export class CloudFoundationMaturityModel {
     costManagement: computed(() => this.pillarModel("💵 Cost Management")),
     serviceEcosystem: computed(() => this.pillarModel("🛠 Service Ecosystem")),
   };
+
+  readonly blocksById: ComputedRef<Map<string, MaturityModelBlock>> = computed(
+    () => {
+      return new Map(this.blocks.value.map((x) => [x.id, x]));
+    }
+  );
 
   private pillarModel(pillarName: string): PillarModel {
     return {
@@ -57,25 +73,23 @@ export class CloudFoundationMaturityModel {
   }
 
   private pillarBlocksSortedByJourneyStage(pillarName): MaturityModelBlock[] {
-    return this.rawBlocks.value
-      .filter((x) => x.frontmatter.category === pillarName)
-      .map((value) => {
-        return {
-          journeyStage: value.frontmatter.properties["journey-stage"],
-          scope: value.frontmatter.properties.scope,
-          title: value.frontmatter.title,
-          link: this.formatLink(value.file),
-          summary: value.frontmatter.description,
-        };
-      })
-      .sort(function (a, b) {
-        return a.journeyStage.length - b.journeyStage.length;
-      });
+    return this.blocks.value
+      .filter((x) => x.pillar === pillarName)
+      .sort(this.sortyByJourneStage);
+  }
+
+  private readonly sortyByJourneStage = (a: MaturityModelBlock, b: MaturityModelBlock) => {
+    return a.journeyStage.length - b.journeyStage.length;
+  };
+
+  queryBlocksSortedByJourneyStage(ids: string[]): MaturityModelBlock[] {
+    const blocks = ids.map((x) => this.blocksById.value.get(x));
+    return blocks.sort(this.sortyByJourneStage);
   }
 
   // this is stupid and duplicate with CFMMBlockPage.vue, but it works
   // we probably should extract all those index lookup shenanigans to a separate service
-  formatLink(path: string) {
+  private formatLink(path: string) {
     const readme = "readme.md";
     if (path.endsWith(readme)) {
       return "/" + path.substring(0, path.length - readme.length);

@@ -55,33 +55,5 @@ const blocks = computed(() => {
       display: none;
     }
   }
-
-  .title {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    color: white;
-    font-size: 24px;
-    font-weight: 900;
-    font-family: "Montserrat", sans-serif;
-    white-space: nowrap;
-    @media screen and (max-width: 580px) {
-      display: none;
-    }
-  }
-
-  .pillar-category-mobile-intro {
-    display: none;
-    @media screen and (max-width: 580px) {
-      display: block;
-    }
-  }
-
-  p.toggle-gtn {
-    margin-bottom: 24px;
-    color: #1ab9de;
-    text-decoration: underline;
-    font-weight: bold;
-    cursor: pointer;
-  }
 }
 </style>
