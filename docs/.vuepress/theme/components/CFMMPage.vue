@@ -69,6 +69,7 @@ main.model-theme {
     background: white;
     border-radius: var(--c-cfmm-border-radius-lg);
     padding-top: 2.5rem;
+    margin: 0; // reset the auto margin provided by vuepress (this does the centered alignment - we don't need that)
 
     // reset the margin of the first paragraph, if the page starts directly with a pargraph
     > p:first-child {
