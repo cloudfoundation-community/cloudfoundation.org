@@ -13,9 +13,7 @@
       <PageNav />
     </div>
 
-    <div class="model-theme-right">
-      <slot name="right" />
-    </div>
+    <slot name="right" />
 
     <slot name="bottom" />
   </main>

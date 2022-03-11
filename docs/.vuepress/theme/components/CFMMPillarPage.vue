@@ -1,8 +1,10 @@
 <template>
   <CFMMPage>
     <template #right>
-      <h2 class="cfmm-page-heading">Building Blocks</h2>
-      <MaturityModelPillarBlocks :pillar="pillar" />
+      <div class="model-theme-right">
+        <h2 class="cfmm-page-heading">Building Blocks</h2>
+        <MaturityModelPillarBlocks :pillar="pillar" />
+      </div>
     </template>
   </CFMMPage>
 </template>

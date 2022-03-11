@@ -14,7 +14,7 @@
         </router-link>
         <span>{{ frontmatter.description }}</span>
       </div>
-     
+
       <div class="custom-container warning" v-if="underConstruction">
         <p class="custom-container-title">
           🚧 This building block reference page is a draft.
@@ -58,10 +58,12 @@
     </template>
 
     <template #right>
-      <h2 v-if="enables.length" class="cfmm-page-heading">Enables</h2>
-      <MaturityModelRelatedBlocks v-if="enables.length" :ids="enables" />
-      <h2 v-if="dependsOn.length" class="cfmm-page-heading">Depends On</h2>
-      <MaturityModelRelatedBlocks v-if="dependsOn.length" :ids="dependsOn" />
+      <div class="model-theme-right">
+        <h2 v-if="enables.length" class="cfmm-page-heading">Enables</h2>
+        <MaturityModelRelatedBlocks v-if="enables.length" :ids="enables" />
+        <h2 v-if="dependsOn.length" class="cfmm-page-heading">Depends On</h2>
+        <MaturityModelRelatedBlocks v-if="dependsOn.length" :ids="dependsOn" />
+      </div>
     </template>
   </CFMMPage>
 </template>
