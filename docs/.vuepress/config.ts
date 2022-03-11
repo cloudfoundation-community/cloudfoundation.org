@@ -37,8 +37,19 @@ dirs.forEach((dir) => {
 
 // for the maturity model, each _page_ gets its own sidebar entry!
 const mmsidebar = makeMaturityModelPageSidebarConfig();
-Object.assign(sidebar, mmsidebar);
+const whatIsBuildingBlock = { // not proud of this hack... but it works for now. should revisit this when we add more pages under the Maturity Model. right now this is the only one
+  "/maturity-model/what-is-a-building-block.html": [
+    {
+      text: "Maturity Model",
+      link: "/maturity-model/",
+      children: ["/maturity-model/what-is-a-building-block.md"],
+    },
+  ],
+};
+
 navbar.push({ text: "Maturity Model", link: "/maturity-model/" });
+Object.assign(sidebar, mmsidebar);
+Object.assign(sidebar, whatIsBuildingBlock);
 
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
