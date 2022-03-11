@@ -7,6 +7,7 @@ import {
   lookupPagePath,
   getChildFiles,
   makeSidebarEntries,
+  makeMaturityModelPageSidebarConfig,
 } from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
@@ -35,23 +36,9 @@ dirs.forEach((dir) => {
 });
 
 // for the maturity model, each _page_ gets its own sidebar entry!
+const mmsidebar = makeMaturityModelPageSidebarConfig();
+Object.assign(sidebar, mmsidebar);
 navbar.push({ text: "Maturity Model", link: "/maturity-model/" });
-
-const blockDirs = getChildDirectories("docs/maturity-model");
-blockDirs.forEach((dir) => {
-  const docDir = "docs/maturity-model/" + dir;
-  const blockFiles = getChildFiles(docDir);
-  blockFiles.forEach((file) => {
-    const filePath = `/maturity-model/${dir}/${file}`;
-
-    const pagePath = file === "readme.md"
-        ? `/maturity-model/${dir}/`
-        : `/maturity-model/${dir}/${file}`;
-
-    const link = lookupPagePath(pagePath);
-    sidebar[link] = [filePath];
-  });
-});
 
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));

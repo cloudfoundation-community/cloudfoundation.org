@@ -35,7 +35,7 @@ const breadcrumbs = computed(() => {
       },
       // pillar
       {
-        path: parts.slice(0, 3).join("/"),
+        path: parts.slice(0, 3).join("/") + "/", // pillars always need a trailing slash
         title: page.value.frontmatter.category,
       },
     ];

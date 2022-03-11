@@ -1,10 +1,9 @@
+import { inferPagePath, SiteLocaleConfig } from "vuepress";
+import type { SidebarConfig } from "@vuepress/theme-default";
 import * as fs from "fs";
 import * as path from "path";
 
 import { index } from "./theme/plugins/cfmm/shared/blocks";
-import { inferPagePath, SiteLocaleConfig } from "vuepress";
-import { RenderedDatabaseEntry } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabaseEntry";
-import { RenderedDatabasePage } from "@meshcloud/notion-markdown-cms/dist/RenderedDatabasePage"; // todo: nmdcms should export them instead of us importing them from private modules
 
 export function lookupPagePath(relativePath: string) {
   // stub a faked locale config, this is harcoded and only works because the size is not localized
@@ -40,23 +39,15 @@ export function getChildFiles(path: string) {
     .map((x) => x.name);
 }
 
+/**
+ * Makes sidebar entries for a full directory structure
+ */
 export function makeSidebarEntries(dir: string) {
   const readmePath = `${dir}/readme.md`;
   const hasReadme = fs.existsSync(readmePath);
 
   // try to find original, "unslugged" category name, otherwise use the slugified category name
-  const category = pathToCategory(dir);
-  const strippedDir = stripDocs(dir);
-  const indexItem = index.find(
-    (x) =>
-      x.file && path.dirname(x.file) === strippedDir && x.frontmatter.category
-  );
-  if (!indexItem) {
-    console.warn(
-      `Could not find index item to determine category name for dir: ${dir}. Using category slug ${category} instead`
-    );
-  }
-  const categoryName = indexItem?.frontmatter.category || category;
+  const categoryName = lookupCategoryName(dir);
 
   // sidebar entries for children directories
   const childDirs = getChildDirectories(dir).map(
@@ -77,6 +68,62 @@ export function makeSidebarEntries(dir: string) {
   ];
 
   return { entry, text: categoryName };
+}
+
+function lookupCategoryName(dir: string) {
+  const category = pathToCategory(dir);
+  const strippedDir = stripDocs(dir);
+  const indexItem = index.find(
+    (x) =>
+      x.file && path.dirname(x.file) === strippedDir && x.frontmatter.category
+  );
+  if (!indexItem) {
+    console.warn(
+      `Could not find index item to determine category name for dir: ${dir}. Using category slug ${category} instead`
+    );
+  }
+  const categoryName = indexItem?.frontmatter.category || category;
+  return categoryName;
+}
+
+export function makeMaturityModelPageSidebarConfig() {
+  const sidebar: SidebarConfig = {};
+
+  const pillarDirs = getChildDirectories("docs/maturity-model");
+
+  pillarDirs.forEach((dir) => {
+    const docDir = "docs/maturity-model/" + dir;
+
+    const pillarFiles = getChildFiles(docDir);
+    pillarFiles.forEach((file) => {
+      const blockFilePath = `/maturity-model/${dir}/${file}`;
+      const pillarFilePath = `/maturity-model/${dir}/readme.md`;
+
+      const isPillar = file === "readme.md";
+      const pagePath = isPillar
+        ? `/maturity-model/${dir}/`
+        : `/maturity-model/${dir}/${file}`;
+      const link = lookupPagePath(pagePath);
+
+      sidebar[link] = [
+        {
+          text: "Maturity Model",
+          link: "/maturity-model/",
+          children: isPillar
+            ? [pillarFilePath]
+            : [
+                {
+                  text: lookupCategoryName(docDir),
+                  link: lookupPagePath(pillarFilePath),
+                  children: [blockFilePath],
+                },
+              ],
+        },
+      ];
+    });
+  });
+
+  return sidebar;
 }
 
 function sortedSidebar(dir: string) {

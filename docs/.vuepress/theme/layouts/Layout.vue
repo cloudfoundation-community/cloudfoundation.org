@@ -32,7 +32,6 @@ import FullsizePage from "../components/FullsizePage.vue";
 import CFMMPage from "../components/CFMMPage.vue";
 import CFMMBlockPage from "../components/CFMMBlockPage.vue";
 import CFMMPillarPage from "../components/CFMMPillarPage.vue";
-import Page from "../components/Page.vue";
 
 import { usePageData, usePageFrontmatter } from "@vuepress/client";
 import { useScrollPromise } from "@vuepress/theme-default/lib/client/composables";
