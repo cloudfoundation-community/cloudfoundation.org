@@ -19,7 +19,7 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
         :key="page.path"
         v-else-if="frontmatter.pageType == 'CFMMPillar'"
       />
-      <Page :key="page.path" v-else> </Page>
+      <CFMMPage :key="page.path" v-else> </CFMMPage>
     </template>
   </ParentLayout>
 </template>
@@ -29,6 +29,7 @@ import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue"
 
 import Home from "../components/Home.vue";
 import FullsizePage from "../components/FullsizePage.vue";
+import CFMMPage from "../components/CFMMPage.vue";
 import CFMMBlockPage from "../components/CFMMBlockPage.vue";
 import CFMMPillarPage from "../components/CFMMPillarPage.vue";
 import Page from "../components/Page.vue";
