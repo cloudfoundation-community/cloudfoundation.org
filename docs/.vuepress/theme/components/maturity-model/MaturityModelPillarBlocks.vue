@@ -35,6 +35,7 @@ const blocks = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+@import "@vuepress/plugin-palette/palette";
 @import "./maturity-model";
 
 .pillar-category {
@@ -42,7 +43,11 @@ const blocks = computed(() => {
   // the pillar without changing its outer dimensions, as this would result in re-layout of the page pushing the footer
   // further down. This looks "janky" when changing the hovered pillar. We therefore ensure that there's enough space
   // in each pillar with a spacer at the
-  min-height: calc(100vh + $block-summary-max-height);
+  // on monile this does not matter much, as there's no janky hover, just "tap"
+  @media (min-width: $MQMobile) {
+    min-height: calc(100vh + $block-summary-max-height);
+  }
+
   display: flex;
   flex-direction: column;
 

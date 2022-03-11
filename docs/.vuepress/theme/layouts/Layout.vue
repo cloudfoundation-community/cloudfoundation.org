@@ -48,29 +48,33 @@ const onBeforeLeave = scrollPromise.pending;
 <style lang="scss">
 @import "@vuepress/plugin-palette/palette";
 
-.theme-container:not(.white){
+.theme-container:not(.white) {
   background: var(--c-cfmm-bg);
 }
 .theme-container {
   min-height: 100vh;
 }
-.sidebar {
-  padding: 1rem;
-  padding-bottom: 0;
-  border-color: var(--c-brand-light);
-}
-
-.sidebar-items {
-  background: var(--c-bg);
-  border-radius: var(--c-cfmm-border-radius-lg);
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
 
 @media (max-width: $MQMobile) {
-  // reset custom styles so that the sidebar falls back nicely into the default theme
   .sidebar {
-    margin: 0;
+    .cfmm-page-heading {
+      display: none;
+    }
+  }
+}
+@media (min-width: $MQMobile) {
+  .sidebar {
+    padding: 1rem;
+    padding-bottom: 0;
+    border-color: var(--c-brand-light);
+    background-color: var(--c-bg-brand);
+  }
+
+  .sidebar-items {
+    background: var(--c-bg);
+    border-radius: var(--c-cfmm-border-radius-lg);
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 }
 </style>

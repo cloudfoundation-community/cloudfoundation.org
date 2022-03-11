@@ -39,20 +39,40 @@ const frontmatter = usePageFrontmatter<any>();
 </script>
 
 <style lang="scss">
+@import "@vuepress/plugin-palette/palette";
 @import "./cfmm";
+
 .page {
-  padding-left: calc(var(--sidebar-width) + 1rem);
+  @media (max-width: $MQMobileNarrow) {
+    padding-left: 0;
+  }
+
+  @media (max-width: $MQMobile) {
+    padding-left: calc(var(--sidebar-width-mobile) + 1rem);
+  }
+
+  @media (min-width: $MQNarrow) {
+    padding-left: calc(var(--sidebar-width) + 1rem);
+  }
 }
+
+$model-theme-right-min-width: 240px;
 main.model-theme {
   padding-top: calc(var(--navbar-height) + 2rem);
   background: var(--c-cfmm-bg);
   display: flex;
 
+  @media (max-width: $MQNarrow + $model-theme-right-min-width) {
+    flex-direction: column;
+  }
+
+  // this hosts the page content (markdown)
   .theme-default-content {
     background: white;
     border-radius: var(--c-cfmm-border-radius-lg);
     padding-top: 2.5rem;
 
+    // reset the margin of the first paragraph, if the page starts directly with a pargraph
     > p:first-child {
       margin-top: 0;
     }
@@ -60,19 +80,26 @@ main.model-theme {
 }
 
 .model-theme-center {
-  padding-left: 2rem;
-
+  padding-left: 1rem;
+  @media (max-width: $MQNarrow + $model-theme-right-min-width) {
+    padding-right: 1rem;
+  }
   .cfmm-page-heading {
-    max-width: var(--content-width);
+    max-width: 100%;
   }
 }
 
 .model-theme-right {
-  padding-top: 2rem;
   padding-left: 1rem;
-  width: 350px;
+  padding-right: 1rem;
+  padding-top: 2rem;
+
+  flex: 1;
+  max-width: $model-theme-right-min-width * 1.5;
+  min-width: $model-theme-right-min-width;
+
   .cfmm-page-heading {
-    max-width: 350px
+    max-width: 100%;
   }
 }
 

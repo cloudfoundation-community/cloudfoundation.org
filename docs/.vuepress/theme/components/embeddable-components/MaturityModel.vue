@@ -25,29 +25,36 @@ const pillars: Pillar[] = [
 </script>
 
 <style scoped lang="scss">
+@import "@vuepress/plugin-palette/palette";
+
 .maturity-model-landing-page {
   padding: 48px 64px 24px;
   background-color: #9fd9ec;
 
   h1 {
-    margin: 0 0 8px;
+    margin: 0 0 .5rem;
     font-weight: 900;
     color: white;
     display: none;
   }
 
+  @media only screen and (max-width: $MQMobile) {
+    padding: 1rem;
+    h1 {
+      display: block;
+    }
+  }
   .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    &.mobile-wrap {
-      @media screen and (max-width: 580px) {
-        flex-wrap: nowrap;
-        overflow-x: auto;
+    @media (min-width: $MQMobileNarrow) {
+      // on desktop layout we need to add equal spacing between columns (but not on the last one!)
+      .card-col:not(:last-child) {
+        padding-right: 1rem;
       }
     }
-
     .card-col {
       flex-grow: 1;
       max-width: 20%;
@@ -63,17 +70,9 @@ const pillars: Pillar[] = [
       }
       @media only screen and (max-width: 580px) {
         min-width: 100%;
-          border-radius: var(--c-cfmm-border-radius-lg);
+        border-radius: var(--c-cfmm-border-radius-lg);
         margin-bottom: 12px;
       }
-    }
-  }
-
-  @media only screen and (max-width: 580px) {
-    padding-left: 25px;
-    padding-right: 15px;
-    h1 {
-      display: block;
     }
   }
 }

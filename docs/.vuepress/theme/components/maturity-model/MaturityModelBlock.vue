@@ -57,7 +57,7 @@ h4 {
 
 .block-wrapper {
   background-color: white;
-  margin: 0 10px 10px 0;
+  margin: 0 0 10px 0;
   padding: 8px;
   border-radius: 8px;
 }
