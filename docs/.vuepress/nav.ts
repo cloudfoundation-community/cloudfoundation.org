@@ -93,7 +93,7 @@ function sortedSidebar(dir: string) {
     })
     .map((x) => {
       return {
-        text: formatTitle(x.indexEntry),
+        text: x.indexEntry.frontmatter.title,
         link: lookupPagePath(x.relativePath),
       };
     });
@@ -107,21 +107,4 @@ function pathToCategory(dir: string): string {
   const result = path.basename(dir); // by convention, the category name is reflected in the directory hierarchy
 
   return result;
-}
-
-function formatTitle(
-  indexEntry: RenderedDatabasePage | RenderedDatabaseEntry
-): any {
-  // this may not be the cleanest way to detect this, with all the hardcoding going on
-  // however it works and we won't need this forever
-  const isBlock = indexEntry?.frontmatter.pageType === "CFMMBlock";
-  if (isBlock) {
-    const rs = indexEntry.frontmatter.properties["redaction-state"];
-    const isDraft = !rs || rs === "Draft";
-    const icon = isDraft ? "🚧" : "📗";
-
-    return icon + " " + indexEntry?.frontmatter["title"];
-  }
-
-  return indexEntry?.frontmatter["title"];
 }

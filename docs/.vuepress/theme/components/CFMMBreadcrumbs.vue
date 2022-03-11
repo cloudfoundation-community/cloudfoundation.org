@@ -25,29 +25,39 @@ const page = usePageData();
 
 const breadcrumbs = computed(() => {
   const parts = page.value.path.split("/");
+
+  if (parts[1] === "maturity-model") {
+    return [
+      // root
+      {
+        path: parts.slice(0, 2).join("/"),
+        title: "Maturity Model",
+      },
+      // pillar
+      {
+        path: parts.slice(0, 3).join("/"),
+        title: page.value.frontmatter.category,
+      },
+    ];
+  }
+
   return [
-    // root
+    // category
     {
-      path: parts.slice(0,2).join("/"),
-      title: "Maturity Model"
+      path: parts.slice(0, 3).join("/"),
+      title: page.value.frontmatter.category,
     },
-    // pillar
-    {
-      path: parts.slice(0,3).join("/"),
-      title: page.value.frontmatter.category
-    }
   ];
 });
 </script>
 
 <style lang="scss" scoped>
-
 .bread-crumbs {
   padding-bottom: 1rem;
   color: white;
   max-width: var(--content-width);
   height: 2rem;
-span {
+  span {
     display: inline-flex;
     align-items: center;
 

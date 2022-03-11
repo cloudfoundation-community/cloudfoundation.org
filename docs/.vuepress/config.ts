@@ -2,7 +2,12 @@ import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
 import { debug, path } from "@vuepress/utils";
 
-import { getChildDirectories, lookupPagePath, getChildFiles, makeSidebarEntries } from "./nav";
+import {
+  getChildDirectories,
+  lookupPagePath,
+  getChildFiles,
+  makeSidebarEntries,
+} from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
 import pluginCfmm from "./theme/plugins/cfmm";
@@ -37,14 +42,16 @@ blockDirs.forEach((dir) => {
   const docDir = "docs/maturity-model/" + dir;
   const blockFiles = getChildFiles(docDir);
   blockFiles.forEach((file) => {
-    const path = `/maturity-model/${dir}/${file}`;
-    const link = lookupPagePath(path);
-    sidebar[link] = [link];
+    const filePath = `/maturity-model/${dir}/${file}`;
+
+    const pagePath = file === "readme.md"
+        ? `/maturity-model/${dir}/`
+        : `/maturity-model/${dir}/${file}`;
+
+    const link = lookupPagePath(pagePath);
+    sidebar[link] = [filePath];
   });
 });
-
-log("The generated sidebar will look like the following: ");
-console.log(JSON.stringify(sidebar, null, 2));
 
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
@@ -129,4 +136,3 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     [pluginSitemap, sitemapOptions],
   ],
 });
- 
