@@ -52,7 +52,6 @@ const frontmatter = usePageFrontmatter<any>();
   @media (max-width: $MQMobile) {
     padding-left: 0;
   }
-
 }
 
 $model-theme-right-min-width: 260px;
@@ -102,10 +101,16 @@ main.model-theme {
   }
 }
 
-.model-theme .page-meta .meta-item {
-  .meta-item-info,
-  .meta-item-label {
+.model-theme {
+  .page-nav a {
     color: white;
+  }
+
+  .page-meta .meta-item {
+    .meta-item-info,
+    .meta-item-label {
+      color: white;
+    }
   }
 }
 </style>
