@@ -43,20 +43,19 @@ const frontmatter = usePageFrontmatter<any>();
 @import "./cfmm";
 
 .page {
-  @media (max-width: $MQMobileNarrow) {
-    padding-left: 0;
-  }
+  padding-left: calc(var(--sidebar-width) + 1rem);
 
-  @media (max-width: $MQMobile) {
+  @media (max-width: $MQNarrow) {
     padding-left: calc(var(--sidebar-width-mobile) + 1rem);
   }
 
-  @media (min-width: $MQNarrow) {
-    padding-left: calc(var(--sidebar-width) + 1rem);
+  @media (max-width: $MQMobile) {
+    padding-left: 0;
   }
+
 }
 
-$model-theme-right-min-width: 240px;
+$model-theme-right-min-width: 260px;
 main.model-theme {
   padding-top: calc(var(--navbar-height) + 2rem);
   background: var(--c-cfmm-bg);
