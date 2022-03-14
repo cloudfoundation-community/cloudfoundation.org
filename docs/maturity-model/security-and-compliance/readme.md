@@ -56,7 +56,7 @@ Especially when considering a multi-cloud scenario, cloud foundation teams need 
 <CallToAction>
   <CtaHeader>Multi-Cloud Security and Compliance: The Comprehensive Guide 2021</CtaHeader>
   <CtaText>Take a look into the Security Guide 2021 for more insights on building an effective multi-cloud security & compliance strategy.</CtaText>
-  <CtaButton url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Read the Security & Compliance Guide</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Read the Security & Compliance Guide</CtaButton>
 </CallToAction>
 
 ## Key Stakeholders for Multi-Cloud Security & Compliance

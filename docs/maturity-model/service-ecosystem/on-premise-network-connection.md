@@ -25,18 +25,17 @@ TODO: describe IPAM integration
 
 A key challenge with On-Premise network connections is to make them scale
 
+1. shared vm and vm based NAT system; load balancer inside VPC
 
+    1. cloud foundation maintains NAT
 
-1. shared vm and vm based nat system; load balancer inside vpc
+1. multiple shared VPC with VPC peering;
 
-    1. cf would maintain nat
+    1.  cloud foundation maintains subnets and VPC for customer projects
 
-1. multiple shared vpc with vpc peering;
-
-    1. subnets and vpc for customer projects would be handled by cloud foundation
-
-1. completely isolated vpcs and projects
+1. completely isolated VPCs and projects
 
     1. private service connect/virtual private connect; consume them even if you do not
 
-1. don't do onprem; do the internet with API gateway
+1. don't do onprem; use internet with API gateway
+
