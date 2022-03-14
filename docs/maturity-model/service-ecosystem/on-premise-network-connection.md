@@ -29,13 +29,13 @@ A key challenge with On-Premise network connections is to make them scale
 
     1. cloud foundation maintains NAT
 
-1. multiple shared VPC with VPC peering;
+1. multiple shared VPC with [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html);
 
     1.  cloud foundation maintains subnets and VPC for customer projects
 
 1. completely isolated VPCs and projects
 
-    1. private service connect/virtual private connect; consume them even if you do not
+    1. [private service connect](https://cloud.google.com/vpc/docs/private-service-connect)/virtual private connect; consume them even if you do not
 
 1. don't do onprem; use internet with API gateway
 
