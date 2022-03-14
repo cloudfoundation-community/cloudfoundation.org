@@ -39,9 +39,9 @@ Common examples for optional modules are
 
 - [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md)
 
-Already a small number of optional modules can lead to a large number of combinations of those modules.
+![image-a825efcf-03c0-4696-abd2-9fb31febb7c8](./a825efcf-03c0-4696-abd2-9fb31febb7c8.png)
 
-Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps team while keeping redundancy low and complexity manageable.
+Already a small number of optional modules can lead to a large number of combinations of those modules. Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps team while keeping redundancy low and complexity manageable.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
