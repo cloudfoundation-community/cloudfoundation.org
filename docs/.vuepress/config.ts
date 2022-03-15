@@ -2,13 +2,7 @@ import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
 import { debug, path } from "@vuepress/utils";
 
-import {
-  getChildDirectories,
-  lookupPagePath,
-  getChildFiles,
-  makeSidebarEntries,
-  makeMaturityModelPageSidebarConfig,
-} from "./nav";
+import { makeSidebarEntries, makeMaturityModelPageSidebarConfig } from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
 import pluginCfmm from "./theme/plugins/cfmm";
@@ -37,7 +31,8 @@ dirs.forEach((dir) => {
 
 // for the maturity model, each _page_ gets its own sidebar entry!
 const mmsidebar = makeMaturityModelPageSidebarConfig();
-const whatIsBuildingBlock = { // not proud of this hack... but it works for now. should revisit this when we add more pages under the Maturity Model. right now this is the only one
+const whatIsBuildingBlock = {
+  // not proud of this hack... but it works for now. should revisit this when we add more pages under the Maturity Model. right now this is the only one
   "/maturity-model/what-is-a-building-block.html": [
     {
       text: "Maturity Model",
