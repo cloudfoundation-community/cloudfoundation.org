@@ -77,6 +77,7 @@ main.model-theme {
 }
 
 .model-theme-center {
+  max-width: calc(var(--content-width) + 1rem);
   padding-left: 1rem;
   @media (max-width: $MQNarrow + $model-theme-right-min-width) {
     padding-right: 1rem;
