@@ -2,7 +2,7 @@
   <div class="pillar-intro mb-3 mr-2">
     <h2>{{ pillar.shortTitle }}</h2>
     <small class="d-block my-2 summary">{{ pillar.summary }}</small>
-    <small class="d-block my-2"
+    <small class="d-block my-2 more"
       ><router-link :to="pillar.link">Learn More</router-link></small
     >
   </div>
@@ -34,7 +34,7 @@ const pillar = computed(() => {
   color: white;
 
   height: 120px;
-  
+
   h2 {
     font-weight: 800;
     border: none;
@@ -45,7 +45,10 @@ const pillar = computed(() => {
   .summary {
     overflow: hidden;
     height: 3rem; // 3 lines of text - no ellipsis possible unfortunately
-    
+  }
+
+  .more a {
+    color: #505152; // a designer may pick a better color, but we need something with sufficient contrast
   }
 }
 </style>
