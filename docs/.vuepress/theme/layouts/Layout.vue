@@ -66,8 +66,8 @@ const onBeforeLeave = scrollPromise.pending;
   .sidebar {
     padding: 1rem;
     padding-bottom: 0;
-    border-color: var(--c-brand-light);
-    background-color: var(--c-bg-brand);
+    border-color: var(--c-cfmm-bg); //note: can't remove the border here because the vuepress theme expects there is always a 1px border
+    background-color: var(--c-cfmm-bg);
   }
 
   .sidebar-items {
