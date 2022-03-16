@@ -17,8 +17,6 @@ properties:
   name: Centralized audit logs
 ---
 
-## Why Centralized Audit Logs?
-
 Audit Logs are records of what actions were performed by whom. A centralized audit log stores audit logs from all cloud tenants.
 
 The audit logs we need to store here cover interactions with the cloud API. A common example would be answering the question “who deployed and configured this specific Cloud Function?”. This is important to balance the freedom given to teams: “We let you deploy your own workload, but we will be looking over your shoulders”.
