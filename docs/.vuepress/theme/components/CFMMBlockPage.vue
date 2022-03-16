@@ -71,7 +71,6 @@
 <script setup lang="ts">
 import { computed, watch } from "vue";
 import { usePageData, usePageFrontmatter } from "@vuepress/client";
-import {} from "@vuepress/client";
 
 import CFMMPage from "./CFMMPage.vue";
 
