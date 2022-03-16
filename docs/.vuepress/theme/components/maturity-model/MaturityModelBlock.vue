@@ -3,11 +3,10 @@
     <router-link :to="props.blockData.link" class="block-atom">
       <div class="block">
         <BlockJourneyStage :journey-stage="blockData.journeyStage" />
-        <BlockScope :scope="blockData.scope"/>
+        <BlockScope :scope="blockData.scope" />
         <div class="block-content">
           <p v-text="blockData.title"></p>
         </div>
-        <slot></slot>
       </div>
       <p class="tooltip-text">
         {{ shortSummary }}
@@ -25,7 +24,7 @@ import BlockJourneyStage from "../block/BlockJourneyStage.vue";
 import { MaturityModelBlock } from "../../plugins/cfmm/shared";
 
 interface Props {
-  blockData: MaturityModelBlock
+  blockData: MaturityModelBlock;
 }
 
 const props = defineProps<Props>();
@@ -61,9 +60,7 @@ h4 {
   padding: 8px;
   border-radius: 8px;
 }
-a:hover {
-  text-decoration: none !important;
-}
+
 .block-atom {
   position: relative;
 
@@ -84,10 +81,12 @@ a:hover {
   }
 
   // note: this is in the wrong placce because it will already expand the tooltip when hovering the block's margin
-  &:hover .tooltip-text {
-    max-height: $block-summary-max-height;
-    opacity: 1;
-    // transition: opacity 400ms 0;
+  @media (hover: hover) {
+    &:hover .tooltip-text {
+      max-height: $block-summary-max-height;
+      opacity: 1;
+      // transition: opacity 400ms 0;
+    }
   }
 
   .block {
