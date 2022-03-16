@@ -3,16 +3,15 @@
     <span v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
       <router-link
         :to="crumb.path"
-        :class="
+           :class="
           crumb.path === '' ? 'bread-crumb bread-crumb-nolink' : 'bread-crumb'
         "
-        >{{ crumb.title }}&nbsp;&nbsp;</router-link
+        >{{ crumb.title }}</router-link
       >
       <img
-        src="../components/arrow-left.svg"
+        src="../components/chevron-right.svg"
         v-if="index !== breadcrumbs.length - 1"
       />
-      &nbsp;&nbsp;
     </span>
   </div>
 </template>
@@ -56,7 +55,7 @@ const breadcrumbs = computed(() => {
   padding-bottom: 1rem;
   color: white;
   max-width: var(--content-width);
-  height: 2rem;
+  
   span {
     display: inline-flex;
     align-items: center;
@@ -67,6 +66,7 @@ const breadcrumbs = computed(() => {
 
     img {
       width: 12px;
+      margin: 0 0.25rem;
     }
   }
 }
