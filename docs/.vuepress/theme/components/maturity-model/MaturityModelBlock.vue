@@ -2,13 +2,15 @@
   <div class="block-wrapper">
     <router-link :to="props.blockData.link" class="block-atom">
       <div class="block">
-        <BlockJourneyStage :journey-stage="blockData.journeyStage" />
-        <BlockScope :scope="blockData.scope" />
+        <div class="block-props d-flex" @click="onPropsClick">
+          <BlockJourneyStage :journey-stage="blockData.journeyStage" />
+          <BlockScope :scope="blockData.scope" />
+        </div>
         <div class="block-content">
           <p v-text="blockData.title"></p>
         </div>
       </div>
-      <p class="tooltip-text">
+      <p class="block-summary" v-bind:class="{ expand: expand }">
         {{ shortSummary }}
       </p>
     </router-link>
@@ -16,12 +18,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { RouterLink } from "vue-router";
 
 import BlockScope from "../block/BlockScope.vue";
 import BlockJourneyStage from "../block/BlockJourneyStage.vue";
 import { MaturityModelBlock } from "../../plugins/cfmm/shared";
+import exp from "constants";
 
 interface Props {
   blockData: MaturityModelBlock;
@@ -37,6 +40,18 @@ const shortSummary = computed(() => {
 
   return text.length < maxLength ? text : text.substring(0, maxLength) + "...";
 });
+
+const expand = ref(false);
+function onPropsClick(event: Event) {
+  // if the device does not supports hover, expand the block summary
+  // and prevent the default action (opening the link to the block details page)
+  const supportsHover = window.matchMedia("(hover: hover)").matches;
+  if (!supportsHover) {
+    expand.value = !expand.value;
+    event.preventDefault();
+  }
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -64,7 +79,7 @@ h4 {
 .block-atom {
   position: relative;
 
-  .tooltip-text {
+  .block-summary {
     color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
@@ -80,13 +95,19 @@ h4 {
     // some summarys may go on to long
   }
 
-  // note: this is in the wrong placce because it will already expand the tooltip when hovering the block's margin
+  // can probably remove the duplicate expand state css here using some scss trick I don't know about
+  // expand on hover, but only on devices that natively support hover (e.g. desktops)
   @media (hover: hover) {
-    &:hover .tooltip-text {
+    &:hover .block-summary {
       max-height: $block-summary-max-height;
       opacity: 1;
-      // transition: opacity 400ms 0;
     }
+  }
+
+  // expand when the block is explicitly marked as expandable
+  .block-summary.expand {
+    max-height: $block-summary-max-height;
+    opacity: 1;
   }
 
   .block {
