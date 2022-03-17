@@ -6,6 +6,9 @@ description: >-
   Provide Identity and Access management capabilities for all available cloud
   platforms and services.
 category: Pillar
+pageType: CFMMPillar
+properties:
+  short-name: IAM
 ---
 
 Identity and Access Management (IAM) is a crucial part of building a solid cloud foundation. After all, access to the cloud platform’s API to deploy and manage cloud resources is akin to providing the keys to a virtual data center. IAM covers the life-cycle of identities as well as controls for authentication and authorization. Leveraging the cloud platform’s IAM systems like AWS IAM, Azure RBAC or GCP IAM is therefore crucial to achieve cloud security.

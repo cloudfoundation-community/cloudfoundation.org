@@ -2,22 +2,15 @@
   "files": [
     {
       "path": "docs/.vuepress/dist/assets/app.????????.js",
-      "maxSize": "250 kB",
+      "maxSize": "290 kB",
       "compression": "none",
-      "description": "this is the app bundle that's always loaded and on the critical path"
+      "description": "this is the app bundle that's always loaded and on the critical path. It includes the block index."
     },
     {
       "path": "docs/.vuepress/dist/assets/mermaid.esm.min.????????.js",
       "maxSize": "1100 kB",
       "compression": "none",
       "description": "mermaid.js is huge and needs to be lazy loaded as a separate bundle"
-    },
-    {
-
-      "path": "docs/.vuepress/dist/assets/index.????????.js",
-      "maxSize": "100 kB",
-      "compression": "none",
-      "description": "this bundle contains the block index, note that this will _not_ match index.html files, so this is test shows that the index is in fact in a separate bundle! This is good because it means it's not part of app bundle."
     }
   ]
 }

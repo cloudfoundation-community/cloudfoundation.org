@@ -1,6 +1,6 @@
 <template>
   <div class="feedback-container d-flex flex-column align-items-center pb-4">
-    <h5>Did this building block help you?</h5>
+    <h5>Did this page help you?</h5>
 
     <div v-if="!submitted" v-bind:class="{'w-100': !!shortAnswer }">
       <div v-if="!shortAnswer">
@@ -74,7 +74,6 @@ async function sendAnswer(answer: string, longAnswer?: string) {
 <style scoped lang="scss">
 .feedback-container {
   border-top: 1px solid var(--c-border);
-  border-bottom: 1px solid var(--c-border);
 
   h5 {
     text-align: center;

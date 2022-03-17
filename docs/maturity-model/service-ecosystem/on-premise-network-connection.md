@@ -8,7 +8,8 @@ description: >-
   commonly implemented using hub&spoke network architectures and a combination
   of VPNs or private network peerings.
 category: 🛠 Service Ecosystem
-pageType: CFMMBlock
+layout: CFMMBlock
+sidebar: false
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️

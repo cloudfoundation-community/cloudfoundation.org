@@ -97,7 +97,8 @@ const config: SyncConfig = {
       },
       views: [],
     },
-    "3958983e-15f0-4446-9226-6e8af5eccbc9": { // pillar database
+    "3958983e-15f0-4446-9226-6e8af5eccbc9": {
+      // pillar database
       sorts: [
         {
           property: "order",
@@ -110,9 +111,19 @@ const config: SyncConfig = {
           "maturity-model/" + slugify(page.properties.get("Name")),
         filenameBuilder: (_) => "readme",
         frontmatterBuilder: (page) => {
+          const include = [
+            // order chosen here to keep code generation as close as possible to the old
+            // note: Pillar is already the "category" of the page so we avoid duplication here
+            "Short Name",
+          ];
+
+          const properties = buildProperties(include, page);
+
           return {
             ...commonFrontmatter(page),
-            category: "Pillar"
+            category: "Pillar",
+            pageType: "CFMMPillar",
+            properties,
           };
         },
       },
@@ -185,13 +196,13 @@ async function main() {
   });
 
   console.log("processing page 'order' conventions");
-  
+
   // by convention, find all "first" files in a category and rename them README.md because vuepress expects them that way
   const categoryHomes = rendered.filter((x) => {
     const page = x as RenderedDatabasePage;
     return page.frontmatter?.order === 0 && !!page.file;
   });
-  
+
   for (const home of categoryHomes) {
     const rendered = home as RenderedDatabasePage;
     const old = rendered.file;
@@ -221,7 +232,7 @@ async function main() {
 
   console.log("writing .vuepress/index.ts");
   await fs.writeFile(
-    ".vuepress/index.ts",
+    ".vuepress/theme/plugins/cfmm/shared/blocks.ts",
     `export const index = ${JSON.stringify(sorted, null, 2)};`
   );
 }

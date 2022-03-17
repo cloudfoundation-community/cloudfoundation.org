@@ -6,6 +6,9 @@ description: >-
   Manage provisioning, configuration and lifecycle of cloud environments (e.g.
   AWS Accounts).
 category: Pillar
+pageType: CFMMPillar
+properties:
+  short-name: Tenant Mgmt.
 ---
 
 Multi-tenancy is a cornerstone of cloud computing. It allows different customers of a cloud computing provider to share the same physical cloud infrastructure while maintaining strong isolation and security guarantees between tenants. Correctly leveraging the tenant isolation primitives like Accounts (AWS), Subscriptions (Azure) or Projects (GCP) is therefore very important to build a strong foundation for cloud security. 

@@ -1,11 +1,14 @@
-import { defineUserConfig, ViteBundlerOptions } from 'vuepress-vite';
+import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
-import { debug, path } from '@vuepress/utils';
+import { debug, path } from "@vuepress/utils";
 
-import { makeSidebarEntries } from './nav';
-import pluginMermaid from './theme/plugins/mermaid';
-import pluginPlausible from './theme/plugins/plausible';
-import pluginSitemap, { SitemapOptions } from './theme/plugins/plugin-sitemap/src/node';
+import { makeSidebarEntries, makeMaturityModelPageSidebarConfig } from "./nav";
+import pluginMermaid from "./theme/plugins/mermaid";
+import pluginPlausible from "./theme/plugins/plausible";
+import pluginCfmm from "./theme/plugins/cfmm";
+import pluginSitemap, {
+  SitemapOptions,
+} from "./theme/plugins/plugin-sitemap/src/node";
 
 import type { DefaultThemeOptions } from "vuepress-vite";
 import type { SidebarConfig, NavbarConfig } from "@vuepress/theme-default";
@@ -16,7 +19,7 @@ const sidebar: SidebarConfig = {};
 const navbar: NavbarConfig = [];
 
 // use hardcoded order of sections
-const dirs = ["understanding-cloud-foundation", "maturity-model"];
+const dirs = ["understanding-cloud-foundation"];
 
 dirs.forEach((dir) => {
   const link = `/${dir}/`;
@@ -25,6 +28,23 @@ dirs.forEach((dir) => {
   sidebar[link] = entry;
   navbar.push({ text, link });
 });
+
+// for the maturity model, each _page_ gets its own sidebar entry!
+const mmsidebar = makeMaturityModelPageSidebarConfig();
+const whatIsBuildingBlock = {
+  // not proud of this hack... but it works for now. should revisit this when we add more pages under the Maturity Model. right now this is the only one
+  "/maturity-model/what-is-a-building-block.html": [
+    {
+      text: "Maturity Model",
+      link: "/maturity-model/",
+      children: ["/maturity-model/what-is-a-building-block.md"],
+    },
+  ],
+};
+
+navbar.push({ text: "Maturity Model", link: "/maturity-model/" });
+Object.assign(sidebar, mmsidebar);
+Object.assign(sidebar, whatIsBuildingBlock);
 
 log("The generated sidebar will look like the following: ");
 log(JSON.stringify(sidebar, null, 2));
@@ -45,10 +65,17 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     // <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     // <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     // <link rel="manifest" href="/site.webmanifest">
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
-    ['link', { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' }],
-    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+    ],
+    ["link", { rel: "icon", sizes: "32x32", href: "/favicon-32x32.png" }],
+    ["link", { rel: "icon", sizes: "16x16", href: "/favicon-16x16.png" }],
+    ["link", { rel: "manifest", href: "/site.webmanifest" }],
   ],
   themeConfig: {
     logo: "/logo.png",
@@ -61,6 +88,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     darkMode: false,
   },
   plugins: [
+    pluginCfmm,
     pluginMermaid,
     [
       pluginPlausible,
@@ -79,6 +107,14 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ],
     ["@vuepress/plugin-search"],
     [
+      "@vuepress/plugin-git",
+      {
+        createdTime: false,
+        updateTime: true,
+        contributors: false,
+      },
+    ],
+    [
       // This allows us to use custom components in our markdown files.
       // Keep in mind that only components directly placed in the directory will be usable.
       // It is not possible to create a nested folder structure.
@@ -91,5 +127,5 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       },
     ],
     [pluginSitemap, sitemapOptions],
-  ]
+  ],
 });

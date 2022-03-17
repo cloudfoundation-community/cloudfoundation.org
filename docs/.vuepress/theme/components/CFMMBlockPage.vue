@@ -1,42 +1,19 @@
 <template>
-  <Page>
+  <CFMMPage>
     <template #before>
-      <p>
-        {{ frontmatter.properties.scope }} /
-        {{ frontmatter.category }} /
-        {{ frontmatter.properties["journey-stage"] }}
-      </p>
-      <div class="custom-container tip">
-        <p class="custom-container-title">Summary</p>
-        <p>{{ frontmatter.description }}</p>
+      <div class="block-intro d-flex align-items-center">
+        <router-link
+          :to="'/maturity-model/what-is-a-building-block#journey-stage'"
+        >
+          <BlockJourneyStage
+            :journey-stage="frontmatter.properties['journey-stage']"
+          />
+        </router-link>
+        <router-link :to="'/maturity-model/what-is-a-building-block#scope'">
+          <BlockScope :scope="frontmatter.properties.scope" />
+        </router-link>
+        <span>{{ frontmatter.description }}</span>
       </div>
-
-      <nav v-if="dependsOn.length">
-        <b>Depends on: </b>
-        <span class="depends" v-for="link in dependsOn" :key="link.id"
-          ><router-link
-            :to="link.href"
-            class="nav-link"
-            aria-label="{{link.title}}"
-          >
-            {{ link.title }}
-          </router-link>
-          &nbsp;
-        </span>
-      </nav>
-      <nav v-if="enables.length">
-        <b>Enables: </b>
-        <span class="enables" v-for="link in enables" :key="link.id"
-          ><router-link
-            :to="link.href"
-            class="nav-link"
-            aria-label="{{link.title}}"
-          >
-            {{ link.title }}
-          </router-link>
-          &nbsp;
-        </span>
-      </nav>
 
       <div class="custom-container warning" v-if="underConstruction">
         <p class="custom-container-title">
@@ -54,7 +31,7 @@
     </template>
 
     <template #after>
-      <h2>Related Tools</h2>
+      <h2 id="related-tools">Related Tools</h2>
 
       <ul class="cards mb-4">
         <li class="cards-item" v-for="toolimpl in tools" :key="toolimpl.id">
@@ -78,35 +55,33 @@
           welcome!</i
         >
       </p>
-
-      <Feedback
-        v-bind:page="frontmatter.title"
-        v-if="!underConstruction"
-      ></Feedback>
     </template>
-  </Page>
+
+    <template #right>
+      <div class="model-theme-right">
+        <h2 v-if="enables.length" class="cfmm-page-heading">Enables</h2>
+        <MaturityModelRelatedBlocks v-if="enables.length" :ids="enables" />
+        <h2 v-if="dependsOn.length" class="cfmm-page-heading">Depends On</h2>
+        <MaturityModelRelatedBlocks v-if="dependsOn.length" :ids="dependsOn" />
+      </div>
+    </template>
+  </CFMMPage>
 </template>
 
 <script setup lang="ts">
 import { computed, watch } from "vue";
-import { usePageFrontmatter } from "@vuepress/client";
-import Page from "./Page.vue";
-import Feedback from "./Feedback.vue";
-import { index } from "../../index";
+import { usePageData, usePageFrontmatter } from "@vuepress/client";
+
+import CFMMPage from "./CFMMPage.vue";
+
+import BlockScope from "./block/BlockScope.vue";
+import BlockJourneyStage from "./block/BlockJourneyStage.vue";
+import MaturityModelRelatedBlocks from "./maturity-model/MaturityModelRelatedBlocks.vue";
+
+import { index } from "../plugins/cfmm/shared/blocks";
 
 function formatLink(path: string) {
   return "/" + path.replace(".md", ".html");
-}
-
-// todo: all these O(n) searches against the index are bad, we should probably wrap that in a better structure
-// or even better - a service/mixin
-function resolvePage(id: string) {
-  const page = index.find((x) => x.frontmatter.id === id);
-  return {
-    id,
-    title: page.frontmatter.title,
-    href: formatLink(page.file),
-  };
 }
 
 function resolveTool(id: string) {
@@ -124,20 +99,17 @@ function resolveTool(id: string) {
 }
 
 const frontmatter = usePageFrontmatter<any>();
-const dependsOn = computed(() =>
-  frontmatter.value.properties["depends-on"].map((id) => resolvePage(id))
-);
-const enables = computed(() =>
-  frontmatter.value.properties["enables"].map((id) => resolvePage(id))
-);
+
+const enables = computed(() => frontmatter.value.properties.enables);
+const dependsOn = computed(() => frontmatter.value.properties["depends-on"]);
+
 const tools = computed(() =>
   frontmatter.value.properties["tool-implementations"].map((id) =>
     resolveTool(id)
   )
 );
 const underConstruction = computed(
-  () =>
-    frontmatter.value.properties["redaction-state"] != "mvp1"
+  () => frontmatter.value.properties["redaction-state"] != "mvp1"
 );
 
 import { usePlausible } from "../plugins/plausible/client";
@@ -156,7 +128,7 @@ const trackableProperties = computed(() => {
 
   return {
     id: frontmatter.value.id,
-    title: frontmatter.value.title,
+    title: frontmatter.value?.title,
     pillar: frontmatter.value.category,
     journeyStage: frontmatter.value.properties["journey-stage"],
     scope: frontmatter.value.properties.scope,
@@ -172,6 +144,23 @@ watch(trackableProperties, (props) => {
 </script>
 
 <style lang="scss" scoped>
+.block-intro {
+  background-color: var(--c-bg-light);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  img.block-step {
+    min-width: 30px;
+    max-width: 30px;
+  }
+  img.block-scope {
+    min-width: 45px;
+    max-width: 45px;
+    margin-right: 10px;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
