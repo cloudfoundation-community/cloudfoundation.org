@@ -31,7 +31,7 @@
     </template>
 
     <template #after>
-      <h2>Related Tools</h2>
+      <h2 id="related-tools">Related Tools</h2>
 
       <ul class="cards mb-4">
         <li class="cards-item" v-for="toolimpl in tools" :key="toolimpl.id">
