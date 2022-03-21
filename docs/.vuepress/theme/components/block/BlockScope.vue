@@ -15,20 +15,24 @@ interface Props {
 const props = defineProps<Props>();
 
 const scopeImgSrc = computed(() => {
-  return withBase('/mm/' + scopeCubeFilename(props.scope));
+  return scopeCubeUrl(props.scope);
 });
 
-function scopeCubeFilename(scopeName): string {
-    const prefix = "scope-cube-";
-    switch (scopeName) {
-      case "🛬 Landing Zone":
-        return `${prefix}turquoise.svg`;
-      case "☁️ Platform":
-        return `${prefix}purple.svg`;
-      case "🏢 Core":
-        return `${prefix}blue.svg`;
-      default:
-        throw `Invalid Scope Cube Value ${scopeName}`;
-    }
+import blue from "./scope-cube-blue.svg";
+import purple from "./scope-cube-purple.svg";
+// import tqblue from "./scope-cube-mix-turquoise-blue.svg";
+import turquoise from "./scope-cube-turquoise.svg";
+
+function scopeCubeUrl(scopeName): string {
+  switch (scopeName) {
+    case "🛬 Landing Zone":
+      return turquoise;
+    case "☁️ Platform":
+      return purple;
+    case "🏢 Core":
+      return blue;
+    default:
+      throw `Invalid Scope Cube Value ${scopeName}`;
   }
+}
 </script>
