@@ -42,6 +42,7 @@ $btn-padding-x-lg: 1.5rem !default;
   font-style: normal;
   font-weight: 400;
   src: url(/fonts/Montserrat-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
@@ -49,6 +50,7 @@ $btn-padding-x-lg: 1.5rem !default;
   font-style: normal;
   font-weight: 500;
   src: url(/fonts/Montserrat-Medium.ttf);
+  font-display: swap;
 }
 
 @font-face {
@@ -56,6 +58,7 @@ $btn-padding-x-lg: 1.5rem !default;
   font-style: normal;
   font-weight: 600;
   src: url(/fonts/Montserrat-SemiBold.ttf);
+  font-display: swap;
 }
 
 @font-face {
@@ -63,6 +66,7 @@ $btn-padding-x-lg: 1.5rem !default;
   font-style: normal;
   font-weight: 700;
   src: url(/fonts/Montserrat-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
@@ -70,6 +74,7 @@ $btn-padding-x-lg: 1.5rem !default;
   font-style: normal;
   font-weight: 900;
   src: url(/fonts/Montserrat-Black.ttf);
+  font-display: swap;
 }
 
 // vuepress theme uses css variables
