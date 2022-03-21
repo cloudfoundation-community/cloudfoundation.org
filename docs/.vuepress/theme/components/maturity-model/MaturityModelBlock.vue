@@ -115,12 +115,12 @@ h4 {
     align-items: center;
     font-family: "Montserrat", sans-serif;
     img.block-step {
-      min-width: 15px;
-      max-width: 15px;
+      width: 16px;
+      height: 48px;
     }
     img.block-scope {
-      min-width: 33px;
-      max-width: 33px;
+      width: 32px;
+      height: 48px;
       margin-right: 10px;
     }
     .block-content {
