@@ -161,7 +161,7 @@ export const index = [
         "enables": [
           "1afea746-da65-4164-9029-5e0bfa9432b1"
         ],
-        "redaction-state": "Draft",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
@@ -571,7 +571,7 @@ export const index = [
     "frontmatter": {
       "id": "334eb216-fa16-4946-9fe5-8f66bb7fc3fa",
       "url": "https://www.notion.so/meshStack-Self-Service-Multi-Cloud-Tenant-Database-334eb216fa1649469fe58f66bb7fc3fa",
-      "title": "meshStack  Self-Service Multi-Cloud Tenant Database",
+      "title": "meshStack Self-Service Multi-Cloud Tenant Database",
       "description": "meshStack allows internal customers to create and manage cloud tenants in self-service. This includes automated tenant creation as well as self-service metadata management for project owners as well as tenant administration for cloud foundation teams.",
       "properties": {
         "block": [
@@ -581,7 +581,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
-        "name": "meshStack  Self-Service Multi-Cloud Tenant Database"
+        "name": "meshStack Self-Service Multi-Cloud Tenant Database"
       }
     }
   },
@@ -702,7 +702,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "partner is working on it",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
         "depends-on": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"

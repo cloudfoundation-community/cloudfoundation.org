@@ -57,7 +57,7 @@ Leveraging Azure AD Connect Sync also makes it trivial to implement [Identity Li
 
 ### Google Cloud Identity
 
-Synchronize the central enterprise AD or LDAP using to Google Cloud Identity using the [Google Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) (GCDS) tool. Setup federated authentication to an on-premise authentication service such as ADFS or any other Identity Provider supporting SAML/OIDC based authentication.
+Synchronize the central enterprise AD or LDAP to Google Cloud Identity using the [Google Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) (GCDS) tool. Setup federated authentication to an on-premise authentication service such as ADFS or any other Identity Provider supporting SAML/OIDC based authentication.
 
 Leveraging GCDS also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
 
