@@ -3,7 +3,7 @@
     <span v-for="(crumb, index) in breadcrumbs" :key="crumb.path">
       <router-link
         :to="crumb.path"
-           :class="
+        :class="
           crumb.path === '' ? 'bread-crumb bread-crumb-nolink' : 'bread-crumb'
         "
         >{{ crumb.title }}</router-link
@@ -53,9 +53,10 @@ const breadcrumbs = computed(() => {
 <style lang="scss" scoped>
 .bread-crumbs {
   padding-bottom: 1rem;
+  height: 2rem;
   color: white;
   max-width: var(--content-width);
-  
+
   span {
     display: inline-flex;
     align-items: center;
