@@ -41,7 +41,7 @@ const generatePageMap = (
   app: App
 ): Map<string, SitemapPageInfo> => {
   const {
-    changefreq = 'daily',
+    changefreq,
     excludeUrls = ['/404.html'],
     modifyTimeGetter = ((page: Page<{ git: GitData }>): string =>
       page.data.git?.updatedTime

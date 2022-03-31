@@ -14,7 +14,7 @@ pkgs.mkShell {
     })
 
     # currently not possible to override nodejs, see https://github.com/NixOS/nixpkgs/issues/151868
-    pkgs.google-clasp 
-    pkgs.google-cloud-sdk
+    # pkgs.google-clasp 
+    # pkgs.google-cloud-sdk
   ];
 }

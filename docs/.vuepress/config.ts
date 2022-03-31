@@ -52,7 +52,6 @@ log(JSON.stringify(sidebar, null, 2));
 const sitemapOptions: SitemapOptions = {
   hostname: "https://cloudfoundation.meshcloud.io",
   excludeUrls: ["/404.html"],
-  changefreq: "daily",
 };
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
