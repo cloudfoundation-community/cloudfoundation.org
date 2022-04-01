@@ -53,10 +53,11 @@ const sitemapOptions: SitemapOptions = {
   hostname: "https://cloudfoundation.meshcloud.io",
   excludeUrls: ["/404.html"],
 };
+const websiteDescription = "A solid foundation for your Cloud Journey";
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
   title: "Cloud Foundation",
-  description: "A solid foundation for your Cloud Journey",
+  description: websiteDescription,
   theme: path.resolve(__dirname, "./theme"),
   head: [
     // This list of links was given by https://favicon.io/favicon-converter/.
@@ -75,6 +76,12 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ["link", { rel: "icon", sizes: "32x32", href: "/favicon-32x32.png" }],
     ["link", { rel: "icon", sizes: "16x16", href: "/favicon-16x16.png" }],
     ["link", { rel: "manifest", href: "/site.webmanifest" }],
+    // This list is for OpenGraph tags. They allow your website
+    // to be rendered in a nice way when sharing on LinkedIn, Twitter & Facebook.
+    ["meta", { property: "og:title", content: "Build your Cloud Foundation!" }],
+    ["meta", { property: "og:description", content: websiteDescription }],
+    // Note: we are required to use absolute URLs here. OpenGraph does not understand relative URLs.
+    ["meta", { property: "og:image", content: "https://cloudfoundation.meshcloud.io/heroimage.webp" }],
   ],
   themeConfig: {
     logo: "/logo.png",
