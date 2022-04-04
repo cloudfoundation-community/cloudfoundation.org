@@ -2143,7 +2143,7 @@ export const index = [
       "id": "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
       "url": "https://www.notion.so/Internal-Service-Marketplace-f077cfd1d8f44c30a1bd4f252b840e4f",
       "title": "Internal Service Marketplace",
-      "description": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with Cost Management and IAM:",
+      "description": "Teams offer services to other teams and make them accessible on a marketplace that is integrated with 💵 Cost Management  and 🔐 IAM .",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
