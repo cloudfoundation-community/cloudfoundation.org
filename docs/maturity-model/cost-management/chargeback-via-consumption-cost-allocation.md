@@ -36,7 +36,7 @@ Subjecting cloud cost to a traditional shared cost allocation cancels many benef
 
 ### Establish Proper Tenant Management
 
-Cloud providers make consumption data available on a tenant level. With proper tenant management you should have established a [Cloud Tenant Database](../tenant-management/cloud-tenant-database.md) that includes basic cost allocation data like cost centers. This information from your tenant database will make it it easy to split up the cloud provider’s bill to cost centers, without requiring any additional effort like applying billing tags to cloud resources.
+Cloud providers make consumption data available on a tenant level. With proper tenant management you should have established a [Cloud Tenant Database](../tenant-management/cloud-tenant-database.md) that includes basic cost allocation data like cost centers. This information from your tenant database will make it it easy to split up the cloud provider’s bill to cost centers, without requiring any additional effort like applying billing tags to cloud resources. The tenant based approach has an advantage over tagging based solution: no costs slip through if tagging for a resource is not in place.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
