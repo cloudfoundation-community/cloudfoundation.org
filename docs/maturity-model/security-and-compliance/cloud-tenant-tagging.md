@@ -35,7 +35,7 @@ Tagging can thus facilitate security & compliance automation scenarios. For exam
 
 ## Tagging Is a Foundation for Good Cloud Management
 
-Since tagging with key-value pairs is such a basic mechanism, cloud foundation teams can leverage their flexibility to implement many different cloud foundation capabilities. For example, tenant tagging can help implement a basic [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) by assigning a `costCenter:` tag to each AWS Account. At the same time, tagging a cloud tenant with `owner: alice@example.com` can enable security and compliance processes like [Incident Management Process](./incident-management-process.md). However, this means that many different requirements and stakeholders may place demands on tagging. This can create conflicting requirements. That’s why cloud foundation teams need to establish a clear strategy for tags and their use.
+Since tagging with key-value pairs is such a basic mechanism, cloud foundation teams can leverage their flexibility to implement many different cloud foundation capabilities. For example, tenant tagging can help implement a basic [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) by assigning a `costCenter:` tag to each AWS Account. At the same time, tagging a cloud tenant with `owner: alice@example.com` can enable [🔖 Security & Compliance](./readme.md)  processes like [Incident Management Process](./incident-management-process.md). However, this means that many different requirements and stakeholders may place demands on tagging. This can create conflicting requirements. That’s why cloud foundation teams need to establish a clear strategy for tags and their use.
 
 <!--notion-markdown-cms:raw-->
  <CallToAction>
@@ -46,7 +46,7 @@ Since tagging with key-value pairs is such a basic mechanism, cloud foundation t
 
 ### Consistent Tagging Is a Matter of Compliance
 
-While cloud tenant tagging enables a basic implementation of many other cloud foundation building blocks, Cloud Foundation teams should treat adherence to the established tagging strategy as a matter of compliance. This is why the Cloud Foundation Maturity Model puts this building block into the Security & Compliance pillar, as opposed to putting it in the Tenant Management or Cost Management pillar.
+While cloud tenant tagging enables a basic implementation of many other cloud foundation building blocks, Cloud Foundation teams should treat adherence to the established tagging strategy as a matter of compliance. This is why the Cloud Foundation Maturity Model puts this building block into the Security & Compliance pillar, as opposed to putting it in the [🗂 Tenant Management](../tenant-management/readme.md) or [💵 Cost Management](../cost-management/readme.md) pillar.
 
 ### Tag the Most Useful Subset of Tenant Metadata
 
@@ -60,7 +60,7 @@ As Cloud Foundations mature, they also often find the need to implement self-ser
 
 ### Understand the Difference between Tenant and Resource Tagging
 
-Most cloud platforms have tagging facilities that can cover the Tenant and Resource level of the [Resource Hierarchy](../tenant-management/resource-hierarchy.md). Cloud Foundation teams should treat **tenant tags** as the preferred solution for tags that should apply consistently to all resources in a tenant. For example, when tagging a cloud tenant as `stage: production`, tagging individual cloud resources inside the tenant with the same tag should not be necessary. Having the tag stored in a single place at a higher level in the resource hierarchy simplifies managing and updating the tag. Since the cloud foundation team is already responsible for Tenant Management, it should typically also assume responsibility for tenant tagging. 
+Most cloud platforms have tagging facilities that can cover the Tenant and Resource level of the [Resource Hierarchy](../tenant-management/resource-hierarchy.md). Cloud Foundation teams should treat **tenant tags** as the preferred solution for tags that should apply consistently to all resources in a tenant. For example, when tagging a cloud tenant as `stage: production`, tagging individual cloud resources inside the tenant with the same tag should not be necessary. Having the tag stored in a single place at a higher level in the resource hierarchy simplifies managing and updating the tag. Since the cloud foundation team is already responsible for [🗂 Tenant Management](../tenant-management/readme.md), it should typically also assume responsibility for tenant tagging. 
 
 [Cloud Resource Tagging](./cloud-resource-tagging.md) is useful for resources that need to be **individually tagged**, for example when labeling cloud resources storing personally identifiable information (PII). This responsibility best resides with the cloud foundation’s customers.
 
