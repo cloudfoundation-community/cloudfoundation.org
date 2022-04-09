@@ -1453,7 +1453,10 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
@@ -1839,7 +1842,9 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Resource Policies - Blacklisting"
@@ -1989,7 +1994,9 @@ export const index = [
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"

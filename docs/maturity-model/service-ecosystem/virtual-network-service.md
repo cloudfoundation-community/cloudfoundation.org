@@ -24,7 +24,7 @@ properties:
 
 ## Why a Virtual Network Service?
 
-A virtual network allows resources within to communicate with other resources. The other resources may be within the same virtual network, but could also be on an on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
+A virtual network allows resources to communicate with other resources. The other resources may be within the same virtual network, but could also be on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
 
 A virtual network service provides virtual networks to DevOps teams. 
 

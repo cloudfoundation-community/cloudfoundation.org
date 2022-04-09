@@ -12,7 +12,8 @@ properties:
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️
-  depends-on: []
+  depends-on:
+    - ac8a21c3-f692-4d23-a9bb-796fd311c39f
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Resource Policies - Blacklisting
