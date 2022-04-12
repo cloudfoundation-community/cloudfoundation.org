@@ -14,7 +14,7 @@
           >
         </div>
         <div class="col-12 col-lg-6 hero-right">
-          <img src="../../public/heroimage.webp" />
+          <img src="./heroimage.webp" />
         </div>
       </div>
       <div class="row flex-column-reverse flex-md-row">
