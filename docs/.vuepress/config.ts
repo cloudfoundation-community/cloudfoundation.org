@@ -81,7 +81,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ["meta", { property: "og:title", content: "Build your Cloud Foundation!" }],
     ["meta", { property: "og:description", content: websiteDescription }],
     // Note: we are required to use absolute URLs here. OpenGraph does not understand relative URLs.
-    ["meta", { property: "og:image", content: "https://cloudfoundation.meshcloud.io/heroimage.webp" }],
+    ["meta", { property: "og:image", content: "https://cloudfoundation.meshcloud.io/heroimage.png" }],
   ],
   themeConfig: {
     logo: "/logo.png",
