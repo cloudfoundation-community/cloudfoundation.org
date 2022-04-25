@@ -21,14 +21,16 @@ export const cfmmPlugin: Plugin<CfmmPluginOptions> = (options, app) => {
 
 export default cfmmPlugin;
 
+/**
+ * Generates a blocks.json file with metadata of all the blocks contained in the CFMM.
+ * This metadata is useful for working with the structured data, e.g. generating compliance controls for the
+ * meshcloud cloudfoundation toolkit (name tdb). You can think of this as a "soft API" for CFMM.
+ */
 async function generateBlocksJson(options: CfmmPluginOptions, app: App) {
   const hostname = options.hostname.replace(/\/$/u, "");
 
   const blocksFilename = "blocks.json";
-  const {
-    dir,
-    options: { base },
-  } = app;
+  const { dir } = app;
 
   await withSpinner(`Generating blocks json to ${chalk.cyan(blocksFilename)}`)(
     async () => {
