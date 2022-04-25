@@ -5,7 +5,7 @@ import { debug, path } from "@vuepress/utils";
 import { makeSidebarEntries, makeMaturityModelPageSidebarConfig } from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
-import pluginCfmm from "./theme/plugins/cfmm";
+import pluginCfmm, { CfmmPluginOptions } from "./theme/plugins/cfmm";
 import pluginSitemap, {
   SitemapOptions,
 } from "./theme/plugins/plugin-sitemap/src/node";
@@ -53,6 +53,10 @@ const sitemapOptions: SitemapOptions = {
   hostname: "https://cloudfoundation.meshcloud.io",
   excludeUrls: ["/404.html"],
 };
+const cfmmOptions: CfmmPluginOptions = {
+  hostname: sitemapOptions.hostname,
+};
+
 const websiteDescription = "A solid foundation for your Cloud Journey";
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
@@ -81,7 +85,13 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ["meta", { property: "og:title", content: "Build your Cloud Foundation!" }],
     ["meta", { property: "og:description", content: websiteDescription }],
     // Note: we are required to use absolute URLs here. OpenGraph does not understand relative URLs.
-    ["meta", { property: "og:image", content: "https://cloudfoundation.meshcloud.io/heroimage.png" }],
+    [
+      "meta",
+      {
+        property: "og:image",
+        content: "https://cloudfoundation.meshcloud.io/heroimage.png",
+      },
+    ],
   ],
   themeConfig: {
     logo: "/logo.png",
@@ -94,7 +104,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     darkMode: false,
   },
   plugins: [
-    pluginCfmm,
+    [pluginCfmm, cfmmOptions],
     pluginMermaid,
     [
       pluginPlausible,
