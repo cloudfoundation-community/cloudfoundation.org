@@ -2,7 +2,7 @@ import * as os from "os";
 import * as glob from "fast-glob";
 import * as fs from "fs";
 import * as path from "path";
-import { index } from "./docs/.vuepress/index";
+import { index } from "./docs/.vuepress/theme/plugins/cfmm/shared/blocks";
 
 import { TextLintEngine } from "textlint";
 

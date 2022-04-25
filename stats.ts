@@ -3,7 +3,7 @@ import { Storage } from "@google-cloud/storage";
 
 import { run } from "./.textstat/cli";
 import { writeFile } from "fs/promises";
-import { index } from "./docs/.vuepress/index";
+import { index } from "./docs/.vuepress/theme/plugins/cfmm/shared/blocks";
 import { Parser } from "json2csv";
 
 async function main() {

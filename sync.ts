@@ -230,9 +230,10 @@ async function main() {
     x.frontmatter.id.localeCompare(y.frontmatter.id)
   );
 
-  console.log("writing .vuepress/index.ts");
+  const blocksIndexPath = ".vuepress/theme/plugins/cfmm/shared/blocks.ts";
+  console.log("writing blocks index to " + blocksIndexPath);
   await fs.writeFile(
-    ".vuepress/theme/plugins/cfmm/shared/blocks.ts",
+    blocksIndexPath,
     `export const index = ${JSON.stringify(sorted, null, 2)};`
   );
 }
