@@ -21,3 +21,5 @@ properties:
 ---
 
 This can also be implemented by integration with higher-level tooling like AWS Control Tower.
+
+[Azure Policies effect](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) are very expressive.
