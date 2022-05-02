@@ -21,7 +21,7 @@ properties:
   name: Cloud Tenant Tagging
 ---
 
-Tagging cloud tenants deliberately simplifies the cloud foundation team’s operational procedures for administering a cloud platform. Tags store important metadata about a cloud tenant directly in the cloud platform’s control plane.
+Most cloud platforms support tagging as a means of attaching custom key-value pairs to cloud resources. Cloud Foundation teams can leverage tags to  store important metadata about a cloud tenant directly in the cloud platform’s control plane. This metadata can help cloud foundation teams efficiently implement common operational procedures, e.g. by discerning cloud tenants hosting productive vs. non-productive workloads.
 
 > **💡** Cloud platforms can use different terms for tags like labels or annotations. The Cloud Foundation Maturity Model refers to tags as any mechanism that allows attaching a custom **key-value** pair to a cloud tenant or resource.
 
