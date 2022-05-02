@@ -24,7 +24,7 @@ properties:
   name: Multi-Cloud Tenant Database
 ---
 
-Organizations following a multi-cloud strategy often start implementing dedicated processes for [Tenant Provisioning](./tenant-provisioning.md) and maintaining a [Cloud Tenant Database](./cloud-tenant-database.md) on each platform. This makes it difficult to establish visibility over the organization’s multi-cloud adoption. 
+Organizations embarking on their cloud journey often start implementing dedicated processes for [Tenant Provisioning](./tenant-provisioning.md) and maintaining a dedicated [Cloud Tenant Database](./cloud-tenant-database.md) for each individual cloud platform. As the organization’s cloud strategy evolves towards embracing a multi-cloud approach, individual cloud platform silos make it difficult to establish visibility over the organization’s multi-cloud adoption. 
 
 Furthermore, maintaining different tenant databases per platform leads to inconsistent metadata about your cloud tenants. This makes it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md) or [Multi-Cloud Tagging Policy](../security-and-compliance/multi-cloud-tagging-policy.md).
 
