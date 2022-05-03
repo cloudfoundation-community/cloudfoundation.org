@@ -22,9 +22,9 @@ properties:
   name: Privileged Access Management
 ---
 
-Access to cloud tenants is usually not a privileged operation from the point of view of a cloud foundation, however DevOps teams using these cloud tenants need to be equipped with appropriate means to secure access to their environments. From DevOps team PoV cloud tenants are infrastructure and access to application infra is usally administrative/privileged from this PoV.
+Access to cloud tenants is usually not a privileged operation from the point of view of a cloud foundation, however, DevOps teams using these cloud tenants need to be equipped with appropriate means to secure access to their environments. From the DevOps team, PoV cloud tenants are infrastructure, and access to application infra is usually administrative/privileged from this PoV.
 
-- See meshStack authroization concept 
+- See meshStack authorization concept 
 
 - Emergency Users [https://docs.meshcloud.io/docs/administration.emergency-users.html#docsNav](https://docs.meshcloud.io/docs/administration.emergency-users.html#docsNav)
 
@@ -34,5 +34,5 @@ Common implementations for platform operator PAM:
 
 - for Azure could be using [Azure AD Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure)
 
-- "break glass" routines to recover root account access (e.g. MFA + password reset procedures, sharded keys etc.)
+- "break glass" routines to recover root account access (e.g. MFA + password reset procedures, sharded keys, etc.)
 
