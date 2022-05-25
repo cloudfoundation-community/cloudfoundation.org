@@ -746,7 +746,7 @@ export const index = [
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
-        "link": "https://docs.meshcloud.io/docs/meshstack.platforms.html#deprovisioning--deleting-projects",
+        "link": "https://docs.meshcloud.io/docs/meshstack.tenants.html#deprovisioning--deleting-projects",
         "name": "Private Cloud Tenant Deprovisioning with meshStack"
       }
     }
