@@ -2,7 +2,11 @@ import { defineUserConfig, ViteBundlerOptions } from "vuepress-vite";
 
 import { debug, path } from "@vuepress/utils";
 
-import { makeSidebarEntries, makeMaturityModelPageSidebarConfig } from "./nav";
+import {
+  makeSidebarEntries,
+  makeMaturityModelPageSidebarConfig,
+  getChildDirectories,
+} from "./nav";
 import pluginMermaid from "./theme/plugins/mermaid";
 import pluginPlausible from "./theme/plugins/plausible";
 import pluginCfmm, { CfmmPluginOptions } from "./theme/plugins/cfmm";
@@ -23,11 +27,32 @@ const dirs = ["understanding-cloud-foundation"];
 
 dirs.forEach((dir) => {
   const link = `/${dir}/`;
-  const { entry, text } = makeSidebarEntries("docs/" + dir);
+  const { entry } = makeSidebarEntries("docs/" + dir);
 
   sidebar[link] = entry;
-  navbar.push({ text, link });
 });
+
+// explicitly build the navbar
+// we push the pillars directly to the top level site structure so that the "crawl depth"
+// to the building blocks is one level lower
+navbar.push(
+  {
+    text: "Understanding Cloud Foundation",
+    link: "/understanding-cloud-foundation/",
+  },
+  {
+    text: "Maturity Model",
+    link: "/maturity-model/",
+  },
+  {
+    text: "Pillars",
+    children: [
+      ...getChildDirectories("docs/maturity-model").map(
+        (x) => `/maturity-model/${x}/`
+      ),
+    ],
+  }
+);
 
 // for the maturity model, each _page_ gets its own sidebar entry!
 const mmsidebar = makeMaturityModelPageSidebarConfig();
@@ -42,7 +67,6 @@ const whatIsBuildingBlock = {
   ],
 };
 
-navbar.push({ text: "Maturity Model", link: "/maturity-model/" });
 Object.assign(sidebar, mmsidebar);
 Object.assign(sidebar, whatIsBuildingBlock);
 
