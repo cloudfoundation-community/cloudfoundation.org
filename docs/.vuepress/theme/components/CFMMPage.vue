@@ -52,7 +52,8 @@ const frontmatter = usePageFrontmatter<any>();
   }
 }
 
-$model-theme-right-min-width: 260px;
+ // note: at this width, the "building block" caption renders without a line break
+$model-theme-right-min-width: 360px;
 main.model-theme {
   padding-top: calc(var(--navbar-height) + 2rem);
   background: var(--c-cfmm-bg);
