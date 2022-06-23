@@ -11,7 +11,7 @@ pageType: CFMMBlock
 properties:
   enables:
     - 456f15f2-299e-4a8b-a8c9-cb0580a887d2
-  redaction-state: Draft
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
@@ -20,11 +20,44 @@ properties:
   name: Federated Identity and Authentication
 ---
 
-## Typical Implementations
+## What Is Identity and Access Management (IAM) Systems?
 
-Most organisations rely on an Active Directory or LDAP based on-premise system as a central user directory. Enterprise IAM Systems provision users to this central directory, integrating HR workflows and master data (user onboarding/offboarding) as well as permission workflows (approval, job roles etc.). Cloud Platforms offer integrations and solutions for identity federation, identity sync or managing cloud native identities.
+Identity and access management (IAM) stands for the **central management** of users and access rights across **systems**, **applications** and in the **cloud.** It is a means of managing **user accounts**
+and **privileges** for systems and programs in a **compliant** manner. IAM allows you to **open** the **corporate network** up to external partners, clients and suppliers **without risking** **security breaches.**
 
-The following shows an example high level architecture:
+## Why We Need Federated Identity and Authentication Management?
+
+The system **ascertains** the user’s **identity**, usually through a combination of **user name** and **password** or by retrieving **biometric data** (*authentication*). The established *identity* is associated with certain **access rights** (*authorization*). Each user needs an identity to access a cloud provider as shown below:
+
+```mermaid
+graph TB
+	az[Azure AAD]
+	gc[Google GCD]
+	aws[AWS SSO]
+	user([User])
+
+user -. access .-> az
+user -. access .-> gc
+user -. access .-> aws
+```
+
+IAM systems also support **federated identities**, meaning that identity information can be exchanged and managed **across technical boundaries** (e.g., between computers and the cloud). Your enterprise already has an Enterprise IAM System (like an AD or LDAP). You can use these identities and federate them into the cloud. This helps in hooking into the processes using the existing identities. Most organizations rely on an Active Directory (AD) or LDAP on-premise system as a central user directory. Enterprise IAM Systems allows users to access this central directory and assists in the following: 
+
+- Integrating HR workflows and master data for smooth user onboarding and off-boarding.
+
+- Approving workflows like providing approvals for various processes or roles.
+
+Today, businesses, and corporations are becoming more and more a mixture of on-premises and cloud applications. Users require access to those applications both on-premise and in the cloud. Managing users both on-premise and in the cloud poses challenging scenarios.
+
+The identity solutions span on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location. This is referred to as **hybrid identity**.
+
+All major cloud platforms (AWS, Azure & Google Cloud) offer integrations and solutions for identity federation, identity sync, or managing cloud-native identities. You can read more about each individual implementation below.
+
+
+
+## Implementation of Federated Identity and Authentication System
+
+The following shows an example of high-level architecture. You can access the cloud platforms in two different ways as shown below. One way is to access it directly and the other way is to do it via Enterprise IAM System.
 
 ```mermaid
 graph TB
@@ -47,28 +80,25 @@ user -. 2. access .-> gc
 user -. 2. access .-> aws
 ```
 
-### Azure Active Directory
+### Azure Active Directory (AAD)
 
-Synchronize the central enterprise AD to Azure using the [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool. Leverage [hybrid identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) architecture to federate AAD authentication to an on-premise ADFS service.
+The tool [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis) is useful to sync the central enterprise AD and Azure. This allows leveraging a  [hybrid identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) architecture to federate AAD authentication to an on-premise ADFS service.
 
-Identities (Users, Groups, and Memberships) are synchronized into an AAD Tenant owned by the organization.
-
-Leveraging Azure AD Connect Sync also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
+This assists users, groups and memberships to be synced into an AAD Tenant owned by the organization.
 
 ### Google Cloud Identity
 
-Synchronize the central enterprise AD or LDAP to Google Cloud Identity using the [Google Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) (GCDS) tool. Setup federated authentication to an on-premise authentication service such as ADFS or any other Identity Provider supporting SAML/OIDC based authentication.
-
-Leveraging GCDS also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
+Use the tool [Google Cloud Directory Sync](https://support.google.com/a/answer/106368?hl=en) (GCDS) to sync the central enterprise AD or LDAP to Google Cloud Identity. This federated authentication to an on-premise authentication service such as ADFS or any other Identity Provider supporting SAML/OIDC-based authentication is possible.
 
 ### AWS SSO
 
-[AWS SSO](https://aws.amazon.com/single-sign-on/) supports the SCIM protocol for identity provisioning and deprovisioning. While SCIM is a well-established protocol, many deployed on-premise IAM systems still lack support for this protocol. Typical IAM architectures deploying AWS SSO therefore use a "cloud-enabled" Identity Provider such as Azure Active Directory or Google Cloud Identity that supports SCIM in a "two-tiered" IAM architecture that synchronises identities from On-Premise to e.g. AAD and then from AAD to AWS SSO.
+[AWS SSO](https://aws.amazon.com/single-sign-on/) supports the SCIM protocol for identity provisioning and deprovisioning. While SCIM is a well-established protocol, many deployed on-premise IAM systems still lack support for this protocol. Typical IAM architectures deploying AWS SSO, therefore, use a "cloud-enabled" Identity Provider such as Azure Active Directory or Google Cloud Identity that supports SCIM in a "two-tiered" IAM architecture that synchronizes identities from On-Premise to AAD and then from AAD to AWS SSO.
 
-Leveraging SCIM in this manner also makes it trivial to implement [Identity Lifecycle Management](./identity-lifecycle-management.md).
+## Who Needs to Be Provisioned on Which Cloud Provider? How to Manage That?→ *Sync Groups*
 
-## Sync Groups
+A fundamental pre-requisite for these federated identity architectures is to determine the set of identities to synchronize to cloud directories. The best practice is to avoid syncing the whole on-premise directory, as this needlessly distributes personally identifiable information (PII) and violates "need to know" principles.
 
-A fundamental pre-requisite for these federated identity architectures is to determine the set of identities to synchronise to cloud directories. It's best practice to avoid syncing the whole on-premise directory, as this needlessly distributes personally identifiable information (PII) and violates "need to know" principles.
+Only a subset of identities managed in an on-premise IAM system is relevant to a cloud foundation. Typically, the relevant set includes IT staff working on cloud-related projects and excludes general office staff. This brings us to the topic of  "sync group", which is a group of users who have been given access to a tenant via your Cloud Foundation Platform. 
 
-Only a subset of identities managed in an on-premise IAM system are relevant to a cloud foundation. Typically, the relevant set includes IT staff working on cloud related projects and excludes general office staff. A "sync group" determines the identities relevant for syncing to the cloud directories and can be built using automated rules via job roles, department membership or using membership request/approval workflows.
+
+
