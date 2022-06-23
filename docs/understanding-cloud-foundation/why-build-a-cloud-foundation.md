@@ -35,29 +35,7 @@ While representing independent functions, organizations need to integrate these 
 
 As an illustration, let's look at the dependencies of the Tenant Management pillar. For an effective cloud governance, each of the pillars needs to maintain different metadata associated with a cloud tenant (e.g. an AWS Account). 
 
-<!-- unsupported block type: toggle -->
-
-```mermaid
-flowchart BT;
-  subgraph Pillars["Functional Pillars of Cloud Governance"]
-    %% direction TB;
-    Tenant["🗂 Tenant Management"]
-    IAM["🔐 IAM"]
-    Compliance["🔖 Security & Compliance"]
-    Chargeback["💵 Cost Management"]
-    Services["🛠 Service Ecosystem"]
-		%% Tenant<-.->IAM & Services & Compliance & Chargeback
-		Tenant<-.what are the permissions for?.->IAM
-		Tenant<-.where to provision service?.->Services
-		Tenant<-.who is responsible?.->Compliance
-		Tenant<-.who bears the cost?.->Chargeback
-  end
-  DevOps["DevOps Team"]
-  DevOps --> Tenant & IAM & Services & Compliance & Chargeback
-
-```
-
-<!-- unsupported block type: embed -->
+![image-073a2340-2a2d-4716-b255-2a28d0986732](./073a2340-2a2d-4716-b255-2a28d0986732.png)
 
 Manually maintaining this associated metadata in different functional silos is challenging and burdensome. Data inconsistencies are likely and make applying good governance difficult. Imagine detecting a critical security vulnerability in one of your AWS Accounts, only to figure out that the responsible security contact is no longer working at your organization...
 
@@ -67,27 +45,7 @@ This example is only scratching the surface of the complex inter-dependencies th
 
 Let's look at the cloud journey for a DevOps team that wants to build a typical cloud application. The team wants to take advantage of cloud-native services for machine learning, however it also needs access to on-premise systems that hold required data. The team therefore needs a cloud tenant and on-premise connectivity. When an organisation manages its cloud capabilities as IT Services, the team's cloud journey will look like this:
 
-<!-- unsupported block type: toggle -->
-
-```mermaid
-flowchart BT;
-  DevOps["DevOps Team"]
-  subgraph IT Services
-    Platform["🗂 Platform Team"]
-    IAM["🔐 Enterprise IAM"]
-    Network["🛠 Network Team"]
-    Finance["💵 Finance and Controlling"]
-    Security["🔖 IT Security"]
-  end
-  DevOps--1. Order<br>cloud tenant-->Platform
-  DevOps--2. Set up IAM groups according to<br>platform team's requirements-->IAM
-  DevOps--3. Order IP Range-->Network
-  DevOps--4. Order<br>on-prem connectivity-->Platform
-  DevOps--5. Security Review-->Security
-  DevOps<-- receive quartely chargeback report-->Finance
-```
-
-<!-- unsupported block type: embed -->
+![image-cade48b7-0ce2-4ede-989e-e7c7d4d9727a](./cade48b7-0ce2-4ede-989e-e7c7d4d9727a.png)
 
 As the figure above illustrates, the team needs to "shop around" different services and integrate their capabilities. Provisioning each service involves finding the right contact point, following its procurement process and then composing it with other services. This is a challenge as teams may need to learn about the hidden interdependencies between IT services and how they can make them "click" together. For example, when a Team provisions a new AWS Account, they may need to set up an IAM group with a conventional name that contains the AWS Account number.
 
@@ -95,25 +53,7 @@ As the figure above illustrates, the team needs to "shop around" different servi
 
 The Cloud Foundation approach frees DevOps teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables DevOps teams to provision and manage cloud services from a single organisational capability and leveraging a consistent control plane offering API-driven self-service, IAM and billing.
 
-<!-- unsupported block type: toggle -->
-
-```mermaid
-flowchart BT;
-  subgraph Pillars["Cloud Foundation"]
-    %% direction TB;
-    Foundation["☁️ Cloud Foundation"]
-    Tenant["🗂 Tenant Management"]
-    IAM["🔐 IAM"]
-    Compliance["🔖 Security & Compliance"]
-    Chargeback["💵 Cost Management"]
-    Services["🛠 Service Ecosystem"]
-		Foundation<-.->Tenant & IAM & Services & Compliance & Chargeback
-  end
-  DevOps["DevOps Team"]
-  DevOps --> Foundation
-```
-
-<!-- unsupported block type: embed -->
+![image-9678847c-4883-4e5a-981b-3e33284878eb](./9678847c-4883-4e5a-981b-3e33284878eb.png)
 
 To achieve integration between the different pillars, the Cloud Foundation team implements capabilities like a [Multi-Cloud Tenant Database](../maturity-model/tenant-management/multi-cloud-tenant-database.md) and [Federated Identity and Authentication](../maturity-model/iam/federated-identity-and-authentication.md). To provide [On-Premise Network Connection](../maturity-model/service-ecosystem/on-premise-network-connection.md), the team provides an API-driven service that orchestrates provisioning an IP range from IPAM and then setting it up on AWS Transit Gateway. 
 
