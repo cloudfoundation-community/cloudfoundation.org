@@ -396,7 +396,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "Draft",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
@@ -762,7 +762,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "Draft",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "b4678790-ab53-4219-83e7-fbde18383d05",
@@ -1528,7 +1528,7 @@ export const index = [
         "enables": [
           "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
         ],
-        "redaction-state": "Draft",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
