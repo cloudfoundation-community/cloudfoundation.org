@@ -45,31 +45,11 @@ The system **ascertains** the user’s **identity**, usually through a combin
 
 IAM systems also support **federated identities**, meaning that identity information can be exchanged and managed **across technical boundaries** (e.g., between computers and the cloud). Your enterprise already has an Enterprise IAM System (like an AD or LDAP). You can use these identities and federate them into the cloud. This helps in hooking into the processes using the existing identities. 
 
-Today, businesses, and corporations are becoming more and more a mixture of on-premises and cloud applications. Users require access to those applications both on-premise and in the cloud. Managing users both on-premise and in the cloud poses challenging scenarios.
+Today, businesses and corporations are becoming more and more a mixture of on-premises and cloud applications. Users require access to those applications both on-premise and in the cloud. Managing users both on-premise and in the cloud poses challenging scenarios.
 
 The identity solutions span on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location. This is referred to as **hybrid identity**.
 
-All major cloud platforms (AWS, Azure & Google Cloud) offer integrations and solutions for identity federation, identity sync, or managing cloud-native identities. You can read more about each individual implementation below.
-
-
-
-## Seven Laws of Identity
-
-Seven so-called "laws of identity" sit beneath federated identity systems.
-
-**1. User control and consent:** Users give permission to share data, and they have at least some say in how shares happen.
-
-**2. Minimal disclosure:** The smallest amount of identifying information is shared, and it's stored securely and deleted quickly.
-
-**3. Justification:** Only those who can prove they need access can get it.
-
-**4. Directed identity:** Protection of identity is paramount, and users should be assigned private identifiers for that purpose. Companies can't work together to build a more permanent view of someone working across platforms.
-
-**5. Competition:** Many identity providers should be supported, as competition breeds better performance.
-
-**6. Human integration:** A real person has a place in the process, reducing the risk of computer-to-computer hacks.
-
-**7. Consistency:** The users have a simple, consistent experience among platforms.
+All major cloud platforms (AWS, Azure & Google Cloud) offer integrations and solutions for identity federation, identity sync, or managing cloud-native identities. You can read more about each individual implementation below
 
 ## Best Practices for Implementing Federated Identity and Authentication System
 
@@ -100,7 +80,7 @@ iam --> SCIM --> aws
 
 ### Azure Active Directory (AAD)
 
-The tool [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis) is useful to sync the central enterprise AD and Azure. This allows leveraging a  [hybrid identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) architecture to federate AAD authentication to an on-premise ADFS service.
+The tool [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis) is useful to sync the central enterprise AD and Azure. This allows leveraging a [hybrid identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/) architecture to federate AAD authentication to an on-premise ADFS service.
 
 This assists users, groups and memberships to be synced into an AAD Tenant owned by the organization.
 
@@ -111,6 +91,24 @@ Use the tool [Google Cloud Directory Sync](https://support.google.com/a/answer/1
 ### AWS SSO
 
 [AWS SSO](https://aws.amazon.com/single-sign-on/) supports the SCIM protocol for identity provisioning and deprovisioning. While SCIM is a well-established protocol, many deployed on-premise IAM systems still lack support for this protocol. Typical IAM architectures deploying AWS SSO, therefore, use a "cloud-enabled" Identity Provider such as Azure Active Directory or Google Cloud Identity that supports SCIM in a "two-tiered" IAM architecture that synchronizes identities from On-Premise to AAD and then from AAD to AWS SSO.
+
+## Seven Laws of Identity
+
+Seven so-called "laws of identity" sit beneath federated identity systems.
+
+**1. User control and consent:** Users give permission to share data, and they have at least some say in how shares happen.
+
+**2. Minimal disclosure:** The smallest amount of identifying information is shared, and it's stored securely and deleted quickly.
+
+**3. Justification:** Only those who can prove they need access can get it.
+
+**4. Directed identity:** Protection of identity is paramount, and users should be assigned private identifiers for that purpose. Companies can't work together to build a more permanent view of someone working across platforms.
+
+**5. Competition:** Many identity providers should be supported, as competition breeds better performance.
+
+**6. Human integration:** A real person has a place in the process, reducing the risk of computer-to-computer hacks.
+
+**7. Consistency:** The users have a simple, consistent experience among platforms.
 
 ## What Does Sync Groups *refer to?*
 

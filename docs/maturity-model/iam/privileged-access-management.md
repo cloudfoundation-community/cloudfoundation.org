@@ -28,8 +28,6 @@ In an enterprise environment, “privileged access” is a term used to designat
 
 Access to cloud tenants is usually not a privileged operation from a cloud foundation perspective but for DevOps team it is the other way round. From the DevOps team perspective, cloud tenants are an infrastructure and access to the application infrastructure is usually administrative/privileged. DevOps teams using these cloud tenants need to be equipped with appropriate means to secure access to the environments. 
 
-
-
 ## Key Points
 
 Below you will find some important points to understand PAM better:
@@ -40,13 +38,11 @@ Below you will find some important points to understand PAM better:
 
     **Closed** landing zone designs on the other hand prevent teams from creating or modifying IAM roles and permissions on cloud tenants. Teams must request all such changes via the cloud foundation team.
 
-    For more details on authorization and privileged access, please refer  to the topic [Authorization Concept](./authorization-concept.md).
+    For more details on authorization and privileged access, please refer to the topic [Authorization Concept](./authorization-concept.md).
 
 - Emergency access accounts are highly privileged, and they are not assigned to specific individuals. Emergency access accounts are limited to emergency or "break glass"' scenarios where normal administrative accounts can't be used. It is recommended that you maintain a goal of restricting emergency account use to only the times when it is absolutely necessary. For example, when an important application has stopped functioning and operating users needs access to debug and fix the problem or when project access for a specific user must be immediately revoked due to an account compromise.
 
 - PAM is grounded in the principle of least privilege wherein users only receive the minimum levels of access required to perform their job functions. The principle of least privilege is widely considered to be a best practice and is a fundamental step in protecting privileged access to high-value data and assets.
-
-
 
 ## Implementation of PAM
 
