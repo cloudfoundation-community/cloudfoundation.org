@@ -20,14 +20,14 @@ properties:
   name: Federated Identity and Authentication
 ---
 
-## What Is Identity and Access Management (IAM) Systems?
+## What Is Identity and Access Management (IAM) System?
 
 Identity and access management (IAM) stands for the **central management** of users and access rights across **systems**, **applications** and in the **cloud.** It is a means of managing **user accounts**
 and **privileges** for systems and programs in a **compliant** manner. IAM allows you to **open** the **corporate network** up to external partners, clients and suppliers **without risking** **security breaches.**
 
 ## Why We Need Federated Identity and Authentication Management?
 
-The system **ascertains** the user’s **identity**, usually through a combination of **user name** and **password** or by retrieving **biometric data** (*authentication*). The established *identity* is associated with certain **access rights** (*authorization*). Each user needs an identity to access a cloud provider as shown below:
+User Identity refers to an electronic identity utilized for interaction with software. Each user needs user identity to access a cloud provider as shown below:
 
 ```mermaid
 graph TB
@@ -41,11 +41,9 @@ user -. access .-> gc
 user -. access .-> aws
 ```
 
-IAM systems also support **federated identities**, meaning that identity information can be exchanged and managed **across technical boundaries** (e.g., between computers and the cloud). Your enterprise already has an Enterprise IAM System (like an AD or LDAP). You can use these identities and federate them into the cloud. This helps in hooking into the processes using the existing identities. Most organizations rely on an Active Directory (AD) or LDAP on-premise system as a central user directory. Enterprise IAM Systems allows users to access this central directory and assists in the following: 
+The system **ascertains** the user’s **identity**, usually through a combination of **user name** and **password** or by retrieving **biometric data** (*authentication*). The established *identity* is associated with certain **access rights** (*authorization*). 
 
-- Integrating HR workflows and master data for smooth user onboarding and off-boarding.
-
-- Approving workflows like providing approvals for various processes or roles.
+IAM systems also support **federated identities**, meaning that identity information can be exchanged and managed **across technical boundaries** (e.g., between computers and the cloud). Your enterprise already has an Enterprise IAM System (like an AD or LDAP). You can use these identities and federate them into the cloud. This helps in hooking into the processes using the existing identities. 
 
 Today, businesses, and corporations are becoming more and more a mixture of on-premises and cloud applications. Users require access to those applications both on-premise and in the cloud. Managing users both on-premise and in the cloud poses challenging scenarios.
 
@@ -53,32 +51,32 @@ The identity solutions span on-premises and cloud-based capabilities. These solu
 
 All major cloud platforms (AWS, Azure & Google Cloud) offer integrations and solutions for identity federation, identity sync, or managing cloud-native identities. You can read more about each individual implementation below.
 
+## Best Practices for Implementing Federated Identity and Authentication System
 
+The following shows an example of high-level architecture. You can access the cloud platforms via Enterprise IAM System as shown below. Most organizations rely on an Active Directory (AD) or LDAP on-premise system as a central user directory. Enterprise IAM Systems allows users to access this central directory and assists in the following: 
 
-## Implementation of Federated Identity and Authentication System
+- Integrating HR workflows and master data for smooth user onboarding and off-boarding.
 
-The following shows an example of high-level architecture. You can access the cloud platforms in two different ways as shown below. One way is to access it directly and the other way is to do it via Enterprise IAM System.
+- Approving workflows like providing approvals for various processes or roles.
 
 ```mermaid
 graph TB
 	iam[Enterprise IAM System]
-	identitySource[(Golden Identity Source)]
-	identityConnector[Connector/Sync]
+	identitySource[(HR System)]
 	az[Azure AAD]
-	gc[Google GCD]
+	gc[Google Cloud Identity]
 	aws[AWS SSO]
-	user([User])
+  adcs[AD Connect Sync]
+  gcds[GCDS]
 
-iam --> identitySource
-user -- 1. login --> iam
-identitySource --> identityConnector
-identityConnector --> az
-identityConnector --> gc
-identityConnector --> aws
-user -. 2. access .-> az
-user -. 2. access .-> gc
-user -. 2. access .-> aws
+identitySource --> iam
+iam --> adcs --> az
+iam --> gcds -->  gc
+iam --> SCIM --> aws
+ 
 ```
+
+
 
 ### Azure Active Directory (AAD)
 
@@ -94,7 +92,7 @@ Use the tool [Google Cloud Directory Sync](https://support.google.com/a/answer/1
 
 [AWS SSO](https://aws.amazon.com/single-sign-on/) supports the SCIM protocol for identity provisioning and deprovisioning. While SCIM is a well-established protocol, many deployed on-premise IAM systems still lack support for this protocol. Typical IAM architectures deploying AWS SSO, therefore, use a "cloud-enabled" Identity Provider such as Azure Active Directory or Google Cloud Identity that supports SCIM in a "two-tiered" IAM architecture that synchronizes identities from On-Premise to AAD and then from AAD to AWS SSO.
 
-## Who Needs to Be Provisioned on Which Cloud Provider? How to Manage That?→ *Sync Groups*
+## What Does Sync Groups *refer to?*
 
 A fundamental pre-requisite for these federated identity architectures is to determine the set of identities to synchronize to cloud directories. The best practice is to avoid syncing the whole on-premise directory, as this needlessly distributes personally identifiable information (PII) and violates "need to know" principles.
 
