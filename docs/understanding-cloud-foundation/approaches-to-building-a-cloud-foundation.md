@@ -95,7 +95,7 @@ The Cloud Foundation Maturity model can help practioners identify the relevant c
 
 ### Advantages and Disadvantages
 
-One advantage is that pillars can start moving early and without stallignon allignemnt independently to provide cloud 
+One advantage is that the pillars can be built early and provide cloud environments without slowdowns caused by dependencies in other pillars.
 
 The key **disadvantages** of this model are
 
