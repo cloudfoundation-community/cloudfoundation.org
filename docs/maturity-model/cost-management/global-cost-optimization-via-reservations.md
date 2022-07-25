@@ -57,9 +57,23 @@ At the most basic level, cloud providers offer commitment options based on **glo
 
 > **💡** Resource performance reservations are very workload specific and thus best implemented as [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md). 
 
-## Implementation
+## Proven Patterns for Implementing Global Cloud Cost Optimizations
 
-Cloud Foundation teams should consider implementing this building block before looking into  [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md). However, depending on the organizational philosophy (cf. [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams can also consider implementing only one or both capabilities.
+When implementing a cloud cost optimization strategy, it’s important that cloud foundation teams adopt an iterative approach. Cloud cost optimization requires planning and effort. Different measures will have a different return on investment in terms of the cloud foundation team’s effort. A good guideline is therefore to implement measures with high impact and low effort first before moving on to measures with more effort and less savings potential. Cost optimization has diminishing returns.
 
+### Control Access to Reservation and Commitment Programmes
 
+The first consideration is that the ability to create reservations and commitments, sometimes even programatically through an API, can quickly hold the organization liable for hundreds of thousands to millions of dollars to the cloud provider. The landing zone should therefore tightly control who in the organization can make these reservations, e.g. by denying access to the APIs via [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md) or not granting the required permissions via the [Identity and Access Management Concept](../iam/identity-and-access-management-concept.md).
+
+Typically, organizations have compliance rules on spend thresholds that can be approved by each level of management. Centralizing spend decisions to the cloud foundation team is therefore a valid and easy approach to ensure compliance.. 
+
+### Leverage Cloud Provider’s Cost Optimization Tools
+
+A key advantage of implementing cost optimization globally on the organization level is that the cloud foundation team can much more accurately identify base-load demands that are shared across the whole organization. For example, a web application may need to scale up during the day time, while a batch job runs only at night. If both applications can use the same type of virtual machine instances, the cloud foundation team can identify the opportunity to purchase a reservation for those instances, whereas each application team individually would not.
+
+The cloud providers have added more and more capabilities to detect these optimization, e.g. with tools like [AWS Reservation Recommendations](https://docs.aws.amazon.com/cost-management/latest/userguide/ri-recommendations.html) and GCPs various [cost recommender services](https://cloud.google.com/recommender/docs/recommenders). These tools can not only identify opportunities for purchasing resources more efficiently with reservations, but can also identify idle workloads and give right-sizing recommendations.
+
+### Combine with Individual Project Cost Optimization
+
+Depending on the organizational philosophy (cf. [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams should also consider [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md).  While global cost optimization can spot optimization opportunities across the whole enterprise, individual projects often times have better local information about their workloads. For example, a team may be spinning up a new large database cluster that makes up a majority of their cloud spend. They already know that this cluster is going to be always-on base-load and can therefore buy a reservation right away. Review the [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md) building block for more information.
 
