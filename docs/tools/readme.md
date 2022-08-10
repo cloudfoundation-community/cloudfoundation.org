@@ -7,6 +7,12 @@ order: 0
 ---
 
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
+## CFMM Tools
+
+| Name                   | Category |
+| ---------------------- | -------- |
+| Cloud Carbon Footprint |          |
+
 ## CFMM Tools - Onboarding
 
 | Name      | Category   |
