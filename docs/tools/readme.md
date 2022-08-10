@@ -12,6 +12,7 @@ order: 0
 | Name                   | Category |
 | ---------------------- | -------- |
 | Cloud Carbon Footprint |          |
+| Quay                   |          |
 
 ## CFMM Tools - Onboarding
 

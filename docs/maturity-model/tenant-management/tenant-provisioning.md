@@ -40,7 +40,7 @@ In practice, many cloud foundation teams miss the right point in time to invest 
 
 ### Apply Proper Tenant Isolation
 
-- Isolate teams and workloads using tenants - no sharing! One of the worst anti-patterns caused by not having sufficient tenant provisioning capability is that teams put development and production workloads into the same tenant. This encourages bad security practices that can lead to compromise of production environments.
+Isolate teams and workloads using tenants - no sharing! One of the worst anti-patterns caused by not having sufficient tenant provisioning capability is that teams put development and production workloads into the same tenant. This encourages bad security practices that can lead to compromise of production environments.
 
 ### IAM Should Be Part of Tenant Provisioning
 
