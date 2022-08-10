@@ -941,8 +941,8 @@ export const index = [
   {
     "frontmatter": {
       "id": "59cdf884-5bd2-4b55-87f8-824a4a35623c",
-      "url": "https://www.notion.so/Monthly-cloud-project-billing-report-59cdf8845bd24b5587f8824a4a35623c",
-      "title": "Monthly cloud project billing report",
+      "url": "https://www.notion.so/Monthly-cloud-project-billing-report-with-meshStack-59cdf8845bd24b5587f8824a4a35623c",
+      "title": "Monthly cloud project billing report with meshStack",
       "description": "meshStack generates so-called chargeback statements for the resource consumption of each tenant. Cloud tenant owner can then view consumption over multiple cloud platforms in the same project.",
       "properties": {
         "block": [
@@ -952,7 +952,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
-        "name": "Monthly cloud project billing report"
+        "name": "Monthly cloud project billing report with meshStack"
       }
     }
   },
@@ -961,6 +961,13 @@ export const index = [
       "id": "5c2013b6-4c56-4813-8be7-ad86757014af",
       "url": "https://www.notion.so/collie-cli-5c2013b64c5648138be7ad86757014af",
       "title": "collie-cli"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "5cbf2012-1384-4f19-b6f1-d515fff4dcc6",
+      "url": "https://www.notion.so/Cloud-Carbon-Footprint-5cbf201213844f19b6f1d515fff4dcc6",
+      "title": "Cloud Carbon Footprint"
     }
   },
   {
@@ -1284,6 +1291,24 @@ export const index = [
       "title": "Tool Support",
       "category": "Tools",
       "order": 11
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "7f68e769-70d6-4c41-bdc2-de273d61bd23",
+      "url": "https://www.notion.so/Cloud-Carbon-Footprint-reporting-7f68e76970d64c41bdc2de273d61bd23",
+      "title": "Cloud Carbon Footprint reporting",
+      "description": "Cloud Carbon Footprint takes your cloud provider cost report data and uses a community-developed emissions model to estimate carbon emission data.",
+      "properties": {
+        "block": [
+          "ce20312c-aa7a-453f-82f2-f186469dd973"
+        ],
+        "tool": [
+          "5cbf2012-1384-4f19-b6f1-d515fff4dcc6"
+        ],
+        "link": null,
+        "name": "Cloud Carbon Footprint reporting"
+      }
     }
   },
   {
@@ -1776,13 +1801,16 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "Draft",
+        "redaction-state": "review-v1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "28740e92-5559-4931-ab04-17cfb026edd5"
         ],
         "scope": "🏢 Core",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "7f68e769-70d6-4c41-bdc2-de273d61bd23",
+          "ffab4f09-a975-4997-8213-15b7fa6ab10c"
+        ],
         "name": "Monthly Cloud Project Carbon Footprint Report"
       }
     }
@@ -2255,6 +2283,24 @@ export const index = [
       "title": "Why Build a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
       "order": 10
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "ffab4f09-a975-4997-8213-15b7fa6ab10c",
+      "url": "https://www.notion.so/Monthly-Cloud-Project-Footprint-Report-with-meshStack-ffab4f09a9754997821315b7fa6ab10c",
+      "title": "Monthly Cloud Project Footprint Report with meshStack",
+      "description": "meshStack supports first-party emissions reports from GCP to produce environmental reports. These are included in chargeback statements with CO2e as a currency.",
+      "properties": {
+        "block": [
+          "ce20312c-aa7a-453f-82f2-f186469dd973"
+        ],
+        "tool": [
+          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+        ],
+        "link": null,
+        "name": "Monthly Cloud Project Footprint Report with meshStack"
+      }
     }
   }
 ];
