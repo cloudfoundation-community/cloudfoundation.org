@@ -377,10 +377,13 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "b441ec40-c21b-4c49-a57a-b4f5146789cd"
+        ],
         "name": "Shared container registry"
       }
     }
@@ -1306,7 +1309,7 @@ export const index = [
         "tool": [
           "5cbf2012-1384-4f19-b6f1-d515fff4dcc6"
         ],
-        "link": null,
+        "link": "https://www.cloudcarbonfootprint.org",
         "name": "Cloud Carbon Footprint reporting"
       }
     }
@@ -1538,6 +1541,24 @@ export const index = [
       "title": "Cloud Foundation Pillars",
       "category": "Maturity Model",
       "order": -1
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "b441ec40-c21b-4c49-a57a-b4f5146789cd",
+      "url": "https://www.notion.so/Shared-Container-Registry-with-Quay-b441ec40c21b4c49a57ab4f5146789cd",
+      "title": "Shared Container Registry with Quay",
+      "description": "Quay is a container image registry that enables you to build, organize, distribute, and deploy containers. Quay gives you security over your repositories with image vulnerability scanning and robust access controls. Project Quay provides a scalable open source platform to host container images across any size organization.",
+      "properties": {
+        "block": [
+          "1a1cdeb0-de7e-4ea9-a963-e409b9abed54"
+        ],
+        "tool": [
+          "e8884286-1070-4de8-acc2-64523e237186"
+        ],
+        "link": "https://www.projectquay.io",
+        "name": "Shared Container Registry with Quay"
+      }
     }
   },
   {
@@ -2170,6 +2191,13 @@ export const index = [
         ],
         "name": "Link Cloud Tenants to CMDB/EAM"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "e8884286-1070-4de8-acc2-64523e237186",
+      "url": "https://www.notion.so/Quay-e888428610704de8acc264523e237186",
+      "title": "Quay"
     }
   },
   {
