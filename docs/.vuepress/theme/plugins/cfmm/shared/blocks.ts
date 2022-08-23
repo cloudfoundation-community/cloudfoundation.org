@@ -1822,7 +1822,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "redaction-state": "review-v1",
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "28740e92-5559-4931-ab04-17cfb026edd5"
