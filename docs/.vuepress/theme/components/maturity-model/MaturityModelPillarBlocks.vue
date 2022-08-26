@@ -5,6 +5,8 @@
       :key="item.link"
       :block-data="item"
       :selected-tool="selectedTool"
+      :show-controls="showControls"
+      :hide-unselected="hideUnselected"
     />
     <div class="spacer"></div>
   </div>
@@ -24,6 +26,8 @@ interface Props {
   selectedTool: string;
   selectedScopes: string[];
   selectedStages: string[];
+  showControls: boolean;
+  hideUnselected: boolean;
 }
 
 const props = defineProps<Props>();

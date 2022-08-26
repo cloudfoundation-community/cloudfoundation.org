@@ -44,7 +44,6 @@
     </select>
   </div>
   <div class="maturity-model-landing-page">
-    <h1 class="maturity-model-title">Maturity Model</h1>
     <div class="card">
       <div class="card-col" v-for="pillar in pillars" :key="pillar">
         <MaturityModelPillarDescription :pillar="pillar" />
@@ -53,6 +52,8 @@
           :selected-tool="selectedTool"
           :selected-scopes="selectedScopes"
           :selected-stages="selectedStages"
+          :show-controls="showControls"
+          :hide-unselected="hideUnselected"
         />
       </div>
     </div>
@@ -89,6 +90,9 @@ let selectedScopes = ref([...scopeSelectOptions])
 
 const stageSelectOptions = ["⭐️", "⭐️⭐️", "⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️⭐️"];
 let selectedStages = ref([...scopeSelectOptions]);
+
+let showControls = ref(false);
+let hideUnselected = ref(false);
 
 onMounted(() => {
   const selectedToolQueryParam = useRoute().query.selectedTool;

@@ -1,19 +1,25 @@
 <template>
-  <div class="block-wrapper">
-    <router-link :to="props.blockData.link" class="block-atom">
-      <div class="block" :disabled="!!selectedTool && !props.blockData.tools.includes(props.selectedTool)">
-        <div class="block-props d-flex" @click="onPropsClick">
-          <BlockJourneyStage :journey-stage="blockData.journeyStage" />
-          <BlockScope :scope="blockData.scope" />
+  <div v-if="!hideUnselected || selected">
+    <div v-if="showControls">
+      <input type="checkbox" v-model="selected" />
+      <label for="checkbox">Include {{ selected }}</label>
+    </div>
+    <div class="block-wrapper">
+      <router-link :to="blockData.link" class="block-atom">
+        <div class="block" :disabled="!!selectedTool && !props.blockData.tools.includes(props.selectedTool)">
+          <div class="block-props d-flex" @click="onPropsClick">
+            <BlockJourneyStage :journey-stage="blockData.journeyStage" />
+            <BlockScope :scope="blockData.scope" />
+          </div>
+          <div class="block-content">
+            <p v-text="blockData.title"></p>
+          </div>
         </div>
-        <div class="block-content">
-          <p v-text="blockData.title"></p>
-        </div>
-      </div>
-      <p class="block-summary" v-bind:class="{ expand: expand }">
-        {{ shortSummary }}
-      </p>
-    </router-link>
+        <p class="block-summary" v-bind:class="{ expand: expand }">
+          {{ shortSummary }}
+        </p>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -29,9 +35,13 @@ import exp from "constants";
 interface Props {
   blockData: MaturityModelBlock;
   selectedTool: string;
+  showControls: boolean;
+  hideUnselected: boolean;
 }
 
 const props = defineProps<Props>();
+
+const selected = ref(true);
 
 // we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
 // unfortunately we can't use css text-overflow to render ellipsis as that does not work on multi-line text
@@ -51,7 +61,6 @@ function onPropsClick(event: Event) {
     expand.value = !expand.value;
     event.preventDefault();
   }
-
 }
 </script>
 
