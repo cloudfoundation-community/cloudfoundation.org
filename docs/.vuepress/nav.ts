@@ -1,4 +1,5 @@
 import { inferPagePath, SiteLocaleConfig } from "vuepress";
+import { warn } from "@vuepress/utils";
 import type { SidebarConfig } from "@vuepress/theme-default";
 import * as fs from "fs";
 import * as path from "path";
@@ -78,7 +79,7 @@ function lookupCategoryName(dir: string) {
       x.file && path.dirname(x.file) === strippedDir && x.frontmatter.category
   );
   if (!indexItem) {
-    console.warn(
+    warn(
       `Could not find index item to determine category name for dir: ${dir}. Using category slug ${category} instead`
     );
   }
@@ -135,12 +136,20 @@ function sortedSidebar(dir: string) {
         indexEntry: index.find((i) => i.file === relativePath),
       };
     })
+    .filter((x) => {
+      if (!x.indexEntry) {
+        warn(`Ignoring page because no index entry found for `, x.relativePath);
+        return false;
+      }
+
+      return true;
+    })
     .sort((x, y) => {
       return x.indexEntry?.frontmatter.order - y.indexEntry?.frontmatter.order;
     })
     .map((x) => {
       return {
-        text: x.indexEntry.frontmatter.title,
+        text: x.indexEntry?.frontmatter.title,
         link: lookupPagePath(x.relativePath),
       };
     });
