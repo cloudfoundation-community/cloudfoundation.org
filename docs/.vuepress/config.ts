@@ -41,17 +41,17 @@ navbar.push(
     link: "/understanding-cloud-foundation/",
   },
   {
-    text: "Maturity Model",
-    link: "/maturity-model/",
-  },
-  {
     text: "Pillars",
     children: [
       ...getChildDirectories("docs/maturity-model").map(
         (x) => `/maturity-model/${x}/`
       ),
     ],
-  }
+  },
+  {
+    text: "Maturity Model",
+    link: "/maturity-model/",
+  },
 );
 
 // for the maturity model, each _page_ gets its own sidebar entry!
