@@ -1,8 +1,8 @@
 ---
 id: 4f1a5a1d-8abe-42e1-ba96-0f5a6b68e38f
 url: >-
-  https://www.notion.so/What-is-the-Cloud-Foundation-Maturity-Model-4f1a5a1d8abe42e1ba960f5a6b68e38f
-title: What is the Cloud Foundation Maturity Model
+  https://www.notion.so/What-is-a-Cloud-Foundation-4f1a5a1d8abe42e1ba960f5a6b68e38f
+title: What is a Cloud Foundation
 category: Understanding Cloud Foundation
 order: 0
 ---
