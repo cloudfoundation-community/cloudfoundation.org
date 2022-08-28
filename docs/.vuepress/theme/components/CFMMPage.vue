@@ -9,8 +9,8 @@
         <slot name="after" />
         <Feedback :page="frontmatter.title"></Feedback>
       </div>
-      <PageMeta />
       <PageNav />
+      <PageMeta />
     </div>
 
     <slot name="right" />
@@ -103,8 +103,17 @@ main.model-theme {
 }
 
 .model-theme {
-  .page-nav a {
-    color: white;
+  
+  // make page nav look like another "block" of content
+  .page-nav {
+    .inner {
+      border-top: none; // reset border top
+    }
+
+    background-color: var(--c-bg);
+    border-radius: var(--c-cfmm-border-radius-lg);
+    margin-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .page-meta .meta-item {
