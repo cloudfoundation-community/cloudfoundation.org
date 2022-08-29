@@ -983,7 +983,7 @@ export const index = [
       "category": "Pillar",
       "pageType": "CFMMPillar",
       "properties": {
-        "short-name": "Service Ecosystem"
+        "short-name": "Service Ecosys."
       }
     }
   },

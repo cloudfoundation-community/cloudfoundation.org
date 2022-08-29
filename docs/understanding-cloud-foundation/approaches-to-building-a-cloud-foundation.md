@@ -162,7 +162,7 @@ However, one key disadvantage of the approach is that it typically results in ve
 
 Another problem is that inconsistent possible implementations of e.g. IAM and Chargeback capabilities overburden their pillar's stakeholders. This is a result of each platform foundation building a "point-to-point" or "process-to-process" interface to the pillar.
 
-Learn more: [https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/](https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/)
+Learn more in [The Key to Cloud Foundation Excellence](https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/).
 
 ### Building a Cloud Foundation Platform by Platform
 

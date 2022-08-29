@@ -8,7 +8,7 @@ description: >-
 category: Pillar
 pageType: CFMMPillar
 properties:
-  short-name: Service Ecosystem
+  short-name: Service Ecosys.
 ---
 
 As an organization’s cloud adoption accelerates, internal cloud customers will start requesting additional services from Cloud Foundation teams like managed on-premise connectivity or managed DevOps toolchains. Providing a rich ecosystem of services can helps teams build on the cloud more successfully and can also be an important enabler of cloud adoption speed.
