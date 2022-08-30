@@ -74,7 +74,7 @@ There are now software developers in almost every specialist department. To meet
 <CallToAction>
   <CtaHeader>Explore a Team's Journey</CtaHeader>
   <CtaText>Explore a development team's journey to the cloud powered by a capable cloud foundation in our in-depth example.</CtaText>
-  <CtaButton class="btn-primary" url="./why-build-a-cloud-foundation">Explore the Journey</CtaButton>
+  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/why-build-a-cloud-foundation.html">Explore the Journey</CtaButton>
 </CallToAction>
 
 
@@ -109,7 +109,7 @@ In a Cloud Foundation team boundaries and best practices can be shared better an
 <CallToAction>
   <CtaHeader>Explore Approaches</CtaHeader>
   <CtaText>Explore different approaches to building a cloud foundation and their pros and cons..</CtaText>
-  <CtaButton class="btn-primary" url="./approaches-to-building-a-cloud-foundation">Explore Approaches</CtaButton>
+  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/approaches-to-building-a-cloud-foundation.html">Explore Approaches</CtaButton>
 </CallToAction>
 
 #### Separation of Administration and Software Delivery
