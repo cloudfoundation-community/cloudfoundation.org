@@ -112,6 +112,25 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "0697e302-7d40-4d03-a4be-0f60a3355b2b",
+      "url": "https://www.notion.so/Playground-Sandbox-Environments-0697e3027d404d03a4be0f60a3355b2b",
+      "title": "Playground / Sandbox Environments",
+      "description": "It provides a dedicated folder for Sandbox environments. This folder has different and softer org policies applied. That allows for quicker evaluation as more complex, but secure policies don’t have to be applied here.\nSandbox projects can be created via the Project Factory just like normal projects. They are just put into the Sandbox folder.\nAutomatic expiration of Sandbox environments is not part of Fabric FAST. It has to be implemented in the GitOps flow around it.",
+      "properties": {
+        "block": [
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
+        "name": "Playground / Sandbox Environments"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/security-and-compliance/automated-security-scanning.md",
     "frontmatter": {
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
@@ -196,7 +215,9 @@ export const index = [
         "depends-on": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
-          "431fe444-0b73-4592-b525-7e09a48a6457"
+          "431fe444-0b73-4592-b525-7e09a48a6457",
+          "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
+          "244b3e52-37bd-4669-a8d4-c208eb2fe529"
         ],
         "name": "Tenant Deprovisioning / Decommissioning"
       }
@@ -283,7 +304,9 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "d95e25dc-2643-4c17-9f78-76dc053d7d71"
+        ],
         "name": "Managed Key Vault"
       }
     }
@@ -325,7 +348,8 @@ export const index = [
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [
-          "8b5e9c3f-82b4-429c-ad60-49176671d537"
+          "8b5e9c3f-82b4-429c-ad60-49176671d537",
+          "0697e302-7d40-4d03-a4be-0f60a3355b2b"
         ],
         "name": "Playground / Sandbox Environments"
       }
@@ -367,7 +391,11 @@ export const index = [
           "137ac22d-b96c-4d49-aa83-da5779e3d59c"
         ],
         "scope": "☁️ Platform",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "b3f089d6-6f90-4741-88a7-69b59974d1dd",
+          "9f8e5ffa-2f6b-4030-b1ff-cf5f15165d55",
+          "8c890795-9f3d-4d37-8868-66a46e5cf83b"
+        ],
         "name": "Service Account Management"
       }
     }
@@ -397,8 +425,8 @@ export const index = [
   {
     "frontmatter": {
       "id": "1a70d150-d6eb-4b2f-8d57-ddcf78631474",
-      "url": "https://www.notion.so/GCP-Cloud-Foundation-Toolkit-Example-Foundation-1a70d150d6eb4b2f8d57ddcf78631474",
-      "title": "GCP Cloud Foundation Toolkit - Example Foundation",
+      "url": "https://www.notion.so/GCP-CFT-Example-Foundation-1a70d150d6eb4b2f8d57ddcf78631474",
+      "title": "GCP CFT - Example Foundation",
       "properties": {
         "category": "Landing Zone Implementation"
       },
@@ -423,9 +451,52 @@ export const index = [
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
         ],
         "scope": "☁️ Platform",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "aade65c8-e80c-46e8-b993-23a50076f62d",
+          "3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7",
+          "9cae193b-0656-4bac-bdd8-34cff905b947"
+        ],
         "name": "Privileged Access Management"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-1e1b6fd7482e4c5badf079ebbe3949a6",
+      "title": "Resource Policies - Blacklisting",
+      "description": "3 basic policies can be applied manually via an optional step in the wizard, they are not part of the generated Terraform code.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
+        ],
+        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-section-9",
+        "name": "Resource Policies - Blacklisting"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "244b3e52-37bd-4669-a8d4-c208eb2fe529",
+      "url": "https://www.notion.so/Tenant-Provisioning-Tenant-Deprovisioning-244b3e5237bd4669a8d4c208eb2fe529",
+      "title": "Tenant Provisioning / Tenant Deprovisioning",
+      "description": "With stage 4-projects you can define projects, but you have to touch Terraform files to create or change projects. This feels more like coding instead of configuring it as it is done with Fabric FAST. So this approach of modifying Terraform does not seem to result in the best GitOps flow for managing projects.",
+      "properties": {
+        "block": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "119bfca5-dda6-408c-b35d-c59d0f209fcf"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/tree/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0/4-projects",
+        "name": "Tenant Provisioning / Tenant Deprovisioning"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -444,7 +515,10 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "c688eecf-0335-4505-bdcb-bc6f6da28c63",
+          "9cd1dd44-526e-4b3f-9969-8f9a94c187cb"
+        ],
         "name": "On-Premise Network Connection"
       }
     }
@@ -544,7 +618,11 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8",
+          "e5ff3f30-d1b0-4bea-a0a0-cb3a3f1cd6f5",
+          "bb4aee68-0b2a-4746-98bf-18d200e58b9b"
+        ],
         "name": "Virtual Network Service"
       }
     }
@@ -564,7 +642,11 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "50e4e2e5-9fb6-49f7-8b57-6988b865b412",
+          "beba1d31-43fe-4663-b3f5-cd32d6a5cf54",
+          "c9c553ab-812b-4b46-a985-8c01fda8985b"
+        ],
         "name": "Centralized audit logs"
       }
     }
@@ -744,6 +826,44 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-3d5c12a59f914e6a9b3c774d5389b9d7",
+      "title": "Privileged Access Management (PAM)",
+      "description": "Leverages the use of groups instead of directly assigning roles to users. The principle of least privileged is applied by assigning necessary roles for each group. Furthermore, service accounts are created for automation that can be impersonated by selected groups.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/tree/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0/0-bootstrap",
+        "name": "Privileged Access Management (PAM)"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "3d96d0aa-90b8-433e-8463-5be26014e70b",
+      "url": "https://www.notion.so/Resource-Hierarchy-3d96d0aa90b8433e84635be26014e70b",
+      "title": "Resource Hierarchy",
+      "description": "You can pick from 4 different hierarchies, which makes it quite easy to find a hierarchy that matches your needs. Using even more custom ones is also possible by adapting the generated Terraform code in the end.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
+        ],
+        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-section-5",
+        "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7",
       "url": "https://www.notion.so/GCP-Setup-Checklist-410b6ce369b44ad9bf16d65e8bd512b7",
       "title": "GCP Setup Checklist",
@@ -829,6 +949,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "483a6e1f-f717-44f0-bab1-7aa1049ef367",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-483a6e1ff71744f0bab17aa1049ef367",
+      "title": "Resource Policies - Blacklisting",
+      "description": "A good amount of reasonable default policies are rolled out via Terraform. They match the best practices provided by GCPs Cloud Foundation Toolkit.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/org_policy.tf",
+        "name": "Resource Policies - Blacklisting"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24",
       "title": "Individual Project Cost Optimization via Reservations",
@@ -877,6 +1016,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "50e4e2e5-9fb6-49f7-8b57-6988b865b412",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-50e4e2e59fb649f78b576988b865b412",
+      "title": "Centralized Audit Logs",
+      "description": "By default, it captures logs from GCP’s Cloud Audit and VPC Service Control violations. It can be further customized to capture even more logs by configuring what is so-called log sinks. That way you can i.e. push logs to BigQuery or a SIEM solution.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/00-bootstrap#organization-level-logging",
+        "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786",
       "title": "Multi-cloud tenant database integrated with lifecycle management",
@@ -915,7 +1073,9 @@ export const index = [
         "scope": "☁️ Platform",
         "tool-implementations": [
           "71c1b0fb-2eea-4492-bbb8-05a83098544c",
-          "7547a774-2b9f-45fc-9123-fbb2e48ccd09"
+          "7547a774-2b9f-45fc-9123-fbb2e48ccd09",
+          "8b009e84-5e49-4c3f-94a5-834828bcb2ab",
+          "ff879e0b-ee5d-4b43-8bd9-6878b2c2223b"
         ],
         "name": "Cloud Tenant Tagging"
       }
@@ -1003,6 +1163,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "5a63a102-aa8d-45ef-9cdc-3fb8491fa790",
+      "url": "https://www.notion.so/Cloud-to-Cloud-interconnects-5a63a102aa8d45ef9cdc3fb8491fa790",
+      "title": "Cloud to Cloud interconnects",
+      "description": "It supports Direct and Partner Interconnect.",
+      "properties": {
+        "block": [
+          "a31e4077-4e84-4129-a46c-1070a8591181"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/tree/d940f6e3401ad3f19987acf56ba70b086bb2a855/3-networks#networking-architecture",
+        "name": "Cloud to Cloud interconnects"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "5c2013b6-4c56-4813-8be7-ad86757014af",
       "url": "https://www.notion.so/collie-cli-5c2013b64c5648138be7ad86757014af",
       "title": "collie-cli",
@@ -1026,7 +1205,7 @@ export const index = [
       "id": "616451c2-8afc-4626-acae-7a0fc24384e1",
       "url": "https://www.notion.so/Resource-Hierarchy-616451c28afc4626acae7a0fc24384e1",
       "title": "Resource Hierarchy",
-      "description": "FabricFAST rolls out a best-practice resource hierarchy for a Cloud Landing Zone.",
+      "description": "FabricFAST rolls out a best-practice resource hierarchy for a Cloud Landing Zone.\nA hierarchy that fits many companies is applied by default. It is divided into common branches like networking or security. A “Teams” branch contains all end-user projects. It can be easily customized via input variables (also see Tenant Provisioning below). Applying a completely different structure requires adaption to the Terraform files.\n\nFor other hierarchy structures, you can also use blueprints provided outside the context of fast stages, see “example foundations”.",
       "properties": {
         "block": [
           "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
@@ -1192,6 +1371,25 @@ export const index = [
         ],
         "name": "Multi-Cloud Tagging Policy"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "70cb4156-d6fa-41ae-a295-8bf1fdf50f6b",
+      "url": "https://www.notion.so/Cloud-to-Cloud-interconnects-70cb4156d6fa41aea2958bf1fdf50f6b",
+      "title": "Cloud to Cloud interconnects",
+      "description": "Network Documentation only mentions that Cloud Interconnects should be done similar to the HA VPN setup.\nSo it seems like the basis is there, but no specific support for setting up a concrete inter-connect.",
+      "properties": {
+        "block": [
+          "a31e4077-4e84-4129-a46c-1070a8591181"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/9b6262de4111a961ab7962cae9e6e5f807807bd6/fast/stages/02-networking-vpn/README.md#external-connectivity",
+        "name": "Cloud to Cloud interconnects"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1370,6 +1568,44 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "7beb3669-9658-4b4d-a87a-a136d9556f32",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-7beb366996584b4da87aa136d9556f32",
+      "title": "Resource Policies - Blacklisting",
+      "description": "Reasonable defaults are set and additional helpful policies are proposed via code comments in the terraform files. They can be enabled on demand.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/01-resman#organization-policies",
+        "name": "Resource Policies - Blacklisting"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8",
+      "url": "https://www.notion.so/Virtual-Networks-7e7bdd75b6f74717b7d6c083cb1a71f8",
+      "title": "Virtual Networks",
+      "description": "Offers sophisticated virtual network setups based on the “hub and spoke” design. One can choose the type of connectivity between the hub and spokes, which are: VPC Peering, Network Virtual Appliances (NVA), or VPN",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages#shared-resources-02",
+        "name": "Virtual Networks"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "tools/tool-support.md",
     "frontmatter": {
       "id": "7eab5fc5-d5e2-41d5-b762-8d80fc98b2d4",
@@ -1433,6 +1669,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "8b009e84-5e49-4c3f-94a5-834828bcb2ab",
+      "url": "https://www.notion.so/Cloud-Tenant-Tagging-8b009e845e494c3f94a5834828bcb2ab",
+      "title": "Cloud Tenant Tagging",
+      "description": "Tenants can be tagged via the project’s YAML file of the project factory. Defaults that shall be applied to all projects can also be defined. In the Project Factory it’s called labels instead of tags.\nTags cannot be defined at the Team level yet.",
+      "properties": {
+        "block": [
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/stages/03-project-factory/dev/data/defaults.yaml",
+        "name": "Cloud Tenant Tagging"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "8b5e9c3f-82b4-429c-ad60-49176671d537",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-8b5e9c3f82b4429cad6049176671d537",
       "title": "Playground / Sandbox Environments",
@@ -1446,6 +1701,44 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
         "name": "Playground / Sandbox Environments"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "8bf8d22f-4612-4050-9e7f-4b0a51b2a839",
+      "url": "https://www.notion.so/Resource-Hierarchy-8bf8d22f461240509e7f4b0a51b2a839",
+      "title": "Resource Hierarchy",
+      "description": "The FCT Example Foundation rolls out a best-practice resource hierarchy for a Cloud Landing Zone.\nIt only rolls out one specific resource hierarchy, which is separated by environment (dev, non-prod, prod). Using custom hierarchies must be implemented on your own.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation",
+        "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "8c890795-9f3d-4d37-8868-66a46e5cf83b",
+      "url": "https://www.notion.so/Service-Account-Management-8c8907959f3d4d37886866a46e5cf83b",
+      "title": "Service Account Management",
+      "description": "One service account seems to be created per project. This SA can then be impersonated by the Cloud Build SA to perform CI/CD tasks within the project. By default, iam.disableServiceAccountKeyCreation organization policy is enforced on organization-level. This is a best practice that makes use of Workload Identity Federation (WIF) as an alternative to key creation.",
+      "properties": {
+        "block": [
+          "18256d4f-e096-4281-809a-f77c5dd20ef0"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0/4-projects/modules/single_project/variables.tf#L135",
+        "name": "Service Account Management"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1492,6 +1785,44 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "9cae193b-0656-4bac-bdd8-34cff905b947",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-9cae193b06564bacbdd834cff905b947",
+      "title": "Privileged Access Management (PAM)",
+      "description": "Leverages the use of groups instead of directly assigning roles to users. The principle of least privileged is applied by assigning necessary roles for each group. Furthermore, service accounts are created for automation that can be impersonated by selected groups.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
+        ],
+        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-section-2",
+        "name": "Privileged Access Management (PAM)"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "9cd1dd44-526e-4b3f-9969-8f9a94c187cb",
+      "url": "https://www.notion.so/On-Premise-Network-Connection-9cd1dd44526e4b3f99698f9a94c187cb",
+      "title": "On-Premise Network Connection",
+      "description": "On-Prem connectivity is provided in 3 different ways for all network setups mentioned above.",
+      "properties": {
+        "block": [
+          "2468d240-6cca-4680-b9c4-6f237defa511"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/tree/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0/3-networks-dual-svpc",
+        "name": "On-Premise Network Connection"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/iam/readme.md",
     "frontmatter": {
       "id": "9ee0a54d-9b9e-47dd-9fc0-9d81213ce76c",
@@ -1503,6 +1834,25 @@ export const index = [
       "properties": {
         "short-name": "IAM"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "9f8e5ffa-2f6b-4030-b1ff-cf5f15165d55",
+      "url": "https://www.notion.so/Service-Account-Management-9f8e5ffa2f6b4030b1ffcf5f15165d55",
+      "title": "Service Account Management",
+      "description": "With the project factory, project configuration can also include service accounts provisioning alongside their permissions. By default, iam.disableServiceAccountKeyCreation organization policy is enforced on organization-level. This is a best practice that makes use of Workload Identity Federation (WIF) as an alternative to key creation.",
+      "properties": {
+        "block": [
+          "18256d4f-e096-4281-809a-f77c5dd20ef0"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/stages/03-project-factory/dev/data/projects/project.yaml.sample#L63",
+        "name": "Service Account Management"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1521,7 +1871,10 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "70cb4156-d6fa-41ae-a295-8bf1fdf50f6b",
+          "5a63a102-aa8d-45ef-9cdc-3fb8491fa790"
+        ],
         "name": "Cloud to Cloud interconnects"
       }
     }
@@ -1534,6 +1887,25 @@ export const index = [
       "title": "Approaches to building a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
       "order": 20
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "aade65c8-e80c-46e8-b993-23a50076f62d",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-aade65c8e80c46e8b99323a50076f62d",
+      "title": "Privileged Access Management (PAM)",
+      "description": "Leverages the use of groups instead of directly assigning roles to users. The principle of least privileged is applied by assigning only necessary roles for each group. Furthermore, service accounts are created for automation that can be impersonated by selected groups.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/00-bootstrap#user-groups",
+        "name": "Privileged Access Management (PAM)"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1581,7 +1953,9 @@ export const index = [
         "scope": "☁️ Platform",
         "tool-implementations": [
           "11f50039-a1d6-49de-9fbd-247a1955b474",
-          "616451c2-8afc-4626-acae-7a0fc24384e1"
+          "616451c2-8afc-4626-acae-7a0fc24384e1",
+          "8bf8d22f-4612-4050-9e7f-4b0a51b2a839",
+          "3d96d0aa-90b8-433e-8463-5be26014e70b"
         ],
         "name": "Resource Hierarchy"
       }
@@ -1623,6 +1997,25 @@ export const index = [
         "tool-implementations": [],
         "name": "Centralized workload and infrastructure logs"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "b3f089d6-6f90-4741-88a7-69b59974d1dd",
+      "url": "https://www.notion.so/Service-Account-Management-b3f089d66f90474188a769b59974d1dd",
+      "title": "Service Account Management",
+      "description": "With the project factory, project configuration can also include service accounts provisioning alongside their permissions. By default, iam.disableServiceAccountKeyCreation organization policy is enforced on organization-level. This is a best practice that makes use of Workload Identity Federation (WIF) as an alternative to key creation.",
+      "properties": {
+        "block": [
+          "18256d4f-e096-4281-809a-f77c5dd20ef0"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/stages/03-project-factory/dev/data/projects/project.yaml.sample#L63",
+        "name": "Service Account Management"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1725,6 +2118,45 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
+      "url": "https://www.notion.so/Tenant-Provisioning-Tenant-Deprovisioning-bac2d6a90bab4d58b89e9b3315f86b79",
+      "title": "Tenant Provisioning / Tenant Deprovisioning",
+      "description": "With the project factory, GitOps-based tenant provisioning can be applied. As the project configs should better be reviewed by a cloud foundation member, it is not full self-service for the end users. When removing the project definition again, the tenant will be deprovisioned by terraform.",
+      "properties": {
+        "block": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "119bfca5-dda6-408c-b35d-c59d0f209fcf"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/03-project-factory",
+        "name": "Tenant Provisioning / Tenant Deprovisioning"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "bb4aee68-0b2a-4746-98bf-18d200e58b9b",
+      "url": "https://www.notion.so/Virtual-Networks-bb4aee680b2a474698bf18d200e58b9b",
+      "title": "Virtual Networks",
+      "description": "Separate networks per environment are created and some basic firewall rules are applied. That way you can have the connectivity within one environment (e.g. all production services can talk to each other securely via a VPC). Advanced options like configuring peering or VPN approaches are not provided.",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
+        ],
+        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-heading-7",
+        "name": "Virtual Networks"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/tenant-management/readme.md",
     "frontmatter": {
       "id": "bd309e8a-9ecd-4a0d-a3c3-b464f734ca54",
@@ -1736,6 +2168,25 @@ export const index = [
       "properties": {
         "short-name": "Tenant Mgmt."
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "beba1d31-43fe-4663-b3f5-cd32d6a5cf54",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-beba1d3143fe4663b3f5cd32d6a5cf54",
+      "title": "Centralized Audit Logs",
+      "description": "Centralized Audit Logs are applied and you can configure exports to BigQuery, pub/sub systems, and more.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/log_sinks.tf",
+        "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1783,6 +2234,25 @@ export const index = [
         ],
         "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
         "name": "meshcloud Cloud Foundation Stakeholder Map"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "c688eecf-0335-4505-bdcb-bc6f6da28c63",
+      "url": "https://www.notion.so/On-Premise-Network-Connection-c688eecf03354505bdcbbc6f6da28c63",
+      "title": "On-Premise Network Connection",
+      "description": "On-prem VPN is offered with all 3 setups of the networking stages.",
+      "properties": {
+        "block": [
+          "2468d240-6cca-4680-b9c4-6f237defa511"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/02-networking-vpn#external-connectivity",
+        "name": "On-Premise Network Connection"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1848,6 +2318,25 @@ export const index = [
         ],
         "name": "Pay-per-Use for internal Services"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "c9c553ab-812b-4b46-a985-8c01fda8985b",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-c9c553ab812b4b46a9858c01fda8985b",
+      "title": "Centralized Audit Logs",
+      "description": "Basic centralized logging is configured by default.\nYou have to follow manual steps to push logs to BigQuery, SIEM, etc.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
+        ],
+        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-section-8",
+        "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1998,7 +2487,11 @@ export const index = [
           "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
         ],
         "scope": "🛬 Landing Zone",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "7beb3669-9658-4b4d-a87a-a136d9556f32",
+          "483a6e1f-f717-44f0-bab1-7aa1049ef367",
+          "1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6"
+        ],
         "name": "Resource Policies - Blacklisting"
       }
     }
@@ -2090,6 +2583,25 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "d95e25dc-2643-4c17-9f78-76dc053d7d71",
+      "url": "https://www.notion.so/Managed-Key-Vault-d95e25dc26434c179f7876dc053d7d71",
+      "title": "Managed Key Vault",
+      "description": "A Cloud KMS is rolled out to every environment so e.g. all production services have a way to reliably and securely share secret keys.",
+      "properties": {
+        "block": [
+          "137ac22d-b96c-4d49-aa83-da5779e3d59c"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/02-security#cloud-kms",
+        "name": "Managed Key Vault"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/shared-vm-image-repository.md",
     "frontmatter": {
       "id": "d9c211e3-647c-4fd7-bf3b-3c806baeea7f",
@@ -2152,7 +2664,9 @@ export const index = [
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [
-          "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
+          "d24b4c3a-1f97-4426-8999-f82a97bf1e75",
+          "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
+          "244b3e52-37bd-4669-a8d4-c208eb2fe529"
         ],
         "name": "Tenant Provisioning"
       }
@@ -2249,6 +2763,25 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#how-to-view-and-define-available-tags",
         "name": "Link Cloud Tenants to CMDB/EAM"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "e5ff3f30-d1b0-4bea-a0a0-cb3a3f1cd6f5",
+      "url": "https://www.notion.so/Virtual-Networks-e5ff3f30d1b04beaa0a0cb3a3f1cd6f5",
+      "title": "Virtual Networks",
+      "description": "Offers sophisticated virtual network setups. One can choose the type of connectivity between Dual SVPC or Hub & Spoke. ",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/tree/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0#3-networks-dual-svpc",
+        "name": "Virtual Networks"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2426,6 +2959,25 @@ export const index = [
       "title": "Why Build a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
       "order": 10
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "ff879e0b-ee5d-4b43-8bd9-6878b2c2223b",
+      "url": "https://www.notion.so/Cloud-Tenant-Tagging-ff879e0bee5d4b438bd96878b2c2223b",
+      "title": "Cloud Tenant Tagging",
+      "description": "It sets some default labels like environment, security contact, etc for all projects. But adding any custom tags requires modification of the terraform files.",
+      "properties": {
+        "block": [
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/b2e8bfc0f1ce846ebf9ae9fcfd9993447f3f9fe0/4-projects/modules/single_project/main.tf#L38",
+        "name": "Cloud Tenant Tagging"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {

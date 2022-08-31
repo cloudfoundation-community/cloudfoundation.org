@@ -15,7 +15,8 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - d95e25dc-2643-4c17-9f78-76dc053d7d71
   name: Managed Key Vault
 ---
 

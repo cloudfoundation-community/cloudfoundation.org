@@ -28,11 +28,11 @@ order: 0
 
 ## CFMM Tools - Landing Zone Implementation
 
-| Name                                              | Category                    |
-| ------------------------------------------------- | --------------------------- |
-| GCP Cloud Foundation Toolkit - Example Foundation | Landing Zone Implementation |
-| GCP Fabric FAST                                   | Landing Zone Implementation |
-| GCP Setup Checklist                               | Landing Zone Implementation |
+| Name                         | Category                    |
+| ---------------------------- | --------------------------- |
+| GCP CFT - Example Foundation | Landing Zone Implementation |
+| GCP Fabric FAST              | Landing Zone Implementation |
+| GCP Setup Checklist          | Landing Zone Implementation |
 
 ## CFMM Tools - DevOps
 
