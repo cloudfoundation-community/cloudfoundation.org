@@ -1,9 +1,9 @@
-import { computed, ComputedRef } from "vue";
-import { index } from "./blocks";
+import { computed, ComputedRef } from 'vue';
 
-import { MaturityModelBlock } from "./MaturityModelBlock";
-import { MaturityModelPillar } from "./MaturityModelPillar";
-import { Pillar } from "./Pillar";
+import { index } from './blocks';
+import { MaturityModelBlock } from './MaturityModelBlock';
+import { MaturityModelPillar } from './MaturityModelPillar';
+import { Pillar } from './Pillar';
 
 export interface PillarModel {
   pillar: MaturityModelPillar;
@@ -28,6 +28,7 @@ export class CloudFoundationMaturityModel {
         title: value.frontmatter.title,
         link: this.formatLink(value.file),
         summary: value.frontmatter.description,
+        tools: this.blockTools(value.frontmatter.properties["tool-implementations"])
       }))
   );
 
@@ -48,6 +49,22 @@ export class CloudFoundationMaturityModel {
       return new Map(this.blocks.value.map((x) => [x.id, x]));
     }
   );
+
+  readonly allEntriesById = Object.assign({}, ...index
+      .map((x) => ({ [x.frontmatter.id]: x.frontmatter }))
+    );
+
+  // TODO: provide some category or similar to identify tool blocks
+  readonly tools: string[] = Array.from(new Set(index
+    .filter((x) => !!x.frontmatter.properties?.['tool-implementations'] || false)
+    .flatMap((x) => this.blockTools(x.frontmatter.properties!['tool-implementations']!))
+  ))
+
+  private blockTools(linkIds: string[]): string[] {
+    return linkIds
+      .flatMap((linkId) => this.allEntriesById[linkId]?.properties["tool"])
+      .map((toolId) => this.allEntriesById[toolId]?.title || "n/a");
+  }
 
   private pillarModel(pillarName: string): PillarModel {
     return {

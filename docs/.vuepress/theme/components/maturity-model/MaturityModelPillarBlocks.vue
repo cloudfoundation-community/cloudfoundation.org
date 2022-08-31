@@ -4,6 +4,7 @@
       v-for="item in blocks"
       :key="item.link"
       :block-data="item"
+      :selected-tool="selectedTool"
     />
     <div class="spacer"></div>
   </div>
@@ -20,6 +21,7 @@ import MaturityModelBlock from "./MaturityModelBlock.vue";
 
 interface Props {
   pillar: Pillar;
+  selectedTool: string;
 }
 
 const props = defineProps<Props>();
