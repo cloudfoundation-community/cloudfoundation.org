@@ -51,14 +51,19 @@ export class CloudFoundationMaturityModel {
   );
 
   readonly allEntriesById = Object.assign({}, ...index
-      .map((x) => ({ [x.frontmatter.id]: x.frontmatter }))
-    );
+    .map((x) => ({ [x.frontmatter.id]: x.frontmatter }))
+  );
 
-  // TODO: provide some category or similar to identify tool blocks
-  readonly tools: string[] = Array.from(new Set(index
-    .filter((x) => !!x.frontmatter.properties?.['tool-implementations'] || false)
-    .flatMap((x) => this.blockTools(x.frontmatter.properties!['tool-implementations']!))
-  ))
+
+  readonly relevantToolCategories = ["Governance Platform", "cli", "Landing Zone Implementation"]
+
+  readonly tools: string[] = Array.from(
+    new Set(index
+      .filter((x) => x.frontmatter.pageType === "CFMMTool" && this.relevantToolCategories.includes(x.frontmatter.properties?.category || "n/a"))
+      .map((x) => x.frontmatter.title)
+      .sort()
+    )
+  )
 
   private blockTools(linkIds: string[]): string[] {
     return linkIds

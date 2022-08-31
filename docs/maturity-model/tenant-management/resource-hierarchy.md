@@ -18,6 +18,7 @@ properties:
   scope: ☁️ Platform
   tool-implementations:
     - 11f50039-a1d6-49de-9fbd-247a1955b474
+    - 616451c2-8afc-4626-acae-7a0fc24384e1
   name: Resource Hierarchy
 ---
 

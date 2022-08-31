@@ -45,7 +45,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.authorization.html#meshproject-roles",
         "name": "Multi-Cloud Authorization with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -106,7 +107,8 @@ export const index = [
         ],
         "link": "https://about.gitlab.com",
         "name": "DevOps Toolchains with GitLab"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -145,7 +147,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.meshmarketplace.metering.html",
         "name": "Pay-per-Use for internal Services"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -241,7 +244,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Resource Hierarchy "
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -299,7 +303,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback via consumption cost allocation"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -341,7 +346,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.identity-federation.html",
         "name": "Identity Lifecycle Management"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -386,6 +392,17 @@ export const index = [
         ],
         "name": "Shared container registry"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "1a70d150-d6eb-4b2f-8d57-ddcf78631474",
+      "url": "https://www.notion.so/GCP-Cloud-Foundation-Toolkit-Example-Foundation-1a70d150d6eb4b2f8d57ddcf78631474",
+      "title": "GCP Cloud Foundation Toolkit - Example Foundation",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -436,7 +453,11 @@ export const index = [
     "frontmatter": {
       "id": "24caa5e5-9302-44fc-9820-f75529573090",
       "url": "https://www.notion.so/CloudGate-24caa5e5930244fc9820f75529573090",
-      "title": "CloudGate"
+      "title": "CloudGate",
+      "properties": {
+        "category": "Onboarding"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -454,7 +475,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.landing-zones.html",
         "name": "Monolithic Landing Zone"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -497,7 +519,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#tenant-usage-reports",
         "name": "Monthly cloud tenant billing report"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -585,7 +608,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.metadata-tags.html",
         "name": "meshStack Self-Service Multi-Cloud Tenant Database"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -627,7 +651,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "meshStack Cloud Tenant Database"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -670,7 +695,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Managed DevOps toolchains with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -717,6 +743,17 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7",
+      "url": "https://www.notion.so/GCP-Setup-Checklist-410b6ce369b44ad9bf16d65e8bd512b7",
+      "title": "GCP Setup Checklist",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/kubernetes-cluster-as-a-service.md",
     "frontmatter": {
       "id": "42fae8c2-1ef8-4e1e-bcb4-eb6ca1520ec4",
@@ -751,7 +788,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.tenants.html#deprovisioning--deleting-projects",
         "name": "Private Cloud Tenant Deprovisioning with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -804,7 +842,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.aws.reserved-instance-guide.html",
         "name": "Individual Project Cost Optimization via Reservations"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -832,7 +871,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.policies.html",
         "name": "Manage access to Cloud Zones with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -850,7 +890,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "Multi-cloud tenant database integrated with lifecycle management"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -956,21 +997,47 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
         "name": "Monthly cloud project billing report with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
     "frontmatter": {
       "id": "5c2013b6-4c56-4813-8be7-ad86757014af",
       "url": "https://www.notion.so/collie-cli-5c2013b64c5648138be7ad86757014af",
-      "title": "collie-cli"
+      "title": "collie-cli",
+      "properties": {
+        "category": "cli"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
     "frontmatter": {
       "id": "5cbf2012-1384-4f19-b6f1-d515fff4dcc6",
       "url": "https://www.notion.so/Cloud-Carbon-Footprint-5cbf201213844f19b6f1d515fff4dcc6",
-      "title": "Cloud Carbon Footprint"
+      "title": "Cloud Carbon Footprint",
+      "properties": {},
+      "pageType": "CFMMTool"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "616451c2-8afc-4626-acae-7a0fc24384e1",
+      "url": "https://www.notion.so/Resource-Hierarchy-616451c28afc4626acae7a0fc24384e1",
+      "title": "Resource Hierarchy",
+      "description": "FabricFAST rolls out a best-practice resource hierarchy for a Cloud Landing Zone.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e"
+        ],
+        "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/01-resman",
+        "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1002,7 +1069,8 @@ export const index = [
         ],
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-costs-per-tenant",
         "name": "Check monthly cloud tenant costs with collie"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1052,7 +1120,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
         "name": "Mulit-cloud tenant database"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1163,7 +1232,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#tags-in-cloud-tenants",
         "name": "meshStack Tenant Tagging"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1181,7 +1251,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html",
         "name": "Central Management of Tenant tags and metadata"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1238,7 +1309,8 @@ export const index = [
         ],
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "collie analyze tags"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1265,6 +1337,17 @@ export const index = [
         ],
         "name": "Multi-cloud tenant database integrated with lifecycle management"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "782c2e1b-6e5b-4c41-a3ec-b033f1f61b9e",
+      "url": "https://www.notion.so/GCP-Fabric-FAST-782c2e1b6e5b4c41a3ecb033f1f61b9e",
+      "title": "GCP Fabric FAST",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -1311,7 +1394,8 @@ export const index = [
         ],
         "link": "https://www.cloudcarbonfootprint.org",
         "name": "Cloud Carbon Footprint reporting"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1340,7 +1424,11 @@ export const index = [
     "frontmatter": {
       "id": "84cf2301-844f-4e77-8f86-ed3d9244d623",
       "url": "https://www.notion.so/Stakeholder-Map-84cf2301844f4e778f86ed3d9244d623",
-      "title": "Stakeholder Map"
+      "title": "Stakeholder Map",
+      "properties": {
+        "category": "Downloads"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -1358,7 +1446,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.landing-zones.html",
         "name": "Playground / Sandbox Environments"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1398,7 +1487,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.unmanaged-tenants.html",
         "name": "Tenant Inventory Reconciliation"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1490,7 +1580,8 @@ export const index = [
         "depends-on": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
-          "11f50039-a1d6-49de-9fbd-247a1955b474"
+          "11f50039-a1d6-49de-9fbd-247a1955b474",
+          "616451c2-8afc-4626-acae-7a0fc24384e1"
         ],
         "name": "Resource Hierarchy"
       }
@@ -1511,7 +1602,8 @@ export const index = [
         ],
         "link": "https://github.com/meshcloud/collie-cli/wiki#identifying-inconsistencies-in-the-use-of-tags",
         "name": "meshcloud Cloud Foundation CLI tool"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1558,7 +1650,8 @@ export const index = [
         ],
         "link": "https://www.projectquay.io",
         "name": "Shared Container Registry with Quay"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1660,14 +1753,19 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Offer internal services on meshStack marketplace"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
     "frontmatter": {
       "id": "c5757e31-5c6c-487a-81b2-96ba50dda3af",
       "url": "https://www.notion.so/meshStack-c5757e315c6c487a81b296ba50dda3af",
-      "title": "meshStack"
+      "title": "meshStack",
+      "properties": {
+        "category": "Governance Platform"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -1685,7 +1783,8 @@ export const index = [
         ],
         "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
         "name": "meshcloud Cloud Foundation Stakeholder Map"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1703,7 +1802,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.billing.html#private-cloud-billing-with-meshcloud",
         "name": "Private Cloud Metering with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1721,7 +1821,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Consumption based pay-per-use for internal services"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1764,7 +1865,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/marketplace.index.html",
         "name": "Modular Landing Zones with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1782,7 +1884,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.onboarding.html#customer-registration",
         "name": "Guided Cloud Onboarding with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1916,7 +2019,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.tenant.html",
         "name": "Tenant provisioning with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2058,7 +2162,11 @@ export const index = [
     "frontmatter": {
       "id": "decefdc2-0883-4adb-8fc0-13b451bb8c2f",
       "url": "https://www.notion.so/GitLab-decefdc208834adb8fc013b451bb8c2f",
-      "title": "GitLab"
+      "title": "GitLab",
+      "properties": {
+        "category": "DevOps"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -2103,7 +2211,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
         "name": "Chargeback at full cost allocation"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2121,7 +2230,8 @@ export const index = [
         ],
         "link": "https://github.com/meshcloud/collie-cli/wiki#listing-tenants",
         "name": "Collie Cloud Tenant Database"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2139,7 +2249,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.metadata-tags.html#how-to-view-and-define-available-tags",
         "name": "Link Cloud Tenants to CMDB/EAM"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2197,7 +2308,9 @@ export const index = [
     "frontmatter": {
       "id": "e8884286-1070-4de8-acc2-64523e237186",
       "url": "https://www.notion.so/Quay-e888428610704de8acc264523e237186",
-      "title": "Quay"
+      "title": "Quay",
+      "properties": {},
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -2240,7 +2353,8 @@ export const index = [
         ],
         "link": "https://www.microfin.de/produkte/tools/cloudgate/",
         "name": "CloudGate"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2258,7 +2372,8 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.payment-methods.html",
         "name": "Approving budgets with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2328,7 +2443,8 @@ export const index = [
         ],
         "link": null,
         "name": "Monthly Cloud Project Footprint Report with meshStack"
-      }
+      },
+      "pageType": "CFMMTool2Block"
     }
   }
 ];
