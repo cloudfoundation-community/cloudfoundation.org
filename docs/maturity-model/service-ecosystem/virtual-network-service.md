@@ -18,7 +18,10 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - 7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8
+    - e5ff3f30-d1b0-4bea-a0a0-cb3a3f1cd6f5
+    - bb4aee68-0b2a-4746-98bf-18d200e58b9b
   name: Virtual Network Service
 ---
 

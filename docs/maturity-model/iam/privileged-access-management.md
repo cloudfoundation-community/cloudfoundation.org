@@ -18,7 +18,10 @@ properties:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
   scope: ☁️ Platform
-  tool-implementations: []
+  tool-implementations:
+    - aade65c8-e80c-46e8-b993-23a50076f62d
+    - 3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7
+    - 9cae193b-0656-4bac-bdd8-34cff905b947
   name: Privileged Access Management
 ---
 

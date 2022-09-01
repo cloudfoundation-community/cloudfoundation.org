@@ -14,7 +14,9 @@ properties:
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - 70cb4156-d6fa-41ae-a295-8bf1fdf50f6b
+    - 5a63a102-aa8d-45ef-9cdc-3fb8491fa790
   name: Cloud to Cloud interconnects
 ---
 
