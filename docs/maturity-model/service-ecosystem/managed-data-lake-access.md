@@ -23,9 +23,3 @@ properties:
 ---
 
 Giving teams the ability to connect to the central DL/DW gives teams freedom about tech stack (not locked into a central processing platform like Spark, instead can provision any tooling they need including serverless) while retaining control (via cost, central policies).
-
-
-
-Sharing a Memo with some ideas around that topic derived from the DFKI research exchange in Stockholm, June 2019.
-
-<!-- unsupported block type: file -->

@@ -1,19 +1,17 @@
 ---
 id: 4f1a5a1d-8abe-42e1-ba96-0f5a6b68e38f
 url: >-
-  https://www.notion.so/What-is-the-Cloud-Foundation-Maturity-Model-4f1a5a1d8abe42e1ba960f5a6b68e38f
-title: What is the Cloud Foundation Maturity Model
+  https://www.notion.so/What-is-a-Cloud-Foundation-4f1a5a1d8abe42e1ba960f5a6b68e38f
+title: What is a Cloud Foundation
 category: Understanding Cloud Foundation
 order: 0
 ---
 
-> **💡** **IT the cloud-native way: The Cloud Foundation as a central piece of a cloud strategy.**
-> An organization’s Cloud Foundation offers cloud as a commodity for the software development teams across the organizaton.
-> Providing a Cloud Foundation is an organizational and technological approach to managing the cloud. Its goal is to enable teams to build in the cloud and accelerate an organization’s software delivery. 
-
-### What Is a Cloud Foundation?
-
 A Cloud Foundation is an organization’s strategic approach to mastering its cloud transformation. This approach has two major aspects: An organizational and a technological one. Following the Cloud Foundation approach means putting development teams at the center and providing them with a single point of access for the management of their cloud infrastructure.
+
+> **💡** **IT the cloud-native way: The Cloud Foundation as a central piece of a cloud strategy.**
+> An organization’s Cloud Foundation offers cloud as a commodity for the software development teams across the organization.
+> Providing a Cloud Foundation is an organizational and technological approach to managing the cloud. Its goal is to enable teams to build in the cloud and accelerate an organization’s software delivery. 
 
 A Cloud Foundation is the interface for development teams to everything they need to focus on shipping software in the cloud.
 
@@ -72,6 +70,15 @@ It follows that IT must also offer its services to everybody in the company. The
 
 There are now software developers in almost every specialist department. To meet their demands, IT must find its new role and move from building to enabling.
 
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Explore a Team's Journey</CtaHeader>
+  <CtaText>Explore a development team's journey to the cloud powered by a capable cloud foundation in our in-depth example.</CtaText>
+  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/why-build-a-cloud-foundation.html">Explore the Journey</CtaButton>
+</CallToAction>
+
+
+
 #### Because Cloud Means Doing Things Fundamentally Differently
 
 What the cloud enables is fundamentally changing the tasks of the IT department. IT used to be centralized, installing systems centrally in the data center. This centralization leads to bottlenecks.
@@ -97,6 +104,13 @@ Cultural mindset change takes longer than technical implementation or purchasing
 In a decentralized, democratic structure more formalization is needed. And from a tooling perspective, companies need solutions that enable the network structure.
 
 In a Cloud Foundation team boundaries and best practices can be shared better and faster leading to better platform-specific implementations.
+
+<!--notion-markdown-cms:raw-->
+<CallToAction>
+  <CtaHeader>Explore Approaches</CtaHeader>
+  <CtaText>Explore different approaches to building a cloud foundation and their pros and cons..</CtaText>
+  <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/approaches-to-building-a-cloud-foundation.html">Explore Approaches</CtaButton>
+</CallToAction>
 
 #### Separation of Administration and Software Delivery
 
@@ -129,3 +143,4 @@ The Cloud Foundation Maturity Model is **implementation agnostic**. While meshc
 In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [**What is a Building Block**](https://cloudfoundation.meshcloud.io/maturity-model/what-is-a-building-block.html).
 
 The model also captures how building blocks relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another), and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now.
+

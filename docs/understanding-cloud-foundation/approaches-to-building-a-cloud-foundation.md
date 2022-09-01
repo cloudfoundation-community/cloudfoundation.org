@@ -4,7 +4,7 @@ url: >-
   https://www.notion.so/Approaches-to-building-a-Cloud-Foundation-a544bc7c979f427a83352011cdcb6247
 title: Approaches to building a Cloud Foundation
 category: Understanding Cloud Foundation
-order: 30
+order: 20
 ---
 
 Building a successful cloud foundation is a strategic undertaking. Since a cloud foundation is about building a single organisational capability to manage cloud adoption and consumption, it requires strong organizational alignment between different stakeholders. It therefore follows that the most successful approaches for building a cloud foundation seek to establish this alignment and productive collaboration from day one. However, this alignment between stakeholders may not be available from day one in your organization (see the Functional Pillars in [Why Build a Cloud Foundation](./why-build-a-cloud-foundation.md) for an overview of stakeholders). While we see that the organizations most successful at cloud adoption are able to create and foster strong alignment between all involved functions, teams looking to build a cloud foundation can also iteratively build a cloud foundation while navigating the pitfalls created by lacking alignment. 
@@ -42,7 +42,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Building Block](../maturity-model/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Building Block](./what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
@@ -91,7 +91,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Cluster** (see  [What is a Building Block](../maturity-model/what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Cluster** (see  [What is a Building Block](./what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
@@ -152,7 +152,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities as building blocks and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** (see [What is a Building Block](../maturity-model/what-is-a-building-block.md)) of building blocks allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
+The Cloud Foundation Maturity model can help practioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities as building blocks and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** (see [What is a Building Block](./what-is-a-building-block.md)) of building blocks allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
 
 ### Advantages and Disadvantages
 
@@ -162,7 +162,7 @@ However, one key disadvantage of the approach is that it typically results in ve
 
 Another problem is that inconsistent possible implementations of e.g. IAM and Chargeback capabilities overburden their pillar's stakeholders. This is a result of each platform foundation building a "point-to-point" or "process-to-process" interface to the pillar.
 
-Learn more: [https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/](https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/)
+Learn more in [The Key to Cloud Foundation Excellence](https://www.meshcloud.io/2021/02/24/the-cloud-foundation-key-to-cloud-excellence/).
 
 ### Building a Cloud Foundation Platform by Platform
 

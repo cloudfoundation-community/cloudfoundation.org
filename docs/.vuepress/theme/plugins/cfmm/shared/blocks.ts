@@ -780,13 +780,13 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/what-is-a-building-block.md",
+    "file": "understanding-cloud-foundation/what-is-a-building-block.md",
     "frontmatter": {
       "id": "479f18c8-ac4b-477d-b5b4-4df2f04fc4f3",
       "url": "https://www.notion.so/What-is-a-Building-Block-479f18c8ac4b477db5b44df2f04fc4f3",
       "title": "What is a Building Block",
-      "category": "Maturity Model",
-      "order": 20
+      "category": "Understanding Cloud Foundation",
+      "order": 30
     }
   },
   {
@@ -811,8 +811,8 @@ export const index = [
     "file": "understanding-cloud-foundation/readme.md",
     "frontmatter": {
       "id": "4f1a5a1d-8abe-42e1-ba96-0f5a6b68e38f",
-      "url": "https://www.notion.so/What-is-the-Cloud-Foundation-Maturity-Model-4f1a5a1d8abe42e1ba960f5a6b68e38f",
-      "title": "What is the Cloud Foundation Maturity Model",
+      "url": "https://www.notion.so/What-is-a-Cloud-Foundation-4f1a5a1d8abe42e1ba960f5a6b68e38f",
+      "title": "What is a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
       "order": 0
     }
@@ -983,7 +983,7 @@ export const index = [
       "category": "Pillar",
       "pageType": "CFMMPillar",
       "properties": {
-        "short-name": "Service Ecosystem"
+        "short-name": "Service Ecosys."
       }
     }
   },
@@ -1443,7 +1443,7 @@ export const index = [
       "url": "https://www.notion.so/Approaches-to-building-a-Cloud-Foundation-a544bc7c979f427a83352011cdcb6247",
       "title": "Approaches to building a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
-      "order": 30
+      "order": 20
     }
   },
   {
