@@ -1,6 +1,10 @@
 <template>
   <div class="maturity-model-toolbar">
-    <select class="custom-select" v-model="selectedTool">
+    <select
+      id="selectTool"
+      class="custom-select custom-select-sm"
+      v-model="selectedTool"
+    >
       <option value="">-- Evaluate a tool --</option>
       <option
         v-for="option in toolSelectOptions"
@@ -51,20 +55,21 @@ const toolSelectOptions = computed(() => cfmm.value.tools);
 @import "@vuepress/plugin-palette/palette";
 
 .maturity-model-toolbar {
-  padding: 12px 64px 0px;
+  background-color: #b7dfec;
+  padding: .5rem 4rem;
   text-align: right;
 
   select {
-    border: 0;
-    font-weight: 500;
-    font-family: "Montserrat";
-    padding: 2px 6px;
+    max-width: 240px;
+  }
+  @media only screen and (max-width: $MQMobile) {
+    padding: 1rem;
   }
 }
 
 .maturity-model-landing-page {
-  padding: 36px 64px 24px;
-  background-color: #9fd9ec;
+  padding: 1.5rem 4rem;
+  background-color: var(--c-cfmm-bg);
 
   h1 {
     margin: 0 0 0.5rem;
