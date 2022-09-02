@@ -108,7 +108,7 @@ In a Cloud Foundation team boundaries and best practices can be shared better an
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Explore Approaches</CtaHeader>
-  <CtaText>Explore different approaches to building a cloud foundation and their pros and cons..</CtaText>
+  <CtaText>Explore different approaches to building a cloud foundation and their pros and cons.</CtaText>
   <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/approaches-to-building-a-cloud-foundation.html">Explore Approaches</CtaButton>
 </CallToAction>
 
@@ -140,7 +140,7 @@ The Cloud Foundation Maturity Model is **implementation agnostic**. While meshc
 
 #### Finding Your Way around the Maturity Model
 
-In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [**What is a Building Block**](https://cloudfoundation.meshcloud.io/maturity-model/what-is-a-building-block.html).
+In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [**What is a Building Block**](https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/what-is-a-building-block.html).
 
 The model also captures how building blocks relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another), and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now.
 
