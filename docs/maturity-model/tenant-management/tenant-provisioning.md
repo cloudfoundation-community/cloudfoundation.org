@@ -17,6 +17,8 @@ properties:
   scope: ☁️ Platform
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
+    - bac2d6a9-0bab-4d58-b89e-9b3315f86b79
+    - 244b3e52-37bd-4669-a8d4-c208eb2fe529
   name: Tenant Provisioning
 ---
 

@@ -1,15 +1,11 @@
-import { config as dotenv } from "dotenv";
-import { promises as fs } from "fs";
-import * as path from "path";
-import * as rimraf from "rimraf";
+import { config as dotenv } from 'dotenv';
+import { promises as fs } from 'fs';
+import * as path from 'path';
+import * as rimraf from 'rimraf';
 
 import {
-  RenderedDatabasePage,
-  slugify,
-  sync,
-  SyncConfig,
-  DatabasePageProperties,
-} from "@meshcloud/notion-markdown-cms";
+    DatabasePageProperties, RenderedDatabasePage, slugify, sync, SyncConfig
+} from '@meshcloud/notion-markdown-cms';
 
 dotenv();
 
@@ -145,6 +141,7 @@ const config: SyncConfig = {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
           properties: buildProperties(["Block", "Tool", "Link", "Name"], page),
+          pageType: "CFMMTool2Block"
         }),
       },
     },
@@ -159,6 +156,8 @@ const config: SyncConfig = {
       entries: {
         frontmatterBuilder: (page) => ({
           ...commonFrontmatter(page),
+          properties: buildProperties(["Category"], page),
+          pageType: "CFMMTool"
         }),
       },
       views: [

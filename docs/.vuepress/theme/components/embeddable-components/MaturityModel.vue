@@ -1,19 +1,42 @@
 <template>
+  <div class="maturity-model-toolbar">
+    <select
+      id="selectTool"
+      class="custom-select custom-select-sm"
+      v-model="selectedTool"
+    >
+      <option value="">-- Evaluate a tool --</option>
+      <option
+        v-for="option in toolSelectOptions"
+        :value="option"
+        v-bind:key="option"
+      >
+        {{ option }}
+      </option>
+    </select>
+  </div>
   <div class="maturity-model-landing-page">
     <h1 class="maturity-model-title">Maturity Model</h1>
     <div class="card">
       <div class="card-col" v-for="pillar in pillars" :key="pillar">
         <MaturityModelPillarDescription :pillar="pillar" />
-        <MaturityModelPillarBlocks :pillar="pillar" />
+        <MaturityModelPillarBlocks
+          :pillar="pillar"
+          :selected-tool="selectedTool"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed, ref } from "vue";
+import { useCloudFoundationMaturityModel } from "../../plugins/cfmm/client";
 import { Pillar } from "../../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../maturity-model/MaturityModelPillarBlocks.vue";
 import MaturityModelPillarDescription from "../maturity-model/MaturityModelPillarDescription.vue";
+
+const cfmm = useCloudFoundationMaturityModel();
 
 const pillars: Pillar[] = [
   "tenantManagement",
@@ -22,17 +45,34 @@ const pillars: Pillar[] = [
   "costManagement",
   "serviceEcosystem",
 ];
+
+let selectedTool = ref("");
+
+const toolSelectOptions = computed(() => cfmm.value.tools);
 </script>
 
 <style scoped lang="scss">
 @import "@vuepress/plugin-palette/palette";
 
+.maturity-model-toolbar {
+  background-color: #b7dfec;
+  padding: .5rem 4rem;
+  text-align: right;
+
+  select {
+    max-width: 240px;
+  }
+  @media only screen and (max-width: $MQMobile) {
+    padding: 1rem;
+  }
+}
+
 .maturity-model-landing-page {
-  padding: 48px 64px 24px;
-  background-color: #9fd9ec;
+  padding: 1.5rem 4rem;
+  background-color: var(--c-cfmm-bg);
 
   h1 {
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
     font-weight: 900;
     color: white;
     display: none;
@@ -40,10 +80,12 @@ const pillars: Pillar[] = [
 
   @media only screen and (max-width: $MQMobile) {
     padding: 1rem;
+
     h1 {
       display: block;
     }
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -55,6 +97,7 @@ const pillars: Pillar[] = [
         padding-right: 1rem;
       }
     }
+
     .card-col {
       flex-grow: 1;
       max-width: 20%;
@@ -62,12 +105,15 @@ const pillars: Pillar[] = [
       @media only screen and (max-width: 1400px) {
         min-width: 25%;
       }
+
       @media only screen and (max-width: 1024px) {
         min-width: 33%;
       }
+
       @media only screen and (max-width: 800px) {
         min-width: 50%;
       }
+
       @media only screen and (max-width: 580px) {
         min-width: 100%;
         border-radius: var(--c-cfmm-border-radius-lg);

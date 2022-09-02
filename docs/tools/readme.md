@@ -26,6 +26,14 @@ order: 0
 | ---------- | -------- |
 | collie-cli | cli      |
 
+## CFMM Tools - Landing Zone Implementation
+
+| Name                         | Category                    |
+| ---------------------------- | --------------------------- |
+| GCP CFT - Example Foundation | Landing Zone Implementation |
+| GCP Fabric FAST              | Landing Zone Implementation |
+| GCP Setup Checklist          | Landing Zone Implementation |
+
 ## CFMM Tools - DevOps
 
 | Name   | Category |

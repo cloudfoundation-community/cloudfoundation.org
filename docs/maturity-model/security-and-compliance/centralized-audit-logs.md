@@ -13,7 +13,10 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on: []
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - 50e4e2e5-9fb6-49f7-8b57-6988b865b412
+    - beba1d31-43fe-4663-b3f5-cd32d6a5cf54
+    - c9c553ab-812b-4b46-a985-8c01fda8985b
   name: Centralized audit logs
 ---
 

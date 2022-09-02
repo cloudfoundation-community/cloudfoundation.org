@@ -1,7 +1,7 @@
 <template>
   <div class="block-wrapper">
     <router-link :to="props.blockData.link" class="block-atom">
-      <div class="block">
+      <div class="block" :disabled="!!selectedTool && !props.blockData.tools.includes(props.selectedTool)">
         <div class="block-props d-flex" @click="onPropsClick">
           <BlockJourneyStage :journey-stage="blockData.journeyStage" />
           <BlockScope :scope="blockData.scope" />
@@ -28,6 +28,7 @@ import exp from "constants";
 
 interface Props {
   blockData: MaturityModelBlock;
+  selectedTool: string;
 }
 
 const props = defineProps<Props>();
@@ -134,6 +135,15 @@ h4 {
         font-weight: 700;
         color: #2d3e4f;
       }
+    }
+  }
+
+  .block[disabled=true] {
+    img.block-step, img.block-scope {
+      opacity: 0.5;
+    }
+    .block-content p{
+      color: lightgrey;
     }
   }
 }

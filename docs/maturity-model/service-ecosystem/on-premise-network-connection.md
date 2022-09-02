@@ -15,7 +15,9 @@ properties:
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - c688eecf-0335-4505-bdcb-bc6f6da28c63
+    - 9cd1dd44-526e-4b3f-9969-8f9a94c187cb
   name: On-Premise Network Connection
 ---
 

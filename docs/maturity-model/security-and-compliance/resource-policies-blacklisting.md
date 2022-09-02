@@ -15,7 +15,10 @@ properties:
   depends-on:
     - ac8a21c3-f692-4d23-a9bb-796fd311c39f
   scope: 🛬 Landing Zone
-  tool-implementations: []
+  tool-implementations:
+    - 7beb3669-9658-4b4d-a87a-a136d9556f32
+    - 483a6e1f-f717-44f0-bab1-7aa1049ef367
+    - 1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6
   name: Resource Policies - Blacklisting
 ---
 
