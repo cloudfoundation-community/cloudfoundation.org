@@ -1,9 +1,13 @@
 <template>
   <div class="maturity-model-toolbar">
-    <select v-model="selectedTool">
+    <select class="custom-select" v-model="selectedTool">
       <option value="">-- Evaluate a tool --</option>
-      <option v-for="option in toolSelectOptions" :value="option">
-        {{  option  }}
+      <option
+        v-for="option in toolSelectOptions"
+        :value="option"
+        v-bind:key="option"
+      >
+        {{ option }}
       </option>
     </select>
   </div>
@@ -12,7 +16,10 @@
     <div class="card">
       <div class="card-col" v-for="pillar in pillars" :key="pillar">
         <MaturityModelPillarDescription :pillar="pillar" />
-        <MaturityModelPillarBlocks :pillar="pillar" :selected-tool="selectedTool" />
+        <MaturityModelPillarBlocks
+          :pillar="pillar"
+          :selected-tool="selectedTool"
+        />
       </div>
     </div>
   </div>
@@ -20,9 +27,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import {
-  useCloudFoundationMaturityModel,
-} from "../../plugins/cfmm/client";
+import { useCloudFoundationMaturityModel } from "../../plugins/cfmm/client";
 import { Pillar } from "../../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../maturity-model/MaturityModelPillarBlocks.vue";
 import MaturityModelPillarDescription from "../maturity-model/MaturityModelPillarDescription.vue";
@@ -37,7 +42,7 @@ const pillars: Pillar[] = [
   "serviceEcosystem",
 ];
 
-let selectedTool = ref('');
+let selectedTool = ref("");
 
 const toolSelectOptions = computed(() => cfmm.value.tools);
 </script>
@@ -52,7 +57,7 @@ const toolSelectOptions = computed(() => cfmm.value.tools);
   select {
     border: 0;
     font-weight: 500;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     padding: 2px 6px;
   }
 }
@@ -62,7 +67,7 @@ const toolSelectOptions = computed(() => cfmm.value.tools);
   background-color: #9fd9ec;
 
   h1 {
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
     font-weight: 900;
     color: white;
     display: none;
@@ -82,7 +87,6 @@ const toolSelectOptions = computed(() => cfmm.value.tools);
     flex-wrap: wrap;
 
     @media (min-width: $MQMobileNarrow) {
-
       // on desktop layout we need to add equal spacing between columns (but not on the last one!)
       .card-col:not(:last-child) {
         padding-right: 1rem;
