@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: cloudfoundation-website
+    env: static
+    buildCommand: yarn docs:build
+    staticPublishPath: /docs/.vuepress/dist
+    pullRequestPreviewsEnabled: true
+    routes:
+      ## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS
+      ## See https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing for the force option
+      - type: redirect
+        source: https://cfmm.meshcloud.io/*
+        destination: https://cloudfoundation.meshcloud.io/*
+      - type: redirect
+        source: http://cfmm.meshcloud.io/*
+        destination: https://cloudfoundation.meshcloud.io/*
+      ## Redirects related to the feedback form.
+      ## Google App Script cannot be called directly from Vue due to CORS policy.
+      - type: rewrite
+        source: /api/feedback
+        destination: https://script.google.com/macros/s/AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV/exec
+      ## Redirects required for bypassing adblockers with plausible.io
+      ## See https://plausible.io/docs/proxy/guides/netlify
+      ## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177
+      - type: rewrite
+        source: /api/event
+        destination: https://plausible.io/api/event
+      ## Redirects for individual pages that we moved/renamed but we want to make sure
+      ## we don't confuse google
+      - type: redirect
+        source: /maturity-model/what-is-the-cloud-foundation-maturity-model.html
+        destination: /understanding-cloud-foundation/
+      - type: redirect
+        source: /maturity-model/building-block-reference.html
+        destination: /maturity-model/what-is-a-building-block.html
+      - type: redirect
+        source: /maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.html
+        destination: /maturity-model/security-and-compliance/multi-cloud-tagging-policy.html
