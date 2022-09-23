@@ -8,12 +8,13 @@ services:
     routes:
       ## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS
       ## See https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing for the force option
-      - type: redirect
-        source: https://cfmm.meshcloud.io/
-        destination: https://cloudfoundation.meshcloud.io/*
-      - type: redirect
-        source: http://cfmm.meshcloud.io/
-        destination: https://cloudfoundation.meshcloud.io/*
+      # The CFMM redirects do not work yet for some reason
+      # - type: redirect
+      #   source: https://cfmm.meshcloud.io/
+      #   destination: https://cloudfoundation.meshcloud.io/*
+      # - type: redirect
+      #   source: http://cfmm.meshcloud.io/
+      #   destination: https://cloudfoundation.meshcloud.io/*
       ## Redirects related to the feedback form.
       ## Google App Script cannot be called directly from Vue due to CORS policy.
       - type: rewrite
