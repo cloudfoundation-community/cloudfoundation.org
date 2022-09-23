@@ -3,16 +3,16 @@ services:
     name: cloudfoundation-website
     env: static
     buildCommand: yarn docs:build
-    staticPublishPath: /docs/.vuepress/dist
+    staticPublishPath: ./docs/.vuepress/dist
     pullRequestPreviewsEnabled: true
     routes:
       ## Redirect `cfmm.meshcloud.io` to `cloudfoundation.meshcloud.io`. Both for HTTP & HTTPS
       ## See https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing for the force option
       - type: redirect
-        source: https://cfmm.meshcloud.io/*
+        source: https://cfmm.meshcloud.io/
         destination: https://cloudfoundation.meshcloud.io/*
       - type: redirect
-        source: http://cfmm.meshcloud.io/*
+        source: http://cfmm.meshcloud.io/
         destination: https://cloudfoundation.meshcloud.io/*
       ## Redirects related to the feedback form.
       ## Google App Script cannot be called directly from Vue due to CORS policy.
