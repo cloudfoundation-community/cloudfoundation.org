@@ -7,6 +7,17 @@ order: 0
 ---
 
 <!-- included database 627fe3b0-0475-4f87-a37c-5136a4d00ac3 -->
+## CFMM Tools - Landing Zone Implementation
+
+| Name                                                   | Category                    |
+| ------------------------------------------------------ | --------------------------- |
+| Azure landing zone accelerator (Enterprise scale)      | Landing Zone Implementation |
+| Azure landing zone terraform module (Enterprise scale) | Landing Zone Implementation |
+| CAF Terraform Modules                                  | Landing Zone Implementation |
+| GCP CFT - Example Foundation                           | Landing Zone Implementation |
+| GCP Fabric FAST                                        | Landing Zone Implementation |
+| GCP Setup Checklist                                    | Landing Zone Implementation |
+
 ## CFMM Tools
 
 | Name                   | Category |
@@ -25,14 +36,6 @@ order: 0
 | Name       | Category |
 | ---------- | -------- |
 | collie-cli | cli      |
-
-## CFMM Tools - Landing Zone Implementation
-
-| Name                         | Category                    |
-| ---------------------------- | --------------------------- |
-| GCP CFT - Example Foundation | Landing Zone Implementation |
-| GCP Fabric FAST              | Landing Zone Implementation |
-| GCP Setup Checklist          | Landing Zone Implementation |
 
 ## CFMM Tools - DevOps
 

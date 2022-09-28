@@ -22,6 +22,7 @@ properties:
     - aade65c8-e80c-46e8-b993-23a50076f62d
     - 3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7
     - 9cae193b-0656-4bac-bdd8-34cff905b947
+    - 5b377afd-a818-45a5-b834-f74244da53cd
   name: Privileged Access Management
 ---
 

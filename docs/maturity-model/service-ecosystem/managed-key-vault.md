@@ -17,6 +17,7 @@ properties:
   scope: 🛬 Landing Zone
   tool-implementations:
     - d95e25dc-2643-4c17-9f78-76dc053d7d71
+    - 1f3596eb-e73b-4b22-abf9-06d4ebfa0e1c
   name: Managed Key Vault
 ---
 

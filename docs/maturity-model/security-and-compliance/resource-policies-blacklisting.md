@@ -19,6 +19,9 @@ properties:
     - 7beb3669-9658-4b4d-a87a-a136d9556f32
     - 483a6e1f-f717-44f0-bab1-7aa1049ef367
     - 1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6
+    - 694f24b9-1588-499b-9406-2f5f747747ba
+    - c7020f93-4d65-4609-ae64-5ea3e76add60
+    - 24f0be77-129c-4802-80fd-2c58c6374300
   name: Resource Policies - Blacklisting
 ---
 

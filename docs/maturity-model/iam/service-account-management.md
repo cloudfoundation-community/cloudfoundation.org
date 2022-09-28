@@ -19,7 +19,6 @@ properties:
   scope: ☁️ Platform
   tool-implementations:
     - b3f089d6-6f90-4741-88a7-69b59974d1dd
-    - 9f8e5ffa-2f6b-4030-b1ff-cf5f15165d55
     - 8c890795-9f3d-4d37-8868-66a46e5cf83b
   name: Service Account Management
 ---

@@ -20,6 +20,7 @@ properties:
     - 431fe444-0b73-4592-b525-7e09a48a6457
     - bac2d6a9-0bab-4d58-b89e-9b3315f86b79
     - 244b3e52-37bd-4669-a8d4-c208eb2fe529
+    - 87441a90-61d1-46f3-a3e0-50902ca974fd
   name: Tenant Deprovisioning / Decommissioning
 ---
 
