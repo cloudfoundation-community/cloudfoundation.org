@@ -59,8 +59,11 @@ const mmsidebar = makeMaturityModelPageSidebarConfig();
 
 Object.assign(sidebar, mmsidebar);
 
-log("The generated sidebar will look like the following: ");
+log("The generated sidebar will look the following: ");
 log(JSON.stringify(sidebar, null, 2));
+
+// log("AWESOME STUFF!")
+// log(process.env.RENDER_GIT_BRANCH)
 
 const sitemapOptions: SitemapOptions = {
   hostname: "https://cloudfoundation.meshcloud.io",
