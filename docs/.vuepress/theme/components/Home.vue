@@ -5,7 +5,7 @@
         <div class="col-12 col-lg-6 hero-left">
           <h1 class="hero-title">Build your Cloud Foundation!</h1>
           <p class="desc">
-            Bring cloud adoption at your organization to the next level with the
+            Hallo! Bring cloud adoption at your organization to the next level with the
             free Cloud Foundation Maturity Model. Use 50+ actionable building
             blocks to identify your current cloud maturity, and where to grow.
           </p>
