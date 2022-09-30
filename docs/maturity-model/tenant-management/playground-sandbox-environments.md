@@ -20,7 +20,7 @@ properties:
   scope: ☁️ Platform
   tool-implementations:
     - 8b5e9c3f-82b4-429c-ad60-49176671d537
-    - 0697e302-7d40-4d03-a4be-0f60a3355b2b
+    - 66d6549a-98b5-4ff0-b1d1-7bb66bd7cc3b
   name: Playground / Sandbox Environments
 ---
 

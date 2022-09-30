@@ -17,6 +17,9 @@ properties:
     - 50e4e2e5-9fb6-49f7-8b57-6988b865b412
     - beba1d31-43fe-4663-b3f5-cd32d6a5cf54
     - c9c553ab-812b-4b46-a985-8c01fda8985b
+    - 493d1813-21f3-4d9a-88b1-133010d9a68b
+    - 523e8239-f830-4d33-a66c-7c135463e694
+    - baf114e2-c764-4145-8302-85d3bfe62901
   name: Centralized audit logs
 ---
 
