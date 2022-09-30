@@ -17,6 +17,9 @@ properties:
   tool-implementations:
     - 70cb4156-d6fa-41ae-a295-8bf1fdf50f6b
     - 5a63a102-aa8d-45ef-9cdc-3fb8491fa790
+    - d2086bf8-8389-457e-9b70-e41aa03f1046
+    - ce19ba64-358a-4ea5-8520-d9d57296aac7
+    - b5b13a2c-0a93-46d0-87f5-4d4a368739dc
   name: Cloud to Cloud interconnects
 ---
 

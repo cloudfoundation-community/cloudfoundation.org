@@ -18,8 +18,10 @@ properties:
   tool-implementations:
     - 71c1b0fb-2eea-4492-bbb8-05a83098544c
     - 7547a774-2b9f-45fc-9123-fbb2e48ccd09
-    - 8b009e84-5e49-4c3f-94a5-834828bcb2ab
     - ff879e0b-ee5d-4b43-8bd9-6878b2c2223b
+    - 465c3c4b-89f2-4ecb-8b56-7eaf74b1e658
+    - 6625c2e8-22fa-40c1-befa-b8b463598bbe
+    - 5d42605d-2f58-4ad0-9fb9-eb07ba2067d7
   name: Cloud Tenant Tagging
 ---
 

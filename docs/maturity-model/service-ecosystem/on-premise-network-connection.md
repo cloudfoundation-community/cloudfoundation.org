@@ -18,6 +18,9 @@ properties:
   tool-implementations:
     - c688eecf-0335-4505-bdcb-bc6f6da28c63
     - 9cd1dd44-526e-4b3f-9969-8f9a94c187cb
+    - 484e4f98-d1ce-41c2-8b2b-46ed1874d487
+    - 8b36655b-1387-4bf2-b8ef-29826a349bb9
+    - 8dea89f0-ab7e-4043-9e71-ad7a0232e64b
   name: On-Premise Network Connection
 ---
 
