@@ -1268,6 +1268,17 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "557e72c2-227d-40bd-92b4-4c0707a3c2f5",
+      "url": "https://www.notion.so/AWS-Landing-Zone-Accelerator-557e72c2227d40bd92b44c0707a3c2f5",
+      "title": "AWS Landing Zone Accelerator",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
+    }
+  },
+  {
     "file": "maturity-model/cost-management/readme.md",
     "frontmatter": {
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
@@ -1979,6 +1990,17 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "8b560d01-09b5-499d-b5f7-34fdc79c722d",
+      "url": "https://www.notion.so/AWS-Control-Tower-with-AFT-8b560d0109b5499db5f734fdc79c722d",
+      "title": "AWS Control Tower with AFT",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "8b5e9c3f-82b4-429c-ad60-49176671d537",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-8b5e9c3f82b4429cad6049176671d537",
       "title": "Playground / Sandbox Environments",
@@ -2073,6 +2095,17 @@ export const index = [
         ],
         "name": "Modular Landing Zones"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "93b26c66-49b3-4ad5-ab78-9810a6334dc5",
+      "url": "https://www.notion.so/AWS-Control-Tower-with-Account-Factory-93b26c6649b34ad5ab789810a6334dc5",
+      "title": "AWS Control Tower with Account Factory",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
