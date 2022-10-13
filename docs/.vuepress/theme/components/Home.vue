@@ -22,7 +22,7 @@
           <img src="./cfmm.svg" />
         </div>
         <div class="col-12 col-lg-6">
-          <h1>What is the Cloud Foundation Maturity Model?</h1>
+          <h2>What is the Cloud Foundation Maturity Model?</h2>
           <p class="desc">
             The cloud foundation is an organizational approach to managing cloud
             adoption and consumption through a single team. The Cloud Foundation
@@ -33,7 +33,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h1>Why a Cloud Foundation Team?</h1>
+          <h2>Why a Cloud Foundation Team?</h2>
           <p class="desc">
             A cloud foundation team provides DevOps teams a single point of
             contact for provisioning, accessing and managing all cloud services
@@ -72,8 +72,7 @@ main {
     padding-top: calc(var(--navbar-height) * 2.5);
   }
 
-  h1 {
-    font-size: 24px;
+  h1, h2 {
     font-weight: 800;
   }
 
