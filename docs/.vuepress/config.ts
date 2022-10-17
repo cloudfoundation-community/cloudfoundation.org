@@ -62,9 +62,6 @@ Object.assign(sidebar, mmsidebar);
 log("The generated sidebar will look the following: ");
 log(JSON.stringify(sidebar, null, 2));
 
-// log("AWESOME STUFF!")
-// log(process.env.RENDER_GIT_BRANCH)
-
 const sitemapOptions: SitemapOptions = {
   hostname: "https://cloudfoundation.meshcloud.io",
   excludeUrls: ["/404.html"],
@@ -128,10 +125,9 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         enableAutoPageviews: true,
         enableAutoOutboundTracking: false, // may have issue, see https://github.com/plausible/plausible-tracker/issues/12 We use custom tracking via CtaButton component instead, so this is less relevant for us.
         trackerOptions: {
-          // note: when the domain is localhost, plausible automatically ignores sending events
           apiHost: "",
           domain:
-            process.env.CONTEXT === "production" // see https://docs.netlify.com/configure-builds/environment-variables/#build-metadat
+              process.env.RENDER_GIT_BRANCH === "main" // This way Plausible will only track data for the production version.
               ? "cloudfoundation.meshcloud.io"
               : "preview.cloudfoundation.meshcloud.io",
         },
