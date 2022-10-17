@@ -23,6 +23,9 @@ properties:
     - 3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7
     - 9cae193b-0656-4bac-bdd8-34cff905b947
     - 5b377afd-a818-45a5-b834-f74244da53cd
+    - 4830a114-548a-461f-97b4-91cc6d9811a0
+    - 40707260-c803-4910-99bf-c5a860e74328
+    - 03e67c51-82e1-4e4d-87df-dc431954f9b8
   name: Privileged Access Management
 ---
 

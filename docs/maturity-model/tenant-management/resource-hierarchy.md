@@ -24,6 +24,9 @@ properties:
     - 3da9cf6c-972f-4152-9c85-9505fa6a8d2a
     - e018667f-0198-4fa2-b82f-967b960390a7
     - 43ba3b98-c6a2-4d2a-b4e2-93bc6841f3b7
+    - 1c2e8bb1-5a32-4435-b319-bac181f57481
+    - f02d3382-32e0-4d45-912e-a1c914d1afa5
+    - 9c0cb471-dfd4-4c0f-98c8-7434d0193577
   name: Resource Hierarchy
 ---
 

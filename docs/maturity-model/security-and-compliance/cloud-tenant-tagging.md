@@ -22,6 +22,7 @@ properties:
     - 465c3c4b-89f2-4ecb-8b56-7eaf74b1e658
     - 6625c2e8-22fa-40c1-befa-b8b463598bbe
     - 5d42605d-2f58-4ad0-9fb9-eb07ba2067d7
+    - d68a65a0-19c2-47ac-92ef-5e8e6e549947
   name: Cloud Tenant Tagging
 ---
 

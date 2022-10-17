@@ -94,6 +94,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "03e67c51-82e1-4e4d-87df-dc431954f9b8",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-03e67c5182e14e4d87dfdc431954f9b8",
+      "title": "Privileged Access Management (PAM)",
+      "description": "By default it defines only an Administrator group. But as you can base it on AWS Control Tower, you can make use of the advanced default roles created by AWS Control Tower.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/blob/main/reference/sample-configurations/aws-best-practices/iam-config.yaml",
+        "name": "Privileged Access Management (PAM)"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "04470deb-8ef1-4c49-bcec-7243426790b5",
       "url": "https://www.notion.so/DevOps-Toolchains-with-GitLab-04470deb8ef14c49bcec7243426790b5",
       "title": "DevOps Toolchains with GitLab",
@@ -109,16 +128,6 @@ export const index = [
         "name": "DevOps Toolchains with GitLab"
       },
       "pageType": "CFMMTool2Block"
-    }
-  },
-  {
-    "file": "tools/tool-support.md",
-    "frontmatter": {
-      "id": "05c1741d-2152-4e04-8426-9582ed4be840",
-      "url": "https://www.notion.so/Tool-Support-05c1741d21524e0484269582ed4be840",
-      "title": "Tool Support",
-      "category": "Tools",
-      "order": 11
     }
   },
   {
@@ -447,10 +456,32 @@ export const index = [
           "aade65c8-e80c-46e8-b993-23a50076f62d",
           "3d5c12a5-9f91-4e6a-9b3c-774d5389b9d7",
           "9cae193b-0656-4bac-bdd8-34cff905b947",
-          "5b377afd-a818-45a5-b834-f74244da53cd"
+          "5b377afd-a818-45a5-b834-f74244da53cd",
+          "4830a114-548a-461f-97b4-91cc6d9811a0",
+          "40707260-c803-4910-99bf-c5a860e74328",
+          "03e67c51-82e1-4e4d-87df-dc431954f9b8"
         ],
         "name": "Privileged Access Management"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "1c2e8bb1-5a32-4435-b319-bac181f57481",
+      "url": "https://www.notion.so/Resource-Hierarchy-1c2e8bb15a324435b319bac181f57481",
+      "title": "Resource Hierarchy",
+      "description": "Creates 2 Organizational units (OUs), Security and Sandbox. It also creates 3 shared accounts; a standalone management account (not belonging to an OU), and log archive and security audit in the Security OU. The Sandbox OU remains empty to contain the new provisioned accounts. You can create new OUs based on your desired structure. They will be governed by CT. AWS also offers a sample hierarchy with additional OUs that you can manually include.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
+        ],
+        "link": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
+        "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -532,7 +563,8 @@ export const index = [
           "9cd1dd44-526e-4b3f-9969-8f9a94c187cb",
           "484e4f98-d1ce-41c2-8b2b-46ed1874d487",
           "8b36655b-1387-4bf2-b8ef-29826a349bb9",
-          "8dea89f0-ab7e-4043-9e71-ad7a0232e64b"
+          "8dea89f0-ab7e-4043-9e71-ad7a0232e64b",
+          "f096be8c-0f83-4d92-a1e3-b095f1dc6270"
         ],
         "name": "On-Premise Network Connection"
       }
@@ -658,7 +690,10 @@ export const index = [
           "bb4aee68-0b2a-4746-98bf-18d200e58b9b",
           "d77dc8b6-b1ce-4c6a-a208-dcaf5e485743",
           "edf7468a-c867-4038-9e93-7b64f4a4ffcc",
-          "2e5dfd35-751d-4562-b723-8e65f4e79408"
+          "2e5dfd35-751d-4562-b723-8e65f4e79408",
+          "785eec49-493b-46a6-8540-2237135f0fba",
+          "b6a3508f-701f-4ce4-99b0-778f25c6c8a4",
+          "9b244e63-eb03-454a-a33b-ebb9d90e8137"
         ],
         "name": "Virtual Network Service"
       }
@@ -685,7 +720,10 @@ export const index = [
           "c9c553ab-812b-4b46-a985-8c01fda8985b",
           "493d1813-21f3-4d9a-88b1-133010d9a68b",
           "523e8239-f830-4d33-a66c-7c135463e694",
-          "baf114e2-c764-4145-8302-85d3bfe62901"
+          "baf114e2-c764-4145-8302-85d3bfe62901",
+          "39343d1a-be7a-47dc-85f7-bda80f99c1ef",
+          "fa06b5f1-05ae-4b99-bf1e-941597fd796b",
+          "67c9d1dc-7e7b-4b1e-b6fb-8b2547482ca7"
         ],
         "name": "Centralized audit logs"
       }
@@ -823,6 +861,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "39343d1a-be7a-47dc-85f7-bda80f99c1ef",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-39343d1abe7a47dc85f7bda80f99c1ef",
+      "title": "Centralized Audit Logs",
+      "description": "Enables CloudTrail service to aggregate action and event logs into the shared Log Archive account from different AWS accounts and records them in CloudWatch. With CT release ≥ 3.0, an organization trail is created to gather event logs on an organization level instead of a member trail that gathers logs on a per account basis.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
+        ],
+        "link": "https://docs.aws.amazon.com/controltower/latest/userguide/logging-and-monitoring.html",
+        "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
       "url": "https://www.notion.so/Managed-DevOps-toolchains-with-meshStack-3c377c143fbf4766a47ae30bd070ed7f",
       "title": "Managed DevOps toolchains with meshStack",
@@ -936,6 +993,25 @@ export const index = [
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/blob/main/examples/management-groups/README.md",
         "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "40707260-c803-4910-99bf-c5a860e74328",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-40707260c803491099bfc5a860e74328",
+      "title": "Privileged Access Management (PAM)",
+      "description": "By default, the user email set in the account request is assigned AdministratorAccess to the account. Additionally, groups created with CT are assigned with specific permissions. That is, AWSSecurityAuditPowerUsers\n group is assigned. AWSPowerUserAccess\n, AWSControlTowerAdmins\n group is assigned AWSOrganizationsFullAccess\n, AWSSecurityAuditors\n group is assigned AWSReadOnlyAccess \nto that account.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Privileged Access Management (PAM)"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1065,6 +1141,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "4830a114-548a-461f-97b4-91cc6d9811a0",
+      "url": "https://www.notion.so/Privileged-Access-Management-PAM-4830a114548a461f97b491cc6d9811a0",
+      "title": "Privileged Access Management (PAM)",
+      "description": "Uses IAM Identity Center service to offer preconfigured groups. You can then add users to those groups based in their role in the organization.",
+      "properties": {
+        "block": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "tool": [
+          "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
+        ],
+        "link": "https://docs.aws.amazon.com/controltower/latest/userguide/sso.html",
+        "name": "Privileged Access Management (PAM)"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "483a6e1f-f717-44f0-bab1-7aa1049ef367",
       "url": "https://www.notion.so/Resource-Policies-Blacklisting-483a6e1ff71744f0bab17aa1049ef367",
       "title": "Resource Policies - Blacklisting",
@@ -1116,6 +1211,25 @@ export const index = [
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/blob/main/src/resources/Microsoft.Authorization/policySetDefinitions/Deploy-Diagnostics-LogAnalytics.json",
         "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-4a2514ab25e34d9caca79ef3f2b4a094",
+      "title": "Resource Policies - Blacklisting",
+      "description": "Accounts provisioned through AFT also inherit all guardrails from their parent OU which is covered by CT. Additional policies can be applied through AFT customization framework.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Resource Policies - Blacklisting"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1250,7 +1364,8 @@ export const index = [
           "ff879e0b-ee5d-4b43-8bd9-6878b2c2223b",
           "465c3c4b-89f2-4ecb-8b56-7eaf74b1e658",
           "6625c2e8-22fa-40c1-befa-b8b463598bbe",
-          "5d42605d-2f58-4ad0-9fb9-eb07ba2067d7"
+          "5d42605d-2f58-4ad0-9fb9-eb07ba2067d7",
+          "d68a65a0-19c2-47ac-92ef-5e8e6e549947"
         ],
         "name": "Cloud Tenant Tagging"
       }
@@ -1354,6 +1469,25 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/meshcloud.project-metering.html#chargeback-statements",
         "name": "Monthly cloud project billing report with meshStack"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "59e899aa-6007-4fe4-af79-64747b19984a",
+      "url": "https://www.notion.so/Cloud-Interconnect-59e899aa60074fe4af7964747b19984a",
+      "title": "Cloud Interconnect",
+      "description": "In the network config directConnectGateways can be defined to connect to  networks at other cloud providers.",
+      "properties": {
+        "block": [
+          "a31e4077-4e84-4129-a46c-1070a8591181"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "notion://www.notion.so/47af5e8619ac4fa28f9ba0bfd6bd17eb",
+        "name": "Cloud Interconnect"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1572,6 +1706,25 @@ export const index = [
         ],
         "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/stages/01-resman/branch-sandbox.tf",
         "name": "Playground / Sandbox Environments"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "67c9d1dc-7e7b-4b1e-b6fb-8b2547482ca7",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-67c9d1dc7e7b4b1eb6fb8b2547482ca7",
+      "title": "Centralized Audit Logs",
+      "description": "Uses the LogArchive Account to store the logs. It can be configured easily which logs shall be included.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/blob/main/reference/sample-configurations/aws-best-practices/global-config.yaml",
+        "name": "Centralized Audit Logs"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1851,6 +2004,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "785eec49-493b-46a6-8540-2237135f0fba",
+      "url": "https://www.notion.so/Virtual-Network-Service-785eec49493b46a685402237135f0fba",
+      "title": "Virtual Network Service",
+      "description": "CT creates a default VPC with 3 subnets in the management account per availability zone. You can edit VPC configurations for new provisioned accounts with the account factory. For example, you can allow internet access for created subnets, which will lead to the creation of a NAT Gateway. When provisioning a new account, CT automatically deletes the default VPC and creates a new VPC configured by CT.",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
+        ],
+        "link": "https://docs.aws.amazon.com/controltower/latest/userguide/networking.html",
+        "name": "Virtual Network Service"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "7beb3669-9658-4b4d-a87a-a136d9556f32",
       "url": "https://www.notion.so/Resource-Policies-Blacklisting-7beb366996584b4da87aa136d9556f32",
       "title": "Resource Policies - Blacklisting",
@@ -1863,6 +2035,25 @@ export const index = [
           "be8db890-235d-4a90-9f78-2bfb81bdf1a5"
         ],
         "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/01-resman#organization-policies",
+        "name": "Resource Policies - Blacklisting"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "7c317222-5658-447c-9ade-44f90e9aee96",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-7c3172225658447c9ade44f90e9aee96",
+      "title": "Resource Policies - Blacklisting",
+      "description": "Reasonable guardrails are applied to the default domains Infrastructure, Security and Quarantine. It is easy to also define additional guardrails or to define them for additional, custom OUs.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main/reference/sample-configurations/aws-best-practices/service-control-policies",
         "name": "Resource Policies - Blacklisting"
       },
       "pageType": "CFMMTool2Block"
@@ -1917,6 +2108,25 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "7fb43cbd-ad3c-4f3a-93d7-76f45c88e4f0",
+      "url": "https://www.notion.so/Tenant-Provisioning-Deprovisioning-7fb43cbdad3c4f3a93d776f45c88e4f0",
+      "title": "Tenant Provisioning/Deprovisioning",
+      "description": "Workload Accounts can be defined in the accounts-config.yaml. Only the very basic account information can be entered here. Tags, Service Accounts, etc cannot be defined for workload accounts.",
+      "properties": {
+        "block": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/blob/main/reference/sample-configurations/aws-best-practices/accounts-config.yaml",
+        "name": "Tenant Provisioning/Deprovisioning"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/security-and-compliance/incident-management-process.md",
     "frontmatter": {
       "id": "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
@@ -1965,6 +2175,25 @@ export const index = [
         ],
         "link": "https://github.com/Azure/caf-terraform-landingzones/tree/main/templates/asvm/orion",
         "name": "Tenant Provisioning / Tenant Deprovisioning"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "8a4e5f69-742c-43ef-948b-ed39fc21b3d8",
+      "url": "https://www.notion.so/Resource-Policies-Blacklisting-8a4e5f69742c43ef948bed39fc21b3d8",
+      "title": "Resource Policies - Blacklisting",
+      "description": "AWS Control Tower sets up 20 preventive guardrails (implemented by SCPs) and 3 detective guardrails (implemented by AWS Config). Those are the “Mandatory” guardrails enabled by default that we see are reasonable, such as disallowing deletion of the log archive bucket, disallowing changes to AWS IAM roles set up by CT and CloudFormation, etc. There are also more guardrails available that are not enabled by default, which are “Elective” and “Strongly Recommended” guardrails. Newly provisioned accounts with Account Factory inherit guardrails from their parent OU.",
+      "properties": {
+        "block": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
+        ],
+        "link": "https://docs.aws.amazon.com/controltower/latest/userguide/guardrails.html",
+        "name": "Resource Policies - Blacklisting"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2110,6 +2339,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "9b244e63-eb03-454a-a33b-ebb9d90e8137",
+      "url": "https://www.notion.so/Virtual-Network-Service-9b244e63eb03454aa33bebb9d90e8137",
+      "title": "Virtual Network Service",
+      "description": "It provides a reasonable default network setup in the network-config.yaml. Additionally the default config contains a lot of additional options as commented code. You just have to active them and adapt to your needs.",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/blob/main/reference/sample-configurations/aws-best-practices/network-config.yaml",
+        "name": "Virtual Network Service"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "9b740724-686e-45f2-8924-9000279b806b",
       "url": "https://www.notion.so/Tenant-Inventory-Reconciliation-9b740724686e45f289249000279b806b",
       "title": "Tenant Inventory Reconciliation",
@@ -2123,6 +2371,25 @@ export const index = [
         ],
         "link": "https://docs.meshcloud.io/docs/administration.unmanaged-tenants.html",
         "name": "Tenant Inventory Reconciliation"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "9c0cb471-dfd4-4c0f-98c8-7434d0193577",
+      "url": "https://www.notion.so/Resource-Hierarchy-9c0cb471dfd44c0f98c87434d0193577",
+      "title": "Resource Hierarchy",
+      "description": "By default it creates 2 OUs, Infrastructure and Security. You can easily define more OUs in the config. Another great feature it provides is the option to use a Quarantine OU where almost everything is forbidden. It is used for newly created accounts that are still under construction by the accelerator. That way unintended access or changes during creation can be avoided.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
+        "name": "Resource Hierarchy"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2200,7 +2467,8 @@ export const index = [
           "5a63a102-aa8d-45ef-9cdc-3fb8491fa790",
           "d2086bf8-8389-457e-9b70-e41aa03f1046",
           "ce19ba64-358a-4ea5-8520-d9d57296aac7",
-          "b5b13a2c-0a93-46d0-87f5-4d4a368739dc"
+          "b5b13a2c-0a93-46d0-87f5-4d4a368739dc",
+          "59e899aa-6007-4fe4-af79-64747b19984a"
         ],
         "name": "Cloud to Cloud interconnects"
       }
@@ -2285,7 +2553,10 @@ export const index = [
           "3d96d0aa-90b8-433e-8463-5be26014e70b",
           "3da9cf6c-972f-4152-9c85-9505fa6a8d2a",
           "e018667f-0198-4fa2-b82f-967b960390a7",
-          "43ba3b98-c6a2-4d2a-b4e2-93bc6841f3b7"
+          "43ba3b98-c6a2-4d2a-b4e2-93bc6841f3b7",
+          "1c2e8bb1-5a32-4435-b319-bac181f57481",
+          "f02d3382-32e0-4d45-912e-a1c914d1afa5",
+          "9c0cb471-dfd4-4c0f-98c8-7434d0193577"
         ],
         "name": "Resource Hierarchy"
       }
@@ -2416,6 +2687,25 @@ export const index = [
         ],
         "link": "https://github.com/Azure/caf-terraform-landingzones/tree/main/templates/platform/level2/connectivity",
         "name": "Cloud to Cloud interconnects"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "b6a3508f-701f-4ce4-99b0-778f25c6c8a4",
+      "url": "https://www.notion.so/Virtual-Network-Service-b6a3508f701f4ce499b0778f25c6c8a4",
+      "title": "Virtual Network Service",
+      "description": "Similar to normal account factory, with addition to AFT customization framework that allows you to include additional terraform resources.",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Virtual Network Service"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2564,6 +2854,25 @@ export const index = [
         ],
         "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/log_sinks.tf",
         "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "c1415cc8-082a-4ad8-8629-2b0e4a57ee45",
+      "url": "https://www.notion.so/Tenant-Provisioning-Deprovisioning-c1415cc8082a4ad886292b0e4a57ee45",
+      "title": "Tenant Provisioning/Deprovisioning",
+      "description": "AFT’s main functionality is automation around tenant provisioning. Deprovisioning is not supported. Removing the aft-account-request terraform for a specific account only removes it from AFT management.",
+      "properties": {
+        "block": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Tenant Provisioning/Deprovisioning"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2910,7 +3219,10 @@ export const index = [
           "1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6",
           "694f24b9-1588-499b-9406-2f5f747747ba",
           "c7020f93-4d65-4609-ae64-5ea3e76add60",
-          "24f0be77-129c-4802-80fd-2c58c6374300"
+          "24f0be77-129c-4802-80fd-2c58c6374300",
+          "8a4e5f69-742c-43ef-948b-ed39fc21b3d8",
+          "4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094",
+          "7c317222-5658-447c-9ade-44f90e9aee96"
         ],
         "name": "Resource Policies - Blacklisting"
       }
@@ -3017,6 +3329,25 @@ export const index = [
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/blob/main/docs/wiki/Deploying-ALZ-Platform-DevOps.md",
         "name": "Managed DevOps Toolchain"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "d68a65a0-19c2-47ac-92ef-5e8e6e549947",
+      "url": "https://www.notion.so/Cloud-Tenant-Tagging-d68a65a019c247ac92ef5e8e6e549947",
+      "title": "Cloud Tenant Tagging",
+      "description": "By default provisioned accounts are not tagged. It is possible to tag those accounts through a terraform variable account_tags.",
+      "properties": {
+        "block": [
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Cloud Tenant Tagging"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -3144,7 +3475,9 @@ export const index = [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75",
           "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
           "244b3e52-37bd-4669-a8d4-c208eb2fe529",
-          "87441a90-61d1-46f3-a3e0-50902ca974fd"
+          "87441a90-61d1-46f3-a3e0-50902ca974fd",
+          "c1415cc8-082a-4ad8-8629-2b0e4a57ee45",
+          "7fb43cbd-ad3c-4f3a-93d7-76f45c88e4f0"
         ],
         "name": "Tenant Provisioning"
       }
@@ -3385,6 +3718,25 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "f02d3382-32e0-4d45-912e-a1c914d1afa5",
+      "url": "https://www.notion.so/Resource-Hierarchy-f02d338232e04d45912ea1c914d1afa5",
+      "title": "Resource Hierarchy",
+      "description": "Additional to what CT provides, AFT offers a GitOps approach to provision accounts under specified OUs through an automated workflow.",
+      "properties": {
+        "block": [
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Resource Hierarchy"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/internal-service-marketplace.md",
     "frontmatter": {
       "id": "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
@@ -3407,6 +3759,25 @@ export const index = [
         ],
         "name": "Internal Service Marketplace"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "f096be8c-0f83-4d92-a1e3-b095f1dc6270",
+      "url": "https://www.notion.so/On-Prem-Connect-f096be8c0f834d92a1e3b095f1dc6270",
+      "title": "On-Prem Connect",
+      "description": "It provides a TransitGateway in the network config to connect easily to a hub that makes the on-prem connect. As also directConnectGateways can be defined in the network config, everything that is needed to establish an on-prem connection is available.",
+      "properties": {
+        "block": [
+          "2468d240-6cca-4680-b9c4-6f237defa511"
+        ],
+        "tool": [
+          "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
+        ],
+        "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/blob/main/reference/sample-configurations/aws-best-practices/network-config.yaml",
+        "name": "On-Prem Connect"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -3487,6 +3858,25 @@ export const index = [
         ],
         "name": "Budget Approval Process"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "fa06b5f1-05ae-4b99-bf1e-941597fd796b",
+      "url": "https://www.notion.so/Centralized-Audit-Logs-fa06b5f105ae4b99bf1e941597fd796b",
+      "title": "Centralized Audit Logs",
+      "description": "With AFT, you can also enable CloudTrail data events. Data events are events performed on or within a resource. These are disabled by default as they often incur high costs. This is done when deploying AFT by setting aft_feature_cloudtrail_data_events to true.",
+      "properties": {
+        "block": [
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "tool": [
+          "8b560d01-09b5-499d-b5f7-34fdc79c722d"
+        ],
+        "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
+        "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {

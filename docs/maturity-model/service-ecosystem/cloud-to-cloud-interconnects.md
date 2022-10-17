@@ -20,6 +20,7 @@ properties:
     - d2086bf8-8389-457e-9b70-e41aa03f1046
     - ce19ba64-358a-4ea5-8520-d9d57296aac7
     - b5b13a2c-0a93-46d0-87f5-4d4a368739dc
+    - 59e899aa-6007-4fe4-af79-64747b19984a
   name: Cloud to Cloud interconnects
 ---
 

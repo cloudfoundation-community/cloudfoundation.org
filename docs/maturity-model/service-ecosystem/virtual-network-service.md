@@ -25,6 +25,9 @@ properties:
     - d77dc8b6-b1ce-4c6a-a208-dcaf5e485743
     - edf7468a-c867-4038-9e93-7b64f4a4ffcc
     - 2e5dfd35-751d-4562-b723-8e65f4e79408
+    - 785eec49-493b-46a6-8540-2237135f0fba
+    - b6a3508f-701f-4ce4-99b0-778f25c6c8a4
+    - 9b244e63-eb03-454a-a33b-ebb9d90e8137
   name: Virtual Network Service
 ---
 

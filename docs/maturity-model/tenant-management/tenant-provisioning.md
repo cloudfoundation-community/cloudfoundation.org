@@ -20,10 +20,12 @@ properties:
     - bac2d6a9-0bab-4d58-b89e-9b3315f86b79
     - 244b3e52-37bd-4669-a8d4-c208eb2fe529
     - 87441a90-61d1-46f3-a3e0-50902ca974fd
+    - c1415cc8-082a-4ad8-8629-2b0e4a57ee45
+    - 7fb43cbd-ad3c-4f3a-93d7-76f45c88e4f0
   name: Tenant Provisioning
 ---
 
-Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform. 
+Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform.
 
 ## Why You Need to Automate Cloud Tenant Provisioning
 
@@ -37,7 +39,7 @@ Since Tenant provisioning is so quintessential, practitioners should consider th
 
 In practice, many cloud foundation teams miss the right point in time to invest in full automation capabilities for tenant provisioning. This occurs because each time adding "just one more manual step" to a semi-automated process feels like an insignificant decision. However, the compounding effect of these decisions together with increasing internal demand burdens cloud foundation teams with operational chores. The burden of these chores eventually leaves teams with too little time and resources to rectify the situation
 
-> **⚠️** Consider full automation of tenant provisioning early on while operational chores still leave enough room to invest into automation.
+> **⚠️** Consider full automation of tenant provisioning early on while operational chores still leave enough room to invest in automation.
 
 ## Best Practices for Tenant Provisioning
 

@@ -21,6 +21,7 @@ properties:
     - 484e4f98-d1ce-41c2-8b2b-46ed1874d487
     - 8b36655b-1387-4bf2-b8ef-29826a349bb9
     - 8dea89f0-ab7e-4043-9e71-ad7a0232e64b
+    - f096be8c-0f83-4d92-a1e3-b095f1dc6270
   name: On-Premise Network Connection
 ---
 
