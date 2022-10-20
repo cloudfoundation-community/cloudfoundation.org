@@ -1,5 +1,20 @@
 <template>
   <div class="maturity-model-toolbar">
+
+    <select
+      id="selectScopes"
+      class="custom-select custom-select-sm"
+      v-model="selectedScopes"
+      multiple
+    >
+      <option
+        v-for="option in scopeSelectOptions"
+        :value="option"
+        v-bind:key="option"
+      >
+        {{ option }}
+      </option>
+    </select>
     <select
       id="selectTool"
       class="custom-select custom-select-sm"
@@ -23,6 +38,7 @@
         <MaturityModelPillarBlocks
           :pillar="pillar"
           :selected-tool="selectedTool"
+          :selected-scopes="selectedScopes"
         />
       </div>
     </div>
@@ -47,9 +63,17 @@ const pillars: Pillar[] = [
   "serviceEcosystem",
 ];
 
+const toolSelectOptions = computed(() => cfmm.value.tools);
 let selectedTool = ref("");
 
 const toolSelectOptions = computed(() => cfmm.value.tools);
+
+const scopeSelectOptions = [
+  "🏢 Core",
+  "☁️ Platform",
+  "🛬 Landing Zone"
+];
+let selectedScopes = ref([...scopeSelectOptions])
 
 onMounted(() => {
   const selectedToolQueryParam = useRoute().query.selectedTool;
@@ -65,7 +89,7 @@ onMounted(() => {
 
 .maturity-model-toolbar {
   background-color: #b7dfec;
-  padding: .5rem 4rem;
+  padding: 0.5rem 4rem;
   text-align: right;
 
   select {

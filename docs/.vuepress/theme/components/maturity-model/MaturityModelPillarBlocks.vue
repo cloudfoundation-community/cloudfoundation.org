@@ -22,9 +22,11 @@ import MaturityModelBlock from "./MaturityModelBlock.vue";
 interface Props {
   pillar: Pillar;
   selectedTool: string;
+  selectedScopes: string[];
 }
 
 const props = defineProps<Props>();
+
 const cfmm = useCloudFoundationMaturityModel();
 
 const blocks = computed(() => {
@@ -32,7 +34,12 @@ const blocks = computed(() => {
   if (!model) {
     throw new Error("Could not find pillar model for pillar: " + props.pillar);
   }
-  return model.value.blocks;
+
+  const pillarBlocks = model.value.blocks;
+
+  return pillarBlocks.filter(
+    (x) => props.selectedScopes.includes(x.scope) // there's only 3 scopes so this dumb O(n) search should be ok
+  );
 });
 </script>
 
