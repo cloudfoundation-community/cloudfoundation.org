@@ -1,6 +1,5 @@
 <template>
   <div class="maturity-model-toolbar">
-
     <select
       id="selectScopes"
       class="custom-select custom-select-sm"
@@ -9,6 +8,20 @@
     >
       <option
         v-for="option in scopeSelectOptions"
+        :value="option"
+        v-bind:key="option"
+      >
+        {{ option }}
+      </option>
+    </select>
+    <select
+      id="selectStage"
+      class="custom-select custom-select-sm"
+      v-model="selectedStages"
+      multiple
+    >
+      <option
+        v-for="option in stageSelectOptions"
         :value="option"
         v-bind:key="option"
       >
@@ -39,6 +52,7 @@
           :pillar="pillar"
           :selected-tool="selectedTool"
           :selected-scopes="selectedScopes"
+          :selected-stages="selectedStages"
         />
       </div>
     </div>
@@ -66,14 +80,15 @@ const pillars: Pillar[] = [
 const toolSelectOptions = computed(() => cfmm.value.tools);
 let selectedTool = ref("");
 
-const toolSelectOptions = computed(() => cfmm.value.tools);
-
 const scopeSelectOptions = [
   "🏢 Core",
   "☁️ Platform",
   "🛬 Landing Zone"
 ];
 let selectedScopes = ref([...scopeSelectOptions])
+
+const stageSelectOptions = ["⭐️", "⭐️⭐️", "⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️⭐️"];
+let selectedStages = ref([...scopeSelectOptions]);
 
 onMounted(() => {
   const selectedToolQueryParam = useRoute().query.selectedTool;

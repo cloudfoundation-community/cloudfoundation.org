@@ -23,6 +23,7 @@ interface Props {
   pillar: Pillar;
   selectedTool: string;
   selectedScopes: string[];
+  selectedStages: string[];
 }
 
 const props = defineProps<Props>();
@@ -37,8 +38,11 @@ const blocks = computed(() => {
 
   const pillarBlocks = model.value.blocks;
 
+  // there's only 3/5 scopes/stages so this dumb O(n) search should be ok
   return pillarBlocks.filter(
-    (x) => props.selectedScopes.includes(x.scope) // there's only 3 scopes so this dumb O(n) search should be ok
+    (x) =>
+      props.selectedScopes.includes(x.scope) &&
+      props.selectedStages.includes(x.journeyStage)
   );
 });
 </script>
