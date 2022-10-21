@@ -3,13 +3,13 @@
     <template #before>
       <div class="block-intro d-flex align-items-center">
         <router-link
-          :to="'/maturity-model/what-is-a-building-block#journey-stage'"
+          :to="'/understanding-cloud-foundation/what-is-a-building-block.html#journey-stage'"
         >
           <BlockJourneyStage
             :journey-stage="frontmatter.properties['journey-stage']"
           />
         </router-link>
-        <router-link :to="'/maturity-model/what-is-a-building-block#scope'">
+        <router-link :to="'/understanding-cloud-foundation/what-is-a-building-block.html#scope'">
           <BlockScope :scope="frontmatter.properties.scope" />
         </router-link>
         <span>{{ frontmatter.description }}</span>
