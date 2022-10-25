@@ -42,6 +42,14 @@
         {{ option }}
       </option>
     </select>
+    <div>
+    <input type="checkbox" v-model="showControls" />
+    <label for="checkbox">Enable Editing {{ showControls }}</label>
+    <input type="checkbox" v-model="hideUnselected" />
+    <label for="checkbox">Hide Unselected {{ hideUnselected }}</label>
+    <input type="checkbox" v-model="showDescription" />
+    <label for="checkbox">Show Description {{ showDescription }}</label>
+  </div>
   </div>
   <div class="maturity-model-landing-page">
     <div class="card">
@@ -53,6 +61,7 @@
           :selected-scopes="selectedScopes"
           :selected-stages="selectedStages"
           :show-controls="showControls"
+          :show-description="showDescription"
           :hide-unselected="hideUnselected"
         />
       </div>
@@ -89,9 +98,10 @@ const scopeSelectOptions = [
 let selectedScopes = ref([...scopeSelectOptions])
 
 const stageSelectOptions = ["⭐️", "⭐️⭐️", "⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️⭐️"];
-let selectedStages = ref([...scopeSelectOptions]);
+let selectedStages = ref([...stageSelectOptions]);
 
 let showControls = ref(false);
+let showDescription = ref(false);
 let hideUnselected = ref(false);
 
 onMounted(() => {

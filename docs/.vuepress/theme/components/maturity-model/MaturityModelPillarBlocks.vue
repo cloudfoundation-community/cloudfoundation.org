@@ -6,6 +6,7 @@
       :block-data="item"
       :selected-tool="selectedTool"
       :show-controls="showControls"
+      :show-description="showDescription"
       :hide-unselected="hideUnselected"
     />
     <div class="spacer"></div>
@@ -27,6 +28,7 @@ interface Props {
   selectedScopes: string[];
   selectedStages: string[];
   showControls: boolean;
+  showDescription: boolean;
   hideUnselected: boolean;
 }
 

@@ -15,7 +15,7 @@
             <p v-text="blockData.title"></p>
           </div>
         </div>
-        <p class="block-summary" v-bind:class="{ expand: expand }">
+        <p class="block-summary" v-bind:class="{ expand: expand || showDescription }">
           {{ shortSummary }}
         </p>
       </router-link>
@@ -36,6 +36,7 @@ interface Props {
   blockData: MaturityModelBlock;
   selectedTool: string;
   showControls: boolean;
+  showDescription: boolean;
   hideUnselected: boolean;
 }
 
@@ -53,6 +54,7 @@ const shortSummary = computed(() => {
 });
 
 const expand = ref(false);
+
 function onPropsClick(event: Event) {
   // if the device does not supports hover, expand the block summary
   // and prevent the default action (opening the link to the block details page)
