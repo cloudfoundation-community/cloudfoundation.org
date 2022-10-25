@@ -35,13 +35,6 @@ const pillar = computed(() => {
 
   height: 120px;
 
-  h2 {
-    font-weight: 800;
-    border: none;
-    text-transform: uppercase;
-    margin: 0 0 0.5rem 0;
-  }
-
   .summary {
     overflow: hidden;
     height: 3rem; // 3 lines of text - no ellipsis possible unfortunately

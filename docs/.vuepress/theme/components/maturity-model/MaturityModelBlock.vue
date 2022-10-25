@@ -1,12 +1,17 @@
 <template>
-  <div v-if="!hideUnselected || selected">
-    <div v-if="showControls">
+  <div class="d-flex" v-if="!hideUnselected || selected">
+    <div class="block-controls mr-2" v-if="showControls">
       <input type="checkbox" v-model="selected" />
-      <label for="checkbox">Include {{ selected }}</label>
     </div>
-    <div class="block-wrapper">
-      <router-link :to="blockData.link" class="block-atom">
-        <div class="block" :disabled="!!selectedTool && !props.blockData.tools.includes(props.selectedTool)">
+    <div class="block-wrapper flex-fill">
+      <router-link :to="blockData.link">
+        <div
+          class="block-details"
+          :disabled="
+            !!selectedTool &&
+            !props.blockData.tools.includes(props.selectedTool)
+          "
+        >
           <div class="block-props d-flex" @click="onPropsClick">
             <BlockJourneyStage :journey-stage="blockData.journeyStage" />
             <BlockScope :scope="blockData.scope" />
@@ -15,7 +20,10 @@
             <p v-text="blockData.title"></p>
           </div>
         </div>
-        <p class="block-summary" v-bind:class="{ expand: expand || showDescription }">
+        <p
+          class="block-summary"
+          v-bind:class="{ expand: expand || showDescription }"
+        >
           {{ shortSummary }}
         </p>
       </router-link>
@@ -81,14 +89,13 @@ h4 {
   font-weight: 900;
 }
 
+
 .block-wrapper {
   background-color: white;
   margin: 0 0 10px 0;
   padding: 8px;
   border-radius: 8px;
-}
 
-.block-atom {
   position: relative;
 
   .block-summary {
@@ -122,7 +129,7 @@ h4 {
     opacity: 1;
   }
 
-  .block {
+  .block-details {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -149,11 +156,12 @@ h4 {
     }
   }
 
-  .block[disabled=true] {
-    img.block-step, img.block-scope {
+  .block-details[disabled="true"] {
+    img.block-step,
+    img.block-scope {
       opacity: 0.5;
     }
-    .block-content p{
+    .block-content p {
       color: lightgrey;
     }
   }
