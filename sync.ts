@@ -50,20 +50,7 @@ const config: SyncConfig = {
 
   databases: {
     "6e7a1291-6f21-4979-b582-452b0158e2b2": {
-      sorts: [
-        {
-          property: "Pillar",
-          direction: "ascending",
-        },
-        {
-          property: "Journey Stage",
-          direction: "ascending",
-        },
-        {
-          property: "Scope",
-          direction: "ascending",
-        },
-      ],
+      sorts: [], // sort is irrelevant here since the block index doesn't preserve it anyway
       renderAs: "pages+views",
       pages: {
         destinationDirBuilder: (page) =>

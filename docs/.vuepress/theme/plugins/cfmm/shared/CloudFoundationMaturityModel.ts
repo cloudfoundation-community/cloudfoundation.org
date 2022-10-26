@@ -1,9 +1,9 @@
-import { computed, ComputedRef } from 'vue';
+import { computed, ComputedRef } from "vue";
 
-import { index } from './blocks';
-import { MaturityModelBlock } from './MaturityModelBlock';
-import { MaturityModelPillar } from './MaturityModelPillar';
-import { Pillar } from './Pillar';
+import { index } from "./blocks";
+import { MaturityModelBlock } from "./MaturityModelBlock";
+import { MaturityModelPillar } from "./MaturityModelPillar";
+import { Pillar } from "./Pillar";
 
 export interface PillarModel {
   pillar: MaturityModelPillar;
@@ -28,7 +28,9 @@ export class CloudFoundationMaturityModel {
         title: value.frontmatter.title,
         link: this.formatLink(value.file),
         summary: value.frontmatter.description,
-        tools: this.blockTools(value.frontmatter.properties["tool-implementations"])
+        tools: this.blockTools(
+          value.frontmatter.properties["tool-implementations"]
+        ),
       }))
   );
 
@@ -50,20 +52,31 @@ export class CloudFoundationMaturityModel {
     }
   );
 
-  readonly allEntriesById = Object.assign({}, ...index
-    .map((x) => ({ [x.frontmatter.id]: x.frontmatter }))
+  readonly allEntriesById = Object.assign(
+    {},
+    ...index.map((x) => ({ [x.frontmatter.id]: x.frontmatter }))
   );
 
-
-  readonly relevantToolCategories = ["Governance Platform", "cli", "Landing Zone Implementation"]
+  readonly relevantToolCategories = [
+    "Governance Platform",
+    "cli",
+    "Landing Zone Implementation",
+  ];
 
   readonly tools: string[] = Array.from(
-    new Set(index
-      .filter((x) => x.frontmatter.pageType === "CFMMTool" && this.relevantToolCategories.includes(x.frontmatter.properties?.category || "n/a"))
-      .map((x) => x.frontmatter.title)
-      .sort()
+    new Set(
+      index
+        .filter(
+          (x) =>
+            x.frontmatter.pageType === "CFMMTool" &&
+            this.relevantToolCategories.includes(
+              x.frontmatter.properties?.category || "n/a"
+            )
+        )
+        .map((x) => x.frontmatter.title)
+        .sort()
     )
-  )
+  );
 
   private blockTools(linkIds: string[]): string[] {
     return linkIds
@@ -74,7 +87,7 @@ export class CloudFoundationMaturityModel {
   private pillarModel(pillarName: string): PillarModel {
     return {
       pillar: this.pillarPage(pillarName),
-      blocks: this.pillarBlocksSortedByJourneyStage(pillarName),
+      blocks: this.pillarBlocksSorted(pillarName),
     };
   }
 
@@ -94,19 +107,27 @@ export class CloudFoundationMaturityModel {
     };
   }
 
-  private pillarBlocksSortedByJourneyStage(pillarName): MaturityModelBlock[] {
+  private pillarBlocksSorted(pillarName): MaturityModelBlock[] {
     return this.blocks.value
       .filter((x) => x.pillar === pillarName)
-      .sort(this.sortyByJourneStage);
+      .sort(this.blockSort);
   }
 
-  private readonly sortyByJourneStage = (a: MaturityModelBlock, b: MaturityModelBlock) => {
-    return a.journeyStage.length - b.journeyStage.length;
+  private readonly blockSort = (
+    x: MaturityModelBlock,
+    y: MaturityModelBlock
+  ) => {
+    // this is effectively a "thenBy" sort, see https://stackoverflow.com/a/9175783/125407
+    return (
+      cmp(x.pillar, y.pillar) ||
+      cmp(x.journeyStage.length, y.journeyStage.length) || // hack: journey stage is ⭐️ vs ⭐️⭐️ etc. so we compare length
+      cmp(x.scope.length, y.scope.length) // hack: the scope values actually don't sort well by lexicographic comparison but it just so happens that the string legnth gives us the result we want (core -> platform -> LZ)
+    );
   };
 
-  queryBlocksSortedByJourneyStage(ids: string[]): MaturityModelBlock[] {
+  queryBlocksSorted(ids: string[]): MaturityModelBlock[] {
     const blocks = ids.map((x) => this.blocksById.value.get(x));
-    return blocks.sort(this.sortyByJourneStage);
+    return blocks.sort(this.blockSort);
   }
 
   // this is stupid and duplicate with CFMMBlockPage.vue, but it works
@@ -119,4 +140,10 @@ export class CloudFoundationMaturityModel {
 
     return "/" + path.replace(".md", ".html");
   }
+}
+
+function cmp(a, b) {
+  if (a > b) return +1;
+  if (a < b) return -1;
+  return 0;
 }
