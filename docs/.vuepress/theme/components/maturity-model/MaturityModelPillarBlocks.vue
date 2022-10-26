@@ -24,12 +24,12 @@ import MaturityModelBlock from "./MaturityModelBlock.vue";
 
 interface Props {
   pillar: Pillar;
-  selectedTool: string;
-  selectedScopes: string[];
-  selectedStages: string[];
-  showControls: boolean;
-  showDescription: boolean;
-  hideUnselected: boolean;
+  selectedTool?: string;
+  selectedScopes?: string[];
+  selectedStages?: string[];
+  showControls?: boolean;
+  showDescription?: boolean;
+  hideUnselected?: boolean;
 }
 
 const props = defineProps<Props>();
@@ -47,8 +47,8 @@ const blocks = computed(() => {
   // there's only 3/5 scopes/stages so this dumb O(n) search should be ok
   return pillarBlocks.filter(
     (x) =>
-      props.selectedScopes.includes(x.scope) &&
-      props.selectedStages.includes(x.journeyStage)
+      (!props.selectedScopes || props.selectedScopes.includes(x.scope)) &&
+      (!props.selectedStages || props.selectedStages.includes(x.journeyStage))
   );
 });
 </script>
