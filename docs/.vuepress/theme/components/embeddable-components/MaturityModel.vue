@@ -30,7 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
+import { useRoute } from 'vue-router';
 import { useCloudFoundationMaturityModel } from "../../plugins/cfmm/client";
 import { Pillar } from "../../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../maturity-model/MaturityModelPillarBlocks.vue";
@@ -49,6 +50,14 @@ const pillars: Pillar[] = [
 let selectedTool = ref("");
 
 const toolSelectOptions = computed(() => cfmm.value.tools);
+
+onMounted(() => {
+  const selectedToolQueryParam = useRoute().query.selectedTool;
+  if (typeof selectedToolQueryParam === "string" && toolSelectOptions.value.includes(selectedToolQueryParam)) {
+    selectedTool.value = selectedToolQueryParam;
+  }
+});
+
 </script>
 
 <style scoped lang="scss">
