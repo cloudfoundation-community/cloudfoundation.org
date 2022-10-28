@@ -55,13 +55,15 @@ export const index = [
       "id": "0217c4da-6542-41d6-84c7-12af887e7d15",
       "url": "https://www.notion.so/Billing-to-different-legal-entities-0217c4da654241d684c712af887e7d15",
       "title": "Billing to different legal entities",
-      "description": "Support billing cloud workloads to different legal entities of an enterprise. This may manifest e.g. as different billing accounts (GCP), enterprise agreement (Azure) or Payer Accounts (AWS).",
+      "description": "Support billing cloud workloads to different legal entities of an enterprise for compliance or organizational reasons.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Billing to different legal entities"
@@ -860,6 +862,28 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/service-ecosystem/foundation-service-platform.md",
+    "frontmatter": {
+      "id": "3892bc95-4464-417c-aab2-247da7a3015a",
+      "url": "https://www.notion.so/Foundation-Service-Platform-3892bc954464417caab2247da7a3015a",
+      "title": "Foundation Service Platform",
+      "description": "Offer cloud foundation services like tenant management and managed cloud infrastructure services from a single self-service platform.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
+        ],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Foundation Service Platform"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "39343d1a-be7a-47dc-85f7-bda80f99c1ef",
       "url": "https://www.notion.so/Centralized-Audit-Logs-39343d1abe7a47dc85f7bda80f99c1ef",
@@ -1264,6 +1288,37 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/service-ecosystem/managed-dns-services.md",
+    "frontmatter": {
+      "id": "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
+      "url": "https://www.notion.so/Managed-DNS-Services-4f9ee73a23a94aa3b9560df22e6156d0",
+      "title": "Managed DNS Services",
+      "description": "Teams can manage DNS Zones and Records for their cloud workloads in self-service.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Managed DNS Services"
+      }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "50243dae-6041-4230-9145-6cb90a4c5634",
+      "url": "https://www.notion.so/Azure-LZ-ES-via-collie-cli-50243dae6041423091456cb90a4c5634",
+      "title": "Azure LZ - ES via collie-cli",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
+    }
+  },
+  {
     "frontmatter": {
       "id": "507e5776-239f-4a65-a6f5-d4944536e35a",
       "url": "https://www.notion.so/Manage-access-to-Cloud-Zones-with-meshStack-507e5776239f4a65a6f5d4944536e35a",
@@ -1420,7 +1475,9 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "254476a2-de92-4724-a06e-65931ebb5aec"
@@ -1567,6 +1624,26 @@ export const index = [
         "name": "Cloud Tenant Tagging"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/service-ecosystem/managed-ssl-certificates.md",
+    "frontmatter": {
+      "id": "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
+      "url": "https://www.notion.so/Managed-SSL-Certificates-5f9c0f7d860a488bbbf8897618e5c76f",
+      "title": "Managed SSL Certificates",
+      "description": "Teams can request and renew SSL certificates for their cloud workloads in self-service.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Managed SSL Certificates"
+      }
     }
   },
   {
@@ -2317,7 +2394,10 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "3892bc95-4464-417c-aab2-247da7a3015a"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14"
@@ -3277,7 +3357,9 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "0217c4da-6542-41d6-84c7-12af887e7d15"
+        ],
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
@@ -3434,7 +3516,7 @@ export const index = [
       "id": "dc16dccf-7530-4179-a8e2-b82cc54b990f",
       "url": "https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f",
       "title": "Cloud Zones",
-      "description": "Regulatory onboarding only captures what is required for getting acces to the cloud",
+      "description": "Cloud zones abstract common security requirements from Landing Zones. This enables building workload-tailored landing zones more quickly and simplifies compliance.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3463,14 +3545,16 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+          "57c00ed4-e699-4167-a0f5-6009bf31b600",
+          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
         ],
-        "scope": "☁️ Platform",
+        "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75",
           "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
@@ -3576,6 +3660,16 @@ export const index = [
         "name": "Collie Cloud Tenant Database"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "understanding-cloud-foundation/changelog.md",
+    "frontmatter": {
+      "id": "e234e308-c739-4af4-9610-e81915f973d2",
+      "url": "https://www.notion.so/Changelog-e234e308c7394af49610e81915f973d2",
+      "title": "Changelog",
+      "category": "Understanding Cloud Foundation",
+      "order": 40
     }
   },
   {
@@ -3750,8 +3844,8 @@ export const index = [
           "d2cb8a5e-3e28-448b-8944-14ff38fad792",
           "c9728af5-49fe-4948-8701-2d6485bfbe93"
         ],
-        "redaction-state": "Draft",
-        "journey-stage": "⭐️",
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
         "scope": "🏢 Core",
         "tool-implementations": [
@@ -3877,6 +3971,26 @@ export const index = [
         "name": "Centralized Audit Logs"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/service-ecosystem/individual-service-provisioning.md",
+    "frontmatter": {
+      "id": "fd11f3c0-cf7a-4717-940f-505ef796e2c5",
+      "url": "https://www.notion.so/Individual-Service-Provisioning-fd11f3c0cf7a4717940f505ef796e2c5",
+      "title": "Individual Service Provisioning",
+      "description": "Cloud foundation teams can offer individual services and customizations through a standardized process.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️",
+        "depends-on": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Individual Service Provisioning"
+      }
     }
   },
   {

@@ -15,6 +15,7 @@ order: 0
 | AWS Control Tower with AFT             | Landing Zone Implementation |
 | AWS Landing Zone Accelerator           | Landing Zone Implementation |
 | Azure CAF Terraform Modules            | Landing Zone Implementation |
+| Azure LZ - ES via collie-cli           | Landing Zone Implementation |
 | Azure LZ accelerator - ES              | Landing Zone Implementation |
 | Azure LZ Terraform module - ES         | Landing Zone Implementation |
 | GCP CFT - Example Foundation           | Landing Zone Implementation |

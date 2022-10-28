@@ -10,11 +10,13 @@ pageType: CFMMBlock
 properties:
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+    - 57c00ed4-e699-4167-a0f5-6009bf31b600
+    - 913a8ad1-7ad4-4ade-9e88-801a7afa4b40
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - ac8a21c3-f692-4d23-a9bb-796fd311c39f
-  scope: ☁️ Platform
+  scope: 🛬 Landing Zone
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
     - bac2d6a9-0bab-4d58-b89e-9b3315f86b79
@@ -25,7 +27,15 @@ properties:
   name: Tenant Provisioning
 ---
 
-Provisioning tenants is an obligatory capability for providing cloud foundation services on any cloud platform.
+Cloud tenants are an essential part of the cloud [Resource Hierarchy](./resource-hierarchy.md). Provisioning tenants is an essential capability for any cloud foundation. Access to a cloud tenant like an AWS Account or Azure subscription enable self-service cloud resource provisioning for application teams. 
+
+The cloud foundation maturity model uses the term “tenant” to refer to the abstract concept of an isolated environment in a multi-tenant cloud platform. Cloud foundation teams can choose different platform-specific concepts to implement tenants. This choice should depend on the landing zone and workload type. Some practical examples of tenant concepts
+
+- In a landing zone hosting cloud native workloads, every application team receives their own AWS Account to provide strong isolation.
+
+- A managed container platform based on Kubernetes provides a Kubernetes namespace to every application team. These provide lightweight isolation between different workloads on the same cluster.
+
+- A Lift & Shift landing zone on Azure provides dedicated resource groups to every customer. This allows easily sharing common resources like an on-prem connected VNet while providing a reasonable level of isolation for configuring RBAC access to VMs and connected resources like storage accounts.
 
 ## Why You Need to Automate Cloud Tenant Provisioning
 
