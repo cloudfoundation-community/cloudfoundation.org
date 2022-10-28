@@ -10,7 +10,8 @@ description: >-
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - 0217c4da-6542-41d6-84c7-12af887e7d15
   journey-stage: ⭐️⭐️
   depends-on:
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161

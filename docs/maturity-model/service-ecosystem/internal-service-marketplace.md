@@ -12,8 +12,8 @@ properties:
   enables:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792
     - c9728af5-49fe-4948-8701-2d6485bfbe93
-  redaction-state: Draft
-  journey-stage: ⭐️
+  redaction-state: mvp1
+  journey-stage: ⭐️⭐️⭐️
   depends-on: []
   scope: 🏢 Core
   tool-implementations:
@@ -21,9 +21,7 @@ properties:
   name: Internal Service Marketplace
 ---
 
-Cloud is a way to deliver IT that maximizes business outcomes. Where classical IT services meant opening tickets or writing emails to 10 different stakeholders, the cloud is about having a single interface for DevOps teams to get everything they need to be productive. An internal service marketplace is a crucial part of getting away from a classical IT service operating model.
-
-By providing a standardized interface, an internal marketplace enables [platform teams](https://teamtopologies.com/key-concepts) to provide their services with minimal friction, thus reducing the cognitive overhead for consuming teams and platform teams alike. 
+By providing a standardized interface, an internal marketplace enables internal [platform teams](https://teamtopologies.com/key-concepts) to provide their services with minimal friction, thus reducing the cognitive overhead for consuming teams and platform teams alike. In this way, a cloud foundation team offering an internal service marketplace acts a “platform team to platform teams”. This enables organizations to rapidly build and efficiently operate internal platforms optimized to support specific cloud use cases. 
 
 ## How to Make an Internal Service Marketplace Successful
 
@@ -45,37 +43,21 @@ Making the complete service portfolio as easily discoverable as possible, makes 
 
 ### Guide Platform Teams to Offer Their Services
 
-Starting out with the Internal Service Marketplace, the Cloud Foundation team will most likely only provide its own services a a part of a [Modular Landing Zones](../tenant-management/modular-landing-zones.md) approach. Later in the cloud journey, platform teams will need to offer their services on the Internal Service Marketplace to gain the benefits of discoverability and standardization.
+Platform teams that want to offer their services on the Internal Service Marketplace usually need help for onboarding and realizing the maximum benefits of discoverability and standardization. Effectively, the Cloud Foundation team offers the marketplace as a platform to other platform teams. In this role, the cloud foundation team should establish processes to ensure high service quality and catalog consistency. Many teams implement this with a “Service review” process known from other marketplace ecosystem like the iOS App Store.
 
-Effectively, the Cloud Foundation team offers the marketplace as a platform to other platform teams.
+### Avoid Fragmentation
 
-### Use a Single Marketplace for All *internal* services
+With a single entry point for application teams, the cognitive overhead for teams is reduced. No more “where could I find service x?” by application teams or “How should we offer our service?” by platform teams. 
 
-This follows from the above points. If there is a single entry point, the cognitive overhead for teams is reduced. No more “where could I find service x?” by users or “Where should we offer our service?” by platform teams. 
+While internal services should only be offered on a single internal service marketplace, organizations should typically refrain from naively encapsulating 3rd party services that are already available on platform native marketplaces like the [Azure Marketplace](https://azuremarketplace.microsoft.com/). As long as their use  is compliant, there are little advantages compared to the significant overhead encapsulating adds. 
 
-While internal services should only be offered on a single internal service marketplace, services that are available on platform native marketplaces like the [Azure Marketplace](https://azuremarketplace.microsoft.com/) should not be encapsulated, but managed via these platform native marketplaces instead, if their usage is compliant.
+> **🌤️** In practice, most organizations forbid usage of cloud provider marketplaces because they side-step mandatory procurement procedures. This restriction is typically easy to implement via [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md).
 
-Choosing a marketplace independent from a third party marketplace means fewer technological restrictions: For example, you are not bound to using Azure ARM only, or AWS Cloud Formation. Instead you can use tooling like terraform.
+Building an internal service marketplace independent from a third party means fewer technological restrictions: For example, you are not bound to using Azure ARM only, or AWS Cloud Formation. Instead you can use tooling like terraform.
 
-When choosing a single marketplace for internal services, the ease to incorporate internal IT infrastructure needs to be a key consideration. DevOps Teams moving to the cloud in a “hybrid” setting need internal services like IPAM, SSL certs, internal DNS etc. 
+### Enable Internal PaaS/SaaS Use Cases
 
-### Make Use of Synergies When Implementing Services
+Offering internal services on a marketplace that works like a cloud control plane allows you to cater customers that do not need cloud infrastructure level access (e.g. a cloud-native landing zone to deploy their own resources) but rather only need access to a managed container platform and a [Managed DevOps Toolchain](./managed-devops-toolchain.md). 
 
-Some services need to integrate with a cloud tenant. Those integrations necessarily are platform specific.
-
-Two example services, that need to integrate with a cloud tenant:
-
-- [Virtual Network Service](./virtual-network-service.md) needs to create Azure VNETs, GCP VPCs, ...
-
-- [Managed DevOps Toolchain](./managed-devops-toolchain.md) needs to integrate permissions on cloud tenants via an Azure Service Principal, GCP Service Account, ...
-
-Integrating those services for multiple platforms necessarily means building platform specific code. However, some parts can and should be reused when implementing services.
-
-For the two example services above, these parts could be modularized and shared across cloud platforms:
-
-- [Virtual Network Service](./virtual-network-service.md) needs to reserve an IP range in an IPAM.
-
-- [Managed DevOps Toolchain](./managed-devops-toolchain.md) needs to manage e.g. a CI/CD pipeline and grant access to user.
-
-To allow modularization, use tooling that is not cloud platform specific for those services. Terraform has been a solid choice for many teams in the past.
+An internal service marketplace even enables build use cases like building a platform for data analysts leveraging a specialized and a [Managed Data Lake access](./managed-data-lake-access.md) service.
 
