@@ -10,7 +10,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "git fetch --unshallow && git rev-parse --is-shallow-repository  && vuepress build docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "postdocs:build": "bundlesize",
     "sync": "ts-node sync.ts && yarn lint:autofix",
     "serve": "http-server docs/.vuepress/dist",
