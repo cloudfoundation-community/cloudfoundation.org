@@ -24,7 +24,7 @@ const cfmm = useCloudFoundationMaturityModel();
 const blocks = computed(() => {
   const model = cfmm.value;
 
-  return model.queryBlocksSortedByJourneyStage(props.ids);
+  return model.queryBlocksSorted(props.ids);
 });
 </script>
 

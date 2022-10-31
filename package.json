@@ -5,6 +5,9 @@
   "repository": "git@github.com:meshcloud/cloudfoundation.git",
   "author": "Johannes Rudolph <jrudolph@meshcloud.io>",
   "license": "MIT",
+  "engines": {
+    "node": ">=16 <17"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
