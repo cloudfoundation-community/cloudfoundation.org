@@ -14,15 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Update Stats
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
       - name: prepare credentials.json
         run: |
           echo "${{ secrets.MESHBARN_FIELD_CFMM_WRITER_CREDENTIALS_JSON}}" | base64 --decode > credentials.json
           ls -lah credentials.json
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-          cache: "yarn"
-      - run: yarn --frozen-lockfile
+      - run: yarn install --frozen-lockfile
       - run: yarn stats

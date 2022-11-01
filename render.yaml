@@ -28,8 +28,15 @@ services:
         source: /maturity-model/what-is-the-cloud-foundation-maturity-model.html
         destination: /understanding-cloud-foundation/
       - type: redirect
-        source: /maturity-model/building-block-reference.html
-        destination: /maturity-model/what-is-a-building-block.html
+        source: /maturity-model/what-is-a-building-block.html
+        destination: /understanding-cloud-foundation/what-is-a-building-block.html
       - type: redirect
         source: /maturity-model/security-and-compliance/central-management-of-tenant-tags-and-metadata.html
         destination: /maturity-model/security-and-compliance/multi-cloud-tagging-policy.html
+      - type: redirect
+        source: /maturity-model/maturity-model/tenant-management/multi-cloud-tenant-database.html
+        destination: /maturity-model/tenant-management/self-service-multi-cloud-tenant-database.html
+      # fix some Google SEO "duplicate without user-selected canonical" issues, due to trailing slash
+      - type: redirect
+        source: /understanding-cloud-foundation
+        destination: /understanding-cloud-foundation/
