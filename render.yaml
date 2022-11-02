@@ -36,6 +36,9 @@ services:
       - type: redirect
         source: /maturity-model/maturity-model/tenant-management/multi-cloud-tenant-database.html
         destination: /maturity-model/tenant-management/self-service-multi-cloud-tenant-database.html
+      - type: redirect
+        source: /maturity-model/security-and-compliance/resource-policies-blacklisting.html
+        destination: /maturity-model/security-and-compliance/service-and-location-restrictions.html
       # fix some Google SEO "duplicate without user-selected canonical" issues, due to trailing slash
       - type: redirect
         source: /understanding-cloud-foundation
