@@ -37,7 +37,7 @@ When implementing security requirements, we are often faced with a gap between t
 
 ### Automate Control Implementation
 
-You can prevent security findings, if relevant configurations are automatically rolled out and continuously enforced in your cloud tenants. [Modular Landing Zones](../tenant-management/modular-landing-zones.md) are a great way to achieve this. Following such a preventive approach is that it is much more efficient than handling misconfigurations or vulnerabilities in a reactive manner, e.g. when scanning each cloud environment for possible misconfigurations (see [Automated Security Scanning](./automated-security-scanning.md)), as this will require continuous remediation actions that cost resources.
+You can prevent security findings, if relevant configurations are automatically rolled out and continuously enforced in your cloud tenants. [Modular Landing Zones](../tenant-management/modular-landing-zones.md) are a great way to achieve this. Following such a preventive approach is that it is much more efficient than handling misconfigurations or vulnerabilities in a reactive manner, e.g. when scanning each cloud environment for possible misconfigurations (see [Resource Configuration Scanning](./resource-configuration-scanning.md)), as this will require continuous remediation actions that cost resources.
 
 ### Keep the User Experience in Mind
 

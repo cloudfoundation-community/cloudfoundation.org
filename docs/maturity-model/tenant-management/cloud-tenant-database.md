@@ -80,7 +80,7 @@ Based on the recommendation and best practices above, here’s a list of the mos
 
 - `IT System Id` this can be a unique identifier describing your IT system, e.g. in a CMDB or EAM system
 
-- `Security Contact` the person responsible for the security of the workload running in this cloud tenant. This is the cloud foundation team’s point of contact for any security incidents detected in this tenant, e.g. to send alerts from [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md).
+- `Security Contact` the person responsible for the security of the workload running in this cloud tenant. This is the cloud foundation team’s point of contact for any security incidents detected in this tenant, e.g. to send alerts from [Resource Configuration Scanning](../security-and-compliance/resource-configuration-scanning.md).
 
 - `Organizational Contact` the person organizationally responsible for the cloud tenant. This could be the manager of the team working with the cloud tenant.
 
