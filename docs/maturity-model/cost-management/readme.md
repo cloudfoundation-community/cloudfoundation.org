@@ -31,7 +31,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🗂 Tenant Management](../tenant-management/readme.md) 
 
-- Tenant management process needs to provide the required data for chargeback. Usually a [Multi-Cloud Tenant Database](../tenant-management/multi-cloud-tenant-database.md) keeps track of the responsible cost owners and cost-centers for chargeback.
+- Tenant management process needs to provide the required data for chargeback. Usually a [Cloud Tenant Database](../tenant-management/cloud-tenant-database.md) or [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md)  keeps track of the responsible cost owners and cost-centers for chargeback.
 
 [🔐 IAM](../iam/readme.md) 
 

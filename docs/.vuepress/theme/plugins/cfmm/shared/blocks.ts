@@ -227,33 +227,6 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/tenant-management/multi-cloud-tenant-database.md",
-    "frontmatter": {
-      "id": "11af37b7-c948-4486-a5da-5b1db6de8193",
-      "url": "https://www.notion.so/Multi-Cloud-Tenant-Database-11af37b7c9484486a5da5b1db6de8193",
-      "title": "Multi-Cloud Tenant Database",
-      "description": "A central database provides information about tenants in different clouds using a unified information schema. Tenants can be registered in this database via an API or are stored there by combining different tenant lists/exports into a common database schema (ETL). ",
-      "category": "🗂 Tenant Management",
-      "pageType": "CFMMBlock",
-      "properties": {
-        "enables": [
-          "77942f5f-e395-49c6-8927-e5fa3ef28aef",
-          "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9"
-        ],
-        "redaction-state": "mvp1",
-        "journey-stage": "⭐️",
-        "depends-on": [
-          "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
-        ],
-        "scope": "🏢 Core",
-        "tool-implementations": [
-          "65b1a609-a258-4e93-898c-9d115b6e32c5"
-        ],
-        "name": "Multi-Cloud Tenant Database"
-      }
-    }
-  },
-  {
     "frontmatter": {
       "id": "11f50039-a1d6-49de-9fbd-247a1955b474",
       "url": "https://www.notion.so/Resource-Hierarchy-11f50039a1d649de9fbd247a1955b474",
@@ -488,25 +461,6 @@ export const index = [
   },
   {
     "frontmatter": {
-      "id": "1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-1e1b6fd7482e4c5badf079ebbe3949a6",
-      "title": "Resource Policies - Blacklisting",
-      "description": "3 basic policies can be applied manually via an optional step in the wizard, they are not part of the generated Terraform code.",
-      "properties": {
-        "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
-        ],
-        "tool": [
-          "410b6ce3-69b4-4ad9-bf16-d65e8bd512b7"
-        ],
-        "link": "https://cloud.google.com/docs/enterprise/setup-checklist#checklist-section-9",
-        "name": "Resource Policies - Blacklisting"
-      },
-      "pageType": "CFMMTool2Block"
-    }
-  },
-  {
-    "frontmatter": {
       "id": "1f3596eb-e73b-4b22-abf9-06d4ebfa0e1c",
       "url": "https://www.notion.so/Managed-Key-Vault-1f3596ebe73b4b22abf906d4ebfa0e1c",
       "title": "Managed Key Vault",
@@ -586,18 +540,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "24f0be77-129c-4802-80fd-2c58c6374300",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-24f0be77129c480280fd2c58c6374300",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-24f0be77129c480280fd2c58c6374300",
+      "title": "Resource Configuration Policies",
       "description": "Assign different policies and initiatives based on Microsoft Cloud Adaption Framework. Some examples are: Deploy activity logs and keep them in log analytic workspace, Enable Microsoft Defender for different services, Enable Microsoft Sentinel, Prevent usage of Public-IP and etc.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "ef594ed7-461f-45ff-9928-9c258c6b14e5"
         ],
         "link": "https://github.com/Azure/terraform-azurerm-caf-enterprise-scale/tree/main/modules/archetypes/lib/policy_definitions",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1185,18 +1140,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "483a6e1f-f717-44f0-bab1-7aa1049ef367",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-483a6e1ff71744f0bab17aa1049ef367",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-483a6e1ff71744f0bab17aa1049ef367",
+      "title": "Resource Configuration Policies",
       "description": "A good amount of reasonable default policies are rolled out via Terraform. They match the best practices provided by GCPs Cloud Foundation Toolkit.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
         ],
         "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/org_policy.tf",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1242,18 +1198,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-4a2514ab25e34d9caca79ef3f2b4a094",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-4a2514ab25e34d9caca79ef3f2b4a094",
+      "title": "Resource Configuration Policies",
       "description": "Accounts provisioned through AFT also inherit all guardrails from their parent OU which is covered by CT. Additional policies can be applied through AFT customization framework.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "8b560d01-09b5-499d-b5f7-34fdc79c722d"
         ],
         "link": "https://github.com/aws-ia/terraform-aws-control_tower_account_factory",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -1309,17 +1266,6 @@ export const index = [
   },
   {
     "frontmatter": {
-      "id": "50243dae-6041-4230-9145-6cb90a4c5634",
-      "url": "https://www.notion.so/Azure-LZ-ES-via-collie-cli-50243dae6041423091456cb90a4c5634",
-      "title": "Azure LZ - ES via collie-cli",
-      "properties": {
-        "category": "Landing Zone Implementation"
-      },
-      "pageType": "CFMMTool"
-    }
-  },
-  {
-    "frontmatter": {
       "id": "507e5776-239f-4a65-a6f5-d4944536e35a",
       "url": "https://www.notion.so/Manage-access-to-Cloud-Zones-with-meshStack-507e5776239f4a65a6f5d4944536e35a",
       "title": "Manage access to Cloud Zones with meshStack",
@@ -1361,7 +1307,7 @@ export const index = [
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786",
       "title": "Multi-cloud tenant database integrated with lifecycle management",
-      "description": "meshStack automatically supports the lifecycle management of tenant databases. When a cloud tenant owner registers a new tenant, it is automatically provisioned.",
+      "description": "meshStack automatically maintains the cloud tenant database as cloud customers provision or deprovision cloud environments.",
       "properties": {
         "block": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef"
@@ -1732,25 +1678,6 @@ export const index = [
   },
   {
     "frontmatter": {
-      "id": "65b1a609-a258-4e93-898c-9d115b6e32c5",
-      "url": "https://www.notion.so/Mulit-cloud-tenant-database-65b1a609a2584e93898c9d115b6e32c5",
-      "title": "Mulit-cloud tenant database",
-      "description": "meshStack automatically maintains a database of all tenants under management by the cloud foundation.",
-      "properties": {
-        "block": [
-          "11af37b7-c948-4486-a5da-5b1db6de8193"
-        ],
-        "tool": [
-          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
-        ],
-        "link": "https://docs.meshcloud.io/docs/administration.tenants.html",
-        "name": "Mulit-cloud tenant database"
-      },
-      "pageType": "CFMMTool2Block"
-    }
-  },
-  {
-    "frontmatter": {
       "id": "6625c2e8-22fa-40c1-befa-b8b463598bbe",
       "url": "https://www.notion.so/Cloud-Tenant-Tagging-6625c2e822fa40c1befab8b463598bbe",
       "title": "Cloud Tenant Tagging",
@@ -1809,18 +1736,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "694f24b9-1588-499b-9406-2f5f747747ba",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-694f24b91588499b94062f5f747747ba",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-694f24b91588499b94062f5f747747ba",
+      "title": "Resource Configuration Policies",
       "description": "Assign different policies and initiatives based on Microsoft Cloud Adaption Framework. Some examples are: Deploy activity logs and keep them in log analytic workspace, Enable Microsoft Defender for different services, Enable Microsoft Sentinel, Prevent usage of Public-IP and etc.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "e7fd910f-0ad8-446b-bb8b-d8f5956eceda"
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/tree/main/src/resources/Microsoft.Authorization/policyDefinitions",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2048,7 +1976,6 @@ export const index = [
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
-          "11af37b7-c948-4486-a5da-5b1db6de8193",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
@@ -2101,18 +2028,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "7beb3669-9658-4b4d-a87a-a136d9556f32",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-7beb366996584b4da87aa136d9556f32",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-7beb366996584b4da87aa136d9556f32",
+      "title": "Resource Configuration Policies",
       "description": "Reasonable defaults are set and additional helpful policies are proposed via code comments in the terraform files. They can be enabled on demand.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "be8db890-235d-4a90-9f78-2bfb81bdf1a5"
         ],
         "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/fast/stages/01-resman#organization-policies",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2120,18 +2048,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "7c317222-5658-447c-9ade-44f90e9aee96",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-7c3172225658447c9ade44f90e9aee96",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-7c3172225658447c9ade44f90e9aee96",
+      "title": "Resource Configuration Policies",
       "description": "Reasonable guardrails are applied to the default domains Infrastructure, Security and Quarantine. It is easy to also define additional guardrails or to define them for additional, custom OUs.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "557e72c2-227d-40bd-92b4-4c0707a3c2f5"
         ],
         "link": "https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main/reference/sample-configurations/aws-best-practices/service-control-policies",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2259,18 +2188,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "8a4e5f69-742c-43ef-948b-ed39fc21b3d8",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-8a4e5f69742c43ef948bed39fc21b3d8",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-8a4e5f69742c43ef948bed39fc21b3d8",
+      "title": "Resource Configuration Policies",
       "description": "AWS Control Tower sets up 20 preventive guardrails (implemented by SCPs) and 3 detective guardrails (implemented by AWS Config). Those are the “Mandatory” guardrails enabled by default that we see are reasonable, such as disallowing deletion of the log archive bucket, disallowing changes to AWS IAM roles set up by CT and CloudFormation, etc. There are also more guardrails available that are not enabled by default, which are “Elective” and “Strongly Recommended” guardrails. Newly provisioned accounts with Account Factory inherit guardrails from their parent OU.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "93b26c66-49b3-4ad5-ab78-9810a6334dc5"
         ],
         "link": "https://docs.aws.amazon.com/controltower/latest/userguide/guardrails.html",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -2280,7 +2210,7 @@ export const index = [
       "id": "8b36655b-1387-4bf2-b8ef-29826a349bb9",
       "url": "https://www.notion.so/On-Premise-Network-Connection-8b36655b13874bf2b8ef29826a349bb9",
       "title": "On-Premise Network Connection",
-      "description": "You can connect to your on-premise networks by choosing the matching option and configurations. You have the option of using Virtual WAN and then you are able to make the connection between your on-premises via VPN or Express route.",
+      "description": "You can connect to your on-premise networks by choosing the matching option and configurations. You have the option of using Virtual WAN and then you are able to make the connection between your on-premises via VPN or Express route.\nIf you deploy the terraform module using Collie's KitBundle functionality, on-premise network functionality will not be deployed automatically.",
       "properties": {
         "block": [
           "2468d240-6cca-4680-b9c4-6f237defa511"
@@ -2596,9 +2526,7 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [
-          "11af37b7-c948-4486-a5da-5b1db6de8193"
-        ],
+        "depends-on": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "e2123339-0641-4d44-b774-32ce23fd634d",
@@ -2662,6 +2590,38 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/security-and-compliance/resource-configuration-policies.md",
+    "frontmatter": {
+      "id": "af14b5df-77b4-4def-b761-8fadabd241ca",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-af14b5df77b44defb7618fadabd241ca",
+      "title": "Resource Configuration Policies",
+      "description": "Policies control the configuration of resources to enforce security and compliance standards like preventing public access to object storage buckets.",
+      "category": "🔖 Security & Compliance",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "scope": "🛬 Landing Zone",
+        "tool-implementations": [
+          "7beb3669-9658-4b4d-a87a-a136d9556f32",
+          "483a6e1f-f717-44f0-bab1-7aa1049ef367",
+          "694f24b9-1588-499b-9406-2f5f747747ba",
+          "c7020f93-4d65-4609-ae64-5ea3e76add60",
+          "24f0be77-129c-4802-80fd-2c58c6374300",
+          "8a4e5f69-742c-43ef-948b-ed39fc21b3d8",
+          "4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094",
+          "7c317222-5658-447c-9ade-44f90e9aee96",
+          "b153c072-1a43-46fb-90fa-60263f6d4705"
+        ],
+        "name": "Resource Configuration Policies"
+      }
+    }
+  },
+  {
     "file": "maturity-model/security-and-compliance/centralized-workload-and-infrastructure-logs.md",
     "frontmatter": {
       "id": "b0a04ae8-c9b3-4060-abfd-e760723995d8",
@@ -2678,6 +2638,26 @@ export const index = [
         "tool-implementations": [],
         "name": "Centralized workload and infrastructure logs"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "b153c072-1a43-46fb-90fa-60263f6d4705",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-via-collie-b153c0721a4346fb90fa60263f6d4705",
+      "title": "Resource Configuration Policies via collie",
+      "description": "Deploy any policy via the terraform-based Landing Zone Construction Kit framework. Collie provides a workflow for documenting compliance controls and compliance statements that lay out what policies are in effect in your landing zone and how they help implement compliance controls.",
+      "properties": {
+        "block": [
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "tool": [
+          "5c2013b6-4c56-4813-8be7-ad86757014af"
+        ],
+        "link": "https://landingzone.meshcloud.io",
+        "name": "Resource Configuration Policies via collie"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2816,12 +2796,11 @@ export const index = [
       "id": "b875ac41-2b38-4ce4-ab8b-76ddd876d789",
       "url": "https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789",
       "title": "Cloud Tenant Database",
-      "description": "Maintenance of a database of cloud tenants and associated metadata like responsible owners and chargeback information like cost center.",
+      "description": "A central database provides information about cloud tenants using a unified  schema. The database records essential metadata like the responsible owner of the tenant and a cost center for chargeback",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "11af37b7-c948-4486-a5da-5b1db6de8193",
           "52d1e517-9d07-4acc-8c59-17526fa3af9d"
         ],
         "redaction-state": "mvp1",
@@ -3028,18 +3007,19 @@ export const index = [
   {
     "frontmatter": {
       "id": "c7020f93-4d65-4609-ae64-5ea3e76add60",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-c7020f934d654609ae645ea3e76add60",
-      "title": "Resource Policies - Blacklisting",
+      "url": "https://www.notion.so/Resource-Configuration-Policies-c7020f934d654609ae645ea3e76add60",
+      "title": "Resource Configuration Policies",
       "description": "Reasonable defaults are set and additional helpful policies are proposed via code comments in the terraform files. They can be enabled on demand.",
       "properties": {
         "block": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "tool": [
           "53cb45d7-bcd9-4eb9-bfd5-dad6eca0b88c"
         ],
         "link": "https://github.com/Azure/terraform-azurerm-caf-enterprise-scale/blob/main/resources.policy_definitions.tf",
-        "name": "Resource Policies - Blacklisting"
+        "name": "Resource Configuration Policies"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -3195,7 +3175,7 @@ export const index = [
       "id": "ce19ba64-358a-4ea5-8520-d9d57296aac7",
       "url": "https://www.notion.so/Cloud-to-Cloud-interconnects-ce19ba64358a4ea58520d9d57296aac7",
       "title": "Cloud to Cloud interconnects",
-      "description": "You can connect to your connection between clouds by choosing the matching option and configurations. You have the option of using Virtual WAN and then you are able to make the connection between your on-premises via VPN or Express route.",
+      "description": "You can connect to your connection between clouds by choosing the matching option and configurations. You have the option of using Virtual WAN and then you are able to make the connection between your on-premises via VPN or Express route.\nIf you deploy the terraform modules using Collie's KitBundle functionality, cloud-to-cloud interconnectivity will not be deployed automatically.",
       "properties": {
         "block": [
           "a31e4077-4e84-4129-a46c-1070a8591181"
@@ -3277,16 +3257,18 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/security-and-compliance/resource-policies-blacklisting.md",
+    "file": "maturity-model/security-and-compliance/service-and-location-restrictions.md",
     "frontmatter": {
       "id": "d1904912-b420-4a10-a62c-aa578fb847ff",
-      "url": "https://www.notion.so/Resource-Policies-Blacklisting-d1904912b4204a10a62caa578fb847ff",
-      "title": "Resource Policies - Blacklisting",
-      "description": "Basic policies on cloud resources enforce Blacklisting of forbidden services, regions.",
+      "url": "https://www.notion.so/Service-and-Location-Restrictions-d1904912b4204a10a62caa578fb847ff",
+      "title": "Service and Location Restrictions",
+      "description": "Basic policies on cloud resources restrict access to incompliant cloud services and cloud regions (geographic locations).",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
@@ -3296,15 +3278,15 @@ export const index = [
         "tool-implementations": [
           "7beb3669-9658-4b4d-a87a-a136d9556f32",
           "483a6e1f-f717-44f0-bab1-7aa1049ef367",
-          "1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6",
           "694f24b9-1588-499b-9406-2f5f747747ba",
           "c7020f93-4d65-4609-ae64-5ea3e76add60",
           "24f0be77-129c-4802-80fd-2c58c6374300",
           "8a4e5f69-742c-43ef-948b-ed39fc21b3d8",
           "4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094",
-          "7c317222-5658-447c-9ade-44f90e9aee96"
+          "7c317222-5658-447c-9ade-44f90e9aee96",
+          "b153c072-1a43-46fb-90fa-60263f6d4705"
         ],
-        "name": "Resource Policies - Blacklisting"
+        "name": "Service and Location Restrictions"
       }
     }
   },

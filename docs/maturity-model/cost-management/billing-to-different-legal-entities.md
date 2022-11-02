@@ -18,7 +18,7 @@ properties:
   name: Billing to different legal entities
 ---
 
-International organizations with different legal entities have to comply with local tax regulations. This means that IT chargeback to correctly assign cloud costs in internal cost accounting to the legal entities responsible for them. Correct and legally compliant internal cost accounting usually requires that cloud foundation teams not only charge back consumption cost, but also do [Chargeback at full cost allocation](./chargeback-at-full-cost-allocation.md).
+International organizations with different legal entities have to comply with local tax regulations. This means that IT has to be charged back to correctly assign cloud costs in internal cost accounting to the legal entities responsible for them. Correct and legally compliant internal cost accounting usually requires that cloud foundation teams not only charge back consumption cost, but also do [Chargeback at full cost allocation](./chargeback-at-full-cost-allocation.md).
 
 There are different ways to implement billing to different legal entities
 

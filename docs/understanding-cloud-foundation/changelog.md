@@ -6,6 +6,14 @@ category: Understanding Cloud Foundation
 order: 40
 ---
 
+## 2022-11
+
+- Merged the “Multi-Cloud Tenant Database” block into the existing [Self-Service Multi-Cloud Tenant Database](../maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) block. Most teams that we have been advising on their cloud journeys have found little value in the distinction at Journey Stage one between the core-scope “Multi-Cloud Tenant Database” and the platform-scope [Cloud Tenant Database](../maturity-model/tenant-management/cloud-tenant-database.md) block. In practice, the need to establish a multi-cloud tenant database coincides with increased scoped for the cloud foundation team (more customers, more platforms) so merging this makes the model a little leaner and provides better distinction between these capabilities.
+
+- We renamed the “Resource Policies - Blacklisting” building block to [Service and Location Restrictions](../maturity-model/security-and-compliance/service-and-location-restrictions.md). Cloud foundation teams can establish policies for allowed cloud services and regions via both blacklisting and whitelisting resources and we think the new name better captures this. 
+
+- We added [Resource Configuration Policies](../maturity-model/security-and-compliance/resource-configuration-policies.md) as a journey stage 2 capability. Albeit often using the same implementation techniques as [Service and Location Restrictions](../maturity-model/security-and-compliance/service-and-location-restrictions.md), we see this as a differentiated capability leveraged by cloud foundation teams building bespoke landing zones for self-service application teams.
+
 ## 2022-10
 
 - Change scope of the [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) capability from “Platform” to “Landing Zone”. This change reflects that the “tenant” concept can be different for different landing zones (e.g. a Lift & Shift landing zone may provision an Azure Resource Group, a container landing zone provisions a K8s namespace on a shared cluster)

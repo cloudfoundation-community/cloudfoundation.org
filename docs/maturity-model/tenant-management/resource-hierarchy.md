@@ -36,7 +36,7 @@ Tenants and cloud resources therefore always form the concept of a hierarchy. Th
 
 Most cloud platforms today also offer higher-level constructs that allow modeling resource hierarchies above the tenant level, e.g. by grouping related tenants under folders or organization units. These higher-level constructs afford cloud foundation teams to centrally define and enforce policies across multiple tenants, thereby reducing complexity and simplifying governance. 
 
-Designing and leveraging the cloud resource hierarchy is therefore an important starting point for establishing proper cloud governance. By deliberately placing cloud tenants in this hierarchy right from the start (see [Tenant Provisioning](./tenant-provisioning.md)), cloud foundation teams can easily ensure the consistent enforcement of guardrails like [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md).
+Designing and leveraging the cloud resource hierarchy is therefore an important starting point for establishing proper cloud governance. By deliberately placing cloud tenants in this hierarchy right from the start (see [Tenant Provisioning](./tenant-provisioning.md)), cloud foundation teams can easily ensure the consistent enforcement of guardrails like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md).
 
 ## Examples of Cloud Resource Hierarchy
 
@@ -94,7 +94,7 @@ Another consideration is what governance concerns you want to leverage the resou
 
 ### Separate Shared Services and Internal Customer Workloads
 
-As the cloud foundation team you will likely want to add more advanced capabilities like [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) to your service offering later on. Separate these shared services and customer workloads in the resource hierarchy on a very high level up the tree. This is especially relevant if you want to simultaneously enforce policies like [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md) to enforce use of shared services. 
+As the cloud foundation team you will likely want to add more advanced capabilities like [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) to your service offering later on. Separate these shared services and customer workloads in the resource hierarchy on a very high level up the tree. This is especially relevant if you want to simultaneously enforce policies like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md) to enforce use of shared services. 
 
 ### Consider Separating Productive and Non-Productive Workloads
 

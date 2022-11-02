@@ -63,7 +63,7 @@ When implementing a cloud cost optimization strategy, it’s important that clou
 
 ### Control Access to Reservation and Commitment Programmes
 
-The first consideration is that the ability to create reservations and commitments, sometimes even programatically through an API, can quickly hold the organization liable for hundreds of thousands to millions of dollars to the cloud provider. The landing zone should therefore tightly control who in the organization can make these reservations, e.g. by denying access to the APIs via [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md) or not granting the required permissions via the [Identity and Access Management Concept](../iam/identity-and-access-management-concept.md).
+The first consideration is that the ability to create reservations and commitments, sometimes even programatically through an API, can quickly hold the organization liable for hundreds of thousands to millions of dollars to the cloud provider. The landing zone should therefore tightly control who in the organization can make these reservations, e.g. by denying access to the APIs via [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md) or not granting the required permissions via the [Identity and Access Management Concept](../iam/identity-and-access-management-concept.md).
 
 Typically, organizations have compliance rules on spend thresholds that can be approved by each level of management. Centralizing spend decisions to the cloud foundation team is therefore a valid and easy approach to ensure compliance.. 
 
