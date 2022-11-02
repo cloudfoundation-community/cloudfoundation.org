@@ -3,13 +3,13 @@ id: b875ac41-2b38-4ce4-ab8b-76ddd876d789
 url: https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789
 title: Cloud Tenant Database
 description: >-
-  Maintenance of a database of cloud tenants and associated metadata like
-  responsible owners and chargeback information like cost center.
+  A central database provides information about cloud tenants using a unified 
+  schema. The database records essential metadata like the responsible owner of
+  the tenant and a cost center for chargeback
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
   enables:
-    - 11af37b7-c948-4486-a5da-5b1db6de8193
     - 52d1e517-9d07-4acc-8c59-17526fa3af9d
   redaction-state: mvp1
   journey-stage: ⭐️
@@ -21,11 +21,11 @@ properties:
   name: Cloud Tenant Database
 ---
 
-When adopting the cloud, it’s a best practice to separate IT systems into isolated cloud tenants.
+When an organization with many IT systems sets out to adopting the cloud, it’s a best practice to separate each system into an isolated cloud tenant. Managing cloud tenants for more than a handful of IT systems quickly becomes a mess without the appropriate structure in place. A cloud tenant database is an essential capability for building a solid [🗂 Tenant Management](./readme.md) pillar of your cloud foundation.
 
 ## Why Build a Cloud Tenant Database?
 
-Managing cloud tenants for more than a handful of IT systems quickly becomes a mess without the appropriate structure in place. A cloud tenant database provides clear responsibilities and accountability. Both are crucial to empowering engineering teams with freedom on the cloud. 
+A cloud tenant database provides clear responsibilities and accountability. Both are crucial to empowering engineering teams with freedom on the cloud. 
 
 To ensure accountability, organizations must at all times maintain key information about the cloud tenants they own:
 
@@ -58,7 +58,7 @@ At this point, many organizations learn the downsides of the initial freedom the
 
 ### Consider a Consistent Multi-Cloud Tenant Database
 
-The “Cloud Tenant Database” building block looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. Since most organizations follow a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Multi-Cloud Tenant Database](./multi-cloud-tenant-database.md) as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
+The “Cloud Tenant Database” building block looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. As your organizations adopts a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md)  as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
 
 ### Plan for Automating Your Cloud Tenant Database
 

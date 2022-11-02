@@ -23,7 +23,7 @@ Multi-Cloud Security & Compliance involves the following key activities and capa
 
 - Establish a clear [Shared Responsibility Model](./shared-responsibility-model.md) for all cloud platforms. 
 
-- Establish a security baseline leveraging cloud capabilities like [Resource Policies - Blacklisting](./resource-policies-blacklisting.md) and [Centralized audit logs](./centralized-audit-logs.md) 
+- Establish a security baseline leveraging cloud capabilities like [Service and Location Restrictions](./service-and-location-restrictions.md) and [Centralized audit logs](./centralized-audit-logs.md) 
 
 - Depending on the scope and scale of the cloud foundation, having multiple [Cloud Zones](./cloud-zones.md) can help offering “zones” with different sets of responsibility shares
 

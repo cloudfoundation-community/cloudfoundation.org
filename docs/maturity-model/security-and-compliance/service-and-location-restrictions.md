@@ -1,15 +1,16 @@
 ---
 id: d1904912-b420-4a10-a62c-aa578fb847ff
 url: >-
-  https://www.notion.so/Resource-Policies-Blacklisting-d1904912b4204a10a62caa578fb847ff
-title: Resource Policies - Blacklisting
+  https://www.notion.so/Service-and-Location-Restrictions-d1904912b4204a10a62caa578fb847ff
+title: Service and Location Restrictions
 description: >-
-  Basic policies on cloud resources enforce Blacklisting of forbidden services,
-  regions.
+  Basic policies on cloud resources restrict access to incompliant cloud
+  services and cloud regions (geographic locations).
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - af14b5df-77b4-4def-b761-8fadabd241ca
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
@@ -18,14 +19,14 @@ properties:
   tool-implementations:
     - 7beb3669-9658-4b4d-a87a-a136d9556f32
     - 483a6e1f-f717-44f0-bab1-7aa1049ef367
-    - 1e1b6fd7-482e-4c5b-adf0-79ebbe3949a6
     - 694f24b9-1588-499b-9406-2f5f747747ba
     - c7020f93-4d65-4609-ae64-5ea3e76add60
     - 24f0be77-129c-4802-80fd-2c58c6374300
     - 8a4e5f69-742c-43ef-948b-ed39fc21b3d8
     - 4a2514ab-25e3-4d9c-aca7-9ef3f2b4a094
     - 7c317222-5658-447c-9ade-44f90e9aee96
-  name: Resource Policies - Blacklisting
+    - b153c072-1a43-46fb-90fa-60263f6d4705
+  name: Service and Location Restrictions
 ---
 
 Building a cloud Landing Zone is a proven pattern to establish the guardrails that allow a cloud foundation team to offer a great deal of freedom while staying in control. Policies that constrain what resources your customers can deploy on the cloud are the most fundamental type of guardrail a landing zone can put in place. 

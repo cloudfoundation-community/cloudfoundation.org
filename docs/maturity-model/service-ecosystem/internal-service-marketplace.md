@@ -51,7 +51,7 @@ With a single entry point for application teams, the cognitive overhead for team
 
 While internal services should only be offered on a single internal service marketplace, organizations should typically refrain from naively encapsulating 3rd party services that are already available on platform native marketplaces like the [Azure Marketplace](https://azuremarketplace.microsoft.com/). As long as their use  is compliant, there are little advantages compared to the significant overhead encapsulating adds. 
 
-> **🌤️** In practice, most organizations forbid usage of cloud provider marketplaces because they side-step mandatory procurement procedures. This restriction is typically easy to implement via [Resource Policies - Blacklisting](../security-and-compliance/resource-policies-blacklisting.md).
+> **🌤️** In practice, most organizations forbid usage of cloud provider marketplaces because they side-step mandatory procurement procedures. This restriction is typically easy to implement via [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md).
 
 Building an internal service marketplace independent from a third party means fewer technological restrictions: For example, you are not bound to using Azure ARM only, or AWS Cloud Formation. Instead you can use tooling like terraform.
 
