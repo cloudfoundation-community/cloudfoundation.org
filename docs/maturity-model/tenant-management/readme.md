@@ -37,7 +37,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 - Tenant databases need to provide necessary metadata to enable [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-tagging.md) and [Cloud Resource Tagging](../security-and-compliance/cloud-resource-tagging.md) for compliance purposes
 
-- The tenant management process needs to identify the responsible security contact for each cloud tenant, which is an important prerequisite for establishing an [Incident Management Process](../security-and-compliance/incident-management-process.md) and informing the right stakeholders about the results of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) 
+- The tenant management process needs to identify the responsible security contact for each cloud tenant, which is an important prerequisite for establishing an [Incident Management Process](../security-and-compliance/incident-management-process.md) and informing the right stakeholders about the results of [Resource Configuration Scanning](../security-and-compliance/resource-configuration-scanning.md) 
 
 [💵 Cost Management](../cost-management/readme.md) 
 

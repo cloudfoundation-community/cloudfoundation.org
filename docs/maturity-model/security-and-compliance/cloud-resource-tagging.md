@@ -42,7 +42,7 @@ In addition to the concerns and best practices about cloud tagging already laid 
 
 It’s difficult for the cloud foundation team to anticipate what kind of cloud resources internal customers want to deploy and how they will deploy them. The responsibility for tagging them correctly must consequently reside with internal cloud customers. Cloud Foundation teams should thus set clear expectations, for example by defining and communicating a tag catalog or cloud tagging policy.
 
-Automated enforcement of these policies is partially possible. For example, if your cloud foundation team wants to ensure that all cloud resources storing personally identifiable information (PII) are tagged accordingly, you can enforce a policy on common data storage resources such as Azure Storage Account or S3 Buckets to only allow creation of those resources when they contain a `data-classification:pii` or `data-classification:other` tag. Cloud Foundation teams can also audit the correct use of tags using [Automated Security Scanning](./automated-security-scanning.md) tools.
+Automated enforcement of these policies is partially possible. For example, if your cloud foundation team wants to ensure that all cloud resources storing personally identifiable information (PII) are tagged accordingly, you can enforce a policy on common data storage resources such as Azure Storage Account or S3 Buckets to only allow creation of those resources when they contain a `data-classification:pii` or `data-classification:other` tag. Cloud Foundation teams can also audit the correct use of tags using [Resource Configuration Scanning](./resource-configuration-scanning.md) tools.
 
 ### Avoid Chargeback via Resource Tagging
 

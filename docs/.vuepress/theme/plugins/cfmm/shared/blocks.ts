@@ -133,12 +133,12 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/security-and-compliance/automated-security-scanning.md",
+    "file": "maturity-model/security-and-compliance/resource-configuration-scanning.md",
     "frontmatter": {
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
-      "url": "https://www.notion.so/Automated-Security-Scanning-09e744c5e12a49e88b6fb7e3c44ba63b",
-      "title": "Automated Security Scanning",
-      "description": "Cloud workloads are automatically scanned for security/compliance violations (e.g. Azure Security Center, Forseti, AWS Guard Duty). This is about cloud resource configuration (e.g. VPC ACLs), not about workload configuration (e.g. software firewall)",
+      "url": "https://www.notion.so/Resource-Configuration-Scanning-09e744c5e12a49e88b6fb7e3c44ba63b",
+      "title": "Resource Configuration Scanning",
+      "description": "Scan cloud resource configurations against a catalog of configuration policies for potential security risks and compliance violations.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -149,7 +149,7 @@ export const index = [
         "depends-on": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
-        "name": "Automated Security Scanning"
+        "name": "Resource Configuration Scanning"
       }
     }
   },

@@ -35,7 +35,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 - The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md).
 
-- Permissions are often a key component of [Automated Security Scanning](../security-and-compliance/automated-security-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.).
+- Permissions are often a key component of [Resource Configuration Scanning](../security-and-compliance/resource-configuration-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.).
 
 - IAM changes should be included in [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md). This is also important to document correct handling of Joiner/Mover/Leaver-Processes.
 

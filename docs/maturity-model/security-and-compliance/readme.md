@@ -29,7 +29,7 @@ Multi-Cloud Security & Compliance involves the following key activities and capa
 
 - Establish a [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md) serving the needs of all cloud foundation stakeholders and processes
 
-- Providing compliance capabilities like supporting an [Incident Management Process](./incident-management-process.md) powered by [Automated Security Scanning](./automated-security-scanning.md)
+- Providing compliance capabilities like supporting an [Incident Management Process](./incident-management-process.md) powered by [Resource Configuration Scanning](./resource-configuration-scanning.md)
 
 As the cloud foundation approach is all about integrating the capabilities of its constituent pillars, the Security & Compliance pillar has several important links to other cloud foundation capabilities
 
