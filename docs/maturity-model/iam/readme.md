@@ -17,11 +17,11 @@ Identity and Access Management (IAM) is a crucial part of building a solid cloud
 
 The IAM pillar of the Cloud Foundation Maturity Model encompasses the following key activities and capabilities
 
-- An [Identity and Access Management Concept](./identity-and-access-management-concept.md) establishes a multi-cloud control plane for IAM with a consistent management paradigm for identity and permissions life-cycle across platforms.
+- An [Identity and Access Management Alignment](./identity-and-access-management-alignment.md) establishes a multi-cloud control plane for IAM with a consistent management paradigm for identity and permissions life-cycle across platforms.
 
 - A [Federated Identity and Authentication](./federated-identity-and-authentication.md) architecture adapted to each cloud platform provides the technical integration.
 
-- An [Authorization Concept](./authorization-concept.md) describes how the organization manages authorization for cloud tenants and resources. 
+- An [Resource Authorization Management](./resource-authorization-management.md) describes how the organization manages authorization for cloud tenants and resources. 
 
 - Cloud Foundation teams should strongly consider also establishing formal processes for [Privileged Access Management](./privileged-access-management.md), e.g. for administrative users
 
@@ -29,7 +29,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🗂 Tenant Management](../tenant-management/readme.md) 
 
-- As the tenant is the fundamental entry point into the cloud, providing access in line with the [Authorization Concept](./authorization-concept.md) should be part of the [Tenant Provisioning](../tenant-management/tenant-provisioning.md) processes.
+- As the tenant is the fundamental entry point into the cloud, providing access in line with the [Resource Authorization Management](./resource-authorization-management.md) should be part of the [Tenant Provisioning](../tenant-management/tenant-provisioning.md) processes.
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
@@ -41,7 +41,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [💵 Cost Management](../cost-management/readme.md) 
 
-- The [Authorization Concept](./authorization-concept.md) should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources.
+- The [Resource Authorization Management](./resource-authorization-management.md) should ensure that non-technical project stakeholders have enough access to cost reporting capabilities, without requiring technical access to cloud resources.
 
 [🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 

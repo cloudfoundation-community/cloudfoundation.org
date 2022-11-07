@@ -45,7 +45,7 @@ Below you will find some important points to understand PAM better:
 
     **Closed** landing zone designs on the other hand prevent teams from creating or modifying IAM roles and permissions on cloud tenants. Teams must request all such changes via the cloud foundation team.
 
-    For more details on authorization and privileged access, please refer to the topic [Authorization Concept](./authorization-concept.md).
+    For more details on authorization and privileged access, please refer to the topic [Resource Authorization Management](./resource-authorization-management.md).
 
 - Emergency access accounts are highly privileged, and they are not assigned to specific individuals. Emergency access accounts are limited to emergency or "break glass"' scenarios where normal administrative accounts can't be used. It is recommended that you maintain a goal of restricting emergency account use to only the times when it is absolutely necessary. For example, when an important application has stopped functioning and operating users needs access to debug and fix the problem or when project access for a specific user must be immediately revoked due to an account compromise.
 

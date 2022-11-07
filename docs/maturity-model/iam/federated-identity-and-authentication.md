@@ -20,8 +20,6 @@ properties:
   name: Federated Identity and Authentication
 ---
 
-## What Is Identity and Access Management (IAM) System?
-
 Identity and access management (IAM) stands for the **central management** of users and access rights across **systems**, **applications** and in the **cloud.** It is a means of managing **user accounts**
 and **privileges** for systems and programs in a **compliant** manner. IAM allows you to **open** the **corporate network** up to external partners, clients and suppliers **without risking** **security breaches.**
 

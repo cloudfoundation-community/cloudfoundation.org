@@ -59,7 +59,7 @@ Isolate teams and workloads using tenants - no sharing! One of the worst anti-pa
 
 ### IAM Should Be Part of Tenant Provisioning
 
-Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) and [Authorization Concept](../iam/authorization-concept.md) that details how and to what extent teams can access cloud tenants.
+Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) and [Resource Authorization Management](../iam/resource-authorization-management.md) that details how and to what extent teams can access cloud tenants.
 
 ### Maintain a Cloud Tenant Database
 

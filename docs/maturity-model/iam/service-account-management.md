@@ -31,7 +31,7 @@ Controlling access permissions is a central measure to minimize security risks i
 
 Careful Service Account Management is especially relevant for cloud platforms where the creation of service accounts requires global administrative privileges. Take Azure for example: Creating a Service Principal requires AAD permissions. Therefore teams cannot create service accounts in self-service inside an isolated cloud tenant.
 
-The approach to Service Account Management needs to be documented in [Identity and Access Management Concept](./identity-and-access-management-concept.md).
+The approach to Service Account Management needs to be documented in [Identity and Access Management Alignment](./identity-and-access-management-alignment.md).
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>

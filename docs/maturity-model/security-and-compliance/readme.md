@@ -41,7 +41,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- The scope of permissions granted to internal cloud customers as part of an [Authorization Concept](../iam/authorization-concept.md) should reflect the responsibility split defined in the [Shared Responsibility Model](./shared-responsibility-model.md)  
+- The scope of permissions granted to internal cloud customers as part of an [Resource Authorization Management](../iam/resource-authorization-management.md) should reflect the responsibility split defined in the [Shared Responsibility Model](./shared-responsibility-model.md)  
 
 [💵 Cost Management](../cost-management/readme.md) 
 
