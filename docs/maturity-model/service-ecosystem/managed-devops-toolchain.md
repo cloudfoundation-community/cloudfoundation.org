@@ -99,7 +99,7 @@ While there are clear benefits to offering pre-integrated toolchains, plan for f
 
 ### Authorize Source Code Repositories
 
-The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Concept](../iam/identity-and-access-management-concept.md) and  [Authorization Concept](../iam/authorization-concept.md).
+The managed service should provide a way to manage permissions for the source code repository, preferably integrated with already existing cloud foundation concepts like [Identity and Access Management Alignment](../iam/identity-and-access-management-alignment.md) and  [Resource Authorization Management](../iam/resource-authorization-management.md).
 
 ### Manage Service Credentials
 
@@ -109,7 +109,7 @@ Continuous delivery implies that the CI/CD platform also has the ability to exec
 
 If the Cloud Foundation team wants to provide continuous delivery capabilities in addition to continuous integration capabilities, providing a way to handle service credentials is obligatory. In practice, the following implementations from simple to more advanced (and thus more secure) are observed:
 
-- rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Authorization Concept](../iam/authorization-concept.md))
+- rely on **manual** credential creation and rotation (this requires an "open" landing zone design, see [Resource Authorization Management](../iam/resource-authorization-management.md))
 
 - a **semi-automated** process leverages credentials provided by [Service Account Management](../iam/service-account-management.md) manually transferred into the CI/CD platform
 

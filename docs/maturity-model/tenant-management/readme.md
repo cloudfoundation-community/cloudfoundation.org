@@ -31,7 +31,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- As the tenant is a fundamental entry point into the cloud, controlling access to the cloud at tenant-level is a key consideration for a multi-cloud [Authorization Concept](../iam/authorization-concept.md) 
+- As the tenant is a fundamental entry point into the cloud, controlling access to the cloud at tenant-level is a key consideration for a multi-cloud [Resource Authorization Management](../iam/resource-authorization-management.md) 
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 

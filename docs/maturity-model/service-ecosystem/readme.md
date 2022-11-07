@@ -41,7 +41,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- Leverage existing IAM facilities such as [Federated Identity and Authentication](../iam/federated-identity-and-authentication.md) as well as the [Authorization Concept](../iam/authorization-concept.md) to manage teams’ access to internal services.
+- Leverage existing IAM facilities such as [Federated Identity and Authentication](../iam/federated-identity-and-authentication.md) as well as the [Resource Authorization Management](../iam/resource-authorization-management.md) to manage teams’ access to internal services.
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 

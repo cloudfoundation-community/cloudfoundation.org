@@ -35,7 +35,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- The [Authorization Concept](../iam/authorization-concept.md) should ensure that non-technical project stakeholders have sufficient access to cost reporting capabilities
+- The [Resource Authorization Management](../iam/resource-authorization-management.md) should ensure that non-technical project stakeholders have sufficient access to cost reporting capabilities
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 

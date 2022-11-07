@@ -173,12 +173,12 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/iam/authorization-concept.md",
+    "file": "maturity-model/iam/resource-authorization-management.md",
     "frontmatter": {
       "id": "0dd09c75-2acd-4e87-9721-6b5f563da035",
-      "url": "https://www.notion.so/Authorization-Concept-0dd09c752acd4e8797216b5f563da035",
-      "title": "Authorization Concept",
-      "description": "Define a multi-cloud authorization concept that platforms can implement independently and according to the cloud platform's native authorization capabilities. The authorization concept should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
+      "url": "https://www.notion.so/Resource-Authorization-Management-0dd09c752acd4e8797216b5f563da035",
+      "title": "Resource Authorization Management",
+      "description": "Establish consistent guidelines and guardrails for managing authorization to cloud resources in Landing Zones. Authorization management should consider key principles like segregation of duties, need-to-know and separation of privileged and unprivileged roles.",
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
@@ -190,11 +190,11 @@ export const index = [
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
-        "scope": "🏢 Core",
+        "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19"
         ],
-        "name": "Authorization Concept"
+        "name": "Resource Authorization Management"
       }
     }
   },
@@ -792,12 +792,12 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/iam/identity-and-access-management-concept.md",
+    "file": "maturity-model/iam/identity-and-access-management-alignment.md",
     "frontmatter": {
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
-      "url": "https://www.notion.so/Identity-and-Access-Management-Concept-37862f9f3d8a4e258e90e487dc455b0c",
-      "title": "Identity and Access Management Concept",
-      "description": "Multi-Cloud IAM architecture concept based on federated identities and authentication.",
+      "url": "https://www.notion.so/Identity-and-Access-Management-Alignment-37862f9f3d8a4e258e90e487dc455b0c",
+      "title": "Identity and Access Management Alignment",
+      "description": "Establish and align processes for governing identities and access permissions across cloud platforms with the responsible IAM stakeholders of the organization.",
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
@@ -812,7 +812,7 @@ export const index = [
         "depends-on": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Identity and Access Management Concept"
+        "name": "Identity and Access Management Alignment"
       }
     }
   },
@@ -2542,7 +2542,7 @@ export const index = [
       "id": "ac8a21c3-f692-4d23-a9bb-796fd311c39f",
       "url": "https://www.notion.so/Resource-Hierarchy-ac8a21c3f6924d23a9bb796fd311c39f",
       "title": "Resource Hierarchy",
-      "description": "Definition of a cloud resource hierarchy that facilitates tenant isolation and policy enforcement. Cloud tenants are deliberately placed in this resource hierarchy when tenants are provisioned.",
+      "description": "Define a cloud resource hierarchy structure that facilitates tenant isolation and policy enforcement. Maintain the integrity of this hierarchy to ensure capabilities built atop of it remain effective.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {

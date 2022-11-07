@@ -46,7 +46,7 @@ The Cloud Foundation Maturity model can help practioners identify the relevant c
 
 ### Advantages and Disadvantages
 
-The advantage of this approach is that the team can consider interdependencies between capabilities in different pillars (e.g. from [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) to the [Identity and Access Management Concept](../maturity-model/iam/identity-and-access-management-concept.md)) already in the earliest design stages. This means that the cloud adoption experience for DevOps teams is considered end-to-end from the start. Cloud Foundation teams can therefore avoid pitfalls like introducing media breaks and unnecessary manual handovers between process steps. 
+The advantage of this approach is that the team can consider interdependencies between capabilities in different pillars (e.g. from [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) to the [Identity and Access Management Alignment](../maturity-model/iam/identity-and-access-management-alignment.md)) already in the earliest design stages. This means that the cloud adoption experience for DevOps teams is considered end-to-end from the start. Cloud Foundation teams can therefore avoid pitfalls like introducing media breaks and unnecessary manual handovers between process steps. 
 
 Another key advantage of this model is that the cloud foundation team can intentionally design the implementation of building blocks so that the solution architecture minimizes the number and complexity of technical interfaces between IT systems and processes. This decreases the overall solution complexity, resulting in higher agility and reduced operational maintenance cost to the organization.
 

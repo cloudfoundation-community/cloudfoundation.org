@@ -8,6 +8,14 @@ order: 40
 
 ## 2022-11
 
+- Several key building blocks were refactored to describe the capability they represent instead of an implementation artifact or concept. This refactoring improves the consistency of the model and makes assessing implementation maturity of each block more consistent as well.
+
+    - "Identity and Access Management Concept” was renamed to [Identity and Access Management Alignment](../maturity-model/iam/identity-and-access-management-alignment.md). It was also re-focused on establishing aligned processes for governing identities and access permissions across cloud platforms.
+
+    - “Authorization Concept” was renamed to  [Resource Authorization Management](../maturity-model/iam/resource-authorization-management.md). We now also see this capability on the Landing Zone scope instead of the platform scope as landing zone’s built for different use cases can require different approaches to managing resource authorization.
+
+    - The [Resource Hierarchy](../maturity-model/tenant-management/resource-hierarchy.md) block summary now also highlights the importance of maintaining the integrity of the hierarchy to ensure other capabilities built atop of it remain effective.
+
 - Merged the “Multi-Cloud Tenant Database” block into the existing [Self-Service Multi-Cloud Tenant Database](../maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md) block. Most teams that we have been advising on their cloud journeys have found little value in the distinction at Journey Stage one between the core-scope “Multi-Cloud Tenant Database” and the platform-scope [Cloud Tenant Database](../maturity-model/tenant-management/cloud-tenant-database.md) block. In practice, the need to establish a multi-cloud tenant database coincides with increased scoped for the cloud foundation team (more customers, more platforms) so merging this makes the model a little leaner and provides better distinction between these capabilities.
 
 - We renamed the “Resource Policies - Blacklisting” building block to [Service and Location Restrictions](../maturity-model/security-and-compliance/service-and-location-restrictions.md). Cloud foundation teams can establish policies for allowed cloud services and regions via both blacklisting and whitelisting resources and we think the new name better captures this. 
