@@ -179,18 +179,6 @@ onMounted(() => {
   }
 });
 
-let displayOptions = computed<MaturityModelDisplayOptions>(() => {
-  const opts = {
-    selectedTool: selectedTool.value,
-    selectedScopes: selectedScopes.value,
-    selectedStages: selectedStages.value,
-    showControls: showControls.value,
-    hideUnselected: hideUnselected.value,
-    showDescription: showDescription.value,
-  };
-
-  return opts;
-});
 
 let hoverBlock = ref<MaturityModelBlock | null>(null);
 
@@ -205,6 +193,22 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
     hoverBlock.value = event.block;
   }
 }
+
+let displayOptions = computed<MaturityModelDisplayOptions>(() => {
+  
+  const opts : MaturityModelDisplayOptions = {
+    selectedTool: selectedTool.value,
+    selectedScopes: selectedScopes.value,
+    selectedStages: selectedStages.value,
+    showControls: showControls.value,
+    hideUnselected: hideUnselected.value,
+    showDescription: showDescription.value,
+
+    highlightedBlock: hoverBlock.value
+  };
+
+  return opts;
+});
 </script>
 
 <style lang="scss" scoped>

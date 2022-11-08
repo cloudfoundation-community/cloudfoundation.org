@@ -20,18 +20,23 @@ export class CloudFoundationMaturityModel {
   readonly blocks = computed(() =>
     index
       .filter((x) => x.file && x.frontmatter.pageType === "CFMMBlock")
-      .map((value) => ({
-        id: value.frontmatter.id,
-        pillar: value.frontmatter.category,
-        journeyStage: value.frontmatter.properties["journey-stage"],
-        scope: value.frontmatter.properties.scope,
-        title: value.frontmatter.title,
-        link: this.formatLink(value.file),
-        summary: value.frontmatter.description,
-        tools: this.blockTools(
-          value.frontmatter.properties["tool-implementations"]
-        ),
-      }))
+      .map(
+        (value) =>
+          ({
+            id: value.frontmatter.id,
+            pillar: value.frontmatter.category,
+            journeyStage: value.frontmatter.properties["journey-stage"],
+            scope: value.frontmatter.properties.scope,
+            title: value.frontmatter.title,
+            link: this.formatLink(value.file),
+            summary: value.frontmatter.description,
+            tools: this.blockTools(
+              value.frontmatter.properties["tool-implementations"]
+            ),
+            enables: value.frontmatter.properties["enables"],
+            dependsOn: value.frontmatter.properties["depends-on"],
+          } as MaturityModelBlock)
+      )
   );
 
   readonly rawPillars = computed(

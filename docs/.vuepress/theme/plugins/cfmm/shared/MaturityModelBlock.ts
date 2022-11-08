@@ -6,4 +6,8 @@ export interface MaturityModelBlock {
   title: string;
   link: string;
   summary: string;
+
+  tools: string[];
+  enables: string[];
+  dependsOn: string[];
 }

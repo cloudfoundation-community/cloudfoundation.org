@@ -1,3 +1,5 @@
+import { MaturityModelBlock } from "../../plugins/cfmm/shared";
+
 export interface MaturityModelDisplayOptions {
   selectedTool?: string;
   selectedScopes?: string[];
@@ -17,4 +19,7 @@ export interface MaturityModelDisplayOptions {
    *
    */
   hideUnselected?: boolean;
+
+  
+  highlightedBlock?: MaturityModelBlock;
 }

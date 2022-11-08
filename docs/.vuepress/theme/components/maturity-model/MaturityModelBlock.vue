@@ -5,17 +5,12 @@
     </div>
     <div
       class="block-wrapper flex-fill"
+      :class="highlightClasses"
       @mouseenter="onMouseEnter"
       @mouseleave="onMouseLeave"
     >
       <router-link :to="blockData.link">
-        <div
-          class="block-details"
-          :disabled="
-            !!displayOptions.selectedTool &&
-            !blockData.tools.includes(displayOptions.selectedTool)
-          "
-        >
+        <div class="block-details">
           <div class="block-props d-flex" @click="onPropsClick">
             <BlockJourneyStage :journey-stage="blockData.journeyStage" />
             <BlockScope :scope="blockData.scope" />
@@ -52,6 +47,52 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+
+const highlightClasses = computed(() => {
+  const isSupportedBySelectedTool =
+    !!props.displayOptions.selectedTool &&
+    !props.blockData.tools.includes(props.displayOptions.selectedTool);
+
+  const isEnabledByHighlighted =
+    !!props.displayOptions.highlightedBlock &&
+    props.displayOptions.highlightedBlock.enables.includes(props.blockData.id);
+
+  const isDependencyOfHighlighted =
+    !!props.displayOptions.highlightedBlock &&
+    props.displayOptions.highlightedBlock.dependsOn.includes(
+      props.blockData.id
+    );
+
+  const isHighlightedBlock =
+    !!props.displayOptions.highlightedBlock &&
+    props.displayOptions.highlightedBlock.id === props.blockData.id;
+
+  return {
+    "block-highlight-enabled": isEnabledByHighlighted,
+    "block-highlight-dependency": isDependencyOfHighlighted,
+
+    "block-highlight-unsupported": isSupportedBySelectedTool,
+  };
+
+  if (props.displayOptions.highlightedBlock) {
+    return {
+      "block-highlight-enabled": isEnabledByHighlighted,
+      "block-highlight-dependency": isDependencyOfHighlighted,
+      // "block-highlight-unsupported":
+      //   !isEnabledByHighlighted &&
+      //   !isDependencyOfHighlighted &&
+      //   !isHighlightedBlock,
+    };
+  }
+
+  if (props.displayOptions.selectedTool) {
+    return {
+      "block-highlight-unsupported": isSupportedBySelectedTool,
+    };
+  }
+
+  return {};
+});
 
 // we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
 // unfortunately we can't use css text-overflow to render ellipsis as that does not work on multi-line text
@@ -113,7 +154,8 @@ h4 {
   background-color: white;
   margin: 0 0 10px 0;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 11px;
+  border: 3px solid var(--c-cfmm-bg);
 
   position: relative;
 
@@ -174,15 +216,23 @@ h4 {
       }
     }
   }
+}
 
-  .block-details[disabled="true"] {
-    img.block-step,
-    img.block-scope {
-      opacity: 0.5;
-    }
-    .block-content p {
-      color: lightgrey;
-    }
+.block-highlight-unsupported {
+  img.block-step,
+  img.block-scope {
+    opacity: 0.3;
   }
+  .block-content p {
+    color: var(--c-text-lighter);
+  }
+}
+
+.block-highlight-enabled {
+  border-color: var(--c-text-accent);
+}
+
+.block-highlight-dependency {
+  border-color: var(--c-danger);
 }
 </style>
