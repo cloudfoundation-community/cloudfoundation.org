@@ -152,10 +152,11 @@ h4 {
 
 .block-wrapper {
   background-color: white;
+  transition: background-color 200ms 100ms;
+  
   margin: 0 0 10px 0;
   padding: 8px;
-  border-radius: 11px;
-  border: 3px solid var(--c-cfmm-bg);
+  border-radius: 8px;
 
   position: relative;
 
@@ -229,10 +230,10 @@ h4 {
 }
 
 .block-highlight-enabled {
-  border-color: var(--c-text-accent);
+  background-color: #edfae6;
 }
 
 .block-highlight-dependency {
-  border-color: var(--c-danger);
+  background-color: #fcf0f5;
 }
 </style>
