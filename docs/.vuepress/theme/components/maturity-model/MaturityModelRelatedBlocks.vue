@@ -4,6 +4,7 @@
       v-for="item in blocks"
       :key="item.link"
       :block-data="item"
+      :displayOptions="displayOptions"
     />
   </div>
 </template>
@@ -13,6 +14,7 @@ import { computed } from "vue";
 import { useCloudFoundationMaturityModel } from "../../plugins/cfmm/client";
 
 import MaturityModelBlock from "./MaturityModelBlock.vue";
+import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   ids: string[];
@@ -20,6 +22,8 @@ interface Props {
 
 const props = defineProps<Props>();
 const cfmm = useCloudFoundationMaturityModel();
+
+const displayOptions: MaturityModelDisplayOptions = {};
 
 const blocks = computed(() => {
   const model = cfmm.value;
