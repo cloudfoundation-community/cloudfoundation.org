@@ -153,7 +153,7 @@ h4 {
 .block-wrapper {
   background-color: white;
   transition: background-color 200ms 100ms;
-  
+
   margin: 0 0 10px 0;
   padding: 8px;
   border-radius: 8px;
@@ -195,26 +195,29 @@ h4 {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
+
     img.block-step {
       width: 16px;
       height: 48px;
     }
+
     img.block-scope {
       width: 32px;
       height: 48px;
       margin-right: 10px;
     }
-    .block-content {
-      height: 39px;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      text-align: left;
-      p {
-        font-size: 10px;
-        font-weight: 700;
-        color: #2d3e4f;
-      }
+  }
+  .block-content {
+    height: 39px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      color: #2d3e4f;
     }
   }
 }
