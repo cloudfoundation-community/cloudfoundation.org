@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex" v-if="!displayOptions.hideUnselected || selected">
-    <div class="block-controls mr-2" v-if="displayOptions.showControls">
+  <div class="d-flex" v-if="!displayOptions?.hideUnselected || selected">
+    <div class="block-controls mr-2" v-if="displayOptions?.showControls">
       <input type="checkbox" v-model="selected" />
     </div>
     <div
@@ -21,7 +21,7 @@
         </div>
         <p
           class="block-summary"
-          v-bind:class="{ expand: expand || displayOptions.showDescription }"
+          v-bind:class="{ expand: expand || displayOptions?.showDescription }"
         >
           {{ shortSummary }}
         </p>
@@ -43,55 +43,31 @@ import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   blockData: MaturityModelBlock;
-  displayOptions: MaturityModelDisplayOptions;
+  displayOptions?: MaturityModelDisplayOptions;
 }
 
 const props = defineProps<Props>();
 
 const highlightClasses = computed(() => {
   const isSupportedBySelectedTool =
-    !!props.displayOptions.selectedTool &&
+    !!props.displayOptions?.selectedTool &&
     !props.blockData.tools.includes(props.displayOptions.selectedTool);
 
   const isEnabledByHighlighted =
-    !!props.displayOptions.highlightedBlock &&
+    !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlock.enables.includes(props.blockData.id);
 
   const isDependencyOfHighlighted =
-    !!props.displayOptions.highlightedBlock &&
+    !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlock.dependsOn.includes(
       props.blockData.id
     );
 
-  const isHighlightedBlock =
-    !!props.displayOptions.highlightedBlock &&
-    props.displayOptions.highlightedBlock.id === props.blockData.id;
-
   return {
     "block-highlight-enabled": isEnabledByHighlighted,
     "block-highlight-dependency": isDependencyOfHighlighted,
-
     "block-highlight-unsupported": isSupportedBySelectedTool,
   };
-
-  if (props.displayOptions.highlightedBlock) {
-    return {
-      "block-highlight-enabled": isEnabledByHighlighted,
-      "block-highlight-dependency": isDependencyOfHighlighted,
-      // "block-highlight-unsupported":
-      //   !isEnabledByHighlighted &&
-      //   !isDependencyOfHighlighted &&
-      //   !isHighlightedBlock,
-    };
-  }
-
-  if (props.displayOptions.selectedTool) {
-    return {
-      "block-highlight-unsupported": isSupportedBySelectedTool,
-    };
-  }
-
-  return {};
 });
 
 // we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
@@ -225,10 +201,10 @@ h4 {
 .block-highlight-unsupported {
   img.block-step,
   img.block-scope {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   .block-content p {
-    color: var(--c-text-lighter);
+    color: rgb(171, 171, 171);
   }
 }
 

@@ -4,7 +4,6 @@
       v-for="item in blocks"
       :key="item.link"
       :block-data="item"
-      :displayOptions="displayOptions"
     />
   </div>
 </template>
@@ -22,9 +21,7 @@ interface Props {
 
 const props = defineProps<Props>();
 const cfmm = useCloudFoundationMaturityModel();
-
-const displayOptions: MaturityModelDisplayOptions = {};
-
+ 
 const blocks = computed(() => {
   const model = cfmm.value;
 

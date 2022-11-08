@@ -24,7 +24,7 @@ import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   pillar: Pillar;
-  displayOptions: MaturityModelDisplayOptions;
+  displayOptions?: MaturityModelDisplayOptions;
 }
 
 const props = defineProps<Props>();
@@ -43,8 +43,8 @@ const blocks = computed(() => {
   // there's only 3/5 scopes/stages so this dumb O(n) search should be ok
   return pillarBlocks.filter(
     (x) =>
-      (!opts.selectedScopes || opts.selectedScopes.includes(x.scope)) &&
-      (!opts.selectedStages || opts.selectedStages.includes(x.journeyStage))
+      (!opts?.selectedScopes || opts.selectedScopes.includes(x.scope)) &&
+      (!opts?.selectedStages || opts.selectedStages.includes(x.journeyStage))
   );
 });
 
