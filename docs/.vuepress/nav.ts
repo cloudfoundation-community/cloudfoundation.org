@@ -90,6 +90,15 @@ function lookupCategoryName(dir: string) {
 export function makeMaturityModelPageSidebarConfig() {
   const sidebar: SidebarConfig = {};
 
+  // make a sidebar for the maturity model page
+  sidebar[lookupPagePath("/maturity-model/")] = [
+    { // this is necessary so the the "ParentLayout" theme detects tha this page should have a sidebar
+      text: "Placeholder",
+      link: "/maturity-model/",
+    },
+  ];
+
+  // make a different sidebar for each pillar
   const pillarDirs = getChildDirectories("docs/maturity-model");
 
   pillarDirs.forEach((dir) => {

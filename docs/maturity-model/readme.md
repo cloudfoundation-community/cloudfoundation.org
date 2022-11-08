@@ -5,13 +5,11 @@ url: >-
 title: Explore All Building Blocks
 category: Maturity Model
 order: 0
-pageType: Fullsize
-sidebar: false
+layout: MaturityModel
 ---
 
 <!--notion-markdown-cms:raw-->
-<MaturityModel>
-</MaturityModel>
+
 
 
 

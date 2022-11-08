@@ -161,3 +161,31 @@ blockquote {
     float: left;
   }
 }
+
+// some global theme style
+
+@import "@vuepress/plugin-palette/palette";
+
+.theme-container:not(.white) {
+  background: var(--c-cfmm-bg);
+}
+
+.theme-container {
+  min-height: 100vh;
+}
+
+@media (min-width: $MQMobile) {
+  .sidebar {
+    padding: 1rem;
+    padding-bottom: 0;
+    border-color: var(--c-cfmm-bg); //note: can't remove the border here because the vuepress theme expects there is always a 1px border
+    background-color: var(--c-cfmm-bg);
+  }
+
+  .sidebar-items {
+    background: var(--c-bg);
+    border-radius: var(--c-cfmm-border-radius-lg);
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}
