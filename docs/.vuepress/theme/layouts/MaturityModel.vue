@@ -100,6 +100,8 @@
               </div>
             </div>
           </form>
+
+          <p>{{ hoverBlock }}</p>
         </div>
       </aside>
     </template>
@@ -112,12 +114,8 @@
               <MaturityModelPillarDescription :pillar="pillar" />
               <MaturityModelPillarBlocks
                 :pillar="pillar"
-                :selected-tool="selectedTool"
-                :selected-scopes="selectedScopes"
-                :selected-stages="selectedStages"
-                :show-controls="showControls"
-                :show-description="showDescription"
-                :hide-unselected="hideUnselected"
+                :displayOptions="displayOptions"
+                @blockHover="onBlockHover"
               />
             </div>
           </div>
@@ -134,9 +132,11 @@ import NavbarItems from "@vuepress/theme-default/lib/client/components/NavbarIte
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useCloudFoundationMaturityModel } from "../plugins/cfmm/client";
-import { Pillar } from "../plugins/cfmm/shared";
+import { MaturityModelBlock, Pillar } from "../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../components/maturity-model/MaturityModelPillarBlocks.vue";
 import MaturityModelPillarDescription from "../components/maturity-model/MaturityModelPillarDescription.vue";
+import { MaturityModelBlockHoverEvent } from "../components/maturity-model/MaturityModelBlockHoverEvent";
+import { MaturityModelDisplayOptions } from "../components/maturity-model/MaturityModelDisplayOptions";
 
 const cfmm = useCloudFoundationMaturityModel();
 
@@ -167,6 +167,8 @@ let showControls = ref(false);
 let showDescription = ref(false);
 let hideUnselected = ref(false);
 
+// support pre-selecting a tool by query param string
+// todo: store all copmonent state via router(?) in query state params so back buttons work as expected
 onMounted(() => {
   const selectedToolQueryParam = useRoute().query.selectedTool;
   if (
@@ -176,6 +178,33 @@ onMounted(() => {
     selectedTool.value = selectedToolQueryParam;
   }
 });
+
+let displayOptions = computed<MaturityModelDisplayOptions>(() => {
+  const opts = {
+    selectedTool: selectedTool.value,
+    selectedScopes: selectedScopes.value,
+    selectedStages: selectedStages.value,
+    showControls: showControls.value,
+    hideUnselected: hideUnselected.value,
+    showDescription: showDescription.value,
+  };
+
+  return opts;
+});
+
+let hoverBlock = ref<MaturityModelBlock | null>(null);
+
+function onBlockHover(event: MaturityModelBlockHoverEvent) {
+  // console.log("model onHover", event);
+
+  // clear only when the leave event is for the currently highlighted block
+  // this prevents UI glitches when events are processed out of order
+  if (event.type === "leave" && hoverBlock.value?.id === event.block.id) {
+    hoverBlock.value = null;
+  } else {
+    hoverBlock.value = event.block;
+  }
+}
 </script>
 
 <style lang="scss" scoped>

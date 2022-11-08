@@ -1,15 +1,19 @@
 <template>
-  <div class="d-flex" v-if="!hideUnselected || selected">
-    <div class="block-controls mr-2" v-if="showControls">
+  <div class="d-flex" v-if="!displayOptions.hideUnselected || selected">
+    <div class="block-controls mr-2" v-if="displayOptions.showControls">
       <input type="checkbox" v-model="selected" />
     </div>
-    <div class="block-wrapper flex-fill">
+    <div
+      class="block-wrapper flex-fill"
+      @mouseenter="onMouseEnter"
+      @mouseleave="onMouseLeave"
+    >
       <router-link :to="blockData.link">
         <div
           class="block-details"
           :disabled="
-            !!selectedTool &&
-            !props.blockData.tools.includes(props.selectedTool)
+            !!displayOptions.selectedTool &&
+            !blockData.tools.includes(displayOptions.selectedTool)
           "
         >
           <div class="block-props d-flex" @click="onPropsClick">
@@ -22,7 +26,7 @@
         </div>
         <p
           class="block-summary"
-          v-bind:class="{ expand: expand || showDescription }"
+          v-bind:class="{ expand: expand || displayOptions.showDescription }"
         >
           {{ shortSummary }}
         </p>
@@ -39,18 +43,15 @@ import BlockScope from "../block/BlockScope.vue";
 import BlockJourneyStage from "../block/BlockJourneyStage.vue";
 import { MaturityModelBlock } from "../../plugins/cfmm/shared";
 import exp from "constants";
+import { MaturityModelBlockHoverEvent } from "./MaturityModelBlockHoverEvent";
+import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   blockData: MaturityModelBlock;
-  selectedTool: string;
-  showControls: boolean;
-  showDescription: boolean;
-  hideUnselected: boolean;
+  displayOptions: MaturityModelDisplayOptions;
 }
 
 const props = defineProps<Props>();
-
-const selected = ref(true);
 
 // we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
 // unfortunately we can't use css text-overflow to render ellipsis as that does not work on multi-line text
@@ -61,6 +62,7 @@ const shortSummary = computed(() => {
   return text.length < maxLength ? text : text.substring(0, maxLength) + "...";
 });
 
+const selected = ref(true);
 const expand = ref(false);
 
 function onPropsClick(event: Event) {
@@ -71,6 +73,24 @@ function onPropsClick(event: Event) {
     expand.value = !expand.value;
     event.preventDefault();
   }
+}
+
+const emit = defineEmits(["blockHover"]);
+
+function onMouseEnter(event: Event) {
+  const blockEvent: MaturityModelBlockHoverEvent = {
+    type: "hover",
+    block: props.blockData,
+  };
+  emit("blockHover", blockEvent);
+}
+
+function onMouseLeave(event: Event) {
+  const blockEvent: MaturityModelBlockHoverEvent = {
+    type: "leave",
+    block: props.blockData,
+  };
+  emit("blockHover", blockEvent);
 }
 </script>
 
@@ -88,7 +108,6 @@ h4 {
   font-size: 18px;
   font-weight: 900;
 }
-
 
 .block-wrapper {
   background-color: white;

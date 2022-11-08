@@ -1,5 +1,5 @@
-
 export interface MaturityModelBlock {
+  id: string;
   pillar: string;
   journeyStage: string;
   scope: string;

@@ -4,10 +4,8 @@
       v-for="item in blocks"
       :key="item.link"
       :block-data="item"
-      :selected-tool="selectedTool"
-      :show-controls="showControls"
-      :show-description="showDescription"
-      :hide-unselected="hideUnselected"
+      :displayOptions="displayOptions"
+      @blockHover="onBlockHover"
     />
     <div class="spacer"></div>
   </div>
@@ -21,15 +19,12 @@ import {
 } from "../../plugins/cfmm/client";
 
 import MaturityModelBlock from "./MaturityModelBlock.vue";
+import { MaturityModelBlockHoverEvent } from "./MaturityModelBlockHoverEvent";
+import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   pillar: Pillar;
-  selectedTool?: string;
-  selectedScopes?: string[];
-  selectedStages?: string[];
-  showControls?: boolean;
-  showDescription?: boolean;
-  hideUnselected?: boolean;
+  displayOptions: MaturityModelDisplayOptions;
 }
 
 const props = defineProps<Props>();
@@ -43,14 +38,22 @@ const blocks = computed(() => {
   }
 
   const pillarBlocks = model.value.blocks;
+  const opts = props.displayOptions;
 
   // there's only 3/5 scopes/stages so this dumb O(n) search should be ok
   return pillarBlocks.filter(
     (x) =>
-      (!props.selectedScopes || props.selectedScopes.includes(x.scope)) &&
-      (!props.selectedStages || props.selectedStages.includes(x.journeyStage))
+      (!opts.selectedScopes || opts.selectedScopes.includes(x.scope)) &&
+      (!opts.selectedStages || opts.selectedStages.includes(x.journeyStage))
   );
 });
+
+const emit = defineEmits(["blockHover"]);
+
+function onBlockHover(event: MaturityModelBlockHoverEvent) {
+  // just forward the event
+  emit("blockHover", event);
+}
 </script>
 
 <style lang="scss" scoped>
