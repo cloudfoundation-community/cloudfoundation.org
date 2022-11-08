@@ -7,3 +7,17 @@ h1.cfmm-page-heading, h2.cfmm-page-heading {
   padding: 0;
   color: white;
 }
+
+h1.cfmm-pillar-heading {
+  margin: 0 0 0.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+h2.cfmm-pillar-heading {
+  font-weight: 800;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}

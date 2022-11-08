@@ -1,6 +1,6 @@
 <template>
   <div class="pillar-intro mb-3 mr-2">
-    <h2>{{ pillar.shortTitle }}</h2>
+    <h2 class="cfmm-pillar-heading">{{ pillar.shortTitle }}</h2>
     <small class="d-block my-2 summary">{{ pillar.summary }}</small>
     <small class="d-block my-2 more"
       ><router-link :to="pillar.link">Learn More</router-link></small
@@ -30,6 +30,8 @@ const pillar = computed(() => {
 </script>
 
 <style scoped lang="scss">
+@import "../cfmm";
+
 .pillar-intro {
   color: white;
 

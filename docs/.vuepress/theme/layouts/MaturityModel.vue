@@ -2,7 +2,7 @@
   <ParentLayout>
     <template #sidebar>
       <aside class="sidebar">
-        <h2 class="sidebar-title">Explore</h2>
+        <h2 class="cfmm-pillar-heading">Explore</h2>
         <div class="maturity-model-tools">
           <form>
             <div class="form-group">
@@ -178,13 +178,9 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@vuepress/plugin-palette/palette";
-
-// reset bottom padding to get a true full size page
-.page {
-  padding-bottom: 0;
-}
+@import "../components/cfmm";
 
 // we have to use some custom breakpoints to make the CFMM scale nicely across the theme
 // unfortunately we don't have the sidebar breakpoints as SCSS var, so we repeat what the theme does in native CSS vars instead
@@ -197,19 +193,6 @@ $CFMMXs: 580px; // 1 pillar
 
 .maturity-model-page {
   background-color: var(--c-cfmm-bg);
-
-  h1 {
-    margin: 0 0 0.5rem;
-    font-weight: 900;
-    color: white;
-  }
-
-  h2 {
-    font-weight: 800;
-    border: none;
-    text-transform: uppercase;
-    margin: 0 0 0.5rem 0;
-  }
 
   .maturity-model-title {
     // on desktop breakpoints, we have the navbar so we can hide the title
