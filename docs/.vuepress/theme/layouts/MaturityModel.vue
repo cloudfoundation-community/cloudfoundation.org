@@ -2,6 +2,7 @@
   <ParentLayout>
     <template #sidebar>
       <aside class="sidebar">
+        <h2 class="sidebar-title">Explore</h2>
         <div class="maturity-model-tools">
           <form>
             <div class="form-group">
@@ -40,9 +41,9 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="selectStage">Filter by Stage</label>
+              <label for="selectStages">Filter by Stage</label>
               <select
-                id="selectStage"
+                id="selectStages"
                 class="custom-select custom-select-sm"
                 v-model="selectedStages"
                 multiple
@@ -105,6 +106,7 @@
     <template #page>
       <div class="page">
         <div class="maturity-model-page">
+          <h1 class="maturity-model-title">Maturity Model</h1>
           <div class="pillars">
             <div class="pillar" v-for="pillar in pillars" :key="pillar">
               <MaturityModelPillarDescription :pillar="pillar" />
@@ -184,23 +186,22 @@ onMounted(() => {
   padding-bottom: 0;
 }
 
-// we have to use some custom breakpoints to make the CFMM scale nicely
-$CFMMLarge: 1400px;
-$CFMMMedium: 1024px;
-$CFMMSmall: 800px;
-$CFMMXs: 580px;
+// we have to use some custom breakpoints to make the CFMM scale nicely across the theme
+// unfortunately we don't have the sidebar breakpoints as SCSS var, so we repeat what the theme does in native CSS vars instead
+// and translate to px because we can't mix rem and px in a calculation
+$sidebarWidth: 320px;
+$CFMMLarge: 1400px + $sidebarWidth; // 4 pillars
+$CFMMMedium: 1024px + $sidebarWidth; // 3 pillars
+$CFMMSmall: 800px + $sidebarWidth; // 2 pilllars
+$CFMMXs: 580px; // 1 pillar
 
 .maturity-model-page {
   background-color: var(--c-cfmm-bg);
-
-  display: flex;
-  flex-wrap: nowrap;
 
   h1 {
     margin: 0 0 0.5rem;
     font-weight: 900;
     color: white;
-    display: none;
   }
 
   h2 {
@@ -210,12 +211,19 @@ $CFMMXs: 580px;
     margin: 0 0 0.5rem 0;
   }
 
-  @media only screen and (max-width: $MQMobile) {
-    padding: 1rem;
+  .maturity-model-title {
+    // on desktop breakpoints, we have the navbar so we can hide the title
+    display: none;
 
-    h1 {
+    // but on mobile we have no nabvar so we show it
+    @media only screen and (max-width: $MQMobileNarrow) {
       display: block;
     }
+  }
+
+  padding: 2rem;
+  @media only screen and (max-width: $MQMobileNarrow) {
+    padding: 1rem;
   }
 
   .pillars {
@@ -223,37 +231,34 @@ $CFMMXs: 580px;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
-    padding: 2rem 4rem;
 
-    @media only screen and (max-width: calc(var(--sidebar-width) + $CFMMLarge)) {
-      padding: 1rem;
-    }
+    // as soon as we display more than one pillar, we need to add equal spacing between columns (but not on the last one!)
+    .pillar:not(:last-child) {
+      padding-right: 1rem;
 
-    @media (min-width: $MQMobileNarrow) {
-      // on desktop layout we need to add equal spacing between columns (but not on the last one!)
-      .pillar:not(:last-child) {
-        padding-right: 1rem;
+      @media only screen and (max-width: $CFMMXs) {
+        padding-right: 0rem;
       }
     }
 
     .pillar {
       flex-grow: 1;
-      max-width: 20%;
+      max-width: 20%; // all 5 pillars fit
 
       @media only screen and (max-width: $CFMMLarge) {
-        min-width: 25%;
+        min-width: 25%; // 4 pillars
       }
 
       @media only screen and (max-width: $CFMMMedium) {
-        min-width: 33%;
+        min-width: 33%; // 3 pillars
       }
 
       @media only screen and (max-width: $CFMMSmall) {
-        min-width: 50%;
+        min-width: 50%; // 2 pillars
       }
 
       @media only screen and (max-width: $CFMMXs) {
-        min-width: 100%;
+        min-width: 100%; // only one pillar
         border-radius: var(--c-cfmm-border-radius-lg);
         margin-bottom: 12px;
       }
@@ -262,23 +267,40 @@ $CFMMXs: 580px;
 }
 
 .sidebar {
-  h2 {
+  .sidebar-title {
     color: white;
+    font-weight: 800;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
   }
+
   color: var(--c-text-light);
   background-color: #b7dfec;
 
-  padding: 1rem;
-}
+  padding: 2rem 1rem;
+  @media only screen and (max-width: $MQMobile) {
+    padding-top: calc(2rem + var(--navbar-height));
+  }
 
-// manually set some bootstrap form styles, avoids importing _forms.scss from bootstrap (which is huge)
-// and also we can't use its dependecy on reboot.scss either
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
+  // manually set some bootstrap form styles, avoids importing _forms.scss from bootstrap (which is huge)
+  // and also we can't use its dependecy on reboot.scss either
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
 
-.form-group {
-  margin-bottom: 1rem;
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  // explitily size the multi selects so they don't need scrolling
+  #selectScopes {
+    height: calc(1.2rem * 3 + 0.5rem);
+  }
+
+  #selectStages {
+    height: calc(1.2rem * 5 + 0.5rem);
+  }
 }
 </style>
