@@ -22,4 +22,9 @@ export interface MaturityModelDisplayOptions {
 
   
   highlightedBlock?: MaturityModelBlock;
+
+  /**
+   * Block ids by recursive levels of dependencies (1st level, 2nd level, etc.)
+   */
+  highlightedBlockDependencies: string[][];
 }

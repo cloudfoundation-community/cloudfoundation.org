@@ -101,7 +101,7 @@
             </div>
           </form>
 
-          <p>{{ hoverBlock }}</p>
+          <p><small>{{ displayOptions.highlightedBlockDependencies }}</small></p>
         </div>
       </aside>
     </template>
@@ -179,7 +179,6 @@ onMounted(() => {
   }
 });
 
-
 let hoverBlock = ref<MaturityModelBlock | null>(null);
 
 function onBlockHover(event: MaturityModelBlockHoverEvent) {
@@ -195,8 +194,22 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
 }
 
 let displayOptions = computed<MaturityModelDisplayOptions>(() => {
-  
-  const opts : MaturityModelDisplayOptions = {
+  const highlightedBlockDependencies = [];
+
+  if (hoverBlock.value) {
+    highlightedBlockDependencies.push(hoverBlock.value.dependsOn);
+    const maxLevels = 5;
+    for (let i = 1; i < maxLevels; i++) {
+      const prevLevelIds = highlightedBlockDependencies[i - 1];
+      const prevLevelBlocks = cfmm.value.queryBlocksSorted(prevLevelIds);
+
+      highlightedBlockDependencies.push(
+        prevLevelBlocks.flatMap((x) => x.dependsOn)
+      );
+    }
+  }
+
+  const opts: MaturityModelDisplayOptions = {
     selectedTool: selectedTool.value,
     selectedScopes: selectedScopes.value,
     selectedStages: selectedStages.value,
@@ -204,7 +217,8 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
     hideUnselected: hideUnselected.value,
     showDescription: showDescription.value,
 
-    highlightedBlock: hoverBlock.value
+    highlightedBlock: hoverBlock.value,
+    highlightedBlockDependencies,
   };
 
   return opts;

@@ -57,24 +57,30 @@ const highlightClasses = computed(() => {
     !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlock.enables.includes(props.blockData.id);
 
-  const isDependencyOfHighlighted =
+  const dependencyOfHighlightedLevel =
     !!props.displayOptions?.highlightedBlock &&
-    props.displayOptions.highlightedBlock.dependsOn.includes(
-      props.blockData.id
-    );
+    props.displayOptions.highlightedBlockDependencies.findIndex((x) =>
+      x.includes(props.blockData.id)
+    ) + 1;
 
-  return {
+  const classes = {
     "block-highlight-enabled": isEnabledByHighlighted,
-    "block-highlight-dependency": isDependencyOfHighlighted,
     "block-highlight-unsupported": isSupportedBySelectedTool,
   };
+
+  if (dependencyOfHighlightedLevel) {
+    classes[`block-highlight-dependency-${dependencyOfHighlightedLevel}`] =
+      true;
+  }
+
+  return classes;
 });
 
 // we need to constrain the max-height of the summary to fit within well-defined expand/collapse beahvior.
 // unfortunately we can't use css text-overflow to render ellipsis as that does not work on multi-line text
 const shortSummary = computed(() => {
   const maxLength = 250;
-  const text = props.blockData.summary;
+  const text = props.blockData.summary || "";
 
   return text.length < maxLength ? text : text.substring(0, maxLength) + "...";
 });
@@ -212,7 +218,18 @@ h4 {
   background-color: #edfae6;
 }
 
-.block-highlight-dependency {
-  background-color: #fcf0f5;
+// todo: there's probably a better way to do this in SCSS
+$color-dependency-base: #ff92c0;
+
+.block-highlight-dependency-1 {
+  background-color: lighten($color-dependency-base, 0%);
+}
+
+.block-highlight-dependency-2 {
+  background-color: lighten($color-dependency-base, 10%);
+}
+
+.block-highlight-dependency-3 {
+  background-color: lighten($color-dependency-base, 20%);
 }
 </style>
