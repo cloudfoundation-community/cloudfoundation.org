@@ -312,11 +312,11 @@ $CFMMXs: 580px; // 1 pillar
 
   // explitily size the multi selects so they don't need scrolling
   #selectScopes {
-    height: calc(1.2rem * 3 + 0.5rem);
+    height: calc(1.2rem * 3 + 0.5rem + 4px);
   }
 
   #selectStages {
-    height: calc(1.2rem * 5 + 0.5rem);
+    height: calc(1.2rem * 5 + 0.5rem + 4px);
   }
 }
 </style>
