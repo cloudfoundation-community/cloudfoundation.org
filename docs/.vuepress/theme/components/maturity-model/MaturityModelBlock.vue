@@ -57,20 +57,25 @@ const highlightClasses = computed(() => {
     !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlock.enables.includes(props.blockData.id);
 
-  const dependencyOfHighlightedLevel =
+  const dependencyLevelToHighlighted =
     !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlockDependencies.findIndex((x) =>
       x.includes(props.blockData.id)
     ) + 1;
 
   const classes = {
-    "block-highlight-enabled": isEnabledByHighlighted,
+    "block-highlight-recommended-1": isEnabledByHighlighted,
     "block-highlight-unsupported": isSupportedBySelectedTool,
   };
 
-  if (dependencyOfHighlightedLevel) {
-    classes[`block-highlight-dependency-${dependencyOfHighlightedLevel}`] =
-      true;
+  if (dependencyLevelToHighlighted) {
+    const isRecommended =
+      props.blockData.journeyStage.length >
+      props.displayOptions.highlightedBlock.journeyStage.length;
+    const highlightType = isRecommended ? "recommended" : "dependency";
+    classes[
+      `block-highlight-${highlightType}-${dependencyLevelToHighlighted}`
+    ] = true;
   }
 
   return classes;
@@ -119,6 +124,7 @@ function onMouseLeave(event: Event) {
 
 <style lang="scss" scoped>
 @import "./maturity-model";
+@import "../cfmm";
 
 h4 {
   margin-bottom: 0;
@@ -218,18 +224,50 @@ h4 {
   background-color: #edfae6;
 }
 
-// todo: there's probably a better way to do this in SCSS
-$color-dependency-base: #ff92c0;
-
+// todo: there's probably a better way to do this in SCSS with for loops etc.
 .block-highlight-dependency-1 {
-  background-color: lighten($color-dependency-base, 0%);
+  background-color: lighten($color-dependency-base, 32%);
+
+  // this works, but if we do it we must avoid layout reflow (position: relative or something comes to mind)
+// &::after {
+  //   content: "1";
+  // }
 }
 
 .block-highlight-dependency-2 {
-  background-color: lighten($color-dependency-base, 10%);
+  background-color: lighten($color-dependency-base, 24%);
 }
 
 .block-highlight-dependency-3 {
-  background-color: lighten($color-dependency-base, 20%);
+  background-color: lighten($color-dependency-base, 16%);
+}
+
+.block-highlight-dependency-4 {
+  background-color: lighten($color-dependency-base, 8%);
+}
+
+.block-highlight-dependency-5 {
+  background-color: lighten($color-dependency-base, 0%);
+}
+
+// for recommended we lighten up in reverse
+.block-highlight-recommended-1 {
+  background-color: lighten($color-recommended-base, 40%);
+}
+
+.block-highlight-recommended-2 {
+  background-color: lighten($color-recommended-base, 30%);
+}
+
+.block-highlight-recommended-3 {
+  background-color: lighten($color-recommended-base, 20%);
+}
+
+.block-highlight-recommended-4 {
+  background-color: lighten($color-recommended-base, 10%);
+}
+
+.block-highlight-recommended-5 {
+  background-color: lighten($color-recommended-base, 0%);
 }
 </style>

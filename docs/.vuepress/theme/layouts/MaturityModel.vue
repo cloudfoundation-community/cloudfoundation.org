@@ -100,8 +100,17 @@
               </div>
             </div>
           </form>
-
-          <p><small>{{ displayOptions.highlightedBlockDependencies }}</small></p>
+        </div>
+        <h2 class="cfmm-pillar-heading">Legend</h2>
+        <div class="maturity-model-legend">
+          <div>
+            <div id="dependency-recommended-gradient"></div>
+            <div class="d-flex justify-content-between">
+              <span>Required</span>
+              <span>Recommended</span>
+            </div>
+          </div>
+          <small>{{displayOptions.highlightedBlockDependencies}}</small>
         </div>
       </aside>
     </template>
@@ -187,7 +196,7 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
   // clear only when the leave event is for the currently highlighted block
   // this prevents UI glitches when events are processed out of order
   if (event.type === "leave" && hoverBlock.value?.id === event.block.id) {
-    hoverBlock.value = null;
+    // hoverBlock.value = null;
   } else {
     hoverBlock.value = event.block;
   }
@@ -331,6 +340,18 @@ $CFMMXs: 580px; // 1 pillar
 
   #selectStages {
     height: calc(1.2rem * 5 + 0.5rem + 4px);
+  }
+
+  #dependency-recommended-gradient {
+    display: block;
+    background: linear-gradient(
+      90deg,
+      $color-dependency-base,
+      white,
+      $color-recommended-base
+    );
+    height: 1rem;
+    width: auto;
   }
 }
 </style>
