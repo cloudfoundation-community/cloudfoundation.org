@@ -57,36 +57,13 @@
                 </option>
               </select>
             </div>
+          </form>
+        </div>
 
+        <div>
+          <h2 class="cfmm-pillar-heading">Expert Tools</h2>
+          <form>
             <div class="form-group">
-              <label>Filter by manual Selection</label>
-
-              <div class="custom-control custom-switch">
-                <input
-                  id="showControls"
-                  type="checkbox"
-                  class="custom-control-input"
-                  v-model="showControls"
-                />
-                <label for="showControls" class="custom-control-label">
-                  Show controls</label
-                >
-              </div>
-
-              <div class="custom-control custom-switch">
-                <input
-                  id="hideUnselected"
-                  type="checkbox"
-                  class="custom-control-input"
-                  v-model="hideUnselected"
-                />
-                <label for="hideUnselected" class="custom-control-label"
-                  >Hide unselected</label
-                >
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Advanced controls</label>
               <div class="custom-control custom-switch">
                 <input
                   id="showDescription"
@@ -95,22 +72,64 @@
                   v-model="showDescription"
                 />
                 <label for="showDescription" class="custom-control-label"
-                  >Show Descriptions</label
+                  >Show All Descriptions</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-switch">
+                <input
+                  id="showControls"
+                  type="checkbox"
+                  class="custom-control-input"
+                  v-model="showControls"
+                />
+                <label for="showControls" class="custom-control-label">
+                  Filter Individual Blocks</label
+                >
+              </div>
+              <div class="custom-control custom-switch">
+                <input
+                  id="hideUnselected"
+                  type="checkbox"
+                  class="custom-control-input"
+                  v-model="hideUnselected"
+                />
+                <label for="hideUnselected" class="custom-control-label"
+                  >Apply Individual Filter</label
                 >
               </div>
             </div>
           </form>
         </div>
-        <h2 class="cfmm-pillar-heading">Legend</h2>
-        <div class="maturity-model-legend">
-          <div>
-            <div id="dependency-recommended-gradient"></div>
-            <div class="d-flex justify-content-between">
-              <span>Required</span>
-              <span>Recommended</span>
+        <div class="mt-auto">
+          <h2 class="cfmm-pillar-heading">Legend</h2>
+          <div class="maturity-model-legend">
+            <div class="legend-section">
+              <p>Implementation Scopes</p>
+              <ul class="legend-scopes">
+                <li class="d-flex align-items-center">
+                  <BlockScope :scope="'🏢 Core'" /><small> Core</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <BlockScope :scope="'☁️ Platform'" /><small>Platform</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <BlockScope :scope="'🛬 Landing Zone'" /><small
+                    >Landing Zone</small
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="legend-section">
+              <p>Dependencies</p>
+              <div id="dependency-recommended-gradient"></div>
+              <div class="d-flex justify-content-between">
+                <small>Required</small>
+                <small>Recommended</small>
+              </div>
             </div>
           </div>
-          <small>{{displayOptions.highlightedBlockDependencies}}</small>
         </div>
       </aside>
     </template>
@@ -144,6 +163,8 @@ import { useCloudFoundationMaturityModel } from "../plugins/cfmm/client";
 import { MaturityModelBlock, Pillar } from "../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../components/maturity-model/MaturityModelPillarBlocks.vue";
 import MaturityModelPillarDescription from "../components/maturity-model/MaturityModelPillarDescription.vue";
+import BlockScope from "../components/block/BlockScope.vue";
+
 import { MaturityModelBlockHoverEvent } from "../components/maturity-model/MaturityModelBlockHoverEvent";
 import { MaturityModelDisplayOptions } from "../components/maturity-model/MaturityModelDisplayOptions";
 
@@ -225,7 +246,7 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
     showDescription: showDescription.value,
 
     highlightedBlock: hoverBlock.value,
-    highlightedBlockDependencies
+    highlightedBlockDependencies,
   };
 
   return opts;
@@ -304,20 +325,22 @@ $CFMMXs: 580px; // 1 pillar
 }
 
 .sidebar {
+  color: var(--c-text-light);
+  background-color: #b7dfec;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $MQMobile) {
+    padding-top: calc(2rem + var(--navbar-height));
+  }
+
   .sidebar-title {
     color: white;
     font-weight: 800;
     border: none;
     text-transform: uppercase;
     margin: 0 0 0.5rem 0;
-  }
-
-  color: var(--c-text-light);
-  background-color: #b7dfec;
-
-  padding: 2rem 1rem;
-  @media only screen and (max-width: $MQMobile) {
-    padding-top: calc(2rem + var(--navbar-height));
   }
 
   // manually set some bootstrap form styles, avoids importing _forms.scss from bootstrap (which is huge)
@@ -350,6 +373,24 @@ $CFMMXs: 580px; // 1 pillar
     );
     height: 1rem;
     width: auto;
+  }
+
+  .legend-section {
+    p {
+      margin: 0 0 0.5rem;
+    }
+    padding-bottom: 1rem;
+  }
+  .legend-scopes {
+    li {
+      padding-left: 1rem;
+    }
+
+    img.block-scope {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
   }
 }
 </style>
