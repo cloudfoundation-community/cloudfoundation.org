@@ -59,10 +59,13 @@
 
     <template #right>
       <div class="model-theme-right">
-        <h2 v-if="enables.length" class="cfmm-page-heading">Enables</h2>
-        <MaturityModelRelatedBlocks v-if="enables.length" :ids="enables" />
         <h2 v-if="dependsOn.length" class="cfmm-page-heading">Depends On</h2>
         <MaturityModelRelatedBlocks v-if="dependsOn.length" :ids="dependsOn" />
+        <h2 v-if="recommended.length" class="cfmm-page-heading">Recommended</h2>
+        <MaturityModelRelatedBlocks v-if="recommended.length" :ids="recommended" />
+        <h2 v-if="enables.length" class="cfmm-page-heading">Enables</h2>
+        <MaturityModelRelatedBlocks v-if="enables.length" :ids="enables" />
+        
       </div>
     </template>
   </CFMMPage>
@@ -70,7 +73,7 @@
 
 <script setup lang="ts">
 import { computed, watch } from "vue";
-import { usePageData, usePageFrontmatter } from "@vuepress/client";
+import { usePageFrontmatter } from "@vuepress/client";
 
 import CFMMPage from "./CFMMPage.vue";
 
@@ -102,6 +105,7 @@ const frontmatter = usePageFrontmatter<any>();
 
 const enables = computed(() => frontmatter.value.properties.enables);
 const dependsOn = computed(() => frontmatter.value.properties["depends-on"]);
+const recommended = computed(() => frontmatter.value.properties.recommended);
 
 const tools = computed(() =>
   frontmatter.value.properties["tool-implementations"].map((id) =>

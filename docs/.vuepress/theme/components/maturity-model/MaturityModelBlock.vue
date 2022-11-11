@@ -49,34 +49,55 @@ interface Props {
 const props = defineProps<Props>();
 
 const highlightClasses = computed(() => {
+  const isHighlightedBlock =
+    props.blockData.id === props.displayOptions?.highlightedBlock?.id;
+
+  // don't color it, even if we appear on the dependency graph (circular dependency!)
+  if (isHighlightedBlock) {
+    return {};
+  }
+
   const isSupportedBySelectedTool =
     !!props.displayOptions?.selectedTool &&
     !props.blockData.tools.includes(props.displayOptions.selectedTool);
 
-  const isEnabledByHighlighted =
+  const isRecommendedByHighlight =
     !!props.displayOptions?.highlightedBlock &&
-    props.displayOptions.highlightedBlock.enables.includes(props.blockData.id);
+    props.displayOptions.highlightedBlock.recommended.includes(
+      props.blockData.id
+    );
 
-  const dependencyLevelToHighlighted =
+  const isDependencyToHighlighted =
     !!props.displayOptions?.highlightedBlock &&
-    props.displayOptions.highlightedBlockDependencies.findIndex((x) =>
+    props.displayOptions.highlightedBlockDependencies.some((x) =>
       x.includes(props.blockData.id)
-    ) + 1;
+    );
 
   const classes = {
-    "block-highlight-recommended-1": isEnabledByHighlighted,
     "block-highlight-unsupported": isSupportedBySelectedTool,
   };
 
-  if (dependencyLevelToHighlighted) {
-    const isRecommended =
-      props.blockData.journeyStage.length >
-      props.displayOptions.highlightedBlock.journeyStage.length;
-    const highlightType = isRecommended ? "recommended" : "dependency";
-    classes[
-      `block-highlight-${highlightType}-${dependencyLevelToHighlighted}`
-    ] = true;
+  const stage = props.blockData.journeyStage.length / 2; //Each emoji length is two bytes
+  if (isRecommendedByHighlight) {
+    classes[`block-highlight-recommended-${stage}`] = true;
   }
+
+  /**
+   * we could do three different metrics for showing dependency relations
+   * - by distance: how far away is the block in the dependency graph. Typically dependencies point to prior journey
+   *   stages, so further away, stronger dependency. This sounds cool in theory but practically it offers little info
+   *   about the actual relations between blocks (why is this a 3rd grade dependeny?). It can even confuse because
+   *   e.g. when a L4 block is highighted very heavily because its very far away.
+   * - by count: how often do we encounter the block in the dependency graph. More important blocks will appear multiple
+   *   times. This is mildly useful
+   * - by level: the easiest and most intuitive one - essential blocks are "more required" than e.g. "best practice" blocks
+   */
+  if (isDependencyToHighlighted) {
+    classes[`block-highlight-dependency-${stage}`] = true;
+  }
+
+  // debug to show all colors
+  // classes[`block-highlight-dependency-${stage}`] = true;
 
   return classes;
 });
@@ -224,50 +245,23 @@ h4 {
   background-color: #edfae6;
 }
 
-// todo: there's probably a better way to do this in SCSS with for loops etc.
-.block-highlight-dependency-1 {
-  background-color: lighten($color-dependency-base, 32%);
-
-  // this works, but if we do it we must avoid layout reflow (position: relative or something comes to mind)
-// &::after {
-  //   content: "1";
-  // }
+$lighten-color-step: 3%;
+@for $i from 1 through 5 {
+  .block-highlight-dependency-#{$i} {
+    background-color: lighten(
+      $color-dependency-base,
+      24 + $lighten-color-step * ($i - 1)
+    );
+  }
 }
 
-.block-highlight-dependency-2 {
-  background-color: lighten($color-dependency-base, 24%);
-}
-
-.block-highlight-dependency-3 {
-  background-color: lighten($color-dependency-base, 16%);
-}
-
-.block-highlight-dependency-4 {
-  background-color: lighten($color-dependency-base, 8%);
-}
-
-.block-highlight-dependency-5 {
-  background-color: lighten($color-dependency-base, 0%);
-}
-
-// for recommended we lighten up in reverse
-.block-highlight-recommended-1 {
-  background-color: lighten($color-recommended-base, 40%);
-}
-
-.block-highlight-recommended-2 {
-  background-color: lighten($color-recommended-base, 30%);
-}
-
-.block-highlight-recommended-3 {
-  background-color: lighten($color-recommended-base, 20%);
-}
-
-.block-highlight-recommended-4 {
-  background-color: lighten($color-recommended-base, 10%);
-}
-
-.block-highlight-recommended-5 {
-  background-color: lighten($color-recommended-base, 0%);
+// the higher the journey stage, the lighter the color
+@for $i from 1 through 5 {
+  .block-highlight-recommended-#{$i} {
+    background-color: lighten(
+      $color-recommended-base,
+      24 + $lighten-color-step * ($i - 1)
+    );
+  }
 }
 </style>

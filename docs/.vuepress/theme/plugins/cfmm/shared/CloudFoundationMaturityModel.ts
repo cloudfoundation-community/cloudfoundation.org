@@ -35,6 +35,7 @@ export class CloudFoundationMaturityModel {
             ),
             enables: value.frontmatter.properties["enables"],
             dependsOn: value.frontmatter.properties["depends-on"],
+            recommended: value.frontmatter.properties["recommended"],
           } as MaturityModelBlock)
       )
   );

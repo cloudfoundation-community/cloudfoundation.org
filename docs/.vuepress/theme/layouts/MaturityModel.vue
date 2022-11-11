@@ -191,12 +191,10 @@ onMounted(() => {
 let hoverBlock = ref<MaturityModelBlock | null>(null);
 
 function onBlockHover(event: MaturityModelBlockHoverEvent) {
-  // console.log("model onHover", event);
-
   // clear only when the leave event is for the currently highlighted block
   // this prevents UI glitches when events are processed out of order
   if (event.type === "leave" && hoverBlock.value?.id === event.block.id) {
-    // hoverBlock.value = null;
+    hoverBlock.value = null;
   } else {
     hoverBlock.value = event.block;
   }
@@ -227,7 +225,7 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
     showDescription: showDescription.value,
 
     highlightedBlock: hoverBlock.value,
-    highlightedBlockDependencies,
+    highlightedBlockDependencies
   };
 
   return opts;
