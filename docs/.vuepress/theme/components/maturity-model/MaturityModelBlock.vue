@@ -49,8 +49,10 @@ interface Props {
 const props = defineProps<Props>();
 
 const highlightClasses = computed(() => {
+  const blockId = props.blockData.id;
+
   const isHighlightedBlock =
-    props.blockData.id === props.displayOptions?.highlightedBlock?.id;
+    blockId === props.displayOptions?.highlightedBlock?.id;
 
   // don't color it, even if we appear on the dependency graph (circular dependency!)
   if (isHighlightedBlock) {
@@ -61,24 +63,27 @@ const highlightClasses = computed(() => {
     !!props.displayOptions?.selectedTool &&
     !props.blockData.tools.includes(props.displayOptions.selectedTool);
 
-  const isRecommendedByHighlight =
+  const isRecommendedByHighlighted =
     !!props.displayOptions?.highlightedBlock &&
-    props.displayOptions.highlightedBlock.recommended.includes(
-      props.blockData.id
-    );
+    props.displayOptions.highlightedBlock.recommended.includes(blockId);
 
   const isDependencyToHighlighted =
     !!props.displayOptions?.highlightedBlock &&
     props.displayOptions.highlightedBlockDependencies.some((x) =>
-      x.includes(props.blockData.id)
+      x.includes(blockId)
     );
+
+  const isEnabledByHighlighted =
+    !!props.displayOptions?.highlightedBlock &&
+    props.displayOptions.highlightedBlock.enables.includes(blockId);
 
   const classes = {
     "block-highlight-unsupported": isSupportedBySelectedTool,
+    "block-highlight-enabled": isEnabledByHighlighted,
   };
 
   const stage = props.blockData.journeyStage.length / 2; //Each emoji length is two bytes
-  if (isRecommendedByHighlight) {
+  if (isRecommendedByHighlighted) {
     classes[`block-highlight-recommended-${stage}`] = true;
   }
 
@@ -242,7 +247,7 @@ h4 {
 }
 
 .block-highlight-enabled {
-  background-color: #edfae6;
+  background-color: lighten($color-enabled-base, 34%);
 }
 
 $lighten-color-step: 3%;

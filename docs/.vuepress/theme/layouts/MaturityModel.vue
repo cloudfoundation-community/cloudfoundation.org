@@ -127,6 +127,7 @@
               <div class="d-flex justify-content-between">
                 <small>Required</small>
                 <small>Recommended</small>
+                <small>Enabled</small>
               </div>
             </div>
           </div>
@@ -369,7 +370,9 @@ $CFMMXs: 580px; // 1 pillar
       90deg,
       $color-dependency-base,
       white,
-      $color-recommended-base
+      $color-recommended-base,
+      white,
+      $color-enabled-base
     );
     height: 1rem;
     width: auto;
