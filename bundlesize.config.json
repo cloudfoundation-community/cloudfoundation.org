@@ -2,7 +2,7 @@
   "files": [
     {
       "path": "docs/.vuepress/dist/assets/app.????????.js",
-      "maxSize": "370 kB",
+      "maxSize": "400 kB",
       "compression": "none",
       "description": "this is the app bundle that's always loaded and on the critical path. It includes the block index - extracting it could make it more lightweight."
     },
