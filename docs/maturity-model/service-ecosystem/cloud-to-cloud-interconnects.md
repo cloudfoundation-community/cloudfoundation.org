@@ -13,6 +13,7 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️⭐️
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 70cb4156-d6fa-41ae-a295-8bf1fdf50f6b

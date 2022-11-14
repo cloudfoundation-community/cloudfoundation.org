@@ -14,7 +14,9 @@ properties:
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
+  recommended: []
   scope: ☁️ Platform
   tool-implementations: []
   name: Global Cost Optimization via Reservations
@@ -75,5 +77,5 @@ The cloud providers have added more and more capabilities to detect these optimi
 
 ### Combine with Individual Project Cost Optimization
 
-Depending on the organizational philosophy (cf. [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md)) Cloud Foundation teams should also consider [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md).  While global cost optimization can spot optimization opportunities across the whole enterprise, individual projects often times have better local information about their workloads. For example, a team may be spinning up a new large database cluster that makes up a majority of their cloud spend. They already know that this cluster is going to be always-on base-load and can therefore buy a reservation right away. Review the [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md) building block for more information.
+Depending on the organizational philosophy (cf. [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md)) Cloud Foundation teams should also consider [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md).  While global cost optimization can spot optimization opportunities across the whole enterprise, individual projects often times have better local information about their workloads. For example, a team may be spinning up a new large database cluster that makes up a majority of their cloud spend. They already know that this cluster is going to be always-on base-load and can therefore buy a reservation right away. Review the [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md) building block for more information.
 

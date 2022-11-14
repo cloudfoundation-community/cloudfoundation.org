@@ -15,6 +15,8 @@ properties:
   journey-stage: ⭐️
   depends-on:
     - ac8a21c3-f692-4d23-a9bb-796fd311c39f
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 7beb3669-9658-4b4d-a87a-a136d9556f32
@@ -68,7 +70,7 @@ Start out with the most basic policies before going more fine granular. A cloud 
 
 ### Define Your Shared Responsibility Model
 
-The [Shared Responsibility Model](./shared-responsibility-model.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
+The [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
 
 ### Involve Legal and Compliance Stakeholders
 

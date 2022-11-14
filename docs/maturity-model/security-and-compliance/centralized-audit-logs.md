@@ -8,10 +8,15 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - 012dc29a-5b79-4eeb-8154-9ef0f2ae0f02
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - af14b5df-77b4-4def-b761-8fadabd241ca
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 50e4e2e5-9fb6-49f7-8b57-6988b865b412

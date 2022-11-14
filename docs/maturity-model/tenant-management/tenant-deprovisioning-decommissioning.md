@@ -14,8 +14,12 @@ properties:
     - 155c0ead-cbd0-4e0c-9387-cc57946f80e9
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
-  depends-on: []
-  scope: ☁️ Platform
+  depends-on:
+    - deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
+  recommended:
+    - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+  scope: 🛬 Landing Zone
   tool-implementations:
     - 431fe444-0b73-4592-b525-7e09a48a6457
     - bac2d6a9-0bab-4d58-b89e-9b3315f86b79
@@ -38,7 +42,7 @@ Most zombie workloads are the result of unclear responsibilities - not malice. W
 
 - “When the project team was wound down, I took on responsibilities in a new project and assumed one of my old colleagues would delete the Azure Subscription.”
 
-If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) better. 
+If any of those situations happen in your organization, the cloud foundation team needs to establish and communicate its [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md) better. 
 
 ## Proven Patterns for Implementing a Cloud Tenant Decommissioning Process
 
@@ -46,7 +50,7 @@ Tenant decommissioning is a fundamental tenant management process. Cloud foundat
 
 ### Plan for Involuntary Decommissioning
 
-Setting clear boundaries and expectations with a [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) is crucial. Unfortunately, the cloud foundation team sometimes has to enforce these boundaries. For example, cloud foundation teams may find internal customers
+Setting clear boundaries and expectations with a [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md) is crucial. Unfortunately, the cloud foundation team sometimes has to enforce these boundaries. For example, cloud foundation teams may find internal customers
 
 - violating their duty to handle assigned incidents as part of the [Incident Management Process](../security-and-compliance/incident-management-process.md).
 

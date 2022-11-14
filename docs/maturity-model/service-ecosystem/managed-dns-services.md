@@ -12,6 +12,7 @@ properties:
   redaction-state: Draft
   journey-stage: ⭐️⭐️
   depends-on: []
+  recommended: []
   scope: ☁️ Platform
   tool-implementations: []
   name: Managed DNS Services

@@ -14,9 +14,11 @@ properties:
     - 6e343acc-95bd-42aa-bb32-bdcce1c7d4ad
     - a31e4077-4e84-4129-a46c-1070a8591181
     - 6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8
@@ -28,6 +30,7 @@ properties:
     - 785eec49-493b-46a6-8540-2237135f0fba
     - b6a3508f-701f-4ce4-99b0-778f25c6c8a4
     - 9b244e63-eb03-454a-a33b-ebb9d90e8137
+    - 0337257c-3de3-49c0-b339-eba3222eb9af
   name: Virtual Network Service
 ---
 
@@ -41,7 +44,7 @@ A virtual network service has two inputs:
 
 - a cloud tenant for the virtual network
 
-- an IP address range, often in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation)
+- an IP address range, often in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation), which can either be provided by a Network Engineer or automatically by an IP address management tool (IPAM)
 
 A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden away from DevOps teams.
 
@@ -56,7 +59,11 @@ Given the security implications, networking services must be provided centrally 
 
 ## Proven Patterns When Implementing Virtual Network Services
 
-### Align with Your [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) 
+### Implement a Hub & Spoke Approach
+
+Defining a central hub with e.g. configured access to on-prem network is a very common approach for a scalable network architecture. If Cloud Tenants (e.g. Azure Subscriptions) need access to On-Prem, a Spoke network is deployed into the tenant and connects it to the Hub.
+
+### Align with Your [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md) 
 
 Organizations should strive to make applications go full cloud-native on networking (L7, APIs) or provide strongly centralized services (L3 networking like on-premise).
 

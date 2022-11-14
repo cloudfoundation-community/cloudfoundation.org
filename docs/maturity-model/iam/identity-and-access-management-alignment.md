@@ -6,7 +6,8 @@ title: Identity and Access Management Alignment
 description: >-
   Establish and align processes for governing identities and access permissions
   across cloud platforms with the responsible IAM stakeholders of the
-  organization.
+  organization. This alignment establishes guardrails for implementing IAM
+  processes in the foundation’s offerings.
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
@@ -18,6 +19,7 @@ properties:
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
+  recommended: []
   scope: 🏢 Core
   tool-implementations: []
   name: Identity and Access Management Alignment

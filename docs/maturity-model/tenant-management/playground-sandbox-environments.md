@@ -17,6 +17,9 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on:
     - 119bfca5-dda6-408c-b35d-c59d0f209fcf
+  recommended:
+    - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+    - cd162600-e742-4a80-b022-989da423ca43
   scope: ☁️ Platform
   tool-implementations:
     - 8b5e9c3f-82b4-429c-ad60-49176671d537

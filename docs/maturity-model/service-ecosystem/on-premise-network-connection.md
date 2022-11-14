@@ -14,6 +14,7 @@ properties:
   journey-stage: ⭐️⭐️⭐️
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - c688eecf-0335-4505-bdcb-bc6f6da28c63
@@ -24,6 +25,10 @@ properties:
     - f096be8c-0f83-4d92-a1e3-b095f1dc6270
   name: On-Premise Network Connection
 ---
+
+A common approach to address on-prem connectivity is applying the Hub & Spoke design. You define a central hub in your cloud platform that actually connects to the On-Premise network. All managed tenants then connect via a Spoke network to this Hub to get access to On-Prem. Setting up the spoke must be done in a scalable way as the number of spokes grows with the number of tenants who need this access. This can be achieved by e.g. integrating the On-Prem connectivity via a [Virtual Network Service](./virtual-network-service.md).
+
+
 
 TODO: describe IPAM integration
 

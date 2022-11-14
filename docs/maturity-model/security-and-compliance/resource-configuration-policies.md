@@ -9,11 +9,17 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
+    - 74295ae4-dcd5-449b-8825-f12c5267e89b
+    - b0a04ae8-c9b3-4060-abfd-e760723995d8
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:
     - d1904912-b420-4a10-a62c-aa578fb847ff
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 7beb3669-9658-4b4d-a87a-a136d9556f32
@@ -38,13 +44,13 @@ After implementing policies for basic [Service and Location Restrictions](./serv
 
 - Enforcing mandatory encryption of storage at rest, optionally in combination with a [Managed Key Vault](../service-ecosystem/managed-key-vault.md) 
 
-Landing zones that offer a [Shared Responsibility Model](./shared-responsibility-model.md) with a high degree of freedom for application teams to directly provision cloud resources should strongly consider enforcing resource configuration policies as a preventive measure for security incidents. Cloud foundation teams should consider implementing a healthy balance of preventive and reactive security measures like [Resource Configuration Scanning](./resource-configuration-scanning.md) to achieve a good cloud security posture.
+Landing zones that offer a [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) with a high degree of freedom for application teams to directly provision cloud resources should strongly consider enforcing resource configuration policies as a preventive measure for security incidents. Cloud foundation teams should consider implementing a healthy balance of preventive and reactive security measures like [Resource Configuration Scanning](./resource-configuration-scanning.md) to achieve a good cloud security posture.
 
 Landing zones that offer less freedom for application teams for direct resource provisioning can enforce resource configuration shared or managed services that already implement the desired policies like a [Virtual Network Service](../service-ecosystem/virtual-network-service.md) or [Managed bastion hosts](../service-ecosystem/managed-bastion-hosts.md). This approach is usually most effective when combined with [Service and Location Restrictions](./service-and-location-restrictions.md) that prevent direct provisioning of the affected cloud resources.
 
 ## Proven Patterns for Implementing Cloud Resource Configuration Policies
 
-There are a myriad of cloud services and technical options to implement resource configuration policies on most cloud platforms. This can make it difficult for cloud foundation teams to find the right balance between establishing important guard rails, while not getting lost in the details. It’s therefore essential that cloud foundation teams decide on a crisp [Shared Responsibility Model](./shared-responsibility-model.md) and strong [Service and Location Restrictions](./service-and-location-restrictions.md) for their Landing zones first, so they can restrict the “problem scope” of cloud resources that may need mandatory configuration policies.
+There are a myriad of cloud services and technical options to implement resource configuration policies on most cloud platforms. This can make it difficult for cloud foundation teams to find the right balance between establishing important guard rails, while not getting lost in the details. It’s therefore essential that cloud foundation teams decide on a crisp [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) and strong [Service and Location Restrictions](./service-and-location-restrictions.md) for their Landing zones first, so they can restrict the “problem scope” of cloud resources that may need mandatory configuration policies.
 
 ### Leverage the Cloud API as the Policy Enforcement Point
 

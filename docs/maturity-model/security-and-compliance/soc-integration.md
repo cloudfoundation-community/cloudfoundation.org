@@ -11,7 +11,12 @@ pageType: CFMMBlock
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
+    - af14b5df-77b4-4def-b761-8fadabd241ca
+  recommended:
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
+    - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: SOC Integration

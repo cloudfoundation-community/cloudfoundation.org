@@ -13,6 +13,7 @@ properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: ☁️ Platform
   tool-implementations: []
   name: Managed Cloud Provider Support Contracts

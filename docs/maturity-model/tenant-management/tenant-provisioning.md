@@ -10,12 +10,16 @@ pageType: CFMMBlock
 properties:
   enables:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
-    - 57c00ed4-e699-4167-a0f5-6009bf31b600
     - 913a8ad1-7ad4-4ade-9e88-801a7afa4b40
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
+    - 119bfca5-dda6-408c-b35d-c59d0f209fcf
+    - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - ac8a21c3-f692-4d23-a9bb-796fd311c39f
+  recommended:
+    - 77942f5f-e395-49c6-8927-e5fa3ef28aef
   scope: 🛬 Landing Zone
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
@@ -31,11 +35,11 @@ Cloud tenants are an essential part of the cloud [Resource Hierarchy](./resource
 
 The cloud foundation maturity model uses the term “tenant” to refer to the abstract concept of an isolated environment in a multi-tenant cloud platform. Cloud foundation teams can choose different platform-specific concepts to implement tenants. This choice should depend on the landing zone and workload type. Some practical examples of tenant concepts
 
-- In a landing zone hosting cloud native workloads, every application team receives their own AWS Account to provide strong isolation.
+- In a [Cloud-Native Landing Zone](./cloud-native-landing-zone.md), every application team receives their own AWS Account to provide strong isolation.
 
-- A managed container platform based on Kubernetes provides a Kubernetes namespace to every application team. These provide lightweight isolation between different workloads on the same cluster.
+- A managed [Container Platform Landing Zone](./container-platform-landing-zone.md) based on Kubernetes provides a Kubernetes namespace to every application team. These provide lightweight isolation between different workloads on the same cluster.
 
-- A Lift & Shift landing zone on Azure provides dedicated resource groups to every customer. This allows easily sharing common resources like an on-prem connected VNet while providing a reasonable level of isolation for configuring RBAC access to VMs and connected resources like storage accounts.
+- A [Lift & Shift Landing Zone](./lift-and-shift-landing-zone.md) on Azure provides dedicated resource groups to every customer. This allows easily sharing common resources like an on-prem connected VNet while providing a reasonable level of isolation for configuring RBAC access to VMs and connected resources like storage accounts.
 
 ## Why You Need to Automate Cloud Tenant Provisioning
 
@@ -59,7 +63,7 @@ Isolate teams and workloads using tenants - no sharing! One of the worst anti-pa
 
 ### IAM Should Be Part of Tenant Provisioning
 
-Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model](../security-and-compliance/shared-responsibility-model.md) and [Resource Authorization Management](../iam/resource-authorization-management.md) that details how and to what extent teams can access cloud tenants.
+Tenant provisioning alone is rarely useful without a minimal [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md) and [Resource Authorization Management](../iam/resource-authorization-management.md) that details how and to what extent teams can access cloud tenants.
 
 ### Maintain a Cloud Tenant Database
 
@@ -73,7 +77,7 @@ Consider making [Cloud Tenant Tagging](../security-and-compliance/cloud-tenant-t
 
 ### Automate Tenant Provisioning
 
-Beware of the pitfalls of insufficient automation. Semi-automated provisioning often leads to [Monolithic Landing Zone](./monolithic-landing-zone.md) architectures, which are a bottleneck for achieving higher-level capabilities in later journey stages. 
+Beware of the pitfalls of insufficient automation. Semi-automated provisioning often leads to a “monolithic” landing zone design, which is a bottleneck for achieving higher-level capabilities in later journey stages (see [Modular Landing Zones](./modular-landing-zones.md) for a discussion).
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -83,7 +87,7 @@ Beware of the pitfalls of insufficient automation. Semi-automated provisioning o
   <CtaButton class="btn-secondary" url="https://www.meshcloud.io/2021/01/27/cloud-tenant-management-what-you-need-to-know-in-2021/">Learn More</CtaButton>
 </CallToAction>
 
-Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md) and [Modular Landing Zones](./modular-landing-zones.md).
+Fully automated provisioning of tenants is a pre-requisite for more advanced capabilities like [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md).
 
 
 

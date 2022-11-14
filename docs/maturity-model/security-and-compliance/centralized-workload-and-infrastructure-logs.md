@@ -9,9 +9,14 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - 012dc29a-5b79-4eeb-8154-9ef0f2ae0f02
   journey-stage: ⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
+    - af14b5df-77b4-4def-b761-8fadabd241ca
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Centralized workload and infrastructure logs

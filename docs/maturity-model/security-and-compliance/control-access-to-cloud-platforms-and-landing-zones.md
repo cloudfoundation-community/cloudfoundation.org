@@ -11,11 +11,14 @@ pageType: CFMMBlock
 properties:
   enables:
     - dc16dccf-7530-4179-a8e2-b82cc54b990f
+    - 3c7081e5-c451-40b6-806d-a8d21b130612
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
+    - cf487857-542f-4d74-8fe9-885b7be8ccf3
+  recommended: []
   scope: 🏢 Core
   tool-implementations:
     - d24b4c3a-1f97-4426-8999-f82a97bf1e75
@@ -24,7 +27,7 @@ properties:
 
 Cloud Foundation teams often have to support customers with a wide variety of security and workload requirements. While [Modular Landing Zones](../tenant-management/modular-landing-zones.md) help foundation teams offer a composable set of services to cover varying workload requirements, addressing different security requirements comes not as easily.
 
-A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model](./shared-responsibility-model.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
+A common source for different security requirements are data classifications and project stage. For example, one project might be working with public data in a development stage, while another project needs to work with confidential data in its productive environment. Consequentially, these projects have different risk estimates. When the Cloud Foundation team assumes responsibility for ensuring basic compliance via the Landing Zone (see [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md)), serving these projects creates the need for multiple Landing Zones, each implementing a different set of security controls.
 
 ## Why Manage Access to Cloud Platforms and Landing Zones
 

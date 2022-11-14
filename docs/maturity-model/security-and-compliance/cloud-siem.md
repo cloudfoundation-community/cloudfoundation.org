@@ -9,9 +9,13 @@ description: |-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - 3c7081e5-c451-40b6-806d-a8d21b130612
   journey-stage: ⭐️⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - b0a04ae8-c9b3-4060-abfd-e760723995d8
+    - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Cloud SIEM

@@ -14,6 +14,7 @@ properties:
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 3c377c14-3fbf-4766-a47a-e30bd070ed7f
