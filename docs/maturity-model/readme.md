@@ -8,10 +8,6 @@ order: 0
 layout: MaturityModel
 ---
 
-<!--notion-markdown-cms:raw-->
-<MaturityModel>
-</MaturityModel>
-
 
 
 <!-- included database 6e7a1291-6f21-4979-b582-452b0158e2b2 -->

@@ -14,6 +14,7 @@ properties:
     - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
     - 119bfca5-dda6-408c-b35d-c59d0f209fcf
     - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
@@ -35,7 +36,7 @@ Cloud tenants are an essential part of the cloud [Resource Hierarchy](./resource
 
 The cloud foundation maturity model uses the term “tenant” to refer to the abstract concept of an isolated environment in a multi-tenant cloud platform. Cloud foundation teams can choose different platform-specific concepts to implement tenants. This choice should depend on the landing zone and workload type. Some practical examples of tenant concepts
 
-- In a [Cloud-Native Landing Zone](./cloud-native-landing-zone.md), every application team receives their own AWS Account to provide strong isolation.
+- In a [Cloud-native Landing Zone](./cloud-native-landing-zone.md), every application team receives their own AWS Account to provide strong isolation.
 
 - A managed [Container Platform Landing Zone](./container-platform-landing-zone.md) based on Kubernetes provides a Kubernetes namespace to every application team. These provide lightweight isolation between different workloads on the same cluster.
 

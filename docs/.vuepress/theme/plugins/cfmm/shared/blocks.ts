@@ -169,8 +169,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
-          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
@@ -378,6 +377,25 @@ export const index = [
         ],
         "name": "Playground / Sandbox Environments"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "171e6824-30db-4f64-9d19-a4d87ba56ed9",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-with-collie-171e682430db4f649d19a4d87ba56ed9",
+      "title": "Cloud-native Landing Zone with collie",
+      "description": "Collie supports developing your own cloud foundations quickly from reusable bundles that offer out-of-the-box IaC implementations of cloud native landing zones.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "5c2013b6-4c56-4813-8be7-ad86757014af"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone with collie"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1308,6 +1326,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "4c50144f-1637-4136-8f78-3dfaa005d031",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-4c50144f163741368f783dfaa005d031",
+      "title": "Cloud-native Landing Zone",
+      "description": "Implements sufficient capabilities to implement a minimal cloud-native landing zone.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "53cb45d7-bcd9-4eb9-bfd5-dad6eca0b88c"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24",
       "title": "Individual Project Cost Optimization via Reservations",
@@ -1448,10 +1485,10 @@ export const index = [
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [
+        "depends-on": [],
+        "recommended": [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
-        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "71c1b0fb-2eea-4492-bbb8-05a83098544c",
@@ -1547,6 +1584,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "597617fd-06c3-4cab-bf0e-c19b84439a92",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-597617fd06c34cabbf0ec19b84439a92",
+      "title": "Cloud-native Landing Zone",
+      "description": "Implements sufficient capabilities to implement a minimal cloud-native landing zone.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "59cdf884-5bd2-4b55-87f8-824a4a35623c",
       "url": "https://www.notion.so/Monthly-cloud-project-billing-report-with-meshStack-59cdf8845bd24b5587f8824a4a35623c",
       "title": "Monthly cloud project billing report with meshStack",
@@ -1589,6 +1645,7 @@ export const index = [
       "id": "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
       "url": "https://www.notion.so/Container-Platform-Landing-Zone-59fc4d46739d4d498bd7d7b4882709ba",
       "title": "Container Platform Landing Zone",
+      "description": "A managed container platform offers a developer-centric experience for building and running container-based applications on the cloud.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1597,7 +1654,8 @@ export const index = [
         "depends-on": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
-          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
         ],
         "recommended": [
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
@@ -1608,7 +1666,9 @@ export const index = [
           "1a1cdeb0-de7e-4ea9-a963-e409b9abed54"
         ],
         "scope": "☁️ Platform",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "bfc77006-225b-4425-afd0-ee8f897367ba"
+        ],
         "name": "Container Platform Landing Zone"
       }
     }
@@ -2790,7 +2850,6 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "dff7d733-d987-4145-aa1a-e340b5bcff81",
           "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
         ],
         "journey-stage": "⭐️⭐️⭐️",
@@ -2972,7 +3031,6 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "52d1e517-9d07-4acc-8c59-17526fa3af9d",
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d",
           "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
           "64284b14-faab-461c-80bb-5e8efbae4dcc"
@@ -3109,6 +3167,25 @@ export const index = [
         ],
         "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/log_sinks.tf",
         "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "bfc77006-225b-4425-afd0-ee8f897367ba",
+      "url": "https://www.notion.so/Container-Platform-Landing-Zone-bfc77006225b4425afd0ee8f897367ba",
+      "title": "Container Platform Landing Zone",
+      "description": "meshStack has built-in support for building and operating OpenShift, AKS and other Kubernetes based Landing Zones including IAM, quota management and consumption metering.",
+      "properties": {
+        "block": [
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+        ],
+        "tool": [
+          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+        ],
+        "link": null,
+        "name": "Container Platform Landing Zone"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -3353,8 +3430,7 @@ export const index = [
       "properties": {
         "enables": [
           "28740e92-5559-4931-ab04-17cfb026edd5",
-          "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
-          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3474,7 +3550,10 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "af14b5df-77b4-4def-b761-8fadabd241ca"
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3600,11 +3679,13 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
-          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
         ],
         "recommended": [
           "74295ae4-dcd5-449b-8825-f12c5267e89b",
@@ -3786,7 +3867,8 @@ export const index = [
           "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
           "119bfca5-dda6-408c-b35d-c59d0f209fcf",
-          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3824,21 +3906,22 @@ export const index = [
     "file": "maturity-model/tenant-management/cloud-native-landing-zone.md",
     "frontmatter": {
       "id": "dff7d733-d987-4145-aa1a-e340b5bcff81",
-      "url": "https://www.notion.so/Cloud-Native-Landing-Zone-dff7d733d9874145aa1ae340b5bcff81",
-      "title": "Cloud-Native Landing Zone",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-dff7d733d9874145aa1ae340b5bcff81",
+      "title": "Cloud-native Landing Zone",
+      "description": "A dedicated landing zone optimized for cloud-native workloads enables quick onboarding and efficient operations.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
           "af14b5df-77b4-4def-b761-8fadabd241ca",
           "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
-          "b0a04ae8-c9b3-4060-abfd-e760723995d8",
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
-          "cd162600-e742-4a80-b022-989da423ca43"
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
         ],
         "recommended": [
           "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
@@ -3847,11 +3930,16 @@ export const index = [
           "71143f29-2fe9-452b-8398-fc40f270a2b6",
           "2468d240-6cca-4680-b9c4-6f237defa511",
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
-          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
+          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8"
         ],
         "scope": "☁️ Platform",
-        "tool-implementations": [],
-        "name": "Cloud-Native Landing Zone"
+        "tool-implementations": [
+          "4c50144f-1637-4136-8f78-3dfaa005d031",
+          "171e6824-30db-4f64-9d19-a4d87ba56ed9",
+          "597617fd-06c3-4cab-bf0e-c19b84439a92"
+        ],
+        "name": "Cloud-native Landing Zone"
       }
     }
   },

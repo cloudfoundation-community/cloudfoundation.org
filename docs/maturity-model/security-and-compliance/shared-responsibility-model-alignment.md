@@ -65,7 +65,7 @@ The demands of application teams considering moving to the cloud are not created
 
 - What operational capabilities does the internal customer have? Can they look after their applications 24/7 or will they need support from a central operations team?
 
-The definition of different use cases simplifies aligning responsibilities by reducing the number of stakeholders involved and eliminating some conflicting interests like cloud-native customers favoring more freedom vs. lift & shift customers demanding a higher level of managed services. These use cases should also inform the design of the Landing Zones provided by the cloud foundation team, e.g. a [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md), [Cloud-Native Landing Zone](../tenant-management/cloud-native-landing-zone.md) or [Container Platform Landing Zone](../tenant-management/container-platform-landing-zone.md).
+The definition of different use cases simplifies aligning responsibilities by reducing the number of stakeholders involved and eliminating some conflicting interests like cloud-native customers favoring more freedom vs. lift & shift customers demanding a higher level of managed services. These use cases should also inform the design of the Landing Zones provided by the cloud foundation team, e.g. a [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md), [Cloud-native Landing Zone](../tenant-management/cloud-native-landing-zone.md) or [Container Platform Landing Zone](../tenant-management/container-platform-landing-zone.md).
 
 ### Document Responsibilities
 

@@ -8,9 +8,23 @@ order: 40
 
 ## 2022-11
 
-- *Added a new group of building blocks for use-case-specific Landing Zones to the Tenant Management Pillar*
+- The Cloud Foundation Maturity model now offers more interactive controls to explore the model. Here’s what we added
 
-    - 
+    - Filters for filtering blocks by scopes and journey stage
+
+    - Interactive highlighting of block relations with color-coded relationships
+
+    - Expert tools to allow manual block filtering as well as unfolding all block descriptions
+
+    - A legend explains important CFMM concepts
+
+- Added a new group of building blocks for use-case-specific Landing Zones to the Tenant Management Pillar
+
+    - [Cloud-native Landing Zone](../maturity-model/tenant-management/cloud-native-landing-zone.md) offers cloud-native tenants for sophisticated internal customers building directly on the cloud
+
+    - [Lift & Shift Landing Zone](../maturity-model/tenant-management/lift-and-shift-landing-zone.md) provides an optimized cloud environment for re-hosting or re-platforming VM based workloads.
+
+    - [Container Platform Landing Zone](../maturity-model/tenant-management/container-platform-landing-zone.md) offers a developer-centric experience for building and running container-based applications on the cloud.
 
 - Removed the “Monolithic Landing Zone” building block. We documented this as an anti-pattern but feel it makes more sense to include in the motivation for [Modular Landing Zones](../maturity-model/tenant-management/modular-landing-zones.md).
 

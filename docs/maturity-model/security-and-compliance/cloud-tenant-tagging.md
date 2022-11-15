@@ -13,9 +13,9 @@ properties:
     - e7d63253-2e39-4bbf-9dd6-da11bb3edd0d
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
-  depends-on:
+  depends-on: []
+  recommended:
     - b875ac41-2b38-4ce4-ab8b-76ddd876d789
-  recommended: []
   scope: ☁️ Platform
   tool-implementations:
     - 71c1b0fb-2eea-4492-bbb8-05a83098544c

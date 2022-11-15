@@ -11,6 +11,9 @@ pageType: CFMMBlock
 properties:
   enables:
     - af14b5df-77b4-4def-b761-8fadabd241ca
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
+    - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
