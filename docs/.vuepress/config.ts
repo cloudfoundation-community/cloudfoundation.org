@@ -63,7 +63,7 @@ log("The generated sidebar will look the following: ");
 log(JSON.stringify(sidebar, null, 2));
 
 const sitemapOptions: SitemapOptions = {
-  hostname: "https://cloudfoundation.meshcloud.io",
+  hostname: "https://cloudfoundation.org",
   excludeUrls: ["/404.html"],
 };
 const cfmmOptions: CfmmPluginOptions = {
