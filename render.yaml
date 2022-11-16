@@ -9,7 +9,7 @@ services:
     staticPublishPath: ./docs/.vuepress/dist
     pullRequestPreviewsEnabled: true
     domains:
-      - cloudfoundation.meshcloud.io
+      - cloudfoundation.org
     routes:
       ## Redirects related to the feedback form.
       ## Google App Script cannot be called directly from Vue due to CORS policy.
