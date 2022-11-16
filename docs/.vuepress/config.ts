@@ -128,8 +128,8 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
           apiHost: "",
           domain:
               process.env.RENDER_GIT_BRANCH === "main" // This way Plausible will only track data for the production version.
-              ? "cloudfoundation.meshcloud.io"
-              : "preview.cloudfoundation.meshcloud.io",
+              ? "cloudfoundation.org"
+              : "preview.cloudfoundation.org",
         },
       },
     ],
