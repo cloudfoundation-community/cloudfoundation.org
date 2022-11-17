@@ -75,7 +75,7 @@
                   v-model="showDescription"
                 />
                 <label for="showDescription" class="custom-control-label"
-                  >Show All Descriptions</label
+                  >Show all descriptions</label
                 >
               </div>
             </div>
@@ -88,18 +88,18 @@
                   v-model="showControls"
                 />
                 <label for="showControls" class="custom-control-label">
-                  Filter Individual Blocks</label
+                  Manual block filter controls</label
                 >
               </div>
               <div class="custom-control custom-switch">
                 <input
-                  id="hideUnlected"
+                  id="hideUnselected"
                   type="checkbox"
                   class="custom-control-input"
                   v-model="hideUnselected"
                 />
                 <label for="hideUnselected" class="custom-control-label"
-                  >Apply Individual Filter</label
+                  >Hide manually filtered blocks</label
                 >
               </div>
             </div>
@@ -129,13 +129,14 @@
               </ul>
             </div>
             <div class="legend-section">
-              <p>Dependencies</p>
+              <p>Block Relationships</p>
               <div id="dependency-recommended-gradient"></div>
               <div class="d-flex justify-content-between">
                 <small>Required</small>
                 <small>Recommended</small>
                 <small>Enabled</small>
               </div>
+              <small>Tip: Hover over blocks to highlight</small>
             </div>
           </div>
         </div>
