@@ -103,6 +103,10 @@
                 >
               </div>
             </div>
+
+            <button class="btn btn-primary" @click="resetComponentState">
+              Reset
+            </button>
           </form>
         </div>
         <div class="mt-auto">
@@ -206,16 +210,18 @@ let showControls = ref(false);
 let showDescription = ref(false);
 let hideUnselected = ref(false);
 
-const router = useRouter();
+function captureComponentStateForQuery() {
+  return {
+    selectedTool: selectedTool.value,
+    selectedScopes: selectedScopes.value.join(","),
+    selectedStages: selectedStages.value.join(","),
+    showControls: showControls.value.toString(),
+    hideUnselected: hideUnselected.value.toString(),
+    showDescription: showDescription.value.toString(),
+  };
+}
 
-let didInitializeRouterStateFromLocation = false;
-onBeforeMount(() => {
-  // I thought I could just use useRoute().query but apparently that's not always up to date
-  // this is the simplest implementation that actually works without going into deep vue lifecycle details
-  let params = new URLSearchParams(window.location.search);
-  const query = Object.fromEntries(params.entries());
-
-  window.location.search;
+function setComponentStateFromQuery(query: Record<string, any>) {
   selectedTool.value =
     toolSelectOptions.value.find((x) => x === query.selectedTool) ||
     selectedTool.value;
@@ -238,9 +244,53 @@ onBeforeMount(() => {
   showControls.value = query.showControls === "true";
   hideUnselected.value = query.hideUnselected === "true";
   showDescription.value = query.showDescription === "true";
+}
+const defaultState = captureComponentStateForQuery();
+
+const router = useRouter();
+
+let didInitializeRouterStateFromLocation = false;
+onBeforeMount(() => {
+  // I thought I could just use useRoute().query but apparently that's not always up to date
+  // this is the simplest implementation that actually works without going into deep vue lifecycle details
+  let params = new URLSearchParams(window.location.search);
+  const query = Object.fromEntries(params.entries());
+
+  setComponentStateFromQuery(query);
 
   didInitializeRouterStateFromLocation = true;
 });
+
+// we store all copmonent state via router in query params so browser back buttons work as expected
+let routerState = computed(() => captureComponentStateForQuery());
+
+watch(routerState, () => {
+  // we have to guard against updating the router state before we initially set it from the
+  // window location
+  if (!didInitializeRouterStateFromLocation) {
+    return;
+  }
+
+  console.log(
+    "replacing routerState",
+    routerState.value,
+    router.currentRoute.value
+  );
+
+  // we use .replace instead of .push because we want to keep only the last selection the user made in the browser history stack
+  // e.g. when the user navigates to a block details page and back, but not all filter changes
+  router.replace({
+    path: router.currentRoute.value.path,
+    query: routerState.value as any,
+  });
+
+  return routerState;
+});
+
+function resetComponentState(event: Event) {
+  setComponentStateFromQuery(defaultState);
+  event.preventDefault(); // i don't know why this is necessary, but otherwise vue will reload the current page
+}
 
 let hoverBlock = ref<MaturityModelBlock | null>(null);
 
@@ -253,30 +303,6 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
     hoverBlock.value = event.block;
   }
 }
-
-// we store all copmonent state via router in query params so browser back buttons work as expected
-let routerState = computed(() => ({
-  selectedTool: selectedTool.value,
-  selectedScopes: selectedScopes.value.join(","),
-  selectedStages: selectedStages.value.join(","),
-  showControls: showControls.value.toString(),
-  hideUnselected: hideUnselected.value.toString(),
-  showDescription: showDescription.value.toString(),
-}));
-
-watch(routerState, () => {
-  // we have to guard against updating the router state before we initially set it from the
-  // window location
-  if (!didInitializeRouterStateFromLocation) {
-    return;
-  }
-
-  // we use .replace instead of .push because we want to keep only the last selection the user made in the browser history stack
-  // e.g. when the user navigates to a block details page and back, but not all filter changes
-  router.replace({ query: routerState.value as any });
-
-  return routerState;
-});
 
 let displayOptions = computed<MaturityModelDisplayOptions>(() => {
   const highlightedBlockDependencies = [];
