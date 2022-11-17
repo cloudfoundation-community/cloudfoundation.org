@@ -29,14 +29,15 @@
                 id="selectScopes"
                 class="custom-select custom-select-sm"
                 v-model="selectedScopes"
+                :size="scopeSelectOptions.length"
                 multiple
               >
                 <option
                   v-for="option in scopeSelectOptions"
-                  :value="option"
-                  v-bind:key="option"
+                  :value="option.key"
+                  v-bind:key="option.key"
                 >
-                  {{ option }}
+                  {{ option.value }}
                 </option>
               </select>
             </div>
@@ -46,14 +47,16 @@
                 id="selectStages"
                 class="custom-select custom-select-sm"
                 v-model="selectedStages"
+                :size="stageSelectOptions.length"
                 multiple
               >
                 <option
                   v-for="option in stageSelectOptions"
-                  :value="option"
-                  v-bind:key="option"
+                  :value="option.key"
+                  v-bind:key="option.key"
+                  :class="'maturity-model-journey-stage-' + option.key"
                 >
-                  {{ option }}
+                  {{ option.key }} {{option.description}}
                 </option>
               </select>
             </div>
@@ -90,7 +93,7 @@
               </div>
               <div class="custom-control custom-switch">
                 <input
-                  id="hideUnselected"
+                  id="hideUnlected"
                   type="checkbox"
                   class="custom-control-input"
                   v-model="hideUnselected"
@@ -159,7 +162,7 @@ import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue"
 import NavbarItems from "@vuepress/theme-default/lib/client/components/NavbarItems.vue";
 
 import { computed, onMounted, ref } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useCloudFoundationMaturityModel } from "../plugins/cfmm/client";
 import { MaturityModelBlock, Pillar } from "../plugins/cfmm/shared";
 import MaturityModelPillarBlocks from "../components/maturity-model/MaturityModelPillarBlocks.vue";
@@ -182,17 +185,22 @@ const pillars: Pillar[] = [
 const toolSelectOptions = computed(() => cfmm.value.tools);
 let selectedTool = ref("");
 
-const scopeSelectOptions = ["🏢 Core", "☁️ Platform", "🛬 Landing Zone"];
-let selectedScopes = ref([...scopeSelectOptions]);
-
-const stageSelectOptions = [
-  "⭐️",
-  "⭐️⭐️",
-  "⭐️⭐️⭐️",
-  "⭐️⭐️⭐️⭐️",
-  "⭐️⭐️⭐️⭐️⭐️",
+const scopeSelectOptions = [
+  { key: "core", value: "🏢 Core" },
+  { key: "platform", value: "☁️ Platform" },
+  { key: "lz", value: "🛬 Landing Zone" },
 ];
-let selectedStages = ref([...stageSelectOptions]);
+let selectedScopes = ref(scopeSelectOptions.map((x) => x.key));
+
+// todo: this definition should live somewhere else, not in this component
+const stageSelectOptions = [
+  { key: "1", value: "⭐️", description: "Essential" },
+  { key: "2", value: "⭐️⭐️", description: "Recommended" },
+  { key: "3", value: "⭐️⭐️⭐️", description: "Best Practice" },
+  { key: "4", value: "⭐️⭐️⭐️⭐️", description: "Advanced" },
+  { key: "5", value: "⭐️⭐️⭐️⭐️⭐️", description: "Industry-Leading" },
+];
+let selectedStages = ref(stageSelectOptions.map((x) => x.key));
 
 let showControls = ref(false);
 let showDescription = ref(false);
@@ -222,6 +230,9 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
   }
 }
 
+const route = useRoute();
+const router = useRouter();
+
 let displayOptions = computed<MaturityModelDisplayOptions>(() => {
   const highlightedBlockDependencies = [];
 
@@ -240,8 +251,12 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
 
   const opts: MaturityModelDisplayOptions = {
     selectedTool: selectedTool.value,
-    selectedScopes: selectedScopes.value,
-    selectedStages: selectedStages.value,
+    selectedScopes: selectedScopes.value.map(
+      (x) => scopeSelectOptions.find((opt) => opt.key === x).value
+    ),
+    selectedStages: selectedStages.value.map(
+      (x) => stageSelectOptions.find((opt) => opt.key === x).value
+    ),
     showControls: showControls.value,
     hideUnselected: hideUnselected.value,
     showDescription: showDescription.value,
@@ -249,6 +264,14 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
     highlightedBlock: hoverBlock.value,
     highlightedBlockDependencies,
   };
+
+  const routerState = {
+    selectedTool: selectedTool.value,
+    selectedScopes: selectedScopes.value.join(","),
+    selectedStages: selectedStages.value.join(","),
+  };
+
+  router.push({ query: routerState as any });
 
   return opts;
 });
@@ -356,12 +379,10 @@ $CFMMXs: 580px; // 1 pillar
   }
 
   // explitily size the multi selects so they don't need scrolling
-  #selectScopes {
-    height: calc(1.2rem * 3 + 0.5rem + 4px);
-  }
-
-  #selectStages {
-    height: calc(1.2rem * 5 + 0.5rem + 4px);
+  select {
+    // this works in conjunction with explicitly set size="" attribute
+    // see https://stackoverflow.com/a/32317763/125407
+    overflow-y: auto;
   }
 
   #dependency-recommended-gradient {
