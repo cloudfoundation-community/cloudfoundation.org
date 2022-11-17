@@ -56,7 +56,7 @@
                   v-bind:key="option.key"
                   :class="'maturity-model-journey-stage-' + option.key"
                 >
-                  {{ option.key }} {{option.description}}
+                  {{ option.key }} {{ option.description }}
                 </option>
               </select>
             </div>
@@ -161,7 +161,7 @@
 import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import NavbarItems from "@vuepress/theme-default/lib/client/components/NavbarItems.vue";
 
-import { computed, onMounted, ref } from "vue";
+import { computed, onBeforeMount, watch, watchEffect, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useCloudFoundationMaturityModel } from "../plugins/cfmm/client";
 import { MaturityModelBlock, Pillar } from "../plugins/cfmm/shared";
@@ -206,16 +206,40 @@ let showControls = ref(false);
 let showDescription = ref(false);
 let hideUnselected = ref(false);
 
-// support pre-selecting a tool by query param string
-// todo: store all copmonent state via router(?) in query state params so back buttons work as expected
-onMounted(() => {
-  const selectedToolQueryParam = useRoute().query.selectedTool;
-  if (
-    typeof selectedToolQueryParam === "string" &&
-    toolSelectOptions.value.includes(selectedToolQueryParam)
-  ) {
-    selectedTool.value = selectedToolQueryParam;
-  }
+const router = useRouter();
+
+let didInitializeRouterStateFromLocation = false;
+onBeforeMount(() => {
+  // I thought I could just use useRoute().query but apparently that's not always up to date
+  // this is the simplest implementation that actually works without going into deep vue lifecycle details
+  let params = new URLSearchParams(window.location.search);
+  const query = Object.fromEntries(params.entries());
+
+  window.location.search;
+  selectedTool.value =
+    toolSelectOptions.value.find((x) => x === query.selectedTool) ||
+    selectedTool.value;
+
+  selectedScopes.value =
+    (typeof query.selectedScopes === "string" &&
+      query.selectedScopes
+        .split(",")
+        .map((x) => scopeSelectOptions.find((opt) => x === opt.key)?.key)) ||
+    selectedScopes.value;
+
+  selectedStages.value =
+    (typeof query.selectedStages === "string" &&
+      query.selectedStages
+        .split(",")
+        .map((x) => stageSelectOptions.find((opt) => x === opt.key)?.key)) ||
+    selectedStages.value;
+
+  // all of these are false by default, so its fine we parse them from the query params when they're unset
+  showControls.value = query.showControls === "true";
+  hideUnselected.value = query.hideUnselected === "true";
+  showDescription.value = query.showDescription === "true";
+
+  didInitializeRouterStateFromLocation = true;
 });
 
 let hoverBlock = ref<MaturityModelBlock | null>(null);
@@ -230,8 +254,29 @@ function onBlockHover(event: MaturityModelBlockHoverEvent) {
   }
 }
 
-const route = useRoute();
-const router = useRouter();
+// we store all copmonent state via router in query params so browser back buttons work as expected
+let routerState = computed(() => ({
+  selectedTool: selectedTool.value,
+  selectedScopes: selectedScopes.value.join(","),
+  selectedStages: selectedStages.value.join(","),
+  showControls: showControls.value.toString(),
+  hideUnselected: hideUnselected.value.toString(),
+  showDescription: showDescription.value.toString(),
+}));
+
+watch(routerState, () => {
+  // we have to guard against updating the router state before we initially set it from the
+  // window location
+  if (!didInitializeRouterStateFromLocation) {
+    return;
+  }
+
+  // we use .replace instead of .push because we want to keep only the last selection the user made in the browser history stack
+  // e.g. when the user navigates to a block details page and back, but not all filter changes
+  router.replace({ query: routerState.value as any });
+
+  return routerState;
+});
 
 let displayOptions = computed<MaturityModelDisplayOptions>(() => {
   const highlightedBlockDependencies = [];
@@ -249,29 +294,22 @@ let displayOptions = computed<MaturityModelDisplayOptions>(() => {
     }
   }
 
+  const rs = routerState.value;
   const opts: MaturityModelDisplayOptions = {
-    selectedTool: selectedTool.value,
-    selectedScopes: selectedScopes.value.map(
-      (x) => scopeSelectOptions.find((opt) => opt.key === x).value
-    ),
-    selectedStages: selectedStages.value.map(
-      (x) => stageSelectOptions.find((opt) => opt.key === x).value
-    ),
-    showControls: showControls.value,
-    hideUnselected: hideUnselected.value,
-    showDescription: showDescription.value,
+    selectedTool: rs.selectedTool,
+    selectedScopes: rs.selectedScopes
+      .split(",")
+      .map((x) => scopeSelectOptions.find((opt) => opt.key === x).value),
+    selectedStages: rs.selectedStages
+      .split(",")
+      .map((x) => stageSelectOptions.find((opt) => opt.key === x).value),
+    showControls: rs.showControls === "true",
+    hideUnselected: rs.hideUnselected === "true",
+    showDescription: rs.showDescription === "true",
 
     highlightedBlock: hoverBlock.value,
     highlightedBlockDependencies,
   };
-
-  const routerState = {
-    selectedTool: selectedTool.value,
-    selectedScopes: selectedScopes.value.join(","),
-    selectedStages: selectedStages.value.join(","),
-  };
-
-  router.push({ query: routerState as any });
 
   return opts;
 });
