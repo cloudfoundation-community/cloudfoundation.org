@@ -13,10 +13,18 @@ pageType: CFMMBlock
 properties:
   enables:
     - 1afea746-da65-4164-9029-5e0bfa9432b1
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - 3c65a957-cb62-40fe-978e-709e3450f7fe
+    - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
+    - b0a04ae8-c9b3-4060-abfd-e760723995d8
+    - 74295ae4-dcd5-449b-8825-f12c5267e89b
+    - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - 01a9cbca-3dd4-4378-b1f5-1ae64b76cc19

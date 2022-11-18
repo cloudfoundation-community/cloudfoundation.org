@@ -39,6 +39,7 @@ order: 0
 | Name       | Category |
 | ---------- | -------- |
 | collie-cli | cli      |
+| UniPipe    | cli      |
 
 ## CFMM Tools - DevOps
 

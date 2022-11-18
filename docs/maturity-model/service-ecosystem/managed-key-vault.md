@@ -10,10 +10,10 @@ description: >-
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  enables:
-    - 18256d4f-e096-4281-809a-f77c5dd20ef0
+  enables: []
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
     - d95e25dc-2643-4c17-9f78-76dc053d7d71

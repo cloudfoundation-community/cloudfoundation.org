@@ -9,9 +9,15 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "3c7081e5-c451-40b6-806d-a8d21b130612"
+        ],
         "journey-stage": "⭐️⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
+        ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Cloud SIEM"
@@ -26,8 +32,7 @@ export const index = [
       "title": "Explore All Building Blocks",
       "category": "Maturity Model",
       "order": 0,
-      "pageType": "Fullsize",
-      "sidebar": false
+      "layout": "MaturityModel"
     }
   },
   {
@@ -64,6 +69,7 @@ export const index = [
         "depends-on": [
           "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Billing to different legal entities"
@@ -86,12 +92,32 @@ export const index = [
         "depends-on": [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "c7b3902e-6708-4b0e-9e43-776f863baa3e"
         ],
         "name": "Private Cloud pay-per-use chargeback"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "0337257c-3de3-49c0-b339-eba3222eb9af",
+      "url": "https://www.notion.so/Virtual-Network-Service-0337257c3de349c0b339eba3222eb9af",
+      "title": "Virtual Network Service",
+      "description": "With UniPipe you can easily provide a Virtual Network Service to e.g. grant on-prem connectivity or to integrate all your company’s productive applications into one network. All you need for this is a Terraform Module that sets up the networking inside the target tenant as needed.",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "56e4f66c-47e3-4849-9315-347694db82a1"
+        ],
+        "link": "https://github.com/meshcloud/unipipe-service-broker/wiki/Getting-started-with-unipipe-terraform-runner-on-Azure",
+        "name": "Virtual Network Service"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -146,7 +172,10 @@ export const index = [
           "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
+        ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Resource Configuration Scanning"
@@ -183,13 +212,21 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "1afea746-da65-4164-9029-5e0bfa9432b1"
+          "1afea746-da65-4164-9029-5e0bfa9432b1",
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "3c65a957-cb62-40fe-978e-709e3450f7fe",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8",
+          "74295ae4-dcd5-449b-8825-f12c5267e89b",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "01a9cbca-3dd4-4378-b1f5-1ae64b76cc19"
@@ -214,8 +251,14 @@ export const index = [
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
-        "scope": "☁️ Platform",
+        "depends-on": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+        ],
+        "recommended": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+        ],
+        "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "431fe444-0b73-4592-b525-7e09a48a6457",
           "bac2d6a9-0bab-4d58-b89e-9b3315f86b79",
@@ -258,6 +301,7 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "3rd party PaaS Service Integration"
@@ -274,11 +318,10 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [
-          "18256d4f-e096-4281-809a-f77c5dd20ef0"
-        ],
+        "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "d95e25dc-2643-4c17-9f78-76dc053d7d71",
@@ -323,6 +366,10 @@ export const index = [
         "depends-on": [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
+        "recommended": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+          "cd162600-e742-4a80-b022-989da423ca43"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "8b5e9c3f-82b4-429c-ad60-49176671d537",
@@ -330,6 +377,25 @@ export const index = [
         ],
         "name": "Playground / Sandbox Environments"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "171e6824-30db-4f64-9d19-a4d87ba56ed9",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-with-collie-171e682430db4f649d19a4d87ba56ed9",
+      "title": "Cloud-native Landing Zone with collie",
+      "description": "Collie supports developing your own cloud foundations quickly from reusable bundles that offer out-of-the-box IaC implementations of cloud native landing zones.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "5c2013b6-4c56-4813-8be7-ad86757014af"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone with collie"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -365,6 +431,9 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
+        ],
+        "recommended": [
           "137ac22d-b96c-4d49-aa83-da5779e3d59c"
         ],
         "scope": "☁️ Platform",
@@ -390,6 +459,10 @@ export const index = [
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
+        "recommended": [
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "71143f29-2fe9-452b-8398-fc40f270a2b6"
+        ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "b441ec40-c21b-4c49-a57a-b4f5146789cd"
@@ -419,13 +492,16 @@ export const index = [
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "18256d4f-e096-4281-809a-f77c5dd20ef0"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "aade65c8-e80c-46e8-b993-23a50076f62d",
@@ -513,6 +589,7 @@ export const index = [
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "c688eecf-0335-4505-bdcb-bc6f6da28c63",
@@ -564,9 +641,7 @@ export const index = [
       "title": "Monolithic Landing Zone",
       "description": "meshStack enables you to create monolithic landing zones for all major public/private cloud platforms:\n- AWS\n- Azure\n- GCP\n- OpenShift\n- Kubernetes",
       "properties": {
-        "block": [
-          "57c00ed4-e699-4167-a0f5-6009bf31b600"
-        ],
+        "block": [],
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
@@ -593,6 +668,7 @@ export const index = [
         "depends-on": [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "59cdf884-5bd2-4b55-87f8-824a4a35623c"
@@ -635,11 +711,13 @@ export const index = [
           "2468d240-6cca-4680-b9c4-6f237defa511",
           "6e343acc-95bd-42aa-bb32-bdcce1c7d4ad",
           "a31e4077-4e84-4129-a46c-1070a8591181",
-          "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9"
+          "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8",
@@ -650,7 +728,8 @@ export const index = [
           "2e5dfd35-751d-4562-b723-8e65f4e79408",
           "785eec49-493b-46a6-8540-2237135f0fba",
           "b6a3508f-701f-4ce4-99b0-778f25c6c8a4",
-          "9b244e63-eb03-454a-a33b-ebb9d90e8137"
+          "9b244e63-eb03-454a-a33b-ebb9d90e8137",
+          "0337257c-3de3-49c0-b339-eba3222eb9af"
         ],
         "name": "Virtual Network Service"
       }
@@ -666,10 +745,17 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+        ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "50e4e2e5-9fb6-49f7-8b57-6988b865b412",
@@ -759,11 +845,15 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "707c41b8-6da0-4e78-b982-fa4b1365521b"
+          "707c41b8-6da0-4e78-b982-fa4b1365521b",
+          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "acf452d3-8425-41e2-ba8b-ee212a6fb189"
@@ -797,7 +887,7 @@ export const index = [
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
       "url": "https://www.notion.so/Identity-and-Access-Management-Alignment-37862f9f3d8a4e258e90e487dc455b0c",
       "title": "Identity and Access Management Alignment",
-      "description": "Establish and align processes for governing identities and access permissions across cloud platforms with the responsible IAM stakeholders of the organization.",
+      "description": "Establish and align processes for governing identities and access permissions across cloud platforms with the responsible IAM stakeholders of the organization. This alignment establishes guardrails for implementing IAM processes in the foundation’s offerings.",
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
@@ -810,6 +900,7 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Identity and Access Management Alignment"
@@ -827,11 +918,17 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
+          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
+          "c9728af5-49fe-4948-8701-2d6485bfbe93"
         ],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
+        "recommended": [
+          "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
+          "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
         "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Foundation Service Platform"
@@ -888,7 +985,12 @@ export const index = [
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "f96feedc-d969-48f8-adb4-93031cc0a24d",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+        ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "4d280fde-532f-4eb2-9c9c-da2c9ece3c24"
@@ -911,8 +1013,13 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
         "depends-on": [
-          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
+          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
+          "64284b14-faab-461c-80bb-5e8efbae4dcc",
+          "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Certified ISMS Compliance"
@@ -1020,6 +1127,7 @@ export const index = [
         "redaction-state": "partner is working on it",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Kubernetes Cluster as a Service"
@@ -1081,6 +1189,7 @@ export const index = [
           "b4678790-ab53-4219-83e7-fbde18383d05",
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a"
@@ -1217,6 +1326,25 @@ export const index = [
   },
   {
     "frontmatter": {
+      "id": "4c50144f-1637-4136-8f78-3dfaa005d031",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-4c50144f163741368f783dfaa005d031",
+      "title": "Cloud-native Landing Zone",
+      "description": "Implements sufficient capabilities to implement a minimal cloud-native landing zone.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "53cb45d7-bcd9-4eb9-bfd5-dad6eca0b88c"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
       "id": "4d280fde-532f-4eb2-9c9c-da2c9ece3c24",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-4d280fde532f4eb29c9cda2c9ece3c24",
       "title": "Individual Project Cost Optimization via Reservations",
@@ -1258,6 +1386,7 @@ export const index = [
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Managed DNS Services"
@@ -1351,11 +1480,13 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "707c41b8-6da0-4e78-b982-fa4b1365521b"
+          "707c41b8-6da0-4e78-b982-fa4b1365521b",
+          "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [
+        "depends-on": [],
+        "recommended": [
           "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
         ],
         "scope": "☁️ Platform",
@@ -1395,6 +1526,17 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "56e4f66c-47e3-4849-9315-347694db82a1",
+      "url": "https://www.notion.so/UniPipe-56e4f66c47e348499315347694db82a1",
+      "title": "UniPipe",
+      "properties": {
+        "category": "cli"
+      },
+      "pageType": "CFMMTool"
+    }
+  },
+  {
     "file": "maturity-model/cost-management/readme.md",
     "frontmatter": {
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
@@ -1409,52 +1551,54 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/tenant-management/monolithic-landing-zone.md",
-    "frontmatter": {
-      "id": "57c00ed4-e699-4167-a0f5-6009bf31b600",
-      "url": "https://www.notion.so/Monolithic-Landing-Zone-57c00ed4e6994167a0f56009bf31b600",
-      "title": "Monolithic Landing Zone",
-      "description": "Landing Zones includes a common set of core resources like virtual networks. These resources are managed with the same life-cycle as the underlying cloud tenant.",
-      "category": "🗂 Tenant Management",
-      "pageType": "CFMMBlock",
-      "properties": {
-        "enables": [],
-        "redaction-state": "mvp1",
-        "journey-stage": "⭐️⭐️",
-        "depends-on": [
-          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d"
-        ],
-        "scope": "☁️ Platform",
-        "tool-implementations": [
-          "254476a2-de92-4724-a06e-65931ebb5aec"
-        ],
-        "name": "Monolithic Landing Zone"
-      }
-    }
-  },
-  {
-    "file": "maturity-model/security-and-compliance/shared-responsibility-model.md",
+    "file": "maturity-model/security-and-compliance/shared-responsibility-model-alignment.md",
     "frontmatter": {
       "id": "57c521ba-73a4-4187-a507-bbd5eaa80212",
-      "url": "https://www.notion.so/Shared-Responsibility-Model-57c521ba73a44187a507bbd5eaa80212",
-      "title": "Shared Responsibility Model",
-      "description": "A shared responsibility model describes the services provided by the cloud foundation and how it interacts with the cloud provider's shared responsibility model.",
+      "url": "https://www.notion.so/Shared-Responsibility-Model-Alignment-57c521ba73a44187a507bbd5eaa80212",
+      "title": "Shared Responsibility Model Alignment",
+      "description": "Establish and align a shared responsibility model clarifies responsibilities between the cloud internal cloud customers and the cloud foundation team as well as cloud providers. This enables balancing agility and control across the foundation’s offerings.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
           "3c7081e5-c451-40b6-806d-a8d21b130612",
-          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "119bfca5-dda6-408c-b35d-c59d0f209fcf",
+          "b6b24f70-3fba-4f67-a375-2b0d26a16324",
+          "3c65a957-cb62-40fe-978e-709e3450f7fe",
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "c596a5f1-dc63-46b6-8d1f-25dcf12ff484"
         ],
-        "name": "Shared Responsibility Model"
+        "name": "Shared Responsibility Model Alignment"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "597617fd-06c3-4cab-bf0e-c19b84439a92",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-597617fd06c34cabbf0ec19b84439a92",
+      "title": "Cloud-native Landing Zone",
+      "description": "Implements sufficient capabilities to implement a minimal cloud-native landing zone.",
+      "properties": {
+        "block": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+        ],
+        "tool": [
+          "1a70d150-d6eb-4b2f-8d57-ddcf78631474"
+        ],
+        "link": null,
+        "name": "Cloud-native Landing Zone"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -1493,6 +1637,40 @@ export const index = [
         "name": "Cloud Interconnect"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/tenant-management/container-platform-landing-zone.md",
+    "frontmatter": {
+      "id": "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+      "url": "https://www.notion.so/Container-Platform-Landing-Zone-59fc4d46739d4d498bd7d7b4882709ba",
+      "title": "Container Platform Landing Zone",
+      "description": "A managed container platform offers a developer-centric experience for building and running container-based applications on the cloud.",
+      "category": "🗂 Tenant Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "recommended": [
+          "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
+          "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
+          "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3",
+          "71143f29-2fe9-452b-8398-fc40f270a2b6",
+          "1a1cdeb0-de7e-4ea9-a963-e409b9abed54"
+        ],
+        "scope": "☁️ Platform",
+        "tool-implementations": [
+          "bfc77006-225b-4425-afd0-ee8f897367ba"
+        ],
+        "name": "Container Platform Landing Zone"
+      }
     }
   },
   {
@@ -1586,6 +1764,7 @@ export const index = [
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Managed SSL Certificates"
@@ -1664,10 +1843,15 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "3c7081e5-c451-40b6-806d-a8d21b130612"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+        ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "9b740724-686e-45f2-8924-9000279b806b"
@@ -1768,6 +1952,7 @@ export const index = [
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Managed bastion hosts"
@@ -1789,6 +1974,7 @@ export const index = [
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Tenant to Tenant Transit Networks"
@@ -1814,6 +2000,7 @@ export const index = [
           "52d1e517-9d07-4acc-8c59-17526fa3af9d",
           "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "73cfa3f4-16ed-40cf-9c75-0611aad78d0b",
@@ -1856,6 +2043,7 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
@@ -1916,7 +2104,14 @@ export const index = [
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
+        ],
+        "recommended": [
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
+        ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "SOC Integration"
@@ -1936,6 +2131,7 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Managed Data Lake access"
@@ -1972,13 +2168,16 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+        ],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "5154be86-47d3-4453-888d-102be5b07786"
@@ -2000,6 +2199,7 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "In-house PaaS Service Integration"
@@ -2142,10 +2342,14 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "3c7081e5-c451-40b6-806d-a8d21b130612"
+        ],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
-          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
+          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b"
+        ],
+        "recommended": [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
         ],
         "scope": "🏢 Core",
@@ -2317,7 +2521,7 @@ export const index = [
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
       "url": "https://www.notion.so/Modular-Landing-Zones-913a8ad17ad44ade9e88801a7afa4b40",
       "title": "Modular Landing Zones",
-      "description": "Landing Zones are extendable with with services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
+      "description": "Landing Zones are extendable with with optional services. These services have their own lifecycle and can be reconfigured during the lifespan of a tenant. The modular design allows combining services like LEGO® blocks. ",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -2328,9 +2532,11 @@ export const index = [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "3892bc95-4464-417c-aab2-247da7a3015a"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
-          "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14"
+          "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14",
+          "b8f373f0-b200-4d2b-badb-d3bc8ad145b5"
         ],
         "name": "Modular Landing Zones"
       }
@@ -2471,6 +2677,7 @@ export const index = [
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "70cb4156-d6fa-41ae-a295-8bf1fdf50f6b",
@@ -2526,7 +2733,10 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "b875ac41-2b38-4ce4-ab8b-76ddd876d789"
+        ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "e2123339-0641-4d44-b774-32ce23fd634d",
@@ -2553,6 +2763,7 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "11f50039-a1d6-49de-9fbd-247a1955b474",
@@ -2599,12 +2810,19 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
+          "74295ae4-dcd5-449b-8825-f12c5267e89b",
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "7beb3669-9658-4b4d-a87a-a136d9556f32",
@@ -2631,9 +2849,15 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
+        ],
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "af14b5df-77b4-4def-b761-8fadabd241ca"
+        ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Centralized workload and infrastructure logs"
@@ -2726,6 +2950,9 @@ export const index = [
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
+        "recommended": [
+          "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Federated Identity and Authentication"
@@ -2783,7 +3010,10 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+        ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Global Cost Optimization via Reservations"
@@ -2801,11 +3031,16 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+          "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d",
+          "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
+          "64284b14-faab-461c-80bb-5e8efbae4dcc"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "3481641d-0686-420d-8487-794acd4f5e04",
@@ -2813,6 +3048,25 @@ export const index = [
         ],
         "name": "Cloud Tenant Database"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "b8f373f0-b200-4d2b-badb-d3bc8ad145b5",
+      "url": "https://www.notion.so/Modular-Landing-Zone-b8f373f0b2004d2bbadbd3bc8ad145b5",
+      "title": "Modular Landing Zone",
+      "description": "With UniPipe you can develop any Service Broker you need for your modular Landing Zone in a GitOps approach. End-users can easily book those services via marketplaces like the one in meshStack.\nWith the UniPipe Terraform Runner all you need to implement for such a service is a Terraform Module. All the rest around how to provide it as a service is taken over by UniPipe Terraform Runner.",
+      "properties": {
+        "block": [
+          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
+        ],
+        "tool": [
+          "56e4f66c-47e3-4849-9315-347694db82a1"
+        ],
+        "link": "https://github.com/meshcloud/unipipe-service-broker",
+        "name": "Modular Landing Zone"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2913,6 +3167,25 @@ export const index = [
         ],
         "link": "https://github.com/terraform-google-modules/terraform-example-foundation/blob/master/1-org/envs/shared/log_sinks.tf",
         "name": "Centralized Audit Logs"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "bfc77006-225b-4425-afd0-ee8f897367ba",
+      "url": "https://www.notion.so/Container-Platform-Landing-Zone-bfc77006225b4425afd0ee8f897367ba",
+      "title": "Container Platform Landing Zone",
+      "description": "meshStack has built-in support for building and operating OpenShift, AKS and other Kubernetes based Landing Zones including IAM, quota management and consumption metering.",
+      "properties": {
+        "block": [
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+        ],
+        "tool": [
+          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+        ],
+        "link": null,
+        "name": "Container Platform Landing Zone"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -3077,8 +3350,9 @@ export const index = [
         ],
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+          "3892bc95-4464-417c-aab2-247da7a3015a"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "0db736c5-6801-4619-92a6-97c3842c907c"
@@ -3161,6 +3435,7 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "635ebffa-17e9-4231-9d38-b59625be9b03",
@@ -3205,6 +3480,7 @@ export const index = [
         "depends-on": [
           "28740e92-5559-4931-ab04-17cfb026edd5"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "7f68e769-70d6-4c41-bdc2-de273d61bd23",
@@ -3227,6 +3503,7 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "API Gateway to on-premises APIs"
@@ -3243,10 +3520,16 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+          "dc16dccf-7530-4179-a8e2-b82cc54b990f"
+        ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
@@ -3267,13 +3550,18 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "af14b5df-77b4-4def-b761-8fadabd241ca"
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
-          "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+          "ac8a21c3-f692-4d23-a9bb-796fd311c39f",
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
           "7beb3669-9658-4b4d-a87a-a136d9556f32",
@@ -3346,6 +3634,7 @@ export const index = [
         "depends-on": [
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "e129bdf8-7c01-47a7-a524-f764149c2a97"
@@ -3370,11 +3659,46 @@ export const index = [
           "c9728af5-49fe-4948-8701-2d6485bfbe93",
           "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "c88e6212-2a64-431f-a404-b39742574404"
         ],
         "name": "Consumption based pay-per-use for internal Services"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/tenant-management/lift-and-shift-landing-zone.md",
+    "frontmatter": {
+      "id": "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+      "url": "https://www.notion.so/Lift-Shift-Landing-Zone-d5c797b463004c58aa9876bbfc49fcc8",
+      "title": "Lift & Shift Landing Zone",
+      "description": "A dedicated landing zone optimized for lift & shift workloads enables quick onboarding and efficient operations.",
+      "category": "🗂 Tenant Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd",
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "recommended": [
+          "74295ae4-dcd5-449b-8825-f12c5267e89b",
+          "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
+          "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
+          "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3",
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8"
+        ],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Lift & Shift Landing Zone"
       }
     }
   },
@@ -3448,6 +3772,7 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Managed Cloud Provider Support Contracts"
@@ -3486,6 +3811,10 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
+        "recommended": [
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+        ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Shared VM Image Repository"
@@ -3502,11 +3831,18 @@ export const index = [
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+        ],
         "redaction-state": "review-v1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+        ],
+        "recommended": [
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
         ],
         "scope": "🏢 Core",
         "tool-implementations": [
@@ -3528,13 +3864,19 @@ export const index = [
       "properties": {
         "enables": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
-          "57c00ed4-e699-4167-a0f5-6009bf31b600",
-          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
+          "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "119bfca5-dda6-408c-b35d-c59d0f209fcf",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "ac8a21c3-f692-4d23-a9bb-796fd311c39f"
+        ],
+        "recommended": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
         ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
@@ -3558,6 +3900,47 @@ export const index = [
         "category": "DevOps"
       },
       "pageType": "CFMMTool"
+    }
+  },
+  {
+    "file": "maturity-model/tenant-management/cloud-native-landing-zone.md",
+    "frontmatter": {
+      "id": "dff7d733-d987-4145-aa1a-e340b5bcff81",
+      "url": "https://www.notion.so/Cloud-native-Landing-Zone-dff7d733d9874145aa1ae340b5bcff81",
+      "title": "Cloud-native Landing Zone",
+      "description": "A dedicated landing zone optimized for cloud-native workloads enables quick onboarding and efficient operations.",
+      "category": "🗂 Tenant Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "d1904912-b420-4a10-a62c-aa578fb847ff"
+        ],
+        "recommended": [
+          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
+          "f90c7375-88b9-42dc-8e98-a65c006b927a",
+          "137ac22d-b96c-4d49-aa83-da5779e3d59c",
+          "71143f29-2fe9-452b-8398-fc40f270a2b6",
+          "2468d240-6cca-4680-b9c4-6f237defa511",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3",
+          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273",
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8"
+        ],
+        "scope": "☁️ Platform",
+        "tool-implementations": [
+          "4c50144f-1637-4136-8f78-3dfaa005d031",
+          "171e6824-30db-4f64-9d19-a4d87ba56ed9",
+          "597617fd-06c3-4cab-bf0e-c19b84439a92"
+        ],
+        "name": "Cloud-native Landing Zone"
+      }
     }
   },
   {
@@ -3591,13 +3974,16 @@ export const index = [
       "properties": {
         "enables": [
           "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
-          "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1"
+          "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "f96feedc-d969-48f8-adb4-93031cc0a24d"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "cd162600-e742-4a80-b022-989da423ca43"
         ],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "13bd4bac-36f7-466e-a2b8-7f5c9f77c480"
@@ -3703,14 +4089,17 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "dc16dccf-7530-4179-a8e2-b82cc54b990f"
+          "dc16dccf-7530-4179-a8e2-b82cc54b990f",
+          "3c7081e5-c451-40b6-806d-a8d21b130612"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "707c41b8-6da0-4e78-b982-fa4b1365521b",
-          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
         ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
@@ -3729,12 +4118,14 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [
-          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
-        ],
+        "enables": [],
         "redaction-state": "Draft",
         "journey-stage": "⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "b875ac41-2b38-4ce4-ab8b-76ddd876d789",
+          "52d1e517-9d07-4acc-8c59-17526fa3af9d"
+        ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "e4b2c4ff-b42c-4a77-bac7-5f1a2ca24c29"
@@ -3823,12 +4214,12 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "d2cb8a5e-3e28-448b-8944-14ff38fad792",
-          "c9728af5-49fe-4948-8701-2d6485bfbe93"
+          "d2cb8a5e-3e28-448b-8944-14ff38fad792"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "c3af4eea-6d9a-4c64-a117-ec018524979a"
@@ -3909,6 +4300,7 @@ export const index = [
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
+        "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Managed Internet Egress"
@@ -3925,9 +4317,14 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "3c65a957-cb62-40fe-978e-709e3450f7fe"
+        ],
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
+        ],
+        "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [
           "f1b54bf1-5f65-4c7d-85e7-d0085f8c2b2b"
@@ -3969,6 +4366,7 @@ export const index = [
         "redaction-state": "Draft",
         "journey-stage": "⭐️",
         "depends-on": [],
+        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Individual Service Provisioning"

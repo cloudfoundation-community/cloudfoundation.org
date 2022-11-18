@@ -8,10 +8,14 @@ description: >-
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+    - dc16dccf-7530-4179-a8e2-b82cc54b990f
+  recommended: []
   scope: 🏢 Core
   tool-implementations:
     - cce0a290-fdb4-412d-bfc7-da0ae83a53a6

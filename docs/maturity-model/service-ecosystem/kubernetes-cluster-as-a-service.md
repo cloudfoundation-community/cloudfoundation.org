@@ -13,6 +13,7 @@ properties:
   redaction-state: partner is working on it
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Kubernetes Cluster as a Service

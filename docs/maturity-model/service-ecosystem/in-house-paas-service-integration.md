@@ -14,6 +14,7 @@ properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: In-house PaaS Service Integration

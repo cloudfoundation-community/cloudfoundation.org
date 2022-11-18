@@ -12,7 +12,9 @@ properties:
   enables:
     - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273
   journey-stage: ⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Resource Configuration Scanning

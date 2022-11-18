@@ -17,6 +17,7 @@ properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Managed Data Lake access

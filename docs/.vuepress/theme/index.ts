@@ -29,6 +29,7 @@ const localTheme: ThemeObject = {
   },
   layouts: {
     Layout: path.resolve(__dirname, "layouts/Layout.vue"),
+    MaturityModel: path.resolve(__dirname, "layouts/MaturityModel.vue"),
   },
 };
 

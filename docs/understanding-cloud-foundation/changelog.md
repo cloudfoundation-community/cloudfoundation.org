@@ -8,9 +8,31 @@ order: 40
 
 ## 2022-11
 
+- The Cloud Foundation Maturity model now offers more interactive controls to explore the model. Here’s what we added
+
+    - Filters for filtering blocks by scopes and journey stage
+
+    - Interactive highlighting of block relations with color-coded relationships
+
+    - Expert tools to allow manual block filtering as well as unfolding all block descriptions
+
+    - A legend explains important CFMM concepts
+
+- Added a new group of building blocks for use-case-specific Landing Zones to the Tenant Management Pillar
+
+    - [Cloud-native Landing Zone](../maturity-model/tenant-management/cloud-native-landing-zone.md) offers cloud-native tenants for sophisticated internal customers building directly on the cloud
+
+    - [Lift & Shift Landing Zone](../maturity-model/tenant-management/lift-and-shift-landing-zone.md) provides an optimized cloud environment for re-hosting or re-platforming VM based workloads.
+
+    - [Container Platform Landing Zone](../maturity-model/tenant-management/container-platform-landing-zone.md) offers a developer-centric experience for building and running container-based applications on the cloud.
+
+- Removed the “Monolithic Landing Zone” building block. We documented this as an anti-pattern but feel it makes more sense to include in the motivation for [Modular Landing Zones](../maturity-model/tenant-management/modular-landing-zones.md).
+
 - Several key building blocks were refactored to describe the capability they represent instead of an implementation artifact or concept. This refactoring improves the consistency of the model and makes assessing implementation maturity of each block more consistent as well.
 
     - "Identity and Access Management Concept” was renamed to [Identity and Access Management Alignment](../maturity-model/iam/identity-and-access-management-alignment.md). It was also re-focused on establishing aligned processes for governing identities and access permissions across cloud platforms.
+
+    - "Shared Responsibility Model” was renamed to [Shared Responsibility Model Alignment](../maturity-model/security-and-compliance/shared-responsibility-model-alignment.md) and considerably revised to describe useful strategies for aligning responsibilities between different stakeholders.
 
     - “Authorization Concept” was renamed to  [Resource Authorization Management](../maturity-model/iam/resource-authorization-management.md). We now also see this capability on the Landing Zone scope instead of the platform scope as landing zone’s built for different use cases can require different approaches to managing resource authorization.
 
@@ -23,6 +45,8 @@ order: 40
 - We added [Resource Configuration Policies](../maturity-model/security-and-compliance/resource-configuration-policies.md) as a journey stage 2 capability. Albeit often using the same implementation techniques as [Service and Location Restrictions](../maturity-model/security-and-compliance/service-and-location-restrictions.md), we see this as a differentiated capability leveraged by cloud foundation teams building bespoke landing zones for self-service application teams.
 
 - Provided a first version of the [Resource Configuration Scanning](../maturity-model/security-and-compliance/resource-configuration-scanning.md) block, which was previously named “Automated Security Scanning”
+
+- We recently change the scope of the [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) capability from “Platform” to “Landing Zone”. Consequentially the [Tenant Deprovisioning / Decommissioning](../maturity-model/tenant-management/tenant-deprovisioning-decommissioning.md) block was re-scoped to Landing Zone as well
 
 ## 2022-10
 

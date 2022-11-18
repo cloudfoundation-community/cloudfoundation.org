@@ -15,6 +15,7 @@ properties:
   depends-on:
     - b4678790-ab53-4219-83e7-fbde18383d05
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
+  recommended: []
   scope: ☁️ Platform
   tool-implementations:
     - 17a9ca39-5a77-4c5e-9b0e-87b01dc5e57a

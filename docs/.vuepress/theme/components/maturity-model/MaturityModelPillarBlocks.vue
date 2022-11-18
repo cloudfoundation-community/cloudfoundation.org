@@ -4,7 +4,8 @@
       v-for="item in blocks"
       :key="item.link"
       :block-data="item"
-      :selected-tool="selectedTool"
+      :displayOptions="displayOptions"
+      @blockHover="onBlockHover"
     />
     <div class="spacer"></div>
   </div>
@@ -18,13 +19,16 @@ import {
 } from "../../plugins/cfmm/client";
 
 import MaturityModelBlock from "./MaturityModelBlock.vue";
+import { MaturityModelBlockHoverEvent } from "./MaturityModelBlockHoverEvent";
+import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   pillar: Pillar;
-  selectedTool: string;
+  displayOptions?: MaturityModelDisplayOptions;
 }
 
 const props = defineProps<Props>();
+
 const cfmm = useCloudFoundationMaturityModel();
 
 const blocks = computed(() => {
@@ -32,8 +36,24 @@ const blocks = computed(() => {
   if (!model) {
     throw new Error("Could not find pillar model for pillar: " + props.pillar);
   }
-  return model.value.blocks;
+
+  const pillarBlocks = model.value.blocks;
+  const opts = props.displayOptions;
+
+  // there's only 3/5 scopes/stages so this dumb O(n) search should be ok
+  return pillarBlocks.filter(
+    (x) =>
+      (!opts?.selectedScopes || opts.selectedScopes.includes(x.scope)) &&
+      (!opts?.selectedStages || opts.selectedStages.includes(x.journeyStage))
+  );
 });
+
+const emit = defineEmits(["blockHover"]);
+
+function onBlockHover(event: MaturityModelBlockHoverEvent) {
+  // just forward the event
+  emit("blockHover", event);
+}
 </script>
 
 <style lang="scss" scoped>

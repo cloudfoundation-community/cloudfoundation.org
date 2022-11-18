@@ -1,4 +1,7 @@
-h1.cfmm-page-heading, h2.cfmm-page-heading {
+@use "sass:list";
+
+h1.cfmm-page-heading,
+h2.cfmm-page-heading {
   font-size: 2.2rem;
   font-weight: 800;
   border: none;
@@ -6,4 +9,36 @@ h1.cfmm-page-heading, h2.cfmm-page-heading {
   margin: 0 0 0.5rem 0;
   padding: 0;
   color: white;
+}
+
+h1.cfmm-pillar-heading {
+  margin: 0 0 0.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+h2.cfmm-pillar-heading {
+  font-weight: 800;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+$color-dependency-base: hsl(335, 100%, 60%);
+$color-recommended-base: hsl(207, 100%, 60%);
+$color-enabled-base: hsl(99, 67%, 60%);
+
+$stage-colors: #df2a2a, #f5a017, #fae102, #71b535, #38beef;
+@for $i from 1 through 5 {
+  .maturity-model-journey-stage-#{$i} {
+    background-color: lighten(list.nth($stage-colors, $i), 20%);
+    color: white;
+    padding: 0.25rem;
+    margin-right: auto;
+
+    &:checked {
+      background-color: desaturate(list.nth($stage-colors, $i), 0%);
+    }
+  }
 }

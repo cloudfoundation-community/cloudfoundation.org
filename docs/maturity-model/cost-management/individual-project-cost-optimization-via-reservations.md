@@ -15,7 +15,11 @@ pageType: CFMMBlock
 properties:
   enables: []
   journey-stage: ⭐️⭐️⭐️⭐️
-  depends-on: []
+  depends-on:
+    - 57c521ba-73a4-4187-a507-bbd5eaa80212
+    - f96feedc-d969-48f8-adb4-93031cc0a24d
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
+  recommended: []
   scope: ☁️ Platform
   tool-implementations:
     - 4d280fde-532f-4eb2-9c9c-da2c9ece3c24

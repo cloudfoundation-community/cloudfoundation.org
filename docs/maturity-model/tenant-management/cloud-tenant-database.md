@@ -10,10 +10,14 @@ category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
   enables:
-    - 52d1e517-9d07-4acc-8c59-17526fa3af9d
+    - e7d63253-2e39-4bbf-9dd6-da11bb3edd0d
+    - ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9
+    - 64284b14-faab-461c-80bb-5e8efbae4dcc
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
+  recommended:
+    - 52d1e517-9d07-4acc-8c59-17526fa3af9d
   scope: ☁️ Platform
   tool-implementations:
     - 3481641d-0686-420d-8487-794acd4f5e04

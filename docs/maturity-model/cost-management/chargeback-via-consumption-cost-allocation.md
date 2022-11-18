@@ -12,10 +12,13 @@ properties:
   enables:
     - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
     - d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1
+    - dff7d733-d987-4145-aa1a-e340b5bcff81
+    - f96feedc-d969-48f8-adb4-93031cc0a24d
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - cd162600-e742-4a80-b022-989da423ca43
+  recommended: []
   scope: ☁️ Platform
   tool-implementations:
     - 13bd4bac-36f7-466e-a2b8-7f5c9f77c480

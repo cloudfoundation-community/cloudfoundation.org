@@ -16,6 +16,7 @@ properties:
   depends-on:
     - 52d1e517-9d07-4acc-8c59-17526fa3af9d
     - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
+  recommended: []
   scope: 🏢 Core
   tool-implementations:
     - 73cfa3f4-16ed-40cf-9c75-0611aad78d0b

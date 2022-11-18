@@ -10,9 +10,12 @@ pageType: CFMMBlock
 properties:
   enables:
     - 707c41b8-6da0-4e78-b982-fa4b1365521b
+    - 09e744c5-e12a-49e8-8b6f-b7e3c44ba63b
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
   depends-on: []
+  recommended:
+    - 52d1e517-9d07-4acc-8c59-17526fa3af9d
   scope: ☁️ Platform
   tool-implementations:
     - acf452d3-8425-41e2-ba8b-ee212a6fb189

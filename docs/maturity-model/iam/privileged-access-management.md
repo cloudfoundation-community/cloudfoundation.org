@@ -11,12 +11,14 @@ description: >-
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - 18256d4f-e096-4281-809a-f77c5dd20ef0
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
+  recommended: []
   scope: ☁️ Platform
   tool-implementations:
     - aade65c8-e80c-46e8-b993-23a50076f62d

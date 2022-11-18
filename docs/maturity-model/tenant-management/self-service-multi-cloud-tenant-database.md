@@ -12,7 +12,9 @@ properties:
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
-  depends-on: []
+  depends-on:
+    - b875ac41-2b38-4ce4-ab8b-76ddd876d789
+  recommended: []
   scope: 🏢 Core
   tool-implementations:
     - e2123339-0641-4d44-b774-32ce23fd634d

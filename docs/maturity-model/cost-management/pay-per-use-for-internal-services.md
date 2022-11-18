@@ -14,7 +14,8 @@ properties:
     - d2cb8a5e-3e28-448b-8944-14ff38fad792
   journey-stage: ⭐️⭐️
   depends-on:
-    - f077cfd1-d8f4-4c30-a1bd-4f252b840e4f
+    - 3892bc95-4464-417c-aab2-247da7a3015a
+  recommended: []
   scope: 🏢 Core
   tool-implementations:
     - 0db736c5-6801-4619-92a6-97c3842c907c

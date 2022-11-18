@@ -13,6 +13,7 @@ import { computed } from "vue";
 import { useCloudFoundationMaturityModel } from "../../plugins/cfmm/client";
 
 import MaturityModelBlock from "./MaturityModelBlock.vue";
+import { MaturityModelDisplayOptions } from "./MaturityModelDisplayOptions";
 
 interface Props {
   ids: string[];
@@ -20,7 +21,7 @@ interface Props {
 
 const props = defineProps<Props>();
 const cfmm = useCloudFoundationMaturityModel();
-
+ 
 const blocks = computed(() => {
   const model = cfmm.value;
 

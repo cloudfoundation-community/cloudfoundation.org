@@ -10,6 +10,9 @@ properties:
   enables: []
   journey-stage: ⭐️⭐️
   depends-on: []
+  recommended:
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Shared VM Image Repository

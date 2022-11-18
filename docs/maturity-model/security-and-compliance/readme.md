@@ -13,7 +13,7 @@ properties:
 
 Ensuring security and compliance of IT systems is among the biggest concerns of organizations adopting a multi-cloud strategy. Leveraging cloud service provides with public cloud platforms is a form of outsourcing that requires oversight by a retained organization - and the cloud foundation team is best positioned to fulfill this need. This includes ensuring that workloads running on the cloud platform are managed and secured in accordance with the organization’s internal standards and policies.
 
-However, Cloud Foundation teams cannot absorb *all* responsibilities of building and running secure systems. After all they cannot possibly forsee all the use cases and applications that internal cloud customers will built atop the cloud’s infrastructure. It’s therefore inevitable that the cloud foundation team has to provide a clear [Shared Responsibility Model](./shared-responsibility-model.md) that defines its responsibilities between the cloud service provider and the organization’s internal cloud customers. 
+However, Cloud Foundation teams cannot absorb *all* responsibilities of building and running secure systems. After all they cannot possibly forsee all the use cases and applications that internal cloud customers will built atop the cloud’s infrastructure. It’s therefore inevitable that the cloud foundation team has to provide a clear [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) that defines its responsibilities between the cloud service provider and the organization’s internal cloud customers. 
 
 > **💡** It’s helpful to apply the same considerations to private cloud platforms as well and not treat them as “safe by default”. They require a similar split in responsibilities between platform teams and internal cloud customers.
 
@@ -21,7 +21,7 @@ However, Cloud Foundation teams cannot absorb *all* responsibilities of building
 
 Multi-Cloud Security & Compliance involves the following key activities and capabilities 
 
-- Establish a clear [Shared Responsibility Model](./shared-responsibility-model.md) for all cloud platforms. 
+- Establish a clear [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) for all cloud platforms. 
 
 - Establish a security baseline leveraging cloud capabilities like [Service and Location Restrictions](./service-and-location-restrictions.md) and [Centralized audit logs](./centralized-audit-logs.md) 
 
@@ -41,7 +41,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- The scope of permissions granted to internal cloud customers as part of an [Resource Authorization Management](../iam/resource-authorization-management.md) should reflect the responsibility split defined in the [Shared Responsibility Model](./shared-responsibility-model.md)  
+- The scope of permissions granted to internal cloud customers as part of an [Resource Authorization Management](../iam/resource-authorization-management.md) should reflect the responsibility split defined in the [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md)  
 
 [💵 Cost Management](../cost-management/readme.md) 
 

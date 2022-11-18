@@ -14,6 +14,11 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️⭐️
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
+    - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273
+    - e649c5ac-ae9d-49f7-a9f0-1850bc1710c2
+    - 64284b14-faab-461c-80bb-5e8efbae4dcc
+    - 012dc29a-5b79-4eeb-8154-9ef0f2ae0f02
+  recommended: []
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: Certified ISMS Compliance

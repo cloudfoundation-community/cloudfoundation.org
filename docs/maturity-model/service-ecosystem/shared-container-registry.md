@@ -11,6 +11,9 @@ properties:
   redaction-state: Draft
   journey-stage: ⭐️⭐️
   depends-on: []
+  recommended:
+    - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
+    - 71143f29-2fe9-452b-8398-fc40f270a2b6
   scope: 🛬 Landing Zone
   tool-implementations:
     - b441ec40-c21b-4c49-a57a-b4f5146789cd
