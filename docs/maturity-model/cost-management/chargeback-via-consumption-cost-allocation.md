@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Chargeback-via-consumption-cost-allocation-e063e4d281f44bb8ac7a7424ba882161
 title: Chargeback via consumption cost allocation
 description: >-
-  Cloud tenant owners are transparently charged for the resource consumption as
-  it is charged from the cloud provider.
+  Application teams are transparently charged for the resource consumption as it
+  is charged from the cloud provider.
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:

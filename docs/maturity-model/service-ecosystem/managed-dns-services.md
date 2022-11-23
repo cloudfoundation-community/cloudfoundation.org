@@ -3,8 +3,8 @@ id: 4f9ee73a-23a9-4aa3-b956-0df22e6156d0
 url: https://www.notion.so/Managed-DNS-Services-4f9ee73a23a94aa3b9560df22e6156d0
 title: Managed DNS Services
 description: >-
-  Teams can manage DNS Zones and Records for their cloud workloads in
-  self-service.
+  Application teams can manage DNS Zones and Records for their cloud workloads
+  in self-service.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:

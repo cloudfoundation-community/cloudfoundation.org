@@ -3,8 +3,8 @@ id: cf487857-542f-4d74-8fe9-885b7be8ccf3
 url: https://www.notion.so/Guided-Cloud-Onboarding-cf487857542f4d748fe9885b7be8ccf3
 title: Guided Cloud Onboarding
 description: >-
-  Teams are guided through the organizational (e.g. budget) and regulatory (e.g.
-  compliance) cloud onboarding duties.
+  Application teams are guided through the organizational (e.g. budget) and
+  regulatory (e.g. compliance) cloud onboarding duties.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:

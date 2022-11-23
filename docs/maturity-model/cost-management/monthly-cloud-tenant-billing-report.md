@@ -4,7 +4,7 @@ url: >-
   https://www.notion.so/Monthly-cloud-tenant-billing-report-cd162600e7424a80b022989da423ca43
 title: Monthly cloud tenant billing report
 description: >-
-  Tenant owners can view a monthly cloud tenant billing report listing all
+  Application teams can view a monthly cloud tenant billing report listing all
   incurred charges for cloud resource consumption.
 category: 💵 Cost Management
 pageType: CFMMBlock

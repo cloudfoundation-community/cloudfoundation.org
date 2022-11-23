@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Self-Service-Multi-Cloud-Tenant-Database-ab10bed170d547cfb3cd4a4448bdb9a9
 title: Self-Service Multi-Cloud Tenant Database
 description: >-
-  Owners of cloud tenants can register, update and remove tenant metadata in a
-  central multi-cloud tenant database in self service.
+  Application teams can register, update and remove tenant metadata in a central
+  multi-cloud tenant database in self service.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:

@@ -294,7 +294,7 @@ export const index = [
       "id": "124d5b65-1e6c-47c5-81fc-134315c72e32",
       "url": "https://www.notion.so/3rd-party-PaaS-Service-Integration-124d5b651e6c47c581fc134315c72e32",
       "title": "3rd party PaaS Service Integration",
-      "description": "Teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
+      "description": "Application teams can leverage third-party PaaS providers for managed services like DBaaS, observability platforms or analytics. Teams can manage service-lifecycle and IAM in self-service and are transparently charged for all consumption cost incurred.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -314,7 +314,7 @@ export const index = [
       "id": "137ac22d-b96c-4d49-aa83-da5779e3d59c",
       "url": "https://www.notion.so/Managed-Key-Vault-137ac22db96c4d49aa83da5779e3d59c",
       "title": "Managed Key Vault",
-      "description": "Managed key management services that allow applications to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
+      "description": "Managed key management services that allow application teams to securely store and retrieve credentials in the cloud. The key management service configuration is aligned with the organization's policies for cryptography and secret management.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -356,7 +356,7 @@ export const index = [
       "id": "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-155c0eadcbd04e0c9387cc57946f80e9",
       "title": "Playground / Sandbox Environments",
-      "description": "DevOps Teams can quickly provision cloud environments for experimentation and learning, thereby accelerating an organization's cloud journey. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
+      "description": "Application teams  can quickly provision cloud environments for experimentation and learning. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -657,7 +657,7 @@ export const index = [
       "id": "28740e92-5559-4931-ab04-17cfb026edd5",
       "url": "https://www.notion.so/Monthly-Cloud-Project-Billing-Report-28740e9255594931ab0417cfb026edd5",
       "title": "Monthly Cloud Project Billing Report",
-      "description": "Project owners can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and services used in a project.  ",
+      "description": "Application teams can view a monthly billing report listing all incurred charges aggregated across all cloud platforms and cloud services making up their application.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -979,7 +979,7 @@ export const index = [
       "id": "3c65a957-cb62-40fe-978e-709e3450f7fe",
       "url": "https://www.notion.so/Individual-Project-Cost-Optimization-via-Reservations-3c65a957cb6240fe978e709e3450f7fe",
       "title": "Individual Project Cost Optimization via Reservations",
-      "description": "Enable cloud customers within your organisation to take advantage of cloud provider cost optimisation opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated risks (e.g. budget authorization, overcommitment, lack of budget). ",
+      "description": "Enable application teams to take advantage of cloud provider cost optimization opportunities available on individual cloud tenants like instance reservations. The chargeback process considers any resulting pre-payments and benefits out of these reservations. A system is in place to manage associated utilization risks.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1005,7 +1005,7 @@ export const index = [
       "id": "3c7081e5-c451-40b6-806d-a8d21b130612",
       "url": "https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612",
       "title": "Certified ISMS Compliance",
-      "description": "The landing zone and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
+      "description": "Landing zones and its operation by the cloud foundation team are certified according to an information security management system like ISO 27001 or C5.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1378,7 +1378,7 @@ export const index = [
       "id": "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
       "url": "https://www.notion.so/Managed-DNS-Services-4f9ee73a23a94aa3b9560df22e6156d0",
       "title": "Managed DNS Services",
-      "description": "Teams can manage DNS Zones and Records for their cloud workloads in self-service.",
+      "description": "Application teams can manage DNS Zones and Records for their cloud workloads in self-service.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1556,7 +1556,7 @@ export const index = [
       "id": "57c521ba-73a4-4187-a507-bbd5eaa80212",
       "url": "https://www.notion.so/Shared-Responsibility-Model-Alignment-57c521ba73a44187a507bbd5eaa80212",
       "title": "Shared Responsibility Model Alignment",
-      "description": "Establish and align a shared responsibility model clarifies responsibilities between the cloud internal cloud customers and the cloud foundation team as well as cloud providers. This enables balancing agility and control across the foundation’s offerings.",
+      "description": "Establish and align a shared responsibility model clarifying  responsibilities between application teams, the cloud foundation and cloud providers. This enables balancing agility and control across the foundation’s offerings.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1756,7 +1756,7 @@ export const index = [
       "id": "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
       "url": "https://www.notion.so/Managed-SSL-Certificates-5f9c0f7d860a488bbbf8897618e5c76f",
       "title": "Managed SSL Certificates",
-      "description": "Teams can request and renew SSL certificates for their cloud workloads in self-service.",
+      "description": "Application teams can request and renew SSL certificates for their cloud workloads in self-service.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1943,7 +1943,7 @@ export const index = [
       "id": "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
       "url": "https://www.notion.so/Managed-bastion-hosts-6c9827e973b249f5bfb53fe23fd5b9e9",
       "title": "Managed bastion hosts",
-      "description": "Teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
+      "description": "Application teams can use a managed service to access resources on private cloud networks using managed bastion hosts or gateway services. These gateways are hardened and centrally audited.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -2035,7 +2035,7 @@ export const index = [
       "id": "71143f29-2fe9-452b-8398-fc40f270a2b6",
       "url": "https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6",
       "title": "Managed DevOps Toolchain",
-      "description": "Teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
+      "description": "Application teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -2124,7 +2124,7 @@ export const index = [
       "id": "74bf9fe5-6bd5-4940-9714-aad2b25e03c4",
       "url": "https://www.notion.so/Managed-Data-Lake-access-74bf9fe56bd549409714aad2b25e03c4",
       "title": "Managed Data Lake access",
-      "description": "Teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants. Common usage scenarios are \"analyst workbenches\" for cloud-native DL/DW tools like BigQuery that provide a self-service UI and \"advanced data pipelines\" where teams need to load/query data from the central lake into their own pipelines (e.g. different teams building ML models for different purposes from common data). ",
+      "description": "Application teams can get managed access to central data warehouses and data lakes to combine this data with processing and infrastructure in their own cloud tenants.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -2726,7 +2726,7 @@ export const index = [
       "id": "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
       "url": "https://www.notion.so/Self-Service-Multi-Cloud-Tenant-Database-ab10bed170d547cfb3cd4a4448bdb9a9",
       "title": "Self-Service Multi-Cloud Tenant Database",
-      "description": "Owners of cloud tenants can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
+      "description": "Application teams can register, update and remove tenant metadata in a central multi-cloud tenant database in self service.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3026,7 +3026,7 @@ export const index = [
       "id": "b875ac41-2b38-4ce4-ab8b-76ddd876d789",
       "url": "https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789",
       "title": "Cloud Tenant Database",
-      "description": "A central database provides information about cloud tenants using a unified  schema. The database records essential metadata like the responsible owner of the tenant and a cost center for chargeback",
+      "description": "A central database provides information about cloud tenants using a unified schema. The database records essential metadata like the responsible owner of the tenant and a cost center for chargeback.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3341,7 +3341,7 @@ export const index = [
       "id": "c9728af5-49fe-4948-8701-2d6485bfbe93",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-c9728af549fe494887012d6485bfbe93",
       "title": "Pay-per-Use for internal Services",
-      "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Consumers can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
+      "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Application teams can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3424,7 +3424,7 @@ export const index = [
       "id": "cd162600-e742-4a80-b022-989da423ca43",
       "url": "https://www.notion.so/Monthly-cloud-tenant-billing-report-cd162600e7424a80b022989da423ca43",
       "title": "Monthly cloud tenant billing report",
-      "description": "Tenant owners can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
+      "description": "Application teams can view a monthly cloud tenant billing report listing all incurred charges for cloud resource consumption.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3470,7 +3470,7 @@ export const index = [
       "id": "ce20312c-aa7a-453f-82f2-f186469dd973",
       "url": "https://www.notion.so/Monthly-Cloud-Project-Carbon-Footprint-Report-ce20312caa7a453f82f2f186469dd973",
       "title": "Monthly Cloud Project Carbon Footprint Report",
-      "description": "Project owners can view a monthly report listing the consumption-based carbon footprint caused by their project’s cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
+      "description": "Application teams can view a monthly report listing the consumption-based carbon footprint caused by their cloud usage. This enables sustainability reporting and gives teams feedback towards achieving sustainability goals.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3516,7 +3516,7 @@ export const index = [
       "id": "cf487857-542f-4d74-8fe9-885b7be8ccf3",
       "url": "https://www.notion.so/Guided-Cloud-Onboarding-cf487857542f4d748fe9885b7be8ccf3",
       "title": "Guided Cloud Onboarding",
-      "description": "Teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
+      "description": "Application teams are guided through the organizational (e.g. budget) and regulatory (e.g. compliance) cloud onboarding duties.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3623,7 +3623,7 @@ export const index = [
       "id": "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
       "url": "https://www.notion.so/Chargeback-at-full-cost-allocation-d2a35b4e7e9e4b1ca09769d0e8ce02f1",
       "title": "Chargeback at full cost allocation",
-      "description": "Cloud tenant owners are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
+      "description": "Application teams are transparently charged for resource consumption in their cloud tenant as well as for any shared overhead cost incurred by the cloud foundation team for providing its services.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3765,7 +3765,7 @@ export const index = [
       "id": "d871cfba-a86d-4ec1-a23d-42c9b3d73352",
       "url": "https://www.notion.so/Managed-Cloud-Provider-Support-Contracts-d871cfbaa86d4ec1a23d42c9b3d73352",
       "title": "Managed Cloud Provider Support Contracts",
-      "description": "Cloud tenant owners can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Owners can access support in self-service and are transparently charged for support fees incurred.",
+      "description": "Application teams can enroll their tenants in support contracts and/or enterprise support agreements from cloud providers. Teams can access support in self-service and are transparently charged for support fees incurred.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3968,7 +3968,7 @@ export const index = [
       "id": "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
       "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-e063e4d281f44bb8ac7a7424ba882161",
       "title": "Chargeback via consumption cost allocation",
-      "description": "Cloud tenant owners are transparently charged for the resource consumption as it is charged from the cloud provider.",
+      "description": "Application teams are transparently charged for the resource consumption as it is charged from the cloud provider.",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -4084,7 +4084,7 @@ export const index = [
       "id": "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
       "url": "https://www.notion.so/Control-access-to-cloud-platforms-and-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2",
       "title": "Control access to cloud platforms and Landing Zones",
-      "description": "Implement automated policies to steer cloud consumers to appropriate cloud platforms and landing zones based on metadata about the cloud consumer.",
+      "description": "Implement automated policies to steer application teams to appropriate cloud platforms and landing zones based on metadata about the application team.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -4291,7 +4291,7 @@ export const index = [
       "id": "f90c7375-88b9-42dc-8e98-a65c006b927a",
       "url": "https://www.notion.so/Managed-Internet-Egress-f90c737588b942dc8e98a65c006b927a",
       "title": "Managed Internet Egress",
-      "description": "Cloud tenants can connect to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
+      "description": "Application teams can connect cloud tenants to internet egress using managed infrastructure that ensures compliance and cost efficiency (network separation, proxies etc.).",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
