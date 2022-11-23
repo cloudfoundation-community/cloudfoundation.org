@@ -4,8 +4,9 @@ url: >-
   https://www.notion.so/Monthly-Cloud-Project-Billing-Report-28740e9255594931ab0417cfb026edd5
 title: Monthly Cloud Project Billing Report
 description: >-
-  Project owners can view a monthly billing report listing all incurred charges
-  aggregated across all cloud platforms and services used in a project.  
+  Application teams can view a monthly billing report listing all incurred
+  charges aggregated across all cloud platforms and cloud services making up
+  their application.
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:

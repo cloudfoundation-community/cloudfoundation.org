@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Managed-Cloud-Provider-Support-Contracts-d871cfbaa86d4ec1a23d42c9b3d73352
 title: Managed Cloud Provider Support Contracts
 description: >-
-  Cloud tenant owners can enroll their tenants in support contracts and/or
-  enterprise support agreements from cloud providers. Owners can access support
+  Application teams can enroll their tenants in support contracts and/or
+  enterprise support agreements from cloud providers. Teams can access support
   in self-service and are transparently charged for support fees incurred.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock

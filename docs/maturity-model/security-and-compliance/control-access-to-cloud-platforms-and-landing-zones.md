@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Control-access-to-cloud-platforms-and-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2
 title: Control access to cloud platforms and Landing Zones
 description: >-
-  Implement automated policies to steer cloud consumers to appropriate cloud
-  platforms and landing zones based on metadata about the cloud consumer.
+  Implement automated policies to steer application teams to appropriate cloud
+  platforms and landing zones based on metadata about the application team.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:

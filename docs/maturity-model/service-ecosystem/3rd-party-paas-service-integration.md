@@ -4,10 +4,10 @@ url: >-
   https://www.notion.so/3rd-party-PaaS-Service-Integration-124d5b651e6c47c581fc134315c72e32
 title: 3rd party PaaS Service Integration
 description: >-
-  Teams can leverage third-party PaaS providers for managed services like DBaaS,
-  observability platforms or analytics. Teams can manage service-lifecycle and
-  IAM in self-service and are transparently charged for all consumption cost
-  incurred.
+  Application teams can leverage third-party PaaS providers for managed services
+  like DBaaS, observability platforms or analytics. Teams can manage
+  service-lifecycle and IAM in self-service and are transparently charged for
+  all consumption cost incurred.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:

@@ -4,7 +4,7 @@ url: >-
   https://www.notion.so/Certified-ISMS-Compliance-3c7081e5c45140b6806da8d21b130612
 title: Certified ISMS Compliance
 description: >-
-  The landing zone and its operation by the cloud foundation team are certified
+  Landing zones and its operation by the cloud foundation team are certified
   according to an information security management system like ISO 27001 or C5.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock

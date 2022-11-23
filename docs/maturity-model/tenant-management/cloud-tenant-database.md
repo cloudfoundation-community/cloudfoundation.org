@@ -3,9 +3,9 @@ id: b875ac41-2b38-4ce4-ab8b-76ddd876d789
 url: https://www.notion.so/Cloud-Tenant-Database-b875ac412b384ce4ab8b76ddd876d789
 title: Cloud Tenant Database
 description: >-
-  A central database provides information about cloud tenants using a unified 
+  A central database provides information about cloud tenants using a unified
   schema. The database records essential metadata like the responsible owner of
-  the tenant and a cost center for chargeback
+  the tenant and a cost center for chargeback.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:

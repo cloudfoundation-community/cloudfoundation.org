@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Managed-SSL-Certificates-5f9c0f7d860a488bbbf8897618e5c76f
 title: Managed SSL Certificates
 description: >-
-  Teams can request and renew SSL certificates for their cloud workloads in
-  self-service.
+  Application teams can request and renew SSL certificates for their cloud
+  workloads in self-service.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:

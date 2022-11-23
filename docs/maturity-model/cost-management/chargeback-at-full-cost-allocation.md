@@ -4,9 +4,9 @@ url: >-
   https://www.notion.so/Chargeback-at-full-cost-allocation-d2a35b4e7e9e4b1ca09769d0e8ce02f1
 title: Chargeback at full cost allocation
 description: >-
-  Cloud tenant owners are transparently charged for resource consumption in
-  their cloud tenant as well as for any shared overhead cost incurred by the
-  cloud foundation team for providing its services.
+  Application teams are transparently charged for resource consumption in their
+  cloud tenant as well as for any shared overhead cost incurred by the cloud
+  foundation team for providing its services.
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
