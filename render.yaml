@@ -42,6 +42,12 @@ services:
       - type: redirect
         source: /maturity-model/security-and-compliance/automated-security-scanning.html
         destination: /maturity-model/security-and-compliance/resource-configuration-scanning.html
+      - type: redirect
+        source: /maturity-model/security-and-compliance/shared-responsibility-model.html
+        destination: /maturity-model/security-and-compliance/shared-responsibility-model-alignment.html
+      - type: redirect
+        source: /maturity-model/iam/identity-and-access-management-concept.html
+        destination: /maturity-model/iam/identity-and-access-management-alignment.html
       # fix some Google SEO "duplicate without user-selected canonical" issues, due to trailing slash
       - type: redirect
         source: /understanding-cloud-foundation
