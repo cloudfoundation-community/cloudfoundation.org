@@ -4,10 +4,10 @@ url: >-
   https://www.notion.so/Identity-and-Access-Management-Alignment-37862f9f3d8a4e258e90e487dc455b0c
 title: Identity and Access Management Alignment
 description: >-
-  Establish and align processes for governing identities and access permissions
-  across cloud platforms with the responsible IAM stakeholders of the
-  organization. This alignment establishes guardrails for implementing IAM
-  processes in the foundation’s offerings.
+  The cloud foundation team can make make decisions about governing identities
+  and access permissions across cloud platforms and landing zones. A process is
+  in place to align decisions with responsible IAM stakeholders of the
+  organization.
 category: 🔐 IAM
 pageType: CFMMBlock
 properties:

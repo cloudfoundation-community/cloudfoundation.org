@@ -4,9 +4,10 @@ url: >-
   https://www.notion.so/Shared-Responsibility-Model-Alignment-57c521ba73a44187a507bbd5eaa80212
 title: Shared Responsibility Model Alignment
 description: >-
-  Establish and align a shared responsibility model clarifying  responsibilities
-  between application teams, the cloud foundation and cloud providers. This
-  enables balancing agility and control across the foundation’s offerings.
+  The cloud foundation team can make decisions about the shared responsibility
+  model clarifying responsibilities between application teams, the cloud
+  foundation and cloud providers. A process is in place to align decisions with
+  relevant stakeholders in the organization. 
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:

@@ -887,7 +887,7 @@ export const index = [
       "id": "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
       "url": "https://www.notion.so/Identity-and-Access-Management-Alignment-37862f9f3d8a4e258e90e487dc455b0c",
       "title": "Identity and Access Management Alignment",
-      "description": "Establish and align processes for governing identities and access permissions across cloud platforms with the responsible IAM stakeholders of the organization. This alignment establishes guardrails for implementing IAM processes in the foundation’s offerings.",
+      "description": "The cloud foundation team can make make decisions about governing identities and access permissions across cloud platforms and landing zones. A process is in place to align decisions with responsible IAM stakeholders of the organization.",
       "category": "🔐 IAM",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1556,7 +1556,7 @@ export const index = [
       "id": "57c521ba-73a4-4187-a507-bbd5eaa80212",
       "url": "https://www.notion.so/Shared-Responsibility-Model-Alignment-57c521ba73a44187a507bbd5eaa80212",
       "title": "Shared Responsibility Model Alignment",
-      "description": "Establish and align a shared responsibility model clarifying  responsibilities between application teams, the cloud foundation and cloud providers. This enables balancing agility and control across the foundation’s offerings.",
+      "description": "The cloud foundation team can make decisions about the shared responsibility model clarifying responsibilities between application teams, the cloud foundation and cloud providers. A process is in place to align decisions with relevant stakeholders in the organization. ",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
