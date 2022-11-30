@@ -927,7 +927,8 @@ export const index = [
         "recommended": [
           "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
-          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "scope": "🏢 Core",
         "tool-implementations": [],
@@ -1579,6 +1580,31 @@ export const index = [
           "c596a5f1-dc63-46b6-8d1f-25dcf12ff484"
         ],
         "name": "Shared Responsibility Model Alignment"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/service-ecosystem/virtual-machine-service.md",
+    "frontmatter": {
+      "id": "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44",
+      "url": "https://www.notion.so/Virtual-Machine-Service-58c92b8ff8364c69aa6ad11f0c8a9a44",
+      "title": "Virtual Machine Service",
+      "description": "Provides VMs as a service for lift & shift and cloud newcomers.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+        ],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [
+          "c3af4eea-6d9a-4c64-a117-ec018524979a"
+        ],
+        "name": "Virtual Machine Service"
       }
     }
   },
@@ -3217,7 +3243,8 @@ export const index = [
       "description": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
       "properties": {
         "block": [
-          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
@@ -4214,7 +4241,8 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "d2cb8a5e-3e28-448b-8944-14ff38fad792"
+          "d2cb8a5e-3e28-448b-8944-14ff38fad792",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
