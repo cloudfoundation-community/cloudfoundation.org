@@ -49,6 +49,9 @@ services:
         source: /maturity-model/iam/identity-and-access-management-concept.html
         destination: /maturity-model/iam/identity-and-access-management-alignment.html
       - type: redirect
+        source: /maturity-model/tenant-management/monolithic-landing-zone.html
+        destination: /maturity-model/tenant-management/modular-landing-zones.html
+      - type: redirect
         source: /maturity-model/iam/authorization-concept.html
         destination: /maturity-model/iam/resource-authorization-management.html
       # fix some Google SEO "duplicate without user-selected canonical" issues, due to trailing slash
