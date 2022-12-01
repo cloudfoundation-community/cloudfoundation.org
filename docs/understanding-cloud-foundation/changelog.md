@@ -6,6 +6,12 @@ category: Understanding Cloud Foundation
 order: 40
 ---
 
+## 2022-12
+
+- Added a new building block for a [Data Science Landing Zone](../maturity-model/tenant-management/data-science-landing-zone.md) describing a landing zone for use by data scientists to develop AI or ML workloads
+
+- Added a [Virtual Machine Service](../maturity-model/service-ecosystem/virtual-machine-service.md) which can be an essential component of a [Lift & Shift Landing Zone](../maturity-model/tenant-management/lift-and-shift-landing-zone.md) but is also useful for other Landing Zones.
+
 ## 2022-11
 
 - The Cloud Foundation Maturity model now offers more interactive controls to explore the model. Here’s what we added

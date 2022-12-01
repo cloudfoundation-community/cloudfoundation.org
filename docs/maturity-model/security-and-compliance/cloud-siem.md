@@ -2,10 +2,9 @@
 id: 012dc29a-5b79-4eeb-8154-9ef0f2ae0f02
 url: https://www.notion.so/Cloud-SIEM-012dc29a5b794eeb81549ef0f2ae0f02
 title: Cloud SIEM
-description: |-
-  Cloud Tenant Audit logs are automatically analysed for anomalies
-  - proactive analysis
-  ...
+description: >-
+  Audit logs for cloud tenants and cloud workloads are systematically analyzed
+  for anomalies.
 category: 🔖 Security & Compliance
 pageType: CFMMBlock
 properties:

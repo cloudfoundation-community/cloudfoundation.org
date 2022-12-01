@@ -43,7 +43,7 @@ All organizations that are successfully using the cloud share a cloud-native min
 
 Start with setting up the cloud platform’s built-in tools so that application teams have access to their cost and consumption data in the cloud platform itself.
 
-- In AWS enable IAM User access to Billing allows users to have access to AWS Cost Explorer for their own Accounts. Unfortunately you have to consider this setting already in [Tenant Provisioning](../tenant-management/tenant-provisioning.md). @enable iam user
+- In AWS [enable IAM User access to Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) allows users to have access to AWS Cost Explorer for their own Accounts. Unfortunately you have to consider this setting already in [Tenant Provisioning](../tenant-management/tenant-provisioning.md).
 
 - In Azure allow users access to Azure Cost Management on subscription or resource group scope by giving application teams access to the `Cost Management Reader` role
 

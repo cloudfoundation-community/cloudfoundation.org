@@ -4,8 +4,9 @@ url: >-
   https://www.notion.so/Container-Platform-Landing-Zone-59fc4d46739d4d498bd7d7b4882709ba
 title: Container Platform Landing Zone
 description: >-
-  A managed container platform offers a developer-centric experience for
-  building and running container-based applications on the cloud.
+  A dedicated landing zone offering a developer-centric experience for building
+  and running container-based applications on the cloud on top of a container
+  platform.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:

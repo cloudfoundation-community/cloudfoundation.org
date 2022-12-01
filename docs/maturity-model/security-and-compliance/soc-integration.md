@@ -17,6 +17,7 @@ properties:
   recommended:
     - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
     - 344b75a4-595b-4ba5-8851-ddfb6d4acf7c
+    - 74295ae4-dcd5-449b-8825-f12c5267e89b
   scope: 🛬 Landing Zone
   tool-implementations: []
   name: SOC Integration
