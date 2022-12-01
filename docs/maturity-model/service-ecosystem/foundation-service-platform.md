@@ -19,6 +19,7 @@ properties:
     - 5f9c0f7d-860a-488b-bbf8-897618e5c76f
     - 4f9ee73a-23a9-4aa3-b956-0df22e6156d0
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
+    - 58c92b8f-f836-4c69-aa6a-d11f0c8a9a44
   scope: 🏢 Core
   tool-implementations: []
   name: Foundation Service Platform

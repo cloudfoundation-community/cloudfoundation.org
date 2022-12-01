@@ -5,7 +5,7 @@ export const index = [
       "id": "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02",
       "url": "https://www.notion.so/Cloud-SIEM-012dc29a5b794eeb81549ef0f2ae0f02",
       "title": "Cloud SIEM",
-      "description": "Cloud Tenant Audit logs are automatically analysed for anomalies\n- proactive analysis\n...",
+      "description": "Audit logs for cloud tenants and cloud workloads are systematically analyzed for anomalies.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
@@ -219,7 +219,8 @@ export const index = [
           "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
           "b0a04ae8-c9b3-4060-abfd-e760723995d8",
           "74295ae4-dcd5-449b-8825-f12c5267e89b",
-          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "f271478b-3921-494f-ab2c-de97808d3bb7"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
@@ -334,8 +335,8 @@ export const index = [
   {
     "frontmatter": {
       "id": "13bd4bac-36f7-466e-a2b8-7f5c9f77c480",
-      "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-13bd4bac36f7466ea2b87f5c9f77c480",
-      "title": "Chargeback via consumption cost allocation",
+      "url": "https://www.notion.so/Chargeback-via-consumption-cost-allocation-with-meshStack-13bd4bac36f7466ea2b87f5c9f77c480",
+      "title": "Chargeback via consumption cost allocation with meshStack",
       "description": "meshStack sends chargeback statements to cloud tenant owners every month. These contain the exact charges from the cloud platform(s) and ensure that the right tenant owners are charged their own resource consumption.",
       "properties": {
         "block": [
@@ -345,7 +346,7 @@ export const index = [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
         "link": "https://docs.meshcloud.io/docs/meshstack.billing-configuration.html#chargeback",
-        "name": "Chargeback via consumption cost allocation"
+        "name": "Chargeback via consumption cost allocation with meshStack"
       },
       "pageType": "CFMMTool2Block"
     }
@@ -356,7 +357,7 @@ export const index = [
       "id": "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
       "url": "https://www.notion.so/Playground-Sandbox-Environments-155c0eadcbd04e0c9387cc57946f80e9",
       "title": "Playground / Sandbox Environments",
-      "description": "Application teams  can quickly provision cloud environments for experimentation and learning. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
+      "description": "Application teams can quickly provision cloud environments for experimentation and learning. Playgrounds use relaxed policies (e.g. more cloud services are allowed) but come with time- or spend-limits that are tightly controlled. Expired playgrounds are automatically deprovisioned. ",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -927,7 +928,8 @@ export const index = [
         "recommended": [
           "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
-          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "scope": "🏢 Core",
         "tool-implementations": [],
@@ -1583,6 +1585,38 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/service-ecosystem/virtual-machine-service.md",
+    "frontmatter": {
+      "id": "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44",
+      "url": "https://www.notion.so/Virtual-Machine-Service-58c92b8ff8364c69aa6ad11f0c8a9a44",
+      "title": "Virtual Machine Service",
+      "description": "Provides VMs as a service for lift & shift and cloud newcomers.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "mvp1",
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+        ],
+        "recommended": [
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
+          "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
+          "6e343acc-95bd-42aa-bb32-bdcce1c7d4ad",
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd",
+          "2468d240-6cca-4680-b9c4-6f237defa511",
+          "d9c211e3-647c-4fd7-bf3b-3c806baeea7f"
+        ],
+        "scope": "☁️ Platform",
+        "tool-implementations": [
+          "c3af4eea-6d9a-4c64-a117-ec018524979a"
+        ],
+        "name": "Virtual Machine Service"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "597617fd-06c3-4cab-bf0e-c19b84439a92",
       "url": "https://www.notion.so/Cloud-native-Landing-Zone-597617fd06c34cabbf0ec19b84439a92",
@@ -1645,7 +1679,7 @@ export const index = [
       "id": "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
       "url": "https://www.notion.so/Container-Platform-Landing-Zone-59fc4d46739d4d498bd7d7b4882709ba",
       "title": "Container Platform Landing Zone",
-      "description": "A managed container platform offers a developer-centric experience for building and running container-based applications on the cloud.",
+      "description": "A dedicated landing zone offering a developer-centric experience for building and running container-based applications on the cloud on top of a container platform.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -2110,7 +2144,8 @@ export const index = [
         ],
         "recommended": [
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
-          "344b75a4-595b-4ba5-8851-ddfb6d4acf7c"
+          "344b75a4-595b-4ba5-8851-ddfb6d4acf7c",
+          "74295ae4-dcd5-449b-8825-f12c5267e89b"
         ],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
@@ -3217,7 +3252,8 @@ export const index = [
       "description": "Every Cloud Foundation customer can offer services on the meshStack marketplace to other teams in your enterprise.",
       "properties": {
         "block": [
-          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
@@ -3553,7 +3589,8 @@ export const index = [
           "af14b5df-77b4-4def-b761-8fadabd241ca",
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
-          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "f271478b-3921-494f-ab2c-de97808d3bb7"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3868,7 +3905,8 @@ export const index = [
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
           "119bfca5-dda6-408c-b35d-c59d0f209fcf",
           "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
-          "dff7d733-d987-4145-aa1a-e340b5bcff81"
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "f271478b-3921-494f-ab2c-de97808d3bb7"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3976,7 +4014,8 @@ export const index = [
           "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
           "d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1",
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
-          "f96feedc-d969-48f8-adb4-93031cc0a24d"
+          "f96feedc-d969-48f8-adb4-93031cc0a24d",
+          "f271478b-3921-494f-ab2c-de97808d3bb7"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -4214,7 +4253,8 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "d2cb8a5e-3e28-448b-8944-14ff38fad792"
+          "d2cb8a5e-3e28-448b-8944-14ff38fad792",
+          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
@@ -4283,6 +4323,34 @@ export const index = [
         "name": "Approving budgets with meshStack"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/tenant-management/data-science-landing-zone.md",
+    "frontmatter": {
+      "id": "f271478b-3921-494f-ab2c-de97808d3bb7",
+      "url": "https://www.notion.so/Data-Science-Landing-Zone-f271478b3921494fab2cde97808d3bb7",
+      "title": "Data Science Landing Zone",
+      "description": "A landing zone optimized for data science workloads like AI/ML models and self-service data analysis.",
+      "category": "🗂 Tenant Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
+        ],
+        "recommended": [
+          "74bf9fe5-6bd5-4940-9714-aad2b25e03c4"
+        ],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Data Science Landing Zone"
+      }
     }
   },
   {

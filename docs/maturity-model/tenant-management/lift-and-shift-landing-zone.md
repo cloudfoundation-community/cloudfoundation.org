@@ -65,13 +65,13 @@ In this model, the cloud foundation team provides a â€œmanaged virtual machineâ€
 
 An important consideration for organizations leveraging this approach is that they need to invest into building required cloud skills early on in the cloud journey. These skills establish important know-how for the foundation team like building automated deployment pipelines, setting up [Virtual Network Service](../service-ecosystem/virtual-network-service.md) and establishing a [Foundation Service Platform](../service-ecosystem/foundation-service-platform.md). They can thus be a good first foray into building more complex landing zones.
 
-One downside of this approach is that building the required skills and cloud infrastructure services requires a dedicated investment of time and resources. From our experience we have seen cloud foundation teams have success with this approach when they have team members with existing server operations know-how for building capabilities like [Shared VM Image Repository](../service-ecosystem/shared-vm-image-repository.md) and [SOC Integration](../security-and-compliance/soc-integration.md) as well as team members with expertise in cloud automation. 
+One downside of this approach is that building the required skills and cloud infrastructure services requires a dedicated investment of time and resources. From our experience we have seen cloud foundation teams have success with this approach when they have team members with existing server operations know-how for building capabilities like [Shared VM Image Repository](../service-ecosystem/shared-vm-image-repository.md) and [SOC Integration](../security-and-compliance/soc-integration.md) as well as team members with expertise in cloud automation.
 
 #### Dedicated Lift & Shift Cloud Tenants
 
 When the organization plans on re-hosting only as an intermediate step before re-platforming or even refactoring workloads, designing the landing zone to provide dedicated cloud-tenants for every internal customer offers several advantages.
 
-- Internal customers can provision not only virtual machines but can also augment their workloads with a pre-approved set of cloud-native services like Databases or object storage services (see [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md)) 
+- Internal customers can provision not only virtual machines (see [Virtual Machine Service](../service-ecosystem/virtual-machine-service.md)) but can also augment their workloads with a pre-approved set of cloud-native services like Databases or object storage services (see [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md)) 
 
 - Internal customers can work with the cloud provider portals and APIs to automate common management operations and therefore start building cloud know-how in a controlled and safe environment
 

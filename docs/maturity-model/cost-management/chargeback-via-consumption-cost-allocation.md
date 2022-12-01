@@ -14,6 +14,7 @@ properties:
     - d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1
     - dff7d733-d987-4145-aa1a-e340b5bcff81
     - f96feedc-d969-48f8-adb4-93031cc0a24d
+    - f271478b-3921-494f-ab2c-de97808d3bb7
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
