@@ -19,6 +19,10 @@ properties:
   name: Managed bastion hosts
 ---
 
+Managed bastion hosts are essential for running a “public” networking model (cloud only connected to internet). Risks are high when application teams with little cloud skill build their own access solutions (e.g. vulnerable SSH implementations, weak ciphers etc.). Public IP ranges are continuously scanned and attacked.
+
+Cloud foundation teams may get away not offering dedicated bastion hosts when running in a private or hybrid networking model (connections always come from on-premise). Still recommended for security and auditing though. 
+
 There’s two main implementation strategies for building bastion hosts
 
 - leveraging cloud-native services like [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) by pre-configuring them to integrate with your landing zone’s network infrastructure (see [Virtual Network Service](./virtual-network-service.md))

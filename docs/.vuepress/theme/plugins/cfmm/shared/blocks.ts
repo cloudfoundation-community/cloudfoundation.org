@@ -585,7 +585,9 @@ export const index = [
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8"
+        ],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
@@ -1689,7 +1691,8 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "b4678790-ab53-4219-83e7-fbde18383d05"
         ],
         "recommended": [
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
@@ -2978,7 +2981,10 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
+          "456f15f2-299e-4a8b-a8c9-cb0580a887d2",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
+          "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "f271478b-3921-494f-ab2c-de97808d3bb7"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3722,7 +3728,8 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "2468d240-6cca-4680-b9c4-6f237defa511"
         ],
         "recommended": [
           "74295ae4-dcd5-449b-8825-f12c5267e89b",
@@ -3731,7 +3738,9 @@ export const index = [
           "6c9827e9-73b2-49f5-bfb5-3fe23fd5b9e9",
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
-          "b0a04ae8-c9b3-4060-abfd-e760723995d8"
+          "b0a04ae8-c9b3-4060-abfd-e760723995d8",
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "b6b24f70-3fba-4f67-a375-2b0d26a16324"
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [],
@@ -3959,7 +3968,8 @@ export const index = [
           "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f",
           "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
-          "d1904912-b420-4a10-a62c-aa578fb847ff"
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "b4678790-ab53-4219-83e7-fbde18383d05"
         ],
         "recommended": [
           "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
@@ -4342,7 +4352,8 @@ export const index = [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "d1904912-b420-4a10-a62c-aa578fb847ff",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
-          "e063e4d2-81f4-4bb8-ac7a-7424ba882161"
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
+          "b4678790-ab53-4219-83e7-fbde18383d05"
         ],
         "recommended": [
           "74bf9fe5-6bd5-4940-9714-aad2b25e03c4"

@@ -17,6 +17,7 @@ properties:
     - d1904912-b420-4a10-a62c-aa578fb847ff
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
+    - b4678790-ab53-4219-83e7-fbde18383d05
   recommended:
     - 74bf9fe5-6bd5-4940-9714-aad2b25e03c4
   scope: ☁️ Platform

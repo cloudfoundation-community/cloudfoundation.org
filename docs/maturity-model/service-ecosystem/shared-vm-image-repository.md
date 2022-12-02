@@ -18,3 +18,13 @@ properties:
   name: Shared VM Image Repository
 ---
 
+One key decision is if you want to allow application teams to “bring your own image”. 
+
+However, most application teams don’t want to bother with this and use images already provided in the cloud. There are two main implementation approaches for this
+
+- use cloud-provider managed virtual machine base images, maybe applying a policy to restrict them to a subset of available images (e.g. only allow CentOS, Ubuntu)
+
+- provide “golden images” managed by your organizations
+
+The golden image approach has a few advantages, e.g. when it comes to wiring up existing server management infrastructure like [SOC Integration](../security-and-compliance/soc-integration.md). It’s however quite a bit of work, considering cloud-specific specialties (kernel extensions for hypervisor support, cloud-init scripts etc.)
+

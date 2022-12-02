@@ -19,6 +19,7 @@ properties:
     - e063e4d2-81f4-4bb8-ac7a-7424ba882161
     - deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
     - d1904912-b420-4a10-a62c-aa578fb847ff
+    - b4678790-ab53-4219-83e7-fbde18383d05
   recommended:
     - 09e744c5-e12a-49e8-8b6f-b7e3c44ba63b
     - f90c7375-88b9-42dc-8e98-a65c006b927a

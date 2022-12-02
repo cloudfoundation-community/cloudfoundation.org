@@ -10,7 +10,8 @@ description: >-
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
   journey-stage: ⭐️⭐️⭐️
   depends-on:
     - 2be4d7d1-4109-406b-a4f7-da6c566123fd
