@@ -35,9 +35,9 @@
         <div class="col-12 col-lg-6">
           <h2>Why a Cloud Foundation Team?</h2>
           <p class="desc">
-            A cloud foundation team provides DevOps teams a single point of
+            A cloud foundation team provides application teams a single point of
             contact for provisioning, accessing and managing all cloud services
-            they need to get their job done. It frees DevOps teams from
+            they need to get their job done. It frees application teams from
             organizational burden and empowers them to focus on their core
             value: delivering software. Having a cloud foundation team also
             helps aligning technical and management stakeholders.
