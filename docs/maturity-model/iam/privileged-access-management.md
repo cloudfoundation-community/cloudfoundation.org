@@ -35,7 +35,7 @@ properties:
 
 In an enterprise environment, “privileged access” is a term used to designate special access or abilities above and beyond that of a standard user. Privileged access allows organizations to secure their infrastructure and applications, run business efficiently and maintain the confidentiality of sensitive data and critical infrastructure.
 
-Access to cloud tenants is usually not a privileged operation from a cloud foundation perspective but for DevOps team it is the other way round. From the DevOps team perspective, cloud tenants are an infrastructure and access to the application infrastructure is usually administrative/privileged. DevOps teams using these cloud tenants need to be equipped with appropriate means to secure access to the environments. 
+Access to cloud tenants is usually not a privileged operation from a cloud foundation perspective but for application teams it is the other way round. From the application team perspective, cloud tenants are an infrastructure and access to the application infrastructure is usually administrative/privileged. Application teams using these cloud tenants need to be equipped with appropriate means to secure access to the environments. 
 
 ## Key Points
 

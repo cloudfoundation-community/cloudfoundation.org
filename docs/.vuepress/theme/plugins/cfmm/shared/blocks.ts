@@ -242,7 +242,7 @@ export const index = [
       "id": "119bfca5-dda6-408c-b35d-c59d0f209fcf",
       "url": "https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf",
       "title": "Tenant Deprovisioning / Decommissioning",
-      "description": "Process for decommissioning and deprovisioning cloud tenants that are no longer needed.",
+      "description": "Establish a process for safely decommissioning and deprovisioning cloud tenants that are no longer needed by application teams.",
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -963,7 +963,7 @@ export const index = [
       "id": "3c377c14-3fbf-4766-a47a-e30bd070ed7f",
       "url": "https://www.notion.so/Managed-DevOps-toolchains-with-meshStack-3c377c143fbf4766a47ae30bd070ed7f",
       "title": "Managed DevOps toolchains with meshStack",
-      "description": "meshStack allows cloud foundation teams to provide additional services via a marketplace. DevOps teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
+      "description": "meshStack allows cloud foundation teams to provide additional services via a marketplace. Application teams can provision services from this marketplace in self-service, while a service broker adhering to the Open Service Broker API automates the technical service provisioning.",
       "properties": {
         "block": [
           "71143f29-2fe9-452b-8398-fc40f270a2b6"
@@ -1440,7 +1440,7 @@ export const index = [
       "id": "5154be86-47d3-4453-888d-102be5b07786",
       "url": "https://www.notion.so/Multi-cloud-tenant-database-integrated-with-lifecycle-management-5154be8647d34453888d102be5b07786",
       "title": "Multi-cloud tenant database integrated with lifecycle management",
-      "description": "meshStack automatically maintains the cloud tenant database as cloud customers provision or deprovision cloud environments.",
+      "description": "meshStack automatically maintains the cloud tenant database as application teams provision or deprovision cloud tenants.",
       "properties": {
         "block": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef"
@@ -2072,7 +2072,7 @@ export const index = [
       "id": "71143f29-2fe9-452b-8398-fc40f270a2b6",
       "url": "https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6",
       "title": "Managed DevOps Toolchain",
-      "description": "Application teams can use a DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
+      "description": "Application teams can use DevOps tools that are integrated with the cloud tenants used by the team. Any required service account or automation user credentials are automatically maintained and rotated.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {

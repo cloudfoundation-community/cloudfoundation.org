@@ -11,7 +11,7 @@ properties:
   short-name: Cost Mgmt.
 ---
 
-Pay-per-use is an essential cornerstone of the cloud computing paradigm. When deploying and scaling cloud resources is just a single API call away, managing the cost incurred under consumption-based billing is extremely important. Cloud Service Providers typically charge the organization as a single unit under an enterprise contract. Cloud Foundation teams need to process these invoices and allocate the cost to internal cloud customers (chargeback). Good cost management practices that leverage the technical capabilities of cloud cost reporting and involve all stakeholders of a cloud foundation are crucial to a successful cloud journey.
+Pay-per-use is an essential cornerstone of the cloud computing paradigm. When deploying and scaling cloud resources is just a single API call away, managing the cost incurred under consumption-based billing is extremely important. Cloud Service Providers typically charge the organization as a single unit under an enterprise contract. Cloud Foundation teams need to process these invoices and allocate the cost to application teams (chargeback). Good cost management practices that leverage the technical capabilities of cloud cost reporting and involve all stakeholders of a cloud foundation are crucial to a successful cloud journey.
 
 ## Key Activities in Multi-Cloud Cost Management
 
@@ -23,7 +23,7 @@ The Cost Management pillar of the Cloud Foundation Maturity Model encompasses th
 
 - Standardizing the chargeback process across multiple cloud platforms is important. Establishing the concept of a [Monthly Cloud Project Billing Report](./monthly-cloud-project-billing-report.md) helps abstracting the chargeback process from individual platforms, and also enables [Pay-per-Use for internal Services](./pay-per-use-for-internal-services.md) 
 
-- Leverage cost optimization opportunities, for example by implementing [Global Cost Optimization via Reservations](./global-cost-optimization-via-reservations.md) or delegating it to internal cloud customers as [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md)
+- Leverage cost optimization opportunities, for example by implementing [Global Cost Optimization via Reservations](./global-cost-optimization-via-reservations.md) or delegating it to application teams as [Individual Project Cost Optimization via Reservations](./individual-project-cost-optimization-via-reservations.md)
 
 - Align with stakeholders whether your organization wants to establish [Chargeback at full cost allocation](./chargeback-at-full-cost-allocation.md) that also covers the overhead of providing cloud foundation services
 
@@ -39,7 +39,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- Cost Management processes often have a compliance angle to it. For example [Budget Approval Process](./budget-approval-process.md) define budgets, and when internal cloud customers overrun them you may want to handle them with an [Incident Management Process](../security-and-compliance/incident-management-process.md).
+- Cost Management processes often have a compliance angle to it. For example [Budget Approval Process](./budget-approval-process.md) define budgets, and when application teams overrun them you may want to handle them with an [Incident Management Process](../security-and-compliance/incident-management-process.md).
 
 [🛠 Service Ecosystem](../service-ecosystem/readme.md) 
 

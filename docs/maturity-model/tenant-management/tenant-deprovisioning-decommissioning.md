@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Tenant-Deprovisioning-Decommissioning-119bfca5dda6408cb35dc59d0f209fcf
 title: Tenant Deprovisioning / Decommissioning
 description: >-
-  Process for decommissioning and deprovisioning cloud tenants that are no
-  longer needed.
+  Establish a process for safely decommissioning and deprovisioning cloud
+  tenants that are no longer needed by application teams.
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
@@ -28,7 +28,7 @@ properties:
   name: Tenant Deprovisioning / Decommissioning
 ---
 
-At the start of an organization’s cloud journey, cloud foundation teams focus on the challenge of [Tenant Provisioning](./tenant-provisioning.md), giving little afterthought to “day-2” challenges. After all, supporting cloud adoption is the key imperative at this stage. As most cloud foundation teams have to find out the hard way, the initial surge of excitement about bringing more internal customers into the cloud soon turns into an operational chore. Some of your cloud customers will inevitably abandon their projects. When they forget to decommission all cloud infrastructure, the organization ends up with zombie workloads.
+At the start of an organization’s cloud journey, cloud foundation teams focus on the challenge of [Tenant Provisioning](./tenant-provisioning.md), giving little afterthought to “day-2” challenges. After all, supporting cloud adoption is the key imperative at this stage. As most cloud foundation teams have to find out the hard way, the initial surge of excitement about bringing more internal customers into the cloud soon turns into an operational chore. Some of your application teams will inevitably abandon their projects. When they forget to decommission all cloud infrastructure, the organization ends up with zombie workloads.
 
 > **💡** Establishing a clean tenant decommission process is paramount for avoiding problems like abandoned “zombie workloads” that pose a security risk and incur uncontrolled cloud spend. 
 

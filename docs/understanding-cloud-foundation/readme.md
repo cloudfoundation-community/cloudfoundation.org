@@ -7,17 +7,17 @@ category: Understanding Cloud Foundation
 order: 0
 ---
 
-A Cloud Foundation is an organization’s strategic approach to mastering its cloud transformation. This approach has two major aspects: An organizational and a technological one. Following the Cloud Foundation approach means putting development teams at the center and providing them with a single point of access for the management of their cloud infrastructure.
+A Cloud Foundation is an organization’s strategic approach to mastering its cloud transformation. This approach has two major aspects: An organizational and a technological one. Following the Cloud Foundation approach means putting application teams at the center and providing them with a single point of access for the management of their cloud infrastructure.
 
 > **💡** **IT the cloud-native way: The Cloud Foundation as a central piece of a cloud strategy.**
-> An organization’s Cloud Foundation offers cloud as a commodity for the software development teams across the organization.
+> An organization’s Cloud Foundation offers cloud as a commodity for the software application teams across the organization.
 > Providing a Cloud Foundation is an organizational and technological approach to managing the cloud. Its goal is to enable teams to build in the cloud and accelerate an organization’s software delivery. 
 
-A Cloud Foundation is the interface for development teams to everything they need to focus on shipping software in the cloud.
+A Cloud Foundation is the interface for application teams to everything they need to focus on shipping and running software in the cloud.
 
 #### The Cloud Foundation Team
 
-The organizational part of a Cloud Foundation is a central cross-functional cloud team. It is effectively the team that pioneers and paves the way that is used by DevOps teams to safely travel to and navigate the cloud. The Cloud Foundation Team defines guardrails but the DevOps teams can keep up agility within these limits. 
+The organizational part of a Cloud Foundation is a central cross-functional cloud team. It is effectively the team that pioneers and paves the way that is used by application teams to safely travel to and navigate the cloud. The Cloud Foundation Team defines guardrails but the application teams can keep up agility within these limits. 
 
 The most important roles within a Cloud Foundation Team are: 
 
@@ -73,7 +73,7 @@ There are now software developers in almost every specialist department. To meet
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Explore a Team's Journey</CtaHeader>
-  <CtaText>Explore a development team's journey to the cloud powered by a capable cloud foundation in our in-depth example.</CtaText>
+  <CtaText>Explore an application team's journey to the cloud powered by a capable cloud foundation in our in-depth example.</CtaText>
   <CtaButton class="btn-primary" url="https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/why-build-a-cloud-foundation.html">Explore the Journey</CtaButton>
 </CallToAction>
 
@@ -85,7 +85,7 @@ What the cloud enables is fundamentally changing the tasks of the IT department.
 
 Most companies today manage their IT as a portfolio of "IT Services". IT Services provide distinctive functionality to customers. An "IAM Group" service may allow a internal customer to create and manage a group in the business's central directory. The owner of the "IAM Group" IT service can define how customers procure, manage, and get charged for the service.
 
-Developing and running applications in this scenario puts a lot of overhead responsibilities on the shoulders of DevOps teams. And it grows with each cloud platform they add.
+Developing and running applications in this scenario puts a lot of overhead responsibilities on the shoulders of application teams. And it grows with each cloud platform they add.
 
 Optimizing in cloud silos can make each silo run its cloud platform perfectly, but it won't remove inefficiencies in the overall cloud transformation effort.
 
@@ -114,7 +114,7 @@ In a Cloud Foundation team boundaries and best practices can be shared better an
 
 #### Separation of Administration and Software Delivery
 
-The Cloud Foundation approach frees DevOps teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables DevOps teams to provision and manage cloud services from a single organizational capability and leverage a consistent control plane offering API-driven self-service, IAM, and billing.
+The Cloud Foundation approach frees application teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables application teams to provision and manage cloud services from a single organizational capability and leverage a consistent control plane offering API-driven self-service, IAM, and billing.
 
 #### The Cloud Foundation as the Holistic Journey to the Cloud
 
@@ -124,7 +124,7 @@ Of course, building a cloud foundation is a challenging task. It can involve int
 
 ### About the Cloud Foundation Maturity Model
 
-The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey. It captures the capabilities that organizations need to build in order to succeed at empowering DevOps teams with access to cloud infrastructure and services while staying in control.
+The Cloud Foundation Maturity Model is an abstraction of recurring themes in hundreds and hundreds of conversations with organizations that are on different stages of their Enterprise Cloud Journey. It captures the capabilities that organizations need to build in order to succeed at empowering application teams with access to cloud infrastructure and services while staying in control.
 
 The Cloud Foundation Maturity Model is **implementation agnostic**. While meshcloud initially created the model and offers a Cloud Foundation Platform, the model is concerned with “what capabilities are offered” and not “how are they implemented”.
 

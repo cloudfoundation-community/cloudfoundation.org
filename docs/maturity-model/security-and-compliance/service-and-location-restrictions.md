@@ -39,7 +39,7 @@ Building a cloud Landing Zone is a proven pattern to establish the guardrails th
 
 There are two fundamental approaches to establishing these policies: **whitelisting** and **blacklisting.** Whitelisting starts from the assumption that all types of resources are forbidden unless explicitly allowed in a whitelist. Blacklisting starts from the opposite assumption that all types of resources are allowed unless explicitly forbidden on a blacklist. Both approaches require a certain amount of maintenance as the demands of internal customers change and cloud providers evolve their service offerings.
 
-> **💡** In contrast to resource whitelisting, the blacklisting approach favors agility by empowering internal cloud customers to use cloud services within their own responsibility. For many organizations, this is the better default when a primary motivation for cloud adoption is to increase IT agility. The Cloud Foundation team establishes guardrails by blacklisting known incompliant services.
+> **💡** In contrast to resource whitelisting, the blacklisting approach favors agility by empowering application teams to use cloud services within their own responsibility. For many organizations, this is the better default when a primary motivation for cloud adoption is to increase IT agility. The Cloud Foundation team establishes guardrails by blacklisting known incompliant services.
 
 Cloud platforms offer different types of mechanisms to implement these policies. The most common mechanisms are
 
@@ -70,11 +70,11 @@ Start out with the most basic policies before going more fine granular. A cloud 
 
 > **💡** In contrast to the general advice to favor blacklisting, location-based restrictions often make more sense to implement as a whitelist.
 
-**Restrict access to typical “shared services”**. Some cloud services like those required to implement [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) (e.g. AWS Transit Gateway, Azure ExpressRoute) should not be available to your internal cloud customers. Put those on a blacklist as they should be provided and controlled centrally by the cloud foundation team.
+**Restrict access to typical “shared services”**. Some cloud services like those required to implement [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) (e.g. AWS Transit Gateway, Azure ExpressRoute) should not be available to your application teams. Put those on a blacklist as they should be provided and controlled centrally by the cloud foundation team.
 
 ### Define Your Shared Responsibility Model
 
-The [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers internal cloud customers with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from internal cloud customers’ shoulders, you will have to design and evaluate guardrails more consciously. 
+The [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) is the most important asset for establishing your cloud foundation’s philosophy. If you’re taking a “hands-off” approach that empowers application teams with a lot of freedom in exchange for a larger chunk of “residual responsibility”, you will have to spend less time evaluating all possible cloud services for blacklisting. On the other hand, if your cloud foundation aims to take a lot of responsibility from application teams’ shoulders, you will have to design and evaluate guardrails more consciously. 
 
 ### Involve Legal and Compliance Stakeholders
 

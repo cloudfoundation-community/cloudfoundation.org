@@ -36,7 +36,7 @@ Cloud Foundation teams want to enable fast self-service cloud tenant provisionin
 > **✏️** **Example Scenario: Landing Zone per Stage**
 > Many organizations have a need to differentiate landing zones by staging. While a `PROD` system needs to implement all security controls to be connected to the public world - `DEV` systems should usually never be connected to the internet. 
 > 
-> Now the Question: How do I ensure that the DevOps Teams uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone?
+> Now the Question: How do I ensure that the application team uses a DEV landing zone for their DEV cloud tenant and not accidentally (or intentionally) the PROD landing zone?
 > 
 > See **How to manage access to landing zones**
 
@@ -62,7 +62,7 @@ Usually, the restriction and controls on cloud tenants and the self-service prov
 
 ## How to Manage Access to Landing Zones
 
-The metadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to DevOps teams.
+The metadata allows Cloud Foundation teams to control the access to landing zones. It also can be used to generate reporting and automating access checks. This will enable the Cloud Foundation team to have full control of the cloud governance while provisioning cloud tenants fast to application teams.
 
 > **✏️** **Example Scenario**
 > Restricting access based on risk and networking requirements

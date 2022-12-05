@@ -4,7 +4,7 @@ url: >-
   https://www.notion.so/Managed-DevOps-Toolchain-71143f292fe9452b8398fc40f270a2b6
 title: Managed DevOps Toolchain
 description: >-
-  Application teams can use a DevOps tools that are integrated with the cloud
+  Application teams can use DevOps tools that are integrated with the cloud
   tenants used by the team. Any required service account or automation user
   credentials are automatically maintained and rotated.
 category: 🛠 Service Ecosystem
@@ -23,7 +23,7 @@ properties:
   name: Managed DevOps Toolchain
 ---
 
-Once cloud foundation customers have successfully provisioned a cloud tenant for their project (see [Tenant Provisioning](../tenant-management/tenant-provisioning.md)), the next challenge they face is how to deploy their workload. Embracing cloud native paradigms, most teams will want to leverage modern DevOps tools like a CI/CD pipeline with infrastructure as code deployments. Setting up these deployment pipelines quickly and securely can be a challenging and time consuming task. Offering popular DevOps tools as a “managed service” to your teams can accelerate cloud onboarding and improve your organization’s security posture. 
+Once cloud foundation customers have successfully provisioned a cloud tenant for their project (see [Tenant Provisioning](../tenant-management/tenant-provisioning.md)), the next challenge they face is how to deploy their workload. Embracing cloud native paradigms, most teams will want to leverage modern DevOps tools like a CI/CD pipeline with infrastructure as code deployments. Setting up these deployment pipelines quickly and securely can be a challenging and time consuming task. Offering popular DevOps tools as a “managed service” to your application teams can accelerate cloud onboarding and improve your organization’s security posture. 
 
 ## What Is a Managed DevOps Toolchain?
 
@@ -71,7 +71,7 @@ While the CI/CD platform provides a space for executing the DevOps toolchain, se
 
 ### Observability
 
-**“You build it - you run it.”** DevOps teams are not only reponsible for the deployment of their applications, but also operating them in production. This is where observability solutions come in that help teams get insight into system and application performance. There is a wide variety of different tools that teams may want to leverage here, and product owners responsible for the DevOps toolchain should consider offering integration with tools that are widely used in the organisation. Examples can include
+**“You build it - you run it.”** Application teams are not only responsible for the deployment of their applications, but also operating them in production. This is where observability solutions come in that help teams get insight into system and application performance. There is a wide variety of different tools that teams may want to leverage here, and product owners responsible for the DevOps toolchain should consider offering integration with tools that are widely used in the organisation. Examples can include
 
 - DataDog
 
@@ -83,7 +83,7 @@ While the CI/CD platform provides a space for executing the DevOps toolchain, se
 
 ## Why Use a Managed DevOps Toolchain?
 
-Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. A managed CI/CD platform allows DevOps teams to focus on core activities (software development and operations) instead of infrastructure.
+Organizations seeking to accelerate software development often find that teams spend significant time on the setup and maintenance of developer toolchains and infrastructure. Apart from selecting the desired tooling from a myriad of options, operating and securing CI/CD infrastructure requires specialized skills that may not be available on every team. A managed CI/CD platform allows application teams to focus on core activities (software development and operations) instead of infrastructure.
 
 ## Best Practices for a Managed DevOps Toolchain
 
@@ -104,7 +104,7 @@ The managed service should provide a way to manage permissions for the source co
 
 ### Manage Service Credentials
 
-Continuous delivery implies that the CI/CD platform also has the ability to execute deployments against cloud tenants owned by the development teams. Setting up the required service accounts and securing them is a challenge. If not handled correctly these service accounts introduce significant security risks as their compromise typically leads to full compromise of the deployed service. 
+Continuous delivery implies that the CI/CD platform also has the ability to execute deployments against cloud tenants owned by the application teams. Setting up the required service accounts and securing them is a challenge. If not handled correctly these service accounts introduce significant security risks as their compromise typically leads to full compromise of the deployed service. 
 
 > **💡** Key rotation is a critical capability for CI/CD pipeline deployment secrets, as there is a high risk that build and deployment scripts accidentally expose service credentials in build logs or during remote debugging of builds. We thus recommend rolling service credentials used for deployment very frequently. 
 

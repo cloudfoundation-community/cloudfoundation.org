@@ -57,7 +57,7 @@ Cloud foundation teams should restrict the ability to create tenants in cloud pl
 
 ### Integrate with Monthly Cost Management Process
 
-A monthly cloud cost chargeback process offers a great opportunity for reconciling the tenant inventory and tracking down any unaccounted tenants. Unregistered tenants become obvious when comparing cloud provider billing data with the actual amounts charged back to internal cloud customers.
+A monthly cloud cost chargeback process offers a great opportunity for reconciling the tenant inventory and tracking down any unaccounted tenants. Unregistered tenants become obvious when comparing cloud provider billing data with the actual amounts charged back to application teams.
 
 ### Integrate with Incident Management Process
 

@@ -46,11 +46,11 @@ The approach to Service Account Management needs to be documented in [Identity a
 
 ### Self-Service Is King
 
-Time-to-cloud does not stop with a created tenant. Make it easy for DevOps teams to create scoped Service Accounts, preferably self-service (See [Modular Landing Zones](../tenant-management/modular-landing-zones.md) ).
+Time-to-cloud does not stop with a created tenant. Make it easy for application teams to create scoped Service Accounts, preferably self-service (See [Modular Landing Zones](../tenant-management/modular-landing-zones.md) ).
 
 ### Decide if You Need to Document Permissions
 
-Documentation of access rights is a common requirement for organizations in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees DevOps teams from the burden of figuring out where to go after the account is created.
+Documentation of access rights is a common requirement for organizations in the finance or healthcare industries. If your organization requires access to be documented in an external system, it is worth automating the documentation system. This frees application teams from the burden of figuring out where to go after the account is created.
 
 ### Clarify Who Is Responsible
 

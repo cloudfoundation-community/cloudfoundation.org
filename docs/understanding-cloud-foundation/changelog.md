@@ -8,7 +8,9 @@ order: 40
 
 ## 2022-12
 
-- Added a new building block for a [Data Science Landing Zone](../maturity-model/tenant-management/data-science-landing-zone.md) describing a landing zone for use by data scientists to develop AI or ML workloads
+- We aligned terminology in the model. We will from now on consistently refer to “application teams” when describing the consumers of a landing zone. From our experience this term more accurately reflects the different kind of teams that can consume a landing zone like development teams running their own workloads (DevOps Teams, Developer Teams) or teams running third party vendor software. The term is also more specific than “internal cloud customer” used before.
+
+- Added a new building block for a [Data Science Landing Zone](../maturity-model/tenant-management/data-science-landing-zone.md) describing a landing zone for use by data scientists to develop AI or ML workloads.
 
 - Added a [Virtual Machine Service](../maturity-model/service-ecosystem/virtual-machine-service.md) which can be an essential component of a [Lift & Shift Landing Zone](../maturity-model/tenant-management/lift-and-shift-landing-zone.md) but is also useful for other Landing Zones.
 

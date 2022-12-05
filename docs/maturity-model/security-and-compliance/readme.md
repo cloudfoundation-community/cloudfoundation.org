@@ -13,9 +13,9 @@ properties:
 
 Ensuring security and compliance of IT systems is among the biggest concerns of organizations adopting a multi-cloud strategy. Leveraging cloud service provides with public cloud platforms is a form of outsourcing that requires oversight by a retained organization - and the cloud foundation team is best positioned to fulfill this need. This includes ensuring that workloads running on the cloud platform are managed and secured in accordance with the organization’s internal standards and policies.
 
-However, Cloud Foundation teams cannot absorb *all* responsibilities of building and running secure systems. After all they cannot possibly forsee all the use cases and applications that internal cloud customers will built atop the cloud’s infrastructure. It’s therefore inevitable that the cloud foundation team has to provide a clear [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) that defines its responsibilities between the cloud service provider and the organization’s internal cloud customers. 
+However, Cloud Foundation teams cannot absorb *all* responsibilities of building and running secure systems. After all they cannot possibly forsee all the use cases and applications that application teams will built atop the cloud’s infrastructure. It’s therefore inevitable that the cloud foundation team has to provide a clear [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md) that defines its responsibilities between the cloud service provider and the organization’s application teams. 
 
-> **💡** It’s helpful to apply the same considerations to private cloud platforms as well and not treat them as “safe by default”. They require a similar split in responsibilities between platform teams and internal cloud customers.
+> **💡** It’s helpful to apply the same considerations to private cloud platforms as well and not treat them as “safe by default”. They require a similar split in responsibilities between platform teams and application teams.
 
 ## Key Activities for Multi-Cloud Security & Compliance
 
@@ -41,7 +41,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔐 IAM](../iam/readme.md) 
 
-- The scope of permissions granted to internal cloud customers as part of an [Resource Authorization Management](../iam/resource-authorization-management.md) should reflect the responsibility split defined in the [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md)  
+- The scope of permissions granted to application teams as part of an [Resource Authorization Management](../iam/resource-authorization-management.md) should reflect the responsibility split defined in the [Shared Responsibility Model Alignment](./shared-responsibility-model-alignment.md)  
 
 [💵 Cost Management](../cost-management/readme.md) 
 
@@ -66,4 +66,4 @@ Especially when considering a multi-cloud scenario, cloud foundation teams need 
 
 Cloud Foundation teams need to cover the spectrum of knowledge about the organization’s security & compliance guidelines all the way to the technical implementation capabilities in different cloud platforms. Inter-disciplinary teams comprising information security specialists, enterprise architects and platform specialists are best positioned to define and automate security baselines that are compatible with both, compliance requirements and real-world- application requirements.
 
-Cloud Foundation teams should pay special attention to strategically leveraging automation opportunities. Very often this allows automating security controls with technical measures, instead of requiring internal cloud customers to implement individual solutions based on organizational measures.
+Cloud Foundation teams should pay special attention to strategically leveraging automation opportunities. Very often this allows automating security controls with technical measures, instead of requiring application teams to implement individual solutions based on organizational measures.
