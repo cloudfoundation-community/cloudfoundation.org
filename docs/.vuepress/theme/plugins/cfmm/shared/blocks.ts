@@ -2570,7 +2570,10 @@ export const index = [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "3892bc95-4464-417c-aab2-247da7a3015a"
         ],
-        "recommended": [],
+        "recommended": [
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [
           "ccba2e9a-1bc0-4b53-8d5e-4773680d9e14",

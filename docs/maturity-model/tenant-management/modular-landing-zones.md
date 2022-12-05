@@ -15,7 +15,9 @@ properties:
   depends-on:
     - deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
     - 3892bc95-4464-417c-aab2-247da7a3015a
-  recommended: []
+  recommended:
+    - d1904912-b420-4a10-a62c-aa578fb847ff
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
   scope: ☁️ Platform
   tool-implementations:
     - ccba2e9a-1bc0-4b53-8d5e-4773680d9e14
@@ -23,21 +25,21 @@ properties:
   name: Modular Landing Zones
 ---
 
-A Landing Zone describes the desired state of a cloud tenant. Landing Zones are applied to cloud tenants before DevOps teams access tenants for the first time and are re-applied regularly to avoid a configuration drift.
+A Landing Zone prescribes the configuration of cloud tenants used by application teams. To enforce a mandatory baseline configuration, cloud foundation teams need to ensure they configure tenants during [Tenant Provisioning](./tenant-provisioning.md) and before handing them over to application teams. 
 
-Modular Landing Zones start with a mandatory security baseline like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md). On top of this baseline, they offer optional modules that enable application teams to tailor their cloud environment to their needs as shown in the figure below.
+Modular Landing Zones start with a mandatory security baseline like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md) and [Resource Authorization Management](../iam/resource-authorization-management.md). On top of this baseline, they offer optional modules that enable application teams to tailor their cloud environment to their needs as shown in the figure below.
 
 ![image-a825efcf-03c0-4696-abd2-9fb31febb7c8](./a825efcf-03c0-4696-abd2-9fb31febb7c8.png)
 
 ## Modular Landing Zones Enables Scaling
 
-Early stage cloud foundations often start with a “one-size-fits-all” approach to Landing Zones which we call “monolithic landing zones”.
+Early stage cloud foundations often start with a “one size fits all” approach to Landing Zones which we call “monolithic landing zones”.
 
 > **⛈️** **Monolithic landing zones** include mandatory resources like virtual networks managed with the same life-cycle as the underlying cloud tenant. While this makes them simpler to build initially, they offer little room to grow with the needs of your application teams. 
 
 For example the landing zone may include a prescriptive network configuration for enabling [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) as well as mandatory audit setting up [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md). When the Cloud Foundation team encounters a new concern, like enabling application teams to use a [Managed DevOps Toolchain](../service-ecosystem/managed-devops-toolchain.md), they have to add the new service to the existing baseline. 
 
-Already a small number of optional modules can lead to a large number of combinations of those modules. Modular Landing Zones allow tailoring Landing Zones to the needs of every DevOps team while keeping redundancy low and complexity manageable.
+Already a small number of optional modules can lead to a large number of combinations of those modules. Modular Landing Zones allow tailoring Landing Zones to the needs of every application  team while keeping redundancy low and complexity manageable.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -54,7 +56,7 @@ If you already built a monolithic landing zones you do not have to start from sc
 
 ### Use a Cloud Foundation Platform
 
-Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](../security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md)). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for DevOps teams (see [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying a baseline of Landing Zones to tenants. This makes Cloud Foundation Platform the best choice for managing the baseline of Landing Zones.
+Cloud Foundation teams need control over who gets access to what Landing Zone (see [Control access to cloud platforms and Landing Zones](../security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md)). At the same time, a low time-to-cloud is only sustainable via self-service onboarding for application teams (see [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) ). Therefore a highly integrated solution is necessary for applying a baseline of Landing Zones to application teams while also offering a [Foundation Service Platform](../service-ecosystem/foundation-service-platform.md) for the optional landing zone modules. A Cloud Foundation Platform that integrates both aspects helps cloud foundation team manage all the required plumbing for enabling modular landing zones.
 
 ### Use Infrastructure as Code Tooling
 
@@ -66,4 +68,4 @@ GitOps is a proven pattern for managing optional Landing Zones modules. Having e
 
 ### Find the Right Balance between Control and Freedom
 
-Do DevOps teams get IAM management rights in their tenant? An “open” approach to tenant permissions allows DevOps teams to iterate faster. A “closed” approach minimizes risks stemming from misconfigured permissions.
+Do application teams get IAM management rights in their tenant? An “open” approach to tenant permissions allows application teams to iterate faster. A “closed” approach minimizes risks stemming from misconfigured permissions.
