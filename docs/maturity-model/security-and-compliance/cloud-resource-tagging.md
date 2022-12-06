@@ -22,7 +22,7 @@ properties:
   name: Cloud Resource Tagging
 ---
 
-A tag is a label assigned to a cloud resource to apply custom metadata. Almost anything in a cloud [Resource Hierarchy](../tenant-management/resource-hierarchy.md) is taggable - from the cloud tenant on the top level down to single resources like virtual machines and databases. 
+A tag is a label assigned to a cloud resource to apply custom metadata. Almost anything in a cloud [Resource Hierarchy](../tenant-management/resource-hierarchy.md) is taggable - from the cloud tenant on the top level down to single resources like virtual machines and databases.
 
 > **💡** **Tag early, tag often** - at the highest possible layer in the resource hierarchy. Review the building block [Cloud Tenant Tagging](./cloud-tenant-tagging.md) for an introduction to the concept of tagging and general considerations specific to leveraging tagging to build a solid cloud foundation.
 
@@ -43,7 +43,7 @@ In addition to the concerns and best practices about cloud tagging already laid 
 
 ### Hold Customers Accountable for Resource Tagging 
 
-It’s difficult for the cloud foundation team to anticipate what kind of cloud resources internal customers want to deploy and how they will deploy them. The responsibility for tagging them correctly must consequently reside with internal cloud customers. Cloud Foundation teams should thus set clear expectations, for example by defining and communicating a tag catalog or cloud tagging policy.
+It’s difficult for the cloud foundation team to anticipate what kind of cloud resources internal customers want to deploy and how they will deploy them. The responsibility for tagging them correctly must consequently reside with application teams. Cloud Foundation teams should thus set clear expectations, for example by defining and communicating a tag catalog or cloud tagging policy.
 
 Automated enforcement of these policies is partially possible. For example, if your cloud foundation team wants to ensure that all cloud resources storing personally identifiable information (PII) are tagged accordingly, you can enforce a policy on common data storage resources such as Azure Storage Account or S3 Buckets to only allow creation of those resources when they contain a `data-classification:pii` or `data-classification:other` tag. Cloud Foundation teams can also audit the correct use of tags using [Resource Configuration Scanning](./resource-configuration-scanning.md) tools.
 
@@ -51,7 +51,7 @@ Automated enforcement of these policies is partially possible. For example, if y
 
 In contrast to a lot of published advice around the use of cloud resource tagging, the cloud foundation maturity model recommends avoiding resource tagging for chargeback.
 
-> **⚠️** **Cloud chargeback based on resource tagging is an anti-pattern** that’s often used to cover up a lack of proper tenant isolation and unclear responsibilities. Cloud Foundation teams should ensure  [Tenant Provisioning](../tenant-management/tenant-provisioning.md) is not a bottleneck for internal cloud customers and implement [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) on the cloud tenant level.
+> **⚠️** **Cloud chargeback based on resource tagging is an anti-pattern** that’s often used to cover up a lack of proper tenant isolation and unclear responsibilities. Cloud Foundation teams should ensure  [Tenant Provisioning](../tenant-management/tenant-provisioning.md) is not a bottleneck for application teams and implement [Chargeback via consumption cost allocation](../cost-management/chargeback-via-consumption-cost-allocation.md) on the cloud tenant level.
 
 As with every rule, there are also valid exceptions for leveraging cloud resource tagging to process chargeback.
 

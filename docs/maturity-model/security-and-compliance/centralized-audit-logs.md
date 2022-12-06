@@ -35,14 +35,14 @@ Audit Logs are records of what actions were performed by whom. A centralized aud
 
 The audit logs we need to store here cover interactions with the cloud API. A common example would be answering the question “who deployed and configured this specific Cloud Function?”. This is important to balance the freedom given to teams: “We let you deploy your own workload, but we will be looking over your shoulders”.
 
-Centralized audit logs make an analysis of logs easier for auditors. Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements. 
+Centralized audit logs make an analysis of logs easier for auditors. Standardizing and providing a centralized audit log as part of Landing Zones frees application teams from the burden of finding out how to comply with auditor requirements. 
 
 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Make your Cloud Security a Priority</CtaHeader>
-  <CtaText>Standardizing and providing a centralized audit log as part of Landing Zones frees DevOps teams from the burden of finding out how to comply with auditor requirements.</CtaText>
+  <CtaText>Standardizing and providing a centralized audit log as part of Landing Zones frees application teams from the burden of finding out how to comply with auditor requirements.</CtaText>
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/2021/05/19/multi-cloud-security-and-compliance/">Learn more</CtaButton>
 </CallToAction>
 
@@ -54,8 +54,8 @@ Audit logs enable incident analysis right at the start. You can still build SIEM
 
 ### Carefully Guard Access to Centralized Audit Logs
 
-DevOps teams are responsible for keeping secrets from leaking into logs. Even with rolling credentials, there is a chance that centralized audit logs contain sensible information. Therefore access should be restricted carefully to minimize risk.
+Application teams are responsible for keeping secrets from leaking into logs. Even with rolling credentials, there is a chance that centralized audit logs contain sensible information. Therefore access should be restricted carefully to minimize risk.
 
 ### Create a Concept That Outlines Your Centralized Audit Log Strategy
 
-DevOps teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies. 
+Application teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies. 

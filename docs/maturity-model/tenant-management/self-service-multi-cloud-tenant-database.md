@@ -26,17 +26,17 @@ Organizations embarking on their cloud journey often start implementing a first 
 
 The lack of a central cloud tenant database makes it difficult to establish a consistent level of governance across multiple cloud providers and platform technologies. There is also a lot of redundant effort for data integration with each platform’s cloud tenant database, especially when considering capabilities like [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md) or [Multi-Cloud Tagging Policy](../security-and-compliance/multi-cloud-tagging-policy.md).
 
-### Empowering the Foundation Team and Internal Cloud Customers with Self-Service
+### Empowering Application Teams with Self-Service
 
-Cloud foundation teams supporting multi-cloud strategies typically also start experiencing growing pains serving a growing number of internal cloud customers. As you onboard more and more customers, maintaining up to date metadata about each cloud tenant (see [Cloud Tenant Database](./cloud-tenant-database.md) for more details) becomes a daunting task. For example, one key piece of information you want to store in a cloud tenant database is the security contact responsible for the tenant. This is the technical person that you will contact about any incidents or security issues detected for that cloud tenant. It’s critical that this contact information is always up to date so that your organization is capable of reacting quickly to security incidents (see [Incident Management Process](../security-and-compliance/incident-management-process.md)).
+Cloud foundation teams supporting multi-cloud strategies typically also start experiencing growing pains serving a growing number of application teams. As you onboard more and more teams, maintaining up to date metadata about each cloud tenant (see [Cloud Tenant Database](./cloud-tenant-database.md) for more details) becomes a daunting task. For example, one key piece of information you want to store in a cloud tenant database is the security contact responsible for the tenant. This is the technical person that you will contact about any incidents or security issues detected for that cloud tenant. It’s critical that this contact information is always up to date so that your organization is capable of reacting quickly to security incidents (see [Incident Management Process](../security-and-compliance/incident-management-process.md)).
 
-> **💡** Self-service enables the cloud foundation team to shift the responsibility for maintaining up to date tenant metadata to cloud customers.
+> **💡** Self-service enables the cloud foundation team to shift the responsibility for maintaining up to date tenant metadata to application teams.
 
-Unfortunately, your cloud customers can decide at any point to change the responsibilities within their team. Chances are, they won’t inform the cloud foundation team about this change. Even if they do, it’s a manual step for the cloud foundation team to update the information in the tenant database. All of this back-and-forth to maintain up to date metadata is not very efficient for internal cloud customers either.
+Unfortunately, application teams can decide at any point to change the responsibilities within their team. Chances are, they won’t inform the cloud foundation team about this change. Even if they do, it’s a manual step for the cloud foundation team to update the information in the tenant database. All of this back-and-forth to maintain up to date metadata is not very efficient for application teams either.
 
 ## Best Practices for Building a Self-Service Multi-Cloud Tenant Database
 
-Here’s a set of best practices to consider to implement a multi-cloud tenant database that serves both the needs of the Cloud Foundation Team as well as internal cloud customers
+Here’s a set of best practices to consider to implement a multi-cloud tenant database that serves both the needs of the Cloud Foundation Team as well as application teams.
 
 ### Standardize Tenant Management Processes across Platforms
 
@@ -57,7 +57,7 @@ Managers responsible for multiple IT systems should be able to edit the metadata
 
 ### Notify Stakeholders about Missing Metadata
 
-When your metadata schema evolves, for example by including a new field, this data will be initially missing from the majority of your existing cloud tenants. Your tenant database should thus have a process to contact your cloud customers and ask them to fill out the additional metadata.
+When your metadata schema evolves, for example by including a new field, this data will be initially missing from the majority of your existing cloud tenants. Your tenant database should thus have a process to contact your application teams and ask them to fill out the additional metadata.
 
 ### Provide an Administrative Interface
 

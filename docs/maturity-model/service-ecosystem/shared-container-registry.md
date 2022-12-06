@@ -28,7 +28,7 @@ Cloud Foundation teams should consider offering a shared container registry as p
 
 - You have compliance needs around vulnerability scanning, restricting acceptable 3rd party licenses or image archival
 
-- You have a lot of development teams planning to use containers for application deployment and want to boost productivity by providing a managed services instead of each team rolling their own registry
+- You have a lot of application teams planning to use containers for application deployment and want to boost productivity by providing a managed services instead of each team rolling their own registry
 
 To implement a shared container registry, cloud foundation teams can consider leveraging either cloud-native managed services such as Google Cloud Container Registry or dedicated open source registries like Project Quay.
 

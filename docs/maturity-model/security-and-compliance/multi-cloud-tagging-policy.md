@@ -24,7 +24,7 @@ properties:
   name: Multi-Cloud Tagging Policy
 ---
 
-Cloud Foundation teams who implement [Cloud Tenant Tagging](./cloud-tenant-tagging.md) or [Cloud Resource Tagging](./cloud-resource-tagging.md) often find the need to centrally define and communicate tagging conventions. This is a pre-requisite for shared-responsibility tagging, e.g. cloud foundation teams enforcing tenant tagging but leaving cloud resource tagging to internal cloud customers. 
+Cloud Foundation teams who implement [Cloud Tenant Tagging](./cloud-tenant-tagging.md) or [Cloud Resource Tagging](./cloud-resource-tagging.md) often find the need to centrally define and communicate tagging conventions. This is a pre-requisite for shared-responsibility tagging, e.g. cloud foundation teams enforcing tenant tagging but leaving cloud resource tagging to application teams.
 
 <!--notion-markdown-cms:raw-->
  <CallToAction>
@@ -59,11 +59,11 @@ Tagging can serve many different use cases. It’s thus important that the cloud
 
 > **💡** To resolve unclarity and inconsistencies around tagging, the cloud foundation team needs to have the organizational authority to make a binding decision on these matters. 
 
-One important challenge here is to make stakeholders aware of the consequences that introducing tags has on the cloud customer experience. For example, when every cloud platform wants to introduce a slightly different convention for an environment/stage tag, internal cloud customers will get confused about the differences.
+One important challenge here is to make stakeholders aware of the consequences that introducing tags has on the application teams’ experience. For example, when every cloud platform wants to introduce a slightly different convention for an environment/stage tag, application teams will get confused about the differences.
 
 ### Consider Backwards Compatibility and Update Procedure
 
-As a cloud foundation evolves, cloud foundation teams will discover the need to define additional tags or change the definition of existing tags. Performing these changes should always consider the implications on existing cloud customers and automation processes. Enforcing the tagging policy via a [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) for example enables the cloud foundation team to request additional metadata from existing cloud customers or apply automated data migration to existing metadata. Combined with automation that reconciles cloud tenant and resource tags with this database, cloud foundation teams eliminate configuration drift and gain a lot of agility for evolving their tagging policy. 
+As a cloud foundation evolves, cloud foundation teams will discover the need to define additional tags or change the definition of existing tags. Performing these changes should always consider the implications on existing application teams and automation processes. Enforcing the tagging policy via a [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) for example enables the cloud foundation team to request additional metadata from existing application teams or apply automated data migration to existing metadata. Combined with automation that reconciles cloud tenant and resource tags with this database, cloud foundation teams eliminate configuration drift and gain a lot of agility for evolving their tagging policy. 
 
 ### Treat Tags like Global State
 

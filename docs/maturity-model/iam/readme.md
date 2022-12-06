@@ -33,7 +33,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [🔖 Security & Compliance](../security-and-compliance/readme.md) 
 
-- The scope of permissions granted to internal cloud customers should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md).
+- The scope of permissions granted to application teams should reflect the responsibility split defined in the cloud foundation’s [Shared Responsibility Model Alignment](../security-and-compliance/shared-responsibility-model-alignment.md).
 
 - Permissions are often a key component of [Resource Configuration Scanning](../security-and-compliance/resource-configuration-scanning.md) reports (e.g. to ensure principle of least privilege, preventing public access etc.).
 

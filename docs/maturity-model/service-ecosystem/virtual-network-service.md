@@ -38,7 +38,7 @@ properties:
 
 A virtual network allows resources to communicate with other resources. The other resources may be within the same virtual network, but could also be on-premise or on the internet. All cloud resources need a virtual network, which makes a virtual network service essential.
 
-A virtual network service provides virtual networks to DevOps teams. 
+A virtual network service provides virtual networks to application teams. 
 
 A virtual network service has two inputs:
 
@@ -46,7 +46,7 @@ A virtual network service has two inputs:
 
 - an IP address range, often in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation), which can either be provided by a Network Engineer or automatically by an IP address management tool (IPAM)
 
-A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden away from DevOps teams.
+A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden away from application teams.
 
 Given the security implications, networking services must be provided centrally for most Cloud Zones (see [Cloud Zones](../security-and-compliance/cloud-zones.md) ). The virtual network service forms the basis for the networking offering. 
 
@@ -73,7 +73,7 @@ On-premise used L3 connectivity and often no authN/Z on the application layer. T
 
 ### Shift Your View on Networking
 
-On-premise networks are mostly flat, whereas in the cloud we can do micro-segmentation and networks become very hierarchical with DevOps teams having a lot of autonomy over their subnets
+On-premise networks are mostly flat, whereas in the cloud we can do micro-segmentation and networks become very hierarchical with application teams having a lot of autonomy over their subnets
 
 ### Provide It as a Landing Zone Module
 

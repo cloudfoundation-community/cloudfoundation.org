@@ -38,7 +38,7 @@ The foundation of a well-defined cloud-native organization is the documentation 
 
 ![image-a225542d-2bd5-434a-a62d-c469db0f453a](./a225542d-2bd5-434a-a62d-c469db0f453a.png)
 
-The minimum participants in a shared responsibility model are the cloud providers and DevOps teams as responsible parties. In practice shared teams - like CCoE (Cloud Center of Excellence), Cloud Foundation, Central IT, or infrastructure teams - are also involved and need to be considered when defining your own organization's shared responsibility model.
+The minimum participants in a shared responsibility model are the cloud providers and application teams as responsible parties. In practice shared teams - like CCoE (Cloud Center of Excellence), Cloud Foundation, Central IT, or infrastructure teams - are also involved and need to be considered when defining your own organization's shared responsibility model.
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>
@@ -57,9 +57,9 @@ Discussing responsibilities on a whiteboard is very different from applying them
 
 ### Divide and Conquer
 
-The demands of application teams considering moving to the cloud are not created equal. From our experience, it’s useful to establish different cloud use cases early on in the cloud journey like Lift & Shift Workloads or Cloud-native workloads and discuss responsibilities for them separately. For each of those use cases the cloud foundation team should consider the typical internal cloud customer
+The demands of application teams considering moving to the cloud are not created equal. From our experience, it’s useful to establish different cloud use cases early on in the cloud journey like Lift & Shift Workloads or Cloud-native workloads and discuss responsibilities for them separately. For each of those use cases the cloud foundation team should consider the typical application team
 
-- What type of application does the internal customer want to run? Is it self-developed or a vendor solution?
+- What type of application does the team want to run? Is it self-developed or a vendor solution?
 
 - What technical skills does the internal customer have? Are they already well-versed in using the cloud or do they need significant hand-holding to get started?
 
@@ -69,9 +69,9 @@ The definition of different use cases simplifies aligning responsibilities by re
 
 ### Document Responsibilities
 
-Internal cloud customers can only fulfill their responsibilities when they’re aware of them and are equipped with the right skills and knowledge. It’s thus paramount that the cloud foundation team thoroughly documents the results of aligning shared responsibilities between its different stakeholders. This documentation should not only capture “what” was decided but also “why”. One example could be
+Application teams can only fulfill their responsibilities when they’re aware of them and are equipped with the right skills and knowledge. It’s thus paramount that the cloud foundation team thoroughly documents the results of aligning shared responsibilities between its different stakeholders. This documentation should not only capture “what” was decided but also “why”. One example could be
 
-> We expect internal cloud customers that want to operate server-based software from external software vendors to use a Lift & Shift cloud migration strategy. We assume these cloud customers have little cloud skill and do not want to deploy or maintain virtual machines on the cloud on their one  Our [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md) will therefore offer a fully managed virtual machine service, comparable to the existing service level for servers provided by central IT on-premise.
+> We expect application teams that want to operate server-based software from external software vendors to use a Lift & Shift cloud migration strategy. We assume these teans  have little cloud proficiency and do not want to deploy or maintain virtual machines on the cloud on their one  Our [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md) will therefore offer a fully managed virtual machine service, comparable to the existing service level for servers provided by central IT on-premise.
 
 ### Consider the Cloud Provider SRM
 

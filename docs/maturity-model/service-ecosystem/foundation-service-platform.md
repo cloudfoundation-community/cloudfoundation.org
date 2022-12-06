@@ -25,7 +25,7 @@ properties:
   name: Foundation Service Platform
 ---
 
-Cloud is a way to deliver IT that maximizes business outcomes. Where classical IT services meant opening tickets or writing emails to 10 different stakeholders, the cloud is about having a single interface for DevOps teams to get everything they need to be productive. A cloud foundation service portal is a crucial part of getting away from a classical IT service operating model. 
+Cloud is a way to deliver IT that maximizes business outcomes. Where classical IT services meant opening tickets or writing emails to 10 different stakeholders, the cloud is about having a single interface for application teams to get everything they need to be productive. A cloud foundation service portal is a crucial part of getting away from a classical IT service operating model. 
 
 > **🌤️** Most cloud foundation teams implementing a foundation service platform integrate it with [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) into a single solution.
 
@@ -39,7 +39,7 @@ Making the complete service portfolio offered by the cloud foundation team as ea
 
 ### Integrate Core Infrastructure Services
 
-DevOps Teams moving to the cloud in a “hybrid” setting need internal services like IPAM, SSL certs, internal DNS etc. By offering these services from a central Cloud Foundation service portal, organizations can avoid the need to maintain separate systems of record like CMDBs. Instead, the cloud foundation team can maintain all cloud-related infrastructure inside a single solution, effectively creating an internal cloud control plane. Application teams can manage all their infrastructure from a single plane of glass and don’t need to fragment their resources across cloud-native and legacy ITSM systems.
+Application teams moving to the cloud in a “hybrid” setting need internal services like IPAM, SSL certs, internal DNS etc. By offering these services from a central Cloud Foundation service portal, organizations can avoid the need to maintain separate systems of record like CMDBs. Instead, the cloud foundation team can maintain all cloud-related infrastructure inside a single solution, effectively creating an internal cloud control plane. Application teams can manage all their infrastructure from a single plane of glass and don’t need to fragment their resources across cloud-native and legacy ITSM systems.
 
 ### Enable Modular Landing Zones
 

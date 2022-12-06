@@ -25,17 +25,17 @@ properties:
   name: Cloud Zones
 ---
 
-The cloud is about having a single interface for everything DevOps teams need to be productive. The Cloud Foundation is building up this interface for services in the five pillars of the Cloud Foundation Maturity Model. To maximize productiveness, those services must be available as fast as possible. However, regulations have to be followed, even for the cloud. It should therefore not come as a surprise that some enterprises struggle more than others with reducing the time-to-cloud. For example, DevOps teams in the Finance and Healthcare industry must often meet a long list of regulatory requirements before accessing the cloud. But even in those industries, not all onboarding steps are necessary for all use cases. 
+The cloud is about having a single interface for everything application teams need to be productive. The Cloud Foundation is building up this interface for services in the five pillars of the Cloud Foundation Maturity Model. To maximize productiveness, those services must be available as fast as possible. However, regulations have to be followed, even for the cloud. It should therefore not come as a surprise that some enterprises struggle more than others with reducing the time-to-cloud. For example, application teams in the Finance and Healthcare industry must often meet a long list of regulatory requirements before accessing the cloud. But even in those industries, not all onboarding steps are necessary for all use cases. 
 
 For this reason, Cloud Foundation teams divide their service offerings into Cloud Zones with corresponding cloud onboarding paths. Only after following an onboarding path customers are allowed to consume services of a Cloud Zone. Cloud Zones shorten time-to-cloud for a majority of use cases compared to one-size-fits-all onboarding paths.
 
-> **💡** DevOps teams must follow the Cloud Onboarding Path of a Cloud Zone before consuming services of this Cloud Zone.
+> **💡** Application teams must follow the Cloud Onboarding Path of a Cloud Zone before consuming services of this Cloud Zone.
 
 **Example onboarding paths:** Compare two different teams at the imaginary likvid bank.
 
-- The newly founded DevOps team “Mobile Notification Backend” needs a cloud tenant to run their application in production. The Notification Backend system needs an [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) on layer 7. This access must be registered and approved by the Compliance department. The approval may take up to 5 business days. The application’s tenant will be in the “Connected” Cloud Zone.
+- The newly founded application team “Mobile Notification Backend” needs a cloud tenant to run their application in production. The Notification Backend system needs an [On-Premise Network Connection](../service-ecosystem/on-premise-network-connection.md) on layer 7. This access must be registered and approved by the Compliance department. The approval may take up to 5 business days. The application’s tenant will be in the “Connected” Cloud Zone.
 
-- In contrast, the DevOps team “Robo-Advisor Website Analytics” wanted to explore the Analytics options of GCP in a [Playground / Sandbox Environments](../tenant-management/playground-sandbox-environments.md). It did not need on-prem connectivity. Therefore their cloud onboarding did not include the step for registering on-prem connectivity. No manual sign-off was needed and  [Tenant Provisioning](../tenant-management/tenant-provisioning.md) happened within minutes. The tenant is in the “Island” Cloud Zone.
+- In contrast, the application team “Robo-Advisor Website Analytics” wanted to explore the Analytics options of GCP in a [Playground / Sandbox Environments](../tenant-management/playground-sandbox-environments.md). It did not need on-prem connectivity. Therefore their cloud onboarding did not include the step for registering on-prem connectivity. No manual sign-off was needed and  [Tenant Provisioning](../tenant-management/tenant-provisioning.md) happened within minutes. The tenant is in the “Island” Cloud Zone.
 
 ```mermaid
 graph LR
@@ -109,7 +109,7 @@ graph LR
 
 The “your application stage (dev, prod) is your Cloud Zone” approach might be sufficient for your enterprise.
 
-### Help DevOps Teams Pick the Right Cloud Zone
+### Help Application Teams Pick the Right Cloud Zone
 
 Cloud Foundation teams guide their customers to the right Cloud Zone. Common implementations are a decision tree diagram on a Wiki page or an interactive assessment on the [Guided Cloud Onboarding](./guided-cloud-onboarding.md).
 
