@@ -14,6 +14,10 @@ order: 40
 
 - Added a [Virtual Machine Service](../maturity-model/service-ecosystem/virtual-machine-service.md) which can be an essential component of a [Lift & Shift Landing Zone](../maturity-model/tenant-management/lift-and-shift-landing-zone.md) but is also useful for other Landing Zones.
 
+- We removed the Cloud Zones building block. The central idea behind Cloud Zones was finding commonalities between Use-Cases that allow you to build Landing Zones. To describe this idea we introduced the concept of “use-case requirements” in several building block pages. We found that Cloud Zones was not describing a separate capability cloud foundation teams are building up. We expanded [Shared Responsibility Model Alignment](../maturity-model/security-and-compliance/shared-responsibility-model-alignment.md), [Guided Cloud Onboarding](../maturity-model/security-and-compliance/guided-cloud-onboarding.md) and [Control Access to Landing Zones](../maturity-model/security-and-compliance/control-access-to-landing-zones.md) to reflect what was previously described in the Cloud Zones building block.
+
+- We renamed the building block “Control access to Cloud Platform and Landing Zones” to [Control Access to Landing Zones](../maturity-model/security-and-compliance/control-access-to-landing-zones.md). This reflects that Landing Zones delivery is the central function of a cloud foundation team.
+
 ## 2022-11
 
 - The Cloud Foundation Maturity model now offers more interactive controls to explore the model. Here’s what we added

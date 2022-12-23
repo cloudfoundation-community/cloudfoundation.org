@@ -20,6 +20,7 @@ properties:
     - 3c65a957-cb62-40fe-978e-709e3450f7fe
     - d1904912-b420-4a10-a62c-aa578fb847ff
     - af14b5df-77b4-4def-b761-8fadabd241ca
+    - cf487857-542f-4d74-8fe9-885b7be8ccf3
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on: []
@@ -47,6 +48,8 @@ The minimum participants in a shared responsibility model are the cloud provider
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloudfoundation-stakeholder-map/">Download Template</CtaButton>
 </CallToAction>
 
+
+
 ## Best Practices for Aligning a Shared Responsibility Model
 
 Defining your organization’s shared responsibility model is a challenging task. Not only do you need to involve a lot of different stakeholders, but most organizations also find themselves in the midst of a cultural change from traditional IT processes to embracing a cloud-native mindset. 
@@ -57,7 +60,9 @@ Discussing responsibilities on a whiteboard is very different from applying them
 
 ### Divide and Conquer
 
-The demands of application teams considering moving to the cloud are not created equal. From our experience, it’s useful to establish different cloud use cases early on in the cloud journey like Lift & Shift Workloads or Cloud-native workloads and discuss responsibilities for them separately. For each of those use cases the cloud foundation team should consider the typical application team
+The demands of application teams moving to the cloud are not created equal. However, a cloud foundation team needs to strive for standardization to satisfy demand in a scalable way. 
+
+From our experience, it’s useful to establish different cloud use-cases early on in the cloud journey like lift & shift workloads or cloud-native workloads and discuss responsibilities for them separately. For each of those use cases the cloud foundation team should consider the typical application team
 
 - What type of application does the team want to run? Is it self-developed or a vendor solution?
 

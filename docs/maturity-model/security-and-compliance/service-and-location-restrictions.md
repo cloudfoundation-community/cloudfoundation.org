@@ -45,7 +45,7 @@ Cloud platforms offer different types of mechanisms to implement these policies.
 
 - **Location-based policies** can forbid the deployment of resources in a particular cloud location or region. For example, your organization may want to restrict deployment to certain geographic regions in order to comply with data privacy regulations.
 
-- **Resource- or service type-based policies** can forbid the use of certain types of cloud services. Motivations to enforce these restrictions include services that do not meet required regulatory standards or carry a high risk (e.g. security issues due to misconfiguration, bill-shock) associated with them. They are also useful to enforce a [Cloud Zones](./cloud-zones.md) concept.
+- **Resource- or service type-based policies** can forbid the use of certain types of cloud services. Motivations to enforce these restrictions include services that do not meet required regulatory standards or carry a high risk (e.g. security issues due to misconfiguration, bill-shock) associated with them.v
 
 - **Quota-based policies** are mostly relevant to private cloud platforms. They enable private cloud operators to protect the stability of their platforms and can also substitute missing platform functionality for implementing location- or resource-based policies. An example of this substitution is setting a resource quota to zero, effectively blacklisting customer projects from using it. A motivating use case for this can be a storage pool that’s dedicated to a Database as a Service platform offered as part of a [In-house PaaS Service Integration](../service-ecosystem/in-house-paas-service-integration.md).
 

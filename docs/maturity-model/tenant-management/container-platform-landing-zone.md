@@ -51,3 +51,5 @@ properties:
 
 - Should include [Private Cloud pay-per-use chargeback](../cost-management/private-cloud-pay-per-use-chargeback.md) 
 
+- Consider implementing the Container Platform on top of a [Cloud-native Landing Zone](./cloud-native-landing-zone.md) if you also have it - good litmus test if the cloud-native LZ is really ready to serve cloud-native workloads
+

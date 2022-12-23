@@ -57,7 +57,7 @@ As with every rule, there are also valid exceptions for leveraging cloud resourc
 
 - Service Providers can use resource tagging to implement [Consumption based pay-per-use for internal Services](../cost-management/consumption-based-pay-per-use-for-internal-services.md), e.g. tagging cloud resources used by a service-consumer and charging back the incurred cost
 
-- Cloud Tenants used to host lift&shift workloads as part of [Cloud Zones](./cloud-zones.md) for traditionally “non-cloud” workloads often avoid effort to re-architect application deployments by co-locating resources consumed by different internal customers in the same cloud tenant (e.g. VMs on the same virtual network used by different IT Systems)
+- Cloud Tenants used to host lift&shift workloads as part of Landing Zones for traditionally “non-cloud” workloads often avoid effort to re-architect application deployments by co-locating resources consumed by different internal customers in the same cloud tenant (e.g. VMs on the same virtual network used by different IT Systems)
 
 Leveraging resource tagging for chargeback requires solid automation to detect untagged or incorrectly tagged resources.  
 
