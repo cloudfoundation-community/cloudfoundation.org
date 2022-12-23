@@ -48,7 +48,7 @@ A virtual network service has two inputs:
 
 A virtual network service creates the virtual network in the cloud tenant. If necessary it registers the IP address range in the organization's IP address management tool (IPAM) thus taking the burden away from application teams.
 
-Given the security implications, networking services must be provided centrally for most Cloud Zones (see [Cloud Zones](../security-and-compliance/cloud-zones.md) ). The virtual network service forms the basis for the networking offering. 
+Given the security implications, networking services must be provided centrally for most Landing Zones. The virtual network service forms the basis for the networking offering. 
 
 <!--notion-markdown-cms:raw-->
 <CallToAction>

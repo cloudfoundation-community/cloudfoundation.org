@@ -365,7 +365,9 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "119bfca5-dda6-408c-b35d-c59d0f209fcf"
+          "119bfca5-dda6-408c-b35d-c59d0f209fcf",
+          "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
         ],
         "recommended": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
@@ -898,7 +900,8 @@ export const index = [
           "1afea746-da65-4164-9029-5e0bfa9432b1",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
           "b4678790-ab53-4219-83e7-fbde18383d05",
-          "456f15f2-299e-4a8b-a8c9-cb0580a887d2"
+          "456f15f2-299e-4a8b-a8c9-cb0580a887d2",
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -916,7 +919,7 @@ export const index = [
       "id": "3892bc95-4464-417c-aab2-247da7a3015a",
       "url": "https://www.notion.so/Foundation-Service-Platform-3892bc954464417caab2247da7a3015a",
       "title": "Foundation Service Platform",
-      "description": "Offer cloud foundation services like tenant management and managed cloud infrastructure services from a single self-service platform.",
+      "description": "Offer cloud infrastructure services managed by the cloud foundation team from a self-service platform.",
       "category": "🛠 Service Ecosystem",
       "pageType": "CFMMBlock",
       "properties": {
@@ -1404,9 +1407,7 @@ export const index = [
       "title": "Manage access to Cloud Zones with meshStack",
       "description": "meshStack’s tags and policies are ideal for making Cloud Zones available to exactly the right customers.",
       "properties": {
-        "block": [
-          "dc16dccf-7530-4179-a8e2-b82cc54b990f"
-        ],
+        "block": [],
         "tool": [
           "c5757e31-5c6c-487a-81b2-96ba50dda3af"
         ],
@@ -1572,7 +1573,8 @@ export const index = [
           "b6b24f70-3fba-4f67-a375-2b0d26a16324",
           "3c65a957-cb62-40fe-978e-709e3450f7fe",
           "d1904912-b420-4a10-a62c-aa578fb847ff",
-          "af14b5df-77b4-4def-b761-8fadabd241ca"
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3572,7 +3574,7 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
-          "dc16dccf-7530-4179-a8e2-b82cc54b990f"
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "recommended": [],
         "scope": "🏢 Core",
@@ -3871,37 +3873,6 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/security-and-compliance/cloud-zones.md",
-    "frontmatter": {
-      "id": "dc16dccf-7530-4179-a8e2-b82cc54b990f",
-      "url": "https://www.notion.so/Cloud-Zones-dc16dccf75304179a8e2b82cc54b990f",
-      "title": "Cloud Zones",
-      "description": "Cloud zones abstract common security requirements from Landing Zones. This enables building workload-tailored landing zones more quickly and simplifies compliance.",
-      "category": "🔖 Security & Compliance",
-      "pageType": "CFMMBlock",
-      "properties": {
-        "enables": [
-          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
-        ],
-        "redaction-state": "review-v1",
-        "journey-stage": "⭐️⭐️⭐️⭐️",
-        "depends-on": [
-          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
-        ],
-        "recommended": [
-          "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
-          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
-          "dff7d733-d987-4145-aa1a-e340b5bcff81"
-        ],
-        "scope": "🏢 Core",
-        "tool-implementations": [
-          "507e5776-239f-4a65-a6f5-d4944536e35a"
-        ],
-        "name": "Cloud Zones"
-      }
-    }
-  },
-  {
     "file": "maturity-model/tenant-management/tenant-provisioning.md",
     "frontmatter": {
       "id": "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
@@ -3918,7 +3889,8 @@ export const index = [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf",
           "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
-          "f271478b-3921-494f-ab2c-de97808d3bb7"
+          "f271478b-3921-494f-ab2c-de97808d3bb7",
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -4131,17 +4103,16 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/security-and-compliance/control-access-to-cloud-platforms-and-landing-zones.md",
+    "file": "maturity-model/security-and-compliance/control-access-to-landing-zones.md",
     "frontmatter": {
       "id": "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
-      "url": "https://www.notion.so/Control-access-to-cloud-platforms-and-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2",
-      "title": "Control access to cloud platforms and Landing Zones",
+      "url": "https://www.notion.so/Control-Access-to-Landing-Zones-e649c5acae9d49f7a9f01850bc1710c2",
+      "title": "Control Access to Landing Zones",
       "description": "Implement automated policies to steer application teams to appropriate cloud platforms and landing zones based on metadata about the application team.",
       "category": "🔖 Security & Compliance",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "dc16dccf-7530-4179-a8e2-b82cc54b990f",
           "3c7081e5-c451-40b6-806d-a8d21b130612"
         ],
         "redaction-state": "mvp1",
@@ -4156,7 +4127,7 @@ export const index = [
         "tool-implementations": [
           "d24b4c3a-1f97-4426-8999-f82a97bf1e75"
         ],
-        "name": "Control access to cloud platforms and Landing Zones"
+        "name": "Control Access to Landing Zones"
       }
     }
   },

@@ -4,8 +4,8 @@ url: >-
   https://www.notion.so/Foundation-Service-Platform-3892bc954464417caab2247da7a3015a
 title: Foundation Service Platform
 description: >-
-  Offer cloud foundation services like tenant management and managed cloud
-  infrastructure services from a single self-service platform.
+  Offer cloud infrastructure services managed by the cloud foundation team from
+  a self-service platform.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:

@@ -30,7 +30,7 @@ One way to achieve and demonstrate compliance in your cloud journey is to get yo
 
 ### Start with a Specific Use Case
 
-Even if you are implementing an ISMS compliant Cloud Foundation for a large variety of applications, it makes sense to identify a couple of specific use cases to start with. There is a good chance you will identify a handful of application types that you want to accommodate for in the future. E.g. you can have cloud-native applications in contrast to applications that require on-premise connectivity, representing different [Cloud Zones](./cloud-zones.md) of your Cloud Foundation.
+Even if you are implementing an ISMS compliant Cloud Foundation for a large variety of applications, it makes sense to identify a couple of specific use cases to start with. There is a good chance you will identify a handful of application types that you want to accommodate for in the future. E.g. you can have cloud-native applications in contrast to applications that require on-premise connectivity, representing different Landing Zones of your Cloud Foundation.
 
 ### Provide Standard Security Templates
 

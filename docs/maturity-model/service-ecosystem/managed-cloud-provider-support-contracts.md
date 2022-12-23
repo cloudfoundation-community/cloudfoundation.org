@@ -19,3 +19,10 @@ properties:
   name: Managed Cloud Provider Support Contracts
 ---
 
+Some cloud providers require that Accounts/Projects are explicitly registered into support contracts.
+
+- Azure offers [dedicated Dev/Test Subscription](https://azure.microsoft.com/en-us/pricing/dev-test/) types with discounted rates and no production SLAs/Support. Can also use this for staging landing zones (e.g. dev landing zones), but not for prod
+
+- Manage AWS Support cases via API
+
+- Manage GCP support cases by assigning the right IAM permissions [https://cloud.google.com/support/docs/manage-cases](https://cloud.google.com/support/docs/manage-cases)

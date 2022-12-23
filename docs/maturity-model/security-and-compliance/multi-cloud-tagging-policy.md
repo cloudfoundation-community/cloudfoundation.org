@@ -57,7 +57,7 @@ The most common metadata manage on cloud accounts and resources are listed below
 
 Tagging can serve many different use cases. It’s thus important that the cloud foundation involves all cloud foundation stakeholders in the definition and evolution of the central tagging policy. 
 
-> **💡** To resolve unclarity and inconsistencies around tagging, the cloud foundation team needs to have the organizational authority to make a binding decision on these matters. 
+> **💡** Clarity and consistency are only possible if cloud foundation team have the organizational authority to make a binding decision on these matters. 
 
 One important challenge here is to make stakeholders aware of the consequences that introducing tags has on the application teams’ experience. For example, when every cloud platform wants to introduce a slightly different convention for an environment/stage tag, application teams will get confused about the differences.
 
