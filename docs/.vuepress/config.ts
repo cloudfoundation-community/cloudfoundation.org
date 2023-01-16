@@ -41,6 +41,10 @@ navbar.push(
     link: "/understanding-cloud-foundation/",
   },
   {
+    text: "Maturity Model",
+    link: "/maturity-model/",
+  },
+    {
     text: "Pillars",
     children: [
       ...getChildDirectories("docs/maturity-model").map(
@@ -49,9 +53,9 @@ navbar.push(
     ],
   },
   {
-    text: "Maturity Model",
-    link: "/maturity-model/",
-  },
+    text: "Community",
+    link: "https://join.slack.com/t/cloudfoundation-org/shared_invite/zt-1na218t3p-CK~Ac~u8RZZRFtStVWFJQA",
+  }
 );
 
 // for the maturity model, each _page_ gets its own sidebar entry!
