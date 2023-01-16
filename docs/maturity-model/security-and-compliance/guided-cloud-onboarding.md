@@ -33,7 +33,7 @@ A cloud onboarding can be as simple as signing into [Self-Service Multi-Cloud Te
 
 While you can build a lot to make onboarding even smoother for your customers, we recommend to start simple.
 
-Start a wiki area for your team. Write a guide “How to access the cloud at <company>” and advertise this wiki page with your customer. This has multiple benefits:
+Start a wiki area for your team. Write a guide “How to access the cloud at *company*” and advertise this wiki page with your customer. This has multiple benefits:
 
 1. Application teams are made aware that there is a standard process for cloud onboarding.
 
