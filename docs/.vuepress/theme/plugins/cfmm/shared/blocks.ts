@@ -86,7 +86,9 @@ export const index = [
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
@@ -752,6 +754,7 @@ export const index = [
       "properties": {
         "enables": [
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
+          "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
           "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
         ],
         "redaction-state": "mvp1",
@@ -1691,15 +1694,16 @@ export const index = [
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
           "0dd09c75-2acd-4e87-9721-6b5f563da035",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
           "d1904912-b420-4a10-a62c-aa578fb847ff",
-          "b4678790-ab53-4219-83e7-fbde18383d05"
+          "b4678790-ab53-4219-83e7-fbde18383d05",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
         ],
         "recommended": [
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
           "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
-          "02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6",
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
           "71143f29-2fe9-452b-8398-fc40f270a2b6",
           "1a1cdeb0-de7e-4ea9-a963-e409b9abed54"

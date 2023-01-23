@@ -14,14 +14,15 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
+    - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
     - deb9d28e-e592-4c3c-b7da-020b7ba6bb0d
     - d1904912-b420-4a10-a62c-aa578fb847ff
     - b4678790-ab53-4219-83e7-fbde18383d05
+    - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
   recommended:
     - 4f9ee73a-23a9-4aa3-b956-0df22e6156d0
     - 5f9c0f7d-860a-488b-bbf8-897618e5c76f
-    - 02e4de2c-7e1e-4dd9-aa76-b58a88f04ff6
     - cf487857-542f-4d74-8fe9-885b7be8ccf3
     - 71143f29-2fe9-452b-8398-fc40f270a2b6
     - 1a1cdeb0-de7e-4ea9-a963-e409b9abed54
@@ -31,7 +32,7 @@ properties:
   name: Container Platform Landing Zone
 ---
 
-- Many organizations have in-house application development teams. Unless they established DevOps (proper) and have dedicated resources embedded within every application team, providing a central platform bundling infrastructure operations makes sense (internal developer platform)
+- Many organizations have in-house application development teams. Unless they established DevOps (proper) and have dedicated resources embedded within every application team, providing a central platform bundling infrastructure operations makes a lot of sense and can provide major productivity enhancements (internal developer platform)
 
 - Many application teams target containers and kubernetes specifically as an abstraction layer. Reduced vendor lock-in, reasonable abstraction over cloud infrastructure
 
@@ -40,6 +41,8 @@ properties:
 - Caveat: Kubernetes is not specifically designed for hosting multi-tenant workloads, albeit this is usually fine in an in-house platform context with semi-trusted workloads. Some kubernetes based platforms like OpenShift offer better implementations
 
 - Developer experience essentially “serverless”, i.e. no infrastructure responsibility.
+
+- Make sure to enable kubernetes audit logs and store persistently → [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md). This is easy with managed services, e.g. [https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging](https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging)
 
 - Can “augment” these landing zones with cloud-native tenant access, e.g. for object storage, cloud-native DBs (Dynamo DB etc.) → very powerful
 
