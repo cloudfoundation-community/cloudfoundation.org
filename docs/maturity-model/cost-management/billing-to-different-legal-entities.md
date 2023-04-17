@@ -15,7 +15,8 @@ properties:
     - d2a35b4e-7e9e-4b1c-a097-69d0e8ce02f1
   recommended: []
   scope: ☁️ Platform
-  tool-implementations: []
+  tool-implementations:
+    - 5e282c7c-3ff4-4791-af90-91acea6201fc
   name: Billing to different legal entities
 ---
 
