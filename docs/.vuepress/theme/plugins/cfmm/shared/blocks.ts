@@ -71,7 +71,9 @@ export const index = [
         ],
         "recommended": [],
         "scope": "☁️ Platform",
-        "tool-implementations": [],
+        "tool-implementations": [
+          "5e282c7c-3ff4-4791-af90-91acea6201fc"
+        ],
         "name": "Billing to different legal entities"
       }
     }
@@ -1789,6 +1791,23 @@ export const index = [
         ],
         "link": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/blob/master/fast/stages/03-project-factory/dev/data/defaults.yaml",
         "name": "Cloud Tenant Tagging"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "5e282c7c-3ff4-4791-af90-91acea6201fc",
+      "url": "https://www.notion.so/meshStack-5e282c7c3ff44791af9091acea6201fc",
+      "title": "meshStack",
+      "description": "meshStack allows to bill different legal entities using tags in it’s chargeback export.",
+      "properties": {
+        "block": [
+          "0217c4da-6542-41d6-84c7-12af887e7d15"
+        ],
+        "tool": [],
+        "link": null,
+        "name": "meshStack"
       },
       "pageType": "CFMMTool2Block"
     }
