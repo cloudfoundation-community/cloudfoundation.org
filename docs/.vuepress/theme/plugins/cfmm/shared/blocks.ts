@@ -1805,7 +1805,9 @@ export const index = [
         "block": [
           "0217c4da-6542-41d6-84c7-12af887e7d15"
         ],
-        "tool": [],
+        "tool": [
+          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+        ],
         "link": null,
         "name": "meshStack"
       },
