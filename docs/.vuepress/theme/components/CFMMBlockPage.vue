@@ -89,9 +89,14 @@ function formatLink(path: string) {
 
 function resolveTool(id: string) {
   const page = index.find((x) => x.frontmatter.id === id);
+  const toolId = page.frontmatter.properties.tool[0];
   const tool = index.find(
-    (x) => x.frontmatter.id === page.frontmatter.properties.tool[0]
+    (x) => x.frontmatter.id === toolId
   );
+
+  if (!tool) {
+    throw new Error(`could not find tool ${toolId} referenced by page ${page.frontmatter.url}`);
+  }
 
   return {
     id,
