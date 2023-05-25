@@ -13,7 +13,7 @@ properties:
     - 59fc4d46-739d-4d49-8bd7-d7b4882709ba
     - 012dc29a-5b79-4eeb-8154-9ef0f2ae0f02
   redaction-state: mvp1
-  journey-stage: ⭐️⭐️
+  journey-stage: ⭐️
   depends-on:
     - af14b5df-77b4-4def-b761-8fadabd241ca
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
@@ -60,3 +60,62 @@ Application teams are responsible for keeping secrets from leaking into logs. Ev
 ### Create a Concept That Outlines Your Centralized Audit Log Strategy
 
 Application teams and Auditors want to know how the system works and need to know how to interact with it. Laying it out in a concept that is shared widely reduces dependencies. 
+
+
+
+## How Implement Centralized Audit Logs
+
+#### Azure
+
+1. Create a Log analytics workspace
+
+1. Assign the policy “[**Configure Azure Activity logs to stream to specified Log Analytics workspace**](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F2465583e-4e78-4c15-b6be-a36cbc7c8b0f)**”** which set diagnostic settings for the azure activity log.
+
+#### AWS
+
+To set up central audit logs in AWS, set up [AWS CloudTrail](https://docs.aws.amazon.com/audit-manager/latest/userguide/security-logging-and-monitoring.html) and Amazon [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
+
+Add the following Service Control Policy to prevent CloudTrail from being switched off
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "cloudtrail:StopLogging",
+                "cloudtrail:DeleteTrail"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
+```
+
+Similarly, add the following Service Control Policy for preventing changes to AWS Config
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "config:DeleteConfigRule",
+                "config:DeleteConfigurationRecorder",
+                "config:DeleteDeliveryChannel",
+                "config:StopConfigurationRecorder"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
+```
+
+#### GCP
+
+To set up central audit logs in Google Cloud Platform (GCP), you can utilize [Cloud Audit Logs ](https://cloud.google.com/logging/docs/audit)and [Cloud Monitoring](https://cloud.google.com/monitoring/docs). Cloud audit logs are always enabled and can not be switched off.
+
+However, we recommend to additionally switch on Data Access Logs. See [Google Cloud documentation](https://cloud.google.com/logging/docs/audit/configure-data-access) for how to do that.
+

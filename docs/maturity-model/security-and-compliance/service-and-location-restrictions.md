@@ -83,3 +83,69 @@ One of the cornerstones of the cloud foundation operating model is that legal an
 ### Leverage Infrastructure-as-Code and Resource Hierarchy
 
 The policies and guardrails established by your cloud foundation team will have to evolve. By leveraging a [Resource Hierarchy](../tenant-management/resource-hierarchy.md) you can easily define policies at a central location and have them inherit to a large number of cloud tenants. Infrastructure-as-code also helps maintaining the set of policies and establishing a proper change management for the inevitable evolution of your policy definitions.
+
+
+
+## How to Implement Location Restrictions
+
+### Azure
+
+Assign the following policies to the management group containing your use case tailored landing zones:
+
+- [Allowed locations](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/General/AllowedLocations_Deny.json)
+
+- [Allowed locations for Resource Groups](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/General/ResourceGroupAllowedLocations_Deny.json)
+
+See [Azure policy quickstarts](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-portal) for how to assign policies.
+
+### AWS
+
+Create an IAM policy with the `aws:RequestedRegion` condition key for location restrictions as described [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_deny-requested-region.html).
+
+### GCP
+
+Customize `Google Cloud Platform - Resource Location Restriction` organization policy as described [here](https://cloud.google.com/resource-manager/docs/organization-policy/defining-locations).
+
+
+
+## How to Implement Service Restrictions
+
+The objective is to enforce access restrictions for services that may not align with your organization's roadmap. For instance, let us think about the constraint of selecting different types of virtual machines:
+
+### Azure
+
+Assign the following policy to the management group containing your use case tailored landing zones:
+
+- [Allowed virtual machine size SKUs](https://github.com/Azure/azure-policy/blob/master/built-in-policies/policyDefinitions/Compute/VMSkusAllowed_Deny.json)
+
+### AWS
+
+Create an IAM policy with the following JSON code, add instance types and locations that you want to allow. Attach this policy to all desired IAM Identities.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowLimitedInstanceTypes",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": "arn:aws:ec2:*:*:instance/*",
+            "Condition": {
+                "ForAnyValue:StringNotLike": {
+                    "ec2:InstanceType": [
+                        "*.nano",
+                        "*.small",
+                        "*.micro",
+                        "*.medium"
+                    ]
+                }
+            }
+        }
+    ]
+}
+```
+
+### GCP
+
+Create a JSON policy by putting “compute.vmExternalMachinesRestrictions” in the “constraint” field and the types of virtual machines to be allowed in the “Policy Values” field. Then Assign this policy to an organization, a folder, or a project.
