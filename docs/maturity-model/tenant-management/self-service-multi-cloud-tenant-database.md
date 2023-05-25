@@ -9,7 +9,8 @@ description: >-
 category: 🗂 Tenant Management
 pageType: CFMMBlock
 properties:
-  enables: []
+  enables:
+    - 77942f5f-e395-49c6-8927-e5fa3ef28aef
   redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:

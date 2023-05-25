@@ -14,7 +14,7 @@ properties:
   journey-stage: ⭐️
   depends-on: []
   recommended: []
-  scope: ☁️ Platform
+  scope: 🏢 Core
   tool-implementations: []
   name: Individual Service Provisioning
 ---

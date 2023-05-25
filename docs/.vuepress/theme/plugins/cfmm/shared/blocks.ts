@@ -760,7 +760,7 @@ export const index = [
           "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
         ],
         "redaction-state": "mvp1",
-        "journey-stage": "⭐️⭐️",
+        "journey-stage": "⭐️",
         "depends-on": [
           "af14b5df-77b4-4def-b761-8fadabd241ca",
           "0dd09c75-2acd-4e87-9721-6b5f563da035"
@@ -2240,6 +2240,8 @@ export const index = [
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
+          "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
+          "b875ac41-2b38-4ce4-ab8b-76ddd876d789",
           "119bfca5-dda6-408c-b35d-c59d0f209fcf"
         ],
         "recommended": [],
@@ -2798,7 +2800,9 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
@@ -3104,7 +3108,8 @@ export const index = [
         "enables": [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d",
           "ab10bed1-70d5-47cf-b3cd-4a4448bdb9a9",
-          "64284b14-faab-461c-80bb-5e8efbae4dcc"
+          "64284b14-faab-461c-80bb-5e8efbae4dcc",
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -4445,7 +4450,7 @@ export const index = [
         "journey-stage": "⭐️",
         "depends-on": [],
         "recommended": [],
-        "scope": "☁️ Platform",
+        "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Individual Service Provisioning"
       }
