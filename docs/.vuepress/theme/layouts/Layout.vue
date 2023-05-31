@@ -25,7 +25,7 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
 <script setup lang="ts">
 import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 
-import Home from "../components/Home.vue";
+import Home from "../components/home/Home.vue";
 import CFMMPage from "../components/CFMMPage.vue";
 import CFMMBlockPage from "../components/CFMMBlockPage.vue";
 import CFMMPillarPage from "../components/CFMMPillarPage.vue";
