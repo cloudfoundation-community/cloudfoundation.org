@@ -202,6 +202,25 @@ blockquote {
   border-radius: 30px;
 }
 
+.navbar {
+  max-width: 1150px;
+  margin: 15px auto 0px;
+  border-bottom: 0;
+
+  .site-name {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .navbar-items-wrapper {
+    flex-direction: row-reverse;
+
+    .search-box {
+      margin-right: 30px;
+    }
+  }
+}
+
 a.btn {
   display: inline-flex;
   align-items: center;

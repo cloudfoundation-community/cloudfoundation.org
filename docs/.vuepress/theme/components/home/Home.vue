@@ -67,7 +67,7 @@
             steps.
           </p>
           <router-link to="#" class="btn btn-outline-primary btn-lg mt-2">
-            Explorer The Modal
+            Explore The Modal
           </router-link>
         </div>
       </div>

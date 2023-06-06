@@ -1,7 +1,8 @@
 <template>
   <div class="footer">
     <div class="d-flex">
-      Built with ❤️ by <a href="https://meshcloud.io">meshcloud</a>&nbsp;·&nbsp;
+      Built with ❤️ by&nbsp;
+      <a href="https://meshcloud.io">meshcloud</a>&nbsp;·&nbsp;
       <a href="https://www.meshcloud.io/imprint/">Imprint</a>&nbsp;·&nbsp;
       <a href="https://www.meshcloud.io/privacy-policy/">Privacy Policy</a>
     </div>

@@ -37,15 +37,11 @@ dirs.forEach((dir) => {
 // to the building blocks is one level lower
 navbar.push(
   {
-    text: "Understanding Cloud Foundation",
-    link: "/understanding-cloud-foundation/",
+    text: "About",
+    link: "/about/",
   },
   {
     text: "Maturity Model",
-    link: "/maturity-model/",
-  },
-    {
-    text: "Pillars",
     children: [
       ...getChildDirectories("docs/maturity-model").map(
         (x) => `/maturity-model/${x}/`
@@ -53,8 +49,12 @@ navbar.push(
     ],
   },
   {
-    text: "Community",
-    link: "https://join.slack.com/t/cloudfoundation-org/shared_invite/zt-1na218t3p-CK~Ac~u8RZZRFtStVWFJQA",
+    text: "Resources",
+    link: "/resources/",
+  },
+  {
+    text: "Events",
+    link: "/events/",
   }
 );
 
@@ -77,7 +77,7 @@ const cfmmOptions: CfmmPluginOptions = {
 const websiteDescription = "A solid foundation for your Cloud Journey";
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
-  title: "Cloud Foundation",
+  title: "Cloudfoundation.org",
   description: websiteDescription,
   theme: path.resolve(__dirname, "./theme"),
   head: [
@@ -116,6 +116,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     navbar: navbar,
     editLink: false,
     editLinkPattern: ":path",
+    search: false,
     // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
     // We might be able to flip the switch back on in the future iPf we figure out how to handle images.
     darkMode: false,
@@ -131,7 +132,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         trackerOptions: {
           apiHost: "",
           domain:
-              process.env.RENDER_GIT_BRANCH === "main" // This way Plausible will only track data for the production version.
+            process.env.RENDER_GIT_BRANCH === "main" // This way Plausible will only track data for the production version.
               ? "cloudfoundation.org"
               : "preview.cloudfoundation.org",
         },
