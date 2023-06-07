@@ -1,37 +1,39 @@
 <template>
   <main>
-    <div class="head-container">
-      <div class="head-container--content">
-        <h1>
-          The<br />
-          Cloud Foundation<br />
-          Community<br />
-        </h1>
-        <p>
-          Connect with leading Enterprise Architects & Engineers  who build the
-          platforms that drive cloud adoption
-        </p>
-        <div class="d-flex">
-          <router-link to="#" class="btn btn-primary btn-md">
-            Join now
-            <img class="after" src="./slack_white.svg" alt="Slack" />
-          </router-link>
-          <router-link to="#" class="btn btn-outline-secondary btn-md ml-4">
-            Start Building
-          </router-link>
+    <div class="head-section">
+      <div class="head-container">
+        <div class="head-container--content">
+          <h1>
+            The<br />
+            Cloud Foundation<br />
+            Community<br />
+          </h1>
+          <p>
+            Connect with leading Enterprise Architects & Engineers  who build
+            the platforms that drive cloud adoption
+          </p>
+          <div class="d-flex button-group">
+            <router-link to="#" class="btn btn-primary btn-md">
+              Join now
+              <img class="after" src="./slack_white.svg" alt="Slack" />
+            </router-link>
+            <router-link to="#" class="btn btn-outline-secondary btn-md ml-4">
+              Start Building
+            </router-link>
+          </div>
+        </div>
+        <div class="rocket-bg d-flex justify-content-end">
+          <img src="./rocket.svg" alt="rocket" />
         </div>
       </div>
-      <div class="rocket-bg d-flex justify-content-end">
-        <img src="./rocket.svg" alt="rocket" />
+      <div
+        class="alert-box bg-black d-flex justify-content-center align-items-center"
+      >
+        <img class="" src="./calendar.svg" alt="Calendar" />
+        <p class="text-white">
+          Upcoming: Next Cloud Foundation Community event on March 7th
+        </p>
       </div>
-    </div>
-    <div
-      class="alert-box bg-black d-flex justify-content-center align-items-center"
-    >
-      <img class="" src="./calendar.svg" alt="Calendar" />
-      <p class="text-white">
-        Upcoming: Next Cloud Foundation Community event on March 7th
-      </p>
     </div>
     <div class="container">
       <div class="row hero">
@@ -102,7 +104,9 @@ $small: 768px;
 $large: 1200px;
 
 main {
-  padding-top: calc(var(--navbar-height) * 1.5);
+  .head-section {
+    padding: 0 15px;
+  }
 
   .head-container {
     display: flex;
@@ -167,6 +171,15 @@ main {
 
         > div {
           justify-content: center;
+        }
+
+        .button-group {
+          flex-direction: column;
+
+          .btn:last-child {
+            margin-left: 0 !important;
+            margin-top: 10px;
+          }
         }
       }
 

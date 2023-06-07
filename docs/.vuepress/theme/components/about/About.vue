@@ -1,10 +1,12 @@
 <template>
   <main class="about-page">
-    <div class="head-container d-flex">
-      <img class="w-100 h-100" src="./about_bg.svg" alt="About" />
-    </div>
-    <div class="alert-box bg-black d-flex align-items-center">
-      <p class="text-white">About</p>
+    <div class="head-section">
+      <div class="head-container d-flex">
+        <img class="w-100 h-100" src="./about_bg.svg" alt="About" />
+      </div>
+      <div class="alert-box bg-black d-flex align-items-center">
+        <p class="text-white">About</p>
+      </div>
     </div>
     <div class="container">
       <div>
@@ -27,6 +29,7 @@
           Community continue to grow and thrive in the future.
         </p>
         <router-link to="#" class="btn btn-outline-primary btn-lg">
+          <img class="before" src="./slack_color.svg" alt="Slack" />
           Join Slack Community
         </router-link>
       </div>
@@ -132,8 +135,11 @@ $small: 768px;
 $large: 1200px;
 
 main.about-page {
-  padding-top: calc(var(--navbar-height) * 1.5);
   font-size: 18px;
+
+  .head-section {
+    padding: 0 15px;
+  }
 
   h3.sub-title {
     font-weight: 700;

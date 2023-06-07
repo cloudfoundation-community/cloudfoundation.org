@@ -1,7 +1,9 @@
 <template>
   <main class="open-source-tools-page">
-    <div class="alert-box bg-black d-flex align-items-center">
-      <p class="text-white">Open-Source Tools</p>
+    <div class="head-section">
+      <div class="alert-box bg-black d-flex align-items-center">
+        <p class="text-white">Open-Source Tools</p>
+      </div>
     </div>
     <div class="container">
       <div>
@@ -88,8 +90,11 @@ $small: 768px;
 $large: 1200px;
 
 main.open-source-tools-page {
-  padding-top: calc(var(--navbar-height) * 1.5);
   font-size: 18px;
+
+  .head-section {
+    padding: 0 15px;
+  }
 
   h3.sub-title {
     font-weight: 700;

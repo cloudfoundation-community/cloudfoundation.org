@@ -1,17 +1,19 @@
 <template>
   <main class="resources-page">
-    <div class="head-container d-flex">
-      <img class="w-100 h-100" src="./resources_bg.svg" alt="Resources" />
-    </div>
-    <div class="alert-box bg-black d-flex align-items-center">
-      <p class="text-white">Resources</p>
+    <div class="head-section">
+      <div class="head-container d-flex">
+        <img class="w-100 h-100" src="./resources_bg.svg" alt="Resources" />
+      </div>
+      <div class="alert-box bg-black d-flex align-items-center">
+        <p class="text-white">Resources</p>
+      </div>
     </div>
     <div class="container">
       <div>
         <h3 class="sub-title">The Cloud Foundation’s Resources</h3>
         <p>
           Welcome to the Community’s resources page, your go-to destination for
-          knowlede and open-source tools designed to build a cloud foundation.
+          knowledge and open-source tools designed to build a cloud foundation.
           Whether you're just starting out or looking to enhance your existing
           setup, we've got you covered with a range of insights and practical
           resources. Browse our articles and tools to learn more.
@@ -48,7 +50,10 @@
               minimize implementation risks and ultimately, accelerate your
               cloud journey...
             </p>
-            <router-link to="#" class="btn btn-outline-primary btn-lg">
+            <router-link
+              to="/open-source-tools"
+              class="btn btn-outline-primary btn-lg"
+            >
               Take Me To Them
             </router-link>
           </div>
@@ -85,8 +90,11 @@ $small: 768px;
 $large: 1200px;
 
 main.resources-page {
-  padding-top: calc(var(--navbar-height) * 1.5);
   font-size: 18px;
+
+  .head-section {
+    padding: 0 15px;
+  }
 
   h3.sub-title {
     font-weight: 700;

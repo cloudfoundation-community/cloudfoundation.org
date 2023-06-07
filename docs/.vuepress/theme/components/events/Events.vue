@@ -1,10 +1,12 @@
 <template>
   <main class="events-page">
-    <div class="head-container d-flex">
-      <img class="w-100 h-100" src="./events_bg.svg" alt="Event" />
-    </div>
-    <div class="alert-box bg-black d-flex align-items-center">
-      <p class="text-white">Events</p>
+    <div class="head-section">
+      <div class="head-container d-flex">
+        <img class="w-100 h-100" src="./events_bg.svg" alt="Event" />
+      </div>
+      <div class="alert-box bg-black d-flex align-items-center">
+        <p class="text-white">Events</p>
+      </div>
     </div>
     <div class="container">
       <div>
@@ -15,7 +17,7 @@
           share insights and ideas. While the pandemic has changed the way we
           meet, we're thrilled to offer a variety of online and onsite events
           where we can engage in conversations, exchange about the latest trends
-          and learn from succesfull cloud-experts.
+          and learn from succesful cloud-experts.
         </p>
       </div>
       <div class="upcoming-events">
@@ -95,8 +97,11 @@ $small: 768px;
 $large: 1200px;
 
 main.events-page {
-  padding-top: calc(var(--navbar-height) * 1.5);
   font-size: 18px;
+
+  .head-section {
+    padding: 0 15px;
+  }
 
   h3.sub-title {
     font-weight: 700;
