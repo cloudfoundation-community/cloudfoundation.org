@@ -40,7 +40,7 @@
       >
         <img class="" src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
-          Upcoming: Next Cloud Foundation Community event on March 7th
+          Upcoming: Cloud Foundation Community event on June 28th
         </p>
       </div>
     </div>
@@ -55,9 +55,12 @@
             managing the cloud. Its goal is to enable teams to build in the
             cloud and accelerate an organization’s software delivery.
           </p>
-          <router-link to="#" class="btn btn-outline-primary btn-lg mt-2">
+          <a
+            href="https://cloudfoundation.org/understanding-cloud-foundation/"
+            class="btn btn-outline-primary btn-lg mt-2"
+          >
             Read The Guide
-          </router-link>
+          </a>
         </div>
         <div class="col-12 col-lg-6 d-flex justify-content-end">
           <img class="hero-img m-0" src="./building_blocks.svg" alt="Guide" />

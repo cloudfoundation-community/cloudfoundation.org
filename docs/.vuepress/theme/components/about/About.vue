@@ -43,41 +43,41 @@
           Architects that build the platforms of tomorrow. Cloud Foundations are
           key to drive cloud adoption in large organizations.
         </p>
-        <div class="row gutter-sm mt-5">
-          <div class="target-group-card col-lg-4">
-            <!--            <img src="./user1.svg" alt="Ursula Gurnmeister" />-->
-            <div class="target-group-card__content">
-              <h4>Ursula Gurnmeister</h4>
-              <span>Plastic Surgeon, Skinnovate</span>
-              <p>
-                "With the Cloud Foundation Maturity Model, we sharpened our
-                cloud vision and can demonstrate what we are aiming for.”
-              </p>
-            </div>
-          </div>
-          <div class="target-group-card col-lg-4 mt-4 mt-lg-0">
-            <!--            <img src="./user2.svg" alt="Linguina Nettlewasser" />-->
-            <div class="target-group-card__content">
-              <h4>Linguina Nettlewasser</h4>
-              <span>Backend, Backwork</span>
-              <p>
-                "The model helps us to make gaps in our cloud foundation
-                transparent and act on them.”
-              </p>
-            </div>
-          </div>
-          <div class="target-group-card col-lg-4 mt-4 mt-lg-0">
-            <!--            <img src="./user3.svg" alt="Hermann W. Schnitzel" />-->
-            <div class="target-group-card__content">
-              <h4>Hermann W. Schnitzel</h4>
-              <span>CEO, Veggielante</span>
-              <p>
-                "The model is a great tool for internal communication, e.g. to
-                coordinate the roadmap with management.”
-              </p>
-            </div>
-          </div>
-        </div>
+        <!--        <div class="row gutter-sm mt-5">-->
+        <!--          <div class="target-group-card col-lg-4">-->
+        <!--            &lt;!&ndash;            <img src="./user1.svg" alt="Ursula Gurnmeister" />&ndash;&gt;-->
+        <!--            <div class="target-group-card__content">-->
+        <!--              <h4>Ursula Gurnmeister</h4>-->
+        <!--              <span>Plastic Surgeon, Skinnovate</span>-->
+        <!--              <p>-->
+        <!--                "With the Cloud Foundation Maturity Model, we sharpened our-->
+        <!--                cloud vision and can demonstrate what we are aiming for.”-->
+        <!--              </p>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="target-group-card col-lg-4 mt-4 mt-lg-0">-->
+        <!--            &lt;!&ndash;            <img src="./user2.svg" alt="Linguina Nettlewasser" />&ndash;&gt;-->
+        <!--            <div class="target-group-card__content">-->
+        <!--              <h4>Linguina Nettlewasser</h4>-->
+        <!--              <span>Backend, Backwork</span>-->
+        <!--              <p>-->
+        <!--                "The model helps us to make gaps in our cloud foundation-->
+        <!--                transparent and act on them.”-->
+        <!--              </p>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="target-group-card col-lg-4 mt-4 mt-lg-0">-->
+        <!--            &lt;!&ndash;            <img src="./user3.svg" alt="Hermann W. Schnitzel" />&ndash;&gt;-->
+        <!--            <div class="target-group-card__content">-->
+        <!--              <h4>Hermann W. Schnitzel</h4>-->
+        <!--              <span>CEO, Veggielante</span>-->
+        <!--              <p>-->
+        <!--                "The model is a great tool for internal communication, e.g. to-->
+        <!--                coordinate the roadmap with management.”-->
+        <!--              </p>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
       </div>
       <div class="pb-5">
         <h3 class="sub-title">The Cloud Foundation Maturity Model</h3>
@@ -92,16 +92,16 @@
             <h3 class="font-weight-bold">
               Contributing to the Cloud Foundation Maturity Model
             </h3>
-            <p class="font-weight-light pb-3">
+            <p class="font-weight-light">
               External contributions to the Cloud Foundation Maturity Model are
               welcome.
             </p>
-            <router-link
-              to="#"
-              class="btn btn-outline-primary btn-lg text-decoration-underline"
-            >
-              Contributor’s Guide
-            </router-link>
+            <!--            <router-link-->
+            <!--              to="#"-->
+            <!--              class="btn btn-outline-primary btn-lg text-decoration-underline"-->
+            <!--            >-->
+            <!--              Contributor’s Guide-->
+            <!--            </router-link>-->
           </div>
           <div class="mb-5">
             <h3 class="font-weight-bold">
