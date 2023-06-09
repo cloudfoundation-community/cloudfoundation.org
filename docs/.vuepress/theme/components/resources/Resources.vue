@@ -32,9 +32,12 @@
               center and providing them with a single point of access for the
               management of their cloud infrastructure...
             </p>
-            <router-link to="#" class="btn btn-outline-primary btn-lg">
+            <a
+              href="https://cloudfoundation.org/understanding-cloud-foundation/#why-build-a-cloud-foundation"
+              class="btn btn-outline-primary btn-lg"
+            >
               What Is A Cloud Foundation
-            </router-link>
+            </a>
           </div>
         </div>
 
@@ -70,9 +73,12 @@
               Landing Zones, Cloud Cost Management and Cloud Security? Subscribe
               to our monthly newsletter and gain access to exclusive content.
             </p>
-            <router-link to="#" class="btn btn-outline-primary btn-lg">
+            <a
+              href="https://www.meshcloud.io/en/resources/newsletter/"
+              class="btn btn-outline-primary btn-lg"
+            >
               Sign Up!
-            </router-link>
+            </a>
           </div>
         </div>
       </div>

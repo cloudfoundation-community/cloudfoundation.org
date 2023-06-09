@@ -39,12 +39,18 @@
               that meets your specific needs.
             </p>
             <div class="d-flex">
-              <router-link to="#" class="btn btn-outline-primary btn-md">
+              <a
+                href="https://landingzone.meshcloud.io/tutorial/"
+                class="btn btn-outline-primary btn-md"
+              >
                 Get Started!
-              </router-link>
-              <router-link to="#" class="btn btn-outline-secondary btn-md ml-3">
+              </a>
+              <a
+                href="https://github.com/meshcloud/landing-zone-construction-kit"
+                class="btn btn-outline-secondary btn-md ml-3"
+              >
                 GitHub
-              </router-link>
+              </a>
             </div>
           </div>
         </div>
@@ -66,12 +72,18 @@
               a seamless and secure cloud deployment.
             </p>
             <div class="d-flex">
-              <router-link to="#" class="btn btn-outline-primary btn-md">
+              <a
+                href="https://collie-cli.io/"
+                class="btn btn-outline-primary btn-md"
+              >
                 Collie
-              </router-link>
-              <router-link to="#" class="btn btn-outline-secondary btn-md ml-3">
+              </a>
+              <a
+                href="https://github.com/meshcloud/collie-cli"
+                class="btn btn-outline-secondary btn-md ml-3"
+              >
                 GitHub
-              </router-link>
+              </a>
             </div>
           </div>
         </div>

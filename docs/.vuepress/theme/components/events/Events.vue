@@ -24,9 +24,28 @@
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
           <div class="event-card">
-            <img src="./landing_zone.svg" alt="Event Landing" />
+            <img src="./community.svg" alt="Event Community" />
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 - May 25th, 13:00-15:30 (CEST)</h4>
+              <h4>Community Event - June 28th, 9:00-11:00 am (CEST)</h4>
+              <p>
+                We have great news! The meshCommunity is back and we can’t wait
+                to mingle again.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/cloud-foundation-community-event/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./workshop.svg" alt="Event Workshop" />
+            <div class="event-card__content">
+              <h4>
+                Cloud Landing Zone 101 (German) - July 11th, 14:00-16:30 (CEST)
+              </h4>
               <p>
                 From the application team request to the finished Cloud
                 Environment: This webinar is the ideal chance to learn the steps
@@ -36,23 +55,12 @@
                 interested in cloud computing and the processes involved in
                 setting up a cloud environment.
               </p>
-              <router-link to="#" class="btn btn-outline-primary btn-lg">
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
                 Register Now!
-              </router-link>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./community.svg" alt="Event Community" />
-            <div class="event-card__content">
-              <h4>Community Event - June 28th, 9:00-11:00 am (CEST)</h4>
-              <p>
-                We have great news! The meshCommunity is back and we can’t wait
-                to mingle again.
-              </p>
-              <router-link to="#" class="btn btn-outline-primary btn-lg">
-                Register Now!
-              </router-link>
+              </a>
             </div>
           </div>
         </div>
@@ -61,23 +69,25 @@
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
           <div class="event-card">
-            <img src="./workshop.svg" alt="Event Workshop" />
+            <img src="./dev_ops_con.svg" alt="DevOpsCon" />
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 101 - March 2nd, 9:00-11:00 (CEST)</h4>
+              <h4>
+                DevOpsCon - June 13th, 9:00-20:00 & June 14th, 9:00-16:45 (CEST)
+              </h4>
               <p>
-                Some words on what the past event was about and the topics and
-                things that were discussed, etc.
+                meshcloud will be at the DevOpsCon in Berlin! Catch us at the
+                event for our talk or swing by the meshcloud booth. 🐑
               </p>
             </div>
           </div>
 
           <div class="event-card">
-            <img src="./formula.svg" alt="Event Formula" />
+            <img src="./meshcloud_demo.svg" alt="Live Demo" />
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 101 - January 17th, 9:00-11:00 (CEST)</h4>
+              <h4>meshStack Live Demo (livestream) - Every Wednesday</h4>
               <p>
-                Some words on what the past event was about and the topics and
-                things that were discussed, etc.
+                Tune in to our meshStack live demos, every Wednesday on YouTube.
+                Subscribe to our channel to stay updated.
               </p>
             </div>
           </div>

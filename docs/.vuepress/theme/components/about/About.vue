@@ -28,10 +28,13 @@
           this conversation. We are excited to see the Cloud Foundation
           Community continue to grow and thrive in the future.
         </p>
-        <router-link to="#" class="btn btn-outline-primary btn-lg">
+        <a
+          href="https://hubs.ly/Q01RxdMl0"
+          class="btn btn-outline-primary btn-lg"
+        >
           <img class="before" src="./slack_color.svg" alt="Slack" />
           Join Slack Community
-        </router-link>
+        </a>
       </div>
       <div class="target-group">
         <h3 class="sub-title">Why we started</h3>
@@ -42,7 +45,7 @@
         </p>
         <div class="row gutter-sm mt-5">
           <div class="target-group-card col-lg-4">
-            <img src="./user1.svg" alt="Ursula Gurnmeister" />
+            <!--            <img src="./user1.svg" alt="Ursula Gurnmeister" />-->
             <div class="target-group-card__content">
               <h4>Ursula Gurnmeister</h4>
               <span>Plastic Surgeon, Skinnovate</span>
@@ -53,7 +56,7 @@
             </div>
           </div>
           <div class="target-group-card col-lg-4 mt-4 mt-lg-0">
-            <img src="./user2.svg" alt="Linguina Nettlewasser" />
+            <!--            <img src="./user2.svg" alt="Linguina Nettlewasser" />-->
             <div class="target-group-card__content">
               <h4>Linguina Nettlewasser</h4>
               <span>Backend, Backwork</span>
@@ -64,7 +67,7 @@
             </div>
           </div>
           <div class="target-group-card col-lg-4 mt-4 mt-lg-0">
-            <img src="./user3.svg" alt="Hermann W. Schnitzel" />
+            <!--            <img src="./user3.svg" alt="Hermann W. Schnitzel" />-->
             <div class="target-group-card__content">
               <h4>Hermann W. Schnitzel</h4>
               <span>CEO, Veggielante</span>

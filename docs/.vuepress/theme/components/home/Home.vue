@@ -13,17 +13,26 @@
             the platforms that drive cloud adoption
           </p>
           <div class="d-flex button-group">
-            <router-link to="#" class="btn btn-primary btn-md">
+            <a href="https://hubs.ly/Q01RxdMl0" class="btn btn-primary btn-md">
               Join now
               <img class="after" src="./slack_white.svg" alt="Slack" />
-            </router-link>
-            <router-link to="#" class="btn btn-outline-secondary btn-md ml-4">
+            </a>
+            <a
+              href="https://cloudfoundation.org/maturity-model/"
+              class="btn btn-outline-secondary btn-md ml-4"
+            >
               Start Building
-            </router-link>
+            </a>
           </div>
         </div>
         <div class="rocket-bg d-flex justify-content-end">
           <img src="./rocket.svg" alt="rocket" />
+          <a
+            href="https://cloudfoundation.org/maturity-model/"
+            class="maturity-model-image"
+          >
+            <img src="./maturity_model_image.svg" alt="Maturity Model" />
+          </a>
         </div>
       </div>
       <div
@@ -68,9 +77,12 @@
             journey. Use the model to assess where you are and plan your next
             steps.
           </p>
-          <router-link to="#" class="btn btn-outline-primary btn-lg mt-2">
+          <a
+            href="https://cloudfoundation.org/maturity-model/"
+            class="btn btn-outline-primary btn-lg mt-2"
+          >
             Explore The Modal
-          </router-link>
+          </a>
         </div>
       </div>
       <div class="row hero">
@@ -81,10 +93,13 @@
             into a collaborative community of cloud professionals from around
             the world.
           </p>
-          <router-link to="#" class="btn btn-outline-primary btn-lg mt-2">
+          <a
+            href="https://hubs.ly/Q01RxdMl0"
+            class="btn btn-outline-primary btn-lg mt-2"
+          >
             Join The Community
             <img class="after" src="./slack_color.svg" alt="Slack" />
-          </router-link>
+          </a>
         </div>
         <div class="col-12 col-lg-6 d-flex justify-content-end">
           <img class="hero-img m-0" src="./rocket_open.svg" alt="Rocket" />
@@ -133,12 +148,26 @@ main {
     }
 
     .rocket-bg {
+      position: relative;
       margin-top: -208px;
-      z-index: 0;
 
       img {
         height: 717px;
         margin: inherit;
+      }
+
+      .maturity-model-image {
+        position: absolute;
+        bottom: 67%;
+        right: 20%;
+        width: 27%;
+        height: auto;
+        z-index: 2;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
 
@@ -150,6 +179,13 @@ main {
 
         img {
           height: 100%;
+        }
+
+        .maturity-model-image {
+          position: absolute;
+          bottom: 48%;
+          right: 38%;
+          width: 250px;
         }
       }
     }
@@ -191,6 +227,13 @@ main {
         img {
           width: 100%;
           height: unset;
+        }
+
+        .maturity-model-image {
+          position: absolute;
+          bottom: 47%;
+          right: 32%;
+          width: 37%;
         }
       }
     }
