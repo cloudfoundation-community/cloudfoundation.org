@@ -66,13 +66,12 @@ $small: 768px;
 $large: 1200px;
 
 main {
-  padding-top: calc(var(--navbar-height) * 1.5);
-
   @media (min-width: $small) {
     padding-top: calc(var(--navbar-height) * 2.5);
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-weight: 800;
   }
 

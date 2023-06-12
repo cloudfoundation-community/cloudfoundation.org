@@ -9,6 +9,10 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
     </template>
     <template #page>
       <Home v-if="frontmatter.home" />
+      <Events v-else-if="frontmatter.events" />
+      <Resources v-else-if="frontmatter.resources" />
+      <OpenSourceTools v-else-if="frontmatter.openSourceTools" />
+      <About v-else-if="frontmatter.about" />
       <CFMMBlockPage
         :key="page.path"
         v-else-if="frontmatter.pageType == 'CFMMBlock'"
@@ -25,7 +29,11 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
 <script setup lang="ts">
 import ParentLayout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 
-import Home from "../components/Home.vue";
+import Home from "../components/home/Home.vue";
+import Events from "../components/events/Events.vue";
+import Resources from "../components/resources/Resources.vue";
+import OpenSourceTools from "../components/open-source-tools/OpenSourceTools.vue";
+import About from "../components/about/About.vue";
 import CFMMPage from "../components/CFMMPage.vue";
 import CFMMBlockPage from "../components/CFMMBlockPage.vue";
 import CFMMPillarPage from "../components/CFMMPillarPage.vue";
@@ -34,7 +42,6 @@ import { usePageData, usePageFrontmatter } from "@vuepress/client";
 
 const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>();
 const page = usePageData();
-
 </script>
 
 <style lang="scss">
