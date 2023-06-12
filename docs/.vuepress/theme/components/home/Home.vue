@@ -84,7 +84,7 @@
             href="https://cloudfoundation.org/maturity-model/"
             class="btn btn-outline-primary btn-lg mt-2"
           >
-            Explore The Modal
+            Explore The Model
           </a>
         </div>
       </div>
