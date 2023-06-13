@@ -17,28 +17,25 @@
               Join now
               <img class="after" src="./slack_white.svg" alt="Slack" />
             </a>
-            <a
-              href="https://cloudfoundation.org/maturity-model/"
+            <router-link
+              to="/maturity-model/"
               class="btn btn-outline-secondary btn-md ml-4"
             >
               Start Building
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="rocket-bg d-flex justify-content-end">
           <img src="./rocket.svg" alt="rocket" />
-          <a
-            href="https://cloudfoundation.org/maturity-model/"
-            class="maturity-model-image"
-          >
+          <router-link to="/maturity-model/" class="maturity-model-image">
             <img src="./maturity_model_image.svg" alt="Maturity Model" />
-          </a>
+          </router-link>
         </div>
       </div>
       <div
         class="alert-box bg-black d-flex justify-content-center align-items-center"
       >
-        <img class="" src="./calendar.svg" alt="Calendar" />
+        <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
           Upcoming: Cloud Foundation Community event on June 28th
         </p>
@@ -80,12 +77,12 @@
             journey. Use the model to assess where you are and plan your next
             steps.
           </p>
-          <a
-            href="https://cloudfoundation.org/maturity-model/"
+          <router-link
+            to="/maturity-model/"
             class="btn btn-outline-primary btn-lg mt-2"
           >
-            Explore The Model
-          </a>
+            Explore the Modal
+          </router-link>
         </div>
       </div>
       <div class="row hero">
@@ -248,6 +245,7 @@ main {
     padding: 0 30px;
     background: black;
     border-radius: 100px;
+    font-weight: 600;
 
     img {
       width: 23px;

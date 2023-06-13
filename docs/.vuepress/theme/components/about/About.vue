@@ -26,22 +26,22 @@
           <br /><br />
           We work with Cloud Foundation Teams every day and aim to facilitate
           this conversation. We are excited to see the Cloud Foundation
-          Community continue to grow and thrive in the future.
+          Community continues to grow and thrive in the future.
         </p>
         <a
           href="https://hubs.ly/Q01RxdMl0"
           class="btn btn-outline-primary btn-lg"
         >
-          <img class="before" src="./slack_color.svg" alt="Slack" />
           Join Slack Community
+          <img class="after" src="./slack_color.svg" alt="Slack" />
         </a>
       </div>
       <div class="target-group">
-        <h3 class="sub-title">Why we started</h3>
+        <h3 class="sub-title">Target Group</h3>
         <p class="font-weight-light">
-          The Cloud Foundation Community targets the Cloud Engineers and
-          Architects that build the platforms of tomorrow. Cloud Foundations are
-          key to drive cloud adoption in large organizations.
+          The Cloud Foundation Community targets Cloud Engineers and Architects
+          that build the platforms of tomorrow. Cloud Foundations are key to
+          drive cloud adoption in large organizations.
         </p>
         <!--        <div class="row gutter-sm mt-5">-->
         <!--          <div class="target-group-card col-lg-4">-->
@@ -50,7 +50,7 @@
         <!--              <h4>Ursula Gurnmeister</h4>-->
         <!--              <span>Plastic Surgeon, Skinnovate</span>-->
         <!--              <p>-->
-        <!--                "With the Cloud Foundation Maturity Model, we sharpened our-->
+        <!--                “With the Cloud Foundation Maturity Model, we sharpened our-->
         <!--                cloud vision and can demonstrate what we are aiming for.”-->
         <!--              </p>-->
         <!--            </div>-->
@@ -61,7 +61,7 @@
         <!--              <h4>Linguina Nettlewasser</h4>-->
         <!--              <span>Backend, Backwork</span>-->
         <!--              <p>-->
-        <!--                "The model helps us to make gaps in our cloud foundation-->
+        <!--                “The model helps us to make gaps in our cloud foundation-->
         <!--                transparent and act on them.”-->
         <!--              </p>-->
         <!--            </div>-->
@@ -72,7 +72,7 @@
         <!--              <h4>Hermann W. Schnitzel</h4>-->
         <!--              <span>CEO, Veggielante</span>-->
         <!--              <p>-->
-        <!--                "The model is a great tool for internal communication, e.g. to-->
+        <!--                “The model is a great tool for internal communication, e.g. to-->
         <!--                coordinate the roadmap with management.”-->
         <!--              </p>-->
         <!--            </div>-->

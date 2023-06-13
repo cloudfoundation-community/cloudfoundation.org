@@ -29,7 +29,7 @@
               cloud platforms like AWS, Azure, and GCP. The meshcloud Landing
               Zone Construction Kit simplifies the process of building Landing
               Zones by using Infrastructure as Code and GitOps to reduce
-              complexity. Our kit is built on terraform and enables you to
+              complexity. Our kit is built on Terraform and enables you to
               integrate off-the-shelf reference IaC implementation published by
               cloud providers, as well as custom infrastructure automation. Our
               Landing Zone Construction Kit is a valuable resource in our

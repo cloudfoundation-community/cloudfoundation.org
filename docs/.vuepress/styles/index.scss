@@ -247,9 +247,20 @@ a.btn {
     margin-right: 6px;
   }
 
+  &.btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+  }
+
   &.btn-outline-secondary {
     color: #000000;
     border-color: #000000;
     border-width: 2px;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
   }
 }
