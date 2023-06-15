@@ -203,12 +203,8 @@ blockquote {
 }
 
 .navbar {
-  max-width: 1150px;
   margin: 0 auto;
   border-bottom: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
 
   .site-name {
     font-size: 16px;
@@ -222,6 +218,10 @@ blockquote {
       margin-right: 30px;
     }
   }
+}
+
+main {
+  padding-top: calc(var(--navbar-height) * 1);
 }
 
 a.btn {

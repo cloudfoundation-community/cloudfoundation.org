@@ -115,7 +115,7 @@ main.events-page {
 
   h3.sub-title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .alert-box {

@@ -81,7 +81,7 @@
             to="/maturity-model/"
             class="btn btn-outline-primary btn-lg mt-2"
           >
-            Explore the Modal
+            Explore the Model
           </router-link>
         </div>
       </div>
