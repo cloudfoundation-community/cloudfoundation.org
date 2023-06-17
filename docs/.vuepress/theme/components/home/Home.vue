@@ -13,7 +13,10 @@
             the platforms that drive cloud adoption
           </p>
           <div class="d-flex button-group">
-            <a href="https://hubs.ly/Q01RxdMl0" class="btn btn-primary btn-md">
+            <a
+              href="https://cloudfoundation-org.slack.com/join/shared_invite/zt-1x679w1w2-PhvktDX0Kj~KtfwUPJODiQ"
+              class="btn btn-primary btn-md"
+            >
               Join now
               <img class="after" src="./slack_white.svg" alt="Slack" />
             </a>
@@ -63,10 +66,7 @@
           <img class="hero-img m-0" src="./building_blocks.svg" alt="Guide" />
         </div>
       </div>
-      <div class="row hero flex-column-reverse flex-md-row">
-        <div class="col-12 col-lg-6 d-flex justify-content-start">
-          <img class="hero-img m-0" src="./cfmm_othersize.svg" alt="CFMM" />
-        </div>
+      <div class="row hero flex-md-row-reverse">
         <div class="col-12 col-lg-6">
           <h1 class="hero-title">
             Plan your journey with the free Maturity Model
@@ -83,6 +83,9 @@
           >
             Explore the Model
           </router-link>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-start">
+          <img class="hero-img m-0" src="./cfmm_othersize.svg" alt="CFMM" />
         </div>
       </div>
       <div class="row hero">
@@ -115,7 +118,7 @@ import Footer from "../Footer.vue";
 </script>
 
 <style scoped lang="scss">
-$small: 768px;
+$small: 1000px;
 $large: 1200px;
 
 main {

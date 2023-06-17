@@ -217,6 +217,43 @@ blockquote {
     .search-box {
       margin-right: 30px;
     }
+
+
+  }
+}
+
+.navbar, .sidebar {
+  .navbar-item:last-child {
+    a {
+      position: relative;
+      background: $primary;
+      color: white;
+      padding: 7px 40px 7px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      border-bottom: none;
+      transition: all ease 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        width: 17px;
+        height: 17px;
+        background-image: url("../theme/components/home/slack_white.svg");
+        background-size: cover;
+      }
+
+      &:hover {
+        background: black;
+      }
+
+      span {
+        display: none;
+      }
+    }
   }
 }
 
