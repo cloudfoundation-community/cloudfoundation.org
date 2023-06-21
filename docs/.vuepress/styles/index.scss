@@ -203,12 +203,8 @@ blockquote {
 }
 
 .navbar {
-  max-width: 1150px;
   margin: 0 auto;
   border-bottom: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
 
   .site-name {
     font-size: 16px;
@@ -221,7 +217,48 @@ blockquote {
     .search-box {
       margin-right: 30px;
     }
+
+
   }
+}
+
+.navbar, .sidebar {
+  .navbar-item:last-child {
+    a {
+      position: relative;
+      background: $primary;
+      color: white;
+      padding: 7px 40px 7px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      border-bottom: none;
+      transition: all ease 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        width: 17px;
+        height: 17px;
+        background-image: url("../theme/components/home/slack_white.svg");
+        background-size: cover;
+      }
+
+      &:hover {
+        background: black;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+main {
+  padding-top: calc(var(--navbar-height) * 1);
 }
 
 a.btn {
@@ -247,9 +284,20 @@ a.btn {
     margin-right: 6px;
   }
 
+  &.btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+  }
+
   &.btn-outline-secondary {
     color: #000000;
     border-color: #000000;
     border-width: 2px;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
   }
 }

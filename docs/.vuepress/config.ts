@@ -42,6 +42,7 @@ navbar.push(
   },
   {
     text: "Maturity Model",
+    link: "/about/",
     children: [
       ...getChildDirectories("docs/maturity-model").map(
         (x) => `/maturity-model/${x}/`
@@ -55,6 +56,10 @@ navbar.push(
   {
     text: "Events",
     link: "/events/",
+  },
+  {
+    text: "Join the Community",
+    link: "https://cloudfoundation-org.slack.com/join/shared_invite/zt-1x679w1w2-PhvktDX0Kj~KtfwUPJODiQ",
   }
 );
 
@@ -120,6 +125,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
     // We might be able to flip the switch back on in the future iPf we figure out how to handle images.
     darkMode: false,
+    collapse: 1000,
   },
   plugins: [
     [pluginCfmm, cfmmOptions],

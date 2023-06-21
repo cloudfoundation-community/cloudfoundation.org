@@ -13,32 +13,32 @@
             the platforms that drive cloud adoption
           </p>
           <div class="d-flex button-group">
-            <a href="https://hubs.ly/Q01RxdMl0" class="btn btn-primary btn-md">
+            <a
+              href="https://cloudfoundation-org.slack.com/join/shared_invite/zt-1x679w1w2-PhvktDX0Kj~KtfwUPJODiQ"
+              class="btn btn-primary btn-md"
+            >
               Join now
               <img class="after" src="./slack_white.svg" alt="Slack" />
             </a>
-            <a
-              href="https://cloudfoundation.org/maturity-model/"
+            <router-link
+              to="/maturity-model/"
               class="btn btn-outline-secondary btn-md ml-4"
             >
               Start Building
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="rocket-bg d-flex justify-content-end">
           <img src="./rocket.svg" alt="rocket" />
-          <a
-            href="https://cloudfoundation.org/maturity-model/"
-            class="maturity-model-image"
-          >
+          <router-link to="/maturity-model/" class="maturity-model-image">
             <img src="./maturity_model_image.svg" alt="Maturity Model" />
-          </a>
+          </router-link>
         </div>
       </div>
       <div
         class="alert-box bg-black d-flex justify-content-center align-items-center"
       >
-        <img class="" src="./calendar.svg" alt="Calendar" />
+        <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
           Upcoming: Cloud Foundation Community event on June 28th
         </p>
@@ -66,10 +66,7 @@
           <img class="hero-img m-0" src="./building_blocks.svg" alt="Guide" />
         </div>
       </div>
-      <div class="row hero flex-column-reverse flex-md-row">
-        <div class="col-12 col-lg-6 d-flex justify-content-start">
-          <img class="hero-img m-0" src="./cfmm_othersize.svg" alt="CFMM" />
-        </div>
+      <div class="row hero flex-md-row-reverse">
         <div class="col-12 col-lg-6">
           <h1 class="hero-title">
             Plan your journey with the free Maturity Model
@@ -80,12 +77,15 @@
             journey. Use the model to assess where you are and plan your next
             steps.
           </p>
-          <a
-            href="https://cloudfoundation.org/maturity-model/"
+          <router-link
+            to="/maturity-model/"
             class="btn btn-outline-primary btn-lg mt-2"
           >
-            Explore The Model
-          </a>
+            Explore the Model
+          </router-link>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-start">
+          <img class="hero-img m-0" src="./cfmm_othersize.svg" alt="CFMM" />
         </div>
       </div>
       <div class="row hero">
@@ -118,7 +118,7 @@ import Footer from "../Footer.vue";
 </script>
 
 <style scoped lang="scss">
-$small: 768px;
+$small: 1000px;
 $large: 1200px;
 
 main {
@@ -248,6 +248,7 @@ main {
     padding: 0 30px;
     background: black;
     border-radius: 100px;
+    font-weight: 600;
 
     img {
       width: 23px;

@@ -32,12 +32,12 @@
               center and providing them with a single point of access for the
               management of their cloud infrastructure...
             </p>
-            <a
-              href="https://cloudfoundation.org/understanding-cloud-foundation/#why-build-a-cloud-foundation"
+            <router-link
+              to="/understanding-cloud-foundation/#why-build-a-cloud-foundation"
               class="btn btn-outline-primary btn-lg"
             >
               What Is A Cloud Foundation
-            </a>
+            </router-link>
           </div>
         </div>
 

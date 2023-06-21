@@ -2,9 +2,11 @@
   <div class="footer">
     <div class="d-flex">
       Built with ❤️ by&nbsp;
-      <a href="https://meshcloud.io">meshcloud</a>&nbsp;·&nbsp;
-      <a href="https://www.meshcloud.io/imprint/">Imprint</a>&nbsp;·&nbsp;
-      <a href="https://www.meshcloud.io/privacy-policy/">Privacy Policy</a>
+      <a href="https://meshcloud.io/en">meshcloud</a>
+      <span class="mx-2">·</span>
+      <a href="https://www.meshcloud.io/en/imprint/">Imprint</a>
+      <span class="mx-2">·</span>
+      <a href="https://www.meshcloud.io/en/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
 </template>
@@ -27,6 +29,10 @@
   a {
     font-weight: 400;
     color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   @media (max-width: 576px) {
