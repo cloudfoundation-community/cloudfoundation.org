@@ -42,7 +42,7 @@ navbar.push(
   },
   {
     text: "Maturity Model",
-    link: "https://cloudfoundation.org/maturity-model/",
+    link: "/maturity-model/",
   },
   {
     text: "Resources",
