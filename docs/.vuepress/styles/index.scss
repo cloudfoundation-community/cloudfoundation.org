@@ -249,10 +249,12 @@ blockquote {
       &:hover {
         background: black;
       }
+    }
+  }
 
-      span {
-        display: none;
-      }
+  .external-link {
+    span {
+      display: none;
     }
   }
 }
