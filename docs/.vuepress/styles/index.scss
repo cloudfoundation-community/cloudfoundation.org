@@ -94,7 +94,7 @@ $btn-padding-x-lg: 1.5rem !default;
   --c-bg-arrow: #cccccc;
 
   // text colors
-  --c-text: #2c3e50;
+  --c-text: #000000;
   --c-text-accent: var(--c-brand);
   --c-text-light: #3a5169;
   --c-text-lighter: #4e6e8e;
@@ -118,6 +118,7 @@ $btn-padding-x-lg: 1.5rem !default;
   --c-warning-text-accent: var(--c-text);
   --c-danger: #{$danger};
   --c-danger-bg: #ffe0e0;
+
   --c-danger-title: #990000;
   --c-danger-text: #660000;
   --c-danger-text-accent: var(--c-text);
@@ -223,6 +224,13 @@ blockquote {
 }
 
 .navbar, .sidebar {
+  .navbar-item {
+    a.router-link-active {
+      color: $primary;
+      border-bottom: none;
+    }
+  }
+
   .navbar-item:last-child {
     a {
       position: relative;
@@ -242,7 +250,7 @@ blockquote {
         transform: translateY(-50%);
         width: 17px;
         height: 17px;
-        background-image: url("../theme/components/home/slack_white.svg");
+        background-image: url("/slack_white.svg");
         background-size: cover;
       }
 
@@ -300,6 +308,11 @@ a.btn {
     &:hover {
       background-color: #000000;
       color: #ffffff;
+    }
+
+    &:active {
+      background-color: #000000 !important;
+      border-color: #000000 !important;
     }
   }
 }
