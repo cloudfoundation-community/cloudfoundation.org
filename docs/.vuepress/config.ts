@@ -42,7 +42,12 @@ navbar.push(
   },
   {
     text: "Maturity Model",
-    link: "/maturity-model/",
+    activeMatch: "/about/",
+    children: [
+      ...getChildDirectories("docs/maturity-model").map(
+        (x) => `/maturity-model/${x}/`
+      ),
+    ],
   },
   {
     text: "Resources",
