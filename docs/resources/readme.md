@@ -1,4 +1,0 @@
----
-resources: true
-pageClass: white
----

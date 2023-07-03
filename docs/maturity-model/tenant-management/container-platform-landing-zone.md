@@ -26,6 +26,7 @@ properties:
     - cf487857-542f-4d74-8fe9-885b7be8ccf3
     - 71143f29-2fe9-452b-8398-fc40f270a2b6
     - 1a1cdeb0-de7e-4ea9-a963-e409b9abed54
+    - fdd09e3d-c1f8-47be-8e1f-ece8449bf237
   scope: ☁️ Platform
   tool-implementations:
     - bfc77006-225b-4425-afd0-ee8f897367ba

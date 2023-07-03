@@ -21,6 +21,7 @@ properties:
   recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:
+    - f34c8753-fb41-4341-9d91-351836126962
     - 7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8
     - e5ff3f30-d1b0-4bea-a0a0-cb3a3f1cd6f5
     - bb4aee68-0b2a-4746-98bf-18d200e58b9b
@@ -98,4 +99,87 @@ Most applications need to connect to resources outside the virtual network than 
 - [Cloud to Cloud interconnects](./cloud-to-cloud-interconnects.md) 
 
 - [Managed Internet Egress](./managed-internet-egress.md) 
+
+
+
+## How to Implement a Virtual Network Service
+
+
+
+Utilizing a Hub and Spoke architecture is a very common choice when working
+with Networks. Hub and Spoke can be used to allow traffic between multiple resources. It can connect Virtual Networks to each other or to your On-Premise Networks. Here are the basic steps to create a Hub and Spoke Network
+
+1. Create a Hub Virtual Network that contains services that will be shared across all Spoke Networks. Each Spoke Network will be peered to the Hub by a Gateway connection.
+
+1. Create Spoke Virtual Networks or gather information about your On-Premise networks. Make sure none of the networks are sharing the same CIDR address ranges.
+
+1. Create a connection to allow traffic between a Spoke Network (VNet or On-Premise) and the Hub. Create Route Tables for each Spoke to direct traffic. This will allow traffic to securely flow between Spokes as needed.
+
+### Azure
+
+Azure has two options for creating a Hub and Spoke Virtual Network Service: **Customer-Managed infrastructure** components or a **Microsoft-Managed infrastructure with Azure VWAN**.
+
+#### Customer**-Managed Infrastructure**
+
+Managing your own Hub and Spoke Network provides some benefits including
+
+- Cost Savings
+
+- Overcoming subscription limits
+
+- Workload isloation
+
+- Can be customized to specific team requirements
+
+You can find detailed information about how Azure handles Hub and Spoke network topology [here](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
+
+[Here](https://learn.microsoft.com/en-us/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke) is information on how to create a Customer Managed Hub and Spoke Network
+
+#### Microsoft-Managed Infrastructure with VWAN
+
+Azure VWAN has benefits as well
+
+- Integrated connectivity solutions in Hub and Spoke
+
+- Automated Spoke setup and configuration
+
+- Intuitive troubleshooting
+
+- Security features maintained by team of Microsoft engineers
+
+- Easy scalability
+
+[Here](https://learn.microsoft.com/en-us/azure/architecture/networking/hub-spoke-vwan-architecture) is more information on what VWAN is, how it works and an overview of how to create a Hub and Spoke design with it
+
+[Here](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-portal) is information on how to use Azure VWAN to create Point to Site (P2S) connections. This allows users to connect to virtual resources inside of Azure.
+
+### AWS
+
+AWS also offers **Customer-Managed** or **AWS-Managed Infrastructure**. To get started, you can create multiple virtual networks called Virtual Private Clouds (VPCs) that contain EC2 instances, Relational Database Service (RDS) instances or any other number of other services offered by AWS.
+
+#### Customer-Managed Infrastructure
+
+If you want to utilize the **Customer-Managed** approach, you can connect your VPCs using a **Transit Gateway**. Transit Gateway is an AWS service that acts as a network transit hub and connects your AWS Virtual Private Clouds (VPCs) and your on-premises networks.
+
+You can find more information about what a Transit Gateway is and how it works [here](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)
+
+You can find some best practices when working with Transit Gateway [here](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-best-design-practices.html)
+
+You can follow the guide to setting up a basic Hub and Spoke network using Transit Gateway [here](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html)
+
+#### AWS-Managed Infrastructure
+
+If you want to utilize an **AWS-Managed** network, you can set up **Cloud WAN**. Cloud WAN is a managed service that can be used to build, manage, and monitor a unified global network that connects resources running across your cloud and on-premises environments. The Cloud WAN consists of a **Global Network** with a **Core Network** inside of the Global Network.
+
+A **Global Network** is a single, private network that acts as a high-level container for your network objects. It can contain Transit Gateways and other AWS Cloud WAN Core Networks and can be managed in the Network Manager console.
+
+A **Core Network** is the part of the Global Network managed by AWS and includes Regional Connection Points (VPNs, VPCs, Transit Gateway Connects).
+
+You can find more information about what a Cloud WAN is and how it works [here](https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html#cloudwan-concepts-key)
+
+And you can find information on how to create a Cloud WAN including a Global Network and Core Network [here](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-getting-started.html)
+
+### GCP
+
+Virtual Private Clouds can be created using the Google Cloud console, gcloud CLI, Terraform modules or Google API. You can create different types of VPCs using the Google documentation [here](https://cloud.google.com/vpc/docs/create-modify-vpc-networks#console)
 

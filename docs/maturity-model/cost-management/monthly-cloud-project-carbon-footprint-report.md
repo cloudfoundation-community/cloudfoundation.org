@@ -27,7 +27,7 @@ Carbon footprint reporting is the practice of compiling a regularly updated repo
 
 ## Understanding Carbon Footprint Scopes
 
-The [greenhouse gas protocol](https://ghgprotocol.org) is a widely recognized standard to categorize carbon emissions of an organization according to three different scopes
+The [greenhouse gas protocol](https://ghgprotocol.org/) is a widely recognized standard to categorize carbon emissions of an organization according to three different scopes
 
 - **Scope 1 - Direct Emissions:** emissions directly caused by the organization e.g. in plants, factories, or by operating a fleet of vehicles
 
@@ -65,7 +65,7 @@ Most public cloud providers have announced their intent to provide first-party c
 
 - [Microsoft Sustainability Calculator](https://azure.microsoft.com/en-au/blog/microsoft-sustainability-calculator-helps-enterprises-analyze-the-carbon-emissions-of-their-it-infrastructure/) is a Power BI-based solution for Azure from 2020. There’s currently no API available nor is there integration into Azure Portal.
 
-As an alternative to first-party reports, cloud foundation teams can also run carbon emission estimations on their own leveraging community-driven tools like [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org). A key advantage of this tool is that it can provide a consistent source of reporting for all three hyper-scale cloud providers. However, its estimation methodology is severely limited compared to the amount of data and insight available to cloud providers for producing first-party reports.
+As an alternative to first-party reports, cloud foundation teams can also run carbon emission estimations on their own leveraging community-driven tools like [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/). A key advantage of this tool is that it can provide a consistent source of reporting for all three hyper-scale cloud providers. However, its estimation methodology is severely limited compared to the amount of data and insight available to cloud providers for producing first-party reports.
 
 ### Implement Carbon Footprint Reporting for Private Cloud & Services
 

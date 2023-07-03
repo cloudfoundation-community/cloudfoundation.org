@@ -36,7 +36,7 @@ Integrate the marketplace into the Cloud Foundation offering as if it were its o
 
 - [🔖 Security & Compliance](../security-and-compliance/readme.md): providing self-service order process that is compliant with company policies
 
-Notice that Cloud Providers offer marketplaces on their control planes as well: [AWS Service Catalog](https://aws.amazon.com/servicecatalog/), [GCP Service Catalog](https://cloud.google.com/service-catalog), and [Azure Marketplace](https://azuremarketplace.microsoft.com). Those are examples of services integrated with the providers control plane and hence inherit all the CFMM pillar functionality from the cloud.
+Notice that Cloud Providers offer marketplaces on their control planes as well: [AWS Service Catalog](https://aws.amazon.com/servicecatalog/), [GCP Service Catalog](https://cloud.google.com/service-catalog), and [Azure Marketplace](https://azuremarketplace.microsoft.com/). Those are examples of services integrated with the providers control plane and hence inherit all the CFMM pillar functionality from the cloud.
 
 ### Make Services Easily Discoverable
 

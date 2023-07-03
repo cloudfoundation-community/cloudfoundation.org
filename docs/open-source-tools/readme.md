@@ -1,4 +1,0 @@
----
-openSourceTools: true
-pageClass: white
----

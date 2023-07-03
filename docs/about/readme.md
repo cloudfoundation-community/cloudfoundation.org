@@ -1,4 +1,0 @@
----
-about: true
-pageClass: white
----

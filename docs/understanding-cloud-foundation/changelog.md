@@ -6,6 +6,12 @@ category: Understanding Cloud Foundation
 order: 40
 ---
 
+## 2023-06
+
+- We added a new building block for [Quota Management](../maturity-model/cost-management/quota-management.md).
+
+- We expanded a couple of building blocks like [Centralized audit logs](../maturity-model/security-and-compliance/centralized-audit-logs.md) and [Service and Location Restrictions](../maturity-model/security-and-compliance/service-and-location-restrictions.md) with short “How to implement” sections.
+
 ## 2022-12
 
 - We aligned terminology in the model. We will from now on consistently refer to “application teams” when describing the consumers of a landing zone. From our experience this term more accurately reflects the different kind of teams that can consume a landing zone like development teams running their own workloads (DevOps Teams, Developer Teams) or teams running third party vendor software. The term is also more specific than “internal cloud customer” used before.

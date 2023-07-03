@@ -51,3 +51,60 @@ A key challenge with On-Premise network connections is to make them scale
 
 1. don't do onprem; use internet with API gateway
 
+
+
+## How to Implement an on-Premise Network Connection
+
+### Azure
+
+There are 3 options for connecting an on-premise network to an Azure Virtual Network
+
+1. A **VPN Gateway** sends encrypted traffic in a Hybrid network over the public internet. This option would cause some latency in performance and is best suited for applications with minimal traffic between the Azure Virtual Network and the on-premise servers. You can find more information on how to establish a VPN Gateway [here](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal) and [here](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?tabs=portal) is a guide on how to Implement a secure Hybrid network
+
+1. An **Azure ExpressRoute** sends traffic between on-premise and cloud resources using a dedicated, private connection. This option is suitable for large-scale, mission-critical workloads that require scalability. This option can be more complex to set up and requires working with a third party to establish the connection between the on-premise and Azure resources but is faster than a VPN Gateway connection and supports dynamic scaling of bandwidth. You can find an example of a Hybrid network utilising an ExpressRoute connection [here](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute).
+
+1. **ExpressRoute with VPN Failover** combines the previous two options. Using this design, you get the high bandwidth and availability of an ExpressRoute connection with a backup VPN Gateway connection if there are any issues with the ExpressRoute connection. This option is the most complex and requires a VPN Gateway and ExpressRoute connection but is the most reliable and ensures the most availability. You can find more information about how to design and connect ExpressRoute with VPN Failover [here](https://learn.microsoft.com/en-us/azure/expressroute/use-s2s-vpn-as-backup-for-expressroute-privatepeering).
+
+
+
+### AWS
+
+There are 2 options for connecting your on-premise resources to your resources in the AWS cloud: **AWS Site-to-Site VPN** or **AWS Direct Connect**.
+
+
+
+**AWS Site-to-Site VPN** is a fully-managed service that creates a secure connection between your data centre or branch office and your AWS resources using IP Security (IPSec) tunnels. Site-to-Site VPN is a private, secure, and highly-available connection between your resources and allows for increased performance and monitoring of your applications. This connection is very useful for migrating your service to AWS and creating secure connections between remote locations. A Site-to-Site VPN can be created using the AWS Management Console, AWS Command Line Interface, AWS SDKs, or the Query API. You can find more detailed information about AWS Site-to-Site VPN and how to create a connection [here](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html).
+
+
+
+**AWS Direct Connect** allows you to securely connect your on-premise data centre to your AWS VPC via an AWS Direct Connect Router. To setup this connection you have to take the following steps
+
+1. Request an AWS Direct Connect dedicated connection
+
+1. create a Virtual Interface
+
+1. Download the router configuration
+
+1. Verify the Virtual Interface
+
+1. Configure redundant connections (optional)
+
+You can find more detailed information about creating different types of Direct Connection [here](https://docs.aws.amazon.com/directconnect/latest/UserGuide/resiliency_toolkit.html).
+
+
+
+### GCP
+
+GCP utilises **Cloud VPN** to create secure connections between your on-premise network and your GCP-hosted resources through and IPsec VPN connection. GCP provides 2 options for connecting your resources: **High-Availability (HA) VPN** or **Classic VPN**.
+
+
+
+**HA VPN** is the preferred connection type for connecting your on-premise and VPC networks. It supports site-to-site connections and utilizes an IPsec VPN connection in a single region with an SLA of 99.99% service availability.
+
+One option for using **HA VPN** is to deploy **HA VPN over Cloud Interconnect**. **Cloud Interconnect** connects your on-premise data centre to you Google Cloud resources with low latency and high availability. [**Dedicated Interconnect**](https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/provisioning-overview) creates a physical direct connection between your on-premise network and Google’s network while [**Partner Interconnect**](https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/provisioning-overview)[ ](https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/provisioning-overview)provides connectivity through a supported service provider
+You can find more information about **HA VPN** [here](https://cloud.google.com/network-connectivity/docs/vpn/concepts/topologies).
+
+
+
+**Classic VPN** allows your on-premise hosts to communicate through one or more IPsec VPN tunnels to Compute Engine virtual machine (VM). **Classic VPN** supports both policy-based and route-based VPN configurations, providing flexibility in designing the network topology. While **Classic VPN** offers secure connectivity, it does not provide the same level of high availability and automatic failover capabilities as **HA VPN**. Therefore, it is recommended to consider **HA VPN** for scenarios that require continuous and resilient connectivity. You can find more information about **Classic VPN** [here](https://cloud.google.com/network-connectivity/docs/vpn/concepts/classic-topologies)
+
