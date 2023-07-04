@@ -1,4 +1,0 @@
----
-events: true
-pageClass: white
----

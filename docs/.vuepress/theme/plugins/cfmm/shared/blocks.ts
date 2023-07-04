@@ -375,7 +375,8 @@ export const index = [
         ],
         "recommended": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
-          "cd162600-e742-4a80-b022-989da423ca43"
+          "cd162600-e742-4a80-b022-989da423ca43",
+          "fdd09e3d-c1f8-47be-8e1f-ece8449bf237"
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [
@@ -729,6 +730,7 @@ export const index = [
         "recommended": [],
         "scope": "🛬 Landing Zone",
         "tool-implementations": [
+          "f34c8753-fb41-4341-9d91-351836126962",
           "7e7bdd75-b6f7-4717-b7d6-c083cb1a71f8",
           "e5ff3f30-d1b0-4bea-a0a0-cb3a3f1cd6f5",
           "bb4aee68-0b2a-4746-98bf-18d200e58b9b",
@@ -1308,7 +1310,8 @@ export const index = [
           "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
         ],
         "tool": [
-          "e7fd910f-0ad8-446b-bb8b-d8f5956eceda"
+          "e7fd910f-0ad8-446b-bb8b-d8f5956eceda",
+          "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225"
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/blob/main/src/resources/Microsoft.Authorization/policySetDefinitions/Deploy-Diagnostics-LogAnalytics.json",
         "name": "Centralized Audit Logs"
@@ -1594,6 +1597,20 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "57e91719-5519-4fd3-a8e7-3afddb104a6f",
+      "url": "https://www.notion.so/Virtual-Network-Building-Block-57e9171955194fd3a8e73afddb104a6f",
+      "title": "Virtual Network Building Block",
+      "properties": {
+        "block": [],
+        "tool": [],
+        "link": "https://github.com/meshcloud/Building-Blocks/",
+        "name": "Virtual Network Building Block"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/virtual-machine-service.md",
     "frontmatter": {
       "id": "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44",
@@ -1708,7 +1725,8 @@ export const index = [
           "5f9c0f7d-860a-488b-bbf8-897618e5c76f",
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
           "71143f29-2fe9-452b-8398-fc40f270a2b6",
-          "1a1cdeb0-de7e-4ea9-a963-e409b9abed54"
+          "1a1cdeb0-de7e-4ea9-a963-e409b9abed54",
+          "fdd09e3d-c1f8-47be-8e1f-ece8449bf237"
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [
@@ -2021,6 +2039,25 @@ export const index = [
         "tool-implementations": [],
         "name": "Managed bastion hosts"
       }
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "6d20b1f0-3c57-4b37-9f11-c25e5d2d1704",
+      "url": "https://www.notion.so/Quota-Management-with-meshStack-6d20b1f03c574b379f11c25e5d2d1704",
+      "title": "Quota Management with meshStack",
+      "description": "meshStack has built-in support for managing quotas for private platforms like OpenStack or OpenShift including for auto-approval of quota requests up to a defined threshold.",
+      "properties": {
+        "block": [
+          "fdd09e3d-c1f8-47be-8e1f-ece8449bf237"
+        ],
+        "tool": [
+          "c5757e31-5c6c-487a-81b2-96ba50dda3af"
+        ],
+        "link": "https://docs.meshcloud.io/docs/meshcloud.tenant-quota.html",
+        "name": "Quota Management with meshStack"
+      },
+      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -2561,6 +2598,17 @@ export const index = [
         "name": "Service Account Management"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "frontmatter": {
+      "id": "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225",
+      "url": "https://www.notion.so/meshStack-building-blocks-Azure-8cea8fb402f74257a0bd24d6d1fd9225",
+      "title": "meshStack building blocks - Azure",
+      "properties": {
+        "category": "Landing Zone Implementation"
+      },
+      "pageType": "CFMMTool"
     }
   },
   {
@@ -3137,7 +3185,8 @@ export const index = [
           "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
         ],
         "tool": [
-          "56e4f66c-47e3-4849-9315-347694db82a1"
+          "56e4f66c-47e3-4849-9315-347694db82a1",
+          "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225"
         ],
         "link": "https://github.com/meshcloud/unipipe-service-broker",
         "name": "Modular Landing Zone"
@@ -3832,7 +3881,8 @@ export const index = [
           "2be4d7d1-4109-406b-a4f7-da6c566123fd"
         ],
         "tool": [
-          "e7fd910f-0ad8-446b-bb8b-d8f5956eceda"
+          "e7fd910f-0ad8-446b-bb8b-d8f5956eceda",
+          "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225"
         ],
         "link": "https://github.com/Azure/Enterprise-Scale/blob/main/docs/Deploy/deploy-lz-vnet.md",
         "name": "Virtual Networks"
@@ -4369,6 +4419,25 @@ export const index = [
     }
   },
   {
+    "frontmatter": {
+      "id": "f34c8753-fb41-4341-9d91-351836126962",
+      "url": "https://www.notion.so/Virtual-Network-Service-f34c8753fb4143419d91351836126962",
+      "title": "Virtual Network Service",
+      "description": "This building block can create a virtual network in azure. For more information please refer to building-blocks github repository",
+      "properties": {
+        "block": [
+          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
+        ],
+        "tool": [
+          "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225"
+        ],
+        "link": "https://github.com/meshcloud/building-blocks/tree/main/azure/terraform/networking",
+        "name": "Virtual Network Service"
+      },
+      "pageType": "CFMMTool2Block"
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/managed-internet-egress.md",
     "frontmatter": {
       "id": "f90c7375-88b9-42dc-8e98-a65c006b927a",
@@ -4453,6 +4522,29 @@ export const index = [
         "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Individual Service Provisioning"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/cost-management/quota-management.md",
+    "frontmatter": {
+      "id": "fdd09e3d-c1f8-47be-8e1f-ece8449bf237",
+      "url": "https://www.notion.so/Quota-Management-fdd09e3dc1f847be8e1fece8449bf237",
+      "title": "Quota Management",
+      "description": "Quotas are a simple mechanism for protecting cloud foundations and application teams against unforeseen spikes in usage/spend.",
+      "category": "💵 Cost Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "redaction-state": "Draft",
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [
+          "6d20b1f0-3c57-4b37-9f11-c25e5d2d1704"
+        ],
+        "name": "Quota Management"
       }
     }
   },

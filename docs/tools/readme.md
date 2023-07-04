@@ -20,6 +20,7 @@ order: 0
 | GCP CFT - Example Foundation           | Landing Zone Implementation |
 | GCP Fabric FAST                        | Landing Zone Implementation |
 | GCP Setup Checklist                    | Landing Zone Implementation |
+| meshStack building blocks - Azure      | Landing Zone Implementation |
 
 ## CFMM Tools
 

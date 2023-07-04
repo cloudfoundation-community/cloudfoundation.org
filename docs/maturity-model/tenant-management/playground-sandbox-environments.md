@@ -21,6 +21,7 @@ properties:
   recommended:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
     - cd162600-e742-4a80-b022-989da423ca43
+    - fdd09e3d-c1f8-47be-8e1f-ece8449bf237
   scope: ☁️ Platform
   tool-implementations:
     - 8b5e9c3f-82b4-429c-ad60-49176671d537

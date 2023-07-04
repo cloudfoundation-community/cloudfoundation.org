@@ -27,5 +27,5 @@ There’s two main implementation strategies for building bastion hosts
 
 - leveraging cloud-native services like [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) by pre-configuring them to integrate with your landing zone’s network infrastructure (see [Virtual Network Service](./virtual-network-service.md))
 
-- building a custom bastion host, possibly on top of an already existing [Virtual Machine Service](./virtual-machine-service.md) and with PAM software components on top like [boundary](https://www.boundaryproject.io) or CyberArk
+- building a custom bastion host, possibly on top of an already existing [Virtual Machine Service](./virtual-machine-service.md) and with PAM software components on top like [boundary](https://www.boundaryproject.io/) or CyberArk
 
