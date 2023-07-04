@@ -1,0 +1,4 @@
+---
+events: true
+pageClass: white
+---
