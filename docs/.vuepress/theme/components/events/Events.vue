@@ -23,22 +23,6 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
-          <div class="event-card">
-            <img src="./community.svg" alt="Event Community" />
-            <div class="event-card__content">
-              <h4>Community Event - June 28th, 9:00-11:00 am (CEST)</h4>
-              <p>
-                We have great news! The meshCommunity is back and we can’t wait
-                to mingle again.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/cloud-foundation-community-event/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
 
           <div class="event-card">
             <img src="./workshop.svg" alt="Event Workshop" />
@@ -68,6 +52,17 @@
       <div class="past-events">
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
+          <div class="event-card">
+            <img src="./community.svg" alt="Event Community" />
+            <div class="event-card__content">
+              <h4>Community Event - June 28th, 9:00-11:00 am (CEST)</h4>
+              <p>
+                We have great news! The meshCommunity is back and we can’t wait
+                to mingle again.
+              </p>
+            </div>
+          </div>
+
           <div class="event-card">
             <img src="./dev_ops_con.svg" alt="DevOpsCon" />
             <div class="event-card__content">

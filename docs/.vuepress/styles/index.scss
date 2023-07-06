@@ -118,7 +118,6 @@ $btn-padding-x-lg: 1.5rem !default;
   --c-warning-text-accent: var(--c-text);
   --c-danger: #{$danger};
   --c-danger-bg: #ffe0e0;
-
   --c-danger-title: #990000;
   --c-danger-text: #660000;
   --c-danger-text-accent: var(--c-text);
@@ -224,13 +223,6 @@ blockquote {
 }
 
 .navbar, .sidebar {
-  .navbar-item {
-    a.router-link-active {
-      color: $primary;
-      border-bottom: none;
-    }
-  }
-
   .navbar-item:last-child {
     a {
       position: relative;
@@ -308,11 +300,6 @@ a.btn {
     &:hover {
       background-color: #000000;
       color: #ffffff;
-    }
-
-    &:active {
-      background-color: #000000 !important;
-      border-color: #000000 !important;
     }
   }
 }
