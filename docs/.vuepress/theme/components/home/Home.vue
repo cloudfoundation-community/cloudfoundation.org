@@ -40,7 +40,7 @@
       >
         <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
-          Upcoming: Cloud Foundation Community event on June 28th
+          Upcoming: Cloud Landing Zone 101 Workshop (German) on July 11th
         </p>
       </div>
     </div>

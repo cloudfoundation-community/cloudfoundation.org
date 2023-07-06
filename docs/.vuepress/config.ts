@@ -42,7 +42,16 @@ navbar.push(
   },
   {
     text: "Maturity Model",
-    link: "/maturity-model/",
+    children: [
+      {
+        text: "Full Maturity Model",
+        link: "/maturity-model/",
+        activeMatch: "/^/maturity-model/$/"
+      },
+      ...getChildDirectories("docs/maturity-model").map(
+          (x) => `/maturity-model/${x}/`
+      ),
+    ],
   },
   {
     text: "Resources",
@@ -77,7 +86,7 @@ const cfmmOptions: CfmmPluginOptions = {
 const websiteDescription = "A solid foundation for your Cloud Journey";
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: "en-US",
-  title: "Cloudfoundation.org",
+  title: "Cloud Foundation Community",
   description: websiteDescription,
   theme: path.resolve(__dirname, "./theme"),
   head: [
