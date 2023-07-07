@@ -31,7 +31,7 @@
                 Cloud Landing Zone 101 (German) - July 11th, 14:00-16:30 (CEST)
               </h4>
               <p>
-                From the application team request to the finished Cloud
+                From the application team's request to the finished Cloud
                 Environment: This webinar is the ideal chance to learn the steps
                 involved in setting up a cloud environment, including selecting
                 the right cloud provider, designing the infrastructure, and
