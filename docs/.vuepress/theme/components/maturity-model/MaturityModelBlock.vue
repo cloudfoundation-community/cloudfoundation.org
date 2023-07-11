@@ -177,7 +177,7 @@ h4 {
   .block-summary {
     color: black;
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
+    font-size: max(12px, 0.5vw);
     margin: 0;
     // provide a nice expand/collapse animation
     // unfortunately we can't animate the display property, so we hack aroundo this with height and opacity
@@ -229,7 +229,7 @@ h4 {
     text-align: left;
 
     p {
-      font-size: 10px;
+      font-size: max(12px, 0.6vw);
       font-weight: 700;
       color: #2d3e4f;
     }
