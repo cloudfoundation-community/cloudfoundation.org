@@ -63,7 +63,7 @@ navbar.push(
   },
   {
     text: "Join the Community",
-    link: "https://cloudfoundation-org.slack.com/join/shared_invite/zt-1x679w1w2-PhvktDX0Kj~KtfwUPJODiQ",
+    link: "https://join.slack.com/t/cloudfoundation-org/shared_invite/zt-20ghuqkoj-ClraVpIIixF3Byn3IpyWDg",
   }
 );
 
