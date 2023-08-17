@@ -14,7 +14,7 @@
           </p>
           <div class="d-flex button-group">
             <a
-              href="https://cloudfoundation-org.slack.com/join/shared_invite/zt-1x679w1w2-PhvktDX0Kj~KtfwUPJODiQ"
+              href="https://join.slack.com/t/cloudfoundation-org/shared_invite/zt-20ghuqkoj-ClraVpIIixF3Byn3IpyWDg"
               class="btn btn-primary btn-md"
             >
               Join now
@@ -97,7 +97,7 @@
             the world.
           </p>
           <a
-            href="https://hubs.ly/Q01RxdMl0"
+            href="https://join.slack.com/t/cloudfoundation-org/shared_invite/zt-20ghuqkoj-ClraVpIIixF3Byn3IpyWDg"
             class="btn btn-outline-primary btn-lg mt-2"
           >
             Join The Community
