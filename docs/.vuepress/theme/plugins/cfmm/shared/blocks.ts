@@ -804,13 +804,14 @@ export const index = [
     }
   },
   {
-    "file": "tools/selecting-cloud-foundation-tools.md",
+    "file": "resources/readme.md",
     "frontmatter": {
-      "id": "2efdc850-20dc-400c-982a-1279326ec5df",
-      "url": "https://www.notion.so/Selecting-Cloud-Foundation-Tools-2efdc85020dc400c982a1279326ec5df",
-      "title": "Selecting Cloud Foundation Tools",
-      "category": "Tools",
-      "order": 10
+      "id": "2e88a1b6-6eac-47e6-9156-182ac9520886",
+      "url": "https://www.notion.so/Resources-2e88a1b66eac47e69156182ac9520886",
+      "title": "Resources",
+      "category": "Resources",
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {
@@ -1384,7 +1385,8 @@ export const index = [
       "url": "https://www.notion.so/What-is-a-Cloud-Foundation-4f1a5a1d8abe42e1ba960f5a6b68e38f",
       "title": "What is a Cloud Foundation",
       "category": "Understanding Cloud Foundation",
-      "order": 0
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {
@@ -1912,7 +1914,8 @@ export const index = [
       "url": "https://www.notion.so/Overview-640be841cf31480d835d89d491b558f5",
       "title": "Overview",
       "category": "Tools",
-      "order": 0
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {
@@ -2109,6 +2112,17 @@ export const index = [
         ],
         "name": "Multi-Cloud Tagging Policy"
       }
+    }
+  },
+  {
+    "file": "about/readme.md",
+    "frontmatter": {
+      "id": "70ae9c73-3677-4172-ae54-e1b8436974c2",
+      "url": "https://www.notion.so/About-70ae9c7336774172ae54e1b8436974c2",
+      "title": "About",
+      "category": "About",
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {
@@ -2395,7 +2409,7 @@ export const index = [
       "url": "https://www.notion.so/Tool-Support-7eab5fc5d5e241d5b7628d80fc98b2d4",
       "title": "Tool Support",
       "category": "Tools",
-      "order": 11
+      "order": -1
     }
   },
   {
@@ -2918,6 +2932,17 @@ export const index = [
         "name": "meshcloud Cloud Foundation CLI tool"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "events/readme.md",
+    "frontmatter": {
+      "id": "ad9ede34-3b2a-4512-9f8a-4d21935229a1",
+      "url": "https://www.notion.so/Events-ad9ede343b2a45129f8a4d21935229a1",
+      "title": "Events",
+      "category": "Events",
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {
@@ -4285,6 +4310,17 @@ export const index = [
         "category": "Landing Zone Implementation"
       },
       "pageType": "CFMMTool"
+    }
+  },
+  {
+    "file": "open-source-tools/readme.md",
+    "frontmatter": {
+      "id": "efe09a6d-75a9-4790-b812-88af66a20b0a",
+      "url": "https://www.notion.so/OpenSourceTools-efe09a6d75a94790b81288af66a20b0a",
+      "title": "OpenSourceTools",
+      "category": "Open Source Tools",
+      "order": 0,
+      "pageClass": "white"
     }
   },
   {

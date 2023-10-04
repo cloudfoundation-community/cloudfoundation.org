@@ -5,6 +5,7 @@ url: >-
 title: What is a Cloud Foundation
 category: Understanding Cloud Foundation
 order: 0
+pageClass: white
 ---
 
 A Cloud Foundation is an organization’s strategic approach to mastering its cloud transformation. This approach has two major aspects: An organizational and a technological one. Following the Cloud Foundation approach means putting application teams at the center and providing them with a single point of access for the management of their cloud infrastructure.

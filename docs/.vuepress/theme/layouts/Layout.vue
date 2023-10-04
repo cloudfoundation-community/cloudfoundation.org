@@ -9,10 +9,10 @@ Replicate the default theme layout, but add custom page-content-before/page-cont
     </template>
     <template #page>
       <Home v-if="frontmatter.home" />
-      <Events v-else-if="frontmatter.events" />
-      <Resources v-else-if="frontmatter.resources" />
-      <OpenSourceTools v-else-if="frontmatter.openSourceTools" />
-      <About v-else-if="frontmatter.about" />
+      <Events v-else-if=" frontmatter.category == 'Events' && frontmatter.order == 0" />
+      <Resources v-else-if=" frontmatter.category == 'Resources' && frontmatter.order == 0" />
+      <OpenSourceTools v-else-if=" frontmatter.category == 'Open Source Tools' && frontmatter.order == 0" />
+      <About v-else-if="frontmatter.category == 'About' && frontmatter.order == 0" />
       <CFMMBlockPage
         :key="page.path"
         v-else-if="frontmatter.pageType == 'CFMMBlock'"
