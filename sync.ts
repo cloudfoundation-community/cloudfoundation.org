@@ -39,12 +39,21 @@ const config: SyncConfig = {
     destinationDirBuilder: (page) => slugify(page.properties.get("Category")),
     frontmatterBuilder: (page) => {
       const layout = page.properties.get("layout");
-      const extraFrontmatter = layout ? { layout } : {};
+      const order = page.properties.get("order");
+      const category = page.properties.get("Category");
+
+      const isTopLevelPage = order === 0;
+      const extraFrontmatter = {
+        ...(layout ? { layout } : {}),
+        ...(isTopLevelPage && category != "Maturity Model" // this is a workaround to get the static pages rendering correctly
+          ? { pageClass: "white" }
+          : {}),
+      };
 
       return {
         ...commonFrontmatter(page),
-        category: page.properties.get("Category"),
-        order: page.properties.get("order"),
+        category: category,
+        order: order,
         ...extraFrontmatter,
       };
     },
