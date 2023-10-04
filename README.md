@@ -8,6 +8,10 @@ render markdown files based on Notion documents.
 
 > Make sure to read the [Contributor Guide](https://www.notion.so/meshcloud/Contributor-Guide-for-cloudfoundation-meshcloud-io-5b23e05cc0214e0994173c5670dac18b.). This readme contains technical information about the website only.
 
+## Amplify Deployment
+
+You can find the right AWS Account via meshcloud-prod, Workspace `CFMM`, Project `cfmm-website-prod` and select AWS.
+
 ## Apps Script Deployment
 
 The website contains a feedback form. This is a manually built form that
