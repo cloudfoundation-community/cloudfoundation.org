@@ -1,12 +1,4 @@
-
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "4.65.0"
-    }
-  }
-
   backend "s3" {
     bucket = "cloudfoundation-org-tf-state"
     key    = "amplif/teraform.tfstate"
@@ -21,18 +13,6 @@ provider "aws" {
   allowed_account_ids = ["209029743043"]
 }
 
-resource "aws_s3_bucket" "terrform_state" {
-  bucket = "cloudfoundation-org-tf-state"
-  // buckets are private by default https://aws.amazon.com/about-aws/whats-new/2022/12/amazon-s3-automatically-enable-block-public-access-disable-access-control-lists-buckets-april-2023/
-  // buckets also encrypt by default https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html
-}
-
-resource "aws_s3_bucket_versioning" "terrform_state" {
-  bucket = aws_s3_bucket.terrform_state.id
-  versioning_configuration {
-    status = "Enabled"
-  }
-}
 
 locals {
   redirects = [
@@ -93,6 +73,27 @@ resource "aws_amplify_app" "cloudfoundation" {
   name       = "cloudfoundation"
   repository = "https://github.com/meshcloud/cloudfoundation"
 
+  # note: rules here are processed top to bottom! 
+
+  # domain redirects
+  custom_rule {
+    source = "https://www.cloudfoundation.org"
+    target = "https://cloudfoundation.org"
+    status = "301"
+  }
+
+  custom_rule {
+    source = "https://cfmm.meshcloud.io"
+    target = "https://cloudfoundation.org"
+    status = "301"
+  }
+
+  custom_rule {
+    source = "https://cloudfoundation.meshcloud.io"
+    target = "https://cloudfoundation.org"
+    status = "301"
+  }
+
   # Redirects for individual pages that we moved/renamed but we want to make sure we don't confuse google      
   dynamic "custom_rule" {
     for_each = toset(local.redirects)
@@ -127,4 +128,85 @@ resource "aws_amplify_app" "cloudfoundation" {
     status = "404-200"
     target = "/index.html"
   }
+}
+
+import {
+  to = aws_amplify_branch.main
+  id = "d1hcfax2v5hi8a/main"
+}
+
+resource "aws_amplify_branch" "main" {
+  app_id      = aws_amplify_app.cloudfoundation.id
+  branch_name = "main"
+  framework   = "VuePress"
+  stage       = "PRODUCTION"
+  tags        = {}
+
+  enable_pull_request_preview = true
+
+  environment_variables = {
+    "AMPLIFY_ENV" = "prod"
+  }
+}
+
+# note: the cloudfoundation.org record is managed via a building block in meshcloud-prod meshStack
+
+# There are a couple challenges with Amplify
+# According to the AWS Amplify Console, this is the record we shall create
+# @    ANAME    d3c878lme1aflz.cloudfront.net
+# However, this is not easily possible because our Route53 is in a different account than where Amplify is
+# Some claim this doesn't work see https://github.com/aws-amplify/amplify-hosting/issues/2877, but it does work indeed 
+# with a cross-acount alias https://stackoverflow.com/questions/35928471/cross-account-alias-records and
+# this magic value, see https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
+# for the "alias_hosted_zone_id" = "Z2FDTNDATAQYW2"
+
+resource "aws_amplify_domain_association" "cloudfoundation_org" {
+  app_id                = aws_amplify_app.cloudfoundation.id
+  domain_name           = "cloudfoundation.org"
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = ""
+  }
+}
+
+
+resource "aws_amplify_domain_association" "www_cloudfoundation_org" {
+  app_id                = aws_amplify_app.cloudfoundation.id
+  domain_name           = "www.cloudfoundation.org"
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = ""
+  }
+}
+
+resource "aws_amplify_domain_association" "cfmm_meshcloud_io" {
+  app_id                = aws_amplify_app.cloudfoundation.id
+  domain_name           = "cfmm.meshcloud.io"
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = ""
+  }
+}
+
+resource "aws_amplify_domain_association" "cloudfoundation_meshcloud_io" {
+  app_id                = aws_amplify_app.cloudfoundation.id
+  domain_name           = "cloudfoundation.meshcloud.io"
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = ""
+  }
+}
+
+
+output "domains" {
+  value = [
+    aws_amplify_domain_association.cloudfoundation_org,
+    aws_amplify_domain_association.www_cloudfoundation_org,
+    aws_amplify_domain_association.cfmm_meshcloud_io,
+    aws_amplify_domain_association.cloudfoundation_meshcloud_io,
+  ]
 }
