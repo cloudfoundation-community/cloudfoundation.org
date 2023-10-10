@@ -2,6 +2,7 @@ node_modules
 .temp
 .cache
 .env
+.terraform
 dist/
 .idea
 credentials.json

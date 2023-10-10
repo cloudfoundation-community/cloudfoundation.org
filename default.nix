@@ -13,6 +13,9 @@ pkgs.mkShell {
         nodejs = pkgs.nodejs-16_x;
     })
 
+    pkgs.terraform
+    pkgs.awscli2
+
     # currently not possible to override nodejs, see https://github.com/NixOS/nixpkgs/issues/151868
     # pkgs.google-clasp 
     # pkgs.google-cloud-sdk
