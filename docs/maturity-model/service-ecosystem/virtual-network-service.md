@@ -100,12 +100,6 @@ Most applications need to connect to resources outside the virtual network than 
 
 - [Managed Internet Egress](./managed-internet-egress.md) 
 
-
-
-## How to Implement a Virtual Network Service
-
-
-
 Utilizing a Hub and Spoke architecture is a very common choice when working
 with Networks. Hub and Spoke can be used to allow traffic between multiple resources. It can connect Virtual Networks to each other or to your On-Premise Networks. Here are the basic steps to create a Hub and Spoke Network
 
@@ -114,6 +108,8 @@ with Networks. Hub and Spoke can be used to allow traffic between multiple resou
 1. Create Spoke Virtual Networks or gather information about your On-Premise networks. Make sure none of the networks are sharing the same CIDR address ranges.
 
 1. Create a connection to allow traffic between a Spoke Network (VNet or On-Premise) and the Hub. Create Route Tables for each Spoke to direct traffic. This will allow traffic to securely flow between Spokes as needed.
+
+The Hub Network can hold resources that can be shared and accessed by the Spoke Networks. Some things that your Hub can handle are gateways to securely connect networks, central location of logs for each Spoke, diagnostics to analyze and alert on events in the logs, load balancers, configuration metadata and a central Firewall to apply policies to all Spokes among other things.
 
 ### Azure
 
@@ -181,5 +177,46 @@ And you can find information on how to create a Cloud WAN including a Global Net
 
 ### GCP
 
-Virtual Private Clouds can be created using the Google Cloud console, gcloud CLI, Terraform modules or Google API. You can create different types of VPCs using the Google documentation [here](https://cloud.google.com/vpc/docs/create-modify-vpc-networks#console)
+GCP offers two options for managing a Hub and Spoke Network Architecture: [VPC Network Peering](https://cloud.google.com/vpc/docs/vpc-peering) and [Cloud VPN](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
+
+#### VPC Network Peering
+
+VPC Network Peering allows for secure communication between resources over Google’s internal network using private IP addresses. Each spoke VPC network in this architecture has a peering relationship with a central hub VPC network as well as a Cloud NAT Gateway for outbound communication with the internet.
+
+Some of the benefits of VPC Network Peering include
+
+- Lower Network Latency because internal traffic never traverses the
+public internet
+
+- Increased Network Security because service owners do not need to have
+their services exposed to the public internet
+
+- Lower Network Costs for traffic between networks that are peered and
+using internal IP addresses to communicate
+
+There are some constraints when working with VPC Networking Peering. The peering connections between the spoke VPC networks and the hub VPC network don't allow transitive traffic; that is, inter-spoke communication through the hub is not possible. Resources such as GKE private nodes and Cloud SQL instances that have private IP addresses require a proxy for access from outside their VPC network. You are also limited to a maximum of 25 connections to a single VPC instance.
+
+You can find more information about what VPC Network Peering is and how it works [here](https://cloud.google.com/vpc/docs/vpc-peering). You can find information about how to setup and use VPC Network Peering [here](https://cloud.google.com/vpc/docs/using-vpc-peering).
+
+#### Cloud VPN
+
+Cloud VPN allows you to overcome some of the constraints of VPC Network Peering. Cloud VPN allows for traffic to flow between Spokes and does not have a limit to the amount of connections to a single VPC instance. This allows your network to be more flexible and scale more easily.
+
+To allow inter-Spoke traffic, you will need to initialize a Cloud VPN service in a Spoke Network and connect it to a VPN Gateway on your Hub Network.
+
+Google Cloud offers two types of Cloud VPN gateways: HA VPN and Classic VPN. However, certain Classic VPN functionality is deprecated.
+
+**HA VPN**
+
+HA VPN is a high-availability (HA) Cloud VPN solution that lets you securely connect your on-premises network to your VPC network through an IPsec VPN connection in a single region. HA VPN provides an SLA of 99.99% service availability.
+
+You can find more information about HA VPN [here](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview#ha-vpn).
+
+**Classic VPN**
+
+All Cloud VPN gateways created before the introduction of HA VPN are considered Classic VPN gateways. Google recommends upgrading any Classic VPN services to HA VPN and has a guide on how to do that [here](https://cloud.google.com/network-connectivity/docs/vpn/how-to/moving-to-ha-vpn).
+
+Classic VPN gateways have a single interface, a single external IP address, and support tunnels that use static routing (policy-based or route-based). You can also configure dynamic routing (BGP) for Classic VPN, but only for tunnels that connect to third-party VPN gateway software running on Google Cloud VM instances.
+
+You can find more information about Classic VPN [here](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview#classic-vpn).
 
