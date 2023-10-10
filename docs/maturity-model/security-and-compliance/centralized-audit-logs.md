@@ -18,7 +18,7 @@ properties:
     - af14b5df-77b4-4def-b761-8fadabd241ca
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
   recommended: []
-  scope: 🛬 Landing Zone
+  scope: ☁️ Platform
   tool-implementations:
     - 50e4e2e5-9fb6-49f7-8b57-6988b865b412
     - beba1d31-43fe-4663-b3f5-cd32d6a5cf54
