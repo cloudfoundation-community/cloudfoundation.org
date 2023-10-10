@@ -141,7 +141,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         trackerOptions: {
           apiHost: "",
           domain:
-            process.env.RENDER_GIT_BRANCH === "main" // This way Plausible will only track data for the production version.
+            process.env.AWS_BRANCH === "main" // This way Plausible will only track data for the production version.
               ? "cloudfoundation.org"
               : "preview.cloudfoundation.org",
         },
