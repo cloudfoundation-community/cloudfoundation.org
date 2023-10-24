@@ -504,10 +504,11 @@ export const index = [
           "18256d4f-e096-4281-809a-f77c5dd20ef0"
         ],
         "redaction-state": "mvp1",
-        "journey-stage": "⭐️⭐️",
+        "journey-stage": "⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
-          "0dd09c75-2acd-4e87-9721-6b5f563da035"
+          "0dd09c75-2acd-4e87-9721-6b5f563da035",
+          "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
         ],
         "recommended": [],
         "scope": "☁️ Platform",
@@ -759,7 +760,8 @@ export const index = [
         "enables": [
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
           "59fc4d46-739d-4d49-8bd7-d7b4882709ba",
-          "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02"
+          "012dc29a-5b79-4eeb-8154-9ef0f2ae0f02",
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
