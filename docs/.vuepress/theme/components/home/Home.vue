@@ -40,7 +40,7 @@
       >
         <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
-          Upcoming: meshcloud Conference 2023 on September 19th
+          Upcoming: Landing Zone 102 Workshop on December 13th
         </p>
       </div>
     </div>
