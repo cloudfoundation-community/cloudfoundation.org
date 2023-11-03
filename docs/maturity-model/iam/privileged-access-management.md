@@ -14,10 +14,11 @@ properties:
   enables:
     - 18256d4f-e096-4281-809a-f77c5dd20ef0
   redaction-state: mvp1
-  journey-stage: ⭐️⭐️
+  journey-stage: ⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
     - 0dd09c75-2acd-4e87-9721-6b5f563da035
+    - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
   recommended: []
   scope: ☁️ Platform
   tool-implementations:
@@ -33,37 +34,73 @@ properties:
 
 ## What Is Privileged Access Management (PAM)?
 
-In an enterprise environment, “privileged access” is a term used to designate special access or abilities above and beyond that of a standard user. Privileged access allows organizations to secure their infrastructure and applications, run business efficiently and maintain the confidentiality of sensitive data and critical infrastructure.
+Privileged Access Management (PAM) refers to the implementation of security measures and best practices to control and monitor access to critical resources within cloud platforms. For cloud foundation teams, it is about safeguarding administrative roles that enable access to core infrastructure, ensuring the security, compliance, and visibility needed to oversee application teams' cloud usage.
 
-Access to cloud tenants is usually not a privileged operation from a cloud foundation perspective but for application teams it is the other way round. From the application team perspective, cloud tenants are an infrastructure and access to the application infrastructure is usually administrative/privileged. Application teams using these cloud tenants need to be equipped with appropriate means to secure access to the environments. 
+> **💡** From the perspective of application teams, privileged access management refers to access to cloud tenants and infrastructure running their workloads. The cloud foundation maturity model discusses this perspective separately in the [Resource Authorization Management](./resource-authorization-management.md) capability.
 
-## Key Points
+This article explores the essential aspects of Privileged Access Management and provides best practice recommendations for AWS, Azure, and GCP.
 
-Below you will find some important points to understand PAM better:
+### **The Significance of Privileged Access Management**
 
-- Let us first understand what is open and closed landing zone.
+Privileged Access Management is essential for several reasons:
 
-    **Open** landing zone designs allow teams to create and modify Identity and Access Management (IAM) roles and permissions on cloud tenants. The cloud foundation only enforces a minimum set of IAM policies on the tenant.  
+1. **Security:** Protecting privileged accounts is critical to prevent unauthorized access and potential security breaches that could lead to data leaks or system compromises.
 
-    **Closed** landing zone designs on the other hand prevent teams from creating or modifying IAM roles and permissions on cloud tenants. Teams must request all such changes via the cloud foundation team.
+1. **Compliance:** Many regulatory standards require strict control and monitoring of privileged access, making PAM crucial for maintaining compliance.
 
-    For more details on authorization and privileged access, please refer to the topic [Resource Authorization Management](./resource-authorization-management.md).
+1. **Operational Efficiency:** Proper PAM ensures that authorized users have the necessary access to perform their duties efficiently, reducing operational risks.
 
-- Emergency access accounts are highly privileged, and they are not assigned to specific individuals. Emergency access accounts are limited to emergency or "break glass"' scenarios where normal administrative accounts can't be used. It is recommended that you maintain a goal of restricting emergency account use to only the times when it is absolutely necessary. For example, when an important application has stopped functioning and operating users needs access to debug and fix the problem or when project access for a specific user must be immediately revoked due to an account compromise.
+1. **Auditing and Monitoring:** It allows for comprehensive tracking and auditing of actions taken by privileged users, enabling timely threat detection and response. This is usually provided by [Centralized audit logs](../security-and-compliance/centralized-audit-logs.md).
 
-- PAM is grounded in the principle of least privilege wherein users only receive the minimum levels of access required to perform their job functions. The principle of least privilege is widely considered to be a best practice and is a fundamental step in protecting privileged access to high-value data and assets.
+### **Privileged Roles for Cloud Foundation Teams**
 
-## Implementation of PAM
+A typical cloud foundation will have various roles, each with its set of responsibilities. These roles typically include:
 
-### Azure Active Directory (AAD)
+- **Security Auditors:** Responsible for ensuring compliance and security across cloud resources.
 
-Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. For more details, please refer to [Azure AD Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure).
+- **Billing Admins:** Manage financial aspects of cloud usage and allocate costs to various teams or projects.
 
-### Google Cloud Identity
+- **Network Admins:** Oversee networking configurations, ensuring connectivity and security.
 
-In Azure it is possible to restrict access to the production environment using Azure AD. This can be achieved using Google Cloud Organization Service. Also, if you use Google Cloud Directory Sync you can manage users through Azure Active Directory and use it to authenticate against Google Cloud.
+- **Platform Engineers:** Responsible for deploying Landing zones, performing or automating [Tenant Provisioning](../tenant-management/tenant-provisioning.md), [Tenant Deprovisioning / Decommissioning](../tenant-management/tenant-deprovisioning-decommissioning.md) as well as deploying individual services as part of [Modular Landing Zones](../tenant-management/modular-landing-zones.md).
 
-### AWS SSO
+### **Emergency Access Accounts and "Break Glass Routine"**
 
-PAM solutions are designed to enforce consistent PAM best practices every time a new AWS account is set up, whether that’s by the security team, the infrastructure team or a single developer building an application. For more details, please refer to [**Managing temporary elevated access**](https://aws.amazon.com/blogs/security/managing-temporary-elevated-access-to-your-aws-environment/).
+Emergency access accounts are a crucial part of PAM. These accounts are reserved for rare, critical situations, such as when standard access mechanisms fail or during security incidents. To ensure controlled access:
+
+- **Define Strict Access Procedures:** Create detailed procedures for who can access these accounts and under what circumstances.
+
+- **Regular Review:** Periodically review and update these procedures to ensure their effectiveness.
+
+- **Multi-Factor Authentication (MFA):** Enforce MFA for emergency accounts to add an extra layer of security.
+
+If your organization is already using on-premise Privileged Access Management solutions like CyberArk, you can extend their capabilities to the cloud. These solutions offer centralized control and monitoring of privileged access, making them valuable in a multi-cloud environment.
+
+## Best Practices for Implementing Privileged Access Management
+
+### **AWS Privileged Access Management Best Practices**
+
+- **Root User Credential Management:** The AWS root user should have its password securely stored and only accessed through a well-documented and tightly controlled[ "break glass" procedure](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html). Cloud Foundation teams should not hand over these credentials to application teams.
+
+- **Use IAM Roles:** AWS Identity and Access Management (IAM) roles should be employed for day-to-day administrative tasks instead of root user access.
+
+- **Temporary Access:** Assume privileged roles only for the duration necessary to perform administrative operations to implement [Temporary Elevated Access](https://aws.amazon.com/blogs/security/managing-temporary-elevated-access-to-your-aws-environment/).
+
+### **Azure Privileged Access Management Best Practices**
+
+Azure Active Directory (AAD) provides built-in PAM mechanisms:
+
+- **Azure Privileged Identity Management (PIM):** Azure PIM allows just-in-time privileged access, ensuring roles are only active when needed.
+
+- **Azure Conditional Access:** Implement Conditional Access policies to restrict access based on various criteria, such as location, device, and risk.
+
+> **💡** Leveraging some of these features requires AAD Premium P1 or P2 Licenses.
+
+### GCP **Privileged Access Management Best Practices**
+
+GCP does not have similar built-in PAM capabilities like AAD. Its lack of Root user credentials (like in AWS) however simplify PAM management.
+
+- **External Identity Providers:** GCP allows you to integrate with external identity providers (IdPs), such as Google Workspace, LDAP, or SAML-based providers. This is similar to Azure's ability to integrate with external IdPs.
+
+In conclusion, Privileged Access Management is a cornerstone of cloud security and governance. By implementing the best practices outlined for AWS, Azure, and GCP, cloud foundation teams can ensure the integrity and security of their cloud infrastructure while supporting the diverse needs of their application teams.
 

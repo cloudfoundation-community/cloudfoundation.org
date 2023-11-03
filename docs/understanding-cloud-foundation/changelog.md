@@ -8,6 +8,8 @@ order: 40
 
 ## 2023-10
 
+- We updated [Privileged Access Management](../maturity-model/iam/privileged-access-management.md) and also changed its journey stage from “Recommended” to “Essential”. While we realize many cloud foundation teams in the beginning of their cloud journey will not be able to implement a sophisticated solution for this capability at the start of their journey, this is better tracked as an implementation maturity rather than putting the capability on the shelf for later. This is especially critical on platforms like AWS where root account user credentials need to be protected.
+
 - We update [Virtual Network Service](../maturity-model/service-ecosystem/virtual-network-service.md) to describe the most common implementation mechanisms and cloud services for AWS, GCP and Azure
 
 - Changed [Centralized audit logs](../maturity-model/security-and-compliance/centralized-audit-logs.md) scope to to “Platform”. It was tagged as “Landing Zone” scope before but is more commonly implemented centrally for the entire cloud platform.
