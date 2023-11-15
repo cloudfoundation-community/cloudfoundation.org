@@ -26,7 +26,7 @@ properties:
   name: Multi-cloud tenant database integrated with lifecycle management
 ---
 
-This building block is the next evolution of the capabilities of a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) by integrating automated metadata maintenance with [Tenant Provisioning](./tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) processes. This process integration ensures that tenant data is always up to date and there are no “shadow workloads” on your cloud. 
+This capability is the next evolution of the capabilities of a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) by integrating automated metadata maintenance with [Tenant Provisioning](./tenant-provisioning.md) and [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) processes. This process integration ensures that tenant data is always up to date and there are no “shadow workloads” on your cloud. 
 
 > **💡** Integration with tenant provisioning and deprovisioning processes is a “proactive” strategy to ensure all your cloud tenants are registered. [Tenant Inventory Reconciliation](./tenant-inventory-reconciliation.md) is the corresponding “reactive” strategy.
 

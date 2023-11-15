@@ -71,7 +71,7 @@ While the CI/CD platform provides a space for executing the DevOps toolchain, se
 
 ### Observability
 
-**“You build it - you run it.”** Application teams are not only responsible for the deployment of their applications, but also operating them in production. This is where observability solutions come in that help teams get insight into system and application performance. There is a wide variety of different tools that teams may want to leverage here, and product owners responsible for the DevOps toolchain should consider offering integration with tools that are widely used in the organisation. Examples can include
+**“You build it - you run it.”** Application teams are not only responsible for the deployment of their applications, but also operating them in production. This is where observability solutions come in that help teams get insight into system and application performance. There is a wide variety of different tools that teams may want to leverage here, and product owners responsible for the DevOps toolchain should consider offering integration with tools that are widely used in the organization. Examples can include
 
 - DataDog
 
@@ -116,5 +116,5 @@ If the Cloud Foundation team wants to provide continuous delivery capabilities i
 
 - a **fully automated** process sets up service accounts and allows the CI/CD platform to impersonate service accounts. This can be achieved by managing secrets for those service accounts, including regular rotations. An even better approach is Workload Identity Federation([GCP](https://cloud.google.com/iam/docs/workload-identity-federation), [Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)). With Workload Identity Federation no secrets need to be stored or rotated.
 
-Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation building blocks such as [Managed Key Vault](./managed-key-vault.md) and [Service Account Management](../iam/service-account-management.md).
+Operators can accomplish the implementation of managed service credentials for CI/CD by leveraging other cloud foundation capabilities such as [Managed Key Vault](./managed-key-vault.md) and [Service Account Management](../iam/service-account-management.md).
 

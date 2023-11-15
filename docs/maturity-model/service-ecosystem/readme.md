@@ -17,7 +17,7 @@ In the same way that cloud platforms are composed out of multiple services built
 
 ## Key Activities for a Multi-Cloud Service Ecosystem
 
-Building a strong multi-cloud service ecosystem needs to consider the unique demands of the application teams. The building blocks however represent common capabilities that many organizations implement along their cloud journey:
+Building a strong multi-cloud service ecosystem needs to consider the unique demands of the application teams in your organization. 
 
 - An [Internal Service Marketplace](./internal-service-marketplace.md) is the foundation for offering internal services in a consistent way and enabling teams outside the cloud foundation to build and consume services as well
 
@@ -49,7 +49,7 @@ As the cloud foundation approach is all about integrating the capabilities of it
 
 [💵 Cost Management](../cost-management/readme.md) 
 
-- Integrate metering and chargeback with cost management building blocks like [Pay-per-Use for internal Services](../cost-management/pay-per-use-for-internal-services.md). These are an integral part of enabling an [Internal Service Marketplace](./internal-service-marketplace.md).
+- Integrate metering and chargeback with cost management capabilities like [Pay-per-Use for internal Services](../cost-management/pay-per-use-for-internal-services.md). These are an integral part of enabling an [Internal Service Marketplace](./internal-service-marketplace.md).
 
 ## Designing a Multi-Cloud Service Ecosystem Strategy
 

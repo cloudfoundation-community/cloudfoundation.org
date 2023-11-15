@@ -12,7 +12,6 @@ category: 🔐 IAM
 pageType: CFMMBlock
 properties:
   enables:
-    - 1afea746-da65-4164-9029-5e0bfa9432b1
     - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
     - dff7d733-d987-4145-aa1a-e340b5bcff81
     - 3c65a957-cb62-40fe-978e-709e3450f7fe
@@ -25,6 +24,7 @@ properties:
   journey-stage: ⭐️⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
+    - 1afea746-da65-4164-9029-5e0bfa9432b1
   recommended: []
   scope: 🛬 Landing Zone
   tool-implementations:

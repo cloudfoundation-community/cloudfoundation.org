@@ -134,14 +134,12 @@ The Cloud Foundation Maturity Model is **implementation agnostic**. While meshc
 <!--notion-markdown-cms:raw-->
 <CallToAction>
   <CtaHeader>Explore the Cloud Foundation Maturity Model</CtaHeader>
-  <CtaText>Get the full picture of where you are and the road ahead with the more than 50 building blocks.</CtaText>
+  <CtaText>Get the full picture of where you are and the road ahead with the more than 70 capabilities.</CtaText>
   <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloud-assessment-free-poster/#download">Download Free Poster</CtaButton>
-	<CtaButton class="btn-secondary" url="https://cloudfoundation.meshcloud.io/maturity-model/">Explore the Building Blocks</CtaButton>
+	<CtaButton class="btn-secondary" url="https://cloudfoundation.meshcloud.io/maturity-model/">Explore the Capabilities</CtaButton>
 </CallToAction>
 
 #### Finding Your Way around the Maturity Model
 
-In the Cloud Foundation Maturity Model capabilities are called building blocks. The term “building block” emphasizes, that building a cloud foundation is a matter of putting together the right blocks (think LEGO) out of the variety of blocks that you could use. The essence of a building block is laid out in [**What is a Building Block**](https://cloudfoundation.meshcloud.io/understanding-cloud-foundation/what-is-a-building-block.html).
-
-The model also captures how building blocks relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another), and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now.
+The model describes each capability in details and also captures how capabilities relate to each other. They are clustered in pillars of functionality like Tenant Management or IAM, can have dependencies (e.g. building a capability on top of another), and are assigned a “journey stage” that helps cloud foundation teams identify the capabilities that are relevant to them right now.
 
