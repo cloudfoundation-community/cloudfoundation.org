@@ -9,7 +9,7 @@
             Community<br />
           </h1>
           <p>
-            Connect with leading Enterprise Architects & Engineers  who build
+            Connect with leading Enterprise Architects & Engineers who build
             the platforms that drive cloud adoption
           </p>
           <div class="d-flex button-group">
@@ -72,7 +72,7 @@
             Plan your journey with the free Maturity Model
           </h1>
           <p class="desc">
-            The Cloud Foundation Maturity Model provides 70+ building blocks
+            The Cloud Foundation Maturity Model provides 70+ capabilities
             that describe what leading organizations are building to their cloud
             journey. Use the model to assess where you are and plan your next
             steps.

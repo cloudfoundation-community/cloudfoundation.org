@@ -33,8 +33,8 @@ export default {
   computed: {
     placeholder() {
       return this.shortAnswer === 'Yes' ?
-          'What did you like about this building block?' :
-          'What could we improve about this building block?';
+          'What did you like about this capability?' :
+          'What could we improve about this capability?';
     }
   },
   data() {

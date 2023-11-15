@@ -34,7 +34,7 @@ dirs.forEach((dir) => {
 
 // explicitly build the navbar
 // we push the pillars directly to the top level site structure so that the "crawl depth"
-// to the building blocks is one level lower
+// to the building blocks/capabilities is one level lower
 navbar.push(
   {
     text: "About",

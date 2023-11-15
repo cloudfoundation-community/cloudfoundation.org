@@ -2,7 +2,7 @@
   <CFMMPage>
     <template #right>
       <div class="model-theme-right">
-        <h2 class="cfmm-page-heading">Building Blocks</h2>
+        <h2 class="cfmm-page-heading">Capabilities</h2>
         <MaturityModelPillarBlocks :pillar="pillar" />
       </div>
     </template>

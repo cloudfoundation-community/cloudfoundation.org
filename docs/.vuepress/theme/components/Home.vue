@@ -10,7 +10,7 @@
             blocks to identify your current cloud maturity, and where to grow.
           </p>
           <router-link to="/maturity-model/" class="btn btn-primary btn-lg mt-2"
-            >Explore Building Blocks →</router-link
+            >Explore Capabilities →</router-link
           >
         </div>
         <div class="col-12 col-lg-6 hero-right">
@@ -26,7 +26,7 @@
           <p class="desc">
             The cloud foundation is an organizational approach to managing cloud
             adoption and consumption through a single team. The Cloud Foundation
-            Maturity Model (CFMM) is built on 50+ building blocks that help you
+            Maturity Model (CFMM) is built on 50+ capabilities that help you
             build and improve your own cloud foundation team.
           </p>
         </div>
