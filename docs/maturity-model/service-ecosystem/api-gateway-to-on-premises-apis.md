@@ -18,7 +18,7 @@ properties:
   name: API Gateway to on-premises APIs
 ---
 
-This building block can be built in various ways, and is thus related
+This capability can be built in various ways, and is thus related
 
 - A central HTTP reverse proxy that sits in a hub (see [On-Premise Network Connection](./on-premise-network-connection.md)). Consuming subscriptions access this proxy via [Tenant to Tenant Transit Networks](./tenant-to-tenant-transit-networks.md)).
 

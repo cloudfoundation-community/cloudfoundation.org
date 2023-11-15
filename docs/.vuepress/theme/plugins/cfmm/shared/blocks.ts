@@ -28,8 +28,8 @@ export const index = [
     "file": "maturity-model/readme.md",
     "frontmatter": {
       "id": "0147ba13-9f83-42cd-9c10-2e5f113c96f2",
-      "url": "https://www.notion.so/Explore-All-Building-Blocks-0147ba139f8342cd9c102e5f113c96f2",
-      "title": "Explore All Building Blocks",
+      "url": "https://www.notion.so/Explore-All-Capabilities-0147ba139f8342cd9c102e5f113c96f2",
+      "title": "Explore All Capabilities",
       "category": "Maturity Model",
       "order": 0,
       "layout": "MaturityModel"
@@ -280,7 +280,6 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "1afea746-da65-4164-9029-5e0bfa9432b1",
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
           "dff7d733-d987-4145-aa1a-e340b5bcff81",
           "3c65a957-cb62-40fe-978e-709e3450f7fe",
@@ -293,7 +292,8 @@ export const index = [
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
+          "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
+          "1afea746-da65-4164-9029-5e0bfa9432b1"
         ],
         "recommended": [],
         "scope": "🛬 Landing Zone",
@@ -435,7 +435,8 @@ export const index = [
         "depends-on": [
           "119bfca5-dda6-408c-b35d-c59d0f209fcf",
           "deb9d28e-e592-4c3c-b7da-020b7ba6bb0d",
-          "37862f9f-3d8a-4e25-8e90-e487dc455b0c"
+          "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
         ],
         "recommended": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
@@ -565,13 +566,13 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "18256d4f-e096-4281-809a-f77c5dd20ef0"
+          "18256d4f-e096-4281-809a-f77c5dd20ef0",
+          "0dd09c75-2acd-4e87-9721-6b5f563da035"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "37862f9f-3d8a-4e25-8e90-e487dc455b0c",
-          "0dd09c75-2acd-4e87-9721-6b5f563da035",
           "2c7cfeb1-2481-43b8-b31c-82cb5ba3375f"
         ],
         "recommended": [],
@@ -1325,11 +1326,11 @@ export const index = [
     }
   },
   {
-    "file": "understanding-cloud-foundation/what-is-a-building-block.md",
+    "file": "understanding-cloud-foundation/what-is-a-capability.md",
     "frontmatter": {
       "id": "479f18c8-ac4b-477d-b5b4-4df2f04fc4f3",
-      "url": "https://www.notion.so/What-is-a-Building-Block-479f18c8ac4b477db5b44df2f04fc4f3",
-      "title": "What is a Building Block",
+      "url": "https://www.notion.so/What-is-a-Capability-479f18c8ac4b477db5b44df2f04fc4f3",
+      "title": "What is a Capability",
       "category": "Understanding Cloud Foundation",
       "order": 30
     }
@@ -1723,7 +1724,8 @@ export const index = [
           "3c65a957-cb62-40fe-978e-709e3450f7fe",
           "d1904912-b420-4a10-a62c-aa578fb847ff",
           "af14b5df-77b4-4def-b761-8fadabd241ca",
-          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3",
+          "b19e84d5-ebfb-4048-88ac-f183141972a3"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -3749,7 +3751,7 @@ export const index = [
       "id": "c9728af5-49fe-4948-8701-2d6485bfbe93",
       "url": "https://www.notion.so/Pay-per-Use-for-internal-Services-c9728af549fe494887012d6485bfbe93",
       "title": "Pay-per-Use for internal Services",
-      "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation (see Landing Zone building Blocks). Application teams can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
+      "description": "Enable usage based chargeback for internal, managed IT services offered via the cloud foundation. Application teams can book services from a single marketplace and get a single \"invoice\" for chargeback. ",
       "category": "💵 Cost Management",
       "pageType": "CFMMBlock",
       "properties": {
@@ -3929,13 +3931,15 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
+          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
+          "097df2cd-1041-4020-8b8d-901d8f446fe3"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
-          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
         ],
         "recommended": [],
         "scope": "🏢 Core",
@@ -4074,6 +4078,26 @@ export const index = [
           "c88e6212-2a64-431f-a404-b39742574404"
         ],
         "name": "Consumption based pay-per-use for internal Services"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/cost-management/billing-alerts.md",
+    "frontmatter": {
+      "id": "d3839083-6870-4308-aa35-c48e17b0b79e",
+      "url": "https://www.notion.so/Billing-Alerts-d383908368704308aa35c48e17b0b79e",
+      "title": "Billing Alerts",
+      "description": "Setup expected monthly or daily spend alerts on cloud tenants to detect accidental cost overruns early.",
+      "category": "💵 Cost Management",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Billing Alerts"
       }
     }
   },

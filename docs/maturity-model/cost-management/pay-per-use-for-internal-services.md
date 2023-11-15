@@ -5,9 +5,8 @@ url: >-
 title: Pay-per-Use for internal Services
 description: >-
   Enable usage based chargeback for internal, managed IT services offered via
-  the cloud foundation (see Landing Zone building Blocks). Application teams can
-  book services from a single marketplace and get a single "invoice" for
-  chargeback. 
+  the cloud foundation. Application teams can book services from a single
+  marketplace and get a single "invoice" for chargeback. 
 category: 💵 Cost Management
 pageType: CFMMBlock
 properties:

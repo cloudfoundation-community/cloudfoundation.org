@@ -13,9 +13,9 @@ The cloud foundation is an **organizational approach** to managing cloud adoptio
 
 Most organizations today manage IT as a portfolio of "IT Services". An IT Service provides a distinctive functionality to its customers. For example, an "IAM Group" service may allow a customer to create a group in the organization's central directory and manage its members through the service. The owner of the "IAM Group" IT service gets to define its own processes for how customers can procure, manage and get charged for the service. 
 
-With IT services as the established management paradigm in mind, most organizations trying to move to the cloud instinctively reach towards IT services for providing the required organizational capabilities to procure, manage and charge back cloud services (cloud governance). As the following section will demonstrate, this corrupts the advantages that cloud computing has to offer. Whereas cloud computing emphasises customer self-service, consistent API-driven automation and pay-per use, most IT services build on semi-manual processes, with inconsistent  provisioning workflow and charge back back to a shared cost pool.
+With IT services as the established management paradigm in mind, most organizations trying to move to the cloud instinctively reach towards IT services for providing the required organizational capabilities to procure, manage and charge back cloud services (cloud governance). As the following section will demonstrate, this corrupts the advantages that cloud computing has to offer. Whereas cloud computing emphasizes customer self-service, consistent API-driven automation and pay-per use, most IT services build on semi-manual processes, with inconsistent  provisioning workflow and charge back back to a shared cost pool.
 
-> **💡** To take full advantage of cloud computing, organisations need to adopt a cloud-native organizational approach for providing capabilities to provision, manage and charge back cloud services.
+> **💡** To take full advantage of cloud computing, organizations need to adopt a cloud-native organizational approach for providing capabilities to provision, manage and charge back cloud services.
 
 ## Functional Pillars of Cloud Governance
 
@@ -43,7 +43,7 @@ This example is only scratching the surface of the complex inter-dependencies th
 
 ## A Team's Cloud Journey - with IT Services
 
-Let's look at the cloud journey for an application team that wants to build a typical cloud application. The team wants to take advantage of cloud-native services for machine learning, however it also needs access to on-premise systems that hold required data. The team therefore needs a cloud tenant and on-premise connectivity. When an organisation manages its cloud capabilities as IT Services, the team's cloud journey will look like this:
+Let's look at the cloud journey for an application team that wants to build a typical cloud application. The team wants to take advantage of cloud-native services for machine learning, however it also needs access to on-premise systems that hold required data. The team therefore needs a cloud tenant and on-premise connectivity. When an organization manages its cloud capabilities as IT Services, the team's cloud journey will look like this:
 
 ![image-cade48b7-0ce2-4ede-989e-e7c7d4d9727a](./cade48b7-0ce2-4ede-989e-e7c7d4d9727a.png)
 
@@ -51,7 +51,7 @@ As the figure above illustrates, the team needs to "shop around" different servi
 
 ## A Team's Cloud Journey - with a Cloud Foundation
 
-The Cloud Foundation approach frees application teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables application teams to provision and manage cloud services from a single organisational capability and leveraging a consistent control plane offering API-driven self-service, IAM and billing.
+The Cloud Foundation approach frees application teams from integrating different functional pillars. Instead, the cloud foundation team assumes responsibility for integrating the different functional pillars. Like the service offering of a cloud provider, the cloud foundation enables application teams to provision and manage cloud services from a single organizational capability and leveraging a consistent control plane offering API-driven self-service, IAM and billing.
 
 ![image-9678847c-4883-4e5a-981b-3e33284878eb](./9678847c-4883-4e5a-981b-3e33284878eb.png)
 

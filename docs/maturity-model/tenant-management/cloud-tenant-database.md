@@ -63,17 +63,17 @@ At this point, many organizations learn the downsides of the initial freedom the
 
 ### Consider a Consistent Multi-Cloud Tenant Database
 
-The “Cloud Tenant Database” building block looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. As your organizations adopts a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md)  as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
+The “Cloud Tenant Database” capability looks at the platform scope, i.e. building a cloud tenant database for a single cloud platform only. As your organizations adopts a multi-cloud strategy, cloud foundation teams should consider the broader challenge of building a [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md)  as early as possible. This can save duplicate efforts between platform teams and avoid integration challenges due to inconsistent metadata schemas for different cloud platforms.
 
 ### Plan for Automating Your Cloud Tenant Database
 
 While a simple database like an Excel workbook on SharePoint is a much better start than going without a cloud tenant database, most cloud foundation teams will quickly outgrow the limitations of a home-grown solution. As the number of tenants grows, foundation teams will find the need to evolve the schema of metadata captured in their cloud tenant database. The cloud foundation team can also quickly become a bottleneck for updating metadata like changing ownership of an IT system, changing cost centers, etc.
 
-Adopting a collaborative approach for maintaining the metadata together with their customers can solve these challenges. Cloud Foundation teams should thus look into the [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) or even better, [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md) capability, as a key building block for that next stage of their cloud journey.
+Adopting a collaborative approach for maintaining the metadata together with their customers can solve these challenges. Cloud Foundation teams should thus look into the [Self-Service Multi-Cloud Tenant Database](./self-service-multi-cloud-tenant-database.md) or even better, [Multi-cloud tenant database integrated with lifecycle management](./multi-cloud-tenant-database-integrated-with-lifecycle-management.md) capability, as a key capability for that next stage of their cloud journey.
 
 ### Integrate with Other Information Repositories
 
-Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider also implementing the building block [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicates in different systems.
+Most organizations already maintain metadata about IT systems, e.g. in Enterprise Architecture Management (EAM) Systems or a Configuration Management Database (CMDB). Cloud Foundation teams should thus consider also implementing the capability [Link Cloud Tenants to CMDB/EAM](./link-cloud-tenants-to-cmdbeam.md). In many instances, this can be a simpler solution compared to manually maintaining duplicates in different systems.
 
 ## Common Metadata to Capture about Each Cloud Tenant
 

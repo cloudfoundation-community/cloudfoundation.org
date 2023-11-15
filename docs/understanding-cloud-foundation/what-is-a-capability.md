@@ -1,15 +1,14 @@
 ---
 id: 479f18c8-ac4b-477d-b5b4-4df2f04fc4f3
-url: >-
-  https://www.notion.so/What-is-a-Building-Block-479f18c8ac4b477db5b44df2f04fc4f3
-title: What is a Building Block
+url: https://www.notion.so/What-is-a-Capability-479f18c8ac4b477db5b44df2f04fc4f3
+title: What is a Capability
 category: Understanding Cloud Foundation
 order: 30
 ---
 
-> **💡** Building Blocks describe **capabilities and fundamental concepts** that help build a successful Cloud Foundation.
+> **💡** Capabilities describe the **technical and organizational ability** to perform an essential function or process that helps build a successful Cloud Foundation.
 
-The Cloud Foundation Maturity Model assigns some common properties to every building block. These properties enables you to quickly identify what the block is about and how it relates to other building blocks in the model.
+The Cloud Foundation Maturity Model assigns some common properties to every capability. These properties enables you to quickly identify what the capability is about and how it relates to other capabilities in the model.
 
 ## Pillar
 
@@ -29,7 +28,7 @@ Cloud Foundation teams needs to cover many different organizational aspects of c
 
 ## Journey Stage
 
-> **💡** Each Building Block has a Journey Stage. The Journey Stage is a **subjective measure of how advanced a capability is for the majority of Cloud Foundations.** It gives an indication at which stage of an organization’s cloud journey the capability becomes relevant.
+> **💡** Each Capability has a Journey Stage. The Journey Stage is a **subjective measure of how advanced a capability is for the majority of Cloud Foundations.** It gives an indication at which stage of an organization’s cloud journey the capability becomes relevant.
 
 As the individual needs of organizations vary, it's not productive to recommend a strictly ordered implementation sequence. However, Cloud Foundation teams will often find that implementing capabilities in a certain order reduces complexity and enables achieving a desired level of capabilities more easily. The journey stage in the Cloud Foundation Maturity model is therefore a guideline when teams should consider implementing a certain capability.
 
@@ -47,23 +46,35 @@ It's not uncommon to find cloud journeys generating demand for capabilities in d
 
 ## Scope
 
-> **💡** The Scope describes at which "layer" of a cloud foundation the building block needs to be implemented.
+> **💡** The Scope describes at which "layer" of a cloud foundation the capability needs to be implemented.
 
 Many cloud foundation teams share the experience that the technical implementation of capabilities, is the smaller of their challenges. Creating organizational alignment about the exact requirements for a capability design and its effective implementation into the organizations existing processes is the more difficult part. In addition to Pillars, we therefore group capabilities into Scopes, indicating at which level a capability needs to be coordinated.
 
-- 🏢 **Core**: Building blocks that are centrally enforced and across all cloud platforms.
+- 🏢 **Core**: Capabilities that are centrally built and coordinated across all cloud platforms.
 
-- ☁️ **Platform:** Building blocks that need to be individually implemented for each cloud platform.
+- ☁️ **Platform:** Capabilities that need to be individually implemented for each cloud platform.
 
-- 🛬 **Landing Zone:** Building blocks that typically require individual implementation for each landing zone (or groups of related landing zones).
+- 🛬 **Landing Zone:** Capabilities that typically require individual implementation or adaptation for each landing zone.
 
-Together with "Pillar" cloud foundation teams can determine the stakeholders that need to be involved in the design and implementation of a particular building block.
+Together with "Pillar" cloud foundation teams can determine the stakeholders that need to be involved in the design and implementation of a particular capabilities.
 
 ## Implementation Maturity
 
-> **💡** Each building block can be implemented in different levels of automation.
+> **💡** Each capability can be implemented in different levels of maturity. Maturity can be measured in different dimensions. This section describes important dimensions to consider.
 
-When describing and comparing implementations of the same building block, it’s often useful to categorize the degree of automation that a cloud foundation team can achieve.
+### Confidence
+
+The cloud foundation team’s confidence in the mastery of a specific capability. We observed the following patterns among teams to describe their confidence in capabilities:
+
+- **proof of concept**: initial implementation of a capability but little to no operational experience
+
+- **tailoring:** the team has started collecting operational experience with the capability and is aware of  gaps in terms of coverage or adaptations to the organization’s unique requirements
+
+- **established standard operating procedure**: the implementation is widely understood among the relevant stakeholders and regarded as fit for purpose
+
+### Automation
+
+When describing and comparing implementations of the same capability, it’s often useful to categorize the degree of automation that a cloud foundation team can achieve.
 
 - **Manual**: Operator executes operations by hand.
 

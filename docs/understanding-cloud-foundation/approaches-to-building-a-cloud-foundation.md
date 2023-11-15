@@ -7,9 +7,19 @@ category: Understanding Cloud Foundation
 order: 20
 ---
 
-Building a successful cloud foundation is a strategic undertaking. Since a cloud foundation is about building a single organisational capability to manage cloud adoption and consumption, it requires strong organizational alignment between different stakeholders. It therefore follows that the most successful approaches for building a cloud foundation seek to establish this alignment and productive collaboration from day one. However, this alignment between stakeholders may not be available from day one in your organization (see the Functional Pillars in [Why Build a Cloud Foundation](./why-build-a-cloud-foundation.md) for an overview of stakeholders). While we see that the organizations most successful at cloud adoption are able to create and foster strong alignment between all involved functions, teams looking to build a cloud foundation can also iteratively build a cloud foundation while navigating the pitfalls created by lacking alignment. 
+Building a successful cloud foundation is a strategic undertaking. Since a cloud foundation is about building a centralized organizationals capability to manage cloud adoption and consumption, it requires strong organizational alignment between different stakeholders. It therefore follows that the most successful approaches for building a cloud foundation seek to establish this alignment and productive collaboration from day one. 
 
 The following sections are going to look at different strategies for building and maturing a cloud foundation in different settings.
+
+## Landing Zone by Landing Zone
+
+> **📌** Start with the desired experience for application teams. Build cloud capabilities for simple and specific use cases first, then incrementally build capabilities on top to support more challenging use cases.
+
+Our experience working with many different organization has shown that building a cloud foundation with a clear focus on the desired experience for application teams is the most successful tactic. 
+
+We find focusing on clearly defined use cases helps align stakeholders more quickly (see the Functional Pillars in [Why Build a Cloud Foundation](./why-build-a-cloud-foundation.md) for an overview of stakeholders) and accelerates decision making. This approach also helps deliver business value early in the cloud journey.
+
+> **💡** You can find more information of this approach in the [Ultimate Landing Zone Guide](https://www.meshcloud.io/en/blog/resources/ebook-the-ultimate-guide-to-cloud-landing-zones-2023/).
 
 ## Stage by Stage
 
@@ -42,13 +52,13 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Building Block](./what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practitioners identify the relevant capabilities in each pillar based on the **Journey Stage** (see [What is a Capability](./what-is-a-capability.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
 The advantage of this approach is that the team can consider interdependencies between capabilities in different pillars (e.g. from [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) to the [Identity and Access Management Alignment](../maturity-model/iam/identity-and-access-management-alignment.md)) already in the earliest design stages. This means that the cloud adoption experience for application teams is considered end-to-end from the start. Cloud Foundation teams can therefore avoid pitfalls like introducing media breaks and unnecessary manual handovers between process steps. 
 
-Another key advantage of this model is that the cloud foundation team can intentionally design the implementation of building blocks so that the solution architecture minimizes the number and complexity of technical interfaces between IT systems and processes. This decreases the overall solution complexity, resulting in higher agility and reduced operational maintenance cost to the organization.
+Another key advantage of this model is that the cloud foundation team can intentionally design the implementation of capabilities so that the solution architecture minimizes the number and complexity of technical interfaces between IT systems and processes. This decreases the overall solution complexity, resulting in higher agility and reduced operational maintenance cost to the organization.
 
 With all these advantages as outlined before, the disadvantage of the "stage by stage" approach lies in the high organizational coordination required between pillars. This is difficult to create for many organizations where functions are used to work in silos. Cloud foundation teams need a lot of backing and decision making power to facilitate the required cross-functional mode of work. 
 
@@ -56,7 +66,7 @@ With all these advantages as outlined before, the disadvantage of the "stage by 
 
 To illustrate how the coordinated introduction of capabilities results in reduced complexity, and efficient development and maintenance cost, let's look at a practical example. Assume we have an team of Azure platform experts inside the Cloud Foundation team who start building a basic [Tenant Provisioning](../maturity-model/tenant-management/tenant-provisioning.md) process that allows application teams to order Azure subscriptions for their projects. For the minimum-viable-product (MVP) of that process, they start keeping track of subscriptions and their owners with an Excel sheet on SharePoint, a very basic implementation of a [Cloud Tenant Database](../maturity-model/tenant-management/cloud-tenant-database.md).
 
-Of course our Azure experts are aware that the incurred subscription consumption cost has to be paid. Reaching out to the chargeback experts on their Cloud Foundation team, they figure out that they want to enable chargeback using a [Monthly cloud tenant billing report](../maturity-model/cost-management/monthly-cloud-tenant-billing-report.md). Together with [Cloud Tenant Database](../maturity-model/tenant-management/cloud-tenant-database.md), these two building blocks are on the essential ⭐️ cloud journey stage for their respective pillars.
+Of course our Azure experts are aware that the incurred subscription consumption cost has to be paid. Reaching out to the chargeback experts on their Cloud Foundation team, they figure out that they want to enable chargeback using a [Monthly cloud tenant billing report](../maturity-model/cost-management/monthly-cloud-tenant-billing-report.md). Together with [Cloud Tenant Database](../maturity-model/tenant-management/cloud-tenant-database.md), these two capabilities are on the essential ⭐️ cloud journey stage for their respective pillars.
 
 Our cloud foundation team experts agree on a schema for budget metadata and add it to the cloud tenant database. Over the next month the team is seeing an increased demand for Azure subscriptions from the organization's internal customers. Maintaining that excel sheet has now become a chore. To provider a better service to their customers and ease their own operational burden, the cloud foundation team decides to build a [Self-Service Multi-Cloud Tenant Database](../maturity-model/tenant-management/self-service-multi-cloud-tenant-database.md). This is a ⭐️⭐️  cloud journey stage capability. While developing the solution design, the team already considers that at some point they may want to add a [Budget Approval Process](../maturity-model/cost-management/budget-approval-process.md) to the self-service interface. As this is a ⭐️⭐️⭐️  cloud journey stage capability however, the team decides to tackle the actual implementation of that feature later.
 
@@ -91,7 +101,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners identify the relevant capabilities in each pillar based on the **Cluster** (see  [What is a Building Block](./what-is-a-building-block.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
+The Cloud Foundation Maturity model can help practitioners identify the relevant capabilities in each pillar based on the **Cluster** (see  [What is a Capability](./what-is-a-capability.md)). Cloud Foundation teams can use the journey stage to derive a recommended implementation order of capabilities. 
 
 ### Advantages and Disadvantages
 
@@ -103,7 +113,7 @@ The key **disadvantages** of this model are
 
 - Gaps in Cloud Foundation capabilities due to "blind spots" in pillars owned by different stakeholders
 
-- Increased complexity in the solution architectures due to evolutionary introduction of "point-to-point" or "process-to-process" interfaces as pillars try to individually implement building blocks.
+- Increased complexity in the solution architectures due to evolutionary introduction of "point-to-point" or "process-to-process" interfaces as pillars try to individually implement capabilities.
 
 - Increased cost for building and operating the cloud foundation due to the increased complexity. 
 
@@ -152,7 +162,7 @@ flowchart BT;
 
 <!-- unsupported block type: embed -->
 
-The Cloud Foundation Maturity model can help practioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities as building blocks and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** (see [What is a Building Block](./what-is-a-building-block.md)) of building blocks allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
+The Cloud Foundation Maturity model can help practitioners achieve a consistent set of capabilities across all cloud platforms by explicitly defining the capabilities and providing visibility into their implementation maturity across platforms. Furthermore, the **Scope** of a capability (see [What is a Capability](./what-is-a-capability.md)) allows cloud foundation teams to identify the core capabilities that the organization should implement with a multi-cloud perspective vs. those capabilities that should be individually designed implemented for each platform (platform and landing zone scopes).
 
 ### Advantages and Disadvantages
 

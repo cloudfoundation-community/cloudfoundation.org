@@ -70,7 +70,7 @@ Keep the resource hierarchy above the tenant level as flat as possible to reduce
 
 ### Automate Deployment and Maintenance of the Resource Hierarchy
 
-While it may be tempting to initially deploy a cloud resource hierarchy manually, maintaining the hierarchy is important because a lot of fundamental building blocks like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md) or [Tenant Provisioning](./tenant-provisioning.md) built atop of it. Maintaining your resource hierarchy via infrastructure as code helps preventing configuration drift and enforcing consistency. 
+While it may be tempting to initially deploy a cloud resource hierarchy manually, maintaining the hierarchy is important because a lot of fundamental capabilities like [Service and Location Restrictions](../security-and-compliance/service-and-location-restrictions.md) or [Tenant Provisioning](./tenant-provisioning.md) built atop of it. Maintaining your resource hierarchy via infrastructure as code helps preventing configuration drift and enforcing consistency. 
 
 ### Decouple Cloud Resource Hierarchy from Your Org Chart
 

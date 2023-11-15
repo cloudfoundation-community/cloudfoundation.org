@@ -13,11 +13,11 @@ pageType: CFMMBlock
 properties:
   enables:
     - 18256d4f-e096-4281-809a-f77c5dd20ef0
+    - 0dd09c75-2acd-4e87-9721-6b5f563da035
   redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - 37862f9f-3d8a-4e25-8e90-e487dc455b0c
-    - 0dd09c75-2acd-4e87-9721-6b5f563da035
     - 2c7cfeb1-2481-43b8-b31c-82cb5ba3375f
   recommended: []
   scope: ☁️ Platform
@@ -98,9 +98,9 @@ Azure Active Directory (AAD) provides built-in PAM mechanisms:
 
 ### GCP **Privileged Access Management Best Practices**
 
-GCP does not have similar built-in PAM capabilities like AAD. Its lack of Root user credentials (like in AWS) however simplify PAM management.
+GCP does not have similar built-in PAM capabilities like AAD. Its lack of Root user credentials (like in AWS) however simplifies PAM management.
 
-- **External Identity Providers:** GCP allows you to integrate with external identity providers (IdPs), such as Google Workspace, LDAP, or SAML-based providers. This is similar to Azure's ability to integrate with external IdPs.
+- **External Identity Providers:** GCP allows you to integrate with external identity providers (IdPs), such as Google Workspace, LDAP, or SAML-based providers. This allows leveraging existing PAM mechanisms of the external identity provider.
 
 In conclusion, Privileged Access Management is a cornerstone of cloud security and governance. By implementing the best practices outlined for AWS, Azure, and GCP, cloud foundation teams can ensure the integrity and security of their cloud infrastructure while supporting the diverse needs of their application teams.
 

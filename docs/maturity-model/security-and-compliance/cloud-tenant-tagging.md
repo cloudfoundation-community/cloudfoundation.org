@@ -53,7 +53,7 @@ Since tagging with key-value pairs is such a basic mechanism, cloud foundation t
 
 ### Consistent Tagging Is a Matter of Compliance
 
-While cloud tenant tagging enables a basic implementation of many other cloud foundation building blocks, Cloud Foundation teams should treat adherence to the established tagging strategy as a matter of compliance. This is why the Cloud Foundation Maturity Model puts this building block into the Security & Compliance pillar, as opposed to putting it in the [🗂 Tenant Management](../tenant-management/readme.md) or [💵 Cost Management](../cost-management/readme.md) pillar.
+While cloud tenant tagging enables a basic implementation of many other cloud foundation capabilities, we advocate Cloud Foundation teams think if tagging primarily as a means for enabling [🔖 Security & Compliance](./readme.md) capabilities As described further below, tagging is often abused as a poor substitute for proper tenant and cost management capabilities.
 
 ### Tag the Most Useful Subset of Tenant Metadata
 
@@ -73,13 +73,13 @@ Most cloud platforms have tagging facilities that can cover the Tenant and Resou
 
 ### Tag Consistently
 
-To get the most benefit out of tagging cloud tenants, cloud foundation teams should set clear expectations and guidelines for the name and values of tags. These guidelines are often called a “tag catalog” or “cloud tagging policy”.  The building block [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md) covers this capability.
+To get the most benefit out of tagging cloud tenants, cloud foundation teams should set clear expectations and guidelines for the name and values of tags. These guidelines are often called a “tag catalog” or “cloud tagging policy”.  The capability [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md) covers this capability.
 
 Inconsistent (or even worse -  incorrect) tagging severely limits the opportunities for building on tagging data for building higher-level cloud foundation capabilities. For example, taking a risk-based automation approach based on `stage` for [Tenant Deprovisioning / Decommissioning](../tenant-management/tenant-deprovisioning-decommissioning.md) or classifying incident severity in an [Incident Management Process](./incident-management-process.md) becomes impossible when the cloud foundation team can’t trust that each tenant is consistently tagged with the correct `stage` value. 
 
 ### Consider a Multi-Cloud Tagging Strategy
 
-Cloud Tenant Tagging is a platform-scoped building block in the cloud foundation maturity model. Cloud Foundation teams following a multi-cloud strategy should look into [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md) to implement consistent tagging across all cloud platforms at the core scope.
+Cloud Tenant Tagging is a platform-scoped capability in the cloud foundation maturity model. Cloud Foundation teams following a multi-cloud strategy should look into [Multi-Cloud Tagging Policy](./multi-cloud-tagging-policy.md) to implement consistent tagging across all cloud platforms at the core scope.
 
 ### Understand Tagging Limitations of Cloud Platforms
 
@@ -102,5 +102,5 @@ Most cloud platforms impose technical limitations on the use of tags. Cloud Foun
 
 ### Automating Cloud Tenant Tagging
 
-Since consistency is crucial for making a cloud tenant strategy useful, cloud foundation teams should aim for a high degree of automation when implementing this building block. Most teams will initially start with a **manual** tagging approach e.g. by manually setting tenant tags during [Tenant Provisioning](../tenant-management/tenant-provisioning.md). Automation of the provisioning process also enables **semi-automated tagging.** To ensure consistent tenant tagging for the entire cloud tenant lifecycle, cloud foundation teams should also enable self-service updates of tags, for example by leveraging a [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) with automated reconciliation of tenant tags to achieve **full tagging automation.**
+Since consistency is crucial for making a cloud tenant strategy useful, cloud foundation teams should aim for a high degree of automation when implementing this capability. Most teams will initially start with a **manual** tagging approach e.g. by manually setting tenant tags during [Tenant Provisioning](../tenant-management/tenant-provisioning.md). Automation of the provisioning process also enables **semi-automated tagging.** To ensure consistent tenant tagging for the entire cloud tenant lifecycle, cloud foundation teams should also enable self-service updates of tags, for example by leveraging a [Self-Service Multi-Cloud Tenant Database](../tenant-management/self-service-multi-cloud-tenant-database.md) with automated reconciliation of tenant tags to achieve **full tagging automation.**
 

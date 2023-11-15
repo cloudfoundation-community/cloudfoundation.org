@@ -53,7 +53,7 @@ Despite the methodological challenges for an accurate estimation of a cloud reso
 
 ### Integrate with Chargeback Process
 
-Treat “cost to the budget” and “cost to the environment” as equally important cost factors. Building on the [Monthly Cloud Project Billing Report](./monthly-cloud-project-billing-report.md) building block, cloud foundation teams can include carbon footprint data on the same report. Just as with financial chargeback, the individual attribution to cloud projects helps teams feel responsible for their footprint and take ownership.
+Treat “cost to the budget” and “cost to the environment” as equally important cost factors. Building on the [Monthly Cloud Project Billing Report](./monthly-cloud-project-billing-report.md) capability, cloud foundation teams can include carbon footprint data on the same report. Just as with financial chargeback, the individual attribution to cloud projects helps teams feel responsible for their footprint and take ownership.
 
 ### Build on Established Public Cloud Carbon Reporting APIs
 

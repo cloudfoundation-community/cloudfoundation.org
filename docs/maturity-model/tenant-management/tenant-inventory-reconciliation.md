@@ -73,7 +73,7 @@ Discovering a shadow workload should be treated as an incident and the remediati
 
 ### Have a Clear Tenant Decomissioning Process
 
-The final step of the escalation process for unregistered tenants is a forceful decomissioning of the tenant and its workload. This requires a clear [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) process that also accounts for “involuntary” deprovisioning scenarios. See the referenced building block for more details.
+The final step of the escalation process for unregistered tenants is a forceful decomissioning of the tenant and its workload. This requires a clear [Tenant Deprovisioning / Decommissioning](./tenant-deprovisioning-decommissioning.md) process that also accounts for “involuntary” deprovisioning scenarios. See the referenced capability for more details.
 
 ### Perform Tenant Inventory Reconciliations Regularly
 
