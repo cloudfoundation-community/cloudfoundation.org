@@ -56,6 +56,10 @@ locals {
       source = "/maturity-model/iam/authorization-concept.html"
       target = "/maturity-model/iam/resource-authorization-management.html"
     },
+    {
+      source = "/understanding-cloud-foundation/what-is-a-building-block.html"
+      target = "/understanding-cloud-foundation/what-is-a-capability.html"
+    },
     # fix some Google SEO "duplicate without user-selected canonical" issues, due to trailing slash
     {
       source = "/understanding-cloud-foundation"

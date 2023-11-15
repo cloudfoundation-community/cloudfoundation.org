@@ -17,10 +17,10 @@
 
       <div class="custom-container warning" v-if="underConstruction">
         <p class="custom-container-title">
-          🚧 This building block reference page is a draft.
+          🚧 This capability reference page is a draft.
         </p>
         <p>
-          If you want to be notified when the building block reference page is
+          If you want to be notified when the capability reference page is
           finished, click
           <a
             href="https://webforms.pipedrive.com/f/2XgSCBA01BJiCqynYN1bKBMAdcQJVto4tNfMapytaWLX2pQD8fPPhin0iAbijt4vp"
