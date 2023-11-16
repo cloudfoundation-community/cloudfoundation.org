@@ -185,6 +185,7 @@ const pillars: Pillar[] = [
   "compliance",
   "costManagement",
   "serviceEcosystem",
+  "community",
 ];
 
 const toolSelectOptions = computed(() => cfmm.value.tools);

@@ -163,6 +163,50 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/consultation-services.md",
+    "frontmatter": {
+      "id": "097df2cd-1041-4020-8b8d-901d8f446fe3",
+      "url": "https://www.notion.so/Consultation-Services-097df2cd104140208b8d901d8f446fe3",
+      "title": "Consultation Services",
+      "description": "The ability to provide Consultation services to customers in order to help them deploy projects in an efficient and economical way while adhering to best practices.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3",
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Consultation Services"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/community/free-credits-and-sandboxes.md",
+    "frontmatter": {
+      "id": "09b13be0-5b72-466c-a0ba-5d8ad2777dfd",
+      "url": "https://www.notion.so/Free-Credits-and-Sandboxes-09b13be05b72466ca0ba5d8ad2777dfd",
+      "title": "Free Credits and Sandboxes",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️",
+        "depends-on": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
+        ],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Free Credits and Sandboxes"
+      }
+    }
+  },
+  {
     "file": "maturity-model/security-and-compliance/resource-configuration-scanning.md",
     "frontmatter": {
       "id": "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
@@ -183,6 +227,26 @@ export const index = [
         "scope": "🛬 Landing Zone",
         "tool-implementations": [],
         "name": "Resource Configuration Scanning"
+      }
+    }
+  },
+  {
+    "file": "maturity-model/community/cloud-culture-leader.md",
+    "frontmatter": {
+      "id": "0d444668-1d2d-41c9-b390-b6a53a7b826a",
+      "url": "https://www.notion.so/Cloud-Culture-Leader-0d4446681d2d41c9b390b6a53a7b826a",
+      "title": "Cloud Culture Leader",
+      "description": "Ascended the Cloud Foundation to become a leader in the space around Cloud Culture & Community, and successfully lead and collaborate with others to pioneer further in the ever-growing landscape of community enablement.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
+        "depends-on": [],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Cloud Culture Leader"
       }
     }
   },
@@ -1216,6 +1280,32 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/support-flow.md",
+    "frontmatter": {
+      "id": "45ef06c4-3553-4fca-a158-74afbf2cf9b3",
+      "url": "https://www.notion.so/Support-Flow-45ef06c435534fcaa15874afbf2cf9b3",
+      "title": "Support Flow",
+      "description": "The ability to communicate efficiently with the Cloud Foundation to ensure a smooth operational model for both support- and news-related pieces.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "cf487857-542f-4d74-8fe9-885b7be8ccf3",
+          "097df2cd-1041-4020-8b8d-901d8f446fe3",
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+        ],
+        "journey-stage": "⭐️",
+        "depends-on": [
+          "b19e84d5-ebfb-4048-88ac-f183141972a3"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Support Flow"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "465c3c4b-89f2-4ecb-8b56-7eaf74b1e658",
       "url": "https://www.notion.so/Cloud-Tenant-Tagging-465c3c4b89f24ecb8b567eaf74b1e658",
@@ -1359,6 +1449,31 @@ export const index = [
         "name": "Cloud-native Landing Zone"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/community/on-demand-learning.md",
+    "frontmatter": {
+      "id": "4c835df2-83ce-448b-9a8b-82a5824b22d6",
+      "url": "https://www.notion.so/On-Demand-Learning-4c835df283ce448b9a8b82a5824b22d6",
+      "title": "On-Demand Learning",
+      "description": "Enablement of on-demand learning resources and platforms for customers and users of the Cloud Foundation to further self-service and continuous learning principles.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "9c583659-c6d4-401a-b810-de19bcdff83c"
+        ],
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
+          "b19e84d5-ebfb-4048-88ac-f183141972a3"
+        ],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "On-Demand Learning"
+      }
     }
   },
   {
@@ -1529,6 +1644,28 @@ export const index = [
         "category": "Landing Zone Implementation"
       },
       "pageType": "CFMMTool"
+    }
+  },
+  {
+    "file": "maturity-model/community/community-champions.md",
+    "frontmatter": {
+      "id": "53d0f3cf-c56d-44ee-afbb-d4762539a73a",
+      "url": "https://www.notion.so/Community-Champions-53d0f3cfc56d44eeafbbd4762539a73a",
+      "title": "Community Champions",
+      "description": "Successful recruitment of Community Champions that are advocates and trusted resources within the community space to further distinguish active participation and involvement.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Community Champions"
+      }
     }
   },
   {
@@ -2277,6 +2414,28 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/gamified-community.md",
+    "frontmatter": {
+      "id": "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0",
+      "url": "https://www.notion.so/Gamified-Community-776bdfc40b2149f7ac77b8c1dd188cb0",
+      "title": "Gamified Community",
+      "description": "Gamification of the existing Community to further incentivize participation, internal support, as well as motivate long-term participation in the space.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Gamified Community"
+      }
+    }
+  },
+  {
     "file": "maturity-model/tenant-management/multi-cloud-tenant-database-integrated-with-lifecycle-management.md",
     "frontmatter": {
       "id": "77942f5f-e395-49c6-8927-e5fa3ef28aef",
@@ -2479,6 +2638,32 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/community-space.md",
+    "frontmatter": {
+      "id": "825aa5c9-7bf4-4988-af8c-8bf86e90716f",
+      "url": "https://www.notion.so/Community-Space-825aa5c97bf44988af8c8bf86e90716f",
+      "title": "Community Space",
+      "description": "The creation of a dedicated community space that enables the capacity for the community to interact and be involved in the Cloud Foundation beyond mere support requests.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "53d0f3cf-c56d-44ee-afbb-d4762539a73a",
+          "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0",
+          "90f6f91d-97d8-48fb-bd45-af5ae651f70e"
+        ],
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Community Space"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "84cf2301-844f-4e77-8f86-ed3d9244d623",
       "url": "https://www.notion.so/Stakeholder-Map-84cf2301844f4e778f86ed3d9244d623",
@@ -2647,6 +2832,28 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/community-identity.md",
+    "frontmatter": {
+      "id": "90f6f91d-97d8-48fb-bd45-af5ae651f70e",
+      "url": "https://www.notion.so/Community-Identity-90f6f91d97d848fbbd45af5ae651f70e",
+      "title": "Community Identity",
+      "description": "Implemented a Community Identity for the Cloud Foundation that is providing additional value and incentives to their customer base.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️",
+        "depends-on": [
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Community Identity"
+      }
+    }
+  },
+  {
     "file": "maturity-model/tenant-management/modular-landing-zones.md",
     "frontmatter": {
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
@@ -2742,6 +2949,29 @@ export const index = [
         "name": "Resource Hierarchy"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/community/live-events-and-labs.md",
+    "frontmatter": {
+      "id": "9c583659-c6d4-401a-b810-de19bcdff83c",
+      "url": "https://www.notion.so/Live-Events-Labs-9c583659c6d4401ab810de19bcdff83c",
+      "title": "Live Events & Labs",
+      "description": "Conduction of Live Events & Labs to offer unique opportunities to take particular services and practices under a focused lens and learn more around it in an interactive fashion.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "4c835df2-83ce-448b-9a8b-82a5824b22d6",
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
+        ],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Live Events & Labs"
+      }
     }
   },
   {
@@ -3029,6 +3259,31 @@ export const index = [
         "name": "Resource Configuration Policies via collie"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/community/internal-cloud-foundation-starter-pack.md",
+    "frontmatter": {
+      "id": "b19e84d5-ebfb-4048-88ac-f183141972a3",
+      "url": "https://www.notion.so/Internal-Cloud-Foundation-Starter-Pack-b19e84d5ebfb404888acf183141972a3",
+      "title": "Internal Cloud Foundation Starter Pack",
+      "description": "The capacity to present the Cloud Foundation, so potential clients and customers can learn about the offering.",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "4c835df2-83ce-448b-9a8b-82a5824b22d6",
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
+        ],
+        "journey-stage": "⭐️",
+        "depends-on": [
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Internal Cloud Foundation Starter Pack"
+      }
     }
   },
   {
@@ -3918,6 +4173,20 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/community/readme.md",
+    "frontmatter": {
+      "id": "d7e95814-5d5b-4d0f-8010-6813411e9ba7",
+      "url": "https://www.notion.so/Community-d7e958145d5b4d0f80106813411e9ba7",
+      "title": "🙌 Community",
+      "description": "Foster a community around the organizations cloud journey providing support and guidance for application teams and other cloud foundation stakeholders.",
+      "category": "Pillar",
+      "pageType": "CFMMPillar",
+      "properties": {
+        "short-name": "Community"
+      }
+    }
+  },
+  {
     "file": "maturity-model/service-ecosystem/managed-cloud-provider-support-contracts.md",
     "frontmatter": {
       "id": "d871cfba-a86d-4ec1-a23d-42c9b3d73352",
@@ -4188,6 +4457,30 @@ export const index = [
         "name": "Link Cloud Tenants to CMDB/EAM"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/community/cloud-partnerships.md",
+    "frontmatter": {
+      "id": "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
+      "url": "https://www.notion.so/Cloud-Partnerships-e5bc388b865a45a18b30ddc66f76fd07",
+      "title": "Cloud Partnerships",
+      "category": "🙌 Community",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
+          "9c583659-c6d4-401a-b810-de19bcdff83c",
+          "4c835df2-83ce-448b-9a8b-82a5824b22d6",
+          "09b13be0-5b72-466c-a0ba-5d8ad2777dfd"
+        ],
+        "journey-stage": "⭐️⭐️",
+        "depends-on": [],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Cloud Partnerships"
+      }
     }
   },
   {
