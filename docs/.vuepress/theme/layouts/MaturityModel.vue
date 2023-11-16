@@ -185,7 +185,9 @@ const pillars: Pillar[] = [
   "compliance",
   "costManagement",
   "serviceEcosystem",
-  "community",
+  
+  // poor man's feature toggle to hide the pllar
+  // "community",
 ];
 
 const toolSelectOptions = computed(() => cfmm.value.tools);
