@@ -33,6 +33,7 @@
     "dotenv": "^10.0.0",
     "http-server": "^14.0.0",
     "json2csv": "^4.2.1",
+    "node-gyp": "^10.0.1",
     "rimraf": "^3.0.2",
     "sitemap": "^7.1.0",
     "textlint": "^12.1.0",
