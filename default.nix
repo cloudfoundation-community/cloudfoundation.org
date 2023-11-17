@@ -8,10 +8,7 @@ pkgs.mkShell {
 
   buildInputs = [
     # node / typescript (meshPanel, utilities eetc.)
-    pkgs.nodejs-16_x
-    (pkgs.yarn.override {
-        nodejs = pkgs.nodejs-16_x;
-    })
+    pkgs.yarn
 
     pkgs.terraform
     pkgs.awscli2
