@@ -88,7 +88,7 @@
                   v-model="showControls"
                 />
                 <label for="showControls" class="custom-control-label">
-                  Manual block filter controls</label
+                  Manual filter controls</label
                 >
               </div>
               <div class="custom-control custom-switch">
@@ -99,7 +99,7 @@
                   v-model="hideUnselected"
                 />
                 <label for="hideUnselected" class="custom-control-label"
-                  >Hide manually filtered blocks</label
+                  >Hide manually filtered</label
                 >
               </div>
             </div>
