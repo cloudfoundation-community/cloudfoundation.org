@@ -25,27 +25,47 @@
         <div class="upcoming-event-list">
 
           <div class="event-card">
-            <img src="./workshop.svg" alt="Event Workshop" />
+            <img src="./workshop.svg" alt="Landing Zone Workshop" />
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (German) - July 11th, 14:00-16:30 (CEST)
+                Cloud Landing Zone 102 (English) - December 13th, 14:00-16:30 (CET)
               </h4>
               <p>
-                From the application team's request to the finished Cloud
-                Environment: This webinar is the ideal chance to learn the steps
-                involved in setting up a cloud environment, including selecting
-                the right cloud provider, designing the infrastructure, and
-                configuring the environment. The event is designed for anyone
-                interested in cloud computing and the processes involved in
-                setting up a cloud environment.
+                In this 2.5-hour practical workshop, we will show you how to build a repeatable Landing Zone workflow 
+                for application deployment, including network and Virtual Machine (VM) in Azure.
+                The workshop is primarily aimed at Cloud Foundation Owners, Enterprise Architects, and Platform Engineers 
+                who face the challenge of developing Landing Zones. We will provide you and your team with compact knowledge 
+                in a short time, using practical examples and implementation techniques. Our approach is 
+                based on Infrastructure-as-Code (IaC), making it repeatable.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
               </a>
             </div>
+
+          <div class="event-card">
+            <img src="./community.svg" alt="Event Community" />
+            <div class="event-card__content">
+              <h4>
+               Cloud Foundation Community-Event (English) - December 14th, 15:00-16:30 (CET)
+              </h4>
+              <p>
+                After the last Cloud Foundation Community Event gave you exciting insights into EnBW’s FinOps journey and 
+                the topic of sandbox provisioning and organizational challenges when setting up a Cloud Foundation from 
+                metro.digital, we are now taking it to the next level and invite you to the Cloud Foundation Community Event 
+                in winter. This time the focus will be on people, culture and community in cloud foundations.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/cloud-foundation-community-event/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
