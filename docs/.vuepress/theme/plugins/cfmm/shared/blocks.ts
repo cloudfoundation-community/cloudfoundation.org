@@ -190,6 +190,7 @@ export const index = [
       "id": "09b13be0-5b72-466c-a0ba-5d8ad2777dfd",
       "url": "https://www.notion.so/Free-Credits-and-Sandboxes-09b13be05b72466ca0ba5d8ad2777dfd",
       "title": "Free Credits and Sandboxes",
+      "description": "Facilitate and encourage learning cloud skills through exploration and experimentation, offer Free Credits and Sandboxes to application teams.",
       "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
@@ -815,9 +816,11 @@ export const index = [
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
-          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f",
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
         ],
         "recommended": [],
+        "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Crowdfunding Campaigns"
       }
@@ -2647,7 +2650,7 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
         ],
         "recommended": [],
-        "scope": "☁️ Platform",
+        "scope": "🏢 Core",
         "tool-implementations": [],
         "name": "Internal Wiki"
       }
@@ -4735,7 +4738,8 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "d2cb8a5e-3e28-448b-8944-14ff38fad792"
+          "d2cb8a5e-3e28-448b-8944-14ff38fad792",
+          "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",

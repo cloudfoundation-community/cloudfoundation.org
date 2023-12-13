@@ -15,7 +15,7 @@ properties:
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
   recommended: []
-  scope: ☁️ Platform
+  scope: 🏢 Core
   tool-implementations: []
   name: Internal Wiki
 ---
