@@ -10,7 +10,11 @@ We welcome contributions from the community. Please read [CONTRIBUTING.md](CONTR
 The following licenses apply to the content in this repository
 
 - all content (`.md` files) is licensed under [CC BY-SA 4.0](./LICENSE-docs)
-- all code is licensed under [AGPLv 3.0](./LICENSE-src)
+- all code (= every other file) is licensed under [AGPLv 3.0](./LICENSE-src)
+
+Please attribute authors as "The Cloud Foundation Community".
+
+"Cloud Foundation Maturity Model" is a registered trademark of meshcloud GmbH.
 
 ## Development
 

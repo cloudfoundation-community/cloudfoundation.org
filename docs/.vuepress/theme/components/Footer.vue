@@ -7,6 +7,12 @@
       <a href="https://www.meshcloud.io/en/imprint/">Imprint</a>
       <span class="mx-2">·</span>
       <a href="https://www.meshcloud.io/en/privacy-policy/">Privacy Policy</a>
+      <span class="mx-2">·</span>
+      Licensed under&nbsp;<a
+        href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="license noopener noreferrer"
+        >CC BY-SA 4.0</a>
     </div>
   </div>
 </template>
