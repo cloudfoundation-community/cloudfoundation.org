@@ -6,6 +6,12 @@ category: Understanding Cloud Foundation
 order: 40
 ---
 
+## 2023-11
+
+- As a major change we have renamed “building blocks” in the model and now consistently use the term “capability”. This simplifies the understanding of the model and removes the need for explaining “building blocks are capabilities”.
+
+- Added a new building block [Billing Alerts](../maturity-model/cost-management/billing-alerts.md) to describe the recommended practice of setting up spending alerts on cloud tenants. 
+
 ## 2023-10
 
 - We updated [Privileged Access Management](../maturity-model/iam/privileged-access-management.md) and also changed its journey stage from “Recommended” to “Essential”. While we realize many cloud foundation teams in the beginning of their cloud journey will not be able to implement a sophisticated solution for this capability at the start of their journey, this is better tracked as an implementation maturity rather than putting the capability on the shelf for later. This is especially critical on platforms like AWS where root account user credentials need to be protected.
