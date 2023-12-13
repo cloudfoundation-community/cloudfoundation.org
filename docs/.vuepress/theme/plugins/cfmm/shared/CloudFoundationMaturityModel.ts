@@ -50,7 +50,7 @@ export class CloudFoundationMaturityModel {
     compliance: computed(() => this.pillarModel("🔖 Security & Compliance")),
     costManagement: computed(() => this.pillarModel("💵 Cost Management")),
     serviceEcosystem: computed(() => this.pillarModel("🛠 Service Ecosystem")),
-    community: computed(() => this.pillarModel("🙌 Community")),
+    knowledge: computed(() => this.pillarModel("🧠 Knowledge")),
   };
 
   readonly blocksById: ComputedRef<Map<string, MaturityModelBlock>> = computed(
