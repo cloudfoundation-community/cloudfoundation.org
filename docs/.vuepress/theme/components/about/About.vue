@@ -94,32 +94,57 @@
             </h3>
             <p class="font-weight-light">
               External contributions to the Cloud Foundation Maturity Model are
-              welcome.
+              welcome. Please join us on GitHub for helping us improve the
+              model.
             </p>
-            <!--            <router-link-->
-            <!--              to="#"-->
-            <!--              class="btn btn-outline-primary btn-lg text-decoration-underline"-->
-            <!--            >-->
-            <!--              Contributor’s Guide-->
-            <!--            </router-link>-->
+            <a
+              href="https://github.com/meshcloud/cloudfoundation"
+              class="btn btn-outline-primary btn-lg text-decoration-underline"
+            >
+              Contribute on GitHub</a
+            >
           </div>
           <div class="mb-5">
             <h3 class="font-weight-bold">
               Using the Cloud Foundation Maturity Model
             </h3>
             <p class="font-weight-light">
-              The Cloud Foundation Maturity Model is free for non-commercial use
-              to plan out your Cloud Foundation or help others in doing so. When
-              using the model, make sure to always attribute meshcloud as the
-              creator of the model.
+              The Cloud Foundation Maturity Model is available under the terms
+              of the
+
+              <a
+                href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1"
+                target="_blank"
+                rel="license noopener noreferrer"
+                >CC BY-SA 4.0<img
+                  style="
+                    height: 22px !important;
+                    margin-left: 3px;
+                    vertical-align: text-bottom;
+                  "
+                  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img
+                  style="
+                    height: 22px !important;
+                    margin-left: 3px;
+                    vertical-align: text-bottom;
+                  "
+                  src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img
+                  style="
+                    height: 22px !important;
+                    margin-left: 3px;
+                    vertical-align: text-bottom;
+                  "
+                  src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+              /></a>
+              License. Please attribute authors as "The Cloud Foundation Community".
             </p>
           </div>
           <div class="mb-5">
             <h3 class="font-weight-bold">What is not permitted</h3>
             <p class="font-weight-light">
-              You cannot present the Cloud Foundation Maturity Model as your own
-              or commercialize it. It is an agnostic tool that is easily
-              accessible to everyone.
+              You cannot use the Cloud Foundation Maturity Model without providing attribution and sharing your improvements or modifications as outlined in the CC-BY-SA 4.0 license.
+              <br>
+              "Cloud Foundation Maturity Model" is a registered trademark of meshcloud GmbH.
             </p>
           </div>
         </div>
