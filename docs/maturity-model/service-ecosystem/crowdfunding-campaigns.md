@@ -9,12 +9,14 @@ properties:
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on:
     - 825aa5c9-7bf4-4988-af8c-8bf86e90716f
+    - f077cfd1-d8f4-4c30-a1bd-4f252b840e4f
   recommended: []
+  scope: 🏢 Core
   tool-implementations: []
   name: Crowdfunding Campaigns
 ---
 
-Crowdfunding campaigns present an innovative approach for the Cloud Foundation to not only engage with the community but also catalyze internal initiatives. As this capability evolves within the Community Pillar, it's crucial to consider the deployment of an internal Crowdfunding Platform at higher maturity levels. This strategic move enhances the Cloud Foundation's ability to streamline fundraising efforts and internal projects, fostering a culture of innovation and collaboration.
+Crowdfunding campaigns present an innovative approach for the Cloud Foundation to not only engage with the community but also catalyze internal initiatives. This strategic move enhances the Cloud Foundation's ability to streamline fundraising efforts and internal projects for extending the service ecosystem fostering a culture of innovation and collaboration.
 
 ## **Empowering Internal Initiatives**
 
@@ -39,5 +41,3 @@ Advancing this capability involves introducing an internal Crowdfunding Platform
 ### **In Practice: Benefits and Best Practices**
 
 Integrating an internal Crowdfunding Platform enhances the Cloud Foundation's ability to drive impactful projects with direct organizational significance. It becomes a catalyst for innovation, allowing application teams and developers to pursue initiatives that might not fit traditional budgeting models. Additionally, the Cloud Foundation's proactive role in identifying and initiating crowdfunding campaigns ensures a holistic approach to addressing community needs and fostering collaboration.
-
-This refined approach to internal crowdfunding campaigns, emphasizing active participation and strategic guidance from the Cloud Foundation, propels the Community Pillar to higher levels of maturity within the Cloud Foundation Maturity Model.

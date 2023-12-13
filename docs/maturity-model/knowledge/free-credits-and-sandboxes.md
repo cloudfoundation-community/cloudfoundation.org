@@ -3,6 +3,9 @@ id: 09b13be0-5b72-466c-a0ba-5d8ad2777dfd
 url: >-
   https://www.notion.so/Free-Credits-and-Sandboxes-09b13be05b72466ca0ba5d8ad2777dfd
 title: Free Credits and Sandboxes
+description: >-
+  Facilitate and encourage learning cloud skills through exploration and
+  experimentation, offer Free Credits and Sandboxes to application teams.
 category: 🧠 Knowledge
 pageType: CFMMBlock
 properties:
@@ -18,7 +21,7 @@ properties:
   name: Free Credits and Sandboxes
 ---
 
-Embarking on a journey through the vast landscape of cloud services is a key pursuit in the ever-evolving tech realm. To facilitate and encourage this exploration, the Cloud Foundation extends their offering to include Free Credits and Sandboxes to their community. These resources serve as a dedicated playground, empowering community members to delve into the nuances of various cloud services. It's within these hands-on environments that users gain insights into factors like cost, performance, and security, enabling them to seamlessly integrate these cloud solutions into their managed environments.
+Embarking on a journey through the vast landscape of cloud services is a key pursuit in the ever-evolving tech realm. To facilitate and encourage this exploration, the Cloud Foundation extends their offering to include Free Credits and Sandboxes to application teams. These resources serve as a dedicated playground, empowering community members to delve into the nuances of various cloud services. It's within these hands-on environments that users gain insights into factors like cost, performance, and security, enabling them to seamlessly integrate these cloud solutions into their managed environments.
 
 ## **Navigating the Sandbox Experience**
 
