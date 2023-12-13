@@ -123,12 +123,14 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     logo: "/logo.png",
     sidebar: sidebar,
     navbar: navbar,
-    editLink: false,
-    editLinkPattern: ":path",
     search: false,
     // The reason we are currently not using dark mode is because images with white backgrounds do not look nice.
     // We might be able to flip the switch back on in the future iPf we figure out how to handle images.
     darkMode: false,
+    editLink: true,
+    docsRepo: "https://github.com/meshcloud/cloudfoundation",
+    docsBranch: "main",
+    docsDir: "docs"
   },
   plugins: [
     [pluginCfmm, cfmmOptions],
@@ -153,7 +155,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       {
         createdTime: false,
         updateTime: true,
-        contributors: false,
+        contributors: true,
       },
     ],
     [
