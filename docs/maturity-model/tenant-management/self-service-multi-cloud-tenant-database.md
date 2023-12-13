@@ -66,4 +66,4 @@ While self-service will free up a lot of time for the cloud foundation team, the
 
 ### Maintain a Cloud Service Register to Meet Regulatory Requirements
 
-Industry-specific regulation can require your organization to maintain a register of all cloud outsourcing activities. A multi-cloud tenant database can help meet these requirements. One example of this is the “Cloud Service Register” in the financial industry as recommended by the European Banking Authority’s [Recommendations on Cloud Outsourcing](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1).
+Industry-specific regulation can require your organization to maintain a register of all cloud outsourcing activities. A multi-cloud tenant database can help meet these requirements. One example of this is the “Cloud Service Register” in the financial industry as recommended by the European Banking Authority’s [Recommendations on Cloud Outsourcing](https://www.eba.europa.eu/recommendations-outsourcing-cloud-service-providers).
