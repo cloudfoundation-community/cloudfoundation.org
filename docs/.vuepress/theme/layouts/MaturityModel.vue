@@ -185,9 +185,7 @@ const pillars: Pillar[] = [
   "compliance",
   "costManagement",
   "serviceEcosystem",
-  
-  // poor man's feature toggle to hide the pllar
-  // "knowledge",
+  "knowledge",
 ];
 
 const toolSelectOptions = computed(() => cfmm.value.tools);
@@ -393,7 +391,7 @@ $CFMMXs: 580px; // 1 pillar
 
     .pillar {
       flex-grow: 1;
-      max-width: 20%; // all 5 pillars fit
+      max-width: 16.66%; // all 6 pillars fit
 
       @media only screen and (max-width: $CFMMLarge) {
         min-width: 25%; // 4 pillars
