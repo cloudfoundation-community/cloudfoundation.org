@@ -4,4 +4,4 @@ export type Pillar = "tenantManagement" |
   "compliance" |
   "costManagement" |
   "serviceEcosystem" |
-  "community";
+  "knowledge";

@@ -163,20 +163,19 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/consultation-services.md",
+    "file": "maturity-model/knowledge/consultation-services.md",
     "frontmatter": {
       "id": "097df2cd-1041-4020-8b8d-901d8f446fe3",
       "url": "https://www.notion.so/Consultation-Services-097df2cd104140208b8d901d8f446fe3",
       "title": "Consultation Services",
       "description": "The ability to provide Consultation services to customers in order to help them deploy projects in an efficient and economical way while adhering to best practices.",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "45ef06c4-3553-4fca-a158-74afbf2cf9b3",
-          "cf487857-542f-4d74-8fe9-885b7be8ccf3"
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
         ],
         "recommended": [],
         "scope": "🏢 Core",
@@ -186,20 +185,23 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/free-credits-and-sandboxes.md",
+    "file": "maturity-model/knowledge/free-credits-and-sandboxes.md",
     "frontmatter": {
       "id": "09b13be0-5b72-466c-a0ba-5d8ad2777dfd",
       "url": "https://www.notion.so/Free-Credits-and-Sandboxes-09b13be05b72466ca0ba5d8ad2777dfd",
       "title": "Free Credits and Sandboxes",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "journey-stage": "⭐️",
+        "journey-stage": "⭐️⭐️",
         "depends-on": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
+        ],
+        "recommended": [
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
         ],
-        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Free Credits and Sandboxes"
@@ -231,18 +233,20 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/cloud-culture-leader.md",
+    "file": "maturity-model/knowledge/cloud-culture-leader.md",
     "frontmatter": {
       "id": "0d444668-1d2d-41c9-b390-b6a53a7b826a",
       "url": "https://www.notion.so/Cloud-Culture-Leader-0d4446681d2d41c9b390b6a53a7b826a",
       "title": "Cloud Culture Leader",
       "description": "Ascended the Cloud Foundation to become a leader in the space around Cloud Culture & Community, and successfully lead and collaborate with others to pioneer further in the ever-growing landscape of community enablement.",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
-        "depends-on": [],
+        "depends-on": [
+          "119f13d2-62fb-495d-8181-19fe3f900300"
+        ],
         "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
@@ -339,6 +343,30 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/knowledge/external-visibility.md",
+    "frontmatter": {
+      "id": "119f13d2-62fb-495d-8181-19fe3f900300",
+      "url": "https://www.notion.so/External-Visibility-119f13d262fb495d818119fe3f900300",
+      "title": "External Visibility",
+      "description": "Gaining external traction by expanding the visibility and knowledge of the Cloud Foundation and it’s community to the public sector, as well as increasing the ability to absorb and be exposed to new wisdom.",
+      "category": "🧠 Knowledge",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "0d444668-1d2d-41c9-b390-b6a53a7b826a"
+        ],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [],
+        "recommended": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
+        ],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "External Visibility"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "11f50039-a1d6-49de-9fbd-247a1955b474",
       "url": "https://www.notion.so/Resource-Hierarchy-11f50039a1d649de9fbd247a1955b474",
@@ -429,7 +457,9 @@ export const index = [
       "category": "🗂 Tenant Management",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "09b13be0-5b72-466c-a0ba-5d8ad2777dfd"
+        ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
@@ -441,7 +471,8 @@ export const index = [
         "recommended": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
           "cd162600-e742-4a80-b022-989da423ca43",
-          "fdd09e3d-c1f8-47be-8e1f-ece8449bf237"
+          "fdd09e3d-c1f8-47be-8e1f-ece8449bf237",
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
         ],
         "scope": "☁️ Platform",
         "tool-implementations": [
@@ -770,6 +801,26 @@ export const index = [
         "name": "Monthly cloud tenant billing report"
       },
       "pageType": "CFMMTool2Block"
+    }
+  },
+  {
+    "file": "maturity-model/service-ecosystem/crowdfunding-campaigns.md",
+    "frontmatter": {
+      "id": "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f",
+      "url": "https://www.notion.so/Crowdfunding-Campaigns-298d0f683cea4ec0bf7ba6c2e849d56f",
+      "title": "Crowdfunding Campaigns",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+        ],
+        "recommended": [],
+        "tool-implementations": [],
+        "name": "Crowdfunding Campaigns"
+      }
     }
   },
   {
@@ -1281,28 +1332,29 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/support-flow.md",
+    "file": "maturity-model/knowledge/support-process.md",
     "frontmatter": {
       "id": "45ef06c4-3553-4fca-a158-74afbf2cf9b3",
-      "url": "https://www.notion.so/Support-Flow-45ef06c435534fcaa15874afbf2cf9b3",
-      "title": "Support Flow",
+      "url": "https://www.notion.so/Support-Process-45ef06c435534fcaa15874afbf2cf9b3",
+      "title": "Support Process",
       "description": "The ability to communicate efficiently with the Cloud Foundation to ensure a smooth operational model for both support- and news-related pieces.",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
           "097df2cd-1041-4020-8b8d-901d8f446fe3",
-          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+          "825aa5c9-7bf4-4988-af8c-8bf86e90716f",
+          "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
         "journey-stage": "⭐️",
         "depends-on": [
-          "b19e84d5-ebfb-4048-88ac-f183141972a3"
+          "7f284709-517e-40f1-9772-1e825e5c7cee"
         ],
         "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Support Flow"
+        "name": "Support Process"
       }
     }
   },
@@ -1453,27 +1505,27 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/on-demand-learning.md",
+    "file": "maturity-model/knowledge/training-and-certifications.md",
     "frontmatter": {
       "id": "4c835df2-83ce-448b-9a8b-82a5824b22d6",
-      "url": "https://www.notion.so/On-Demand-Learning-4c835df283ce448b9a8b82a5824b22d6",
-      "title": "On-Demand Learning",
-      "description": "Enablement of on-demand learning resources and platforms for customers and users of the Cloud Foundation to further self-service and continuous learning principles.",
-      "category": "🙌 Community",
+      "url": "https://www.notion.so/Training-Certifications-4c835df283ce448b9a8b82a5824b22d6",
+      "title": "Training & Certifications",
+      "description": "Enablement of on-demand learning resources and platforms for customers and users of the Cloud Foundation to further self-service and continuous learning principles, while also providing avenues to Certifications and other beneficial pathways.",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [
-          "9c583659-c6d4-401a-b810-de19bcdff83c"
-        ],
+        "enables": [],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
           "b19e84d5-ebfb-4048-88ac-f183141972a3"
         ],
-        "recommended": [],
+        "recommended": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
+        ],
         "scope": "☁️ Platform",
         "tool-implementations": [],
-        "name": "On-Demand Learning"
+        "name": "Training & Certifications"
       }
     }
   },
@@ -1648,16 +1700,18 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/community-champions.md",
+    "file": "maturity-model/knowledge/community-advocacy.md",
     "frontmatter": {
       "id": "53d0f3cf-c56d-44ee-afbb-d4762539a73a",
-      "url": "https://www.notion.so/Community-Champions-53d0f3cfc56d44eeafbbd4762539a73a",
-      "title": "Community Champions",
-      "description": "Successful recruitment of Community Champions that are advocates and trusted resources within the community space to further distinguish active participation and involvement.",
-      "category": "🙌 Community",
+      "url": "https://www.notion.so/Community-Advocacy-53d0f3cfc56d44eeafbbd4762539a73a",
+      "title": "Community Advocacy",
+      "description": "Successful generation of a distinguished Community Identity and engagement of Community Advocates that are subject matter experts and trusted resources within the community space to further assist with active participation and involvement in building and expanding knowledge.",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
-        "enables": [],
+        "enables": [
+          "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0"
+        ],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
@@ -1665,7 +1719,7 @@ export const index = [
         "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Community Champions"
+        "name": "Community Advocacy"
       }
     }
   },
@@ -1725,7 +1779,8 @@ export const index = [
           "d1904912-b420-4a10-a62c-aa578fb847ff",
           "af14b5df-77b4-4def-b761-8fadabd241ca",
           "cf487857-542f-4d74-8fe9-885b7be8ccf3",
-          "b19e84d5-ebfb-4048-88ac-f183141972a3"
+          "b19e84d5-ebfb-4048-88ac-f183141972a3",
+          "7f284709-517e-40f1-9772-1e825e5c7cee"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️",
@@ -1766,9 +1821,7 @@ export const index = [
         "enables": [],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [
-          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
-        ],
+        "depends-on": [],
         "recommended": [
           "d5c797b4-6300-4c58-aa98-76bbfc49fcc8",
           "4f9ee73a-23a9-4aa3-b956-0df22e6156d0",
@@ -2416,24 +2469,24 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/gamified-community.md",
+    "file": "maturity-model/knowledge/gamification.md",
     "frontmatter": {
       "id": "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0",
-      "url": "https://www.notion.so/Gamified-Community-776bdfc40b2149f7ac77b8c1dd188cb0",
-      "title": "Gamified Community",
+      "url": "https://www.notion.so/Gamification-776bdfc40b2149f7ac77b8c1dd188cb0",
+      "title": "Gamification",
       "description": "Gamification of the existing Community to further incentivize participation, internal support, as well as motivate long-term participation in the space.",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
-          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
+          "53d0f3cf-c56d-44ee-afbb-d4762539a73a"
         ],
         "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Gamified Community"
+        "name": "Gamification"
       }
     }
   },
@@ -2576,6 +2629,31 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/knowledge/internal-wiki.md",
+    "frontmatter": {
+      "id": "7f284709-517e-40f1-9772-1e825e5c7cee",
+      "url": "https://www.notion.so/Internal-Wiki-7f284709517e40f197721e825e5c7cee",
+      "title": "Internal Wiki",
+      "description": "A centralized knowledge hub which serves as an integral cornerstone of the digital Cloud Foundation brain.",
+      "category": "🧠 Knowledge",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [
+          "b19e84d5-ebfb-4048-88ac-f183141972a3",
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
+        ],
+        "journey-stage": "⭐️",
+        "depends-on": [
+          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+        ],
+        "recommended": [],
+        "scope": "☁️ Platform",
+        "tool-implementations": [],
+        "name": "Internal Wiki"
+      }
+    }
+  },
+  {
     "frontmatter": {
       "id": "7f68e769-70d6-4c41-bdc2-de273d61bd23",
       "url": "https://www.notion.so/Cloud-Carbon-Footprint-reporting-7f68e76970d64c41bdc2de273d61bd23",
@@ -2628,7 +2706,8 @@ export const index = [
         ],
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
-          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b"
+          "09e744c5-e12a-49e8-8b6f-b7e3c44ba63b",
+          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
         ],
         "recommended": [
           "e7d63253-2e39-4bbf-9dd6-da11bb3edd0d"
@@ -2640,19 +2719,18 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/community-space.md",
+    "file": "maturity-model/knowledge/community-hub.md",
     "frontmatter": {
       "id": "825aa5c9-7bf4-4988-af8c-8bf86e90716f",
-      "url": "https://www.notion.so/Community-Space-825aa5c97bf44988af8c8bf86e90716f",
-      "title": "Community Space",
-      "description": "The creation of a dedicated community space that enables the capacity for the community to interact and be involved in the Cloud Foundation beyond mere support requests.",
-      "category": "🙌 Community",
+      "url": "https://www.notion.so/Community-Hub-825aa5c97bf44988af8c8bf86e90716f",
+      "title": "Community Hub",
+      "description": "Create a central place for the community to interact and be involved in the Cloud Foundation beyond mere support requests.",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
           "53d0f3cf-c56d-44ee-afbb-d4762539a73a",
-          "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0",
-          "90f6f91d-97d8-48fb-bd45-af5ae651f70e"
+          "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f"
         ],
         "journey-stage": "⭐️⭐️",
         "depends-on": [
@@ -2661,7 +2739,7 @@ export const index = [
         "recommended": [],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Community Space"
+        "name": "Community Hub"
       }
     }
   },
@@ -2834,28 +2912,6 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/community-identity.md",
-    "frontmatter": {
-      "id": "90f6f91d-97d8-48fb-bd45-af5ae651f70e",
-      "url": "https://www.notion.so/Community-Identity-90f6f91d97d848fbbd45af5ae651f70e",
-      "title": "Community Identity",
-      "description": "Implemented a Community Identity for the Cloud Foundation that is providing additional value and incentives to their customer base.",
-      "category": "🙌 Community",
-      "pageType": "CFMMBlock",
-      "properties": {
-        "enables": [],
-        "journey-stage": "⭐️⭐️⭐️",
-        "depends-on": [
-          "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
-        ],
-        "recommended": [],
-        "scope": "🏢 Core",
-        "tool-implementations": [],
-        "name": "Community Identity"
-      }
-    }
-  },
-  {
     "file": "maturity-model/tenant-management/modular-landing-zones.md",
     "frontmatter": {
       "id": "913a8ad1-7ad4-4ade-9e88-801a7afa4b40",
@@ -2954,22 +3010,24 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/live-events-and-labs.md",
+    "file": "maturity-model/knowledge/live-events-and-labs.md",
     "frontmatter": {
       "id": "9c583659-c6d4-401a-b810-de19bcdff83c",
       "url": "https://www.notion.so/Live-Events-Labs-9c583659c6d4401ab810de19bcdff83c",
       "title": "Live Events & Labs",
       "description": "Conduction of Live Events & Labs to offer unique opportunities to take particular services and practices under a focused lens and learn more around it in an interactive fashion.",
-      "category": "🙌 Community",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
+          "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
+        ],
+        "recommended": [
           "4c835df2-83ce-448b-9a8b-82a5824b22d6",
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
         ],
-        "recommended": [],
         "scope": "☁️ Platform",
         "tool-implementations": [],
         "name": "Live Events & Labs"
@@ -3264,27 +3322,29 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/internal-cloud-foundation-starter-pack.md",
+    "file": "maturity-model/knowledge/quickstart-guide.md",
     "frontmatter": {
       "id": "b19e84d5-ebfb-4048-88ac-f183141972a3",
-      "url": "https://www.notion.so/Internal-Cloud-Foundation-Starter-Pack-b19e84d5ebfb404888acf183141972a3",
-      "title": "Internal Cloud Foundation Starter Pack",
-      "description": "The capacity to present the Cloud Foundation, so potential clients and customers can learn about the offering.",
-      "category": "🙌 Community",
+      "url": "https://www.notion.so/Quickstart-Guide-b19e84d5ebfb404888acf183141972a3",
+      "title": "Quickstart Guide ",
+      "description": "The capacity to present the Cloud Foundation in a digestible format, so potential clients and customers can easily learn about the offering.",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "4c835df2-83ce-448b-9a8b-82a5824b22d6",
-          "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
+          "4c835df2-83ce-448b-9a8b-82a5824b22d6"
         ],
-        "journey-stage": "⭐️",
+        "journey-stage": "⭐️⭐️",
         "depends-on": [
-          "57c521ba-73a4-4187-a507-bbd5eaa80212"
+          "57c521ba-73a4-4187-a507-bbd5eaa80212",
+          "7f284709-517e-40f1-9772-1e825e5c7cee"
         ],
-        "recommended": [],
+        "recommended": [
+          "77942f5f-e395-49c6-8927-e5fa3ef28aef"
+        ],
         "scope": "🏢 Core",
         "tool-implementations": [],
-        "name": "Internal Cloud Foundation Starter Pack"
+        "name": "Quickstart Guide "
       }
     }
   },
@@ -3931,8 +3991,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2",
-          "097df2cd-1041-4020-8b8d-901d8f446fe3"
+          "e649c5ac-ae9d-49f7-a9f0-1850bc1710c2"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
@@ -3941,7 +4000,10 @@ export const index = [
           "57c521ba-73a4-4187-a507-bbd5eaa80212",
           "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
         ],
-        "recommended": [],
+        "recommended": [
+          "b19e84d5-ebfb-4048-88ac-f183141972a3",
+          "097df2cd-1041-4020-8b8d-901d8f446fe3"
+        ],
         "scope": "🏢 Core",
         "tool-implementations": [
           "cce0a290-fdb4-412d-bfc7-da0ae83a53a6",
@@ -4197,16 +4259,16 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/readme.md",
+    "file": "maturity-model/knowledge/readme.md",
     "frontmatter": {
       "id": "d7e95814-5d5b-4d0f-8010-6813411e9ba7",
-      "url": "https://www.notion.so/Community-d7e958145d5b4d0f80106813411e9ba7",
-      "title": "🙌 Community",
-      "description": "Foster a community around the organizations cloud journey providing support and guidance for application teams and other cloud foundation stakeholders.",
+      "url": "https://www.notion.so/Knowledge-d7e958145d5b4d0f80106813411e9ba7",
+      "title": "🧠 Knowledge",
+      "description": "Foster a culture of learning for cloud skills, providing support and guidance for application teams and other cloud foundation stakeholders.",
       "category": "Pillar",
       "pageType": "CFMMPillar",
       "properties": {
-        "short-name": "Community"
+        "short-name": "Knowledge"
       }
     }
   },
@@ -4484,12 +4546,13 @@ export const index = [
     }
   },
   {
-    "file": "maturity-model/community/cloud-partnerships.md",
+    "file": "maturity-model/knowledge/cloud-partnerships.md",
     "frontmatter": {
       "id": "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
       "url": "https://www.notion.so/Cloud-Partnerships-e5bc388b865a45a18b30ddc66f76fd07",
       "title": "Cloud Partnerships",
-      "category": "🙌 Community",
+      "description": "The capability to foster a beneficial engagement with the existing Cloud Service Providers to benefit and enrich ongoing initiatives to further knowledge and success within the community.",
+      "category": "🧠 Knowledge",
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
@@ -4672,8 +4735,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "d2cb8a5e-3e28-448b-8944-14ff38fad792",
-          "58c92b8f-f836-4c69-aa6a-d11f0c8a9a44"
+          "d2cb8a5e-3e28-448b-8944-14ff38fad792"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",

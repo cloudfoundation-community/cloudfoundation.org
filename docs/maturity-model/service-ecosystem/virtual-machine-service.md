@@ -9,8 +9,7 @@ properties:
   enables: []
   redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
-  depends-on:
-    - f077cfd1-d8f4-4c30-a1bd-4f252b840e4f
+  depends-on: []
   recommended:
     - d5c797b4-6300-4c58-aa98-76bbfc49fcc8
     - 4f9ee73a-23a9-4aa3-b956-0df22e6156d0
