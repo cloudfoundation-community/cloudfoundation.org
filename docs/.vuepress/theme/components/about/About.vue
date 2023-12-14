@@ -98,7 +98,7 @@
               model.
             </p>
             <a
-              href="https://github.com/meshcloud/cloudfoundation"
+              href="https://github.com/cloudfoundation-community/cloudfoundation.org"
               class="btn btn-outline-primary btn-lg text-decoration-underline"
             >
               Contribute on GitHub</a

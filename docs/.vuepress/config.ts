@@ -128,7 +128,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     // We might be able to flip the switch back on in the future iPf we figure out how to handle images.
     darkMode: false,
     editLink: true,
-    docsRepo: "https://github.com/meshcloud/cloudfoundation",
+    docsRepo: "https://github.com/cloudfoundation-community/cloudfoundation.org",
     docsBranch: "main",
     docsDir: "docs"
   },
