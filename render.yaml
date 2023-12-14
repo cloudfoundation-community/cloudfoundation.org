@@ -4,7 +4,7 @@ services:
     env: static
     # we have to unshallow the git repo during builds to enable proper sitemap generation. Unforunately that means
     # wen eed to run this extra command before the actual build
-    # see https://github.com/meshcloud/cloudfoundation/issues/150
+    # see https://github.com/cloudfoundation-community/cloudfoundation.org/issues/150
     buildCommand: git remote add origin https://oauth2:$(cat .github_pat)@github.com/meshcloud/cloudfoundation.git && git fetch --unshallow && yarn docs:build 
     staticPublishPath: ./docs/.vuepress/dist
     pullRequestPreviewsEnabled: true

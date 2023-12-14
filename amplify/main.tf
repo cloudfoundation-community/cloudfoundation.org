@@ -75,7 +75,7 @@ import {
 
 resource "aws_amplify_app" "cloudfoundation" {
   name       = "cloudfoundation"
-  repository = "https://github.com/meshcloud/cloudfoundation"
+  repository = "https://github.com/cloudfoundation-community/cloudfoundation.org"
 
   # note: rules here are processed top to bottom! 
 
@@ -98,6 +98,23 @@ resource "aws_amplify_app" "cloudfoundation" {
     status = "301"
   }
 
+  # Redirects related to the feedback form.
+  # Google App Script cannot be called directly from Vue due to CORS policy.   
+  custom_rule {
+    source = "/api/feedback"
+    target = "https://script.google.com/macros/s/AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV/exec"
+    status = 200
+  }
+
+  ## Redirects required for bypassing adblockers with plausible.io
+  ## See https://plausible.io/docs/proxy/guides/netlify
+  ## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177
+  custom_rule {
+    source = "/api/event"
+    target = "https://plausible.io/api/event"
+    status = 200
+  }
+
   # Redirects for individual pages that we moved/renamed but we want to make sure we don't confuse google      
   dynamic "custom_rule" {
     for_each = toset(local.redirects)
@@ -109,25 +126,8 @@ resource "aws_amplify_app" "cloudfoundation" {
     }
   }
 
-  # Redirects related to the feedback form.
-  # Google App Script cannot be called directly from Vue due to CORS policy.   
+  # not sure what this one does? probably the 404 handler
   custom_rule {
-    source = "/api/feedback"
-    target = "https://script.google.com/macros/s/AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV/exec"
-    status = 200
-  }
-    
-  ## Redirects required for bypassing adblockers with plausible.io
-  ## See https://plausible.io/docs/proxy/guides/netlify
-  ## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177
-  custom_rule {
-    source = "/api/event"
-    target = "https://plausible.io/api/event"
-    status = 200 
-  }
-
-// not sure what this one does? probably the 404 handler
- custom_rule {
     source = "/<*>"
     status = "404-200"
     target = "/index.html"
@@ -165,8 +165,8 @@ resource "aws_amplify_branch" "main" {
 # for the "alias_hosted_zone_id" = "Z2FDTNDATAQYW2"
 
 resource "aws_amplify_domain_association" "cloudfoundation_org" {
-  app_id                = aws_amplify_app.cloudfoundation.id
-  domain_name           = "cloudfoundation.org"
+  app_id      = aws_amplify_app.cloudfoundation.id
+  domain_name = "cloudfoundation.org"
 
   sub_domain {
     branch_name = aws_amplify_branch.main.branch_name
@@ -176,8 +176,8 @@ resource "aws_amplify_domain_association" "cloudfoundation_org" {
 
 
 resource "aws_amplify_domain_association" "www_cloudfoundation_org" {
-  app_id                = aws_amplify_app.cloudfoundation.id
-  domain_name           = "www.cloudfoundation.org"
+  app_id      = aws_amplify_app.cloudfoundation.id
+  domain_name = "www.cloudfoundation.org"
 
   sub_domain {
     branch_name = aws_amplify_branch.main.branch_name
@@ -186,8 +186,8 @@ resource "aws_amplify_domain_association" "www_cloudfoundation_org" {
 }
 
 resource "aws_amplify_domain_association" "cfmm_meshcloud_io" {
-  app_id                = aws_amplify_app.cloudfoundation.id
-  domain_name           = "cfmm.meshcloud.io"
+  app_id      = aws_amplify_app.cloudfoundation.id
+  domain_name = "cfmm.meshcloud.io"
 
   sub_domain {
     branch_name = aws_amplify_branch.main.branch_name
@@ -196,8 +196,8 @@ resource "aws_amplify_domain_association" "cfmm_meshcloud_io" {
 }
 
 resource "aws_amplify_domain_association" "cloudfoundation_meshcloud_io" {
-  app_id                = aws_amplify_app.cloudfoundation.id
-  domain_name           = "cloudfoundation.meshcloud.io"
+  app_id      = aws_amplify_app.cloudfoundation.id
+  domain_name = "cloudfoundation.meshcloud.io"
 
   sub_domain {
     branch_name = aws_amplify_branch.main.branch_name
