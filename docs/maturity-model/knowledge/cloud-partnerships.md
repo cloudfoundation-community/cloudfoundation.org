@@ -10,10 +10,11 @@ category: 🧠 Knowledge
 pageType: CFMMBlock
 properties:
   enables:
-    - 155c0ead-cbd0-4e0c-9387-cc57946f80e9
     - 9c583659-c6d4-401a-b810-de19bcdff83c
     - 4c835df2-83ce-448b-9a8b-82a5824b22d6
     - 09b13be0-5b72-466c-a0ba-5d8ad2777dfd
+    - 155c0ead-cbd0-4e0c-9387-cc57946f80e9
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on: []
   recommended: []

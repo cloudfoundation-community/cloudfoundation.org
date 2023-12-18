@@ -173,6 +173,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
@@ -195,6 +196,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
@@ -244,6 +246,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️⭐️",
         "depends-on": [
           "119f13d2-62fb-495d-8181-19fe3f900300"
@@ -356,6 +359,7 @@ export const index = [
         "enables": [
           "0d444668-1d2d-41c9-b390-b6a53a7b826a"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [],
         "recommended": [
@@ -471,6 +475,10 @@ export const index = [
         ],
         "recommended": [
           "77942f5f-e395-49c6-8927-e5fa3ef28aef",
+          "d3839083-6870-4308-aa35-c48e17b0b79e",
+          "d1904912-b420-4a10-a62c-aa578fb847ff",
+          "af14b5df-77b4-4def-b761-8fadabd241ca",
+          "e063e4d2-81f4-4bb8-ac7a-7424ba882161",
           "cd162600-e742-4a80-b022-989da423ca43",
           "fdd09e3d-c1f8-47be-8e1f-ece8449bf237",
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
@@ -1350,6 +1358,7 @@ export const index = [
           "825aa5c9-7bf4-4988-af8c-8bf86e90716f",
           "802fdd8d-7fc0-4749-937f-e9e0ccb3f273"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "7f284709-517e-40f1-9772-1e825e5c7cee"
@@ -1518,6 +1527,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07",
@@ -1715,6 +1725,7 @@ export const index = [
         "enables": [
           "776bdfc4-0b21-49f7-ac77-b8c1dd188cb0"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
         "depends-on": [
           "825aa5c9-7bf4-4988-af8c-8bf86e90716f"
@@ -2482,6 +2493,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "53d0f3cf-c56d-44ee-afbb-d4762539a73a"
@@ -2645,6 +2657,7 @@ export const index = [
           "b19e84d5-ebfb-4048-88ac-f183141972a3",
           "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212"
@@ -2735,6 +2748,7 @@ export const index = [
           "53d0f3cf-c56d-44ee-afbb-d4762539a73a",
           "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "45ef06c4-3553-4fca-a158-74afbf2cf9b3"
@@ -3023,6 +3037,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️⭐️",
         "depends-on": [
           "e5bc388b-865a-45a1-8b30-ddc66f76fd07"
@@ -3337,6 +3352,7 @@ export const index = [
         "enables": [
           "4c835df2-83ce-448b-9a8b-82a5824b22d6"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [
           "57c521ba-73a4-4187-a507-bbd5eaa80212",
@@ -4559,11 +4575,12 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [
-          "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
           "9c583659-c6d4-401a-b810-de19bcdff83c",
           "4c835df2-83ce-448b-9a8b-82a5824b22d6",
-          "09b13be0-5b72-466c-a0ba-5d8ad2777dfd"
+          "09b13be0-5b72-466c-a0ba-5d8ad2777dfd",
+          "155c0ead-cbd0-4e0c-9387-cc57946f80e9"
         ],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️",
         "depends-on": [],
         "recommended": [],

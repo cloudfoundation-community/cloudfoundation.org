@@ -22,6 +22,10 @@ properties:
     - e5bc388b-865a-45a1-8b30-ddc66f76fd07
   recommended:
     - 77942f5f-e395-49c6-8927-e5fa3ef28aef
+    - d3839083-6870-4308-aa35-c48e17b0b79e
+    - d1904912-b420-4a10-a62c-aa578fb847ff
+    - af14b5df-77b4-4def-b761-8fadabd241ca
+    - e063e4d2-81f4-4bb8-ac7a-7424ba882161
     - cd162600-e742-4a80-b022-989da423ca43
     - fdd09e3d-c1f8-47be-8e1f-ece8449bf237
     - e5bc388b-865a-45a1-8b30-ddc66f76fd07

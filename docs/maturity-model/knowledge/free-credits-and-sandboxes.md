@@ -10,6 +10,7 @@ category: 🧠 Knowledge
 pageType: CFMMBlock
 properties:
   enables: []
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:
     - e5bc388b-865a-45a1-8b30-ddc66f76fd07

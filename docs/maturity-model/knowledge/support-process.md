@@ -13,6 +13,7 @@ properties:
     - 097df2cd-1041-4020-8b8d-901d8f446fe3
     - 825aa5c9-7bf4-4988-af8c-8bf86e90716f
     - 802fdd8d-7fc0-4749-937f-e9e0ccb3f273
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - 7f284709-517e-40f1-9772-1e825e5c7cee

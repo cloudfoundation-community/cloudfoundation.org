@@ -11,6 +11,7 @@ properties:
   enables:
     - b19e84d5-ebfb-4048-88ac-f183141972a3
     - 45ef06c4-3553-4fca-a158-74afbf2cf9b3
+  redaction-state: mvp1
   journey-stage: ⭐️
   depends-on:
     - 57c521ba-73a4-4187-a507-bbd5eaa80212
@@ -44,7 +45,7 @@ To maintain its efficacy, the Internal Wiki undergoes continuous reviews and upd
 
 By serving as the authoritative source of information, the Internal Wiki empowers teams within the Cloud Foundation, fostering a culture of shared knowledge and streamlined operations.
 
-## Related Tools
+## Common Tools Used
 
 Confluence
 

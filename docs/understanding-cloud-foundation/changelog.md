@@ -6,6 +6,12 @@ category: Understanding Cloud Foundation
 order: 40
 ---
 
+## 2023-12
+
+- The first release of the new [🧠 Knowledge](../maturity-model/knowledge/readme.md) pillar. This pillar focuses on building and disseminating shared knowledge within the Cloud Foundation. It includes key areas to foster an ongoing growth of the collected knowledge within the Cloud Foundation, and marks distinct steps for attaining foundational capabilities, all the way for becoming industry-leading in the way knowledge is handled and amplified within the Foundation.
+
+- We’re now allowing for [public contributions](https://github.com/cloudfoundation-community/cloudfoundation.org/tree/main) to the Cloud Foundation Maturity Model, now accessible on GitHub under the [CC BY-SA 4.0](https://github.com/cloudfoundation-community/cloudfoundation.org/blob/main/LICENSE-docs) license.
+
 ## 2023-11
 
 - As a major change we have renamed “building blocks” in the model and now consistently use the term “capability”. This simplifies the understanding of the model and removes the need for explaining “building blocks are capabilities”.

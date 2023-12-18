@@ -11,4 +11,4 @@ properties:
   short-name: Knowledge
 ---
 
-> **🚧** Under construction
+The Knowledge Pillar is dedicated to building and disseminating shared knowledge within the Cloud Foundation. It encompasses various capabilities that enable efficient onboarding, continuous learning, collaboration, and expert consultation. The pillar focuses on creating a robust knowledge foundation through resources like wikis, learning platforms, and certifications. It recognizes the importance of community engagement, identity, and mentorship in fostering a culture of learning and expertise. Additionally, the pillar highlights the strategic role of consultation services, emphasizing tailored approaches, specialized departments, and "Ask an Expert" sessions to provide targeted support for diverse business needs. The Knowledge Pillar ensures that the Cloud Foundation is well-equipped with the collective knowledge and skills necessary for successful cloud endeavors.
