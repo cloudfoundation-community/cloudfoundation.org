@@ -12,6 +12,7 @@ pageType: CFMMBlock
 properties:
   enables:
     - 776bdfc4-0b21-49f7-ac77-b8c1dd188cb0
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️
   depends-on:
     - 825aa5c9-7bf4-4988-af8c-8bf86e90716f
@@ -67,7 +68,7 @@ Enhance recognition programs to be more inclusive and diverse. Recognize contrib
 
 By incorporating these extended elements, this capability not only shapes a recognizable brand but also cultivates a vibrant and inclusive community that thrives on collaboration, shared narratives, and a dynamic sense of identity.
 
-### **Related Tools**
+### Common Tools Used
 
 - **Teams**
 

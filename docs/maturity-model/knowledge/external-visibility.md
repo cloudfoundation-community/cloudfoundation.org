@@ -11,6 +11,7 @@ pageType: CFMMBlock
 properties:
   enables:
     - 0d444668-1d2d-41c9-b390-b6a53a7b826a
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️⭐️⭐️
   depends-on: []
   recommended:

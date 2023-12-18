@@ -11,6 +11,7 @@ properties:
   enables:
     - 53d0f3cf-c56d-44ee-afbb-d4762539a73a
     - 298d0f68-3cea-4ec0-bf7b-a6c2e849d56f
+  redaction-state: mvp1
   journey-stage: ⭐️⭐️
   depends-on:
     - 45ef06c4-3553-4fca-a158-74afbf2cf9b3
@@ -38,7 +39,7 @@ Beyond being a gathering place, the community space serves as a dynamic knowledg
 
 A vibrant community space is not static. It evolves, adapts, and innovates. Continuous improvement is not just a practice; it's a commitment. Regular assessments, user feedback loops, and proactive updates ensure that the platform remains at the forefront of community engagement. The introduction of new features is not just a response to trends; it's a proactive step to enhance the overall community experience. The Cloud Foundation, in this aspect, embraces agility to keep the community space not just relevant but ahead of expectations.
 
-#### **Related Tools**
+## Common Tools Used
 
 - **Teams**
 
