@@ -23,68 +23,72 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
+          
+          <div class="event-card">
+            <img src="./meshcloud_demo.svg" alt="Live Demo" />
+            <div class="event-card__content">
+              <h4>meshStack Live Demo (livestream) - January 17th, 14:00 - 15:00 (CET) </h4>
+              <p>
+                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
+                Subscribe to our channel to stay updated.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=JADj3zgB2QA/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Subscribe!
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./workshop.svg" alt="Landing Zone Workshop" />
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 102 (English) - December 13th, 14:00-16:30
+                Cloud Landing Zone 101 (English) - February 14th, 14:00-16:30
                 (CET)
               </h4>
               <p>
-                In this 2.5-hour practical workshop, we will show you how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
-                The workshop is primarily aimed at Cloud Foundation Owners,
-                Enterprise Architects, and Platform Engineers who face the
-                challenge of developing Landing Zones. We will provide you and
-                your team with compact knowledge in a short time, using
-                practical examples and implementation techniques. Our approach
-                is based on Infrastructure-as-Code (IaC), making it repeatable.
+                In this 2.5-hour practical workshop, we will delve into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                You will discover best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
               </a>
             </div>
           </div>
-          <div class="event-card">
-            <img src="./community.svg" alt="Event Community" />
-            <div class="event-card__content">
-              <h4>
-                Cloud Foundation Community-Event (English) - December 14th,
-                15:00-16:30 (CET)
-              </h4>
-              <p>
-                After the last Cloud Foundation Community Event gave you
-                exciting insights into EnBW’s FinOps journey and the topic of
-                sandbox provisioning and organizational challenges when setting
-                up a Cloud Foundation from metro.digital, we are now taking it
-                to the next level and invite you to the Cloud Foundation
-                Community Event in winter. This time the focus will be on
-                people, culture and community in cloud foundations.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/cloud-foundation-community-event/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div class="past-events">
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
           <div class="event-card">
-            <img src="./community.svg" alt="Event Community" />
+            <img src="./meshcloud_SlackCommunity.webp" alt="Event Community" />
             <div class="event-card__content">
-              <h4>Community Event - June 28th, 9:00-11:00 am (CEST)</h4>
+              <h4>Cloud Foundation Community-Event (English) - December 14th,
+                15:00-16:30 (CET)</h4>
               <p>
-                We have great news! The meshCommunity is back and we can’t wait
-                to mingle again.
+                In that Community Event we focused on
+                people, culture and community in cloud foundations.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./LandingZone102_Dec13.webp" alt="Event Community" />
+            <div class="event-card__content">
+              <h4>Cloud Landing Zone 102 (English) - December 13th, 14:00-16:30
+                (CET)</h4>
+              <p>
+                In this high-demanded 2.5-hour practical workshop, we showed how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
               </p>
             </div>
           </div>
@@ -102,16 +106,6 @@
             </div>
           </div>
 
-          <div class="event-card">
-            <img src="./meshcloud_demo.svg" alt="Live Demo" />
-            <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - Every Wednesday</h4>
-              <p>
-                Tune in to our meshStack live demos, every Wednesday on YouTube.
-                Subscribe to our channel to stay updated.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
