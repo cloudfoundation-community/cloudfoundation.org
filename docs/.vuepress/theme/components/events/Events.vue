@@ -25,7 +25,7 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./meshcloud_demo.svg" alt="Live Demo" />
+            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
             <div class="event-card__content">
               <h4>meshStack Live Demo (livestream) - January 17th, 14:00 - 15:00 (CET) </h4>
               <p>
@@ -69,7 +69,7 @@
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
           <div class="event-card">
-            <img src="./meshcloud_SlackCommunity.webp" alt="Event Community" />
+            <img src="./CFC_Event.webp" alt="Event Community" />
             <div class="event-card__content">
               <h4>Cloud Foundation Community-Event (English) - December 14th,
                 15:00-16:30 (CET)</h4>
@@ -81,7 +81,7 @@
           </div>
 
           <div class="event-card">
-            <img src="./LandingZone102_Dec13.webp" alt="Event Community" />
+            <img src="./LZ102.webp" alt="Event Community" />
             <div class="event-card__content">
               <h4>Cloud Landing Zone 102 (English) - December 13th, 14:00-16:30
                 (CET)</h4>
