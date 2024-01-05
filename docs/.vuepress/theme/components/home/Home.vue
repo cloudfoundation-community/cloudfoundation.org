@@ -40,7 +40,7 @@
       >
         <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
-          Upcoming: Landing Zone 102 Workshop on December 13th
+          Upcoming: meshStack Live Demo on January 17th
         </p>
       </div>
     </div>
