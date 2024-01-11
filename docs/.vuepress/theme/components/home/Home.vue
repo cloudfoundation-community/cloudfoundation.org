@@ -40,7 +40,12 @@
       >
         <img src="./calendar.svg" alt="Calendar" />
         <p class="text-white">
-          Upcoming: meshStack Live Demo on January 17th
+          Upcoming: 
+          <a
+            href="https://www.meshcloud.io/en/company/events/live-demo/"
+          >
+          meshStack Live Demo on January 17th
+          </a>
         </p>
       </div>
     </div>
