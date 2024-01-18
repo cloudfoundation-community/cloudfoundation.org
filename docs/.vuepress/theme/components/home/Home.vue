@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/live-demo/"
+            href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
           >
-          meshStack Live Demo on January 17th
+          Landing Zone 101 on February 14th
           </a>
         </p>
       </div>
