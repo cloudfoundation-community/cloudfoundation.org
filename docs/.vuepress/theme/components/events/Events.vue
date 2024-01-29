@@ -25,23 +25,6 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
-            <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - January 17th, 14:00 - 15:00 (CET) </h4>
-              <p>
-                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
-                Subscribe to our channel to stay updated.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=JADj3zgB2QA/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Subscribe!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
             <img src="./workshop.svg" alt="Landing Zone Workshop" />
             <div class="event-card__content">
               <h4>
@@ -59,6 +42,23 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
+            <div class="event-card__content">
+              <h4>meshStack Live Demo (livestream) - February 21th, 14:00 - 15:00 (CET) </h4>
+              <p>
+                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
+                Subscribe to our channel to stay updated.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=6FQkrqew3vw"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Subscribe!
               </a>
             </div>
           </div>
