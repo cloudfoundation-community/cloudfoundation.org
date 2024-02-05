@@ -78,7 +78,7 @@ The definition of different use cases simplifies aligning responsibilities by re
 
 Application teams can only fulfill their responsibilities when they’re aware of them and are equipped with the right skills and knowledge. It’s thus paramount that the cloud foundation team thoroughly documents the results of aligning shared responsibilities between its different stakeholders. This documentation should not only capture “what” was decided but also “why”. One example could be
 
-> We expect application teams that want to operate server-based software from external software vendors to use a Lift & Shift cloud migration strategy. We assume these teans  have little cloud proficiency and do not want to deploy or maintain virtual machines on the cloud on their one  Our [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md) will therefore offer a fully managed virtual machine service, comparable to the existing service level for servers provided by central IT on-premise.
+> We expect application teams that want to operate server-based software from external software vendors to use a Lift & Shift cloud migration strategy. We assume these teams  have little cloud proficiency and do not want to deploy or maintain virtual machines on the cloud on their one  Our [Lift & Shift Landing Zone](../tenant-management/lift-and-shift-landing-zone.md) will therefore offer a fully managed virtual machine service, comparable to the existing service level for servers provided by central IT on-premise.
 
 ### Consider the Cloud Provider SRM
 
