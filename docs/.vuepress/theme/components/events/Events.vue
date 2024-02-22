@@ -25,10 +25,48 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
+            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
+            <div class="event-card__content">
+              <h4>meshStack Live Demo (livestream) - March 13th, 14:00 - 15:00 (CET) </h4>
+              <p>
+                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
+                Subscribe to our channel to stay updated.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/live-demo/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Subscribe!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./EA_Workshop.webp" alt="Clean up Your Cloud Workshop" />
+            <div class="event-card__content">
+              <h4>
+                Cloud Clean-up Workshop for Enterprise Architects (English) - March 20th, 14:00-16:30
+                (CET)
+              </h4>
+              <p>
+                This practical workshop is specifically designed to empower 
+		            Enterprise Architects with the best strategies and tools to build 
+		            a structured and efficient cloud landscape within their organization.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/ea-workshop/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
             <img src="./workshop.svg" alt="Landing Zone Workshop" />
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - February 14th, 14:00-16:30
+                Cloud Landing Zone 101 (English) - April 25th, 14:00-16:30
                 (CET)
               </h4>
               <p>
@@ -42,23 +80,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
-            <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - February 21th, 14:00 - 15:00 (CET) </h4>
-              <p>
-                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
-                Subscribe to our channel to stay updated.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=6FQkrqew3vw"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Subscribe!
               </a>
             </div>
           </div>
