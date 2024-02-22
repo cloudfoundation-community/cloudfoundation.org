@@ -42,7 +42,7 @@
           </div>
 
           <div class="event-card">
-            <img src="./EA_Workshop.webp" alt="Clean up Your Cloud Workshop" />
+            <img src="./EA_Workshop.webp" alt="Clean up Your Cloud Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
                 Cloud Clean-up Workshop for Enterprise Architects (English) - March 20th, 14:00-16:30
