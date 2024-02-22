@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+            href="https://www.meshcloud.io/en/company/events/ea-workshop/"
           >
-          Landing Zone 101 on February 14th
+          Cloud Clean-up Workshop for Enterprise Architects
           </a>
         </p>
       </div>
