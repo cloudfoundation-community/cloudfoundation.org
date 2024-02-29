@@ -25,7 +25,7 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./LiveDemo_Steph.webp" alt="Live Demo" />
+            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" />
             <div class="event-card__content">
               <h4>meshStack Live Demo (livestream) - March 13th, 14:00 - 15:00 (CET) </h4>
               <p>
@@ -61,16 +61,37 @@
               </a>
             </div>
           </div>
+          <div class="event-card">
+            <img src="./CloudSuccessStories.webp" alt="Cloud Success Stories" />
+            <div class="event-card__content">
+              <h4>
+                Cloud Success Stories - April 17th, 10:00-14:00
+                (CET)
+              </h4>
+              <p>
+                Our customer Rheinenergie will demo how they achieved successful 
+		            deployment of their first S4-HANA System on Amazon Web Services (AWS). 
+		            This achievement represents a significant milestone in their cloud journey, 
+		            made possible by the unwavering support of meshcloud.io and StackGuardian.
+              </p>
+              <a
+                href="https://cloudsuccessstories.splashthat.com/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
 
           <div class="event-card">
             <img src="./workshop.svg" alt="Landing Zone Workshop" />
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - April 25th, 14:00-16:30
+                Cloud Landing Zone 101 (English) - April 24th, 10:00-12:00
                 (CET)
               </h4>
               <p>
-                In this 2.5-hour practical workshop, we will delve into the fundamental 
+                In this 2-hour practical workshop, we will delve into the fundamental 
                 aspects of landing zones and the target image Cloud Foundation. 
                 You will discover best practices and Cloud-Native Tools designed for 
                 the seamless establishment of landing zones across AWS, Azure, and GCP.
