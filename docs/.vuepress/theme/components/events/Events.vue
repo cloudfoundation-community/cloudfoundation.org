@@ -25,7 +25,7 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" />
+            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>meshStack Live Demo (livestream) - March 13th, 14:00 - 15:00 (CET) </h4>
               <p>
