@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="event-card">
-            <img src="./CloudSuccessStories.webp" alt="Cloud Success Stories" />
+            <img src="./CloudSS_Thumbnail.webp" alt="Cloud Success Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
                 Cloud Success Stories - April 17th, 10:00-14:00
