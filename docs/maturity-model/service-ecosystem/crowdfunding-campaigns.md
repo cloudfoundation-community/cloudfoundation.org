@@ -2,6 +2,9 @@
 id: 298d0f68-3cea-4ec0-bf7b-a6c2e849d56f
 url: https://www.notion.so/Crowdfunding-Campaigns-298d0f683cea4ec0bf7ba6c2e849d56f
 title: Crowdfunding Campaigns
+description: >-
+  Crowdfunding campaigns enable your application teams to fund the development
+  of services they would like to see in the internal marketplace.
 category: 🛠 Service Ecosystem
 pageType: CFMMBlock
 properties:
