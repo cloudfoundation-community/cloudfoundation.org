@@ -77,8 +77,8 @@ This section presents an example calculation of a pricing model for an OpenShift
     | openshift-kube-apiserver | 1800         | RAM in GiB-h |
     | openshift-logging        | 50000        | RAM in GiB-h |
     | customer-b               | 19000        | CPU in CPU-h |
-    | openshift-logging        | 6500         | CPU in CPU-h |
     | openshift-kube-apiserver | 1500         | CPU in CPU-h |
+    | openshift-logging        | 6500         | CPU in CPU-h |
     | customer-a               | 37000        | CPU in CPU-h |
 
     > **💡** Start with a simple model of the most important resource consumption drivers first. While it may be more accurate to also include additional factors such as storage (persistent volumes) and network resources (Ingress/Egress, IPs), these can make implementing a pricing model more complex. It’s better to start out simple and refine, rather than not starting at all because the model isn’t perfect.
