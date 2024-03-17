@@ -47,7 +47,7 @@ The minimum participants in a shared responsibility model are the cloud provider
 <CallToAction>
   <CtaHeader>Cloud Stakeholder Map</CtaHeader>
   <CtaText>Use a template to understand relevant roles and easily build your own Cloud Stakeholder Map.</CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloudfoundation-stakeholder-map/">Download Template</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/en/blog/resources/poster-stakeholder-map/">Download Template</CtaButton>
 </CallToAction>
 
 

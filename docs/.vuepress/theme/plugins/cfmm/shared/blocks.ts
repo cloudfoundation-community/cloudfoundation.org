@@ -3743,7 +3743,7 @@ export const index = [
         "tool": [
           "84cf2301-844f-4e77-8f86-ed3d9244d623"
         ],
-        "link": "https://www.meshcloud.io/cloud-foundation-stakeholder-map",
+        "link": "https://www.meshcloud.io/en/blog/resources/poster-stakeholder-map/",
         "name": "meshcloud Cloud Foundation Stakeholder Map"
       },
       "pageType": "CFMMTool2Block"
