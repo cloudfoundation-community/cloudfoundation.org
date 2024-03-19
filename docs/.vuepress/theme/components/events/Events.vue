@@ -23,23 +23,6 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
-          
-          <div class="event-card">
-            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - March 13th, 14:00 - 15:00 (CET) </h4>
-              <p>
-                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
-                Subscribe to our channel to stay updated.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/live-demo/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Subscribe!
-              </a>
-            </div>
-          </div>
 
           <div class="event-card">
             <img src="./EA_Workshop.webp" alt="Clean up Your Cloud Workshop" style="border-radius: 45px;"/>
@@ -61,6 +44,24 @@
               </a>
             </div>
           </div>
+          
+          <div class="event-card">
+            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>meshStack Live Demo (livestream) - April 10th, 14:00 - 15:00 (CET) </h4>
+              <p>
+                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
+                Subscribe to our channel to stay updated.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/live-demo/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Subscribe!
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./CloudSS_Thumbnail.webp" alt="Cloud Success Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -84,7 +85,7 @@
           </div>
 
           <div class="event-card">
-            <img src="./workshop.svg" alt="Landing Zone Workshop" />
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
                 Cloud Landing Zone 101 (English) - April 24th, 10:00-12:00
