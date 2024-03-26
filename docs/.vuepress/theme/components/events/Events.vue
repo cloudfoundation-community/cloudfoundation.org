@@ -25,9 +25,9 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./meshStack_YT_LiveDemo_Mar_2024.webp" alt="Live Demo" style="border-radius: 45px;"/>
+            <img src="./LiveDemo_Wulf.webp" alt="Live Demo" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - March 13th, 14:00 - 15:00 (CET) </h4>
+              <h4>meshStack Live Demo (livestream) - April 10th, 14:00 - 15:00 (CET) </h4>
               <p>
                 Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
                 Subscribe to our channel to stay updated.
@@ -41,26 +41,6 @@
             </div>
           </div>
 
-          <div class="event-card">
-            <img src="./EA_Workshop.webp" alt="Clean up Your Cloud Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Cloud Clean-up Workshop for Enterprise Architects (English) - March 20th, 14:00-16:30
-                (CET)
-              </h4>
-              <p>
-                This practical workshop is specifically designed to empower 
-		            Enterprise Architects with the best strategies and tools to build 
-		            a structured and efficient cloud landscape within their organization.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/ea-workshop/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
           <div class="event-card">
             <img src="./CloudSS_Thumbnail.webp" alt="Cloud Success Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
