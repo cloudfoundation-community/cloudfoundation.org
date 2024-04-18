@@ -23,45 +23,6 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
-          
-          <div class="event-card">
-            <img src="./LiveDemo_Wulf.webp" alt="Live Demo" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - April 10th, 14:00 - 15:00 (CET) </h4>
-              <p>
-                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
-                Subscribe to our channel to stay updated.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/live-demo/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Subscribe!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./CloudSS_Thumbnail.webp" alt="Cloud Success Stories" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Cloud Success Stories - April 17th, 10:00-14:00
-                (CET)
-              </h4>
-              <p>
-                Our customer Rheinenergie will demo how they achieved successful 
-		            deployment of their first S4-HANA System on Amazon Web Services (AWS). 
-		            This achievement represents a significant milestone in their cloud journey, 
-		            made possible by the unwavering support of meshcloud.io and StackGuardian.
-              </p>
-              <a
-                href="https://cloudsuccessstories.splashthat.com/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
 
           <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
@@ -90,6 +51,18 @@
       <div class="past-events">
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
+
+          <div class="event-card">
+            <img src="./LiveDemo_Wulf.webp" alt="Live Demo" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>meshStack Live Demo (livestream) - April 10th, 14:00 - 15:00 (CET) </h4>
+              <p>
+                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
+                Subscribe to our channel to stay updated.
+              </p>
+            </div>
+          </div>
+
           <div class="event-card">
             <img src="./CFC_Event.webp" alt="Event Community" />
             <div class="event-card__content">
@@ -111,19 +84,6 @@
                 In this high-demanded 2.5-hour practical workshop, we showed how to
                 build a repeatable Landing Zone workflow for application
                 deployment, including network and Virtual Machine (VM) in Azure.
-              </p>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./dev_ops_con.svg" alt="DevOpsCon" />
-            <div class="event-card__content">
-              <h4>
-                DevOpsCon - June 13th, 9:00-20:00 & June 14th, 9:00-16:45 (CEST)
-              </h4>
-              <p>
-                meshcloud will be at the DevOpsCon in Berlin! Catch us at the
-                event for our talk or swing by the meshcloud booth. 🐑
               </p>
             </div>
           </div>
