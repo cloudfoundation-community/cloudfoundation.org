@@ -25,20 +25,19 @@
         <div class="upcoming-event-list">
 
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - April 24th, 10:00-12:00
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - June 25th, 9:00-10:00 (CEST)
                 (CET)
               </h4>
               <p>
-                In this 2-hour practical workshop, we will delve into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                You will discover best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
@@ -53,13 +52,24 @@
         <div class="past-event-list">
 
           <div class="event-card">
-            <img src="./LiveDemo_Wulf.webp" alt="Live Demo" style="border-radius: 45px;"/>
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>meshStack Live Demo (livestream) - April 10th, 14:00 - 15:00 (CET) </h4>
+              <h4>
+                Cloud Landing Zone 101 (English) - April 24th, 10:00-12:00
+                (CET)
+              </h4>
               <p>
-                Tune in to our meshStack live demo on YouTube to learn more about meshStack's capabilities and see it in action.
-                Subscribe to our channel to stay updated.
+                In this 2-hour practical workshop, we delved into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
               </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
             </div>
           </div>
 

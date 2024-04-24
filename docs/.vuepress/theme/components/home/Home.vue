@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+            href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
           >
-          Cloud Landing Zone 101 Workshop
+          Seamless GitOps: IaC Provisioning as Easy as Online Shopping
           </a>
         </p>
       </div>
