@@ -29,7 +29,6 @@
             <div class="event-card__content">
               <h4>
                 Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - June 25th, 9:00-10:00 (CEST)
-                (CET)
               </h4>
               <p>
                 Join our express webinar to learn 
