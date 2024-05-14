@@ -43,6 +43,27 @@
               </a>
             </div>
           </div>
+
+          <div class="event-card">
+            <img src="./GitOps_Webinar2.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                How to Integrate and Set Standards for Internal Platform Teams (English) - June 26th, 9:00-10:00 (CEST)
+              </h4>
+              <p>
+                Struggling with central cloud management while maintaining
+                security and cost efficiency? Join our 1-hour webinar 
+                and learn how to uphold standards without stifling the autonomy
+                of the platform teams!
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
           
         </div>
       </div>
