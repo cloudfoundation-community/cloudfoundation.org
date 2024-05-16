@@ -2,7 +2,7 @@
   <main class="events-page">
     <div class="head-section">
       <div class="head-container d-flex">
-        <img class="w-100 h-100" src="./events_bg.svg" alt="Event" />
+        <img class="w-100 h-100" style="border-radius: 45px;" src="./events_bg.svg" alt="Event" />
       </div>
       <div class="alert-box bg-black d-flex align-items-center">
         <p class="text-white">Events</p>
