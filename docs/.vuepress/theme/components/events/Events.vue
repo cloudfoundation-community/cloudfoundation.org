@@ -23,43 +23,6 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
-
-          <div class="event-card">
-            <img src="./CFC-Event_Exotic.webp" alt="Community Event" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Community Event on Exotic Cloud Platforms (English) - June 18th, 10:00-11:00 (CEST)</h4>
-              <p>
-                In this 1-hour session, we will explore some
-                "exotic" cloud platforms and how they can be
-                integrated into a central management approach. 
-                Speakers: Merck, IAV.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/cloud-foundation-community-event/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English) - June 19th, 10:00-12:00 (CEST)</h4>
-              <p>
-                In this 2-hour practical workshop, we show how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
          
           <div class="event-card">
             <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
@@ -112,8 +75,7 @@
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - April 24th, 10:00-12:00
-                (CET)
+                Cloud Landing Zone 101 (English)
               </h4>
               <p>
                 In this 2-hour practical workshop, we delved into the fundamental 
@@ -127,6 +89,37 @@
               >
                 Join waitlist!
               </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Cloud Landing Zone 102 (English)</h4>
+              <p>
+                In this 2-hour practical workshop, we show how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm!
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <img src="./CFC-Event_Exotic.webp" alt="Community Event" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Community Event on Exotic Cloud Platforms (English)</h4>
+              <p>
+                In this 1-hour session, we will explore some
+                "exotic" cloud platforms and how they can be
+                integrated into a central management approach. 
+                Speakers: Merck, IAV.
+              </p>
             </div>
           </div>
 
