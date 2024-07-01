@@ -25,39 +25,20 @@
         <div class="upcoming-event-list">
          
           <div class="event-card">
-            <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - June 25th, 9:00-10:00 (CEST)
+                meshcloud Con '24 (English & German) - September 18th, 9:00-17:00 (CEST)
               </h4>
               <p>
-                Join our express webinar to learn 
-                how to bridge the gap between what you’ve built 
-                and the usability requirements of the application teams.
+                In various interactive formats, meshcloud Con '24 is designed to offer
+                a great environment for sharing experiences to explore the future 
+                of cloud computing and building internal platforms.
+                Driven by the Cloud Foundation Community, it is a great opportunity
+                to get inspired and learn from other platform teams.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GitOps_Webinar2.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                How to Integrate and Set Standards for Internal Platform Teams (English) - June 26th, 9:00-10:00 (CEST)
-              </h4>
-              <p>
-                Struggling with central cloud management while maintaining
-                security and cost efficiency? Join our 1-hour webinar 
-                and learn how to uphold standards without stifling the autonomy
-                of the platform teams!
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                href="https://con24.meshcloud.io"
                 class="btn btn-outline-primary btn-lg"
               >
                 Register Now!
@@ -71,6 +52,47 @@
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
 
+          <div class="event-card">
+            <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English)
+              </h4>
+              <p>
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Get Notified!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./GitOps_Webinar2.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                How to Integrate and Set Standards for Internal Platform Teams (English)
+              </h4>
+              <p>
+                Struggling with central cloud management while maintaining
+                security and cost efficiency? Join our 1-hour webinar 
+                and learn how to uphold standards without stifling the autonomy
+                of the platform teams!
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Get Notified!
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
