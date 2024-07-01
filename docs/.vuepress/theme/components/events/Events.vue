@@ -23,7 +23,35 @@
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
         <div class="upcoming-event-list">
-         
+
+          <div class="event-card">
+            <img src="./meshcloudCon.webp" alt="Conference 2024" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                meshcloud Con '24 (English & German) - September 18th, 9:00-17:00 (CEST)
+              </h4>
+              <p>
+                In various interactive formats, meshcloud Con '24 is designed
+                to offer a great environment for sharing experiences to explore the future 
+                of cloud computing and building internal platforms.
+                Driven by the Cloud Foundation Community it is a great opportunity
+                to get inspired and learn from other platform teams.
+              </p>
+              <a
+                href="https://con24.meshcloud.io"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="past-events">
+        <h3 class="sub-title">Past Events</h3>
+        <div class="past-event-list">
+
           <div class="event-card">
             <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -39,11 +67,11 @@
                 href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Register Now!
+                Get notified!
               </a>
             </div>
           </div>
-
+          
           <div class="event-card">
             <img src="./GitOps_Webinar2.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -60,17 +88,11 @@
                 href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Register Now!
+                Get notified!
               </a>
             </div>
           </div>
           
-        </div>
-      </div>
-      <div class="past-events">
-        <h3 class="sub-title">Past Events</h3>
-        <div class="past-event-list">
-
           <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">

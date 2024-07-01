@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+            href="https://con24.meshcloud.io"
           >
-          Seamless GitOps: IaC Provisioning as Easy as Online Shopping
+          meshcloud Con '24
           </a>
         </p>
       </div>
