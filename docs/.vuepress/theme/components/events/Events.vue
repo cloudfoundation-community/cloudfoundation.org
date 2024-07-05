@@ -28,7 +28,7 @@
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English)
+                Cloud Landing Zone 101 (English) - September 11th, 10am - 12 pm (CEST)
               </h4>
               <p>
                 In this 2-hour practical workshop, we delved into the fundamental 
