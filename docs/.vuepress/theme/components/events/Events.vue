@@ -25,6 +25,27 @@
         <div class="upcoming-event-list">
          
           <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Cloud Landing Zone 101 (English)
+              </h4>
+              <p>
+                In this 2-hour practical workshop, we delved into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
             <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
@@ -89,27 +110,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Get Notified!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Cloud Landing Zone 101 (English)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delved into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Join waitlist!
               </a>
             </div>
           </div>
