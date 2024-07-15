@@ -25,6 +25,27 @@
         <div class="upcoming-event-list">
          
           <div class="event-card">
+            <img src="./GO2_Joerg.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Roll Out Successful Cloud Platforms in Your Enterprise (English) - August 28th, 10am - 11am (CEST)
+              </h4>
+              <p>
+                Struggling with central cloud management while maintaining
+                security and cost efficiency? Join our 1-hour webinar 
+                and learn how to uphold standards without stifling the autonomy
+                of the platform teams!
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register Now!
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
@@ -86,27 +107,6 @@
               </p>
               <a
                 href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Get Notified!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GitOps_Webinar2.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                How to Integrate and Set Standards for Internal Platform Teams (English)
-              </h4>
-              <p>
-                Struggling with central cloud management while maintaining
-                security and cost efficiency? Join our 1-hour webinar 
-                and learn how to uphold standards without stifling the autonomy
-                of the platform teams!
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Get Notified!
