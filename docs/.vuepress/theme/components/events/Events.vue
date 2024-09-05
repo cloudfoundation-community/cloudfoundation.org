@@ -67,6 +67,26 @@
             </div>
           </div>
           
+          <div class="event-card">
+            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - October 8th, 10:00-11:00 (CEST)
+              </h4>
+              <p>
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register now!
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="past-events">
@@ -90,26 +110,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Set Alarm!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GitOps_Webinar1.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English)
-              </h4>
-              <p>
-                Join our express webinar to learn 
-                how to bridge the gap between what you’ve built 
-                and the usability requirements of the application teams.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Get Notified!
               </a>
             </div>
           </div>
