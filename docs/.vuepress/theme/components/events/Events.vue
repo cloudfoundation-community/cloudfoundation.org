@@ -25,49 +25,6 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Cloud Landing Zone 101 (English) - September 11th, 10am - 12 pm (CEST)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delved into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Sign up!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                meshcloud Con '24 (English & German) - September 18th, 9:00-17:00 (CEST)
-              </h4>
-              <p>
-                In various interactive formats, meshcloud Con '24 is designed to offer
-                a great environment for sharing experiences to explore the future 
-                of cloud computing and building internal platforms.
-                Driven by the Cloud Foundation Community, it is a great opportunity
-                to get inspired and learn from other platform teams.
-              </p>
-              <a
-                href="https://con24.meshcloud.io"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register Now!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
             <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
@@ -92,6 +49,49 @@
       <div class="past-events">
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
+
+          <div class="event-card">
+            <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                meshcloud Con '24 (English & German) - September 18th, 9:00-17:00 (CEST)
+              </h4>
+              <p>
+                In various interactive formats, meshcloud Con '24 is designed to offer
+                a great environment for sharing experiences to explore the future 
+                of cloud computing and building internal platforms.
+                Driven by the Cloud Foundation Community, it is a great opportunity
+                to get inspired and learn from other platform teams.
+              </p>
+              <a
+                href="https://con24.meshcloud.io"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Event recap 
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Cloud Landing Zone 101 (English) - September 11th, 10am - 12 pm (CEST)
+              </h4>
+              <p>
+                In this 2-hour practical workshop, we delved into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
 
           <div class="event-card">
             <img src="./GO2_Joerg.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
