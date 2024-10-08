@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://con24.meshcloud.io"
+            href="https://www.meshcloud.io/en/company/events/landing-zone-101"
           >
-          meshcloud Con '24
+          Landing Zone 101
           </a>
         </p>
       </div>

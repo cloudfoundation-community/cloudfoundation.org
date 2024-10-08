@@ -25,24 +25,25 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - October 8th, 10:00-11:00 (CEST)
+                Cloud Landing Zone 101 (English)
               </h4>
               <p>
-                Join our express webinar to learn 
-                how to bridge the gap between what you’ve built 
-                and the usability requirements of the application teams.
+                In this 2-hour practical workshop, we delved into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Register now!
+                Sign up!
               </a>
             </div>
-          </div>
+          </div>  
 
         </div>
       </div>
@@ -54,7 +55,7 @@
             <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                meshcloud Con '24 (English & German) - September 18th, 9:00-17:00 (CEST)
+                meshcloud Con '24 (English & German)
               </h4>
               <p>
                 In various interactive formats, meshcloud Con '24 is designed to offer
@@ -73,22 +74,21 @@
           </div>
           
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - September 11th, 10am - 12 pm (CEST)
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English)
               </h4>
               <p>
-                In this 2-hour practical workshop, we delved into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Sign up!
+                Set Alarm!
               </a>
             </div>
           </div>
