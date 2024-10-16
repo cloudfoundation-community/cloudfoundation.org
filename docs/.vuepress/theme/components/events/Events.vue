@@ -25,25 +25,22 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>
-                Cloud Landing Zone 101 (English)
-              </h4>
+              <h4>Cloud Landing Zone 102 (English) - November 27th, 10am - 12 pm (CET)</h4>
               <p>
-                In this 2-hour practical workshop, we delved into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
+                In this 2-hour practical workshop, we show how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up!
               </a>
             </div>
-          </div>  
+          </div>
 
         </div>
       </div>
@@ -73,6 +70,27 @@
             </div>
           </div>
           
+          <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Cloud Landing Zone 101 (English)
+              </h4>
+              <p>
+                In this 2-hour practical workshop, we delved into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set alarm!
+              </a>
+            </div>
+          </div>  
+
           <div class="event-card">
             <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -107,24 +125,6 @@
               </p>
               <a
                 href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set Alarm!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English)</h4>
-              <p>
-                In this 2-hour practical workshop, we show how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Set Alarm!
