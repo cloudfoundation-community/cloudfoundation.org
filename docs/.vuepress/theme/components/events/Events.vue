@@ -25,9 +25,28 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
+            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) - November 13th, 10-11 am (CET)</h4>
+              <p>
+                Register for this 1-hour express webinar
+                and learn which steps and tools can empower your developers, 
+                allowing them to focus on what really counts – writing code 
+                and delivering digital products faster.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
             <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English) - November 27th, 10am - 12 pm (CET)</h4>
+              <h4>Cloud Landing Zone 102 (English) - November 27th, 10am - 12pm (CET)</h4>
               <p>
                 In this 2-hour practical workshop, we show how to
                 build a repeatable Landing Zone workflow for application
