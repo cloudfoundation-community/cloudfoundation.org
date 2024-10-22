@@ -36,7 +36,7 @@ Of course establishing a Cloud Foundation Team is not all it takes to transform 
 <CallToAction>
   <CtaHeader>Visualize Cloud Foundation responsibilities in your organization</CtaHeader>
   <CtaText>Use our template to understand relevant roles and easily build your own Cloud Stakeholder Map.</CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloudfoundation-stakeholder-map/">Download Cloud Stakeholder Map</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/en/blog/resources/poster-stakeholder-map/">Download Cloud Stakeholder Map</CtaButton>
 </CallToAction>
 
 #### The Cloud Foundation Platform
@@ -135,7 +135,7 @@ The Cloud Foundation Maturity Model is **implementation agnostic**. While meshc
 <CallToAction>
   <CtaHeader>Explore the Cloud Foundation Maturity Model</CtaHeader>
   <CtaText>Get the full picture of where you are and the road ahead with the more than 70 capabilities.</CtaText>
-  <CtaButton class="btn-primary" url="https://www.meshcloud.io/cloud-assessment-free-poster/#download">Download Free Poster</CtaButton>
+  <CtaButton class="btn-primary" url="https://www.meshcloud.io/en/blog/resources/poster-cloud-maturity/">Download Free Poster</CtaButton>
 	<CtaButton class="btn-secondary" url="https://cloudfoundation.meshcloud.io/maturity-model/">Explore the Capabilities</CtaButton>
 </CallToAction>
 

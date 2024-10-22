@@ -31,10 +31,6 @@ A common approach to address on-prem connectivity is applying the Hub & Spoke de
 
 
 
-TODO: describe IPAM integration
-
-
-
 A key challenge with On-Premise network connections is to make them scale
 
 1. shared vm and vm based NAT system; load balancer inside VPC

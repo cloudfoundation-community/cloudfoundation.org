@@ -453,6 +453,28 @@ export const index = [
     }
   },
   {
+    "file": "maturity-model/service-ecosystem/service-ratings.md",
+    "frontmatter": {
+      "id": "14e4dafc-c7f9-4086-8839-5758bc23f5c4",
+      "url": "https://www.notion.so/Service-Ratings-14e4dafcc7f9408688395758bc23f5c4",
+      "title": "Service Ratings",
+      "description": "The internal marketplace shows how satisfied customers are with services.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Service Ratings"
+      }
+    }
+  },
+  {
     "file": "maturity-model/tenant-management/playground-sandbox-environments.md",
     "frontmatter": {
       "id": "155c0ead-cbd0-4e0c-9387-cc57946f80e9",
@@ -1256,6 +1278,28 @@ export const index = [
         "category": "Landing Zone Implementation"
       },
       "pageType": "CFMMTool"
+    }
+  },
+  {
+    "file": "maturity-model/service-ecosystem/service-level-objectives.md",
+    "frontmatter": {
+      "id": "4119dff6-7c33-4220-8977-0c76de5eab0d",
+      "url": "https://www.notion.so/Service-Level-Objectives-4119dff67c33422089770c76de5eab0d",
+      "title": "Service Level Objectives",
+      "description": "The internal marketplace shows how services performed their SLOs. Common examples for SLOs include system availability and support request response times.",
+      "category": "🛠 Service Ecosystem",
+      "pageType": "CFMMBlock",
+      "properties": {
+        "enables": [],
+        "journey-stage": "⭐️⭐️⭐️⭐️",
+        "depends-on": [
+          "f077cfd1-d8f4-4c30-a1bd-4f252b840e4f"
+        ],
+        "recommended": [],
+        "scope": "🏢 Core",
+        "tool-implementations": [],
+        "name": "Service Level Objectives"
+      }
     }
   },
   {
@@ -4175,7 +4219,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
-        "journey-stage": "⭐️⭐️",
+        "journey-stage": "⭐️",
         "depends-on": [],
         "recommended": [],
         "scope": "☁️ Platform",
@@ -4758,7 +4802,9 @@ export const index = [
       "properties": {
         "enables": [
           "d2cb8a5e-3e28-448b-8944-14ff38fad792",
-          "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f"
+          "298d0f68-3cea-4ec0-bf7b-a6c2e849d56f",
+          "4119dff6-7c33-4220-8977-0c76de5eab0d",
+          "14e4dafc-c7f9-4086-8839-5758bc23f5c4"
         ],
         "redaction-state": "mvp1",
         "journey-stage": "⭐️⭐️⭐️",
