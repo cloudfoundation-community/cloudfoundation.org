@@ -25,25 +25,6 @@
         <div class="upcoming-event-list">
           
           <div class="event-card">
-            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) - November 13th, 10-11 am (CET)</h4>
-              <p>
-                Register for this 1-hour express webinar
-                and learn which steps and tools can empower your developers, 
-                allowing them to focus on what really counts – writing code 
-                and delivering digital products faster.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Sign up!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
             <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>Cloud Landing Zone 102 (English) - November 27th, 10am - 12pm (CET)</h4>
@@ -54,6 +35,24 @@
               </p>
               <a
                 href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./G04-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Precise Scoping for Smooth Platform Adoption (English) - December 4th, 10-11 am (CET)</h4>
+              <p>
+                Register for this 1-hour express webinar
+                and discover practical strategies for defining 
+                and scoping your platform’s key capabilities based on user needs.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/platform-scoping/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up!
@@ -89,6 +88,24 @@
             </div>
           </div>
           
+          <div class="event-card">
+            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) </h4>
+              <p>
+                Learn which steps and tools can empower your developers, 
+                allowing them to focus on what really counts – writing code 
+                and delivering digital products faster.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set alarm!
+              </a>
+            </div>
+          </div>
+
           <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
