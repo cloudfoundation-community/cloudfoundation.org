@@ -43,7 +43,7 @@
           </div>
 
           <div class="event-card">
-            <img src="./G04-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
+            <img src="./GO4-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>Precise Scoping for Smooth Platform Adoption (English) - December 4th, 10-11 am (CET)</h4>
               <p>
