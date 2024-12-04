@@ -22,37 +22,42 @@
       </div>
       <div class="upcoming-events">
         <h3 class="sub-title">Upcoming Events</h3>
-        <div class="upcoming-event-list">
-          
+        <div class="upcoming-event-list">  
+
           <div class="event-card">
-            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
+            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English) - November 27th, 10am - 12pm (CET)</h4>
+              <h4>
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - January 15th, 10-11 am (CET)
+              </h4>
               <p>
-                In this 2-hour practical workshop, we show how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Sign up!
+                Register!
               </a>
             </div>
           </div>
 
           <div class="event-card">
-            <img src="./GO4-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>Precise Scoping for Smooth Platform Adoption (English) - December 4th, 10-11 am (CET)</h4>
+              <h4>
+                Cloud Landing Zone 101 (English) - February 5th, 10 am - 12 pm (CET)
+              </h4>
               <p>
-                Register for this 1-hour express webinar
-                and discover practical strategies for defining 
-                and scoping your platform’s key capabilities based on user needs.
+                In this 2-hour practical workshop, we delve into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/platform-scoping/"
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up!
@@ -89,6 +94,42 @@
           </div>
           
           <div class="event-card">
+            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Cloud Landing Zone 102 (English)</h4>
+              <p>
+                In this 2-hour practical workshop, we show how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./GO4-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Precise Scoping for Smooth Platform Adoption (English)</h4>
+              <p>
+                In this 1-hour express webinar you'll
+                discover practical strategies for defining 
+                and scoping your platform’s key capabilities based on user needs.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/platform-scoping/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
             <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) </h4>
@@ -102,47 +143,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Set alarm!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Cloud Landing Zone 101 (English)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delved into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set alarm!
-              </a>
-            </div>
-          </div>  
-
-          <div class="event-card">
-            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English)
-              </h4>
-              <p>
-                Join our express webinar to learn 
-                how to bridge the gap between what you’ve built 
-                and the usability requirements of the application teams.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set Alarm!
               </a>
             </div>
           </div>
