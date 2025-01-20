@@ -25,18 +25,18 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
-            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <img src="./Platform-Stories.webp" alt="Platform Stories First Episode" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - January 15th, 10-11 am (CET)
+                Platform Stories (German) - January 30th, 10-11 am (CET)
               </h4>
               <p>
-                Join our express webinar to learn 
-                how to bridge the gap between what you’ve built 
-                and the usability requirements of the application teams.
+                This live video podcast by meshcloud co-Founders, Jörg and Christina, 
+                will feature insightful conversations with external guests, 
+                diving deep into their journeys of building successful platforms.
               </p>
               <a
-                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+                href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Register!
@@ -48,7 +48,7 @@
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - February 5th, 10 am - 12 pm (CET)
+                Cloud Landing Zone 101 (English) - February 5th, 10am - 12pm (CET)
               </h4>
               <p>
                 In this 2-hour practical workshop, we delve into the fundamental 
@@ -61,6 +61,27 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./GO2_Joerg.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Scaling Internal Platforms Successfully (English) - March 12th, 10-11 am (CET)
+              </h4>
+              <p>
+                Struggling with central cloud management while maintaining
+                security and cost efficiency? Join our 1-hour webinar 
+                and learn how to uphold standards without stifling the autonomy
+                of the platform teams!
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register!
               </a>
             </div>
           </div>
@@ -89,6 +110,26 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Event recap 
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - January 15th, 10-11 am (CET)
+              </h4>
+              <p>
+                Join our express webinar to learn 
+                how to bridge the gap between what you’ve built 
+                and the usability requirements of the application teams.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register!
               </a>
             </div>
           </div>
@@ -143,27 +184,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Set alarm!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GO2_Joerg.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Roll Out Successful Cloud Platforms in Your Enterprise (English)
-              </h4>
-              <p>
-                Struggling with central cloud management while maintaining
-                security and cost efficiency? Join our 1-hour webinar 
-                and learn how to uphold standards without stifling the autonomy
-                of the platform teams!
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set Alarm!
               </a>
             </div>
           </div>
