@@ -9,7 +9,7 @@ category: 💵 Cost Management
 pageType: CFMMBlock
 properties:
   enables: []
-  journey-stage: ⭐️⭐️
+  journey-stage: ⭐️
   depends-on: []
   recommended: []
   scope: ☁️ Platform
