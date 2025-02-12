@@ -28,7 +28,7 @@
             <img src="./Platform-Stories.webp" alt="Platform Stories First Episode" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Platform Stories (German) - January 30th, 10-11 am (CET)
+                Platform Stories (German) - February 27th, 1-2 pm (CET)
               </h4>
               <p>
                 This live video podcast by meshcloud co-Founders, Jörg and Christina, 
@@ -45,31 +45,10 @@
           </div>
 
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <img src="./GO2_March25.webp" alt="Platform Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Cloud Landing Zone 101 (English) - February 5th, 10am - 12pm (CET)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delve into the fundamental 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across AWS, Azure, and GCP.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Sign up!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GO2_Joerg.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Scaling Internal Platforms Successfully (English) - March 12th, 10-11 am (CET)
+                Scaling Without Silos: How to Build Internal Platforms Without Losing Control (English) - March 12th, 10-11 am (CET)
               </h4>
               <p>
                 Struggling with central cloud management while maintaining
@@ -86,12 +65,51 @@
             </div>
           </div>
 
+          <div class="event-card">
+            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Cloud Landing Zone 102 (English) - April 9th, 10am - 12pm (CET)</h4>
+              <p>
+                In this 2-hour practical workshop, we show how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="past-events">
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
 
+          <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Cloud Landing Zone 101 (English)
+              </h4>
+              <p>
+                In this 2-hour practical workshop, we delve into the fundamental 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across AWS, Azure, and GCP.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm!
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -118,7 +136,7 @@
             <img src="./GO1_new.webp" alt="GitOps Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English) - January 15th, 10-11 am (CET)
+                Seamless GitOps: IaC Provisioning as Easy as Online Shopping (English)
               </h4>
               <p>
                 Join our express webinar to learn 
@@ -127,24 +145,6 @@
               </p>
               <a
                 href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English)</h4>
-              <p>
-                In this 2-hour practical workshop, we show how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Set Alarm!
@@ -185,19 +185,6 @@
               >
                 Set alarm!
               </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./CFC-Event_Exotic.webp" alt="Community Event" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Community Event on Exotic Cloud Platforms (English)</h4>
-              <p>
-                In this 1-hour session, we will explore some
-                "exotic" cloud platforms and how they can be
-                integrated into a central management approach. 
-                Speakers: Merck, IAV.
-              </p>
             </div>
           </div>
 
