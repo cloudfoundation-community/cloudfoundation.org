@@ -25,26 +25,6 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
-            <img src="./Platform-Stories.webp" alt="Platform Stories First Episode" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Platform Stories (German) - February 27th, 1-2 pm (CET)
-              </h4>
-              <p>
-                This live video podcast by meshcloud co-Founders, Jörg and Christina, 
-                will feature insightful conversations with external guests, 
-                diving deep into their journeys of building successful platforms.
-              </p>
-              <a
-                href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
             <img src="./GO2_March25.webp" alt="Platform Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
@@ -66,9 +46,29 @@
           </div>
 
           <div class="event-card">
+            <img src="./Platform-Stories.webp" alt="Platform Stories First Episode" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Platform Stories (English) - March 20th, 10-11 am (CET)
+              </h4>
+              <p>
+                This live video podcast by meshcloud co-founders, Jörg and Christina, 
+                will feature insightful conversations with external guests, 
+                diving deep into their journeys of building successful platforms.
+              </p>
+              <a
+                href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
             <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English) - April 9th, 10am - 12pm (CET)</h4>
+              <h4>Cloud Landing Zone 102 (English) - April 9th, 10am - 12pm (CEST)</h4>
               <p>
                 In this 2-hour practical workshop, we show how to
                 build a repeatable Landing Zone workflow for application
@@ -76,6 +76,24 @@
               </p>
               <a
                 href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up!
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) - May 7th, 10-11 am (CEST) </h4>
+              <p>
+                Learn which steps and tools can empower your developers, 
+                allowing them to focus on what really counts – writing code 
+                and delivering digital products faster.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up!
@@ -166,24 +184,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Set Alarm!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) </h4>
-              <p>
-                Learn which steps and tools can empower your developers, 
-                allowing them to focus on what really counts – writing code 
-                and delivering digital products faster.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set alarm!
               </a>
             </div>
           </div>
