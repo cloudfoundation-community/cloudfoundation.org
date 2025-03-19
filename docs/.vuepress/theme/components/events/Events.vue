@@ -25,31 +25,10 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
-            <img src="./GO2_March25.webp" alt="Platform Workshop" style="border-radius: 45px;"/>
+            <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Scaling Without Silos: How to Build Internal Platforms Without Losing Control (English) - March 12th, 10-11 am (CET)
-              </h4>
-              <p>
-                Struggling with central cloud management while maintaining
-                security and cost efficiency? Join our 1-hour webinar 
-                and learn how to uphold standards without stifling the autonomy
-                of the platform teams!
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./Platform-Stories.webp" alt="Platform Stories First Episode" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Platform Stories (English) - March 20th, 10-11 am (CET)
+                Platform Stories (German) - March 20th, 1-2 pm (CET)
               </h4>
               <p>
                 This live video podcast by meshcloud co-founders, Jörg and Christina, 
@@ -107,6 +86,27 @@
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
 
+          <div class="event-card">
+            <img src="./GO2_March25.webp" alt="Platform Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Scaling Without Silos: How to Build Internal Platforms Without Losing Control (English)
+              </h4>
+              <p>
+                Struggling with central cloud management while maintaining
+                security and cost efficiency? Join our 1-hour webinar 
+                and learn how to uphold standards without stifling the autonomy
+                of the platform teams!
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm!
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
