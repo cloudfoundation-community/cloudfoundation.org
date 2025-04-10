@@ -31,6 +31,8 @@ Modular Landing Zones start with a mandatory security baseline like [Service and
 
 ![image-a825efcf-03c0-4696-abd2-9fb31febb7c8](./a825efcf-03c0-4696-abd2-9fb31febb7c8.png)
 
+
+
 ## Modular Landing Zones Enables Scaling
 
 Early stage cloud foundations often start with a “one size fits all” approach to Landing Zones which we call “monolithic landing zones”.

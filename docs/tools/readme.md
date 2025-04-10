@@ -41,7 +41,6 @@ pageClass: white
 | Name       | Category |
 | ---------- | -------- |
 | collie-cli | cli      |
-| UniPipe    | cli      |
 
 ## CFMM Tools - DevOps
 
