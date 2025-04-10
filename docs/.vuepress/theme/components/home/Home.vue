@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+            href="https://www.meshcloud.io/en/company/events/building-an-internal-developer-platform-with-meshstack"
           >
-          Landing Zone 102
+          Building an Internal Developer Platform with meshStack
           </a>
         </p>
       </div>
