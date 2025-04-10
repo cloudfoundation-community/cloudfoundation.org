@@ -28,7 +28,7 @@
             <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Platform Stories (German) - March 20th, 1-2 pm (CET)
+                Platform Stories (German) - April 29th, 1-2 pm (CEST)
               </h4>
               <p>
                 This live video podcast by meshcloud co-founders, Jörg and Christina, 
@@ -39,31 +39,13 @@
                 href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Register!
+                Register
               </a>
             </div>
           </div>
 
           <div class="event-card">
-            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Cloud Landing Zone 102 (English) - April 9th, 10am - 12pm (CEST)</h4>
-              <p>
-                In this 2-hour practical workshop, we show how to
-                build a repeatable Landing Zone workflow for application
-                deployment, including network and Virtual Machine (VM) in Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Sign up!
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./G03_Nov13.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
+            <img src="./GO3.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) - May 7th, 10-11 am (CEST) </h4>
               <p>
@@ -75,7 +57,46 @@
                 href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Sign up!
+                Sign up
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./BID_Event.webp" alt="Internal Developer Polatform" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4> Building an Internal Developer Platform with meshStack (English) - May 15th, 1-2 pm (CEST) </h4>
+              <p>
+                Learn which steps and tools can empower your developers, 
+                allowing them to focus on what really counts – writing code 
+                and delivering digital products faster.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/building-an-internal-developer-platform-with-meshstack"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <img src="./meshcloud-Con25.webp" alt="meshcloud Con 25" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                meshcloud Con '25 (English) - September 18th, 9am - 17pm (CEST)
+              </h4>
+              <p>
+                In various interactive formats, meshcloud Con '25 is designed to offer
+                a great environment for sharing experiences to explore the future 
+                of building internal platforms. Driven by the Cloud Foundation Community, 
+                it is a great opportunity to get inspired and learn from other platform teams.
+              </p>
+              <a
+                href="https://con25.meshcloud.io"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register 
               </a>
             </div>
           </div>
@@ -102,7 +123,7 @@
                 href="https://www.meshcloud.io/en/company/events/webinar-internal-platform-teams/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Set Alarm!
+                Set Alarm
               </a>
             </div>
           </div>
@@ -123,29 +144,7 @@
                 href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Set Alarm!
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <img src="./meshcloudCon.webp" alt="meshcloud Con 24" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                meshcloud Con '24 (English & German)
-              </h4>
-              <p>
-                In various interactive formats, meshcloud Con '24 is designed to offer
-                a great environment for sharing experiences to explore the future 
-                of cloud computing and building internal platforms.
-                Driven by the Cloud Foundation Community, it is a great opportunity
-                to get inspired and learn from other platform teams.
-              </p>
-              <a
-                href="https://con24.meshcloud.io"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Event recap 
+                Set Alarm
               </a>
             </div>
           </div>
@@ -165,11 +164,29 @@
                 href="https://www.meshcloud.io/en/company/events/gitops-easy-as-online-shopping-webinar/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Set Alarm!
+                Set Alarm
               </a>
             </div>
           </div>
 
+          <div class="event-card">
+            <img src="./LZ102_Flo.webp" alt="Landing Zone 102" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Cloud Landing Zone 102 (English)</h4>
+              <p>
+                In this 2-hour practical workshop, we show how to
+                build a repeatable Landing Zone workflow for application
+                deployment, including network and Virtual Machine (VM) in Azure.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/landingzone-102/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./GO4-Scoping.webp" alt="Platform Scoping" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -183,7 +200,7 @@
                 href="https://www.meshcloud.io/en/company/events/platform-scoping/"
                 class="btn btn-outline-primary btn-lg"
               >
-                Set Alarm!
+                Set Alarm
               </a>
             </div>
           </div>
