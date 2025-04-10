@@ -107,25 +107,6 @@ export const index = [
   },
   {
     "frontmatter": {
-      "id": "0337257c-3de3-49c0-b339-eba3222eb9af",
-      "url": "https://www.notion.so/Virtual-Network-Service-0337257c3de349c0b339eba3222eb9af",
-      "title": "Virtual Network Service",
-      "description": "With UniPipe you can easily provide a Virtual Network Service to e.g. grant on-prem connectivity or to integrate all your company’s productive applications into one network. All you need for this is a Terraform Module that sets up the networking inside the target tenant as needed.",
-      "properties": {
-        "block": [
-          "2be4d7d1-4109-406b-a4f7-da6c566123fd"
-        ],
-        "tool": [
-          "56e4f66c-47e3-4849-9315-347694db82a1"
-        ],
-        "link": "https://github.com/meshcloud/unipipe-service-broker/wiki/Getting-started-with-unipipe-terraform-runner-on-Azure",
-        "name": "Virtual Network Service"
-      },
-      "pageType": "CFMMTool2Block"
-    }
-  },
-  {
-    "frontmatter": {
       "id": "03e67c51-82e1-4e4d-87df-dc431954f9b8",
       "url": "https://www.notion.so/Privileged-Access-Management-PAM-03e67c5182e14e4d87dfdc431954f9b8",
       "title": "Privileged Access Management (PAM)",
@@ -890,8 +871,7 @@ export const index = [
           "2e5dfd35-751d-4562-b723-8e65f4e79408",
           "785eec49-493b-46a6-8540-2237135f0fba",
           "b6a3508f-701f-4ce4-99b0-778f25c6c8a4",
-          "9b244e63-eb03-454a-a33b-ebb9d90e8137",
-          "0337257c-3de3-49c0-b339-eba3222eb9af"
+          "9b244e63-eb03-454a-a33b-ebb9d90e8137"
         ],
         "name": "Virtual Network Service"
       }
@@ -1794,17 +1774,6 @@ export const index = [
     }
   },
   {
-    "frontmatter": {
-      "id": "56e4f66c-47e3-4849-9315-347694db82a1",
-      "url": "https://www.notion.so/UniPipe-56e4f66c47e348499315347694db82a1",
-      "title": "UniPipe",
-      "properties": {
-        "category": "cli"
-      },
-      "pageType": "CFMMTool"
-    }
-  },
-  {
     "file": "maturity-model/cost-management/readme.md",
     "frontmatter": {
       "id": "57502241-e2f4-4b75-9e33-de39b26a6eb8",
@@ -1851,20 +1820,6 @@ export const index = [
         ],
         "name": "Shared Responsibility Model Alignment"
       }
-    }
-  },
-  {
-    "frontmatter": {
-      "id": "57e91719-5519-4fd3-a8e7-3afddb104a6f",
-      "url": "https://www.notion.so/Virtual-Network-Building-Block-57e9171955194fd3a8e73afddb104a6f",
-      "title": "Virtual Network Building Block",
-      "properties": {
-        "block": [],
-        "tool": [],
-        "link": "https://github.com/meshcloud/Building-Blocks/",
-        "name": "Virtual Network Building Block"
-      },
-      "pageType": "CFMMTool2Block"
     }
   },
   {
@@ -3594,7 +3549,6 @@ export const index = [
           "913a8ad1-7ad4-4ade-9e88-801a7afa4b40"
         ],
         "tool": [
-          "56e4f66c-47e3-4849-9315-347694db82a1",
           "8cea8fb4-02f7-4257-a0bd-24d6d1fd9225"
         ],
         "link": "https://github.com/meshcloud/unipipe-service-broker",
@@ -4219,6 +4173,7 @@ export const index = [
       "pageType": "CFMMBlock",
       "properties": {
         "enables": [],
+        "redaction-state": "mvp1",
         "journey-stage": "⭐️",
         "depends-on": [],
         "recommended": [],
