@@ -25,44 +25,6 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
-            <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Platform Stories (German) - April 29th, 1-2 pm (CEST)
-              </h4>
-              <p>
-                This live video podcast by meshcloud co-founders, Jörg and Christina, 
-                will feature insightful conversations with external guests, 
-                diving deep into their journeys of building successful platforms.
-              </p>
-              <a
-                href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./GO3.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English) - May 7th, 10-11 am (CEST) </h4>
-              <p>
-                Learn which steps and tools can empower your developers, 
-                allowing them to focus on what really counts – writing code 
-                and delivering digital products faster.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Sign up
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
             <img src="./BID_Event.webp" alt="Internal Developer Polatform" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4> Building an Internal Developer Platform with meshStack (English) - May 15th, 1-2 pm (CEST) </h4>
@@ -80,6 +42,26 @@
             </div>
           </div>
 
+          <div class="event-card">
+            <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Platform Stories (German) - May 22th, 1-2 pm (CEST)
+              </h4>
+              <p>
+                This live video podcast by meshcloud co-founders, Jörg and Christina, 
+                will feature insightful conversations with external guests, 
+                diving deep into their journeys of building successful platforms.
+              </p>
+              <a
+                href="https://www.meshcloud.io/de/unternehmen/events/plattform-stories/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./meshcloud-Con25.webp" alt="meshcloud Con 25" style="border-radius: 45px;"/>
             <div class="event-card__content">
@@ -107,6 +89,24 @@
         <h3 class="sub-title">Past Events</h3>
         <div class="past-event-list">
 
+          <div class="event-card">
+            <img src="./GO3.webp" alt="Self-Service Developer Portal" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>Fueling Developer Autonomy: Building a Self-Service Culture with a Developer Portal (English)</h4>
+              <p>
+                Learn which steps and tools can empower your developers, 
+                allowing them to focus on what really counts – writing code 
+                and delivering digital products faster.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/building-a-self-service-culture-with-a-developer-portal/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Set Alarm
+              </a>
+            </div>
+          </div>
+          
           <div class="event-card">
             <img src="./GO2_March25.webp" alt="Platform Workshop" style="border-radius: 45px;"/>
             <div class="event-card__content">
