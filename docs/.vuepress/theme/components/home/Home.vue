@@ -42,9 +42,9 @@
         <p class="text-white">
           Upcoming: 
           <a
-            href="https://www.meshcloud.io/en/company/events/building-an-internal-developer-platform-with-meshstack"
+            href="https://con25.meshcloud.io"
           >
-          Building an Internal Developer Platform with meshStack
+          meshcloud Con'25
           </a>
         </p>
       </div>
