@@ -25,10 +25,31 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Azure Landing Zones: From Request to Scalable Cloud Environments (English) - July 9th, 10am - 12pm (CEST)
+              </h4>
+              <p>
+                In this 2-hour practical workshop, we delve into the crucial 
+                aspects of landing zones and the target image Cloud Foundation. 
+                We also discovered the best practices and Cloud-Native Tools designed for 
+                the seamless establishment of landing zones across Azure.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/azure-landing-zone/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
             <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Platform Stories (German) - June 19th, 1-2 pm (CEST)
+                Platform Stories (German) - July 17th, 10-11 am (CEST)
               </h4>
               <p>
                 This live video podcast by meshcloud co-founders, Jörg and Christina, 
@@ -47,7 +68,7 @@
           <div class="event-card">
             <img src="./BID_Event.webp" alt="Internal Developer Polatform" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4> Building an Internal Developer Platform with meshStack (English) - June 25th, 1-2 pm (CEST) </h4>
+              <h4> Building an Internal Developer Platform with meshStack (English) - July 30th, 10-11 am (CEST) </h4>
               <p>
                 Learn which steps and tools can empower your developers, 
                 allowing them to focus on what really counts – writing code 
@@ -58,27 +79,6 @@
                 class="btn btn-outline-primary btn-lg"
               >
                 Sign up
-              </a>
-            </div>
-          </div>
-
-          <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Azure Landing Zones: From Request to Scalable Cloud Environments (English) - July 9th, 10am - 12pm (CEST)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delve into the crucial 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/landing-zone-101/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Set Alarm
               </a>
             </div>
           </div>
