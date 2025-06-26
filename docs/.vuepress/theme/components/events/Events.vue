@@ -33,7 +33,7 @@
               <p>
                 In this 2-hour practical workshop, we delve into the crucial 
                 aspects of landing zones and the target image Cloud Foundation. 
-                We also discovered the best practices and Cloud-Native Tools designed for 
+                We also discover the best practices and Cloud-Native Tools designed for 
                 the seamless establishment of landing zones across Azure.
               </p>
               <a
