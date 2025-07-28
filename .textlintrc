@@ -5,6 +5,8 @@
       "checkRelative": true,
       "retry": 1,
       "ignore": [
+        "https://stackoverflow.com/*",
+        "https://softwareengineering.stackexchange.com/*"
       ],
       "ignoreRedirects": true
     }
