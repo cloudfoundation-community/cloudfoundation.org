@@ -25,31 +25,10 @@
         <div class="upcoming-event-list">  
 
           <div class="event-card">
-            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
-            <div class="event-card__content">
-              <h4>
-                Azure Landing Zones: From Request to Scalable Cloud Environments (English) - July 9th, 10am - 12pm (CEST)
-              </h4>
-              <p>
-                In this 2-hour practical workshop, we delve into the crucial 
-                aspects of landing zones and the target image Cloud Foundation. 
-                We also discover the best practices and Cloud-Native Tools designed for 
-                the seamless establishment of landing zones across Azure.
-              </p>
-              <a
-                href="https://www.meshcloud.io/en/company/events/azure-landing-zone/"
-                class="btn btn-outline-primary btn-lg"
-              >
-                Register
-              </a>
-            </div>
-          </div>
-          
-          <div class="event-card">
             <img src="./PlatformStories.webp" alt="Platform Stories" style="border-radius: 45px;"/>
             <div class="event-card__content">
               <h4>
-                Platform Stories (German) - July 17th, 10-11 am (CEST)
+                Platform Stories (German) - August 28th, 09:30-10:30 am (CEST)
               </h4>
               <p>
                 This live video podcast by meshcloud co-founders, Jörg and Christina, 
@@ -66,9 +45,52 @@
           </div>
 
           <div class="event-card">
+            <img src="./MCS_webinar.webp" alt="Sovereignty Webinar" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                Out of lock-in - putting cloud sovereignty into practice with platform engineering (German) - September 3th, 10-11 am (CEST)
+              </h4>
+              <p>
+                One thing is crucial for digital sovereignty: freedom of action. 
+                And this is only possible if real technology options are available.
+                This webinar shows how dependencies creep in if no active alternatives
+                 are developed – technically, organizationally and culturally.
+              </p>
+              <a
+                href="https://www.meshcloud.io/de/unternehmen/events/sovereignty-webinar/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <img src="./LZ101_Flo.webp" alt="Landing Zone Workshop" style="border-radius: 45px;"/>
+            <div class="event-card__content">
+              <h4>
+                AWS Landing Zones: Build Secure, Scalable Platforms for Modern Cloud Operations (English) - October 1st, 10am - 12pm (CEST)
+              </h4>
+              <p>
+                This 2-hour practical workshop dives deep into designing
+                and implementing AWS Landing Zones that help your teams 
+                scale with confidence. You’ll learn how to establish a secure, 
+                well-governed AWS environment – from account provisioning 
+                to guardrails and automation.
+              </p>
+              <a
+                href="https://www.meshcloud.io/en/company/events/aws-landing-zone/"
+                class="btn btn-outline-primary btn-lg"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+
+          <div class="event-card">
             <img src="./BID_Event.webp" alt="Internal Developer Polatform" style="border-radius: 45px;"/>
             <div class="event-card__content">
-              <h4> Building an Internal Developer Platform with meshStack (English) - July 30th, 10-11 am (CEST) </h4>
+              <h4> Building an Internal Developer Platform for Kubernetes (English) - November 5th, 10-11 am (CET) </h4>
               <p>
                 Learn which steps and tools can empower your developers, 
                 allowing them to focus on what really counts – writing code 
