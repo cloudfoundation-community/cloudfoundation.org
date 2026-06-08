@@ -141,7 +141,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         enableAutoPageviews: true,
         enableAutoOutboundTracking: false, // may have issue, see https://github.com/plausible/plausible-tracker/issues/12 We use custom tracking via CtaButton component instead, so this is less relevant for us.
         trackerOptions: {
-          apiHost: "",
+          apiHost: "https://plausible.cluster.dev.meshcloud.io",
           domain:
             process.env.AWS_BRANCH === "main" // This way Plausible will only track data for the production version.
               ? "cloudfoundation.org"

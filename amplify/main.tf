@@ -77,7 +77,7 @@ resource "aws_amplify_app" "cloudfoundation" {
   name       = "cloudfoundation"
   repository = "https://github.com/cloudfoundation-community/cloudfoundation.org"
 
-  # note: rules here are processed top to bottom! 
+  # note: rules here are processed top to bottom!
 
   # domain redirects
   custom_rule {
@@ -99,7 +99,7 @@ resource "aws_amplify_app" "cloudfoundation" {
   }
 
   # Redirects related to the feedback form.
-  # Google App Script cannot be called directly from Vue due to CORS policy.   
+  # Google App Script cannot be called directly from Vue due to CORS policy.
   custom_rule {
     source = "/api/feedback"
     target = "https://script.google.com/macros/s/AKfycbyXJmPTWuiaCr13-VUyZnV8bSsFemc5Ahm8n3n593GL_UrZTSZ9Ux0x439RY-mZ8vlV/exec"
@@ -111,11 +111,11 @@ resource "aws_amplify_app" "cloudfoundation" {
   ## Contrary to netlify docs, only status=200 works here, see https://github.com/plausible/docs/issues/177
   custom_rule {
     source = "/api/event"
-    target = "https://plausible.io/api/event"
+    target = "https://plausible.cluster.dev.meshcloud.io/api/event"
     status = 200
   }
 
-  # Redirects for individual pages that we moved/renamed but we want to make sure we don't confuse google      
+  # Redirects for individual pages that we moved/renamed but we want to make sure we don't confuse google
   dynamic "custom_rule" {
     for_each = toset(local.redirects)
 
@@ -159,7 +159,7 @@ resource "aws_amplify_branch" "main" {
 # According to the AWS Amplify Console, this is the record we shall create
 # @    ANAME    d3c878lme1aflz.cloudfront.net
 # However, this is not easily possible because our Route53 is in a different account than where Amplify is
-# Some claim this doesn't work see https://github.com/aws-amplify/amplify-hosting/issues/2877, but it does work indeed 
+# Some claim this doesn't work see https://github.com/aws-amplify/amplify-hosting/issues/2877, but it does work indeed
 # with a cross-acount alias https://stackoverflow.com/questions/35928471/cross-account-alias-records and
 # this magic value, see https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
 # for the "alias_hosted_zone_id" = "Z2FDTNDATAQYW2"
